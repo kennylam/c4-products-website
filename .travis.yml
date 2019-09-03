@@ -1,0 +1,33 @@
+language: node_js
+
+node_js:
+  - '10'
+
+cache:
+  directories:
+    - node_modules
+
+notifications:
+  email: false
+
+script: skip
+
+stages:
+  - "build"
+  - "deploy"
+
+jobs:
+  fast_finish: true
+  include:
+  - stage: "build"
+    script:
+    - yarn build
+  - stage: "deploy"
+    deploy:
+      provider: pages
+      skip_cleanup: true
+      github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+      github_url: github.ibm.com
+      local_dir: public
+      on:
+        branch: master
