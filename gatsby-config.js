@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/CDAI-design/CDAI-design-website',
   siteMetadata: {
     title: 'Cloud, Data and AI Design',
     description: 'Design information for the Cloud, Data and AI organizations',
