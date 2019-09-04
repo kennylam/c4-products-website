@@ -13,16 +13,14 @@ notifications:
 script: skip
 
 stages:
-  - "build"
   - "deploy"
 
 jobs:
   fast_finish: true
   include:
-  - stage: "build"
+  - stage: "deploy"
     script:
     - yarn build
-  - stage: "deploy"
     deploy:
       provider: pages
       skip_cleanup: true
