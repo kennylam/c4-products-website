@@ -4,7 +4,7 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 const links = [
   {
     title: 'Github',
-    href: 'https://github.com/carbon-design-system/gatsby-theme-carbon',
+    href: 'https://github.ibm.com/CDAI-design/CDAI-design-website',
   },
   {
     title: 'Carbon Design System',

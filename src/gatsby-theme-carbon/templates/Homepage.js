@@ -5,38 +5,28 @@ import { calloutLink } from './Homepage.module.scss';
 
 import Carbon from '../../images/carbon.jpg';
 
-const FirstLeftText = () => <p>Callout component</p>;
+const FirstLeftText = () => <p>Unifying the portfolio experience of <strong>IBM Cloud, Data and AI</strong> products.</p>;
 
 const FirstRightText = () => (
   <p>
-    This is a callout component. You can edit the contents by updating the
-    pre-shadowed homepage template. You can provide <code>color</code> and{' '}
-    <code>backgroundColor</code> props to suit your theme.
-    <a
-      className={calloutLink}
-      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/master/packages/example/src/gatsby-theme-carbon/templates/Homepage.js"
-    >
-      Homepage source →
-    </a>
+    <ul>
+      <li>A vision of alignment across the portfolio.</li>
+      <li>Providing direction for designing and implementing this user experience.</li>
+      <li>Maintaining conformity of the IBM Design Language and Carbon.</li>
+      <li>Informing how to maintain consistent experiences and behaviours as well as sharing reusable components whenever possible.</li>
+    </ul>
   </p>
 );
 
-const SecondLeftText = () => <p>Callout component</p>;
+const SecondLeftText = () => <p>Another callout if needed</p>;
 
 const SecondRightText = () => (
   <p>
-    You can also not use these components at all by not providing the callout
-    props to the template or writing your own template.
-    <a
-      className={calloutLink}
-      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/master/packages/example/src/gatsby-theme-carbon/templates/Homepage.js"
-    >
-      Homepage source →
-    </a>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
   </p>
 );
 
-const BannerText = () => <h1>Banner component</h1>;
+const BannerText = () => <h1>Cloud, Data and AI<br />Design</h1>;
 
 const customProps = {
   Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
