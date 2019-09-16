@@ -1,9 +1,34 @@
 - title: Getting started
   pages:
     - path: /getting-started
-- title: Generic patterns
+- title: Common patterns
   pages:
     - title: Creation flows
-      path: /generic-patterns/creation-flows
+      path: /common-patterns/creation-flows
     - title: Generating an API key
-      path: /generic-patterns/generating-api-key
+      path: /common-patterns/generating-api-key
+- title: Bespoke components
+  pages:
+    - title: 'Component #1'
+      path: /bespoke-components/component-1
+    - title: 'Component #2'
+      path: /bespoke-components/component-2
+- title: Extended components
+  pages:
+    - title: 'Component #1'
+      path: /extended-components/component-1
+    - title: 'Component #2'
+      path: /extended-components/component-2
+- title: Cloud Pak guidelines
+  pages:
+    - title: 'Cloud Pak guideline #1'
+      path: /cloud-pak-guildelines/guideline-1
+    - title: 'Cloud Pak guideline #2'
+      path: /cloud-pak-guildelines/guideline-2
+  separator: true
+- title: Cloud Platform guidelines
+  pages:
+    - title: 'Cloud Platform guideline #1'
+      path: /cloud-platform-guildelines/guideline-1
+    - title: 'Cloud Platform guideline #2'
+      path: /cloud-platform-guildelines/guideline-2
