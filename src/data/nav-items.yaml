@@ -11,8 +11,8 @@
   pages:
     - title: 'Button Menu'
       path: /bespoke-components/button-menu
-    - title: 'Component #2'
-      path: /bespoke-components/component-2
+    - title: 'File Drop'
+      path: /bespoke-components/file-drop
 - title: Extended components
   pages:
     - title: 'Headers'
