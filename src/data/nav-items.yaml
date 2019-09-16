@@ -15,10 +15,8 @@
       path: /bespoke-components/component-2
 - title: Extended components
   pages:
-    - title: 'Component #1'
-      path: /extended-components/component-1
-    - title: 'Component #2'
-      path: /extended-components/component-2
+    - title: 'Headers'
+      path: /extended-components/headers
 - title: Cloud Pak guidelines
   pages:
     - title: 'Cloud Pak guideline #1'
