@@ -9,8 +9,8 @@
       path: /common-patterns/generating-api-key
 - title: Bespoke components
   pages:
-    - title: 'Component #1'
-      path: /bespoke-components/component-1
+    - title: 'Button Menu'
+      path: /bespoke-components/button-menu
     - title: 'Component #2'
       path: /bespoke-components/component-2
 - title: Extended components
