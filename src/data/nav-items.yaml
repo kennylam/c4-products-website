@@ -9,10 +9,12 @@
       path: /common-patterns/generating-api-key
 - title: Bespoke components
   pages:
-    - title: 'Button Menu'
+    - title: 'Button menu'
       path: /bespoke-components/button-menu
-    - title: 'File Drop'
+    - title: 'File drop'
       path: /bespoke-components/file-drop
+    - title: 'Multistep confirmation'
+      path: /bespoke-components/multistep-confirmation
 - title: Extended components
   pages:
     - title: 'Headers'
