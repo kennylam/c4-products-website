@@ -17,6 +17,8 @@
       path: /bespoke-components/multistep-confirmation
     - title: 'Page header'
       path: /bespoke-components/page-header
+    - title: 'Persistent banner'
+      path: /bespoke-components/persistent-banner
 - title: Extended components
   pages:
     - title: 'Headers'
