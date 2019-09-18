@@ -7,6 +7,8 @@
       path: /common-patterns/creation-flows
     - title: Downloading
       path: /common-patterns/downloading
+    - title: Editing & updating
+      path: /common-patterns/editing
     - title: Generating an API key
       path: /common-patterns/generating-api-key
 - title: Bespoke components
