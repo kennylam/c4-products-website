@@ -21,6 +21,8 @@
       path: /bespoke-components/persistent-banner
     - title: 'Slide-in panel'
       path: /bespoke-components/slide-in-panel
+    - title: 'Slide-over panel'
+      path: /bespoke-components/slide-over-panel
 - title: Extended components
   pages:
     - title: 'Headers'
