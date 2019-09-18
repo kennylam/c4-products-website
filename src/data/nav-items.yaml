@@ -5,6 +5,8 @@
   pages:
     - title: Creation flows
       path: /common-patterns/creation-flows
+    - title: Downloading
+      path: /common-patterns/downloading
     - title: Generating an API key
       path: /common-patterns/generating-api-key
 - title: Bespoke components
