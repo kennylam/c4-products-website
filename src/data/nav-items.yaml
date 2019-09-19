@@ -11,6 +11,8 @@
       path: /common-patterns/editing
     - title: Empty state
       path: /common-patterns/empty-state
+    - title: Exporting
+      path: /common-patterns/exporting
     - title: Generating an API key
       path: /common-patterns/generating-api-key
 - title: Bespoke components
