@@ -51,10 +51,10 @@
       path: /extended-components/headers
 - title: Cloud Pak guidelines
   pages:
-    - title: 'Cloud Pak guideline #1'
-      path: /cloud-pak-guildelines/guideline-1
+    - title: 'Our product portfolio'
+      path: /cloud-pak-guidelines/our-product-portfolio
     - title: 'Cloud Pak guideline #2'
-      path: /cloud-pak-guildelines/guideline-2
+      path: /cloud-pak-guidelines/guideline-2
   separator: true
 - title: Cloud Platform guidelines
   pages:
