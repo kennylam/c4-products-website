@@ -17,6 +17,18 @@
       path: /common-patterns/generating-api-key
     - title: HTTP errors
       path: /common-patterns/http-errors
+    - title: Importing
+      path: /common-patterns/importing
+    - title: Removing
+      path: /common-patterns/removing
+    - title: Reordering
+      path: /common-patterns/reordering
+    - title: Saving
+      path: /common-patterns/saving
+    - title: State
+      path: /common-patterns/state
+    - title: Uploading
+      path: /common-patterns/uploading
 - title: Bespoke components
   pages:
     - title: 'Button menu'
