@@ -9,6 +9,8 @@
       path: /common-patterns/downloading
     - title: Editing & updating
       path: /common-patterns/editing
+    - title: Empty state
+      path: /common-patterns/empty-state
     - title: Generating an API key
       path: /common-patterns/generating-api-key
 - title: Bespoke components
