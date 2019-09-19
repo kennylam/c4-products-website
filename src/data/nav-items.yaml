@@ -55,6 +55,10 @@
       path: /cloud-pak-guidelines/our-product-portfolio
     - title: 'Landing page'
       path: /cloud-pak-guidelines/landing-page
+    - title: 'Learning panel'
+      path: /cloud-pak-guidelines/learning-panel
+    - title: 'Navigation'
+      path: /cloud-pak-guidelines/navigation
   separator: true
 - title: Cloud Platform guidelines
   pages:
