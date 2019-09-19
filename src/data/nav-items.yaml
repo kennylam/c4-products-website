@@ -53,8 +53,8 @@
   pages:
     - title: 'Our product portfolio'
       path: /cloud-pak-guidelines/our-product-portfolio
-    - title: 'Cloud Pak guideline #2'
-      path: /cloud-pak-guidelines/guideline-2
+    - title: 'Landing page'
+      path: /cloud-pak-guidelines/landing-page
   separator: true
 - title: Cloud Platform guidelines
   pages:
