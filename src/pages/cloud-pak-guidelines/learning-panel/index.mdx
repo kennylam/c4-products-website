@@ -2,9 +2,11 @@
 title: Learning Panel
 ---
 
-<div style="display:flex;align-items:flex-start;height:46px;margin-bottom:50px;padding:15px;background:#fff;">
-  <img src="../../../images/warning.svg" /> &nbsp;&nbsp;&nbsp;Please note this pattern is still under review.
-</div>
+<InlineNotification kind="warning">
+
+  Please note this pattern is still under review.
+
+</InlineNotification>
 
 <PageDescription>
 
@@ -27,15 +29,12 @@ learning, support, education and documentation from the same place in all
 products.   All these artefacts, or links to them, will be contained within a
 side panel accessed via an icon in the top right of the product header.
 
-<Row>
- <Column colLg={8}>
-  <div style="padding: 15px; border-left: 3px solid #054ada; background: #edf4ff; line-height: 1.5rem">
-   <strong>Note:</strong> This panel can always be accessed by the user at any point a
-   product without removing them from the context of what they are doing.
-  </div>
- </Column>
-</Row>
-<br />
+<InlineNotification>
+
+  **Note:** This panel can always be accessed by the user at any point a
+  product without removing them from the context of what they are doing.
+
+</InlineNotification>
 
 It must contain a link to product documentation, aside from that the content
 of this panel is decided on a per product basis.  It could contain a variety
