@@ -1,21 +1,21 @@
 import React from 'react';
 import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
-// import { calloutLink } from './Homepage.module.scss';
+import { mainList } from './Homepage.module.scss';
 
 import Carbon from '../../images/carbon.jpg';
 
 const FirstLeftText = () => <p>Unifying the portfolio experience of <strong>IBM Cloud, Data and AI</strong> products.</p>;
 
 const FirstRightText = () => (
-  <p>
-    <ul>
+  <div>
+    <ul className={mainList}>
       <li>A vision of alignment across the portfolio.</li>
       <li>Providing direction for designing and implementing this user experience.</li>
       <li>Maintaining conformity of the IBM Design Language and Carbon.</li>
       <li>Informing how to maintain consistent experiences and behaviours as well as sharing reusable components whenever possible.</li>
     </ul>
-  </p>
+  </div>
 );
 
 const SecondLeftText = () => <p>Another callout if needed</p>;

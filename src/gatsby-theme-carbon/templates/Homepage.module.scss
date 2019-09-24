@@ -1,5 +1,17 @@
+/*
 .callout-link {
   @include carbon--type-style('body-long-02');
   margin-top: $spacing-06;
   display: block;
+}
+*/
+
+.main-list {
+  list-style-type: none;
+
+  li {
+    margin: 0 0 $spacing-07 $spacing-08;
+    padding-left: $spacing-08;
+    background: url(../../images/bullet.svg) left 19px no-repeat;
+  }
 }
