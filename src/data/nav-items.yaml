@@ -1,14 +1,12 @@
 - title: Getting started
   pages:
     - path: /getting-started
-- title: Common patterns
+- title: Patterns
   pages:
     - title: Creation flows
       path: /common-patterns/creation-flows
     - title: Downloading
       path: /common-patterns/downloading
-    - title: Editing & updating
-      path: /common-patterns/editing
     - title: Empty state
       path: /common-patterns/empty-state
     - title: Exporting
@@ -19,50 +17,52 @@
       path: /common-patterns/http-errors
     - title: Importing
       path: /common-patterns/importing
+    - title: Order summary
+      path: /common-patterns/order-summary/usage
     - title: Removing
       path: /common-patterns/removing
-    - title: Reordering
-      path: /common-patterns/reordering
     - title: Saving
       path: /common-patterns/saving
     - title: State
       path: /common-patterns/state
     - title: Uploading
       path: /common-patterns/uploading
-- title: Bespoke components
+- title: Components
   pages:
-    - title: 'Button menu'
-      path: /bespoke-components/button-menu
+    - title: Card
+      path: /components/card/usage
     - title: 'File drop'
-      path: /bespoke-components/file-drop
-    - title: 'Multistep confirmation'
-      path: /bespoke-components/multistep-confirmation
-    - title: 'Page header'
-      path: /bespoke-components/page-header
-    - title: 'Persistent banner'
-      path: /bespoke-components/persistent-banner
-    - title: 'Slide-in panel'
-      path: /bespoke-components/slide-in-panel
-    - title: 'Slide-over panel'
-      path: /bespoke-components/slide-over-panel
-- title: Extended components
-  pages:
+      path: /components/file-drop
     - title: 'Headers'
-      path: /extended-components/headers
+      path: /components/headers
+    - title: 'Page header'
+      path: /components/page-header
+    - title: 'Slide-in panel'
+      path: /components/slide-in-panel
+    - title: 'Slide-over panel'
+      path: /components/slide-over-panel
+    - title: Widget
+      path: /components/widget/usage
 - title: Cloud Pak guidelines
   pages:
     - title: 'Our product portfolio'
       path: /cloud-pak-guidelines/our-product-portfolio
     - title: 'Landing page'
       path: /cloud-pak-guidelines/landing-page
-    - title: 'Learning panel'
-      path: /cloud-pak-guidelines/learning-panel
     - title: 'Navigation'
       path: /cloud-pak-guidelines/navigation
   separator: true
-- title: Cloud Platform guidelines
+- title: Work in progress
   pages:
-    - title: 'Cloud Platform guideline #1'
-      path: /cloud-platform-guildelines/guideline-1
-    - title: 'Cloud Platform guideline #2'
-      path: /cloud-platform-guildelines/guideline-2
+    - title: Editing & updating
+      path: /common-patterns/editing
+    - title: Reordering
+      path: /common-patterns/reordering
+    - title: 'Button menu'
+      path: /components/button-menu
+    - title: 'Multistep confirmation'
+      path: /components/multistep-confirmation
+    - title: 'Persistent banner'
+      path: /components/persistent-banner
+    - title: 'Learning panel'
+      path: /cloud-pak-guidelines/learning-panel
