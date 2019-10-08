@@ -45,7 +45,7 @@
       path: /components/widget/usage
 - title: Cloud Pak guidelines
   pages:
-    - title: 'Our product portfolio'
+    - title: 'ICP4I product portfolio'
       path: /cloud-pak-guidelines/our-product-portfolio
     - title: 'Landing page'
       path: /cloud-pak-guidelines/landing-page
