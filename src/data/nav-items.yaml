@@ -49,6 +49,8 @@
       path: /cloud-pak-guidelines/icp4i-product-portfolio
     - title: 'Landing page'
       path: /cloud-pak-guidelines/landing-page
+    - title: 'Learning panel'
+      path: /cloud-pak-guidelines/learning-panel
     - title: 'Navigation'
       path: /cloud-pak-guidelines/navigation
   separator: true
