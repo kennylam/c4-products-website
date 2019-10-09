@@ -4,11 +4,11 @@
 - title: Patterns
   pages:
     - title: Creation flows
-      path: /common-patterns/creation-flows
+      path: /common-patterns/creation-flows/usage
     - title: Downloading
       path: /common-patterns/downloading
     - title: Empty state
-      path: /common-patterns/empty-state
+      path: /common-patterns/empty-state/usage
     - title: Exporting
       path: /common-patterns/exporting
     - title: Generating an API key
@@ -20,9 +20,9 @@
     - title: Order summary
       path: /common-patterns/order-summary/usage
     - title: Removing
-      path: /common-patterns/removing
+      path: /common-patterns/removing/usage
     - title: Saving
-      path: /common-patterns/saving
+      path: /common-patterns/saving/usage
     - title: State
       path: /common-patterns/state
     - title: Uploading
@@ -40,7 +40,7 @@
     - title: 'Slide-in panel'
       path: /components/slide-in-panel
     - title: 'Slide-over panel'
-      path: /components/slide-over-panel
+      path: /components/slide-over-panel/usage
     - title: Widget
       path: /components/widget/usage
 - title: Cloud Pak guidelines
@@ -48,11 +48,11 @@
     - title: 'ICP4I product portfolio'
       path: /cloud-pak-guidelines/icp4i-product-portfolio
     - title: 'Landing page'
-      path: /cloud-pak-guidelines/landing-page
+      path: /cloud-pak-guidelines/landing-page/usage
     - title: 'Learning panel'
       path: /cloud-pak-guidelines/learning-panel
     - title: 'Navigation'
-      path: /cloud-pak-guidelines/navigation
+      path: /cloud-pak-guidelines/navigation/usage
   separator: true
 - title: Work in progress
   pages:
