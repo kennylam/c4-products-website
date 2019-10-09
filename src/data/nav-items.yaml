@@ -12,7 +12,7 @@
     - title: Exporting
       path: /common-patterns/exporting
     - title: Generating an API key
-      path: /common-patterns/generating-api-key
+      path: /common-patterns/generating-api-key/usage
     - title: HTTP errors
       path: /common-patterns/http-errors
     - title: Importing
