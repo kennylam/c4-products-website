@@ -1,0 +1,106 @@
+---
+title: Exporting new
+description: Exporting a resource saves data in a different format, external to the system.
+---
+import { Launch16 } from '@carbon/icons-react';
+
+<InlineNotification kind="warning">
+
+  Please note this pattern is still under review.
+  
+</InlineNotification>
+<PageDescription>
+
+Exporting a resource saves data in a different format, external to the system.
+
+</PageDescription>
+
+#### Status:
+
+Experimental
+
+#### Maintainers:
+
+[Vikki Paterson](https://github.com/vikkipaterson), [Chloe Poulter](https://github.com/chloepoulterdesign)
+
+<AnchorLinks>
+
+<AnchorLink>Export with an intuitive default name</AnchorLink>
+<AnchorLink>Export with an editable name</AnchorLink>
+<AnchorLink small>Optional extras</AnchorLink>
+
+</AnchorLinks>
+
+![Example of an export pattern using a modal in context](images/0.png)
+
+<Caption>Example of a export pattern using a modal</Caption>
+
+## Export with an intuitive default name
+
+When the resource is given an intuitive name by default and there is no choice of export location, the export occurs on the click of the Export button and nothing additional is displayed.
+
+<Row>
+<Column colLg={8}>
+
+![Example of an export button on a data table](images/1.png)
+
+</Column>
+</Row>
+
+## Export with an editable name
+
+When exporting with an editable name, a dialog should be presented to the user displaying an editable textbox that is pre-populated with the default name for the file.
+
+<Row>
+<Column colLg={8}>
+
+![Example of an export modal](images/2.png)
+
+![Example of validation errors](images/newimage1.png)
+
+<Caption>Validate the edited name's extension.</Caption>
+
+![Example of an export modal in its "Exporting" state](images/3.png)
+
+<Caption>Example of an export modal in its "Exporting" state</Caption>
+
+</Column>
+</Row>
+
+## Optional extras
+
+### Specify export location
+
+When specifying the download location of a resource, clicking the primary “download” button activates the browser's default location panel. The file is downloaded once a location is selected and the user clicks Save.
+
+<Row>
+<Column colLg={8}>
+
+![Example of specifying an export location](images/newimage2.png)
+
+</Column>
+</Row>
+
+### Passive success modal
+
+You can choose to show a passive modal when an export has succeeded. 
+
+<Row>
+<Column colLg={8}>
+
+![Example of a passive success modal](images/newimage3.png)
+
+</Column>
+</Row>
+
+### Errors and failures
+
+In the event of an error, display the error in the modal. 
+
+<Row>
+<Column colLg={8}>
+
+![Example of an error state modal](images/newimage4.png)
+
+</Column>
+</Row>
