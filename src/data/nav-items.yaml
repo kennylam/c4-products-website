@@ -54,6 +54,9 @@
     - title: 'Navigation'
       path: /cloud-pak-guidelines/navigation/usage
   separator: true
+- title: Cloud Platform guidelines
+  pages:
+    - path: /cloud-pal-guidelines
 - title: Work in progress
   pages:
     - title: Editing & updating
@@ -68,3 +71,5 @@
       path: /components/persistent-banner
     - title: 'Learning panel'
       path: /cloud-pak-guidelines/learning-panel
+  separator: true
+
