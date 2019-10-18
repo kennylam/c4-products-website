@@ -11,8 +11,8 @@
       path: /common-patterns/empty-state/usage
     - title: Exporting
       path: /common-patterns/exporting
-    - title: Filtering
-      path: /common-patterns/filtering/usage
+    - title: Advanced filtering
+      path: /common-patterns/advanced-filtering
     - title: Generating an API key
       path: /common-patterns/generating-api-key/usage
     - title: HTTP errors
