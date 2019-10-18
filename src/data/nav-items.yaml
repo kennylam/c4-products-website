@@ -58,8 +58,6 @@
   pages:
     - title: Editing & updating
       path: /common-patterns/editing
-    - title: Exporting new
-      path: /common-patterns/exporting-new
     - title: Reordering
       path: /common-patterns/reordering
     - title: 'Button menu'
