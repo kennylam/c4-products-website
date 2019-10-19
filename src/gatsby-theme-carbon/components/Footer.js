@@ -4,22 +4,36 @@ import Footer from 'gatsby-theme-carbon/src/components/Footer';
 const Content = () => (
   <>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+        Have questions or feedback for us?
+      </p>
+      <p>
+        Contact us via {' '}
+        <a href="https://ibm-casdesign.slack.com/messages/G7LSWTAA0">
+          Slack
+        </a>{' '}
+        or open an issue in our {' '}
+        <a href="https://github.ibm.com/CDAI-design/CDAI-design-website/issues"> GitHub </a> repo.
+      </p>
   </>
 );
 
 const links = {
   firstCol: [
+// Commenting out the 1st placeholder links column
+/*
     { href: 'https://ibm.com/design', linkText: 'IBM Design' },
     { href: 'https://ibm.com/design', linkText: 'IBM Design' },
     { href: 'https://ibm.com/design', linkText: 'IBM Design' },
+*/
   ],
   secondCol: [
+// Commenting out the 2nd placeholder links column
+/*
     { href: 'https://ibm.com/design', linkText: 'IBM Design' },
     { href: 'https://ibm.com/design', linkText: 'IBM Design' },
     { href: 'https://ibm.com/design', linkText: 'IBM Design' },
     { href: 'https://ibm.com/design', linkText: 'IBM Design' },
+*/
   ],
 };
 
