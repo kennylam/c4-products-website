@@ -1,6 +1,9 @@
 - title: Getting started
   pages:
     - path: /getting-started
+- title: Design guidelines
+  pages:
+    - path: /design-guidelines
 - title: Patterns
   pages:
     - title: Creation flows
@@ -45,14 +48,20 @@
       path: /components/widget/usage
 - title: Cloud Pak guidelines
   pages:
-    - title: 'ICP4I product portfolio'
-      path: /cloud-pak-guidelines/icp4i-product-portfolio
+    - title: 'Navigation'
+      path: /cloud-pak-guidelines/navigation/usage
     - title: 'Landing page'
       path: /cloud-pak-guidelines/landing-page/usage
     - title: 'Learning panel'
       path: /cloud-pak-guidelines/learning-panel
-    - title: 'Navigation'
-      path: /cloud-pak-guidelines/navigation/usage
+    - title: 'ICP4App. product portfolio'
+      path: /cloud-pak-guidelines/icp4app
+    - title: 'ICP4Aut. product portfolio'
+      path: /cloud-pak-guidelines/icp4aut
+    - title: 'ICP4Data product portfolio'
+      path: /cloud-pak-guidelines/icp4d
+    - title: 'ICP4Int. product portfolio'
+      path: /cloud-pak-guidelines/icp4i
   separator: true
 - title: Cloud Platform guidelines
   pages:
@@ -72,4 +81,6 @@
     - title: 'Learning panel'
       path: /cloud-pak-guidelines/learning-panel
   separator: true
-
+- title: Contributing
+  pages:
+    - path: /contributing
