@@ -38,7 +38,7 @@
   pages:
     - title: Component status
       path: /components/component-status
-    - title: Card
+    - title: Cards
       path: /components/card/usage
     - title: 'File drop'
       path: /components/file-drop
