@@ -4,36 +4,6 @@
 - title: Design guidelines
   pages:
     - path: /design-guidelines
-- title: Patterns
-  pages:
-    - title: Pattern status
-      path: /common-patterns/pattern-status
-    - title: Creation flows
-      path: /common-patterns/creation-flows/usage
-    - title: Downloading
-      path: /common-patterns/downloading
-    - title: Empty state
-      path: /common-patterns/empty-state/usage
-    - title: Exporting
-      path: /common-patterns/exporting
-    - title: Advanced filtering
-      path: /common-patterns/advanced-filtering
-    - title: Generating an API key
-      path: /common-patterns/generating-api-key/usage
-    - title: HTTP errors
-      path: /common-patterns/http-errors
-    - title: Importing
-      path: /common-patterns/importing
-    - title: Order summary
-      path: /common-patterns/order-summary/usage
-    - title: Removing
-      path: /common-patterns/removing/usage
-    - title: Saving
-      path: /common-patterns/saving/usage
-    - title: State
-      path: /common-patterns/state
-    - title: Uploading
-      path: /common-patterns/uploading
 - title: Components
   pages:
     - title: Component status
@@ -52,6 +22,36 @@
       path: /components/slide-over-panel/usage
     - title: Widget
       path: /components/widget/usage
+- title: Patterns
+  pages:
+    - title: Pattern status
+      path: /common-patterns/pattern-status
+    - title: Create flows
+      path: /common-patterns/creation-flows/usage
+    - title: Export
+      path: /common-patterns/exporting
+    - title: Generating an API key
+      path: /common-patterns/generating-api-key/usage
+    - title: Import
+      path: /common-patterns/importing
+    - title: Remove
+      path: /common-patterns/removing/usage
+    - title: Advanced filtering
+      path: /common-patterns/advanced-filtering
+    - title: Downloading
+      path: /common-patterns/downloading
+    - title: Empty state
+      path: /common-patterns/empty-state/usage
+    - title: HTTP errors
+      path: /common-patterns/http-errors
+    - title: Order summary
+      path: /common-patterns/order-summary/usage
+    - title: Saving
+      path: /common-patterns/saving/usage
+    - title: State
+      path: /common-patterns/state
+    - title: Uploading
+      path: /common-patterns/uploading
 - title: Cloud Pak guidelines
   pages:
     - title: 'Navigation'
@@ -74,18 +74,18 @@
     - path: /cloud-pal-guidelines
 - title: Work in progress
   pages:
-    - title: Editing & updating
-      path: /common-patterns/editing
-    - title: Reordering
-      path: /common-patterns/reordering
-    - title: 'Button menu'
+    - title: 'Button menu (com.)'
       path: /components/button-menu
-    - title: 'Multistep confirmation'
+    - title: 'Multistep confirmation (com.)'
       path: /components/multistep-confirmation
-    - title: 'Persistent banner'
+    - title: 'Persistent banner (com.)'
       path: /components/persistent-banner
-    - title: 'Learning panel'
+    - title: 'Editing and updating (pat.)'
+      path: /common-patterns/editing
+    - title: 'Learning panel (pat.)'
       path: /cloud-pak-guidelines/learning-panel
+    - title: 'Reordering (pat.)'
+      path: /common-patterns/reordering
   separator: true
 - title: Contributing
   pages:
