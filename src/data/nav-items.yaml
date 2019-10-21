@@ -6,6 +6,8 @@
     - path: /design-guidelines
 - title: Patterns
   pages:
+    - title: Pattern status
+      path: /common-patterns/pattern-status
     - title: Creation flows
       path: /common-patterns/creation-flows/usage
     - title: Downloading
@@ -32,6 +34,8 @@
       path: /common-patterns/uploading
 - title: Components
   pages:
+    - title: Component status
+      path: /components/component-status
     - title: Card
       path: /components/card/usage
     - title: 'File drop'

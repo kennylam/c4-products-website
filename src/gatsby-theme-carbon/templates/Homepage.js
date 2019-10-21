@@ -9,20 +9,16 @@ const FirstLeftText = () => <p>Unifying the portfolio experience of <strong>IBM 
 
 const FirstRightText = () => (
   <div>
-    <ul className={mainList}>
-      <li>A vision of alignment across the portfolio.</li>
-      <li>Providing direction for designing and implementing this user experience.</li>
-      <li>Maintaining conformity of the IBM Design Language and Carbon.</li>
-      <li>Informing how to maintain consistent experiences and behaviours as well as sharing reusable components whenever possible.</li>
-    </ul>
+    <p class="homepage">This site provides guidance and resources for designers working on products within the <strong>Cloud, Data and AI</strong> portfolio.</p>
+    <p class="homepage">Where any of our products have requirements not already met by Carbon, these are provided as additional patterns and components here.</p>
   </div>
 );
 
-const SecondLeftText = () => <p>Another callout if needed</p>;
+const SecondLeftText = () => <p>IBM Cloud, Data and AI</p>;
 
 const SecondRightText = () => (
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+    Incorporating: Analytics Platform, Business Analytics, IBM Cloud Integration, IBM Cloud Platform, and IBM Watson Data & AI.
   </p>
 );
 
