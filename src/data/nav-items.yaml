@@ -28,6 +28,8 @@
       path: /common-patterns/pattern-status
     - title: Create flows
       path: /common-patterns/creation-flows/usage
+    - title: Edit and update
+      path: /common-patterns/edit
     - title: Export
       path: /common-patterns/exporting
     - title: Generating an API key
@@ -80,8 +82,6 @@
       path: /components/multistep-confirmation
     - title: 'Persistent banner (com.)'
       path: /components/persistent-banner
-    - title: 'Editing and updating (pat.)'
-      path: /common-patterns/editing
     - title: 'Learning panel (pat.)'
       path: /cloud-pak-guidelines/learning-panel
     - title: 'Reordering (pat.)'
