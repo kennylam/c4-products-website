@@ -1,5 +1,5 @@
 ---
-title: Exporting
+title: Export
 description: Exporting a resource saves data in a different format, external to the system. Downloading saves data in an unchanged format.
 ---
 import { Launch16 } from '@carbon/icons-react';
@@ -7,8 +7,8 @@ import { Launch16 } from '@carbon/icons-react';
 <PageDescription>
 
 When exporting something you have the ability to change the format of the object or resource you are exporting out external to the system.
-Downloading transfers a resource from a remote system to a local system without changing its format. 
 
+Downloading transfers a resource from a remote system to a local system without changing its format. 
 
 </PageDescription>
 
@@ -56,6 +56,8 @@ When the resource is given an intuitive name by default and there is no choice o
 
 When exporting/downloading with an editable name, a dialog should be presented to the user displaying an editable textbox that is pre-populated with the default name for the file.
 
+When downloading, the file extension is not displayed. 
+
 <Row>
 <Column colLg={8}>
 
@@ -64,9 +66,6 @@ When exporting/downloading with an editable name, a dialog should be presented t
 ![Example of validation errors](images/newimage1.png)
 
 <Caption>Validate the edited name's extension.</Caption>
-
-In downloading, the file extension can be either not displayed, or is not editable. 
-
 
 ![Example of an export modal in its "Exporting" state](images/3.png)
 
