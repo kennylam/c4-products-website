@@ -38,8 +38,6 @@
       path: /common-patterns/removing/usage
     - title: Advanced filtering
       path: /common-patterns/advanced-filtering
-    - title: Downloading
-      path: /common-patterns/downloading
     - title: Empty state
       path: /common-patterns/empty-state/usage
     - title: HTTP errors
