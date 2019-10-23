@@ -10,15 +10,13 @@
       path: /components/component-status
     - title: Cards
       path: /components/card/usage
-    - title: 'File drop'
-      path: /components/file-drop
-    - title: 'Headers'
+    - title: "Headers"
       path: /components/headers
-    - title: 'Page header'
+    - title: "Page header"
       path: /components/page-header
-    - title: 'Slide-in panel'
+    - title: "Slide-in panel"
       path: /components/slide-in-panel
-    - title: 'Slide-over panel'
+    - title: "Slide-over panel"
       path: /components/slide-over-panel/usage
     - title: Widget
       path: /components/widget/usage
@@ -56,19 +54,19 @@
       path: /common-patterns/uploading
 - title: Cloud Pak guidelines
   pages:
-    - title: 'Navigation'
+    - title: "Navigation"
       path: /cloud-pak-guidelines/navigation/usage
-    - title: 'Landing page'
+    - title: "Landing page"
       path: /cloud-pak-guidelines/landing-page/usage
-    - title: 'Learning panel'
+    - title: "Learning panel"
       path: /cloud-pak-guidelines/learning-panel
-    - title: 'ICP4App. product portfolio'
+    - title: "ICP4App. product portfolio"
       path: /cloud-pak-guidelines/icp4app
-    - title: 'ICP4Aut. product portfolio'
+    - title: "ICP4Aut. product portfolio"
       path: /cloud-pak-guidelines/icp4aut
-    - title: 'ICP4Data product portfolio'
+    - title: "ICP4Data product portfolio"
       path: /cloud-pak-guidelines/icp4d
-    - title: 'ICP4Int. product portfolio'
+    - title: "ICP4Int. product portfolio"
       path: /cloud-pak-guidelines/icp4i
   separator: true
 - title: Cloud Platform guidelines
@@ -76,15 +74,15 @@
     - path: /cloud-pal-guidelines
 - title: Work in progress
   pages:
-    - title: 'Button menu (com.)'
+    - title: "Button menu (com.)"
       path: /components/button-menu
-    - title: 'Multistep confirmation (com.)'
+    - title: "Multistep confirmation (com.)"
       path: /components/multistep-confirmation
-    - title: 'Persistent banner (com.)'
+    - title: "Persistent banner (com.)"
       path: /components/persistent-banner
-    - title: 'Learning panel (pat.)'
+    - title: "Learning panel (pat.)"
       path: /cloud-pak-guidelines/learning-panel
-    - title: 'Reordering (pat.)'
+    - title: "Reordering (pat.)"
       path: /common-patterns/reordering
   separator: true
 - title: Contributing
