@@ -22,7 +22,7 @@ const SecondRightText = () => (
   </p>
 );
 
-const BannerText = () => <h1>Cloud, Data and AI<br />Design</h1>;
+const BannerText = () => <h1>Cloud, Data and AI<br />Common Pattern Asset Library</h1>;
 
 const customProps = {
   Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
