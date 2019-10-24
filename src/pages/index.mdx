@@ -1,4 +1,5 @@
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
+import { LogoGithub32, Bee32 } from '@carbon/icons-react';
 
 export default HomepageTemplate;
 
@@ -7,19 +8,15 @@ export default HomepageTemplate;
 <Row className="resource-card-group">
 <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
+      color="dark"
       subTitle="For all CD&AI designers:"
       title="CD&AI design guidelines"
       aspectRatio="2:1"
       actionIcon="arrowRight"
       href="/design-guidelines"
       >
-
-![IBM rebus](../images/rebus.svg)
-
   </ResourceCard>
 </Column>
-</Row>
-<Row>
 <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
       subTitle="For CD&AI designers working on Cloud Paks:"
@@ -27,23 +24,19 @@ export default HomepageTemplate;
       aspectRatio="2:1"
       actionIcon="arrowRight"
       href="/cloud-pak-guidelines/navigation/usage"
+      color="dark"
       >
-
-![IBM rebus](../images/rebus.svg)
-
   </ResourceCard>
 </Column>
 <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
+      color="dark"
       subTitle="For CD&AI designers delivering services to IBM Cloud:"
       title="Cloud Platform guidelines"
       aspectRatio="2:1"
       actionIcon="arrowRight"
       href="/cloud-pal-guidelines"
       >
-
-![IBM rebus](../images/rebus.svg)
-
   </ResourceCard>
 </Column>
 </Row>
@@ -55,28 +48,24 @@ export default HomepageTemplate;
 <Row className="resource-card-group">
 <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
+      color="dark"
       subTitle="CD&AI Design"
       title="Patterns"
       aspectRatio="2:1"
       actionIcon="arrowRight"
       href="/common-patterns/pattern-status"
       >
-
-![IBM rebus](../images/rebus.svg)
-
   </ResourceCard>
 </Column>
 <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
+      color="dark"
       subTitle="CD&AI Design"
       title="Components"
       aspectRatio="2:1"
       actionIcon="arrowRight"
       href="/components/component-status"
       >
-
-![IBM rebus](../images/rebus.svg)
-
   </ResourceCard>
 </Column>
 </Row>
@@ -88,34 +77,33 @@ export default HomepageTemplate;
 <Row className="resource-card-group">
 <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
+      color="dark"
       subTitle="Learn more about"
       title="Contributing"
       aspectRatio="2:1"
       actionIcon="arrowRight"
       href="/contributing"
       >
-
-![IBM rebus](../images/rebus.svg)
-
   </ResourceCard>
 </Column>
-</Row>
-<Row>
 <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
+      color="dark"
       subTitle="Open an issue on our"
       title="GitHub repo"
       aspectRatio="2:1"
       actionIcon="arrowRight"
       href="https://github.ibm.com/CDAI-design/CDAI-design-website/issues"
       >
+<MdxIcon name="github" color="inverse" />
 
-![Github icon](../images/github-icon.png)
+
 
   </ResourceCard>
 </Column>
 <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
+      color="dark"
       subTitle="Get in touch via our"
       title="Slack channel"
       aspectRatio="2:1"
