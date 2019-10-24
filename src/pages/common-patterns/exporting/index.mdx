@@ -1,6 +1,6 @@
 ---
-title: Exporting
-description: Exporting a resource saves data in a different format, external to the system.
+title: Export
+description: Exporting a resource saves data in a different format, external to the system. Downloading saves data in an unchanged format.
 ---
 import { Launch16 } from '@carbon/icons-react';
 
@@ -8,11 +8,9 @@ import { Launch16 } from '@carbon/icons-react';
 
 When exporting something you have the ability to change the format of the object or resource you are exporting out external to the system.
 
+Downloading transfers a resource from a remote system to a local system without changing its format. 
+
 </PageDescription>
-
-#### Status:
-
-Experimental
 
 #### Maintainers:
 
@@ -20,8 +18,8 @@ Experimental
 
 <AnchorLinks>
 
-<AnchorLink>Export with an intuitive default name</AnchorLink>
-<AnchorLink>Export with an editable name</AnchorLink>
+<AnchorLink>Intuitive default name</AnchorLink>
+<AnchorLink>Editable name</AnchorLink>
 <AnchorLink small>Optional extras</AnchorLink>
 
 </AnchorLinks>
@@ -30,9 +28,13 @@ Experimental
 
 <Caption>Example of a export pattern using a modal</Caption>
 
-## Export with an intuitive default name
+![Contextual image](images/download0.png)
 
-When the resource is given an intuitive name by default and there is no choice of export location, the export occurs on the click of the Export button and nothing additional is displayed.
+<Caption>Example of a download pattern using a modal</Caption>
+
+## Intuitive default name
+
+When the resource is given an intuitive name by default and there is no choice of export/download location, the export occurs on the click of the Export button and nothing additional is displayed.
 
 <Row>
 <Column colLg={8}>
@@ -42,9 +44,19 @@ When the resource is given an intuitive name by default and there is no choice o
 </Column>
 </Row>
 
-## Export with an editable name
+<Row>
+ <Column colLg={8}>
 
-When exporting with an editable name, a dialog should be presented to the user displaying an editable textbox that is pre-populated with the default name for the file.
+![Example of a download button](images/download1.png)
+
+ </Column>
+</Row>
+
+## Editable name
+
+When exporting/downloading with an editable name, a dialog should be presented to the user displaying an editable textbox that is pre-populated with the default name for the file.
+
+When downloading, the file extension is not displayed. 
 
 <Row>
 <Column colLg={8}>
@@ -64,7 +76,7 @@ When exporting with an editable name, a dialog should be presented to the user d
 
 ## Optional extras
 
-### Specify export location
+### Specify export or download location
 
 When specifying the download location of a resource, clicking the primary “download” button activates the browser's default location panel. The file is downloaded once a location is selected and the user clicks Save.
 
