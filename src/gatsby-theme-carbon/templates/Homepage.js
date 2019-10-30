@@ -18,7 +18,7 @@ const SecondLeftText = () => <p>IBM Cloud, Data and AI</p>;
 
 const SecondRightText = () => (
   <p>
-    Incorporating: Analytics Platform, Business Analytics, IBM Cloud Integration, IBM Cloud Platform, and IBM Watson Data & AI.
+    Incorporating: Analytics Platform, Blockchain, Business Analytics, IBM Cloud Integration, IBM Cloud Platform, and IBM Watson Data & AI.
   </p>
 );
 
