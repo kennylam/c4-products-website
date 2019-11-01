@@ -78,6 +78,8 @@
       path: /components/multistep-confirmation
     - title: "Persistent banner (com.)"
       path: /components/persistent-banner
+    - title: "Filterable search tab dropdown (pat.)"
+      path: /common-patterns/filterable-search-tab-dropdown
     - title: "Learning panel (pat.)"
       path: /cloud-pak-guidelines/learning-panel
     - title: "Reordering (pat.)"
