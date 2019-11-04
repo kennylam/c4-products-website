@@ -3,7 +3,7 @@ import cx from 'classnames';
 import { Launch16, LogoGithub32 } from '@carbon/icons-react';
 import { mdxIcon, iconInverse } from './MdxIcon.module.scss';
 
-import Slack from '../../images/slack-icon.png';
+import Slack from '../../images/Slack-icon.png';
 
 const localIcons = {
   Slack,
