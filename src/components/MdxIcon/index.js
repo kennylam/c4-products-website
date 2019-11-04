@@ -1,25 +1,17 @@
 import React from 'react';
 import cx from 'classnames';
-import { LogoGithub32, Bee32 } from '@carbon/icons-react';
+import { Launch16, LogoGithub32 } from '@carbon/icons-react';
 import { mdxIcon, iconInverse } from './MdxIcon.module.scss';
 
-import sketch from './icons/sketch.svg';
-import ase from './icons/ase.png';
-import codesandbox from './icons/codesandbox.svg';
-import codepen from './icons/codepen.svg';
-import illustrator from './icons/illustrator.svg';
+import Slack from '../../images/Slack-icon.png';
 
 const localIcons = {
-  sketch,
-  ase,
-  codesandbox,
-  codepen,
-  illustrator,
+  Slack,
 };
 
 const carbonIcons = {
-  github: LogoGithub32,
-  bee: Bee32,
+  Launch16,
+  LogoGithub32,
 };
 
 const iconColor = {
