@@ -1,9 +1,9 @@
-- title: Getting started
+- title: About
   pages:
-    - path: /getting-started
-- title: Design guidelines
+    - path: /about
+- title: Universal guidelines
   pages:
-    - path: /design-guidelines
+    - path: /universal-guidelines
 - title: Components
   pages:
     - title: Component status
@@ -46,30 +46,48 @@
       path: /common-patterns/order-summary/usage
     - title: Saving
       path: /common-patterns/saving/usage
-    - title: State
-      path: /common-patterns/state
     - title: Uploading
       path: /common-patterns/uploading
-- title: Cloud Pak guidelines
+- title: Cloud Pak for Applications
   pages:
+    - title: "About"
+      path: /cp4-applications
+    - title: "Another page"
+      path: /cp4-applications/another-page
+  separator: true
+- title: Cloud Pak for Automation
+  pages:
+    - title: "About"
+      path: /cp4-automation
+    - title: "Another page"
+      path: /cp4-automation/another-page
+- title: Cloud Pak for Data
+  pages:
+    - title: "About"
+      path: /cp4-data
+    - title: "Another page"
+      path: /cp4-automation/another-page
+- title: Cloud Pak for Integration
+  pages:
+    - title: "About"
+      path: /cp4-integration
     - title: "Navigation"
       path: /cloud-pak-guidelines/navigation/usage
     - title: "Landing page"
       path: /cloud-pak-guidelines/landing-page/usage
-    - title: "Learning panel"
-      path: /cloud-pak-guidelines/learning-panel
-    - title: "ICP4App. product portfolio"
-      path: /cloud-pak-guidelines/icp4app
-    - title: "ICP4Aut. product portfolio"
-      path: /cloud-pak-guidelines/icp4aut
-    - title: "ICP4Data product portfolio"
-      path: /cloud-pak-guidelines/icp4d
-    - title: "ICP4Int. product portfolio"
-      path: /cloud-pak-guidelines/icp4i
-  separator: true
+- title: Cloud Pak for Multicloud Management
+  pages:
+    - title: "About"
+      path: /cp4-multicloud-management
+    - title: "Another page"
+      path: /cp4-multicloud-management/another-page
 - title: Cloud Platform guidelines
   pages:
     - path: /cloud-pal-guidelines
+  separator: true
+- title: Watson Studio guidelines
+  pages:
+    - path: /watson
 - title: Work in progress
   pages:
     - title: "Button menu (com.)"
@@ -84,6 +102,8 @@
       path: /cloud-pak-guidelines/learning-panel
     - title: "Reordering (pat.)"
       path: /common-patterns/reordering
+    - title: "State (pat.)"
+      path: /common-patterns/state
   separator: true
 - title: Contributing
   pages:
