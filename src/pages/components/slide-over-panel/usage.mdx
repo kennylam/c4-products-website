@@ -3,38 +3,27 @@ title: Slide-over panel
 tabs: ['Usage', 'Code']
 ---
 
-<Row>
-  <Column colLg={8}>
-
-![Contextual image](images/0.png)
-
-  </Column>
-</Row>
-
-## Things to consider
-- This component will overlay on top of the main page content beneath it
-- How much content will be contained inside the panel
-- Is dark or light theme more appropriate? 
-
-#### Options
-
-<AnchorLinks>
-  <AnchorLink>Overview</AnchorLink>
-  <AnchorLink>Sizes</AnchorLink>
-  <AnchorLink>Themes</AnchorLink>
-</AnchorLinks>
-
-## Overview
-
-Component created for a slide over panel, which opens as the result of a user
-action and can be opened from anywhere in the product UI and will overlay the
+The slide over panel opens as the result of a user
+action and can be opened from anywhere in the product UI. It will overlay the
 main page content. 
 
-This component is an empty framework that can have product defined, context
-relevant, content.
+This component is an empty framework that can have product-defined context
+relevant content.
+
+![Example of a large slide over panel](images/1.png)
+
+## Things to consider
+- This component will overlay on top of the main page content
+- How much content will be contained inside the panel
+
+### Options
+
+<AnchorLinks>
+  <AnchorLink>Sizes</AnchorLink>
+  <AnchorLink>Overlay</AnchorLink>
+</AnchorLinks>
 
 ## Sizes
-
 There are three fixed sizes (small, medium and large), products should decide
 which size is appropriate depending on the content required within the side
 panel. 
@@ -48,16 +37,16 @@ panel. 
 ### Small
 
 <Row>
-  <Column colLg={10}>
+  <Column colLg={8}>
 
-![Example](images/1.png)
+![Example](images/2.png)
 
   </Column>
 </Row>
 <Row>
-  <Column colLg={10}>
+  <Column colLg={8}>
 
-![Example](images/2.png)
+![Example](images/3.png)
 
   </Column>
 </Row>
@@ -65,9 +54,9 @@ panel. 
 ### Medium
 
 <Row>
-  <Column colLg={10}>
+  <Column colLg={8}>
 
-![Example](images/3.png)
+![Example](images/4.png)
 
   </Column>
 </Row>
@@ -75,31 +64,33 @@ panel. 
 ### Large / Large & draggable
 
 <Row>
-  <Column colLg={10}>
-
-![Example](images/4.png)
-
-  </Column>
-</Row>
-<Row>
-  <Column colLg={10}>
+  <Column colLg={8}>
 
 ![Example](images/5.png)
 
   </Column>
 </Row>
+<Row>
+  <Column colLg={8}>
 
-## Themes
+![Example](images/6.png)
 
-The component will be available in the light and dark themes. The
-recommendation is for products to use the light theme and Paks to use the
-dark theme.
+  </Column>
+</Row>
 
-<InlineNotification kind="warning">
+## Overlay
 
-  **In progress:** This section is still under progress and will be updated accordingly.
+The default state of the component is to overlay the page content with the standard Carbon-theme overlay. However, in some situations, the content of the page is used to navigate the content of the slide-over panel. 
+In this case, do not overlay (darken) the content of the page below the panel. 
+Ensure that there is also a method for navigation inside the panel so that the user does not need to rely on the navigation method below the panel. 
 
-</InlineNotification>
+<Row>
+  <Column colLg={8}>
+
+![Contextual image](images/7.png)
+
+  </Column>
+</Row>
 
 ## Linked to
 
