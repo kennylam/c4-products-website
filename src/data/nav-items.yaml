@@ -84,6 +84,8 @@
       path: /cloud-pak-guidelines/learning-panel
     - title: "Reordering (pat.)"
       path: /common-patterns/reordering
+    - title: Text bar
+      path: /common-patterns/text-bar
   separator: true
 - title: Contributing
   pages:
