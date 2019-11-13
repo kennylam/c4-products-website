@@ -7,6 +7,10 @@ const links = [
     href: 'https://github.ibm.com/CDAI-design/CDAI-design-website',
   },
   {
+    title: 'Our Slack channel',
+    href: 'https://ibm-casdesign.slack.com/archives/CQGR0HC05',
+  },
+  {
     title: 'Carbon Design System',
     href: 'https://www.carbondesignsystem.com/',
   },

@@ -1,7 +1,6 @@
 import React from 'react';
 import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
-import { mainList } from './Homepage.module.scss';
 
 import Carbon from '../../images/carbon.jpg';
 
@@ -18,7 +17,7 @@ const SecondLeftText = () => <p>IBM Cloud, Data and AI</p>;
 
 const SecondRightText = () => (
   <p>
-    Incorporating: Analytics Platform, Business Analytics, IBM Cloud Integration, IBM Cloud Platform, and IBM Watson Data & AI.
+    Incorporating: Analytics Platform, Blockchain, Business Analytics, IBM Cloud Integration, IBM Cloud Platform, and IBM Watson Data & AI.
   </p>
 );
 
