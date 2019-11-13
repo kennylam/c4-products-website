@@ -1,15 +1,15 @@
 import React from 'react';
-import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
+import { HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
-
-import Carbon from '../../images/carbon.jpg';
+import HomepageVideo from '../../components/HomepageVideo/HomepageVideo';
+import { bannerText } from './Homepage.module.scss';
 
 const FirstLeftText = () => <p>Unifying the portfolio experience of <strong>IBM Cloud, Data and AI</strong> products.</p>;
 
 const FirstRightText = () => (
   <div>
-    <p class="homepage">This site provides guidance and resources for designers working on products within the <strong>Cloud, Data and AI</strong> portfolio.</p>
-    <p class="homepage">Where any of our products have requirements not already met by Carbon, these are provided as additional patterns and components here.</p>
+    <p className="homepage">This site provides guidance and resources for designers working on products within the <strong>Cloud, Data and AI</strong> portfolio.</p>
+    <p className="homepage">Where any of our products have requirements not already met by Carbon, these are provided as additional patterns and components here.</p>
   </div>
 );
 
@@ -24,7 +24,20 @@ const SecondRightText = () => (
 const BannerText = () => <h1>Cloud, Data and AI<br />Common Pattern Asset Library</h1>;
 
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,
+  Banner: (
+    <>
+      <section className="homepage--header">
+        <div className="bx--grid">
+          <div className="bx--row">
+            <div className={'bx--col-lg-12 ' + bannerText}>
+              {BannerText()}
+            </div>
+            <HomepageVideo />
+          </div>
+        </div>
+      </section>
+    </>
+  ),
   FirstCallout: (
     <HomepageCallout
       backgroundColor="#030303"

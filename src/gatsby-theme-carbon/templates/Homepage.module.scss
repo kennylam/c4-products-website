@@ -1,7 +1,15 @@
-/*
-.callout-link {
-  @include carbon--type-style('body-long-02');
-  margin-top: $spacing-06;
-  display: block;
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  z-index: 1;
 }
-*/
+
+:global {
+  .homepage--header {
+    height:560px;
+  }
+}
