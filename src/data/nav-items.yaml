@@ -102,6 +102,8 @@
       path: /cloud-pak-guidelines/learning-panel
     - title: "Reordering (pat.)"
       path: /common-patterns/reordering
+    - title: Text bar (com.)
+      path: /common-patterns/text-bar
     - title: "State (pat.)"
       path: /common-patterns/state
   separator: true
