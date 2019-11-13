@@ -85,7 +85,7 @@
   pages:
     - path: /cloud-pal-guidelines
   separator: true
-- title: Watson Studio guidelines
+- title: Watson guidelines
   pages:
     - path: /watson
 - title: Work in progress
