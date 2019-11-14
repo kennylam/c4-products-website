@@ -1,6 +1,11 @@
-- title: About
+- title: Get started
   pages:
-    - path: /about
+    - title: About
+      path: /get-started/about
+    - title: Contacts
+      path: /get-started/contacts
+    - title: Contributing
+      path: /get-started/contributing
 - title: Universal guidelines
   pages:
     - path: /universal-guidelines
@@ -23,31 +28,31 @@
 - title: Patterns
   pages:
     - title: Pattern status
-      path: /common-patterns/pattern-status
+      path: /patterns/pattern-status
     - title: Create flows
-      path: /common-patterns/creation-flows/usage
+      path: /patterns/creation-flows/usage
     - title: Edit and update
-      path: /common-patterns/edit
-    - title: Export
-      path: /common-patterns/exporting
-    - title: Generating an API key
-      path: /common-patterns/generating-api-key/usage
-    - title: Import
-      path: /common-patterns/importing
-    - title: Remove
-      path: /common-patterns/removing/usage
-    - title: Advanced filtering
-      path: /common-patterns/advanced-filtering
+      path: /patterns/edit
     - title: Empty state
-      path: /common-patterns/empty-state/usage
+      path: /patterns/empty-state/usage
+    - title: Export
+      path: /patterns/exporting
+    - title: Generating an API key
+      path: /patterns/generating-api-key/usage
+    - title: Import
+      path: /patterns/importing
+    - title: Remove
+      path: /patterns/removing/usage
+    - title: Advanced filtering
+      path: /patterns/advanced-filtering
     - title: HTTP errors
-      path: /common-patterns/http-errors
+      path: /patterns/http-errors
     - title: Order summary
-      path: /common-patterns/order-summary/usage
+      path: /patterns/order-summary/usage
     - title: Saving
-      path: /common-patterns/saving/usage
+      path: /patterns/saving/usage
     - title: Uploading
-      path: /common-patterns/uploading
+      path: /patterns/uploading
 - title: Cloud Pak for Applications
   pages:
     - title: "About"
@@ -72,9 +77,9 @@
     - title: "About"
       path: /cp4-integration
     - title: "Navigation"
-      path: /cloud-pak-guidelines/navigation/usage
+      path: /cp4-integration/navigation/usage
     - title: "Landing page"
-      path: /cloud-pak-guidelines/landing-page/usage
+      path: /cp4-integration/landing-page/usage
 - title: Cloud Pak for Multicloud Management
   pages:
     - title: "About"
@@ -87,26 +92,23 @@
   separator: true
 - title: Watson guidelines
   pages:
-    - path: /watson
+    - path: /watson-guidelines
 - title: Work in progress
   pages:
     - title: "Button menu (com.)"
-      path: /components/button-menu
+      path: /wip/button-menu
     - title: "Multistep confirmation (com.)"
-      path: /components/multistep-confirmation
+      path: /wip/multistep-confirmation
     - title: "Persistent banner (com.)"
-      path: /components/persistent-banner
+      path: /wip/persistent-banner
+    - title: "Text bar (com.)"
+      path: /wip/text-bar
     - title: "Filterable search tab dropdown (pat.)"
-      path: /common-patterns/filterable-search-tab-dropdown
+      path: /wip/filterable-search-tab-dropdown
     - title: "Learning panel (pat.)"
-      path: /cloud-pak-guidelines/learning-panel
+      path: /wip/learning-panel
     - title: "Reordering (pat.)"
-      path: /common-patterns/reordering
-    - title: Text bar (com.)
-      path: /common-patterns/text-bar
+      path: /wip/reordering
     - title: "State (pat.)"
-      path: /common-patterns/state
+      path: /wip/state
   separator: true
-- title: Contributing
-  pages:
-    - path: /contributing
