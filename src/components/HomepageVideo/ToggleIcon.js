@@ -1,18 +1,14 @@
 import React from 'react';
 import {
-  PlayOutline24,
-  PlayOutlineFilled24,
-  PauseOutline24,
-  PauseOutlineFilled24,
+  PlayOutlineFilled32,
+  PauseOutlineFilled32,
 } from '@carbon/icons-react';
 
-const Pause = ({ hovering }) =>
-  hovering ? <PauseOutlineFilled24 /> : <PauseOutline24 />;
+const Pause = () => <PauseOutlineFilled32 />;
 
-const Play = ({ hovering }) =>
-  hovering ? <PlayOutlineFilled24 /> : <PlayOutline24 />;
+const Play = () => <PlayOutlineFilled32 />;
 
-const ToggleIcon = ({ paused, hovering }) =>
-  paused ? <Play hovering={hovering} /> : <Pause hovering={hovering} />;
+const ToggleIcon = ({ paused }) =>
+  paused ? <Play /> : <Pause />;
 
 export default ToggleIcon;

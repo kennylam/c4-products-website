@@ -6,6 +6,11 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   z-index: 1;
+  pointer-events: none;
+}
+
+.first-right-text {
+  padding-bottom: 1rem;
 }
 
 :global {

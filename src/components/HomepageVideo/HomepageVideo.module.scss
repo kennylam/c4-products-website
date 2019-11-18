@@ -1,12 +1,15 @@
-.homepage-video--main {
+@import '../../styles/mixins';
+
+.homepage-video-main {
   width: 1900px;
   max-width: 240%;
+  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.homepage-video--wrapper {
+.homepage-video-wrapper {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -15,7 +18,7 @@
   padding-bottom: 56.25%; //needed to make video fit container
 }
 
-.homepage-video--wrapper video {
+.homepage-video-wrapper video {
   width: 100%;
   object-fit: cover;
   @include carbon--breakpoint-down(1260px) {
@@ -27,37 +30,40 @@
   }
 }
 
-.homepage--video--overlay {
+.homepage-video-controls {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: $carbon--black-100;
-  opacity: 0.6;
-}
-
-.homepage-video--controls {
-  position: absolute;
-  bottom: rem(14px);
-  left: 1rem;
-  height: rem(24px);
-  width: rem(24px);
-  background: transparent;
+  bottom: 3rem;
+  right: 4rem;
+  height: rem(32px);
+  width: rem(32px);
+  background: #fff;
+  background-clip: content-box;
   outline: none;
-  border: none;
+  border: 3px solid transparent;
+  border-radius: 50%;
   padding: 0;
-  z-index: 10; //need this to be above dots overlay
+  opacity: 0;
 
-  @include carbon--breakpoint('lg') {
-    left: 271px;
+  .homepage-video-main:hover & {
+    opacity: 1;
+  }
+
+  @include carbon--breakpoint-down('md') {
+    bottom: 6rem;
   }
 }
 
-.homepage-video--controls svg {
-  fill: white;
+.homepage-video-controls svg {
+  margin: -3px 0 0 -3px;
+  fill: #0062ff;
+  transition: fill .3s;
+
+  &:hover {
+    fill: $carbon--gray-90;
+  }
 }
 
-.homepage-video--controls:focus {
-  // @include focus-outline('outline');
+.homepage-video-controls:focus {
+  @include focus-outline('outline');
+  opacity: 1;
 }
