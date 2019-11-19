@@ -10,12 +10,6 @@ tabs: ['Usage']
 
 ### Uploading is transferring a resource from a local system to a remote system.
 
-<AnchorLinks>
-  <AnchorLink>Overview</AnchorLink>
-  <AnchorLink>Location</AnchorLink>
-  <AnchorLink>Upload methods</AnchorLink>
-</AnchorLinks>
-
 <Row>
   <Column colLg={8}>
 
@@ -27,7 +21,6 @@ tabs: ['Usage']
 ### Things to consider
 
 - Is the action uploading or is it importing?
-- What are the allowed upload methods?
 - How many files are likely to be uploaded?
 
 ### Overview
@@ -61,7 +54,7 @@ to open a modal or inline in a full page form, slide-in or slide-over panel.
  </Column>
 </Row>
 
-### Location
+### Location options
 
 Upload can take place in a modal, full page view, or in a side panel. 
 Do not use upload in a modal when multiple files are uploaded. 
@@ -88,33 +81,6 @@ Do not use upload in a modal when multiple files are uploaded.
 
 ![Full page uploading](images/6.png)
 <Caption>There is no maximum number of files in a full page upload.</Caption>
-
- </Column>
-</Row>
-
-### Upload methods
-
-- Drag and Drop
-- Choose a file
-- Specify a URL
-
-Wherever possible there should be a drag and drop zone, using the Carbon File
-upload component, which also allows the user to click and browse local folders to select a file.
-Note that file selection should be restricted to only allowed file types.
-
-<Row>
- <Column colLg={8}>
-
-![Where users can upload from non-local locations, provide a URL entry box.](images/7.png)
-<Caption>Where users can upload from non-local locations, provide a URL entry box.</Caption>
-
- </Column>
-</Row>
-<Row>
- <Column colLg={8}>
-
-![Other upload methods are disabled when the user interacts with one.](images/8.png)
-<Caption>Other upload methods are disabled when the user interacts with one.</Caption>
 
  </Column>
 </Row>
