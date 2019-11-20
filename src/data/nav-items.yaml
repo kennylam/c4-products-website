@@ -15,6 +15,8 @@
       path: /components/component-status
     - title: Cards
       path: /components/card/usage
+    - title: "File uploader"
+      path: /components/file-uploader/usage
     - title: "Headers"
       path: /components/headers
     - title: "Page header"
@@ -51,8 +53,6 @@
       path: /patterns/order-summary/usage
     - title: Saving
       path: /patterns/saving/usage
-    - title: Uploading
-      path: /patterns/uploading
 - title: Cloud Pak for Applications
   pages:
     - title: "About"
