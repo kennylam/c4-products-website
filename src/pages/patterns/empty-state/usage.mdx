@@ -14,6 +14,15 @@ tabs: ['Usage', 'Code']
 Additional guidelines here provide CD&AI Designers the header text and image in 5 key scenarios. 
 Images are provided in the reusable components, but can be found along with the default text in the table. 
 
+For errors that require a full screen takeover, orwhere none of the page content can be shown, please refer to the HTTP errors pattern. 
+
+<AnchorLinks>
+  <AnchorLink>The different empty state scenarios</AnchorLink>
+  <AnchorLink>Variants</AnchorLink>
+  <AnchorLink>Further guidelines</AnchorLink>
+</AnchorLinks>
+
+
 ## Approach
 Empty states can occur for a number of reasons (see next section).
 While each of the scenarios is different, for each one the written content should follow this basic structure:
@@ -24,6 +33,13 @@ While each of the scenarios is different, for each one the written content shoul
 
 **A call-to-action button** in some cases.
 
+<Row>
+ <Column colLg={8}>
+
+ ![Example of an Empty state](images/ContextualImage.png)
+
+ </Column>
+</Row>
 
 ## The different empty state scenarios
 
@@ -35,7 +51,7 @@ _(Note: the generic loading state covers most situations. We've just included th
 
 **Heading:** We’re currently still deploying.
 
-**Sub-text:** When we’re finished, you’ll see your _variable_ here. _(Plus optional extra sentence to describe the resource here, if required.)_
+**Sub-text:** When we’re finished, you’ll see your _[variable]_ here. _(Plus optional extra sentence to describe the resource here, if required.)_
 
 **CTA button:** _(No CTA button required)_
 
@@ -56,12 +72,11 @@ _(Note: the generic loading state covers most situations. We've just included th
  </Column>
 </Row>
 
-
 ### API error
 
 **Heading:** Uh oh. Something’s not quite working.
 
-**Sub-text:** _(No need for any sub-text)_
+**Sub-text:** _(Optional - for example an error code, what the problem is, and how to fix it)_
 
 **CTA button:** Try again? _(Clicking this button would resend the request / refresh the view)_
 
@@ -107,7 +122,7 @@ _No need for any further text as this is a common user experience. Users know to
 
 ### There aren’t any objects yet
 
-**Heading:** You don’t currently have any _variable_.
+**Heading:** You don’t currently have any _[variable]_.
 
 **Sub-text:** _(Optional extra sentence to describe the resource.)_
 
@@ -129,3 +144,88 @@ _No need for any further text as this is a common user experience. Users know to
 
  </Column>
 </Row>
+
+### Not authorised
+
+**Heading:** _TBC_
+
+**Sub-text:** _TBC_
+
+**CTA button:** _TBC_
+
+<Row>
+ <Column colLg={2}>
+
+ <Caption> <a href="resources/EmptyState-Notauthorisedsmall90px.svg" download>Download small</a> </Caption>
+
+![Not authorised empty state image](resources/EmptyState-notauthorisedsmall90px.svg)
+
+ </Column>
+
+ <Column colLg={2}>
+ <Caption> <a href="resources/EmptyState-Notauthorisedlarge.svg" download>Download large</a> </Caption>
+
+ ![Still deploying empty state image large](resources/EmptyState-Notauthorisedlarge.svg)
+
+ </Column>
+</Row>
+
+## Variants
+
+### Large variant
+The large variant of empty state includes a more detailed version of the supporting image. This layout is intended to be used in large spaces of the UI, such as empty tables and side-panels. In this variant, the image is placed to the left of the text, with the text being vertically centred.
+
+#### Tables
+When possible, it is important to show the column headers alongside the empty state component, to provide further context into what would appear once the table was filled. However, if this is not possible, the component can be used without. 
+
+<Row>
+ <Column colLg={6}>
+
+ ![Example of the large variant with table headers](images/1.png)
+
+ </Column>
+</Row>
+<Row>
+ <Column colLg={6}>
+
+ ![Example of the large variant omitting table headers](images/2.png)
+
+ </Column>
+</Row>
+
+#### Side panels
+Side panels also use the large variant, but depending on the width of the panel, the content may need to stack. Side panels are deemed appropriate for the larger variant due to the large amount of vertical space that they provide. 
+
+<Row>
+ <Column colLg={6}>
+
+ ![Example of the large variant within a side panel](images/3.png)
+
+ </Column>
+</Row>
+
+#### Full page layout
+
+TBC.
+
+### Small variant
+For tiles and widgets, a small variant should be used. In this case, the image is positioned top left of the supporting text. If the tile is so small that the component doesn’t fit, then the image can be removed to allow for this. 
+
+<Row>
+ <Column colLg={6}>
+
+ ![Example of the small variant within a large widget](images/4.png)
+
+ </Column>
+</Row>
+
+<Row>
+ <Column colLg={6}>
+
+ ![Example of the small variant within a small widget](images/5.png)
+
+ </Column>
+</Row>
+
+## Further guidelines
+What to do when more than one empty state appears on the page? TBC
