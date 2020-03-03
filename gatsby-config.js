@@ -26,5 +26,13 @@ module.exports = {
         display: 'browser',
       },
     },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '4',
+        matomoUrl: 'https://hcd-matomo.w3ibm.mybluemix.net',
+        siteUrl: 'https://pages.github.ibm.com/CDAI-design/CDAI-design-website',
+      }
+    }
   ],
 };
