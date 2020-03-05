@@ -53,13 +53,23 @@
       path: /patterns/order-summary/usage
     - title: Saving
       path: /patterns/saving/usage
+- title: Cross Cloud Pak guidelines
+  pages:
+    - title: "About"
+      path: /cloud-pak-guidelines
+    - title: "Login"
+      path: /cloud-pak-guidelines/login
+    - title: "Global navigation"
+      path: /cloud-pak-guidelines/global-navigation
+    - title: "Global search"
+      path: /cloud-pak-guidelines/global-search
+  separator: true
 - title: Cloud Pak for Applications
   pages:
     - title: "About"
       path: /cp4-applications
     - title: "Another page"
       path: /cp4-applications/another-page
-  separator: true
 - title: Cloud Pak for Automation
   pages:
     - title: "About"
