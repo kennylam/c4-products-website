@@ -6,9 +6,6 @@
       path: /get-started/contacts
     - title: Contributing
       path: /get-started/contributing
-- title: Universal guidelines
-  pages:
-    - path: /universal-guidelines
 - title: Components
   pages:
     - title: Component status
@@ -53,13 +50,23 @@
       path: /patterns/order-summary/usage
     - title: Saving
       path: /patterns/saving/usage
+- title: Guidance for all Cloud Paks
+  pages:
+    - title: "About"
+      path: /cp4-all-guidance
+    - title: "Login"
+      path: /cp4-all-guidance/login/usage
+    - title: "Global navigation"
+      path: /cp4-all-guidance/global-navigation/usage
+    - title: "Global search"
+      path: /cp4-all-guidance/global-search/usage
+  separator: true
 - title: Cloud Pak for Applications
   pages:
     - title: "About"
       path: /cp4-applications
     - title: "Another page"
       path: /cp4-applications/another-page
-  separator: true
 - title: Cloud Pak for Automation
   pages:
     - title: "About"
