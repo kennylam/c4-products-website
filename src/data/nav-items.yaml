@@ -50,6 +50,30 @@
       path: /patterns/order-summary/usage
     - title: Saving
       path: /patterns/saving/usage
+- title: Voice and tone guide
+  pages:
+    - title: Introduction
+      path: /voice-and-tone
+    - title: Our personality
+      path: /voice-and-tone/our-personality
+    - title: Content principles
+      path: /voice-and-tone/content-principles
+    - title: Language and grammar
+      path: /voice-and-tone/language-and-grammar
+    - title: Capitalization
+      path: /voice-and-tone/capitalization
+    - title: Punctuation
+      path: /voice-and-tone/punctuation
+    - title: Numbers
+      path: /voice-and-tone/numbers
+    - title: Navigation labels
+      path: /voice-and-tone/navigation-labels
+    - title: Button labels
+      path: /voice-and-tone/button-labels
+    - title: Terminology
+      path: /voice-and-tone/terminology
+    - title: Your feedback
+      path: /voice-and-tone/your-feedback
 - title: Guidance for all Cloud Paks
   pages:
     - title: "About"
@@ -96,7 +120,6 @@
 - title: Cloud Platform guidelines
   pages:
     - path: /cloud-pal-guidelines
-  separator: true
 - title: Watson guidelines
   pages:
     - path: /watson-guidelines
