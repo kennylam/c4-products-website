@@ -14,10 +14,8 @@
       path: /components/card/usage
     - title: "File uploader"
       path: /components/file-uploader/usage
-    - title: "Headers"
-      path: /components/headers
     - title: "Page header"
-      path: /components/page-header
+      path: /components/page-header/usage
     - title: "Slide-in panel"
       path: /components/slide-in-panel
     - title: "Slide-over panel"
@@ -35,17 +33,17 @@
     - title: Empty state
       path: /patterns/empty-state/usage
     - title: Export
-      path: /patterns/exporting
+      path: /patterns/exporting/usage
     - title: Generating an API key
       path: /patterns/generating-api-key/usage
     - title: Import
-      path: /patterns/importing
+      path: /patterns/importing/usage
     - title: Remove
       path: /patterns/removing/usage
     - title: Advanced filtering
-      path: /patterns/advanced-filtering
+      path: /patterns/advanced-filtering/usage
     - title: HTTP errors
-      path: /patterns/http-errors
+      path: /patterns/http-errors/usage
     - title: Order summary
       path: /patterns/order-summary/usage
     - title: Saving
