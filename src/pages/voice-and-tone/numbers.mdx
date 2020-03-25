@@ -33,11 +33,15 @@ For all UI content, save screen space and use numerals in place of words for num
   </Column>
 </Row>
 
-When writing large numbers, use commas for thousand separators (_2,000, 19,500, 500,000, etc._).
+When writing large numbers, use commas for thousand separators (for example, 2,000 and 19,500 and 500,000).
 
 ## Dates
 
-In your product UI, best practice is to localize all date and time data. This results in date and time data being displayed to the user in a format that conforms to their culture.
+> In visual designs use US formats for any example dates and times shown - but do ensure that all 
+data is correctly localized when the designs are built in code.
+
+In your product UI, be sure to localize all date and time data so that it will be displayed to your 
+users in a format that conforms to their culture. 
 
 For example, localization of dates will result in the following formats being displayed:
 
@@ -45,16 +49,14 @@ For example, localization of dates will result in the following formats being di
 - Day, Month, Year (Europe, South America, Australia)
 - Year, Month, Day (China and Japan)
 
-> In visual designs use US formats for any example dates and times shown - but do ensure that all data is correctly localized when the designs are built in code.
+There are multiple valid short and long date formats. Be sure to pick the most suitable format for your context, and be consistent. 
 
-Guidance re date components:
+Date component guidance:
 
 - **Day**: If relevant, the day of the week can be included and displayed in full (_Monday_) or abbreviated to the first 3 letters (_Mon_).
 - **Date**: The numerical date within the month (_1-31_). Don’t use abbreviations such as _st_, _nd_, _rd_, or _th_ for the day of the month.
 - **Month**: Can be displayed in numbers (_1-12_) or written out in full (_September_) or abbreviated to the first 3 letters (_Sep_).
 - **Year**: Displayed in 2 digits (_20_) or 4 digits (_2020_).
-
-There are multiple valid short and long date formats. Designers should pick the most suitable format for the specific context.
 
 Examples of date formats localized for different regions:
 
@@ -68,11 +70,13 @@ Examples of date formats localized for different regions:
 
 ## Time
 
-In your product UI, best practice is to localize all date and time data. This results in date and time data being displayed to the user in a format that conforms to their culture.
+> In visual designs use US formats for any example dates and times shown - but do ensure that all 
+data is correctly localized when the designs are built in code.
 
-> In visual designs use US formats for any example dates and times shown - but do ensure that all data is correctly localized when the designs are built in code.
+In your product UI, be sure to localize all date and time data so that it will be displayed to your 
+users in a format that conforms to their culture. 
 
-Guidance re time formats:
+Time format guidance:
 
 - Use colons to separate the different time units (_14:30_). Don’t add spaces between the colons and the numbers.
 - The 12-hour time format always includes AM or PM - with a space between the digits and the AM or PM (_5:30 AM; 5:30 PM_).
@@ -92,12 +96,12 @@ Examples of time formats localized for different regions:
 
 ## Currency
 
-Guidance re currency formats:
+Currency format guidance:
 
-- Use a currency symbol (such as _\$_).
-- Then show the amount.
-- Then display the appropriate internationally recognized [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217#Active_codes) (such as _USD_ for _US dollars_).
-- Don’t abbreviate a number to a letter, such as writing the letter K for “thousand”, or the letter M for "million".
+- Use a currency symbol, followed by the amount (for example, _\$1,000_).
+- Then leave a space and display the appropriate internationally recognized [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217#Active_codes) (such as _USD_ for _US dollars_).
+- Don’t abbreviate a number to a letter, such as writing the letter K for _thousand_, or the letter 
+M for _million_.
 
 <Row>
   <Column colMd={4} colLg={4}>
