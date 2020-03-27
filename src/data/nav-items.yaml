@@ -85,24 +85,6 @@
     - title: "Global search"
       path: /cp4-all-guidance/global-search/usage
   separator: true
-- title: Cloud Pak for Applications
-  pages:
-    - title: "About"
-      path: /cp4-applications
-    - title: "Another page"
-      path: /cp4-applications/another-page
-- title: Cloud Pak for Automation
-  pages:
-    - title: "About"
-      path: /cp4-automation
-    - title: "Another page"
-      path: /cp4-automation/another-page
-- title: Cloud Pak for Data
-  pages:
-    - title: "About"
-      path: /cp4-data
-    - title: "Another page"
-      path: /cp4-data/another-page
 - title: Cloud Pak for Integration
   pages:
     - title: "About"
@@ -111,18 +93,10 @@
       path: /cp4-integration/navigation/usage
     - title: "Landing page"
       path: /cp4-integration/landing-page/usage
-- title: Cloud Pak for Multicloud Management
-  pages:
-    - title: "About"
-      path: /cp4-multicloud-management
-    - title: "Another page"
-      path: /cp4-multicloud-management/another-page
 - title: Cloud Platform guidelines
   pages:
     - path: /cloud-pal-guidelines
-- title: Watson guidelines
-  pages:
-    - path: /watson-guidelines
+  separator: true
 - title: Work in progress
   pages:
     - title: "Button menu (com.)"
