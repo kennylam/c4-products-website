@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: 'Cloud, Data and AI Design',
     description: 'Design information for the Cloud, Data and AI organizations',
-    keywords: 'cloud,data,AI,design',
+    keywords: 'cloud,data,AI,design,pattern,asset,library,PAL',
   },
   plugins: [
     {
