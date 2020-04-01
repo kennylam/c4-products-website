@@ -12,7 +12,7 @@ const Content = () => (
           Slack
         </a>{' '}
         or open an issue in our {' '}
-        <a href="https://github.ibm.com/CDAI-design/CDAI-design-website/issues"> GitHub </a> repo.
+        <a href="https://github.ibm.com/CDAI-design/pal/issues"> GitHub </a> repo.
       </p>
   </>
 );

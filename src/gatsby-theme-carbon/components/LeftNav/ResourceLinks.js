@@ -4,7 +4,7 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 const links = [
   {
     title: 'Our GitHub repo',
-    href: 'https://github.ibm.com/CDAI-design/CDAI-design-website',
+    href: 'https://github.ibm.com/CDAI-design/pal',
   },
   {
     title: 'Our Slack channel',

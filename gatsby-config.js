@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/CDAI-design/CDAI-design-website',
+  pathPrefix: '/cdai-design/pal',
   siteMetadata: {
     title: 'Cloud, Data and AI Design',
     description: 'Design information for the Cloud, Data and AI organizations',
@@ -10,7 +10,7 @@ module.exports = {
       resolve: 'gatsby-theme-carbon',
       options: {
         repository: {
-          baseUrl: 'https://github.ibm.com/CDAI-design/CDAI-design-website',
+          baseUrl: 'https://github.ibm.com/cdai-design/pal',
           subDirectory: '/',
         },
       },
@@ -31,7 +31,7 @@ module.exports = {
       options: {
         siteId: '4',
         matomoUrl: 'https://hcd-matomo.w3ibm.mybluemix.net',
-        siteUrl: 'https://pages.github.ibm.com/CDAI-design/CDAI-design-website',
+        siteUrl: 'https://pages.github.ibm.com/cdai-design/pal',
       }
     }
   ],

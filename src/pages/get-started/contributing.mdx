@@ -11,7 +11,7 @@ title: Contributing
 ## Overview
 
 * The source, including all content,  of this website is held in IBM's
-internal Github Enterprise instance, here: <https://github.ibm.com/CDAI-design/CDAI-design-website>
+internal Github Enterprise instance, here: <https://github.ibm.com/CDAI-design/pal>
 
 * The site is based on gatsby-theme-carbon (<https://github.com/carbon-design-system/gatsby-theme-carbon>), with
 minimal changes.
@@ -20,7 +20,7 @@ minimal changes.
 
 * A travis build automatically builds and deploys updates to the master branch.
 PRs (git pull requests) are also built but not deployed, just to test that they build correctly.
-(<https://travis.ibm.com/CDAI-design/CDAI-design-website/builds>)
+(<https://travis.ibm.com/CDAI-design/pal/builds>)
 
 * Updates to the site are made via PRs that must pass
 the automated Travis build and review by at least one other authorised person.
@@ -45,8 +45,8 @@ the apprpriate permissions.
 Before you continue with the setup, request access to the CDAI-Design-Editors team from one of its maintainers.
 
 Unfortunately github does not make identifying maintainers easy. Try viewing the list of
-[contributors](https://github.ibm.com/CDAI-design/CDAI-design-website/graphs/contributors) or those who have [recently submitted
-commits](https://github.ibm.com/CDAI-design/CDAI-design-website/commits/master) to identify somebody active on the project.
+[contributors](https://github.ibm.com/CDAI-design/pal/graphs/contributors) or those who have [recently submitted
+commits](https://github.ibm.com/CDAI-design/pal/commits/master) to identify somebody active on the project.
 They should be able to either grant you access or identify a maintainer of the org or CDAI-Design-Editors team.
 
 ### Source Code Editor - VSCode
@@ -204,11 +204,11 @@ of host 'github.ibm.com' cannot be established... Are you sure you want to conti
 Type 'yes' and press the return key.
 </InlineNotification>
 
-### Clone the CDAI-design-website repository
+### Clone the pal repository
 
 At a MacOS terminal window `cd ~/Source` to the folder you created earlier in 'Configure MacOS settings' and then issue the command:
 ```
-git clone git@github.ibm.com:CDAI-design/CDAI-design-website.git
+git clone git@github.ibm.com:CDAI-design/pal.git
 ```
 
 ### Install the project dependencies, build it, open the prect for editing and start the development server
@@ -218,7 +218,7 @@ In the terminal window
 1. Change directory to the folder created by git clone
 
 ```
-cd CDAI-design-website
+cd pal
 ```
 
 2. Install the dependencies of the project by running.
@@ -261,7 +261,7 @@ you have the latest depencencies installed.
 
 ## Workflow - how to update the site
 
-1. Open the local clone of the CDAI-design-website repository in VSCode.
+1. Open the local clone of the pal repository in VSCode.
 
 2. Create a new branch by clicking on 'master' in the bottom left corner. Each set of
 changes needs to be in a separate PR for approval and merging. Each PR needs to
@@ -341,7 +341,7 @@ is not part of the normal display content. Unless you are really sure what you a
   changes reviewed and merged into the master branch (which will cause
   them to be deployed to the site).
 
-  a. Go to the master repository <https://github.ibm.com/CDAI-design/CDAI-design-website> and click on ‘Compare & pull requestʼ, which should
+  a. Go to the master repository <https://github.ibm.com/CDAI-design/pal> and click on ‘Compare & pull requestʼ, which should
     appear any time you have recently uploaded changes:
 
     ![Image of UI to use](images/17.png)
