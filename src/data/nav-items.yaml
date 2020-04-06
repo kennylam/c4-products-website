@@ -44,8 +44,6 @@
       path: /patterns/advanced-filtering/usage
     - title: HTTP errors
       path: /patterns/http-errors/usage
-    - title: Order summary
-      path: /patterns/order-summary/usage
     - title: Saving
       path: /patterns/saving/usage
 - title: Voice and tone guide
