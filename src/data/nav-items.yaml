@@ -24,6 +24,8 @@
       path: /components/slide-in-panel
     - title: "Slide-over panel"
       path: /components/slide-over-panel/usage
+    - title: "Text bar"
+      path: /components/text-bar
     - title: Widget
       path: /components/widget/usage
 - title: Patterns
@@ -114,8 +116,6 @@
       path: /wip/multistep-confirmation
     - title: "Persistent banner (com.)"
       path: /wip/persistent-banner
-    - title: "Text bar (com.)"
-      path: /wip/text-bar
     - title: "Filterable search tab dropdown (pat.)"
       path: /wip/filterable-search-tab-dropdown
     - title: "Learning panel (pat.)"
