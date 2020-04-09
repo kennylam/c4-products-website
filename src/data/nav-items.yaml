@@ -10,10 +10,14 @@
   pages:
     - title: Component status
       path: /components/component-status
+    - title: "Additional tag features"
+      path: /components/additional-tag-features
     - title: Cards
       path: /components/card/usage
     - title: "File uploader"
       path: /components/file-uploader/usage
+    - title: "Modified tabs"
+      path: /components/modified-tabs  
     - title: "Page header"
       path: /components/page-header/usage
     - title: "Slide-in panel"
@@ -26,6 +30,8 @@
   pages:
     - title: Pattern status
       path: /patterns/pattern-status
+    - title: Advanced filtering
+      path: /patterns/advanced-filtering/usage
     - title: Create flows
       path: /patterns/creation-flows/usage
     - title: Edit and update
@@ -36,16 +42,18 @@
       path: /patterns/exporting/usage
     - title: Generating an API key
       path: /patterns/generating-api-key/usage
+    - title: HTTP errors
+      path: /patterns/http-errors/usage
     - title: Import
       path: /patterns/importing/usage
     - title: Remove
       path: /patterns/removing/usage
-    - title: Advanced filtering
-      path: /patterns/advanced-filtering/usage
-    - title: HTTP errors
-      path: /patterns/http-errors/usage
     - title: Saving
       path: /patterns/saving/usage
+    - title: "Status icons"
+      path: /patterns/status-icons
+    - title: "Web terminal"
+      path: /patterns/web-terminal
 - title: Voice and tone guide
   pages:
     - title: Introduction

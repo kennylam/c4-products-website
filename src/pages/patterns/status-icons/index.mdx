@@ -1,0 +1,113 @@
+---
+title: Status icons
+---
+
+<PageDescription>
+
+_Status icons_ are an important method of communicating severity level information to users. The shapes and colors, communicate severity that enable users to quickly assess and identify status and respond accordingly.
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink>Overview</AnchorLink>
+  <AnchorLink>Designing with status notifications</AnchorLink>
+  <AnchorLink>Notification</AnchorLink>
+  <AnchorLink>Accessibility</AnchorLink>
+  <AnchorLink>Related components and patterns</AnchorLink>
+</AnchorLinks>
+
+## Overview
+
+It’s important to keep users informed and updated on a status change they should be aware of. Users should always be given appropriate and timely messages to help them understand whether they are moving towards their goal. Ensure your notifications are relevant, timely, and informative.
+
+Status is a summarization of the information we know about an object. The status of on object can be broken down into the following categories:
+
+- Status Evaluation of conditions based on a value system (normal, warning, critical)
+- State Position within a state machine (open, working, resolved, closed)
+- Severity Attribute of status affecting priority
+
+
+**Deverity status**
+- Fatal
+- Critical
+- Major
+- Warning
+- Undefined
+- Unknown
+- Normal
+
+## Designing with status icon notifications
+
+### When to use
+Use status icon notifications to inform users of important status changes and updates. Transparency is a core element of building user trust and is the first of Jakob Nielsen’s [10 usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/). They should be relevant to the user and as minimally disruptive as possible. There are two major use cases for notifications: task-generated and system-generated.
+
+#### Task-generated status icon notifications
+Task-generated notifications are initiated in response to user action during a specific task. They give users direct, immediate feedback. They should be placed in the region of the page the user is working in and be related to the user’s action.
+
+You might send a task-generated notification when:
+- A form is successfully submitted
+- There is a problem uploading a file
+- Credentials can’t be found
+
+#### System-generated notifications
+
+These notifications are initiated by the application or system, independent of user action. They provide updates on background system status or out-of-context events that have finished.
+
+You might send a system-generated notification when:
+- A user loses network connection
+- Planned system maintenance is coming soon
+- A new report is ready
+- The user’s login session is about to expire
+
+### When not to use
+
+Only send notifications where necessary. Confine each notification to the portion of the interface and workflow it is relevant to. Being interrupted creates a frustrating and discouraging experience for users, so this should be limited as much as possible. Additionally, frequent distractions [lower productivity](https://link.springer.com/chapter/10.1007/978-1-4842-4221-6_9#Sec22m) lower productivity and can lead to [alert fatigue](https://psnet.ahrq.gov/primer/alert-fatigue).
+
+## Notification status
+
+Notification status icons helps convey the information being communicated. These statuses correspond with a color and icon to provide a consistent, universal experience for users. Some products may require a major or minor warning system, this doesn’t indicate a requirement for all products to utilize both icons. The default Warning icon should be utilized by products not requiring both major and minor. Major should only be used in conjunction with minor and never as the only warning icon.
+
+![Status icon description](images/Icons.jpg)
+
+All icon art is available in the [Carbon icon library](https://carbondesignsystem.com/guidelines/icons/library/)
+
+### Deciding what to use
+
+| Status   | Action    | Color      | Icon       |
+| -------- | --------- | ---------- | ---------- |
+| Fatal    | Implies unavailable | `Black` | Misuse |
+| Critical    | Indicates a severe even that needs immediate attention | `Red 60` | Error |
+| Major    | Indicates a monitoring threshold has been breached, intended to alter a user before a critical even is triggered | `Orange 40` | Warning-inverted |
+| Minor    | Indicates the existence of a non-service affecting fault condition and that corrective action should be taken in order to prevent a more serious fault | `black` | Warning |
+| Undefined    | Indicates a value that is outside of an acceptable range or formatted incorrectly | `black` | Undefined |
+| Unknown    | Indicating the status of an object unknown | `black` | Unknown |
+| Normal    | Indicates the clearing of one or more previously reported alarms. Implies no issues are present. | `black` | Checkmark-square |
+
+#### Status in Tables 
+In table views the status icon should be shown in its own column. The user should be able to specify their preferences: icon (on/off), text (on/off), and background cell color (on/off). The icons size should be 16 pixels. When status is shown in a table, it should be a link (clickable). When selected, more details will be presented. This can be done in different ways depending on the data (message, property tab, details panel, etc.).
+
+#### Status in Topology 
+When showing status in topology views, the status icon should be treated as an overlay on top of the resource to which it is related. The user should have the option to turn the color behind the label on or off.
+
+One additional option is to show the status icons alone with a legend available for the description. This may be useful in charting and graphing views and topology viewers.
+
+## Accessibility 
+
+Accessible design not only helps users with disabilities; it provides better user experiences for everyone. The most common form of color blindness is red/green color blindness. The inability for some users to distinguish between red and green means that products cannot simply rely on color to show status. As a result, the status system relies on 3 key elements; color, shape, and symbol.
+
+For example, the Critical icon is not just "red", it is the sum of the following elements.
+Color = Red
+Shape = Circle
+Symbol = \
+
+Don’t use notifications that dismiss on a timer for critical or emergency messages. Some users with disabilities need more time to read or interact with messages and timed toasts may not provide sufficient time. [WCAG 2.1 success criterion 2.2.4 (AAA)](https://www.w3.org/WAI/WCAG21/Understanding/no-timing.html)
+
+Users should be able to manage or limit noncritical notifications. This gives users the control to reduce the number of distractions or disruptions they receive, which is particularly helpful for users with cognitive limitations. [WCAG 2.1 success criterion 2.2.3 (AAA)](https://www.w3.org/WAI/WCAG21/Understanding/interruptions.html)
+
+## Related components and patterns
+
+#### Components
+- [Noticications](https://www.carbondesignsystem.com/components/notification/code)
+
+#### Patterns
+- [Noticications](https://www.carbondesignsystem.com/patterns/notification-pattern)
