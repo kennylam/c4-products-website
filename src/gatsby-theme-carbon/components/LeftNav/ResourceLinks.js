@@ -3,6 +3,10 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 
 const links = [
   {
+    title: 'Download our Sketch kit',
+    href: 'https://github.ibm.com/CDAI-design/pal/raw/master/src/resources/sketch-kit/CDAI_design_kit_v01.sketch',
+  },
+  {
     title: 'Our GitHub repo',
     href: 'https://github.ibm.com/CDAI-design/pal',
   },

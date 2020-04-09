@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import { Launch16, LogoGithub32 } from '@carbon/icons-react';
+import { Launch16, LogoGithub32, Download16 } from '@carbon/icons-react';
 import { mdxIcon, iconInverse } from './MdxIcon.module.scss';
 
 import Slack from '../../images/Slack-icon.png';
@@ -12,6 +12,7 @@ const localIcons = {
 const carbonIcons = {
   Launch16,
   LogoGithub32,
+  Download16,
 };
 
 const iconColor = {
