@@ -17,7 +17,7 @@
     - title: "File uploader"
       path: /components/file-uploader/usage
     - title: "Modified tabs"
-      path: /components/modified-tabs  
+      path: /components/modified-tabs
     - title: "Page header"
       path: /components/page-header/usage
     - title: "Slide-in panel"
@@ -92,7 +92,6 @@
       path: /cp4-all-guidance/global-navigation/usage
     - title: "Global search"
       path: /cp4-all-guidance/global-search/usage
-  separator: true
 - title: Cloud Pak for Integration
   pages:
     - title: "About"
@@ -101,13 +100,6 @@
       path: /cp4-integration/navigation/usage
     - title: "Landing page"
       path: /cp4-integration/landing-page/usage
-- title: Cloud Platform guidelines
-  pages:
-    - path: /cloud-pal-guidelines
-  separator: true
-- title: Watson Experience Guide
-  pages:
-    - path: /watson-experience-guide
 - title: Work in progress
   pages:
     - title: "Button menu (com.)"

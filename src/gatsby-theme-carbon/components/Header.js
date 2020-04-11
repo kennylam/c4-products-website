@@ -3,7 +3,7 @@ import Header from 'gatsby-theme-carbon/src/components/Header';
 
 const CustomHeader = props => (
   <Header {...props}>
-    Cloud,&nbsp;Data&nbsp;and&nbsp;AI&nbsp;&gt;&nbsp;<span>Common Pattern Asset Library</span>
+    CD&AI&nbsp;Design&nbsp;&gt;&nbsp;<span>Pattern asset library</span>
   </Header>
 );
 
