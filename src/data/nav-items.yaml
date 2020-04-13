@@ -16,6 +16,8 @@
       path: /components/card/usage
     - title: "File uploader"
       path: /components/file-uploader/usage
+    - title: "Headers"
+      path: /components/headers
     - title: "Modified tabs"
       path: /components/modified-tabs
     - title: "Page header"
