@@ -19,10 +19,6 @@ const links = [
     href: 'https://www.carbondesignsystem.com/',
   },
   {
-    title: 'CD&AI > Persona toolkit',
-    href: 'https://cdai-persona.w3ibm.mybluemix.net/',
-  },
-  {
     title: 'IBM Cloud Platform guide',
     href: 'https://pages.github.ibm.com/ibmcloud/pal/',
   },
