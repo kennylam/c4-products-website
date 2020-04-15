@@ -3,7 +3,7 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 
 const links = [
   {
-    title: 'Download our Sketch kit',
+    title: 'Our Sketch kit',
     href: 'https://github.ibm.com/CDAI-design/pal/raw/master/src/resources/sketch-kit/CDAI_design_kit_v01.sketch',
   },
   {
@@ -17,6 +17,18 @@ const links = [
   {
     title: 'Carbon Design System',
     href: 'https://www.carbondesignsystem.com/',
+  },
+  {
+    title: 'IBM Cloud Platform guide',
+    href: 'https://pages.github.ibm.com/ibmcloud/pal/',
+  },
+  {
+    title: 'Watson Experience guide',
+    href: 'https://www.ibm.com/brand/systems/watson/',
+  },
+  {
+    title: 'Watson Moments guide',
+    href: 'https://w3.ibm.com/w3publisher/watson-embed/watson-moments',
   },
 ];
 
