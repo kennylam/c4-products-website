@@ -4,31 +4,15 @@ import Switcher, { SwitcherDivider, SwitcherLink } from 'gatsby-theme-carbon/src
 const DefaultChildren = () => {
   return (
     <>
-      <SwitcherLink href="https://ibm.com/design">IBM Design</SwitcherLink>
-      <SwitcherLink href="https://ibm.com/design/language">
-        IBM Design Language
-      </SwitcherLink>
-      <SwitcherLink href="https://ibm.com/brand">IBM Brand Center</SwitcherLink>
-      <SwitcherDivider>Design disciplines</SwitcherDivider>
-      <SwitcherLink href="https://www.carbondesignsystem.com/">
-        Product
-      </SwitcherLink>
-      <SwitcherLink href="https://www.ibm.com/standards/web/">
-        Digital
-      </SwitcherLink>
-      <SwitcherDivider>Design practices</SwitcherDivider>
-      <SwitcherLink href="https://www.ibm.com/design/thinking/">
-        Enterprise Design Thinking
-      </SwitcherLink>
-      <SwitcherLink href="https://www.ibm.com/design/research/">
-        IBM Design Research
-      </SwitcherLink>
-      <SwitcherLink href="https://www.ibm.com/design/ai">
-        IBM Design for AI
-      </SwitcherLink>
-      <SwitcherLink href="https://www.ibm.com/services/ibmix/">
-        IBM iX
-      </SwitcherLink>
+      <SwitcherDivider>CD&amp;AI Design sites</SwitcherDivider>
+        <SwitcherLink href="https://cdai-design.w3ibm.mybluemix.net/">CD&amp;AI Design home</SwitcherLink>
+        <SwitcherLink href="https://pages.github.ibm.com/cdai-design/pal/">Pattern asset library</SwitcherLink>
+        <SwitcherLink href="https://cdai-persona.w3ibm.mybluemix.net/">Persona toolkit</SwitcherLink>
+        <SwitcherLink href="https://pages.github.ibm.com/cdai-design/content-design/">Content design</SwitcherLink>
+      <SwitcherDivider>IBM Design sites</SwitcherDivider>
+        <SwitcherLink href="https://ibm.com/design">IBM Design</SwitcherLink>
+        <SwitcherLink href="https://ibm.com/design/language">IBM Design Language</SwitcherLink>
+        <SwitcherLink href="https://www.carbondesignsystem.com/">Carbon Design System</SwitcherLink>
     </>
   );
 };
