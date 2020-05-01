@@ -35,6 +35,7 @@ Status is a summarization of the information we know about an object. The status
 - Undefined
 - Unknown
 - Normal
+- Info
 
 ## Designing with status icon notifications
 
@@ -82,7 +83,7 @@ Notification status icons helps convey the information being communicated. These
   <tbody>
   <tr align="left" bgcolor="white">
     <td><img src="images/fatal.png" alt="Fatal light"/></td>
-    <td><img src="images/CDAIStatusIcons_FatalDark.png" alt="Fatal dark"/></td>
+    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_FatalDark.png" alt="Fatal dark"/></td>
     <td>Fatal</td>
     <td>Implies unavailable</td>
     <td>Black</td>
@@ -90,8 +91,8 @@ Notification status icons helps convey the information being communicated. These
     <td>Misuse</td>
   </tr>
   <tr align="left" bgcolor="white">
-    <td><img src="images/critical.png" alt="Critical Light"/></td>
-    <td><img src="images/CDAIStatusIcons_CriticalDark.png" alt="Critical Dark"/></td>
+    <td ><img src="images/critical.png" alt="Critical Light"/></td>
+    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_CriticalDark.png" alt="Critical Dark"/></td>
     <td>Critical</td>
     <td>Indicates a severe event that needs immediate attention</td>
     <td>`Red 60`</td>
@@ -100,7 +101,7 @@ Notification status icons helps convey the information being communicated. These
   </tr>
   <tr align="left" bgcolor="white">
     <td><img src="images/major.png" alt="Major Light"/></td>
-    <td><img src="images/CDAIStatusIcons_MajorDark.png" alt="Major Dark"/></td>
+    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_MajorDark.png" alt="Major Dark"/></td>
     <td>Major (warning)</td>
     <td>Indicates a threshold has been breached. Intended to alert a user before a critical event is triggered.<br></br>
 <em>Major (warning) should only be used in conjunction with Warning, and never as the only warning icon. </em></td>
@@ -110,7 +111,7 @@ Notification status icons helps convey the information being communicated. These
   </tr>
   <tr align="left" bgcolor="white">
     <td><img src="images/warning.png" alt="Warning Light"/></td>
-    <td><img src="images/CDAIStatusIcons_WarningDark.png" alt="Warning Dark"/></td>
+    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_WarningDark.png" alt="Warning Dark"/></td>
     <td>Minor/warning</td>
     <td>Indicates the existence of a non-service affecting fault condition and that corrective action should be taken in order to prevent a more serious fault</td>
     <td>`Yellow 20 + Grey 100`</td>
@@ -119,7 +120,7 @@ Notification status icons helps convey the information being communicated. These
   </tr>
   <tr align="left" bgcolor="white">
     <td><img src="images/undefined.png" alt="Undefined Light"/></td>
-    <td><img src="images/CDAIStatusIcons_UndefinedDark.png" alt="Undefined Dark"/></td>
+    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_UndefinedDark.png" alt="Undefined Dark"/></td>
     <td>Undefined</td>
     <td>Indicates a value that is outside of an acceptable range or formatted incorrectly</td>
     <td>`Purple 80`</td>
@@ -128,7 +129,7 @@ Notification status icons helps convey the information being communicated. These
   </tr>
   <tr align="left" bgcolor="white">
     <td><img src="images/unknown.png" alt="Unknown Light"/></td>
-    <td><img src="images/CDAIStatusIcons_UnknownDark.png" alt="Unknown Dark"/></td>
+    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_UnknownDark.png" alt="Unknown Dark"/></td>
     <td>Unknown</td>
     <td>Indicating the status of an object unknown</td>
     <td>`Grey 50`</td>
@@ -137,7 +138,7 @@ Notification status icons helps convey the information being communicated. These
   </tr>
     <tr align="left" bgcolor="white">
     <td><img src="images/normal.png" alt="Normal Light"/></td>
-    <td><img src="images/CDAIStatusIcons_NormalDark.png" alt="Normal Dark"/></td>
+    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_NormalDark.png" alt="Normal Dark"/></td>
     <td>Normal/harmless</td>
     <td>Indicates the clearing of one or more previously reported alarms. Implies no issues are present</td>
     <td>`Green 60`</td>
@@ -146,7 +147,7 @@ Notification status icons helps convey the information being communicated. These
   </tr>
   <tr align="left" bgcolor="white">
     <td><img src="images/CDAIStatusIcons_Info.png" alt="Info Light"/></td>
-    <td><img src="images/CDAIStatusIcons_InfoDark.png" alt="Info Dark"/></td>
+    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_InfoDark.png" alt="Info Dark"/></td>
     <td>Info</td>
     <td>Indicates information is available</td>
     <td>`Blue 60`</td>
@@ -170,17 +171,17 @@ One additional option is to show the status icons alone with a legend available 
 
 Accessible design not only helps users with disabilities; it provides better user experiences for everyone. The most common form of color blindness is red/green color blindness. The inability for some users to distinguish between red and green means that products cannot simply rely on color to show status. As a result, the status system relies on 3 key elements; color, shape, and symbol.
 
-For example, the Critical icon is not just "red", it is the sum of the following elements.
-Color = Red
-Shape = Circle
-Symbol = \
+For example, the Critical icon is not just "red", it is the sum of the following elements.  
+Color = Red  
+Shape = Circle  
+Symbol = \  
 
-Shape categories:
-Circle - All high level alerts. Something is broken and needs to be fixed.
-Triangle - All warnings.
-Square - Anything that is normal or benign.
-Diamond - Unknown or indeterminate.
-
+Shape categories:  
+Circle - All high level alerts. Something is broken and needs to be fixed.  
+Triangle - All warnings.  
+Square - Anything that is normal or benign.  
+Diamond - Unknown or indeterminate.  
+ 
 Don’t use notifications that dismiss on a timer for critical or emergency messages. Some users with disabilities need more time to read or interact with messages and timed toasts may not provide sufficient time. [WCAG 2.1 success criterion 2.2.4 (AAA)](https://www.w3.org/WAI/WCAG21/Understanding/no-timing.html)
 
 Users should be able to manage or limit noncritical notifications. This gives users the control to reduce the number of distractions or disruptions they receive, which is particularly helpful for users with cognitive limitations. [WCAG 2.1 success criterion 2.2.3 (AAA)](https://www.w3.org/WAI/WCAG21/Understanding/interruptions.html)
