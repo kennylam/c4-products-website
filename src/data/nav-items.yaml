@@ -118,4 +118,6 @@
       path: /wip/reordering
     - title: "State (pat.)"
       path: /wip/state
+    - title: "Data tables"
+      path: /cp4-integration/data-tables/usage
   separator: true
