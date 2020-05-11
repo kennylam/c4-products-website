@@ -10,22 +10,32 @@
   pages:
     - title: Component status
       path: /components/component-status
+    - title: "Additional tag features"
+      path: /components/additional-tag-features
     - title: Cards
       path: /components/card/usage
     - title: "File uploader"
       path: /components/file-uploader/usage
+    - title: "Headers"
+      path: /components/headers
+    - title: "Modified tabs"
+      path: /components/modified-tabs
     - title: "Page header"
       path: /components/page-header/usage
     - title: "Slide-in panel"
       path: /components/slide-in-panel
     - title: "Slide-over panel"
       path: /components/slide-over-panel/usage
+    - title: "Text bar"
+      path: /components/text-bar
     - title: Widget
       path: /components/widget/usage
 - title: Patterns
   pages:
     - title: Pattern status
       path: /patterns/pattern-status
+    - title: Advanced filtering
+      path: /patterns/advanced-filtering/usage
     - title: Create flows
       path: /patterns/creation-flows/usage
     - title: Edit and update
@@ -36,18 +46,18 @@
       path: /patterns/exporting/usage
     - title: Generating an API key
       path: /patterns/generating-api-key/usage
+    - title: HTTP errors
+      path: /patterns/http-errors/usage
     - title: Import
       path: /patterns/importing/usage
     - title: Remove
       path: /patterns/removing/usage
-    - title: Advanced filtering
-      path: /patterns/advanced-filtering/usage
-    - title: HTTP errors
-      path: /patterns/http-errors/usage
-    - title: Order summary
-      path: /patterns/order-summary/usage
     - title: Saving
       path: /patterns/saving/usage
+    - title: "Status icons"
+      path: /patterns/status-icons
+    - title: "Web terminal"
+      path: /patterns/web-terminal
 - title: Voice and tone guide
   pages:
     - title: Introduction
@@ -84,7 +94,6 @@
       path: /cp4-all-guidance/global-navigation/usage
     - title: "Global search"
       path: /cp4-all-guidance/global-search/usage
-  separator: true
 - title: Cloud Pak for Integration
   pages:
     - title: "About"
@@ -93,13 +102,6 @@
       path: /cp4-integration/navigation/usage
     - title: "Landing page"
       path: /cp4-integration/landing-page/usage
-- title: Cloud Platform guidelines
-  pages:
-    - path: /cloud-pal-guidelines
-  separator: true
-- title: Watson Experience Guide
-  pages:
-    - path: /watson-experience-guide
 - title: Work in progress
   pages:
     - title: "Button menu (com.)"
@@ -108,8 +110,6 @@
       path: /wip/multistep-confirmation
     - title: "Persistent banner (com.)"
       path: /wip/persistent-banner
-    - title: "Text bar (com.)"
-      path: /wip/text-bar
     - title: "Filterable search tab dropdown (pat.)"
       path: /wip/filterable-search-tab-dropdown
     - title: "Learning panel (pat.)"
