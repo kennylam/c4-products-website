@@ -2,6 +2,8 @@
 title: Glossary
 ---
 
+import './glossary.scss'
+
 > "A Freudian slip: when you mean one thing but say your mother."
 
 <PageDescription>
@@ -11,14 +13,7 @@ provides a lightweight reference for the most common AI concepts, UI terms, and 
 
 </PageDescription>
 
-<div
-  style={{
-      position: 'sticky',
-      top: '3rem',
-      padding: '1rem 0rem .25rem 0rem',
-      backgroundColor: '#f3f3f3',
-      zIndex: 1
-  }}>
+<div className="jump-to">
 
 Jump to:&nbsp;
 [A](#a)&nbsp;&nbsp;
@@ -44,6 +39,7 @@ Jump to:&nbsp;
 
 </div>
 
+<div class="glossary-entries">
 
 # **A**
 
@@ -478,3 +474,5 @@ _[Back to top](#)_
 An IBM Cloud service that is available through IBM Watson Studio, which uses trusted data to put 
 machine learning and deep learning models into production. It leverages an automated, collaborative 
 workflow to grow intelligent business applications easily and with more confidence.
+
+</div>
