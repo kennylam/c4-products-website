@@ -58,6 +58,16 @@
       path: /patterns/status-icons
     - title: "Web terminal"
       path: /patterns/web-terminal
+- title: Cloud Pak guidance
+  pages:
+    - title: "Global search"
+      path: /cloud-paks/global-search/usage
+    - title: "CP4I: About"
+      path: /cloud-paks/cp4i/about
+    - title: "CP4I: Navigation"
+      path: /cloud-paks/cp4i/navigation/usage
+    - title: "CP4I: Landing page"
+      path: /cloud-paks/cp4i/landing-page/usage
 - title: Voice and tone guide
   pages:
     - title: Introduction
@@ -84,24 +94,6 @@
       path: /voice-and-tone/related-resources
     - title: Your feedback
       path: /voice-and-tone/your-feedback
-- title: Guidance for all Cloud Paks
-  pages:
-    - title: "About"
-      path: /cp4-all-guidance
-    - title: "Login"
-      path: /cp4-all-guidance/login/usage
-    - title: "Global navigation"
-      path: /cp4-all-guidance/global-navigation/usage
-    - title: "Global search"
-      path: /cp4-all-guidance/global-search/usage
-- title: Cloud Pak for Integration
-  pages:
-    - title: "About"
-      path: /cp4-integration
-    - title: "Navigation"
-      path: /cp4-integration/navigation/usage
-    - title: "Landing page"
-      path: /cp4-integration/landing-page/usage
 - title: Work in progress
   pages:
     - title: "Button menu (com.)"
