@@ -5,9 +5,9 @@ const DefaultChildren = () => {
   return (
     <>
       <SwitcherDivider>CD&amp;AI Design sites</SwitcherDivider>
-        <SwitcherLink href="https://cdai-design.w3ibm.mybluemix.net/">CD&amp;AI Design home</SwitcherLink>
+        <SwitcherLink href="https://cdai-design.us-south.cf.test.appdomain.cloud/">CD&amp;AI Design home</SwitcherLink>
         <SwitcherLink href="https://pages.github.ibm.com/cdai-design/pal/">Pattern asset library</SwitcherLink>
-        <SwitcherLink href="https://cdai-persona.w3ibm.mybluemix.net/">Persona toolkit</SwitcherLink>
+        <SwitcherLink href="https://pages.github.ibm.com/cdai-design/personas/">Persona toolkit</SwitcherLink>
         <SwitcherLink href="https://pages.github.ibm.com/cdai-design/content-design/">Content design</SwitcherLink>
       <SwitcherDivider>IBM Design sites</SwitcherDivider>
         <SwitcherLink href="https://ibm.com/design">IBM Design</SwitcherLink>
