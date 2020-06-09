@@ -88,12 +88,10 @@
       path: /voice-and-tone/navigation-labels
     - title: Button labels
       path: /voice-and-tone/button-labels
-    - title: Glossary
-      path: /voice-and-tone/glossary
     - title: Related resources
       path: /voice-and-tone/related-resources
-    - title: Your feedback
-      path: /voice-and-tone/your-feedback
+    - title: Glossary
+      path: /voice-and-tone/glossary
 - title: Work in progress
   pages:
     - title: "Button menu (com.)"
