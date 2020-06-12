@@ -4,8 +4,10 @@
       path: /get-started/about
     - title: Contacts
       path: /get-started/contacts
-    - title: Contributing
-      path: /get-started/contributing
+    - title: "Contribution process"
+      path: /get-started/contribution-process
+    - title: "Delivering changes"
+      path: /get-started/delivering-changes
 - title: Components
   pages:
     - title: Component status
