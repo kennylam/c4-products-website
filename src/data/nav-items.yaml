@@ -1,7 +1,7 @@
-- title: Get started
+- title: Overview
   pages:
     - title: About
-      path: /get-started/about
+      path: /overview/about
     - title: Contacts
       path: /get-started/contacts
     - title: "Contribution process"
@@ -60,6 +60,26 @@
       path: /patterns/status-icons
     - title: "Web terminal"
       path: /patterns/web-terminal
+- title: Getting started guide
+  pages:
+    - title: Overview
+      path: /getting-started-guide/overview/introduction
+    - title: Project Guidance
+      path: /getting-started-guide/project-guidance
+    - title: Resources
+      path: /getting-started-guide/resources
+- title: Walkme guide
+  pages:
+    - title: Overview
+      path: /walkme-guide/overview/introduction
+    - title: Players
+      path: /walkme-guide/players/usage
+    - title: Shoutouts
+      path: /walkme-guide/shoutouts/usage
+    - title: Smart Walk-thrus
+      path: /walkme-guide/smart-walk-thrus/overview
+    - title: Smart Tips
+      path: /walkme-guide/smart-tips/usage
 - title: Cloud Pak guidance
   pages:
     - title: "Global search"
