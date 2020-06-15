@@ -3,9 +3,11 @@
     - title: About
       path: /overview/about
     - title: Contacts
-      path: /overview/contacts
-    - title: Contributing
-      path: /overview/contributing
+      path: /get-started/contacts
+    - title: "Contribution process"
+      path: /get-started/contribution-process
+    - title: "Delivering changes"
+      path: /get-started/delivering-changes
 - title: Components
   pages:
     - title: Component status
