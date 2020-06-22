@@ -4,7 +4,7 @@ title: Project Guidance
 
 <PageDescription>
 
-  Delivering a getting started experience can be an intensive project that requires people from multiple disciplines including Offering Managers, Developers, UX Designers, Content Designers and Visual Designers. 
+  Delivering a getting started experience can be an intensive project that requires people from multiple disciplines including Offering Managers, Developers, UX Designers, Content Designers and Visual Designers.
 
   In this section we will break down the steps it takes to go from zero to a fully implemented experience. (Note: Many of these steps can be done in parallel.)
 
@@ -21,14 +21,14 @@ title: Project Guidance
 
 ## Prioritize
 
-Like any project, before your start building you need to prioritize. There are a number of themes that you can consider when prioritizing the types of getting started experiences you want to deliver: 
+Like any project, before your start building you need to prioritize. There are a number of themes that you can consider when prioritizing the types of getting started experiences you want to deliver:
 
 * Helping where users struggle the most in your experience
 * Teaching fundamental product functions critical to completing tasks
 * Pointing out the value of important features to the users
 * Highlighting competitive differentiators 
 
-We surveyed a number of IBMers and "Helping where users struggle the most in your experience" was the most important theme to address through getting started experiences. If you choose to follow that same pattern we suggest leaning on data and insights from user research to uncover those key pain points. And of course, don't prioritize alone. This is also a great time to align with your 3-in-a-box team. 
+We surveyed a number of IBMers and "Helping where users struggle the most in your experience" was the most important theme to address through getting started experiences. If you choose to follow that same pattern we suggest leaning on data and insights from user research to uncover those key pain points. And of course, don't prioritize alone. This is also a great time to align with your 3-in-a-box team.
 
 <Row className="resource-card-group">
   <Column colMd={4} colLg={4} noGutterSm>
@@ -56,7 +56,7 @@ Designing your getting started flows happens the same way as any other design pr
       title="Sketch kit"
       aspectRatio="2:1"
       actionIcon="download"
-      href="https://ibm.box.com/shared/static/dvqku1emm9rq2yl6dyf817x2s1rpnjgi.sketch"
+      href="https://ibm.box.com/s/dvqku1emm9rq2yl6dyf817x2s1rpnjgi"
     >
     </ResourceCard>
   </Column>
@@ -74,32 +74,32 @@ Designing your getting started flows happens the same way as any other design pr
 
 ### Writing
 
-Content is an essential part of any getting started experience. There will be a lot of things that need to be described and making sure your content is clear, consistent, and concise is key.  We recommend following the our CD&AI Voice and Tone Guide as well as the content guidance for individual Walkme components and flows. Don't have a content designer? No problem. Just make sure you can identify at least one person to own the content, this could be your OM, a technical writer, or a word enthusiast. 
+Content is an essential part of any getting started experience. There will be a lot of things that need to be described and making sure your content is clear, consistent, and concise is key.  We recommend following the our CD&AI Voice and Tone Guide as well as the content guidance for individual Walkme components and flows. Don't have a content designer? No problem. Just make sure you can identify at least one person to own the content, this could be your OM, a technical writer, or a word enthusiast.
 
 <Row className="resource-card-group">
-  <Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      subTitle="CD&AI PAL"
-      title="Voice and tone guide"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/voice-and-tone"
-    >
-    </ResourceCard>
-  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="CD&AI PAL"
+      title="Voice and tone guide"
+      aspectRatio="2:1"
+      actionIcon="arrowRight"
+      href="/voice-and-tone"
+    >
+    </ResourceCard>
+  </Column>
 </Row>
 
 ## Install
 
 ### Segment
 
-While you can install WalkMe without using Segment, we highly recommend deploying Walkme through Segment. 
+While you can install WalkMe without using Segment, we highly recommend deploying Walkme through Segment.
 
-Segment is a single platform that collects, stores, and routes your user data (page visits, clicks, etc.) to tools of your choice with the flick of a switch. 
+Segment is a single platform that collects, stores, and routes your user data (page visits, clicks, etc.) to tools of your choice with the flick of a switch.
 
 * First, Segment needs to be installed on your product so it can track things like page visits, user clicks, etc.
-* Then it can send that data to whatever source you want to use that data. 
-* When you view your usage stats in Amplitude you are viewing data provided by Segment. 
+* Then it can send that data to whatever source you want to use that data.
+* When you view your usage stats in Amplitude you are viewing data provided by Segment.
 
 Services like Amplitude are simply visualizing the data collected from Segment. WalkMe uses the data that Segment gathers to trigger shout-outs and other components to the right user at the right time. To request Segment access, please reach out to john.m.manion@ibm.com. 
 
@@ -128,17 +128,17 @@ Services like Amplitude are simply visualizing the data collected from Segment. 
 
 ### Walk Me
 
-The importance of installing Segment is that you can essentially install WalkMe using Segment. By adding the WalkMe destination to your offering's source in Segment's UI, Segment can automatically load WalkMe's script on every page that contains Segment instrumentation without any changes or manipulation to your offering's code base.
+The importance of installing Segment is that you can use it to easily install WalkMe. By adding the WalkMe destination to your offering's source in Segment's UI, Segment can automatically load WalkMe's script on every page that contains Segment instrumentation without any changes or manipulation to your offering's code base.
 
 #### Why injecting WalkMe via Segment is recommended:
 
-* Centralized Management of WalkMe Snippet - Toggle WalkMe on/off without dependency on development cycles
-* Seamless Data Integration - Aggregate WalkMe events, offering events/milestones, and server-side events (e.g. SSM) in Segment while maintaining a consistent user ID (through IBM ID)
-* Data Privacy Compliance - Leverage clients’ global cookie preferences through Segment's TrustArc integration to deploy WalkMe in a compliant manner (required vs. functional cookies)
+* Centralized Management of WalkMe Snippet * Toggle WalkMe on/off without dependency on development cycles
+* Seamless Data Integration * Aggregate WalkMe events, offering events/milestones, and server-side events (e.g. SSM) in Segment while maintaining a consistent user ID (through IBM ID)
+* Data Privacy Compliance * Leverage clients’ global cookie preferences through Segment's TrustArc integration to deploy WalkMe in a compliant manner (required vs. functional cookies)
  
 #### Direct injections of WalkMe snippet
 
-If installing Segment isn't an option for your product you can also install WalkMe directly using a code snippet that can be inserted into every part of they UI that needs WalkMe. 
+If installing Segment isn't an option for your product you can also install WalkMe directly using a code snippet that can be inserted into every part of they UI that needs WalkMe.
 
 <Row className="resource-card-group">
   <Column colMd={4} colLg={4} noGutterSm>
@@ -150,6 +150,8 @@ If installing Segment isn't an option for your product you can also install Walk
       href="https://nurturelove.w3bmix.ibm.com/documentation/datatools/walkme/deploymentguides/segment-injection/"
     >
     </ResourceCard>
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
       subTitle="Growth team guidance"
       title="On-prem guidance"
@@ -175,18 +177,14 @@ If installing Segment isn't an option for your product you can also install Walk
 
 Once you've designed your flows you can start building the experiences. The WalkMe experiences can be built in the tool's no-code editor. WalkMe has a lot of training to help you get up to speed. To get access to that training, follow these steps:
 
-Visit the [WalkMe University sign-up page](https://walkme.litmos.com/self-signup)
-Input your name and email
-Input our access code: WMU0719-pcx8jnm3
-Upon submission, check your email for an automated email containing your instant access link
+1. Visit the [WalkMe University sign-up page](https://walkme.litmos.com/self-signup)
+2. Input your name and email
+3. Input our access code: WMU0719-pcx8jnm3
+4. Upon submission, check your email for an automated email containing your instant access link
 
-All IBMers who will be building and publishing WalkMe content should complete both the
+All IBMers who will be building and publishing WalkMe content should complete the DAP Fundamentals and the DAP Builder Courses.
 
-a) DAP Fundamentals and
-
-b) DAP Builder Courses. 
-
-Currently, there's a problem with SVGs used for focus and hover states for On-Prem environments. The growth team is working on a fix and we will update guidance accordingly.
+Note: Currently, there's a problem with SVGs used for focus and hover states for On-Prem environments. The growth team is working on a fix and we will update guidance accordingly.
 
 <Row className="resource-card-group">
   <Column colMd={4} colLg={4} noGutterSm>
@@ -198,6 +196,8 @@ Currently, there's a problem with SVGs used for focus and hover states for On-Pr
       href="http://nurturelove.w3bmix.ibm.com/documentation/compliance/access-management/walkme.html"
     >
     </ResourceCard>
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
       subTitle="WalkMe support"
       title="WalkMe university signup"
@@ -216,6 +216,8 @@ Currently, there's a problem with SVGs used for focus and hover states for On-Pr
       href="https://w3.ibm.com/tools/cio/forms/landing/org/app/171cd8bb-5590-4547-8953-2e6ffa22a91a/launch/index.html?form=F_Form1"
     >
     </ResourceCard>
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
       subTitle="Growth team guidance"
       title="WalkMe builder workshops"
@@ -229,11 +231,15 @@ Currently, there's a problem with SVGs used for focus and hover states for On-Pr
 
 ### Test
 
-Even though you can build the WalkMe flows without WalkMe being installed on the product, you won't be able to test it until you do. WalkMe has the ability to preview your flows in its builder interface but we have run into instances where something might work in the preview but it doesn't work on the actual live environment. We suggest you have a fully functioning and up-to-date testing environment where you can publish the flows without end users running into incomplete flows. We also recommend testing the flows with your Sponsor Users or IBMers who aren't familiar with your product to make sure your content makes sense and the flows are functioning correctly. 
+Even though you can build the WalkMe flows without WalkMe being installed on the product, you won't be able to test it until you do.
+
+WalkMe has the ability to preview your flows in its builder interface but we have run into instances where something might work in the preview but it doesn't work on the actual live environment. We suggest having a fully functioning and up-to-date testing environment where you can publish the flows without end users running into incomplete flows.
+
+We also recommend testing the flows with your Sponsor Users or IBMers who aren't familiar with your product to make sure your content makes sense and the flows are functioning correctly.
 
 ## Review
 
-Reviews within each team will be happening multiple times during this process. The formal review will be handled by the DUX reviews and their Getting started quality dimension. Currently the Getting Started experiences are measured on the following factors: 
+Reviews within each team will be happening multiple times during this process. The formal review will be handled by the DUX reviews and their Getting started quality dimension. Currently the Getting Started experiences are measured on the following factors:
 
 #### User Needs
 
@@ -272,9 +278,9 @@ Reviews within each team will be happening multiple times during this process. T
 
 ## Launch
 
-If you were able to test things out on a testing environment then your Walkme flows are technically already live so all you have to do is change the targeting to the live environments/URLs. The main thing that will affect launching a WalkMe tour will be if you're publishing to a Cloud or an on-prem product. 
+If you were able to test things out on a testing environment then your Walkme flows are technically already live so all you have to do is change the targeting to the live environments/URLs. The main thing that will affect launching a WalkMe tour will be if you're publishing to a Cloud or an on-prem product.
 
-For Cloud, you can essentially publish whenever and you don't have to align with any development schedule. For on-prem products,  you will have to align your building/testing/launching with the release schedule. 
+For Cloud, you can essentially publish whenever and you don't have to align with any development schedule. For on-prem products,  you will have to align your building/testing/launching with the release schedule.
 
 <Row className="resource-card-group">
   <Column colMd={4} colLg={4} noGutterSm>
@@ -291,7 +297,7 @@ For Cloud, you can essentially publish whenever and you don't have to align with
 
 ### Maintain
 
-After WalkMe flows are launched there may be a couple of instances where the flows that were built need to be continuously updated. Worst case scenario, the flows start breaking on the live environment which means you'll want to regularly check the flows so your customers aren't the first ones to notice problems.  Additionally, new UI elements can break WalkMe flows so make sure you build in the time to update the flows in addition to any product updates. 
+After WalkMe flows are launched there may be a couple of instances where the flows that were built need to be continuously updated. Worst case scenario, the flows start breaking on the live environment which means you'll want to regularly check the flows so your customers aren't the first ones to notice problems.  Additionally, new UI elements can break WalkMe flows so make sure you build in the time to update the flows in addition to any product updates.
 
 <Row className="resource-card-group">
   <Column colMd={4} colLg={4} noGutterSm>
@@ -308,11 +314,10 @@ After WalkMe flows are launched there may be a couple of instances where the flo
 
 ### Refine
 
-Finally, when you are ready to iterate on your flows there are a number of ways that you can get data on how they are performing. First, there's the traditional route of gathering usability data via user research studies. Additionally there are two ways that you can view the usage data from the WalkMe flows: 
+Finally, when you are ready to iterate on your flows there are a number of ways that you can get data on how they are performing. First, there's the traditional route of gathering usability data via user research studies. Additionally there are two ways that you can view the usage data from the WalkMe flows:
 
 **Option 1:** Use Amplitude to view the Segment data
-
-**Option 2:** Review the built-in WalkMe analytics. 
+**Option 2:** Review the built-in WalkMe analytics.
 
 <Row className="resource-card-group">
   <Column colMd={4} colLg={4} noGutterSm>

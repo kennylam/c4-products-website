@@ -5,28 +5,26 @@ tabs: ['Overview', 'Steps', 'Popups']
 
 <PageDescription>
 
-  All Steps must be anchored to a specific part of the UI, whether you're pointing out a specific feature within a UI tour, or prompting the user to take a specific action within a Step-by-step guide.
-
-  Here, we've broken down the guidance to highlight the types of steps you can use and when.
+  Steps must be anchored to a specific part of the UI, whether you're pointing out a specific feature within a UI tour or prompting the user to take an action within a Step-by-step guide. Here's some guidance around the types of steps you can use and when.
 
 </PageDescription>
-
-## Steps with action buttons 
-
-Use steps with action buttons to point out specific parts of the UI. For the most part, these steps **don't** prompt the user to take action and are primarily used for UI tours. 
-
-#### Usage
-
-* Use buttons to advance the tour
-* Limit headers to one line of text (Max. 55 characters)
-* Limit body text to 2 sentences 
-
-#### Content
 
 <Row>
   <Column colLg={8}>
 
-![Actions](images/actions.png)
+![Actions](images/WalkMe-SWT-steps.png)
+
+  </Column>
+</Row>
+
+## Steps with action buttons
+
+Use steps with action buttons to point out specific parts of the UI. For the most part, these steps **don't** prompt the user to take action and are primarily used for UI tours.
+
+<Row>
+  <Column colLg={8}>
+
+![Actions](images/WalkMe-SWT-steps-action.png)
 
   </Column>
 </Row>
@@ -35,34 +33,27 @@ Use steps with action buttons to point out specific parts of the UI. For the mos
 
 * The header should be action-oriented and geared toward the user. User words like: Explore, view, find, etc.
 * If you are pointing out a specific part of the UI with a clear label, the header should include it
-* Keep the tone neutral and limit exclamation points unless they have completed a section or tour 
+* Keep the tone neutral and limit exclamation points unless they have completed a section or tour
+
 
 **2. Body text:**
 
 * Keep a conversational tone but always be clear and concise
-* Avoid more direct calls to action that might unintentionally divert users and cause drop-off (For example: "Click here to expand the menu") 
+* Avoid more direct calls to action that might unintentionally divert users and cause drop-off (For example: "Click here to expand the menu")
 * Avoid using terms like "click" without explaining to the user why they are selecting that option. This prevents the user from unintentionally exiting the tour.
 
 **3. Button(s):**
 
-* You may want to get fancy..but don't. **Only use:** Next, Back, and Done 
+* You may want to get fancy..but don't. **Only use:** Next, Back, and Done
 
-## Steps without action buttons 
+## Steps without action buttons
 
 Use these steps to instruct your users to take a direct action within the UI. These steps are only used within Step-by-step guides. 
-
-#### Usage
-
-* User actions advance the tour
-* Limit titles to one line of text (Max: 55 characters)
-* Body text is optional, limit to 2 sentences 
-
-#### Content
 
 <Row>
   <Column colLg={8}>
 
-![No action](images/no-action.png)
+![No action](images/WalkMe-SWT-steps-noaction.png)
 
   </Column>
 </Row>
@@ -77,4 +68,4 @@ Use these steps to instruct your users to take a direct action within the UI. Th
 
 * Use the body section to explain why the user would navigate to or click on a specific section in the UI
 * Add tips in this section if there is useful information that can help the user do something better or faster
-* If your user is about to navigate to a new page, tell them why they are going there
+* If your user is about to navigate to a new page, tell them why they are going there and how it will help them
