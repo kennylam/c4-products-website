@@ -72,8 +72,8 @@
   pages:
     - title: Overview
       path: /walkme-guide/overview/introduction
-    - title: Players
-      path: /walkme-guide/players/usage
+    - title: Player
+      path: /walkme-guide/player/usage
     - title: Shoutouts
       path: /walkme-guide/shoutouts/usage
     - title: Smart Walk-thrus
