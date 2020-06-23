@@ -3,6 +3,10 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 
 const links = [
   {
+    title: 'Carbon',
+    href: 'https://www.carbondesignsystem.com/',
+  },
+  {
     title: 'Our Sketch kit',
     href: 'https://github.ibm.com/CDAI-design/pal/raw/master/src/resources/sketch-kit/CDAI_design_kit_v01.sketch',
   },
@@ -15,20 +19,16 @@ const links = [
     href: 'https://ibm-casdesign.slack.com/archives/CQGR0HC05',
   },
   {
-    title: 'Carbon Design System',
-    href: 'https://www.carbondesignsystem.com/',
-  },
-  {
-    title: 'IBM Cloud Platform guide',
+    title: 'IBM Cloud PAL',
     href: 'https://pages.github.ibm.com/ibmcloud/pal/',
   },
   {
-    title: 'Watson Experience guide',
-    href: 'https://www.ibm.com/brand/systems/watson/',
+    title: 'IBM Security experience guide',
+    href: 'http://security-design-guide.stage1.mybluemix.net/',
   },
   {
-    title: 'Watson Moments guide',
-    href: 'https://w3.ibm.com/w3publisher/watson-embed/watson-moments',
+    title: 'IBM Watson experience guide',
+    href: 'https://www.ibm.com/brand/systems/watson/',
   },
 ];
 
