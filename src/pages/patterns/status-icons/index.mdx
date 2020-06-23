@@ -27,7 +27,7 @@ Status is a summarization of the information we know about an object. The status
 - Severity Attribute of status affecting priority
 
 
-**Deverity status**
+**Severity status**
 - Fatal
 - Critical
 - Major
@@ -68,94 +68,98 @@ Only send notifications where necessary. Confine each notification to the portio
 Notification status icons helps convey the information being communicated. These statuses correspond with a color and icon to provide a consistent, universal experience for users. Some products may require a major or minor warning system, this doesn’t indicate a requirement for all products to utilize both icons. The default Warning icon should be utilized by products not requiring both major and minor. Major should only be used in conjunction with minor and never as the only warning icon.
 
 ### Deciding what to use
- <table class="page-table">
- <thread>
-  <tr align="left" bgcolor="white">
-    <th>Light <br>theme</br></th>
-    <th>Dark <br>theme</br></th>
-    <th>Status</th>
-    <th>Action</th>
-    <th>Color <br>(light)</br></th>
-    <th>Color <br>(dark)</br></th>
-    <th>Icon</th>
-  </tr>
-  </thread>
-  <tbody>
-  <tr align="left" bgcolor="white">
-    <td><img src="images/fatal.png" alt="Fatal light"/></td>
-    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_FatalDark.png" alt="Fatal dark"/></td>
-    <td>Fatal</td>
-    <td>Implies unavailable</td>
-    <td>Black</td>
-    <td>Grey 30</td>
-    <td>Misuse</td>
-  </tr>
-  <tr align="left" bgcolor="white">
-    <td ><img src="images/critical.png" alt="Critical Light"/></td>
-    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_CriticalDark.png" alt="Critical Dark"/></td>
-    <td>Critical</td>
-    <td>Indicates a severe event that needs immediate attention</td>
-    <td>`Red 60`</td>
-    <td>`Red 50`</td>
-    <td>Error</td>
-  </tr>
-  <tr align="left" bgcolor="white">
-    <td><img src="images/major.png" alt="Major Light"/></td>
-    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_MajorDark.png" alt="Major Dark"/></td>
-    <td>Major (warning)</td>
-    <td>Indicates a threshold has been breached. Intended to alert a user before a critical event is triggered.<br></br>
+
+<div>
+<br />
+<table>
+<thead>
+<tr style="text-align: left; background-color: #fff">
+<th>Light <br />theme</th>
+<th>Dark <br />theme</th>
+<th>Status</th>
+<th>Action</th>
+<th>Color <br />(light)</th>
+<th>Color <br />(dark)</th>
+<th>Icon</th>
+</tr>
+</thead>
+<tbody>
+<tr style="text-align: left; background-color: #fff">
+<td><img src="images/fatal.png" alt="Fatal light"/></td>
+<td style="background-color: #262626"><img src="images/CDAIStatusIcons_FatalDark.png" alt="Fatal dark"/></td>
+<td>Fatal</td>
+<td>Implies unavailable</td>
+<td>Black</td>
+<td>Grey 30</td>
+<td>Misuse</td>
+</tr>
+<tr style="text-align: left; background-color: #fff">
+<td ><img src="images/critical.png" alt="Critical Light"/></td>
+<td style="background-color: #262626"><img src="images/CDAIStatusIcons_CriticalDark.png" alt="Critical Dark"/></td>
+<td>Critical</td>
+<td>Indicates a severe event that needs immediate attention</td>
+<td>`Red 60`</td>
+<td>`Red 50`</td>
+<td>Error</td>
+</tr>
+<tr style="text-align: left; background-color: #fff">
+<td><img src="images/major.png" alt="Major Light"/></td>
+<td style="background-color: #262626"><img src="images/CDAIStatusIcons_MajorDark.png" alt="Major Dark"/></td>
+<td>Major (warning)</td>
+<td>Indicates a threshold has been breached. Intended to alert a user before a critical event is triggered.<br />
 <em>Major (warning) should only be used in conjunction with Warning, and never as the only warning icon. </em></td>
-    <td>`Orange 40`</td>
-    <td>`Orange 40`</td>
-    <td>Warning-inverted</td>
-  </tr>
-  <tr align="left" bgcolor="white">
-    <td><img src="images/warning.png" alt="Warning Light"/></td>
-    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_WarningDark.png" alt="Warning Dark"/></td>
-    <td>Minor/warning</td>
-    <td>Indicates the existence of a non-service affecting fault condition and that corrective action should be taken in order to prevent a more serious fault</td>
-    <td>`Yellow 20 + Grey 100`</td>
-    <td>`Yellow 20 + Grey 100`</td>
-    <td>Warning</td>
-  </tr>
-  <tr align="left" bgcolor="white">
-    <td><img src="images/undefined.png" alt="Undefined Light"/></td>
-    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_UndefinedDark.png" alt="Undefined Dark"/></td>
-    <td>Undefined</td>
-    <td>Indicates a value that is outside of an acceptable range or formatted incorrectly</td>
-    <td>`Purple 80`</td>
-    <td>`Purple 50`</td>
-    <td>Undefined</td>
-  </tr>
-  <tr align="left" bgcolor="white">
-    <td><img src="images/unknown.png" alt="Unknown Light"/></td>
-    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_UnknownDark.png" alt="Unknown Dark"/></td>
-    <td>Unknown</td>
-    <td>Indicating the status of an object unknown</td>
-    <td>`Grey 50`</td>
-    <td>`Grey 40`</td>
-    <td>Unknown</td>
-  </tr>
-    <tr align="left" bgcolor="white">
-    <td><img src="images/CDAIStatusIcons_Normal.png" alt="Normal Light"/></td>
-    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_NormalDark.png" alt="Normal Dark"/></td>
-    <td>Normal/harmless</td>
-    <td>Indicates the clearing of one or more previously reported alarms. Implies no issues are present</td>
-    <td>`Green 60`</td>
-    <td>`Green 50`</td>
-    <td>Checkmark-circle</td>
-  </tr>
-  <tr align="left" bgcolor="white">
-    <td><img src="images/CDAIStatusIcons_Info.png" alt="Info Light"/></td>
-    <td bgcolor="#262626"><img src="images/CDAIStatusIcons_InfoDark.png" alt="Info Dark"/></td>
-    <td>Info</td>
-    <td>Indicates information is available</td>
-    <td>`Blue 60`</td>
-    <td>`Blue 50`</td>
-    <td>i-square</td>
-  </tr>
-  </tbody>
+<td>`Orange 40`</td>
+<td>`Orange 40`</td>
+<td>Warning-inverted</td>
+</tr>
+<tr style="text-align: left; background-color: #fff">
+<td><img src="images/warning.png" alt="Warning Light"/></td>
+<td style="background-color: #262626"><img src="images/CDAIStatusIcons_WarningDark.png" alt="Warning Dark"/></td>
+<td>Minor/warning</td>
+<td>Indicates the existence of a non-service affecting fault condition and that corrective action should be taken in order to prevent a more serious fault</td>
+<td>`Yellow 20 + Grey 100`</td>
+<td>`Yellow 20 + Grey 100`</td>
+<td>Warning</td>
+</tr>
+<tr style="text-align: left; background-color: #fff">
+<td><img src="images/undefined.png" alt="Undefined Light"/></td>
+<td style="background-color: #262626"><img src="images/CDAIStatusIcons_UndefinedDark.png" alt="Undefined Dark"/></td>
+<td>Undefined</td>
+<td>Indicates a value that is outside of an acceptable range or formatted incorrectly</td>
+<td>`Purple 80`</td>
+<td>`Purple 50`</td>
+<td>Undefined</td>
+</tr>
+<tr style="text-align: left; background-color: #fff">
+<td><img src="images/unknown.png" alt="Unknown Light"/></td>
+<td style="background-color: #262626"><img src="images/CDAIStatusIcons_UnknownDark.png" alt="Unknown Dark"/></td>
+<td>Unknown</td>
+<td>Indicating the status of an object unknown</td>
+<td>`Grey 50`</td>
+<td>`Grey 40`</td>
+<td>Unknown</td>
+</tr>
+<tr style="text-align: left; background-color: #fff">
+<td><img src="images/CDAIStatusIcons_Normal.png" alt="Normal Light"/></td>
+<td style="background-color: #262626"><img src="images/CDAIStatusIcons_NormalDark.png" alt="Normal Dark"/></td>
+<td>Normal/harmless</td>
+<td>Indicates the clearing of one or more previously reported alarms. Implies no issues are present</td>
+<td>`Green 60`</td>
+<td>`Green 50`</td>
+<td>Checkmark-circle</td>
+</tr>
+<tr style="text-align: left; background-color: #fff">
+<td><img src="images/CDAIStatusIcons_Info.png" alt="Info Light"/></td>
+<td style="background-color: #262626"><img src="images/CDAIStatusIcons_InfoDark.png" alt="Info Dark"/></td>
+<td>Info</td>
+<td>Indicates information is available</td>
+<td>`Blue 60`</td>
+<td>`Blue 50`</td>
+<td>i-square</td>
+</tr>
+</tbody>
 </table> 
+</div>
 
 All icon art is available in the [Carbon icon library](https://carbondesignsystem.com/guidelines/icons/library/).
 
