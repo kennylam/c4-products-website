@@ -56,10 +56,10 @@
       path: /patterns/saving/usage
     - title: "Status icons"
       path: /patterns/status-icons
+    - title: "User profile images"
+      path: /patterns/user-profiles-images
     - title: "Web terminal"
-      path: /patterns/status-icons
-    - title: "User profile"
-      path: /patterns/user-profile-images
+      path: /patterns/web-terminal
 - title: Voice and tone guide
   pages:
     - title: Introduction
