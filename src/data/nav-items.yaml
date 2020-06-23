@@ -57,7 +57,9 @@
     - title: "Status icons"
       path: /patterns/status-icons
     - title: "Web terminal"
-      path: /patterns/web-terminal
+      path: /patterns/status-icons
+    - title: "User profile"
+      path: /patterns/user-profile-images
 - title: Voice and tone guide
   pages:
     - title: Introduction
