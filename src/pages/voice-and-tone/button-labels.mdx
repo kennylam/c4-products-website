@@ -103,11 +103,39 @@ ensure you are using standard button labels.
 
 
 - Keep dialog titles, confirmation text, and button labels consistent.
-- Only use the generic term OK if there is not a more obvious verb available.
+- Only use the generic term "OK" if there is not a more obvious verb available.
 
-![Modal dialog showing inconsistent verb use](images/Modal_remove.png)
+**Example:**
 
-In this example, the original button label is "Remove" yet the confirmation text then uses the term "delete",
-and the confirmation button is "OK". This is inconsistent and confusing.
-The correct word should be chosen depending on whether this action _removes_ or _deletes_ the object
-(see the [Glossary](glossary) for details) and then used consistently throughout.
+
+<Row>
+  <Column colMd={8} colLg={8}>
+
+<DoDontExample
+  type="do"
+  captionTitle="Correct example"
+  caption="Here there is consistency between the label of the original button, the text within 
+the corresponding modal, and the confirmation button."
+>
+
+![Modal dialog showing inconsistent verb use](images/Button_label_correct.png)
+
+</DoDontExample>
+
+  </Column>
+</Row>
+<Row>
+  <Column colMd={8} colLg={8}>
+
+<DoDontExample
+  captionTitle="Incorrect example"
+  caption="Here the UI button label is “Remove” yet the confirmation text then uses the term “delete”, 
+and the confirmation button is “OK”. This is inconsistent and confusing."
+>
+
+![Modal dialog showing inconsistent verb use](images/Button_label_incorrect.png)
+
+</DoDontExample>
+
+  </Column>
+</Row>

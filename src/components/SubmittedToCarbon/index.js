@@ -17,7 +17,7 @@ const SubmittedToCarbon = ({ to, children }) => {
           </div>
           <div  className={textReference}>
             Click <a href={to} target="_blank" rel="noopener noreferrer">
-            here <Launch16 fill="currentColor" style={{'vertical-align': 'middle', 'margin': '0 6px 2px 0'}}/></a>
+            here <Launch16 fill="currentColor" style={{'verticalAlign': 'middle', 'margin': '0 6px 2px 0'}}/></a>
             to view the Carbon website.
           </div>
         </div>

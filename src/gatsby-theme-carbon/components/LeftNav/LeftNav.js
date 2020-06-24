@@ -1,27 +1,48 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef, useEffect } from 'react';
 import classnames from 'classnames';
 import { useStaticQuery, graphql } from 'gatsby';
-
-import {
-  SideNav,
-  SideNavItems,
-} from 'carbon-components-react/lib/components/UIShell';
+import { SideNav, SideNavItems } from 'carbon-components-react';
 
 import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
 import LeftNavItem from 'gatsby-theme-carbon/src/components/LeftNav/LeftNavItem';
 import LeftNavResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLinks';
-import { useWindowSize } from 'gatsby-theme-carbon/src/util/hooks';
 
 import LeftNavWrapper from 'gatsby-theme-carbon/src/components/LeftNav/LeftNavWrapper';
 import { sideNavDark } from './LeftNav.module.scss';
+import useMetadata from 'gatsby-theme-carbon/src/util/hooks/useMetadata';
 
-const LeftNav = props => {
-  const { leftNavIsOpen, toggleNavState } = useContext(NavContext);
-  const windowSize = useWindowSize();
+const LeftNav = (props) => {
+  const {
+    leftNavIsOpen,
+    leftNavScrollTop,
+    setLeftNavScrollTop,
+    toggleNavState,
+  } = useContext(NavContext);
 
-  if (windowSize.innerWidth > 1056 && !leftNavIsOpen) {
-    toggleNavState('leftNavIsOpen', 'open');
-  }
+  const sideNavRef = useRef();
+  const sideNavListRef = useRef();
+
+  useEffect(() => {
+    sideNavListRef.current = sideNavRef.current.querySelector('.sidenav-list');
+  }, []);
+
+  useEffect(() => {
+    sideNavListRef.current.addEventListener('scroll', (e) => {
+      setLeftNavScrollTop(e.target.scrollTop);
+    });
+  }, [setLeftNavScrollTop]);
+
+  useEffect(() => {
+    if (leftNavScrollTop >= 0 && !sideNavListRef?.current.scrollTop) {
+      sideNavListRef.current.scrollTop = leftNavScrollTop;
+    }
+  }, [leftNavScrollTop]);
+
+  const { navigationStyle } = useMetadata();
+
+  const closeSwitcher = () => {
+    toggleNavState('switcherIsOpen', 'close');
+  };
 
   const {
     allNavItemsYaml: { edges },
@@ -58,11 +79,17 @@ const LeftNav = props => {
 
   // TODO: replace old addon website styles with sass modules, move to wrapper
   return (
-    <LeftNavWrapper expanded={leftNavIsOpen}>
+    <LeftNavWrapper
+      expanded={leftNavIsOpen}
+      onClick={closeSwitcher}
+      onKeyPress={closeSwitcher}
+    >
       <SideNav
-        expanded
-        defaultExpanded
+        ref={sideNavRef}
         aria-label="Side navigation"
+        expanded={navigationStyle ? leftNavIsOpen : true}
+        defaultExpanded={!navigationStyle}
+        isPersistent={!navigationStyle}
         className={classnames({
           [sideNavDark]: props.theme === 'dark' || props.homepage,
           'bx--side-nav--website': true,
@@ -72,7 +99,7 @@ const LeftNav = props => {
             props.theme !== 'dark' && !props.homepage,
         })}
       >
-        <SideNavItems>
+        <SideNavItems className="sidenav-list">
           {renderNavItems()}
           <LeftNavResourceLinks />
         </SideNavItems>

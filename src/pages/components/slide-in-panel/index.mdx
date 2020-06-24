@@ -2,13 +2,17 @@
 title: Slide-in panel
 ---
 
-<Row>
-  <Column colLg={8}>
+The slide-in panel opens as the result of a user action. This component is an empty framework of
+which the content should be determined as required by products.
 
-![Contextual image](images/0.png)
+![Contextual image](images/1.png)
 
-  </Column>
-</Row>
+<InlineNotification>
+
+  This requires the main page content to be responsive so that the panel may slide in. For a non-responsive alternative, it is
+  recommended to use the "Slide Over Panel".
+
+</InlineNotification>
 
 ## Things to consider
 - Using this component requires the main page to be responsive
@@ -18,46 +22,16 @@ title: Slide-in panel
 #### Options
 
 <AnchorLinks>
-  <AnchorLink>Overview</AnchorLink>
   <AnchorLink>Sizing</AnchorLink>
   <AnchorLink>Themes</AnchorLink>
 </AnchorLinks>
 
-## Overview
-
-Opens as the result of a user action. This component is an empty framework of
-which the content should be determined as required by products.
-
-<InlineNotification>
-
-  This requires the main page content to be responsive so that the panel may slide in. For a non-responsive alternative, it is
-  recommended to use the "Slide Over Panel"
-
-</InlineNotification>
-
 ## Sizing
 
-There are two sizes (small and medium), products should decide which size is appropriate depending on the content within the
+There are three sizes (480px, 320px, and 256px), products should decide which size is appropriate depending on the content within the
 side panel.
 Bare in mind the content of the main page will be pushed to accommodate the panel, this should be considered when selecting
 which size of panel should be used.
-
-<AnchorLinks>
-  <AnchorLink>Small</AnchorLink>
-  <AnchorLink>Medium</AnchorLink>
-</AnchorLinks>
-
-### Small
-
-<Row>
-  <Column colLg={8}>
-
-![Example](images/1.png)
-
-  </Column>
-</Row>
-
-### Medium
 
 <Row>
   <Column colLg={8}>
@@ -70,10 +44,9 @@ which size of panel should be used.
 ## Themes
 
 The component will be available in the light and dark themes.
-The recommendation is for products to use the light theme and Paks to use the
-dark theme.
+The recommendation is for panels triggered by the main page content to use the light theme. Panels triggered from the global navigation should use the dark theme. 
 
-### Dark Theme (Pak)
+### Dark Theme (Triggered by the global navigation)
 
 <Row>
   <Column colLg={8}>
@@ -82,7 +55,3 @@ dark theme.
 
   </Column>
 </Row>
-
-## Linked to
-
-[Downloading](../../common-patterns/downloading)

@@ -9,12 +9,12 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "^2.19.37",
+    "gatsby": "^2.20.4",
     "gatsby-cli": "^2.11.7",
     "gatsby-plugin-matomo": "^0.8.1",
-    "gatsby-theme-carbon": "^1.6.1",
+    "gatsby-theme-carbon": "^1.24.3",
     "lodash": "^4.17.13",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

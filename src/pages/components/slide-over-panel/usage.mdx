@@ -10,7 +10,7 @@ main page content. 
 This component is an empty framework that can have product-defined context
 relevant content.
 
-![Example of a large slide over panel](images/1.png)
+![Example of a large slide over panel with an overlay](images/1.png)
 
 ## Things to consider
 - This component will overlay on top of the main page content
@@ -20,52 +20,18 @@ relevant content.
 <AnchorLinks>
   <AnchorLink>Sizes</AnchorLink>
   <AnchorLink>Overlay</AnchorLink>
+  <AnchorLink>Themes</AnchorLink>
 </AnchorLinks>
 
 ## Sizes
-There are three fixed sizes (small, medium and large), products should decide
+There are three fixed sizes (256px, 320px, and 480px) and a large size (640px) which can be customized. Products should decide
 which size is appropriate depending on the content required within the side
 panel. 
 
-<AnchorLinks small>
-  <AnchorLink>Small</AnchorLink>
-  <AnchorLink>Medium</AnchorLink>
-  <AnchorLink>Large</AnchorLink>
-</AnchorLinks>
-
-### Small
-
 <Row>
   <Column colLg={8}>
 
-![Small slide over panel](images/2.png)
-
-  </Column>
-</Row>
-<Row>
-  <Column colLg={8}>
-
-![Small slide over panel](images/3.png)
-
-  </Column>
-</Row>
-
-### Medium
-
-<Row>
-  <Column colLg={8}>
-
-![Medium slide over panel](images/4.png)
-
-  </Column>
-</Row>
-
-### Large
-
-<Row>
-  <Column colLg={8}>
-
-![Large slide over panel](images/5.png)
+![Slide over panel sizes 256px, 320px, 480px and 640px wide](images/2.png)
 
   </Column>
 </Row>
@@ -81,11 +47,30 @@ Do not use an overlay in cases when a side panel remains visible while a user in
 <Row>
   <Column colLg={8}>
 
-![Panel without overlay](images/7.png)
+![Panel without overlay](images/4.png)
 <Caption>Example of a slide-over panel without an overlay, where the user can navigate side panel content through the table.</Caption>
   </Column>
 </Row>
 
-## Linked to
+<Row>
+  <Column colLg={8}>
 
-[Downloading](../../common-patterns/downloading)
+![Panel with overlay](images/3.png)
+<Caption>Example of a slide-over panel with an overlay, where the user can't navigate side panel content through the overlayed page content.</Caption>
+  </Column>
+</Row>
+
+## Themes
+
+The component will be available in the light and dark themes.
+The recommendation is for panels triggered by the main page content to use the light theme. Panels triggered from the global navigation should use the dark theme. 
+
+### Dark Theme (Triggered by the global navigation)
+
+<Row>
+  <Column colLg={8}>
+
+![Example](images/5.png)
+
+  </Column>
+</Row>
