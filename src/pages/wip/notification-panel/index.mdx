@@ -1,0 +1,110 @@
+---
+title: Notification panel
+---
+
+<InlineNotification kind="warning">
+
+  Please note this pattern is still under review.
+
+</InlineNotification>
+
+<InlineNotification>
+
+ This page is not intended to replace the Carbon documentation, but to expand on it.  
+ Find the Carbon notifications guidance [here](https://www.carbondesignsystem.com/patterns/notification-pattern) and [here](https://www.carbondesignsystem.com/components/notification/usage).
+
+</InlineNotification>
+
+<PageDescription>
+
+ The notification panel acts as a store for toast notifications, allowing the user to view and interact with them all in one place. This is particularly useful as by default, toast notifications disappear after a few seconds.  
+
+</PageDescription>
+
+![An example of a notification panel](images/00.png)
+
+## Behaviour
+
+### New notifications
+The notification panel is housed within the header, under the bell icon. When the user receives a new toast notification in the UI, it is indicated as a dot within the notification panel icon. This dot remains until the panel has been opened and closed again. 
+
+<Row>
+  <Column colLg={8}>
+
+![New notification behaviour with toast and icon](images/01.png)
+
+  </Column>
+</Row>
+
+### Slide over panel
+
+The notification panel is a slide over panel. This ensures that the user doesn't lose their place in the UI while interacting with notifications.  
+There are two main ways the user opens the notification side panel. The first is by clicking the bell icon in the header bar, which launches the slide over panel. Additionally, if the user sees a toast notification, clicking on it launches the notification panel. 
+
+<video width="600" controls>
+  <source src="images/Notificationspanel.mp4" type="video/mp4" style="padding:3rem"></source>
+  Your browser does not support video.
+</video>
+<Caption>Example of a notification panel opening in a product</Caption>
+
+<Row>
+  <Column colLg={8}>
+
+![The panel can be opened by clicking the notification icon or the toast notification.](images/02.png)
+<Caption>The panel can be opened by clicking the notification icon or the toast notification.</Caption>
+  </Column>
+</Row>
+
+### Dismissing notifications
+
+Dismissing a toast notification in the UI, or allowing it to time out, does not result in it being removed from the notification panel.  
+To clear all notifications from the notification panel, the user clicks "Dismiss all" within the panel itself. 
+
+<Row>
+  <Column colLg={8}>
+
+![Dismissing notifications by the tile will clear it, however it will remain in the notification panel until all notifications are cleared there.](images/03.png)
+<Caption>The panel can be emptied by clicking "Dismiss all". Dismissing the notification does not remove it from the panel.</Caption>
+  </Column>
+</Row>
+
+<Row>
+  <Column colLg={8}>
+
+![When cleared, the notification panel displays as empty.](images/04.png)
+<Caption>When cleared, the notification panel displays as empty.</Caption>
+  </Column>
+</Row>
+
+## Optional modifiers
+
+### View all
+
+If appropriate, the notification panel includes a "View all" link, which opens up notifications in a separate full page design. This may be useful if the user has too many notifications to fit easily within the side panel.
+
+<Row>
+  <Column colLg={8}>
+
+![The optional "view all" link is at the bottom on the notification panel and opens a whole page for notifications.](images/05.png)
+<Caption>The optional "view all" link is at the bottom on the notification panel and opens a whole page for notifications.</Caption>
+  </Column>
+</Row>
+
+### Expandable notifications
+
+Expandable notifications may be used when there is useful extra information about a specific notification. An example is that for error notifications, there could be more information about the error presented to the user, as well as a suggested fix. 
+
+<video width="600" controls>
+  <source src="images/Expandablenotifications.mp4" type="video/mp4"></source>
+  Your browser does not support video.
+</video>
+<Caption>Example of expandable notifications in a product</Caption>
+
+<Row>
+  <Column colLg={8}>
+
+![Where required, notifications can be expandable.](images/06.png)
+<Caption>Where required, notifications can be expandable.</Caption>
+  </Column>
+</Row>
+

@@ -134,4 +134,6 @@
       path: /wip/state
     - title: "Data tables"
       path: /wip/data-tables/usage
+    - title: "Notification panel (pat.)"
+      path: /wip/notification-panel
   separator: true
