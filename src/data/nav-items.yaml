@@ -87,11 +87,11 @@
     - title: "Global search"
       path: /cloud-paks/global-search/usage
     - title: "CP4I: About"
-      path: /cloud-paks/cp4i/about
+      path: /cloud-paks/cp4i-about
     - title: "CP4I: Navigation"
-      path: /cloud-paks/cp4i/navigation/usage
+      path: /cloud-paks/cp4i-navigation/usage
     - title: "CP4I: Landing page"
-      path: /cloud-paks/cp4i/landing-page/usage
+      path: /cloud-paks/cp4i-landing-page/usage
 - title: Voice and tone guide
   pages:
     - title: Introduction
