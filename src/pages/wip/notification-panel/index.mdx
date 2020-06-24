@@ -17,7 +17,7 @@ title: Notification panel
 
 <PageDescription>
 
- The notification panel acts as a store for toast notifications, allowing the user to view and interact with them all in one place. This is particularly useful as by default, toast notifications disappear after a few seconds.  
+ The notification panel acts as a store for notifications, allowing the user to view and interact with them all in one place. This is particularly useful as by default, toast notifications disappear after a few seconds.  
 
 </PageDescription>
 
@@ -26,7 +26,7 @@ title: Notification panel
 ## Behaviour
 
 ### New notifications
-The notification panel is housed within the header, under the bell icon. When the user receives a new toast notification in the UI, it is indicated as a dot within the notification panel icon. This dot remains until the panel has been opened and closed again. 
+The notification panel is housed within the header, under the bell icon. When the user receives a new notification in the UI, it is indicated as a dot within the notification panel icon. This dot remains until the panel has been opened and closed again. 
 
 <Row>
   <Column colLg={8}>
@@ -38,8 +38,9 @@ The notification panel is housed within the header, under the bell icon. When th
 
 ### Slide over panel
 
-The notification panel is a slide over panel. This ensures that the user doesn't lose their place in the UI while interacting with notifications.  
-There are two main ways the user opens the notification side panel. The first is by clicking the bell icon in the header bar, which launches the slide over panel. Additionally, if the user sees a toast notification, clicking on it launches the notification panel. 
+The notification panel is a slide over panel. The slide over panel does not have an overlay.  
+There are two main ways the user opens the notification panel. The first is by clicking the bell icon in the header bar, which launches the panel. Additionally, if the user sees a toast notification, clicking on it launches the notification panel. 
+In the panel, notifications are ordered chronologically, with the most recent at the top.  
 
 <video width="600" controls>
   <source src="images/Notificationspanel.mp4" type="video/mp4" style="padding:3rem"></source>
@@ -80,7 +81,8 @@ To clear all notifications from the notification panel, the user clicks "Dismiss
 
 ### View all
 
-If appropriate, the notification panel includes a "View all" link, which opens up notifications in a separate full page design. This may be useful if the user has too many notifications to fit easily within the side panel.
+By default, the panel scrolls to contain all of the current notifications.  
+If the offering also has a full-page notifications viewer, the notification panel may include a "View all" link to open it. This may be useful if the user has too many notifications to fit easily within the side panel.
 
 <Row>
   <Column colLg={8}>
