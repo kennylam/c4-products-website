@@ -59,7 +59,7 @@
     - title: "Status icons"
       path: /patterns/status-icons
     - title: "User profile images"
-      path: /patterns/user-profiles-images
+      path: /patterns/user-profile-images
     - title: "Web terminal"
       path: /patterns/web-terminal
 - title: Getting started guide
@@ -87,11 +87,11 @@
     - title: "Global search"
       path: /cloud-paks/global-search/usage
     - title: "CP4I: About"
-      path: /cloud-paks/cp4i/about
+      path: /cloud-paks/cp4i-about
     - title: "CP4I: Navigation"
-      path: /cloud-paks/cp4i/navigation/usage
+      path: /cloud-paks/cp4i-navigation/usage
     - title: "CP4I: Landing page"
-      path: /cloud-paks/cp4i/landing-page/usage
+      path: /cloud-paks/cp4i-landing-page/usage
 - title: Voice and tone guide
   pages:
     - title: Introduction
@@ -132,8 +132,10 @@
       path: /wip/reordering
     - title: "State (pat.)"
       path: /wip/state
-    - title: "Data tables"
+    - title: "Data tables (pat.)"
       path: /wip/data-tables/usage
     - title: "Notification panel (pat.)"
-      path: /wip/notification-panel
+      path: /wip/notification-pane
+    - title: "Tertiary navigation (com.)"
+      path: /wip/tertiary-nav/usage
   separator: true
