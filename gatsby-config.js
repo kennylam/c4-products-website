@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/cdai-design/pal',
   siteMetadata: {
-    title: 'Cloud, Data and AI Design',
+    title: 'CD&AI Design - Pattern asset library',
     description: 'Design information for the Cloud, Data and AI organizations',
     keywords: 'cloud,data,AI,design,pattern,asset,library,pal',
   },
