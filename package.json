@@ -12,7 +12,7 @@
     "@mdx-js/runtime": "^1.6.5",
     "@uiw/react-md-editor": "^1.14.3",
     "ace-builds": "^1.4.11",
-    "cdai-microsite-common-module": "file:../cdai-microsite-common/cdai-microsite-common-module-0.1.5.tgz",
+    "cdai-microsite-common-module": "git+ssh://git@github.ibm.com:cloud-integration-design/cdai-microsite-common.git#npm",
     "classnames": "^2.2.6",
     "front-matter": "^3.2.1",
     "gatsby": "^2.20.4",
