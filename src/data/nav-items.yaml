@@ -62,26 +62,6 @@
       path: /patterns/user-profile-images
     - title: "Web terminal"
       path: /patterns/web-terminal
-- title: Getting started guide
-  pages:
-    - title: Overview
-      path: /getting-started-guide/overview/introduction
-    - title: Project guidance
-      path: /getting-started-guide/project-guidance
-    - title: Resources
-      path: /getting-started-guide/resources
-- title: Walkme guide
-  pages:
-    - title: Overview
-      path: /walkme-guide/overview/introduction
-    - title: Player
-      path: /walkme-guide/player/usage
-    - title: Shoutouts
-      path: /walkme-guide/shoutouts/usage
-    - title: Smart Walk-thrus
-      path: /walkme-guide/smart-walk-thrus/overview
-    - title: SmartTips
-      path: /walkme-guide/smart-tips/usage
 - title: Cloud Pak guidance
   pages:
     - title: "Global search"
@@ -92,30 +72,6 @@
       path: /cloud-paks/cp4i-navigation/usage
     - title: "CP4I: Landing page"
       path: /cloud-paks/cp4i-landing-page/usage
-- title: Voice and tone guide
-  pages:
-    - title: Introduction
-      path: /voice-and-tone
-    - title: Our personality
-      path: /voice-and-tone/our-personality
-    - title: Content principles
-      path: /voice-and-tone/content-principles
-    - title: Language and grammar
-      path: /voice-and-tone/language-and-grammar
-    - title: Capitalization
-      path: /voice-and-tone/capitalization
-    - title: Punctuation
-      path: /voice-and-tone/punctuation
-    - title: Numbers
-      path: /voice-and-tone/numbers
-    - title: Navigation labels
-      path: /voice-and-tone/navigation-labels
-    - title: Button labels
-      path: /voice-and-tone/button-labels
-    - title: Related resources
-      path: /voice-and-tone/related-resources
-    - title: Glossary
-      path: /voice-and-tone/glossary
 - title: Work in progress
   pages:
     - title: "Button menu (com.)"
