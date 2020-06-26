@@ -67,3 +67,7 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Common components imported from node dependencies
+src/gatsby-theme-carbon/components/Header.js
+src/gatsby-theme-carbon/components/Switcher.js
