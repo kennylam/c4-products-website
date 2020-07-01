@@ -135,7 +135,7 @@
     - title: "Data tables (pat.)"
       path: /wip/data-tables/usage
     - title: "Notification panel (pat.)"
-      path: /wip/notification-pane
+      path: /wip/notification-panel
     - title: "Tertiary navigation (com.)"
       path: /wip/tertiary-nav/usage
   separator: true
