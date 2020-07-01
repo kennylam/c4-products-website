@@ -8,6 +8,8 @@
       path: /overview/contribution-process
     - title: "Delivering changes"
       path: /overview/delivering-changes
+    - title: "CD&AI Carbon guidelines"
+      path: /overview/carbon-guidance
 - title: Components
   pages:
     - title: Component status
