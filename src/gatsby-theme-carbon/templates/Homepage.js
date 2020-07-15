@@ -10,7 +10,7 @@ const FirstRightText = () => (
   <div>
     <p className={firstRightText}>This site provides guidance and resources for designers working on products within the <strong>Cloud, Data and AI</strong> portfolio.</p>
     <p className={firstRightText}>Where any of our products have requirements not already met by Carbon, these are provided as additional patterns and components here.</p>
-    <p className={thirdRightText}>This site contains assets that are platform agnostic and can be used by any product design team. You&#8217;ll also find links to IBM Cloud and Watson specific guidelines.</p>
+    <p className={thirdRightText}>This site contains assets that are platform agnostic and can be used by any product design team. You’ll also find links to IBM Cloud and Watson specific guidelines.</p>
   </div>
 );
 
