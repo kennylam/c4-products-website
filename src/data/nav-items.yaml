@@ -94,6 +94,6 @@
       path: /wip/data-tables/usage
     - title: "Notification panel (pat.)"
       path: /wip/notification-panel
-    - title: "Tertiary navigation (com.)"
-      path: /wip/tertiary-nav/usage
+    - title: "In-page navigation (com.)"
+      path: /wip/in-page-navigation/usage
   separator: true
