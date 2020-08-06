@@ -70,8 +70,8 @@
       path: /cloud-paks/global-search/usage
     - title: "CP4I: About"
       path: /cloud-paks/cp4i-about
-    - title: "CP4I: Navigation"
-      path: /cloud-paks/cp4i-navigation/usage
+    - title: "Navigation"
+      path: /cloud-paks/navigation/usage
     - title: "CP4I: Landing page"
       path: /cloud-paks/cp4i-landing-page/usage
 - title: Work in progress

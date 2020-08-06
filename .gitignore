@@ -71,3 +71,24 @@ yarn-error.log
 # Common components imported from node dependencies
 src/gatsby-theme-carbon/components/Header.js
 src/gatsby-theme-carbon/components/Switcher.js
+src/pages/cloud-paks/cp4i-navigation/code.mdx
+src/pages/cloud-paks/navigation/code.mdx
+src/pages/cloud-paks/navigation/usage.mdx
+src/pages/cloud-paks/navigation/images/1.png
+src/pages/cloud-paks/navigation/images/2.png
+src/pages/cloud-paks/navigation/images/3.png
+src/pages/cloud-paks/navigation/images/4.png
+src/pages/cloud-paks/navigation/images/5.png
+src/pages/cloud-paks/navigation/images/6.png
+src/pages/cloud-paks/navigation/images/7.jpg
+src/pages/cloud-paks/navigation/images/8.jpg
+src/pages/cloud-paks/navigation/images/9.jpg
+src/pages/cloud-paks/navigation/images/10.jpg
+src/pages/cloud-paks/navigation/images/11.jpg
+src/pages/cloud-paks/navigation/images/12.jpg
+src/pages/cloud-paks/navigation/images/13.jpg
+src/pages/cloud-paks/navigation/images/14.jpg
+src/pages/cloud-paks/navigation/images/15.jpg
+src/pages/cloud-paks/navigation/images/16.jpg
+src/pages/cloud-paks/navigation/images/17.jpg
+src/pages/cloud-paks/navigation/images/18.jpg
