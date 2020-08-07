@@ -72,6 +72,8 @@
       path: /cloud-paks/cp4i-about
     - title: "CP4I: Navigation"
       path: /cloud-paks/cp4i-navigation/usage
+    - title: "CP4I: Cross Pak switcher"
+      path: /cloud-paks/cross-pak-switcher
     - title: "CP4I: Landing page"
       path: /cloud-paks/cp4i-landing-page/usage
 - title: Work in progress
