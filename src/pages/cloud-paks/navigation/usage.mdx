@@ -79,24 +79,24 @@ This section explains the pattern and interaction of both horizontal and vertica
 
 #### Find
 
-![Find capabilities](images/7.png)
+![Find capabilities](images/7.jpg)
 
 - Find capability is optional in the secondary navigation
 - As users type, results matching typed characters are highlighted in #FFFFFF and semi-bold 
 - Corresponding section titles remain as long as there is at least one matching search item
 - As users type, items that no longer match will disappear
 
-![Example of find](images/8.png)
+![Example of find](images/8.jpg)
 
 - For long menu items, use formula of [First 18 characters][...][Last 3 characters] to truncate
 - Empty state message: No results found
 - Follow carbon guidelines for the [find bar](https://www.carbondesignsystem.com/components/search/codeg)
 
-![Example of find](images/9.png)
+![Example of find](images/9.jpg)
 
 ### In-Product Navigation
 
-![In-product navigation](images/10.png)
+![In-product navigation](images/10.jpg)
 
 - Default state for in-product navigation is an expanded menu bar with a collapse icon at the bottom
 - Once in a specific product within a Cloud Pak, such as API connect, the in-product menu will be expanded by default and can be collapsed to only show icon if user chose to
@@ -105,25 +105,25 @@ This section explains the pattern and interaction of both horizontal and vertica
 
 #### Collapsed state
 
-![Collapsed navigation](images/11.png)
+![Collapsed navigation](images/11.jpg)
 
 - Collapsed/expanded state should be remembered from session to session. i.e. if a user closes the nav it should be closed the next time they log in.
 - In the collapsed view, hovering over a menu item will evoke an [icon tooltip](https://www.carbondesignsystem.com/components/tooltip/code) _(Gray 90, small)_
 
 ### Vertical Navigation
 
-![Vertical navigation](images/12.png)
+![Vertical navigation](images/12.jpg)
 
 - Vertical navigation has an optional find feature, along with an icon to "expand/collapse all" menu items
 - Menu items are collapsed by default. Menu items with nested items are indicated by a chevron
 
-![Vertical navigation with dropdown](images/13.png)
+![Vertical navigation with dropdown](images/13.jpg)
 
 - Nested menus are expanded on click for all second and third level items within the menu
 - Once expanded, menus will remain open until the user specifically closes one category themselves (within on session)
 - “Expand all” icon will change to “Collapse all” as soon as user starts to open one or multiple first level items
 
-![Nested level navigation](images/14.png)
+![Nested level navigation](images/14.jpg)
 
 - For navigation that needs three nested levels, there is a 300px wide menu option (See image above)
 
@@ -131,22 +131,22 @@ This section explains the pattern and interaction of both horizontal and vertica
 - Find capability is optional. (Expand and collapse all feature comes with Find module. It's highly recommended to use "Find" when there's nested layers in the menu.)
 - Empty state yields a message "No results found" same as horizontal navigation
 
-![Find capabilities](images/15.png)
+![Find capabilities](images/15.jpg)
 
-![Find capabilities](images/16.png)
+![Find capabilities](images/16.jpg)
 
 - When users start typing, categories matching the characters typed will appear
 - Highlighted characters are changed to bold and #FFFFFF
 - [Search bar behavior](https://www.carbondesignsystem.com/patterns/search-pattern/) _Gray 90 theme_
 - Some items in a menu are a parent to children categories and do not navigate to a new page upon click. Users may be searching for a parent to find the children underneath (i.e. searching for "instances" to find the instances within it). In this case, the matching category will be returned and the parent category can be expanded upon click with the children nested inside (see below). 
 
-![Searching](images/16.png)
+![Searching](images/16.jpg)
 
 - Children items will be available if a user has matched a search to a parent category
 - Upon expansion, the "expand all" icon should change to a "collapse all" icon 
 - Children items will not have any highlights unless characters within match the searched characters
 
-![Children items](images/17.png)
+![Children items](images/17.jpg)
 
 - If a search query returns children to parent categories, parent categories will appear with children shown beneath. 
 - In this case, no part of a parent should be highlighted unless characters match the search query
