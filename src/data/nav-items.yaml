@@ -64,6 +64,8 @@
       path: /patterns/web-terminal
 - title: Cloud Pak guidance
   pages:
+    - title: "Cross Pak switcher"
+      path: /cloud-paks/cross-pak-switcher
     - title: "Navigation"
       path: /cloud-paks/navigation/usage
     - title: "Landing page"
