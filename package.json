@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
-    "dev": "gatsby develop",
-    "dev:clean": "gatsby clean && gatsby develop",
-    "serve": "gatsby serve"
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby build --prefix-paths",
+    "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby develop",
+    "dev:clean": "gatsby clean && npm run dev",
+    "serve": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby serve"
   },
   "dependencies": {
     "@mdx-js/runtime": "^1.6.5",
@@ -22,5 +22,8 @@
     "lodash": "^4.17.13",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }
