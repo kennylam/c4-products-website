@@ -7,8 +7,8 @@ const links = [
     href: 'https://www.carbondesignsystem.com/',
   },
   {
-    title: 'Our Sketch kit',
-    href: 'https://github.ibm.com/CDAI-design/pal/raw/master/src/resources/sketch-kit/CDAI_design_kit_v01.sketch',
+    title: 'Our Sketch library',
+    href: 'sketch://add-library/cloud/a831d1a7-486c-4293-af6f-58543496c93a',
   },
   {
     title: 'Our GitHub repo',
