@@ -74,12 +74,6 @@ src/gatsby-theme-carbon/components/Switcher.js
 src/pages/cloud-paks/cp4i-navigation/code.mdx
 src/pages/cloud-paks/navigation/code.mdx
 src/pages/cloud-paks/navigation/usage.mdx
-src/pages/cloud-paks/navigation/images/1.png
-src/pages/cloud-paks/navigation/images/2.png
-src/pages/cloud-paks/navigation/images/3.png
-src/pages/cloud-paks/navigation/images/4.png
-src/pages/cloud-paks/navigation/images/5.png
-src/pages/cloud-paks/navigation/images/6.png
 src/pages/cloud-paks/navigation/images/7.jpg
 src/pages/cloud-paks/navigation/images/8.jpg
 src/pages/cloud-paks/navigation/images/9.jpg
@@ -92,18 +86,6 @@ src/pages/cloud-paks/navigation/images/15.jpg
 src/pages/cloud-paks/navigation/images/16.jpg
 src/pages/cloud-paks/navigation/images/17.jpg
 src/pages/cloud-paks/navigation/images/18.jpg
-src/pages/cloud-paks/navigation/images/1.jpg
-src/pages/cloud-paks/navigation/images/1.png
-src/pages/cloud-paks/navigation/images/2.jpg
-src/pages/cloud-paks/navigation/images/2.png
-src/pages/cloud-paks/navigation/images/3.jpg
-src/pages/cloud-paks/navigation/images/3.png
-src/pages/cloud-paks/navigation/images/4.jpg
-src/pages/cloud-paks/navigation/images/4.png
-src/pages/cloud-paks/navigation/images/5.jpg
-src/pages/cloud-paks/navigation/images/5.png
-src/pages/cloud-paks/navigation/images/6.jpg
-src/pages/cloud-paks/navigation/images/6.png
 src/pages/cloud-paks/navigation/images/7.jpg
 src/pages/cloud-paks/navigation/usage.mdx
 src/pages/cloud-paks/navigation/images/Horizontal.jpg
@@ -112,3 +94,4 @@ src/pages/cloud-paks/navigation/images/PageHeader.jpg
 src/pages/cloud-paks/navigation/images/Primary.jpg
 src/pages/cloud-paks/navigation/images/ThirdLevel.jpg
 src/pages/cloud-paks/navigation/images/VerticalNav.jpg
+
