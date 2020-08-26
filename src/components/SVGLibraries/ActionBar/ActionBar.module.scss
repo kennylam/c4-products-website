@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  align-self: end;
+  justify-self: end;
+  
+  opacity: 1;
+  transition: opacity $duration--fast-01 motion(standard, productive);
+  z-index: 1;
+  svg {
+    fill: $icon-01;
+  }
+}
+
+.container.hidden {
+  opacity: 0;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container button::-moz-focus-inner {
+  border: 0;
+}
+
+.container button,
+.container a {
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  height: 32px;
+  width: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &:hover:not(:active) {
+    background-color: $hover-ui;
+    border-bottom: 0;
+  }
+  &:active {
+    border-bottom: 0;
+    background-color: $active-ui;
+  }
+  // carbon tooltip component
+  // had to use important element was too
+  // specific to override it border bottom
+  border-bottom: 0 !important;
+}
+
+.container .tooltip .trigger {
+  &:focus {
+    outline: 2px solid $focus;
+    outline-offset: -2px;
+  }
+  svg {
+    outline: none;
+  }
+}
+

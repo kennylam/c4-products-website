@@ -1,3 +1,6 @@
+const path = require('path');
+
+
 module.exports = {
   pathPrefix: '/cdai-design/pal',
   siteMetadata: {
@@ -6,6 +9,14 @@ module.exports = {
     keywords: 'cloud,data,AI,design,pattern,asset,library,pal',
   },
   plugins: [
+     {
+      resolve: 'gatsby-remark-images',
+      options: {
+        maxWidth: 1152,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-json`,
     {
       resolve: 'gatsby-theme-carbon',
       options: {
@@ -32,6 +43,13 @@ module.exports = {
         siteId: '4',
         matomoUrl: 'https://hcd-matomo.w3ibm.mybluemix.net',
         siteUrl: 'https://pages.github.ibm.com/cdai-design/pal',
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/components/SVGLibraries/shared/data`
       }
     }
   ],

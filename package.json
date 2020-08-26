@@ -4,7 +4,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby build --prefix-paths",
-    "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby develop",
+    "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=dev gatsby develop",
     "dev:clean": "gatsby clean && npm run dev",
     "serve": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby serve"
   },
@@ -14,11 +14,16 @@
     "ace-builds": "^1.4.11",
     "cdai-microsite-common-module": "git+ssh://git@github.ibm.com:cloud-integration-design/cdai-microsite-common.git#npm",
     "classnames": "^2.2.6",
+    "framer-motion": "^2.5.1",
     "front-matter": "^3.2.1",
     "gatsby": "^2.20.4",
     "gatsby-cli": "^2.11.7",
     "gatsby-plugin-matomo": "^0.8.1",
+    "gatsby-plugin-sharp": "^2.6.27",
+    "gatsby-remark-images": "^3.3.25",
+    "gatsby-source-filesystem": "^2.3.24",
     "gatsby-theme-carbon": "^1.24.3",
+    "gatsby-transformer-json": "^2.4.11",
     "lodash": "^4.17.13",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

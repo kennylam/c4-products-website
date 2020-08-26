@@ -62,6 +62,10 @@
       path: /patterns/user-profile-images
     - title: "Web terminal"
       path: /patterns/web-terminal
+- title: "Illustrations"
+  pages:
+    - title: "Library"
+      path: /illustrations/library
 - title: Cloud Pak guidance
   pages:
     - title: "Navigation"
