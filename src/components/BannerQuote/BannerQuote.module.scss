@@ -5,43 +5,41 @@
 
 .bannerQuoteContainer {
   display: flex;
-  padding: 60px 20px 0 135px;
+  flex-wrap: wrap-reverse;
+  padding: 50px 66px;
 }
 
 .banner-quote-left {
+  display: flex;
+  align-items: center;
   flex: 3 3;
+  margin: 0;
+  min-width: 300px;
+
+  @include carbon--breakpoint-down('md') {
+    margin-top: 40px;
+    min-width: 100%;
+  }
 }
 
 .banner-quote-right {
   display: flex;
+  align-items: center;
+  display: flex;
   flex: 2 2;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  @include carbon--breakpoint-down('md') {
-    flex: 0;
-  }
-}
-
-.banner-quote-quotemark {
-  position: absolute;
-  top: 30px;
-  left: 50px;
-  font-size: 125px;
-  font-weight: 700;
-  font-style: italic;
+  margin: 0;
 }
 
 .banner-quote-quote {
-  padding: 0 40px 50px 0;
-  font-size: 44px;
-  font-weight: 400;
+  padding: 0 40px 0 0;
+  font-size: 32px;
+  font-weight: 600;
   font-style: italic;
-  line-height: 60px;
+  line-height: 38px;
 }
 
 .banner-quote-attribution {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   font-style: normal;
   line-height: 60px;
@@ -53,6 +51,12 @@
 
 .banner-quote-image.banner-quote-image {
   display: block;
-  margin: 0 20px;
-  max-height: 500px;
+  flex: 1 1;
+  padding: 20px;
+  max-height: 350px;
+
+  @include carbon--breakpoint-down('md') {
+    max-height: 250px;
+    min-width: 1px;
+  }
 }
