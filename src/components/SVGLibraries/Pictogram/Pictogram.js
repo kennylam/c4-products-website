@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Search } from 'carbon-components-react';
 import SvgCard from '../SvgCard/SvgCard.js';
-import ResourceCard from '../ResourceCard/index.js';
 import { useIntersectionObserver, useSvgLibrary } from '../shared/utils/hooks/';
-import { searchVariants, pictogramVariants} from '../shared/variants';
 import { svgGrid, pictogramSearch, resourceCard } from './Pictogram.module.scss';
-
+import { searchVariants, pictogramVariants} from '../shared/variants';
+import ResourceCard from '../ResourceCard/index.js';
+import { checkProd } from '../shared/utils/helpers.js';
 
 const Pictogram = () => {
   const [sectionRef, containerIsVisible] = useIntersectionObserver();
@@ -49,13 +49,14 @@ const Pictogram = () => {
           className={svgGrid} 
           >
           {searchResults.map(({node}, i) => {
+            const isImageProd = checkProd(process.env.NODE_ENV, site.pathPrefix, node.image)
               return (
                   <SvgCard
                     index={i}
                     containerIsVisible={containerIsVisible}
                     key={node.title} 
                     title={node.title}
-                    image={node.image}
+                    image={isImageProd}
                     alt={node.alt}
                   />
                 )
@@ -63,13 +64,15 @@ const Pictogram = () => {
         </motion.ul>
         <div className={`bx--row resource-card-group ${resourceCard}`}>
           {allLightThemeResourceCardJson.edges.map(({ node }, i) => {
+            const isProdImage = checkProd(process.env.NODE_ENV, site.pathPrefix, node.image)
+            const isProdSource = checkProd(process.env.NODE_ENV, site.pathPrefix, node.source)
             return (
               <div className="bx--no-gutter-sm bx--col-md-4 bx--col-lg-4" key={i}>
                 <ResourceCard 
                   title={node.title}
-                  image={node.image}
+                  image={isProdImage}
                   alt={node.alt}
-                  source={node.source}
+                  source={isProdSource}
                   />
               </div>
             )
