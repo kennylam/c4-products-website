@@ -16,17 +16,17 @@ const ActionBar = ({
     <StaticQuery 
       query={graphql`
         query {
-          images: allFile(filter: {extension: {regex: "/svg/"}}) {
-            edges {
-              node {
-                extension
-                relativePath
-                publicURL
-                name
-                ext
+            images: allFile(filter: {extension: {regex: "/svg/"}, relativeDirectory: {eq: "svgLibrary/lightTheme"}}) {
+              edges {
+                node {
+                  extension
+                  relativePath
+                  publicURL
+                  name
+                  ext
+                }
               }
             }
-          }
           site {
             pathPrefix
           }
