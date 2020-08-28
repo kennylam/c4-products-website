@@ -2,11 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Search } from 'carbon-components-react';
 import SvgCard from '../SvgCard/SvgCard.js';
-import { useIntersectionObserver, useSvgLibrary } from '../shared/utils/hooks/';
-import { svgGrid, pictogramSearch, resourceCard } from './Pictogram.module.scss';
-import { searchVariants, pictogramVariants} from '../shared/variants';
 import ResourceCard from '../ResourceCard/index.js';
-import { checkProd } from '../shared/utils/helpers.js';
+import { useIntersectionObserver, useSvgLibrary } from '../shared/utils/hooks/';
+import { searchVariants, pictogramVariants} from '../shared/variants';
+import { svgGrid, pictogramSearch, resourceCard } from './Pictogram.module.scss';
+import { checkProdImage } from '../shared/utils/helpers.js';
+
+import resourceImages from '../shared/data/icons';
+
+
 
 const Pictogram = () => {
   const [sectionRef, containerIsVisible] = useIntersectionObserver();
@@ -49,14 +53,15 @@ const Pictogram = () => {
           className={svgGrid} 
           >
           {searchResults.map(({node}, i) => {
-            const isImageProd = checkProd(process.env.NODE_ENV, site.pathPrefix, node.image)
+            const isProdImage = checkProdImage(process.env.NODE_ENV, site.pathPrefix, node.image)
               return (
                   <SvgCard
                     index={i}
                     containerIsVisible={containerIsVisible}
                     key={node.title} 
                     title={node.title}
-                    image={isImageProd}
+                    image={isProdImage}
+                    siteMetadata={site}
                     alt={node.alt}
                   />
                 )
@@ -64,15 +69,14 @@ const Pictogram = () => {
         </motion.ul>
         <div className={`bx--row resource-card-group ${resourceCard}`}>
           {allLightThemeResourceCardJson.edges.map(({ node }, i) => {
-            const isProdImage = checkProd(process.env.NODE_ENV, site.pathPrefix, node.image)
-            const isProdSource = checkProd(process.env.NODE_ENV, site.pathPrefix, node.source)
+            const findImage = resourceImages.find(image => image.name === node.title);
             return (
               <div className="bx--no-gutter-sm bx--col-md-4 bx--col-lg-4" key={i}>
                 <ResourceCard 
                   title={node.title}
-                  image={isProdImage}
+                  image={findImage.image}
                   alt={node.alt}
-                  source={isProdSource}
+                  source={node.source}
                   />
               </div>
             )

@@ -11,7 +11,7 @@ import {
   flexContainer 
 } from '../Pictogram/Pictogram.module.scss';
 
-const SvgCard = ({title, image, containerIsVisible, index: i, alt}) => {
+const SvgCard = ({title, image, containerIsVisible, index: i, alt, siteMetadata}) => {
   const [isActionBarVisible, setIsActionBarVisible] = useState(false);
   return (
     <motion.li
