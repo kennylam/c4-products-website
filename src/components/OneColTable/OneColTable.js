@@ -1,19 +1,19 @@
 import React from "react";
-import styles from "./OneColTable.module.scss";
+import { table, cell, cellHeader } from "./OneColTable.module.scss";
 
-const OneColTable = (props) => {
+const OneColTable = ({ header, row1, row2 }) => {
   return (
-    <table className={styles.table}>
+    <table className={table}>
       <tr>
-        <th className={styles.cell}>
-          <span className={styles.cellheader}>{props.header}</span>
+        <th className={cell}>
+          <span className={cellHeader}>{header}</span>
         </th>
       </tr>
       <tr>
-        <td className={styles.cell}>{props.row1}</td>
+        <td className={cell}>{row1}</td>
       </tr>
       <tr>
-        <td className={styles.cell}>{props.row2}</td>
+        <td className={cell}>{row2}</td>
       </tr>
     </table>
   );

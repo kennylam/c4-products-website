@@ -1,40 +1,45 @@
 import React from "react";
-import styles from "./EmptyStateTable.module.scss";
+import {
+  cell,
+  cellImage,
+  cellSubText,
+  cellCta,
+} from "./EmptyStateTable.module.scss";
 
-const EmptyStateTable = (props) => {
+const EmptyStateTable = ({ image, alt, headingText, subText, buttonsText }) => {
   return (
     <table>
       <tr>
-        <td className={styles.cell}>Image</td>
-        <td className={styles.cell}>
+        <td className={cell}>Image</td>
+        <td className={cell}>
           <img
-            className={styles.cellimage}
-            src={require(`../../pages/patterns/empty-state/images${props.image}`)}
-            alt={props.alt}
+            className={cellImage}
+            src={require(`../../pages/patterns/empty-state/images${image}`)}
+            alt={alt}
           />
         </td>
-        <td className={styles.cell}></td>
+        <td className={cell}></td>
       </tr>
       <tr>
-        <td className={styles.cell}>Heading</td>
-        <td className={styles.cell}>
-          <span className={styles.cellheading}>{props.headingText}</span>
+        <td className={cell}>Heading</td>
+        <td className={cell}>
+          <span>{headingText}</span>
         </td>
-        <td className={styles.cell}></td>
+        <td className={cell}></td>
       </tr>
       <tr>
-        <td className={styles.cell}>Sub-text</td>
-        <td className={styles.cell}>
-          <span className={styles.cellsubtext}>{props.subText}</span>
+        <td className={cell}>Sub-text</td>
+        <td className={cell}>
+          <span className={cellSubText}>{subText}</span>
         </td>
-        <td className={styles.cell}></td>
+        <td className={cell}></td>
       </tr>
       <tr>
-        <td className={styles.cell}>CTA buttons</td>
-        <td className={styles.cell}>
-          <span className={styles.cellCTA}>{props.buttonsText}</span>
+        <td className={cell}>CTA buttons</td>
+        <td className={cell}>
+          <span className={cellCta}>{buttonsText}</span>
         </td>
-        <td className={styles.cell}></td>
+        <td className={cell}></td>
       </tr>
     </table>
   );

@@ -7,11 +7,11 @@
   width: 100%;
   min-width: auto;
   min-height: 100px;
-  padding: $spacing-03 16px $spacing-03 $spacing-03;
+  padding: $spacing-03 $spacing-05 $spacing-03 $spacing-03;
   vertical-align: top;
   text-align: left;
 }
 
-.cellheader {
+.cell-header {
   font-weight: bold;
 }
