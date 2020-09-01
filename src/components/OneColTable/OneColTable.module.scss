@@ -1,21 +1,17 @@
+.table {
+  min-width: 100%;
+}
+
 .cell {
   border: 1px solid $ui-03;
-  //#e0e0e0
-  width: 250px;
+  width: 100%;
   min-width: auto;
   min-height: 100px;
   padding: $spacing-03 16px $spacing-03 $spacing-03;
   vertical-align: top;
+  text-align: left;
 }
 
-.cellimage {
-  height: 250px;
-}
-
-.cellsubtext {
-  font-style: italic;
-}
-
-.cellCTA {
-  font-style: italic;
+.cellheader {
+  font-weight: bold;
 }
