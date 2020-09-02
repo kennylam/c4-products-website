@@ -1,0 +1,19 @@
+.cell {
+  border: 1px solid $ui-03;
+  width: 250px;
+  min-width: auto;
+  padding: $spacing-03 $spacing-05 $spacing-03 $spacing-03;
+  vertical-align: top;
+}
+
+.cell-image {
+  height: 250px;
+}
+
+.cell-subtext {
+  font-style: italic;
+}
+
+.cell-cta {
+  font-style: italic;
+}
