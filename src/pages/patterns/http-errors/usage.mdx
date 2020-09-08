@@ -9,58 +9,68 @@ tabs: ['Usage', 'Code']
 
 </PageDescription>
 
-![403 error in context](/images/403.png)
-<Caption>Example of a 403 error in context</Caption>
-
-![404 error in context](/images/404.png)
-<Caption>Example of a 404 error in context</Caption>
-
-
-## Consists of
-
-- An illustration (optionally including animation) that can be relevant to the context, the product or be generic
-- The error number
-- Headline text explaining the cause of the error maintaining an informal tone
-
-#### Options
-
 <AnchorLinks>
-  <AnchorLink>403 Error</AnchorLink>
-  <AnchorLink>404 Error</AnchorLink>
-  <AnchorLink>Other errors</AnchorLink>
+  <AnchorLink>Overview</AnchorLink>
+  <AnchorLink>HTTP Error types</AnchorLink>
+  <AnchorLink>Format</AnchorLink>
 </AnchorLinks>
 
-## 403 Error
+## Overview  
 
-Headline text — "Hmm, it appears you don't have access to this resource_name" where resource_name is replaced as needed.
-
-Description text should introduce the suggested page link(s).   
+HTTP errors are used in an attempt to access something that isn’t available or the user doesn’t have permission for.  
 
 <Row>
  <Column colLg={8}>
 
-![Example of a 403 error page](images/1.png)
-
+![Example of a 403 error in context](images/403inContext.png)
+ <Caption>Example of a 403 error in context</Caption>
  </Column>
 </Row>
-
-<a href="https://github.ibm.com/CDAI-design/pal/tree/master/src/pages/patterns/http-errors/images/403-illustration.png" download>Download illustration</a> or find in the Sketch Kit.
-
-## 404 Error
-
-Headline text — "Hmm, we can't seem to find that."
-
-Description text should introduce the suggested page link(s).   
 
 <Row>
  <Column colLg={8}>
 
-![Example of a 404 error page](images/2.png)
+![Example of a 404 error in context](images/404inContext.png)
+
+ <Caption>Example of a 404 error in context</Caption>
+ </Column>
+</Row>
+
+These guidelines provide default header text and images for three common HTTP error scenarios. The images are part of the HTTP errors coded component and can be viewed live in our [Storybook](https://pages.github.ibm.com/cloud-integration-design/ide-components/?path=/story/production-ready-ide-http-errors--default), along with the default text.   
+
+## HTTP error types
+
+### 403 Error
+
+Headline Text - “Hmm, it appears you don’t have access to this resource_name” where resource_name is replaced as needed.  
+
+Description text should introduce the suggested page link(s).   
+
+<Row>
+ <Column colLg={8}>
+
+![Example of a 403 error page](images/403NormalFrame.png)
 
  </Column>
 </Row>
 
-<a href="https://github.ibm.com/CDAI-design/pal/tree/master/src/pages/patterns/http-errors/images/404-illustration.png" download>Download illustration</a>  or find in the Sketch Kit.
+<a href="https://github.ibm.com/CDAI-design/pal/tree/master/src/pages/patterns/http-errors/images/Error_Page_Illustrations_403.svg" download>Download SVG illustration</a>  or find in the Sketch Kit.
+
+### 404 Error
+
+Headline Text - “Hmm, we can’t seem to find that.”  
+
+Description text should introduce the suggested page link(s).   
+
+<Row>
+ <Column colLg={8}>
+
+![Example of a 404 error page](images/404NormalFrame.png)
+
+ </Column>
+</Row>
+
+<a href="https://github.ibm.com/CDAI-design/pal/tree/master/src/pages/patterns/http-errors/images/Error_Page_Illustrations_404.svg" download>Download SVG illustration</a>  or find in the Sketch Kit.
 
 ## Other errors
 
@@ -69,10 +79,29 @@ Provide an error code for all other errors and aim to add a descriptive message.
 <Row>
  <Column colLg={8}>
 
-![Example of an error page for other errors](images/3.png)
+![Example of an error page for other errors](images/OtherNormalFrame.png)
 
  </Column>
 </Row>
 
-<a href="https://github.ibm.com/CDAI-design/pal/tree/master/src/pages/patterns/http-errors/images/other-illustration.png" download>Download illustration</a>  or find in the Sketch Kit.
+<a href="https://github.ibm.com/CDAI-design/pal/tree/master/src/pages/patterns/http-errors/images/Error_Page_Illustrations_OTHER.svg" download>Download SVG illustration</a>  or find in the Sketch Kit.
 
+## Format
+
+### Basic HTTP errors
+
+Components from the [CD&AI Illustration Library](https://pages.github.ibm.com/cdai-design/pal/illustrations/library) has been used to provide consistency across three core HTTP error scenarios. If you have a specific HTTP error which you feel is not covered by one of these illustrations, you may choose to create a new object which more accurately represents your scenario.  
+
+Characteristics of HTTP errors:  
+- Displays the error number  
+- Features headline text explaining the cause of the error maintaining an informal tone  
+- Utilises isometric style illustration (optionally including animation) featuring a human character and an object relevant to the specific scenario    
+
+### Creating new HTTP error illustrations  
+
+When it comes to creating custom empty state illustrations, you have two options:   
+- Follow the guidelines to create new a HTTP error illustration in the illustration guideline.  
+- Reach out to the illustration team via the [#cdai-pal](https://ibm-casdesign.slack.com/archives/CQGR0HC05) Slack channel.    
+
+
+<a href="https://github.ibm.com/CDAI-design/pal/tree/master/src/pages/patterns/http-errors/images/Error_Page_Illustrations.ai" download>Download the illustrator file</a>.
