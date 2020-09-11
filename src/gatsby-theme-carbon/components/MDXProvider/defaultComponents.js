@@ -3,14 +3,14 @@ import defaultComponents from "gatsby-theme-carbon/src/components/MDXProvider/de
 import BannerQuote from "../../../components/BannerQuote";
 import MdxIcon from "../../../components/MdxIcon";
 import SubmittedToCarbon from "../../../components/SubmittedToCarbon";
-import EmptyStateTable from "../../../components/EmptyStateTable";
-import OneColTable from "../../../components/OneColTable";
+import EmptyStateAllAssetsCard from "../../../components/SVGLibraries/EmptyStateAllAssetsCard";
+import EmptyStateType from "../../../components/SVGLibraries/EmptyStateType";
 
 export default {
   ...defaultComponents,
   BannerQuote,
   MdxIcon,
   SubmittedToCarbon,
-  EmptyStateTable,
-  OneColTable,
+  EmptyStateAllAssetsCard,
+  EmptyStateType,
 };

@@ -1,0 +1,21 @@
+.resource-card-container {
+  margin: $spacing-07 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include carbon--breakpoint-down('md') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.empty-state-type-container {
+  margin-bottom: $layout-05;
+}
+
+.empty-state-title {
+  margin-bottom: $spacing-05;
+}
+
+.table-header {
+  background-color: $ui-02;
+}

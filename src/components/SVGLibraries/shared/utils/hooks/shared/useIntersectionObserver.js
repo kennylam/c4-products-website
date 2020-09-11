@@ -1,4 +1,4 @@
-import { useRef, useLayoutEffect, useState, useCallback } from 'react';
+import { useRef, useLayoutEffect, useState, useCallback } from "react";
 
 export const useIntersectionObserver = () => {
   const [node, setNode] = useState(null);
@@ -16,7 +16,7 @@ export const useIntersectionObserver = () => {
     observerRef.current = new IntersectionObserver(
       ([entry]) => setVisible(entry.isIntersecting),
       {
-        rootMargin: '75%',
+        rootMargin: "75%",
       }
     );
     if (node) {

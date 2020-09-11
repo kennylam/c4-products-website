@@ -8,7 +8,7 @@
     "title": "AI Type",
     "image": "/static/0b70835a294650be0c020d583b1514ea/LightTheme_AIType.svg",
     "alt": "Illustration of the letters 'A' and 'I'."
-  }, 
+  },
   {
     "title": "Assembling AI Type",
     "image": "/static/e01d5abb8ba42fd85457be3a725ac00b/LightTheme_AssembingAIType.svg",
@@ -33,12 +33,12 @@
     "title": "Book",
     "image": "/static/0602b08dc07627e406b30e13105cab0d/LightTheme_Book.svg",
     "alt": "Illustration of a book."
-  }, 
+  },
   {
     "title": "Brain",
     "image": "/static/36364730cb8d8e910b2f0ae32e8c4265/LightTheme_Brain.svg",
     "alt": "Illustration of a brain."
-  }, 
+  },
   {
     "title": "Building Block Blue",
     "image": "/static/f3dd6bcb646ff0197a4aab0061913191/LightTheme_BuildingBlockBlue.svg",
@@ -123,12 +123,12 @@
     "title": "Cube",
     "image": "/static/85643afc23bfdff092763f38ea618213/LightTheme_Cube.svg",
     "alt": "Illustration of a three dimensional cube."
-  }, 
+  },
   {
     "title": "Container Ship",
     "image": "/static/f5c5699ecceadda565678fadcb9f57e7/LightTheme_ContainerShip.svg",
     "alt": "Illustration of a container ship."
-  }, 
+  },
   {
     "title": "Cylinder",
     "image": "/static/c4f5d11ab61a0ed98594cf7c62991fe7/LightTheme_Cylinder.svg",
@@ -143,7 +143,6 @@
     "title": "Data Vis 2",
     "image": "/static/df3153002d638eea425248d43dd96001/LightTheme_DataVis2.svg",
     "alt": "Illustration of a three quartered circle representing data visualization."
-
   },
   {
     "title": "Data Vis 3",
@@ -151,9 +150,9 @@
     "alt": "Illustration of a half circle on the left."
   },
   {
-   "title": "Data Vis 4",
-   "image": "/static/e33722cfeb006f9ce08712169bf104fc/LightTheme_DataVis4.svg",
-   "alt": "Illustration of a 3D bar graph."
+    "title": "Data Vis 4",
+    "image": "/static/e33722cfeb006f9ce08712169bf104fc/LightTheme_DataVis4.svg",
+    "alt": "Illustration of a 3D bar graph."
   },
   {
     "title": "Data Vis Screen 1",
@@ -179,7 +178,7 @@
     "title": "Datapool",
     "image": "/static/fb5dfb15e33693fe34ff2c9bf3de9042/LightTheme_Datapool.svg",
     "alt": "Illustration of data falling into a pool."
-  }, 
+  },
   {
     "title": "Data Vis Screen Blank",
     "image": "/static/e356ee812621685b238e2e7a97c97f46/LightTheme_DataVisScreenBlank.svg",
@@ -247,7 +246,7 @@
   },
   {
     "title": "Hospital",
-    "image": "/static/728346718cf5a95c0aafa435665d1255/LightTheme_Hospital.svg" ,
+    "image": "/static/728346718cf5a95c0aafa435665d1255/LightTheme_Hospital.svg",
     "alt": "Illustration of a hospital."
   },
   {
@@ -289,7 +288,7 @@
     "title": "Mug",
     "image": "/static/556697212bc9e7f36b476eceb31fc044/LightTheme_Mug.svg",
     "alt": "Illustration of a coffee mug."
-  }, 
+  },
   {
     "title": "Phone",
     "image": "/static/861eefce3c3a33692b03358a0f74a448/LightTheme_Phone.svg",
@@ -390,7 +389,7 @@
   },
   {
     "title": "Square Based Pyramid",
-    "image": "/static/e05ed9c634db93e3988fd3e16b1cd3eb/LightTheme_Square-BasedPyramid.svg" ,
+    "image": "/static/e05ed9c634db93e3988fd3e16b1cd3eb/LightTheme_Square-BasedPyramid.svg",
     "alt": "Illustration of a pyramid with four sides."
   },
   {

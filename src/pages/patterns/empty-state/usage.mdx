@@ -16,14 +16,12 @@ Click [here](https://www.carbondesignsystem.com/patterns/empty-states-pattern/) 
 </AnchorLinks>
 
 <Row>
- <Column colLg={8}>
-
+ <Column colLg={10}>
 
 ![Example of Empty state sizes](images/empty-state-1.png)
 
  </Column>
 </Row>
-
 
 ## Overview
 
@@ -33,14 +31,12 @@ These additional guidelines provide default header text and images for six commo
 ## Sizes
 
 <Row>
- <Column colLg={8}>
-
+ <Column colLg={10}>
 
 ![Example of Empty state sizes](images/empty-state-2.png)
 
  </Column>
 </Row>
-
 
 Empty states come in two sizes:
 
@@ -60,22 +56,19 @@ Use-cases:
 Examples:
 
 <Row>
- <Column colLg={8}>
-
+ <Column colLg={10}>
 
 ![Example of Empty state sizes](images/empty-state-3.png)
 
  </Column>
 </Row>
 <Row>
- <Column colLg={8}>
-
+ <Column colLg={10}>
 
 ![Example of Empty state sizes](images/empty-state-4.png)
 
  </Column>
 </Row>
-
 
 ### Small
 
@@ -86,14 +79,12 @@ Use-cases:
 - Sections on a side panel
 
 <Row>
- <Column colLg={8}>
-
+ <Column colLg={10}>
 
 ![Example of Empty state sizes](images/empty-state-5.png)
 
  </Column>
 </Row>
-
 
 ## Illustrations
 
@@ -116,120 +107,11 @@ When it comes to creating custom empty state illustrations, you have two options
 
 ## Empty state types
 
-### No data
-
-Common in first use experiences. Make sure to explain what will be in the empty space when it is populated and provide guidance for the user regarding next steps.
-
 <Row>
- <Column colLg={8}>
-
-
-<EmptyStateTable
-  image="/empty-state-bright-box.svg"
-  alt="empty box image"
-  headingText="You don’t currently have any &lt;variable&gt;."
-  subText="Optional extra sentence to describe the resource and how to create one."
-  buttonsText="If relevant, add a relevant CTA button"
-/>
-
- </Column>
+  <Column colLg={10}>
+    <EmptyStateType />
+  </Column>
 </Row>
-
-
-### No results found
-
-Used when the user's search parameters return no results.
-
-<Row>
- <Column colLg={8}>
-
-
-<EmptyStateTable
-  image="/empty-state-bright-magnifying-glass.svg"
-  alt="magnifying glass image"
-  headingText="Hmm, your search didn’t return any results."
-  subText="No need for any further text as this is a common user experience. Users know to return to the search box, etc."
-  buttonsText="No CTA button required"
-/>
-
- </Column>
-</Row>
-
-
-### System error (API error, generic error, etc)
-
-Used when the system can't display the information due to an error. Explain steps the user can take to find out more detail and/or to resolve the problem. For example, view an activity log.
-
-<Row>
- <Column colLg={8}>
-
-
-<EmptyStateTable
-  image="/empty-state-bright-error.svg"
-  headingText="Uh oh. Something’s not quite right."
-  subText="Optional: Where applicable, add further details regarding the error and how the user can fix it."
-  buttonsText="Try again? 
-(This will resend the request / refresh the view)"
-/>
-
- </Column>
-</Row>
-
-
-### Deploying
-
-Note: Use the generic loading state whenever possible. We’ve included this particular scenario to cover first time usage when the deployment of a new service is happening in the background.
-
-### Not authorized
-
-For when the user does not have permission to view the data. Suggest steps or process to request access.
-
-<Row>
- <Column colLg={8}>
-
-
-<EmptyStateTable
-  image="/empty-state-bright-lock.svg"
-  headingText="You don't have have permission to view this."
-  subText="Contact the admin in charge of your account to request access."
-  buttonsText="Not required."
-/>
-
- </Column>
-</Row>
-
-
-### No notifications
-
-For when the user has no notifications.
-
-<Row>
- <Column colLg={8}>
-
-
-<EmptyStateTable
-  image="/empty-state-bright-notification.svg"
-  headingText="You don't have any notifications."
-  subText="Optional:
-You can view your notifications settings [here]"
-  buttonsText="Not required."
-/>
-
- </Column>
-</Row>
-
-
-### No label/tags
-
-For when the user has not created tags yet and is managing them.
-
-<EmptyStateTable
-  image="/empty-state-bright-tag.svg"
-  headingText="You don't have any tags yet"
-  subText="Optional:
-Tags make it easy for you to find things"
-  buttonsText="Create +"
-/>
 
 ## Variations
 
@@ -244,25 +126,18 @@ Empty states that take over a full page, like in the case of 404 No page found, 
 When seeking to teach the user about some more complex actions (such as in a wizard or in an action such as upload) you can use illustrations that contain color. See the [CD&AI Illustration Library](https://pages.github.ibm.com/cdai-design/pal/illustrations/library/) for guidance and assets to help you create your own expressive illustrations.
 
 <Row>
- <Column colLg={8}>
+ <Column colLg={4} colMd={4} colSm={4}>
 
-
-<OneColTable
-  header="Assets"
-  row1={
-    <>
-      <a href="https://ibm.ent.box.com/folder/121281102229">
-        Empty State illustrations
-      </a>{" "}
-      <span>SVG</span>
-    </>
-  }
-  row2="Download all empty state illustrations (.ZIP)"
+<EmptyStateAllAssetsCard
+  title="Empty State SVGs"
+  image="/static/81acbae3f289f8a00761848d6244b405/zip.svg"
+  alt="Zip Icon"
+  source="/static/9a34ace0b26b47fd3abda512f3b56b58/EmptyStateSVGs.zip"
+  name="Empty State SVGs"
 />
 
  </Column>
 </Row>
-
 
 ## Additional Guidelines
 
