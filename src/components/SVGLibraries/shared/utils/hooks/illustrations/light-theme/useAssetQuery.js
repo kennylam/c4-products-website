@@ -5,7 +5,7 @@ export const useAssetQuery = () => {
     graphql`
       query IllustrationsLightThemeAssetQuery {
         files: allFile(
-          filter: { ext: { regex: "/zip|ai/" }, relativeDirectory: { eq: "" } }
+          filter: { ext: { regex: "/zip|ai/" },  relativeDirectory: {eq: "pages/illustrations/master-files/light-theme"}}
         ) {
           edges {
             node {
