@@ -38,6 +38,8 @@
       path: /patterns/pattern-status
     - title: Advanced filtering
       path: /patterns/advanced-filtering/usage
+    - title: About modal
+      path: /patterns/about-modal/usage
     - title: Create flows
       path: /patterns/creation-flows/usage
     - title: Edit and update
