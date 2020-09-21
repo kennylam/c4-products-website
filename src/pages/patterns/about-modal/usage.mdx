@@ -1,0 +1,143 @@
+---
+title: About screen modal
+---
+
+<PageDescription>
+
+The About modal component provides a way to communicate product information to users and sits on top of an applications' main window.
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink>Overview</AnchorLink>
+  <AnchorLink>Anatomy</AnchorLink>
+  <AnchorLink>The solution</AnchorLink>
+  <AnchorLink>Related</AnchorLink>
+  <AnchorLink>References</AnchorLink>
+  <AnchorLink>Feedback</AnchorLink>
+</AnchorLinks>
+
+## Overview
+
+The _about modal_ is triggered by a user’s action which appears on top of the main page content, and is persistent until dismissed. The purpose of this modal should be immediately apparent to the user, with a clear and obvious path to completion.
+
+![Example of About modal](images/1.png)
+
+## Anatomy
+
+The about modal should provide information about the product. It may include the product name, logo, version numbers, and any appropriate legal text.
+
+![Anatomy modal](images/2.png)
+
+1. **Overlay:** Screen overlay that obscures the on-page content.
+2. **Pictogram/Icon:** Visual symbols used to represent your product
+3. **Product name:** Header text that provides the product name. The IBM Services logo consists of two discrete, but required, elements: the iconic IBM 8-bar logo represented alongside the IBM Services logotype. Please follow these guidelines to ensure proper execution.
+4. **Close button**
+5. **Content:** A summary that supports the title of the card, such as: Version name, Server name, User name, User role, Browser version, Browser OS
+7. **Links (_optional_):** User links if there are additional information to call out within the card. The about modal should be used to display the product information and not where users go to find help
+8. **Legal text (_optional_):** Subhead text providing legal information
+9. **Trademark and copyright information (_optional_):** Optionally include legal text. Suggested format for copyright - Copyright (c) 2018 Company
+10. **Version number:** Text that provided information on the version number of your product
+
+Each about modal is built out with content blocks of elements related to the product or topic. The about container (modal), title and version number are required to provide enough information about the intention of the card. All other elements are optional and layout can vary depending on the information that the modal provides.
+
+The following are the common elements used in the about modal: 
+
+![Content block examples](images/13.png)
+
+The vertical navigation only contains one panel with all menu items listed within it. Sub-items will directly nest under the first level categories.  Click on the first level menu item will  open up all the sub-levels.
+
+#### Light option
+
+By default, we recommend each products to use the dark theme for their about modals as they are triggered from the About section within the profile menu in the main navigation. However, you may opt to chose the light version if this is a product requirement.
+
+![Light about modal examples](images/16.png)
+
+#### Alignment
+
+Inside of an about modal, body copy, including titles, have a 20% [margin-right](https://www.carbondesignsystem.com/components/modal/style#margin-right)
+- Text and IBM Service name should only be 80% of the modal’s width. If your IBM Service name exceeds the 80% it should wrap and fall to the second line.  Please follow these [guidelines](hhttps://www.ibm.com/brand/systems/services/logo/) to ensure proper execution.
+
+![About modal margin example](images/7.png)
+
+#### Type Scale
+
+All card titles, subtitles, labels and description are set in sentence case. Set titles, subtitles and body text appropriately based on content.
+
+![About modal type scale](images/8.png)
+
+| Elements                                        |      Style                      |   Specs                                                       |
+| -------------                                  | -------------------------------- | --------------------------------                              |
+| 01. Title                                      | `Text-01: Productive-heading-04` | IBM 8-bar logo: IBM Plex Sans (Regular) - 28px, IBM Services logotype: IBM Plex Sans (Medium) - 28px |
+| 02. Subtitle                                   |   `Text-02: Body-short-02`    |   IBMIBM Plex Sans (Regular) - 16px |
+| 03. Link / Action                              |   `Body-short-01, link-01`  |    IBM Plex Sans, 14px |
+| 04. Description                                |   `Text-03: Body-short-02`    |    IIBM Plex Sans (Regular) - 16px |
+| 05. Version number / title                      |   `Text-01: Productive-heading-01`   |    IBM Plex Sans (semi-bold) - 14px |
+| 07. Primary/secondary button(Button Component) |   `Text-01: Body-short-01`    |    IBM Plex Sans (Regular) - 14px |
+
+#### Spacing
+
+Since cards present different type of content, some spacing between the elements can vary according to the context. The following specs present some of the constant spacing such as internal padding, space between images, title, description and links.
+
+![About modal spacing tokens](images/14.png)
+
+#### When to use a dialog
+
+Use a modal dialog to notify the user and provide information concerning their current product. About modals are commonly used to report the product's version number .
+
+## The solution
+
+The about modal  triggers a state (or mode) that focuses the user’s attention exclusively on one task or piece of relevant information. When a modal is active, the content of the underneath page is obscured and inaccessible until the user completes the task or dismisses the modal.
+
+#### Accessing the about modal
+
+About modals appear from the About section within the profile menu in your main navigation. Clicking the profile icon will launch a dropdown menu. The menu should always include an option labeled "About" that launches the about modal.
+
+#### Functionality
+
+Use the about modal to provide information about the product including the product name, logo, version numbers, and any appropriate legal text.
+
+#### Dismissing the modals
+
+- **X:** Clicking the x icon in the upper right will close the modal without submitting any data and return the user to its previous context.
+- **Click elsewhere:** Clicking outside the passive modal area will automatically close the modal.
+- **Esc:** Press ESC on the keyboard
+
+### Behaviors
+
+#### Overflow content
+
+When the about modal content is longer than the about modal height then the body section should scroll vertically with the header and footer remaining fixed in place. The content should visibly fade at the end of the modal body area to indicate there is additional content out of view.
+
+About modal content should never scroll horizontally; instead, use a larger size about modal.
+
+![About modal scrolling](images/11.png)
+
+#### Display additional information
+
+Use [tabs](https://www.carbondesignsystem.com/components/tabs/usage)to display additional information that can help inform your users. For example, used to display technologie requirements being used in your product.
+
+![Displaying additional information](images/12.png)
+
+## Related
+
+Components
+- [Modal](https://www.carbondesignsystem.com/components/modal/usage)
+
+Patterns
+- [Dialog](https://www.carbondesignsystem.com/patterns/dialog-pattern)
+
+## References
+
+Apple Human Interface Guidelines, [Modality](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/)
+ (2019)
+Apple Human Interface Guidelines, [Dialogs](https://developer.apple.com/design/human-interface-guidelines/macos/windows-and-views/dialogs/)(2019)
+Therese Fessenden, [Modal & Nonmodal Dialogs: When (& When Not) to Use Them](https://www.nngroup.com/articles/modal-nonmodal-dialog/) (Nielsen Norman Group, 2017)
+James Jacobs, [Modern Enterprise UI design — Part 2: Modal dialogs](https://medium.com/pulsar/modern-enterprise-ui-design-part-2-modal-dialogs-2ccd3cc33c92) (2019)
+Micosoft Docs, [About Dialog Boxes](https://docs.microsoft.com/en-us/windows/win32/dlgbox/about-dialog-boxes) (2019)
+[Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) (W3C, 2018)
+
+
+## Feedback
+
+Help us improve this pattern by providing feedback, asking questions, and leaving any other comments on [GitHub](https://github.com/carbon-design-system/carbon-website/issues/new?assignees=&labels=feedback&template=feedback.md)
