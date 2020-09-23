@@ -2,19 +2,19 @@ import React from 'react';
 import { HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
 import HomepageVideo from '../../components/HomepageVideo/HomepageVideo';
-import { bannerText, firstRightText, thirdRightText } from './Homepage.module.scss';
+import { bannerText, rightText, bannerTextHeading } from './Homepage.module.scss';
 
-const FirstLeftText = () => <p>Unifying the portfolio experience of <strong>IBM Cloud, Data and AI</strong> products.</p>;
+const FirstLeftText = () => <p>Unifying the portfolio across the <strong>Cloud and Cognitive</strong> organization</p>;
 
 const FirstRightText = () => (
   <div>
-    <p className={firstRightText}>This site provides guidance and resources for designers working on products within the <strong>Cloud, Data and AI</strong> portfolio.</p>
-    <p className={firstRightText}>Where any of our products have requirements not already met by Carbon, these are provided as additional patterns and components here.</p>
-    <p className={thirdRightText}>This site contains assets that are platform agnostic and can be used by any product design team. You’ll also find links to IBM Cloud and Watson specific guidelines.</p>
+    <p className={rightText}>This site provides resources for designers working on products within the Cloud, Data and Security business units.</p>
+    <p className={rightText}>Where any of our products have requirements not already met by Carbon, these are provided as additional patterns and components here.</p>
+    <p className={rightText}>This site contains assets that are platform agnostic and can be used by any product design team.</p>
   </div>
 );
 
-const SecondLeftText = () => <p>IBM Cloud, Data and AI</p>;
+const SecondLeftText = () => <p>Carbon for Cloud &amp; Cognitive</p>;
 
 const SecondRightText = () => (
   <p>
@@ -22,7 +22,7 @@ const SecondRightText = () => (
   </p>
 );
 
-const BannerText = () => <h1>Cloud, Data and AI<br />Pattern asset library</h1>;
+const BannerText = () => <h1 className={bannerTextHeading}>Product design library for IBM Cloud, Data and Security</h1>;
 
 const customProps = {
   Banner: (

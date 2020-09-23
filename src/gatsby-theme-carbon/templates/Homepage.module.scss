@@ -9,13 +9,13 @@
   pointer-events: none;
 }
 
-.first-right-text {
-  padding-bottom: 1rem;
+.banner-text-heading {
+  max-width: 16ch;
 }
 
-.third-right-text {
-  padding-bottom: 1rem;
-  color: #4589ff; // Updated July 2020 to provide greater contrast ratio
+.right-text {
+  padding-bottom: $spacing-07;
+  max-width: 32ch;
 }
 
 :global {
