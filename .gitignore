@@ -69,5 +69,4 @@ yarn-error.log
 .yarn-integrity
 
 # Common components imported from node dependencies
-src/gatsby-theme-carbon/components/Header.js
 src/gatsby-theme-carbon/components/Switcher.js

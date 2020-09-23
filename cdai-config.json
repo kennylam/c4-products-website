@@ -1,5 +1,6 @@
 {
-  "repo": "cdai-design/pal",
-  "name": "CD&AI Design - Pattern asset library",
-  "cdai":true
+    "repo": "cdai-design/pal",
+    "name": "CD&AI Design - Pattern asset library",
+    "cdai": true,
+    "excludeComponents": ["Header.js"]
 }
