@@ -1,6 +1,6 @@
 {
     "repo": "cdai-design/pal",
-    "name": "CD&AI Design - Pattern asset library",
+    "name": "Carbon for Cloud & Cognitive",
     "cdai": true,
     "excludeComponents": ["Header.js"]
 }
