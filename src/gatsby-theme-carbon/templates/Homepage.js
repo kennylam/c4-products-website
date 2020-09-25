@@ -18,7 +18,7 @@ const SecondLeftText = () => <p>Carbon for Cloud &amp; Cognitive</p>;
 
 const SecondRightText = () => (
   <p>
-    Incorporating: Blockchain, Business Analytics, Cloud Integration, Cloud Platform, Information Management, and Watson AI.
+    Incorporating: Blockchain, Business Analytics, Cloud Integration, Cloud Platform, Information Management, Security and Watson AI.
   </p>
 );
 

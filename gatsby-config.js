@@ -4,9 +4,9 @@ const path = require('path');
 module.exports = {
   pathPrefix: '/cdai-design/pal',
   siteMetadata: {
-    title: 'CD&AI Design - Pattern asset library',
-    description: 'Design information for the Cloud, Data and AI organizations',
-    keywords: 'cloud,data,AI,design,pattern,asset,library,pal',
+    title: 'Carbon for Cloud and Cognitive - Pattern asset library',
+    description: 'Product design library for IBM Cloud, Data and Security',
+    keywords: 'cloud,data,AI,design,pattern,asset,library,pal,security',
   },
   plugins: [
      {
