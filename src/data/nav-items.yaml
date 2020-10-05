@@ -52,6 +52,8 @@
       path: /patterns/http-errors/usage
     - title: Import
       path: /patterns/importing/usage
+    - title: Notifications
+      path: /patterns/notifications/usage
     - title: Remove
       path: /patterns/removing/usage
     - title: Saving
