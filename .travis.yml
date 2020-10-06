@@ -39,8 +39,12 @@ jobs:
   fast_finish: true
   include:
   - stage: "deploy"
-    script:
+    before_script:
     - yarn build
+    - yarn dev --silent &  
+    script:
+    - yarn test
+    - $(npm bin)/cypress run
     deploy:
       provider: pages
       skip_cleanup: true
