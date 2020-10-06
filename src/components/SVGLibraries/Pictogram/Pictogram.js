@@ -51,6 +51,7 @@ const Pictogram = () => {
     <>
       <motion.div variants={searchVariants} initial="hidden" animate="visible">
         <Search
+          data-cypress="illustrations"
           className={pictogramSearch}
           onChange={handleChange}
           light
