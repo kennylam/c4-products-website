@@ -6,7 +6,10 @@
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby build --prefix-paths",
     "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=dev gatsby develop",
     "dev:clean": "gatsby clean && npm run dev",
-    "serve": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby serve"
+    "serve": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby serve",
+    "test": "npm run cy:run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@mdx-js/runtime": "^1.6.5",
