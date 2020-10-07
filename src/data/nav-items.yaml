@@ -55,7 +55,7 @@
     - title: Import
       path: /patterns/importing/usage
     - title: Notifications
-      path: /patterns/notifications/usage
+      path: /patterns/notifications
     - title: Remove
       path: /patterns/removing/usage
     - title: Saving
