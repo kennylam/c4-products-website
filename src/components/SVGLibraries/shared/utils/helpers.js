@@ -3,10 +3,10 @@ export const checkProdImage = (env, pathPrefix, data) => {
 };
 
 export const handleDownload = (files, site, source) => {
-  if (process.env.NODE_ENV === "dev") {
-    console.log("To download the assets make sure you are in production mode");
-    return;
-  }
+  // if (process.env.NODE_ENV === "dev") {
+  //   console.log("To download the assets make sure you are in production mode");
+  //   return;
+  // }
   const foundFile = files.edges.find(({ node }) => node.publicURL === source);
 
   const a = document.body.appendChild(document.createElement("a"));
