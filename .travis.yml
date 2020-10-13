@@ -16,7 +16,6 @@ cache:
     - echo $TRAVIS_BUILD_DIR
     - $TRAVIS_BUILD_DIR/src/
 
-
 notifications:
   slack:
     rooms:
