@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - '10'
+  - "10"
 
 addons:
   apt:
@@ -17,16 +17,16 @@ cache:
 notifications:
   slack:
     rooms:
-    - ibm-casdesign:P44xeoRDixDw38uE025Qoekz
+      - ibm-casdesign:P44xeoRDixDw38uE025Qoekz
     on_pull_requests: false
     on_success: change
     on_failure: always
     template:
-    - "`%{repository_name}` *%{result}* build <%{build_url}|#%{build_number}>"
-    - "Commit #<%{compare_url}|%{commit}> %{commit_message}"
-    - "Author: *%{author}*"
-    - "Execution time: *%{duration}*"
-    - "Message: %{message}"
+      - "`%{repository_name}` *%{result}* build <%{build_url}|#%{build_number}>"
+      - "Commit #<%{compare_url}|%{commit}> %{commit_message}"
+      - "Author: *%{author}*"
+      - "Execution time: *%{duration}*"
+      - "Message: %{message}"
   email: false
 
 branches:
@@ -45,18 +45,18 @@ install:
 jobs:
   fast_finish: true
   include:
-  - stage: "deploy"
-    before_script:
-    - yarn build
-    - yarn dev --silent &  
-    script:
-    - yarn test
-    - $(npm bin)/cypress run
-    deploy:
-      provider: pages
-      skip_cleanup: true
-      github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
-      github_url: github.ibm.com
-      local_dir: public
-      on:
-        branch: master
+    - stage: "deploy"
+      before_script:
+        - yarn build
+        - yarn dev --silent &
+      script:
+        - yarn test
+        - $(npm bin)/cypress run
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+        github_url: github.ibm.com
+        local_dir: public
+        on:
+          branch: master
