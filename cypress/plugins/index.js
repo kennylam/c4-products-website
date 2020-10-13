@@ -52,8 +52,15 @@ module.exports = (on, config) => {
       const fs = require('fs');
       const home = require('os').homedir();
       const downloadPath = `${home}/Downloads`;
+
+      if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+          // dev code
+          return `${downloadPath}/${filename}`
+        } else {
+          return `${filename}`
+          // production code
+      }
   
-      return `${downloadPath}/${filename}`
     }
   })
 }
