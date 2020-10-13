@@ -41,6 +41,7 @@ stages:
 install:
   - sed -i "s#ssh://git@github.ibm.com:#https://$GITHUB_TOKEN@github.ibm.com/#g" package.json
   - yarn
+  - yarn dev
 
 jobs:
   fast_finish: true
@@ -48,7 +49,6 @@ jobs:
     - stage: "deploy"
       before_script:
         - yarn build
-        - yarn dev --silent &
       script:
         - yarn test
         - $(npm bin)/cypress run
