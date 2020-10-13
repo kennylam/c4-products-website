@@ -19,6 +19,7 @@ describe('Illustrations', () => {
     
     // cy.task("deleteFile", 'LightTheme_Airport.svg')
     const path = cy.task("findFile", 'LightTheme_Airport.svg').then((file => {
+      console.log('FILE', file);
       cy.readFile(file).should('match', /svg/i);
     }));
   })
