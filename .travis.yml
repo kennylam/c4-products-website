@@ -48,10 +48,10 @@ jobs:
   - stage: "deploy"
     before_script:
     - yarn build
-    - yarn dev --silent &  
+    - yarn ci
     script:
     - yarn test
-    - $(npm bin)/cypress run
+    # - $(npm bin)/cypress run
     deploy:
       provider: pages
       skip_cleanup: true
