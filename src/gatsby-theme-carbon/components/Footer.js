@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from 'gatsby-theme-carbon/src/components/Footer';
+import pageContext from '../pageContext';
 
 const Content = () => (
   <>
@@ -14,6 +15,7 @@ const Content = () => (
         or open an issue in our {' '}
         <a href="https://github.ibm.com/CDAI-design/pal/issues"> GitHub </a> repo.
       </p>
+       <p>Page last updated: { pageContext.MdxNode && pageContext.MdxNode.fields.gitDate.split('T')[0]}</p>
   </>
 );
 
