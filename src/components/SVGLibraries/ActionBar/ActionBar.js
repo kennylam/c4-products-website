@@ -40,6 +40,7 @@ const ActionBar = ({
               [styles.hidden]: !isActionBarVisible,
             })}
             aria-hidden={isActionBarVisible}
+            data-cypress={title}
           >
             <TooltipIcon
               onFocus={() => setIsActionBarVisible(true)} 

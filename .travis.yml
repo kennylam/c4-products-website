@@ -3,9 +3,18 @@ language: node_js
 node_js:
   - '10'
 
+addons:
+  apt:
+    packages:
+      # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
+      - libgconf-2-4
+
 cache:
   directories:
     - node_modules
+    - ~/.cache
+    - echo $TRAVIS_BUILD_DIR
+    - $TRAVIS_BUILD_DIR/src/
 
 notifications:
   slack:
@@ -39,8 +48,10 @@ jobs:
   fast_finish: true
   include:
   - stage: "deploy"
-    script:
+    before_script:
     - yarn build
+    script:
+    - yarn ci
     deploy:
       provider: pages
       skip_cleanup: true

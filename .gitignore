@@ -70,3 +70,7 @@ yarn-error.log
 
 # Common components imported from node dependencies
 src/gatsby-theme-carbon/components/Switcher.js
+
+# Ignore cypress like videos
+/cypress/videos/
+/cypress/screenshots/
