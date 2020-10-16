@@ -13,17 +13,14 @@
     "ci": "start-server-and-test dev http://localhost:8000 cy:run"
   },
   "dependencies": {
-    "-": "0.0.1",
     "@mdx-js/runtime": "^1.6.5",
     "@uiw/react-md-editor": "^1.14.3",
-    "D": "^1.0.0",
     "ace-builds": "^1.4.11",
     "cdai-microsite-common-module": "git+ssh://git@github.ibm.com:cloud-integration-design/cdai-microsite-common.git#npm",
     "classnames": "^2.2.6",
-    "cypress-downloadfile": "^1.2.0",
     "framer-motion": "^2.5.1",
     "front-matter": "^3.2.1",
-    "gatsby": "^2.20.4",
+    "gatsby": "2.24.11",
     "gatsby-cli": "^2.11.7",
     "gatsby-plugin-matomo": "^0.8.1",
     "gatsby-plugin-sharp": "^2.6.27",
@@ -37,7 +34,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "cypress": "^5.3.0",
+    "cypress": "^5.4.0",
     "start-server-and-test": "^1.11.5"
   }
 }

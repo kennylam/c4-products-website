@@ -15,5 +15,4 @@ describe('Empty State', () => {
      expect(img[0].naturalWidth).to.be.greaterThan(0)
    })
   });
-
-})
+});

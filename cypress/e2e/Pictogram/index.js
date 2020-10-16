@@ -14,13 +14,13 @@ describe('Illustrations', () => {
     image.should('have.attr', 'src').and("match", /d05801e41bf7b190681a15de6b20d05a/)
   });
 
-  it('can download a file', () => {
-    cy.get('[data-cypress=Airport]').click();
+  // it('can download a file', () => {
+  //   cy.get('[data-cypress=Airport]').click();
     
-    const path = cy.task("findFile", 'LightTheme_Airport.svg').then((file => {
-      cy.readFile(file).should('match', /svg/i);
-    }));
-  })
+  //   const path = cy.task("findFile", 'LightTheme_Airport.svg').then((file => {
+  //     cy.readFile(file).should('match', /svg/i);
+  //   }));
+  // })
 
   it('should test input field and type "truck" ', () => {
     const input = cy.get('[data-cypress=illustrations]')
