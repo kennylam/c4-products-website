@@ -13,7 +13,8 @@ cache:
   directories:
     - node_modules
     - ~/.cache
-    # - $TRAVIS_BUILD_DIR/src/
+    - echo $TRAVIS_BUILD_DIR
+    - $TRAVIS_BUILD_DIR/src/
 
 notifications:
   slack:
