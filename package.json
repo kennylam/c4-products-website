@@ -12,10 +12,8 @@
     "cy:open": "cypress open"
   },
   "dependencies": {
-    "-": "0.0.1",
     "@mdx-js/runtime": "^1.6.5",
     "@uiw/react-md-editor": "^1.14.3",
-    "D": "^1.0.0",
     "ace-builds": "^1.4.11",
     "cdai-microsite-common-module": "git+ssh://git@github.ibm.com:cloud-integration-design/cdai-microsite-common.git#npm",
     "classnames": "^2.2.6",
