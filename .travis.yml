@@ -12,7 +12,7 @@ addons:
 cache:
   directories:
     - node_modules
-    - ~/.cache
+    # - ~/.cache
     # - $TRAVIS_BUILD_DIR/src/
 
 notifications:
@@ -47,10 +47,11 @@ jobs:
   fast_finish: true
   include:
   - stage: "deploy"
-    before_script:
-    - yarn build
+    # before_script:
+    # - yarn build
     script:
-    - yarn ci
+    - yarn build
+    # - yarn ci
     deploy:
       provider: pages
       skip_cleanup: true
