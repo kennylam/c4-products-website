@@ -29,8 +29,8 @@ module.exports = (on, config) => {
           // dev code
           return `${downloadPath}/${filename}`
         } else {
-          return `${filename}`
           // production code
+          return `${filename}`
       }
     }
   })
