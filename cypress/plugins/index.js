@@ -16,9 +16,37 @@
  * @type {Cypress.PluginConfig}
  */
 
+const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
+
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+  on('task', {downloadFile});
+
+  // on('task', {
+	// 	deleteFile(fileName) {
+	// 		const fs = require('fs');
+  //     const userName = require('os').userInfo().username;
+  //     console.log(userName);
+	// 		const downloadPath = `/Users/${userName}/Downloads/`;
+	// 		const absolutePath = downloadPath + fileName;
+	// 		const fileStats = fs.statSync(absolutePath);
+	// 		const fileSize = fileStats.size;
+
+	// 		if (fs.existsSync(absolutePath) && fileSize > 0) {
+	// 			try {
+	// 				fs.unlinkSync(absolutePath);
+	// 				console.log('File deleted');
+	// 				return null;
+	// 			} catch (err) {
+	// 				console.log(err);
+	// 			}
+	// 		}
+	// 		console.log('File is not exists');
+	// 		return null;
+	// 	}
+  // });
+  
   on('task', {
     findFile(filename) {
       const fs = require('fs');
@@ -29,9 +57,10 @@ module.exports = (on, config) => {
           // dev code
           return `${downloadPath}/${filename}`
         } else {
-          // production code
           return `${filename}`
+          // production code
       }
+  
     }
   })
 }
