@@ -11,7 +11,7 @@
     "test:browser": "cypress run --browser chrome",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "cy:ci": "start-server-and-test start http://localhost:8000 test:browser"
+    "cy:ci": "start-server-and-test dev http://localhost:8000 test:browser"
   },
   "dependencies": {
     "@mdx-js/runtime": "^1.6.5",
