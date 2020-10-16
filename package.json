@@ -8,8 +8,10 @@
     "dev:clean": "gatsby clean && npm run dev",
     "serve": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby serve",
     "test": "npm cy:run",
+    "test:browser": "cypress run --browser chrome",
     "cy:run": "cypress run",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:ci": "start-server-and-test start http://localhost:8000 test:browser"
   },
   "dependencies": {
     "@mdx-js/runtime": "^1.6.5",
@@ -34,6 +36,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "cypress": "^5.4.0"
+    "cypress": "^5.4.0",
+    "start-server-and-test": "^1.11.5"
   }
 }
