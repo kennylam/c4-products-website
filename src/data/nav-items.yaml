@@ -18,8 +18,6 @@
       path: /components/additional-tag-features
     - title: Cards
       path: /components/card/usage
-    - title: "File uploader"
-      path: /components/file-uploader/usage
     - title: "Modified tabs"
       path: /components/modified-tabs
     - title: "Page header"
