@@ -12,9 +12,8 @@ addons:
 cache:
   directories:
     - node_modules
-    - ~/.cache
-    - echo $TRAVIS_BUILD_DIR
-    - $TRAVIS_BUILD_DIR/src/
+    # - ~/.cache
+    # - $TRAVIS_BUILD_DIR/src/
 
 notifications:
   slack:
@@ -48,10 +47,11 @@ jobs:
   fast_finish: true
   include:
   - stage: "deploy"
-    before_script:
-    - yarn build
+    # before_script:
+    # - yarn build
     script:
-    - yarn ci
+    - yarn build
+    # - yarn ci
     deploy:
       provider: pages
       skip_cleanup: true
