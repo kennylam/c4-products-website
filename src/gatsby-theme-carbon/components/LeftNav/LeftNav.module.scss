@@ -3,19 +3,19 @@
   outline: 2px solid $carbon--white-0;
 }
 
-.current-item {
-  background-color: #dcdcdc !important;
-}
+// .current-item {
+//   background-color: #dcdcdc !important;
+// }
 
-.current-item span {
-  color: $ui-05;
-}
+// .current-item span {
+//   color: $ui-05;
+// }
 
-.resource-link {
-  &:first-of-type {
-    margin-top: $spacing-05;
-  }
-}
+// .resource-link {
+//   &:first-of-type {
+//     margin-top: $spacing-05;
+//   }
+// }
 // Moves icons to the right
 .outboundLink {
   flex-direction: row-reverse;
@@ -23,10 +23,10 @@
 }
 
 // Icons
-.outboundLink div {
-  display: inline-block !important;
-  flex: 0;
-}
+// .outboundLink div {
+//   display: inline-block !important;
+//   flex: 0;
+// }
 
 // Style overrides waiting for UI Shell theming
 .link-text {

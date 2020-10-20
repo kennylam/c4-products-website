@@ -1,0 +1,476 @@
+[
+    {
+      "title": "Airport",
+      "image": "/static/4725acf7b2b2568ede63ed06bed4b52b/DarkTheme_Airport.svg",
+      "alt": "Dark Illustration of an Airport."
+    },
+    {
+      "title": "AI Type",
+      "image": "/static/1db2de97fe399cf1b35b67bb6b0d96b1/DarkTheme_AIType.svg",
+      "alt": "Dark Illustration of the letters 'A' and 'I'."
+    },
+    {
+      "title": "Assembling AI Type",
+      "image": "/static/7c7c85463ffe4873603cd51db99074b6/DarkTheme_AssemblingAIType.svg",
+      "alt": "Dark Illustration of the letters 'A' and 'I' and their outlines."
+    },
+    {
+      "title": "Bar Chart 1",
+      "image": "/static/44b412ff4df8cba710c01155e40ce9ed/DarkTheme_BarChart1.svg",
+      "alt": "Dark Bar chart all in a row."
+    },
+    {
+      "title": "Bar Chart 2",
+      "image": "/static/8cf897aa6fb3546210d28782869cd33d/DarkTheme_BarChart2.svg",
+      "alt": "Dark Bar chart clustered together."
+    },
+    {
+      "title": "Bar Chart 3",
+      "image": "/static/9f0075662bd7b81c03003f206751175c/DarkTheme_BarChart3.svg",
+      "alt": "Dark Bar chart all in a row, showing values by color."
+    },
+    {
+      "title": "Book",
+      "image": "/static/f7e3fc6f49093d421292b478708d58f1/DarkTheme_Book.svg",
+      "alt": "Dark Illustration of a book."
+    },
+    {
+      "title": "Brain",
+      "image": "/static/7263b58595104f6da284b7c4628376ae/DarkTheme_Brain.svg",
+      "alt": "Dark Illustration of a brain."
+    },
+    {
+      "title": "Building Block Blue",
+      "image": "/static/dad177f67e2aec37e2c361175f833238/DarkTheme_BuildingBlockBlue.svg",
+      "alt": "Dark Illustration of a blue block."
+    },
+    {
+      "title": "Building Block Light",
+      "image": "/static/219b6e3a636cfc37d0b920ae0fa91a92/DarkTheme_BuildingBlockLight.svg",
+      "alt": "Dark Illustration of a light gray block."
+    },
+    {
+      "title": "Building Block Mid",
+      "image": "/static/9b3575bb36b4229b0d05151bca49676c/DarkTheme_BuildingBlockMid.svg",
+      "alt": "Dark Illustration of a dark gray block."
+    },
+    {
+      "title": "Bullseye",
+      "image": "/static/e408d266e84392713a392904b30347e4/DarkTheme_Bullseye.svg",
+      "alt": "Dark Illustration of a target with an arrow in the bullseye."
+    },
+    {
+      "title": "Button",
+      "image": "/static/0d9353f0d9c65b1e7f1abcb5737f8d17/DarkTheme_Button.svg",
+      "alt": "Dark Illustration of a button with a check mark."
+    },
+    {
+      "title": "Calendar",
+      "image": "/static/2a7ed853a3c5aff3561eb34660a532cf/DarkTheme_Calendar.svg",
+      "alt": "Dark Illustration of a calender by the day."
+    },
+    {
+      "title": "Calendar Alt",
+      "image": "/static/316de1ff64fbbbe3a2236cdb7de447a8/DarkTheme_CalendarAlt.svg",
+      "alt": "Dark Illustration of a calendar by the month."
+    },
+    {
+      "title": "Chair",
+      "image": "/static/11a7ec69cce423aca15e8854858e7294/DarkTheme_Chair.svg",
+      "alt": "Dark Illustration of a chair facing forward."
+    },
+    {
+      "title": "Chair Alt",
+      "image": "/static/53b9d3e879f888097a68c51c71dd8bc6/DarkTheme_ChairAlt.svg",
+      "alt": "Dark Illustration of a chair facing backward."
+    },
+    {
+      "title": "Chip",
+      "image": "/static/fecdad4216ed9515ba8f82b946e968d4/DarkTheme_Chip.svg",
+      "alt": "Dark Illustration of a microchip"
+    },
+    {
+      "title": "Clock",
+      "image": "/static/645465f3a310a03636206d07d7b9ec3f/DarkTheme_Clock.svg",
+      "alt": "Dark Illustration of an analog clock."
+    },
+    {
+      "title": "Cloud",
+      "image": "/static/a492cfc419eadbbaa89aaba0414ba993/DarkTheme_Cloud.svg",
+      "alt": "Dark Illustration of a cloud."
+    },
+    {
+      "title": "Cloud Upload",
+      "image": "/static/dafd0c31483748af30a8b3cd4f065ae7/DarkTheme_CloudUpload.svg",
+      "alt": "Dark Illustration of a cloud with an arrow pointing up."
+    },
+    {
+      "title": "Cog",
+      "image": "/static/0f6e96ed80e2fbcbb5a71e09b9b74512/DarkTheme_Cog.svg",
+      "alt": "Dark Illustration of a cog."
+    },
+    {
+      "title": "Cone",
+      "image": "/static/9a896f3ded749f8922972c9751eae0e0/DarkTheme_Cone.svg",
+      "alt": "Dark Illustration of a cone."
+    },
+    {
+      "title": "Connection Nodes",
+      "image": "/static/38f4fb212086400e5d7b1f7fb9ee7c1d/DarkTheme_ConnectionNodes.svg",
+      "alt": "Dark Illustration of nodes connecting to a bigger node."
+    },
+    {
+      "title": "Cube",
+      "image": "/static/0fb67d8b2cc8ccbbc915d988ba69b3da/DarkTheme_Cube.svg",
+      "alt": "Dark Illustration of a three dimensional cube."
+    },
+    {
+      "title": "Container Ship",
+      "image": "/static/b629a87ccb69f516787a40179c9b3a0f/DarkTheme_ContainerShip.svg",
+      "alt": "Dark Illustration of a container ship."
+    },
+    {
+      "title": "Cylinder",
+      "image": "/static/3a88d2660e271cbdeb96b3cca837b7b1/DarkTheme_Cylinder.svg",
+      "alt": "Dark Illustration of a container ship"
+    },
+    {
+      "title": "Data Vis 1",
+      "image": "/static/127f6e3a72230aca304d784fe245b9a7/DarkTheme_DataVis1.svg",
+      "alt": "Dark Illustration of a half circle representing a data visualization"
+    },
+    {
+      "title": "Data Vis 2",
+      "image": "/static/74a27b9ad0795d8ab34fb04da81bdcb3/DarkTheme_DataVis2.svg",
+      "alt": "Dark Illustration of a three quartered circle representing data visualization."
+    },
+    {
+      "title": "Data Vis 3",
+      "image": "/static/0a5e37f73f714ddeef6193aa3a287965/DarkTheme_DataVis3.svg",
+      "alt": "Dark Illustration of a half circle on the left."
+    },
+    {
+      "title": "Data Vis 4",
+      "image": "/static/32b88abbba5913a9401a9b4b80c7c351/DarkTheme_DataVis4.svg",
+      "alt": "Dark Illustration of a 3D bar graph."
+    },
+    {
+      "title": "Data Vis Screen 1",
+      "image": "/static/5287da3d7a564a7d466c95bae749ea7f/DarkTheme_DataVisScreen1.svg",
+      "alt": "Dark Illustration of a screen with a bar graph."
+    },
+    {
+      "title": "Data Vis Screen 2",
+      "image": "/static/6da524e4f9ea4e76e2f660e113a380e6/DarkTheme_DataVisScreen2.svg",
+      "alt": "Dark Illustration a screen with a curved line chart."
+    },
+    {
+      "title": "Data Vis Screen 3",
+      "image": "/static/5e6fc847bd9fc37af8e23b544fc1a732/DarkTheme_DataVisScreen3.svg",
+      "alt": "Dark Illustration of a screen with a line chart."
+    },
+    {
+      "title": "Data Vis Screen 4",
+      "image": "/static/a6ec24a5c5214f00e7bfaafcf70e898a/DarkTheme_DataVisScreen4.svg",
+      "alt": "Dark Illustration of a screen with pie charts."
+    },
+    {
+      "title": "Datapool",
+      "image": "/static/ca981af62c4d6d6d5ec86d9a472ef7d9/DarkTheme_DataPool.svg",
+      "alt": "Dark Illustration of data falling into a pool."
+    },
+    {
+      "title": "Data Vis Screen Blank",
+      "image": "/static/d7be35bed3a8b773ca9c0a831c3c8c59/DarkTheme_DataVisScreenBlank.svg",
+      "alt": "Dark Illustration of a blank screen."
+    },
+    {
+      "title": "Desktop",
+      "image": "/static/c7ded8cfcd502f302f4a54d1b2db1ea9/DarkTheme_Desktop.svg",
+      "alt": "Dark Illustration of a desktop computer screen with light border."
+    },
+    {
+      "title": "Desktop Alt",
+      "image": "/static/5448f924b3bb6c9e163a0eb647ab97e2/DarkTheme_DesktopAlt.svg",
+      "alt": "Dark Illustration of a desktop computer screen with dark border."
+    },
+    {
+      "title": "Documents",
+      "image": "/static/53646cd8dcc9d15d032ef2fd89902f10/DarkTheme_Documents.svg",
+      "alt": "Dark Illustration of paper documents."
+    },
+    {
+      "title": "Document Search",
+      "image": "/static/77b2e22afa828f7d4eb58283e917882a/DarkTheme_DocumentSearch.svg",
+      "alt": "Dark Illustration of paper documents with a magnifying glass."
+    },
+    {
+      "title": "Filing Cabinet",
+      "image": "/static/c844561f6543201a94dcddc2d1ae80d8/DarkTheme_FilingCabinet.svg",
+      "alt": "Dark Illustration of a filing cabinet"
+    },
+    {
+      "title": "Filing Cabinet Empty",
+      "image": "/static/9ac716202f130e8b3ba87f700cf4ef0c/DarkTheme_FilingCabinetEmpty.svg",
+      "alt": "Dark Illustration of a filing cabinet with empty drawers."
+    },
+    {
+      "title": "Filing Cabinet Open",
+      "image": "/static/1b3659c02f5dca0446f3825135fd97f3/DarkTheme_FilingCabinetOpen.svg",
+      "alt": "Dark Illustration of an empty filing cabinet."
+    },
+    {
+      "title": "Finance",
+      "image": "/static/31612414530b9d8b716b53844f2406db/DarkTheme_Finance.svg",
+      "alt": "Dark Illustration of a coin being deposited into a building."
+    },
+    {
+      "title": "Folder",
+      "image": "/static/9ec2a41222e808b6f4b99d5179c11ecf/DarkTheme_Folder.svg",
+      "alt": "Dark Illustration of a filing folder."
+    },
+    {
+      "title": "Forklift",
+      "image": "/static/55756f7855af8ea56a44567332810867/DarkTheme_Forklift.svg",
+      "alt": "Dark Illustration of a filing folder."
+    },
+    {
+      "title": "Hexagonal Prism",
+      "image": "/static/5ff706ceeb15d2c6ca7cb22682d0b851/DarkTheme_HexagonalPrism.svg",
+      "alt": "Dark Illustration of a prism with six sides."
+    },
+    {
+      "title": "Hexagonal Based Pyramid",
+      "image": "/static/08b86a61dddfd8ad2c96764b2b6f6988/DarkTheme_Hexagonal-BasedPyramid.svg",
+      "alt": "Dark Illustration of a pyramid with six sides."
+    },
+    {
+      "title": "Hospital",
+      "image": "/static/738445c93f3a34ef9e5ed56dbe056e27/DarkTheme_Hospital.svg",
+      "alt": "Dark Illustration of a hospital."
+    },
+    {
+      "title": "Hybrid (Cloud and on Prem)",
+      "image": "/static/c4ece2144c9e86213c824c4eddaa12a7/DarkTheme_Hybrid(Cloud-and-on-Prem).svg",
+      "alt": "Dark Illustration of a cylinder with clouds behind it."
+    },
+    {
+      "title": "Industry",
+      "image": "/static/8d726a8a3cbcbe4f6a03aaec377d2bef/DarkTheme_Industry.svg",
+      "alt": "Dark Illustration of a factory."
+    },
+    {
+      "title": "Laptop",
+      "image": "/static/06c1d99fa8df63b2a3b4c06164896532/DarkTheme_Laptop.svg",
+      "alt": "Dark Illustration of a light colored laptop."
+    },
+    {
+      "title": "Laptop Alt",
+      "image": "/static/3129c341ecc4042c4e6f21435c88cf6e/DarkTheme_LaptopAlt.svg",
+      "alt": "Dark Illustration of a dark colored laptop."
+    },
+    {
+      "title": "Lock",
+      "image": "/static/c0a424fdfdafc53830180355d004ead2/DarkTheme_Lock.svg",
+      "alt": "Dark Illustration of a lock."
+    },
+    {
+      "title": "Magnifying Glass",
+      "image": "/static/c46ef1b3f21d01f215115fe38f73ae0d/DarkTheme_MagnifyingGlass.svg",
+      "alt": "Dark Illustration of a magnifying glass."
+    },
+    {
+      "title": "Medium Commerce",
+      "image": "/static/0351730857dc3d6a11fbecef70128cd4/DarkTheme_MediumCommerce.svg",
+      "alt": "Dark Illustration of a commerce building."
+    },
+    {
+      "title": "Mug",
+      "image": "/static/9fca4926dc5b9555cdfdb19a1c96546c/DarkTheme_Mug.svg",
+      "alt": "Dark Illustration of a coffee mug."
+    },
+    {
+      "title": "Phone",
+      "image": "/static/c21e182952acc41421e17face3e7d556/DarkTheme_Phone.svg",
+      "alt": "Dark Illustration of a phone with a light border."
+    },
+    {
+      "title": "Phone Alt",
+      "image": "/static/78c273fb7b6c94a8342dd7b8796e1956/DarkTheme_PhoneAlt.svg",
+      "alt": "Dark Illustration of a phone with a dark border."
+    },
+    {
+      "title": "Pie Chart",
+      "image": "/static/0a36ea82893c7ffcb317e2b12b1e7847/DarkTheme_PieChart.svg",
+      "alt": "Dark Illustration of a pie chart."
+    },
+    {
+      "title": "Platform (Dark)",
+      "image": "/static/ba927f32f3d4929d4c385a3ff3bacf3b/DarkTheme_Platform(Dark).svg",
+      "alt": "Dark Illustration of a dark colored platform."
+    },
+    {
+      "title": "Platform (Light)",
+      "image": "/static/daab6c4141a48fbc6bc361cce141155e/DarkTheme_Platform(Light).svg",
+      "alt": "Dark Illustration of a light colored platform."
+    },
+    {
+      "title": "Platform (Mid)",
+      "image": "/static/3d67e434332df5ab9f90fdb11a2e7cf5/DarkTheme_Platform(Mid).svg",
+      "alt": "Dark Illustration of a gray colored platform."
+    },
+    {
+      "title": "Platform Alt (Dark)",
+      "image": "/static/2f1c24036cdde27f5faf988654556257/DarkTheme_PlatformAlt(Dark).svg",
+      "alt": "Dark Illustration of a dark colored platform with rounded corners."
+    },
+    {
+      "title": "Platform Alt (Light)",
+      "image": "/static/3354d88c45623d7e2b0495ef38d2ebf4/DarkTheme_PlatformAlt(Light).svg",
+      "alt": "Dark Illustration of a light colored platform with rounded corners."
+    },
+    {
+      "title": "Platform Alt (Mid)",
+      "image": "/static/2cef5b997b5ee7f785a644ac6a57ff53/DarkTheme_PlatformAlt(Mid).svg",
+      "alt": "Dark Illustration of a gray colored platform with rounded corners."
+    },
+    {
+      "title": "Process",
+      "image": "/static/5615befe97e410e96495d9caba26c7e4/DarkTheme_Process_Process.svg",
+      "alt": "Dark Illustration of a tree of different processes with a shadow."
+    },
+    {
+      "title": "Robot",
+      "image": "/static/a3187beecaf9f5e42fedb53a96211413/DarkTheme_Robot.svg",
+      "alt": "Dark Robot"
+    },
+    {
+      "title": "Rocket (Quickstart)",
+      "image": "/static/c6a26b12c99c53a370f4a0e133219b86/DarkTheme_Rocket(QuickStart).svg",
+      "alt": "Dark Illustration of a robot."
+    },
+    {
+      "title": "Security Camera",
+      "image": "/static/79559a0dbaed22b70e680a4b9bc73d23/DarkTheme_SecurityCamera.svg",
+      "alt": "Dark Illustration of a security camera."
+    },
+    {
+      "title": "Security Shield",
+      "image": "/static/1eec5c580f1a35d899f23f0bc08f45be/DarkTheme_SecurityShield.svg",
+      "alt": "Dark Illustration of a shield."
+    },
+    {
+      "title": "Server Mainframe",
+      "image": "/static/bf7eb62b9558b196f236616811508612/DarkTheme_ServerMainframe.svg",
+      "alt": "Dark Illustration of a light colored server mainframe."
+    },
+    {
+      "title": "Server Mainframe Alt",
+      "image": "/static/6b4ec8a074e66bebf73de17f3570446f/DarkTheme_ServerMainframeAlt.svg",
+      "alt": "Dark Illustration of a dark colored server mainframe."
+    },
+    {
+      "title": "Server Mainframe Alt 2",
+      "image": "/static/1208485f86c9faf4291f9f1d6f80a48a/DarkTheme_ServerMainframeAlt2.svg"
+    },
+    {
+      "title": "Skyscrapers",
+      "image": "/static/1aee10c7aa182b20225774c70fd061c3/DarkTheme_Skyscrapers.svg",
+      "alt": "Dark illustration of a group of 3 skyscrapers."
+    },
+    {
+      "title": "Small Commerce",
+      "image": "/static/388575c8c25a683c3c728c54ab6732f8/DarkTheme_SmallCommerce.svg",
+      "alt": "Dark Illustration of a small commerce building."
+    },
+    {
+      "title": "Square Based Pyramid",
+      "image": "/static/ff1c651060bbc0fc4e93432cbb8995cc/DarkTheme_SquareBasedPyramid.svg",
+      "alt": "Dark Illustration of a pyramid with four sides."
+    },
+    {
+      "title": "Standing Desk with Desktop",
+      "image": "/static/929b0aae477c6bd96d4f4288a26260e2/DarkTheme_StandingDeskwithDesktop.svg",
+      "alt": "Dark Illustration of a standing desk with a computer on it."
+    },
+    {
+      "title": "Tablet",
+      "image": "/static/555e7c8162de920928face08819e5fce/DarkTheme_Tablet.svg",
+      "alt": "Dark Illustration of a computer tablet."
+    },
+    {
+      "title": "Tablet Alt",
+      "image": "/static/ba3507f6bb5bb1afabddd16ff85187a5/DarkTheme_TabletAlt.svg",
+      "alt": "Dark Illustration of a computer tablet with a dark border."
+    },
+    {
+      "title": "Triangular Prism (The Toblerone)",
+      "image": "/static/7f6fb5ea46e8648864bfcc57d77bae12/DarkTheme_TriangularPrism(The-Toblerone).svg",
+      "alt": "Dark Illustration of a prism with three sides."
+    },
+    {
+      "title": "Triangular Based Pyramid",
+      "image": "/static/127732f90278d77c3d8105da762451f5/DarkTheme_TriangularBasedPyramid.svg",
+      "alt": "Dark Illustration of a pyramid with three sides."
+    },
+    {
+      "title": "Truck",
+      "image": "/static/fca87da56b4d370878b742d53f8000b6/DarkTheme_Truck.svg",
+      "alt": "Dark Illustration of a truck."
+    },
+    {
+      "title": "UI Element 1",
+      "image": "/static/f3c20b3d9f0a92a38c319104bdcd91b9/DarkTheme_UIElement1.svg",
+      "alt": "Dark Illustration of list items with a user in front."
+    },
+    {
+      "title": "UI Element 2",
+      "image": "/static/d659c2675d084a42e65cc62162f90ab9/DarkTheme_UIElement2.svg",
+      "alt": "Dark Illustration of list items."
+    },
+    {
+      "title": "UI Element 3",
+      "image": "/static/ffd904587d8b1fdfe8686443d34d7b8c/DarkTheme_UIElement3.svg",
+      "alt": "Dark Illustration of list items with a plus symbol in front."
+    },
+    {
+      "title": "UI Element 4",
+      "image": "/static/9ffe0436dfc3ca7a96c18a2854cd4182/DarkTheme_UIElement4.svg",
+      "alt": "Dark Illustration of a video sitting on top of a screen."
+    },
+    {
+      "title": "UI Element 5",
+      "image": "/static/34872157951dd916f461edea30dc95b5/DarkTheme_UIElement5.svg",
+      "alt": "Dark Illustration of videos on top of each other."
+    },
+    {
+      "title": "UI Element 6",
+      "image": "/static/ea1d15ce5f658d712687d3352aec274f/DarkTheme_UIElement6.svg",
+      "alt": "Dark Illustration of a line graph on a screen."
+    },
+    {
+      "title": "UI Element 7",
+      "image": "/static/78d804ff120efb1609f2e7c8beba9fbb/DarkTheme_UIElement7.svg",
+      "alt": "Dark Illustration of dark ui elements."
+    },
+    {
+      "title": "UI Element 8",
+      "image": "/static/63e1142ca107899cef766acefbf62336/DarkTheme_UIElement8.svg",
+      "alt": "Dark Illustration of dark ui elements on a screen."
+    },
+    {
+      "title": "UI Element 9",
+      "image": "/static/19d064bf5696535ecec9002ee46905ca/DarkTheme_UIElement9.svg",
+      "alt": "Dark Illustration of gray rectangles stack together next to one blue rectangle."
+    },
+    {
+      "title": "User Group",
+      "image": "/static/21d52390094dabca3687516a83b45411/DarkTheme_UserGroup.svg",
+      "alt": "Dark Illustration of different user avatars"
+    },
+    {
+      "title": "Warehouse",
+      "image": "/static/5b9e0a6453810c49dc023966d5a60f32/DarkTheme_Warehouse.svg",
+      "alt": "Dark Illustration of boxes in a warehouse set in place by a forklift."
+    }
+  ]
