@@ -72,8 +72,8 @@
   pages:
     - title: "Navigation"
       path: /cloud-paks/navigation/usage
-    - title: "Landing page"
-      path: /cloud-paks/landing-page/usage
+    - title: "Homepage"
+      path: /cloud-paks/home-page/usage
     - title: "Cross Pak Switcher"
       path: /cloud-paks/cross-pak-switcher/usage
 - title: Work in progress
