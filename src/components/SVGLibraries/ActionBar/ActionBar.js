@@ -16,7 +16,7 @@ const ActionBar = ({
     <StaticQuery 
       query={graphql`
         query {
-      images: allFile(filter: {extension: {regex: "/svg/"}, relativeDirectory: {eq: "pages/illustrations/master-files/light-theme/images"}}) {
+      images: allFile(filter: {extension: {regex: "/svg/"}, relativeDirectory: {regex: "/master-files/i"}}) {
             edges {
               node {
                 extension

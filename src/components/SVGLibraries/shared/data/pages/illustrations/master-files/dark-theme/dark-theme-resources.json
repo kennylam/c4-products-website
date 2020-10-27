@@ -1,0 +1,14 @@
+[
+    {
+      "title": "Objects Library Dark Theme SVGs",
+      "image": "/src/components/SVGLibraries/shared/data/icons/zip.svg",
+      "alt": "Zip icon",
+      "source": "/static/d23a8bf31978f7cb90c5a417723c6489/ObjectsLibrary_DarkThemeSVGs.zip"
+    },
+    {
+      "alt": "Adobe Illustrator",
+      "title": "Objects Master Dark Themes",
+      "image": "/src/components/SVGLibraries/shared/data/icons/illustrator_icon.svg",
+      "source": "/static/5c288233ecc3a83bb77568713b5798cc/ObjectsMaster_DarkThemes.ai"
+    }
+  ]
