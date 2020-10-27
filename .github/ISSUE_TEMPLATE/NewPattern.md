@@ -1,5 +1,5 @@
 ---
-name: Custom issue template
+name: New Pattern template
 about: Use this template to submit a pattern
 title: New pattern
 labels: New Pattern
@@ -12,8 +12,7 @@ assignees: ''
 - [ ] Include mockups and/or prototypes of any fidelity
 - [ ] Clarify whether it uses existing components, new components, or both
 - [ ] Include competitive and comparative analysis, and any inspirations from other products
-- [ ] This issue will be the staging ground for the pattern contribution, and you should expect the Carbon 
-- [ ] core team and the community to weigh in with suggestions.
+- [ ] This issue will be the staging ground for the pattern contribution, and you should expect the Carbon core team and the community to weigh in with suggestions.
 - [ ] Outline user testing you have performed either external or internal to IBM
 
 We encourage you to surface work in progress. If you’re not able to complete all of the parts yourself, someone in the community may be able to help.
@@ -56,6 +55,8 @@ If there are use cases that require a different solution, include those here wit
 ## Accessibility
 Evaluate your pattern to ensure it meets [accessibility standards](/guidelines/accessibility/overview) and guidelines, and provide details of compliance.
 For example, “Users should be able to TAB into the input field of the search box to begin typing and press ENTER to run the search query.”
+## Testing
+Outline user testing you have performed either external or internal to IBM. Include what context/domain it was tested in and any parts which were not tested. 
 ## Related
 Which components did you use when building this pattern? Did you reference other patterns? List them here.
 If necessary, clarify any differences between this pattern and related patterns.
