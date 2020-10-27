@@ -6,7 +6,7 @@ export const handleDownload = (files, site, source) => {
   let foundFile;
   
   if (process.env.NODE_ENV === "dev") {
-    foundFile = files.edges.find(({ node }) => node.publicURL === `${site.pathPrefix}` + source);
+    foundFile = files.edges.find(({ node }) => node.publicURL === source);
     // console.log("To download the assets make sure you are in production mode");
     // return;
   } else {

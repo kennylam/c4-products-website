@@ -4,15 +4,22 @@ node_js:
   - '10'
 
 addons:
+  chrome: stable
   apt:
     packages:
       # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
       - libgconf-2-4
 
 cache:
+  npm: true
   directories:
-    - node_modules
+    - ~/.npm
+    - ./node_modules
     - ~/.cache
+
+override:
+  - npm ci
+  - npm run cy:verify
 
 notifications:
   slack:

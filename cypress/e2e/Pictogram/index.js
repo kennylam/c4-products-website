@@ -17,9 +17,9 @@ describe('Illustrations', () => {
   it('can download a file', () => {
     cy.get('[data-cypress=Airport]').click();
     
-    // const path = cy.task("findFile", 'LightTheme_Airport.svg').then((file => {
-    //   cy.readFile(file).should('match', /svg/i);
-    // }));
+    const path = cy.task("findFile", 'LightTheme_Airport.svg').then((file => {
+      cy.readFile(file).should('match', /svg/i);
+    }));
 
   })
 
