@@ -38,6 +38,7 @@ const DarkThemeLibrary = () => {
       containerIsVisible={containerIsVisible}
       files={files}
       themedResources={allDarkThemeResourcesJson}
+      theme="dark"
     />
   );
 };
