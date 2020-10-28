@@ -43,6 +43,7 @@ const LightThemeLibrary = () => {
       sectionRef={sectionRef}
       containerIsVisible={containerIsVisible}
       themedResources={allLightThemeResourcesJson}
+      theme="light"
     />
   );
 };
