@@ -4,13 +4,14 @@ import { TooltipIcon } from "carbon-components-react";
 import cx from "classnames";
 import { StaticQuery, graphql } from "gatsby";
 import { handleDownload } from "../shared/utils/helpers";
-import styles from "./ActionBar.module.scss";
+import styles, { containerDark } from "./ActionBar.module.scss";
 
 const ActionBar = ({
   title,
   source,
   isActionBarVisible,
   setIsActionBarVisible,
+  theme,
 }) => {
   return (
     <StaticQuery
@@ -43,6 +44,7 @@ const ActionBar = ({
           <div
             className={cx(styles.container, {
               [styles.hidden]: !isActionBarVisible,
+              [containerDark]: theme === "dark",
             })}
             aria-hidden={isActionBarVisible}
             data-cypress={title}

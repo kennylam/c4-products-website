@@ -30,7 +30,7 @@ const Pictogram = ({
         <Search
           className={pictogramSearch}
           onChange={handleChange}
-          light
+          light={theme}
           labelText="Search SVG Library"
           placeHolderText='Search for descriptors like "warehouse" or "bar chart"'
         />
@@ -83,6 +83,7 @@ const Pictogram = ({
                 files={files}
                 site={site}
                 iconSize="iconSize"
+                theme={theme}
               />
             </div>
           );

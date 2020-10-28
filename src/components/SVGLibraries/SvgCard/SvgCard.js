@@ -50,6 +50,7 @@ const SvgCard = ({
             source={image}
             isActionBarVisible={isActionBarVisible}
             setIsActionBarVisible={setIsActionBarVisible}
+            theme={theme}
           />
         )}
       </motion.div>
