@@ -11,7 +11,14 @@ const PictogramContainer = () => {
       <Tab label="Light">
         <LightThemeLibrary />
       </Tab>
-      <span className="test"></span>
+      {
+      /* 
+       * The span is necessary to be able to target the specific element.
+       * Unable to add className to tab itself.  
+       * This is a hack until a better solution can be determined. 
+      */
+      }
+      <span className="dark-theme__tab"></span>
       <Tab label="Dark">
         <DarkThemeLibrary />
       </Tab>
