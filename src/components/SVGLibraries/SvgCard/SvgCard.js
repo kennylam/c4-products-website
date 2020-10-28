@@ -5,9 +5,12 @@ import { svgCardVariants } from "../shared/variants";
 
 import {
   svgCard,
+  svgCardLight,
+  svgCardDark,
   svgCardInside,
   svgImage,
   triggerText,
+  triggerTextDark,
   flexContainer,
 } from "../Pictogram/Pictogram.module.scss";
 
@@ -18,6 +21,7 @@ const SvgCard = ({
   index: i,
   alt,
   siteMetadata,
+  theme,
 }) => {
   const [isActionBarVisible, setIsActionBarVisible] = useState(false);
   return (
@@ -27,10 +31,16 @@ const SvgCard = ({
       variants={svgCardVariants}
       onMouseEnter={() => setIsActionBarVisible(true)}
       onMouseLeave={() => setIsActionBarVisible(false)}
-      className={svgCard}
+      className={theme === "dark" ? `${svgCard} ${svgCardDark}` : svgCard}
     >
       <motion.div className={svgCardInside}>
-        <span className={triggerText}>{title}</span>
+        <span
+          className={
+            theme === "dark" ? `${triggerText} ${triggerTextDark}` : triggerText
+          }
+        >
+          {title}
+        </span>
         <div className={flexContainer}>
           <img className={svgImage} src={image} alt={alt} />
         </div>
