@@ -22,6 +22,7 @@ const Pictogram = ({
   containerIsVisible,
   handleChange,
   themedResources,
+  theme,
 }) => {
   return (
     <>
@@ -50,6 +51,7 @@ const Pictogram = ({
           return (
             <div>
               <SvgCard
+                theme={theme}
                 index={i}
                 containerIsVisible={containerIsVisible}
                 key={node.title}
