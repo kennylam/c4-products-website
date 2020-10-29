@@ -1,22 +1,28 @@
-import React from 'react';
-import { Download16 } from '@carbon/icons-react';
-import { TooltipIcon } from 'carbon-components-react';
-import cx from 'classnames';
-import { StaticQuery, graphql } from 'gatsby';
-import { handleDownload } from '../shared/utils/helpers';
-import styles from './ActionBar.module.scss';
+import React from "react";
+import { Download16 } from "@carbon/icons-react";
+import { TooltipIcon } from "carbon-components-react";
+import cx from "classnames";
+import { StaticQuery, graphql } from "gatsby";
+import { handleDownload } from "../shared/utils/helpers";
+import styles, { containerDark } from "./ActionBar.module.scss";
 
 const ActionBar = ({
-  title, 
-  source, 
-  isActionBarVisible, 
-  setIsActionBarVisible 
+  title,
+  source,
+  isActionBarVisible,
+  setIsActionBarVisible,
+  theme,
 }) => {
   return (
-    <StaticQuery 
+    <StaticQuery
       query={graphql`
         query {
-      images: allFile(filter: {extension: {regex: "/svg/"}, relativeDirectory: {regex: "/master-files/i"}}) {
+          images: allFile(
+            filter: {
+              extension: { regex: "/svg/" }
+              relativeDirectory: { regex: "/master-files/i" }
+            }
+          ) {
             edges {
               node {
                 extension
@@ -33,17 +39,18 @@ const ActionBar = ({
           }
         }
       `}
-      render={({images, site}) => {
+      render={({ images, site }) => {
         return (
           <div
             className={cx(styles.container, {
               [styles.hidden]: !isActionBarVisible,
+              [containerDark]: theme === "dark",
             })}
             aria-hidden={isActionBarVisible}
             data-cypress={title}
           >
             <TooltipIcon
-              onFocus={() => setIsActionBarVisible(true)} 
+              onFocus={() => setIsActionBarVisible(true)}
               onClick={() => handleDownload(images, site, source)}
               align="center"
               direction="top"
@@ -52,11 +59,10 @@ const ActionBar = ({
               <Download16 />
             </TooltipIcon>
           </div>
-        )
-      }
-    }
+        );
+      }}
     />
-  )
-}
+  );
+};
 
-export default ActionBar
+export default ActionBar;
