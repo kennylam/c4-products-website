@@ -49,7 +49,7 @@ const Pictogram = ({
             node.image
           );
           return (
-            <div>
+            <>
               <SvgCard
                 theme={theme}
                 index={i}
@@ -60,7 +60,7 @@ const Pictogram = ({
                 siteMetadata={site}
                 alt={node.alt}
               />
-            </div>
+            </>
           );
         })}
       </motion.ul>
