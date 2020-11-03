@@ -18,8 +18,6 @@
       path: /components/additional-tag-features
     - title: Cards
       path: /components/card/usage
-    - title: "File uploader"
-      path: /components/file-uploader/usage
     - title: "Modified tabs"
       path: /components/modified-tabs
     - title: "Page header"
@@ -74,8 +72,8 @@
   pages:
     - title: "Navigation"
       path: /cloud-paks/navigation/usage
-    - title: "Landing page"
-      path: /cloud-paks/landing-page/usage
+    - title: "Homepage"
+      path: /cloud-paks/home-page/usage
     - title: "Cross Pak Switcher"
       path: /cloud-paks/cross-pak-switcher/usage
 - title: Work in progress

@@ -2,12 +2,14 @@
   display: flex;
   align-self: end;
   justify-self: end;
-  
   opacity: 1;
   transition: opacity $duration--fast-01 motion(standard, productive);
   z-index: 1;
+}
+
+.container.container-dark {
   svg {
-    fill: $icon-01;
+    fill: $ui-background;
   }
 }
 
@@ -48,6 +50,19 @@
   border-bottom: 0 !important;
 }
 
+.container.container-dark button,
+.container.container-dark a {
+  &:hover:not(:active) {
+    background-color: $hover-secondary;
+  }
+  &:active {
+    background-color: $interactive-02;
+  }
+  & svg {
+    fill: $ui-background;
+  }
+}
+
 .container .tooltip .trigger {
   &:focus {
     outline: 2px solid $focus;
@@ -57,4 +72,3 @@
     outline: none;
   }
 }
-

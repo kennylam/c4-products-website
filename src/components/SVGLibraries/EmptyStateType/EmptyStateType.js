@@ -20,7 +20,7 @@ import {
   resourceCardContainer,
   emptyStateTypeContainer,
   emptyStateTitle,
-  tableHeader
+  tableHeader,
 } from "./EmptyStateType.module.scss";
 
 const EmptyStateTypes = () => {
@@ -49,7 +49,7 @@ const EmptyStateTypes = () => {
           <div className={emptyStateTypeContainer} key={node.id}>
             <h3 className={emptyStateTitle}>{node.title}</h3>
             <p>{node.details}</p>
-            <Row className={`resource-card-group ${resourceCardContainer}`}>
+            <Row className={`${resourceCardContainer}`}>
               {node.sources && (
                 <DownloadAssetCard
                   alt={node.alt}

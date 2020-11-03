@@ -74,3 +74,6 @@ src/gatsby-theme-carbon/components/Switcher.js
 # Ignore cypress like videos
 /cypress/videos/
 /cypress/screenshots/
+
+# Ignore prettier config
+.prettierrc

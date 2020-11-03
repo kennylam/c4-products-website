@@ -8,18 +8,23 @@
   width: 100%;
 }
 
+.svg-card .trigger-text-dark {
+  color: $ui-background;
+}
+
 .svg-grid {
   margin-top: $spacing-05;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  
+
   @include carbon--breakpoint('lg') {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 $svg-card-border: 1px solid $ui-03;
+$svg-card-dark: #262626;
 
 .svg-card {
   height: 0;
@@ -63,6 +68,15 @@ $svg-card-border: 1px solid $ui-03;
   }
 }
 
+.svg-card-light {
+  background-color: $ui-background;
+}
+
+.svg-card-dark {
+  background-color: $svg-card-dark;
+  color: $text-01;
+}
+
 .svg-card-inside {
   position: absolute;
   top: 0;
@@ -91,4 +105,5 @@ $svg-card-border: 1px solid $ui-03;
 
 .resource-card {
   padding: 0 $spacing-05;
+  margin-top: $spacing-04;
 }

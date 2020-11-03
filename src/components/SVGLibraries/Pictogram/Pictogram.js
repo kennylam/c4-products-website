@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { Search } from "carbon-components-react";
 import SvgCard from "../SvgCard/SvgCard.js";
-import DownloadAssetCard from "../DownloadAssetCard";
-import resourceImages from "../shared/data/icons";
 
 import { checkProdImage } from "../shared/utils/helpers.js";
-import { useIntersectionObserver } from "../shared/utils/hooks/shared";
-import {
-  useSvgLibrary,
-  useAssetQuery,
-} from "../shared/utils/hooks/illustrations/light-theme";
+import DownloadAssetCard from "../DownloadAssetCard";
 
 import {
   svgGrid,
@@ -18,43 +12,24 @@ import {
   resourceCard,
 } from "./Pictogram.module.scss";
 import { searchVariants, pictogramVariants } from "../shared/variants";
+import resourceImages from "../shared/data/icons";
 
-const Pictogram = () => {
-  const [sectionRef, containerIsVisible] = useIntersectionObserver();
-  const {
-    allLightThemeSvgLibraryJson,
-    site,
-    allLightThemeResourcesJson,
-  } = useSvgLibrary();
-  const { files } = useAssetQuery();
-  const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-
-  useEffect(() => {
-    const results = allLightThemeSvgLibraryJson.edges.filter(({ node }) => {
-      return node.title.toLowerCase().includes(searchTerm.toLowerCase());
-    });
-
-    setSearchResults(results);
-  }, [
-    searchTerm,
-    site,
-    allLightThemeSvgLibraryJson,
-    allLightThemeResourcesJson,
-  ]);
-
-  const handleChange = (evt) => {
-    setSearchTerm(evt.target.value);
-  };
-
+const Pictogram = ({
+  searchResults,
+  site,
+  files,
+  sectionRef,
+  containerIsVisible,
+  handleChange,
+  themedResources,
+  theme,
+}) => {
   return (
     <>
       <motion.div variants={searchVariants} initial="hidden" animate="visible">
         <Search
-          data-cypress="illustrations"
           className={pictogramSearch}
           onChange={handleChange}
-          light
           labelText="Search SVG Library"
           placeHolderText='Search for descriptors like "warehouse" or "bar chart"'
         />
@@ -73,15 +48,18 @@ const Pictogram = () => {
             node.image
           );
           return (
-            <SvgCard
-              index={i}
-              containerIsVisible={containerIsVisible}
-              key={node.title}
-              title={node.title}
-              image={isProdImage}
-              siteMetadata={site}
-              alt={node.alt}
-            />
+            <>
+              <SvgCard
+                theme={theme}
+                index={i}
+                containerIsVisible={containerIsVisible}
+                key={node.title}
+                title={node.title}
+                image={isProdImage}
+                siteMetadata={site}
+                alt={node.alt}
+              />
+            </>
           );
         })}
       </motion.ul>
@@ -90,7 +68,7 @@ const Pictogram = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 2 } }}
       >
-        {allLightThemeResourcesJson.edges.map(({ node }, i) => {
+        {themedResources.edges.map(({ node }, i) => {
           const findImage = resourceImages.find(
             (image) => image.name === node.title
           );
@@ -104,6 +82,7 @@ const Pictogram = () => {
                 files={files}
                 site={site}
                 iconSize="iconSize"
+                theme={theme}
               />
             </div>
           );

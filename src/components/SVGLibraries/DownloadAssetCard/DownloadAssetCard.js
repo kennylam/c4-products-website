@@ -18,11 +18,12 @@ const DownloadAssetCard = ({
   files,
   site,
   color,
+  theme,
 }) => {
   return (
     <div
       className={classNames("bx--resource-card", {
-        "bx--resource-card--dark": color,
+        "bx--resource-card--dark": color || theme === "dark",
       })}
     >
       <div className="bx--aspect-ratio bx--aspect-ratio--2x1">

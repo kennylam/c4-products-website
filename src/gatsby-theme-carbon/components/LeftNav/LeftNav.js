@@ -65,18 +65,6 @@ const LeftNav = (props) => {
 
   const navItems = edges.map(({ node }) => node);
 
-  const renderNavItems = () =>
-    navItems.map((item, i) => {
-      return (
-        <React.Fragment key={i}>
-          {item.separator &&
-            <hr className="bx--side-nav__divider"/>
-          }
-          <LeftNavItem items={item.pages} category={item.title} key={i} />
-        </React.Fragment>
-      )
-    });
-
   // TODO: replace old addon website styles with sass modules, move to wrapper
   return (
     <LeftNavWrapper
@@ -100,7 +88,16 @@ const LeftNav = (props) => {
         })}
       >
         <SideNavItems className="sidenav-list">
-          {renderNavItems()}
+        {navItems.map((item, i) => {
+            return (
+              <React.Fragment key={i}>
+                {item.separator &&
+                  <hr className="bx--side-nav__divider"/>
+                }
+                <LeftNavItem items={item.pages} category={item.title} key={i} />
+              </React.Fragment>
+            )
+          })};
           <LeftNavResourceLinks />
         </SideNavItems>
       </SideNav>
