@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Search } from "carbon-components-react";
 import SvgCard from "../SvgCard/SvgCard.js";
-
-import { checkProdImage } from "../shared/utils/helpers.js";
 import DownloadAssetCard from "../DownloadAssetCard";
 
 import {
@@ -25,18 +23,12 @@ const Pictogram = ({
 }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  useEffect(() => {
-    console.log("searchTerm", searchTerm);
-    console.log("themedResources", themedResources);
-  });
-
   const handleChange = (evt) => {
-    setSearchTerm(evt.target.value.toLowerCase());
+    setSearchTerm(evt.target.value);
   };
 
-  const handleFilter = (node, searchTerm) => {
-    return node.title.toLowerCase().includes(searchTerm);
-  };
+  const handleFilter = (node, searchTerm) =>
+    node.title.toLowerCase().includes(searchTerm.toLowerCase());
 
   return (
     <>
@@ -46,6 +38,7 @@ const Pictogram = ({
           onChange={handleChange}
           labelText="Search SVG Library"
           placeHolderText='Search for descriptors like "warehouse" or "bar chart"'
+          value={searchTerm}
         />
       </motion.div>
       <motion.ul
@@ -56,14 +49,10 @@ const Pictogram = ({
         className={svgGrid}
       >
         {themedResources.edges
-          .filter(({ node }) => handleFilter(node, searchTerm))
+          .filter(({ node }) => {
+            return handleFilter(node, searchTerm);
+          })
           .map(({ node }, i) => {
-            // Rename this to be more clear what it is actual intended for
-            const isProdImage = checkProdImage(
-              process.env.NODE_ENV,
-              site.pathPrefix,
-              node.image
-            );
             return (
               <>
                 <SvgCard
@@ -72,7 +61,12 @@ const Pictogram = ({
                   containerIsVisible={containerIsVisible}
                   key={node.title}
                   title={node.title}
-                  image={isProdImage}
+                  image={
+                    // if prod env, pathPrefix MUST be added
+                    process.env.NODE_ENV === "production"
+                      ? `${site.pathPrefix}${node.image}`
+                      : `${node.image}`
+                  }
                   siteMetadata={site}
                   alt={node.alt}
                 />

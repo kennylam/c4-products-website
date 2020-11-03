@@ -1,4 +1,3 @@
-import { useSvgLibrary } from "./useSvgLibrary";
-import { useAssetQuery } from "./useAssetQuery";
+import { useGetAllResourcesQuery } from "./useGetAllResourcesQuery";
 
-export { useAssetQuery, useSvgLibrary };
+export { useGetAllResourcesQuery };

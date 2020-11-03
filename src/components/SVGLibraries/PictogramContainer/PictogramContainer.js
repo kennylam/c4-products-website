@@ -1,38 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Tabs, Tab } from "gatsby-theme-carbon";
-// import LightThemeLibrary from "../LightThemeLibrary/LightThemeLibrary";
-// import DarkThemeLibrary from "../DarkThemeLibrary/DarkThemeLibrary";
 import Pictogram from "../Pictogram";
-import { useIntersectionObserver } from "../shared/utils/hooks/shared";
 import {
+  useIntersectionObserver,
   useSvgLibrary,
-  useAssetQuery,
-} from "../shared/utils/hooks/illustrations/light-theme";
-import {
-  useSvgLibraryDark,
-  useDarkAssetQuery,
-} from "../shared/utils/hooks/illustrations/dark-theme";
+} from "../shared/utils/hooks/shared";
+import { useGetAllResourcesQuery as useLightThemeResourceQuery } from "../shared/utils/hooks/illustrations/light-theme";
+import { useGetAllResourcesQuery as useDarkThemeResourceQuery } from "../shared/utils/hooks/illustrations/dark-theme";
 
 import "./_overrides.scss";
 
 const PictogramContainer = () => {
-  const [searchTerm, setSearchTerm] = useState("");
   const [sectionRef, containerIsVisible] = useIntersectionObserver();
-  // light theme resources
+
   const {
     allLightThemeSvgLibraryJson,
-    site,
     allLightThemeResourcesJson,
-  } = useSvgLibrary();
-  const { files: lightFiles } = useAssetQuery();
-
-  // Dark theme resources
-  const {
     allDarkThemeSvgLibraryJson,
     allDarkThemeResourcesJson,
-  } = useSvgLibraryDark();
+    site,
+  } = useSvgLibrary();
 
-  const { files: darkFiles } = useDarkAssetQuery();
+  const { files: lightFiles } = useLightThemeResourceQuery();
+  const { files: darkFiles } = useDarkThemeResourceQuery();
 
   return (
     <Tabs>
