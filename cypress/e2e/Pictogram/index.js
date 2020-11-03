@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("Illustrations", () => {
+xdescribe("Illustrations", () => {
   it("should navigate to illustrations page from index", () => {
     cy.visit("/");
     cy.get(".bx--header__action--menu").click();
@@ -35,5 +35,18 @@ describe("Illustrations", () => {
 
   it("should check if first image in Pictogram has been removed", () => {
     cy.get('[alt="Illustration of an Airport."]').should("not.exist");
+  });
+});
+
+describe("Test illustrations dark theme library", () => {
+  it("should navigate to illustrations page from index", () => {
+    cy.visit("/");
+    cy.get(".bx--header__action--menu").click();
+    cy.contains("li", /illustrations/i).click();
+  });
+
+  it('should find and click on "Dark Theme" tab', () => {
+    cy.findByText("Dark Theme").should("exist");
+    const button = cy.findByText("Dark Theme").click();
   });
 });

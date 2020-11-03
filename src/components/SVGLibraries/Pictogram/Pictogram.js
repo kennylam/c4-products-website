@@ -58,7 +58,7 @@ const Pictogram = ({
                 title={node.title}
                 image={isProdImage}
                 siteMetadata={site}
-                alt={node.alt}
+                alt={`${theme} theme ${node.alt}`}
               />
             </>
           );
