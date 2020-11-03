@@ -28,6 +28,7 @@ const Pictogram = ({
     <>
       <motion.div variants={searchVariants} initial="hidden" animate="visible">
         <Search
+          data-cypress={`${theme}-illustrations-search`}
           className={pictogramSearch}
           onChange={handleChange}
           labelText="Search SVG Library"
