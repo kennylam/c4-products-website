@@ -49,9 +49,7 @@ const Pictogram = ({
         className={svgGrid}
       >
         {themedResources.edges
-          .filter(({ node }) => {
-            return handleFilter(node, searchTerm);
-          })
+          .filter(({ node }) => handleFilter(node, searchTerm))
           .map(({ node }, i) => {
             return (
               <>
