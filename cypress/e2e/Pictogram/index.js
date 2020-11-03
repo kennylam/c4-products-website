@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-xdescribe("Illustrations", () => {
+describe("Illustrations", () => {
   it("should navigate to illustrations page from index", () => {
     cy.visit("/");
     cy.get(".bx--header__action--menu").click();
@@ -8,7 +8,7 @@ xdescribe("Illustrations", () => {
   });
 
   it("should check if first image in Pictogram is rendering", () => {
-    const image = cy.get('[alt="Illustration of an Airport."]');
+    const image = cy.get('[alt="light theme Illustration of an Airport."]');
     image.should("exist");
     image
       .should("have.attr", "src")
