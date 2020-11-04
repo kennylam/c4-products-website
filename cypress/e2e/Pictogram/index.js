@@ -15,7 +15,7 @@ describe("Test illustrations 'Light' theme library", () => {
       .and("match", /d05801e41bf7b190681a15de6b20d05a/);
   });
 
-  xit("should check if all light images have an alt and src attribute", () => {
+  it("should check if all light images have an alt and src attribute", () => {
     cy.findAllByTestId(/light-img-test/i).each(($el) => {
       cy.wrap($el).should("have.attr", "alt");
       cy.wrap($el).should("have.attr", "src");
@@ -67,7 +67,7 @@ describe("Test illustrations 'Dark' theme library", () => {
     cy.findByAltText(/dark illustration of an airport/i).should("be.visible");
   });
 
-  it("should check if all dark images have an alt attribute", () => {
+  it("should check if all dark images have an alt and src attribute", () => {
     cy.findAllByTestId(/dark-img-test/i).each(($el) => {
       cy.wrap($el).should("have.attr", "alt");
       cy.wrap($el).should("have.attr", "src");
@@ -80,6 +80,8 @@ describe("Test illustrations 'Dark' theme library", () => {
     const path = cy.task("findFile", "DarkTheme_Airport.svg").then((file) => {
       cy.readFile(file).should("match", /svg/i);
     });
+
+    cy.task("cleanDownloads", "DarkTheme_Airport.svg");
   });
 
   it('should test "Dark" tab input field and type "truck" ', () => {
