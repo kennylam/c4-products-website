@@ -15,7 +15,7 @@ describe("Test illustrations 'Light' theme library", () => {
       .and("match", /d05801e41bf7b190681a15de6b20d05a/);
   });
 
-  it("should check if all light images have an alt attribute", () => {
+  xit("should check if all light images have an alt and src attribute", () => {
     cy.findAllByTestId(/light-img-test/i).each(($el) => {
       cy.wrap($el).should("have.attr", "alt");
       cy.wrap($el).should("have.attr", "src");
@@ -28,6 +28,8 @@ describe("Test illustrations 'Light' theme library", () => {
     const path = cy.task("findFile", "LightTheme_Airport.svg").then((file) => {
       cy.readFile(file).should("match", /svg/i);
     });
+
+    cy.task("cleanDownloads", "LightTheme_Airport.svg");
   });
 
   it('should test input field and type "truck" ', () => {
@@ -45,7 +47,7 @@ describe("Test illustrations 'Light' theme library", () => {
   });
 });
 
-describe("Test illustrations 'Dark' theme library", () => {
+xdescribe("Test illustrations 'Dark' theme library", () => {
   it("should navigate to illustrations page from index", () => {
     cy.visit("/");
     cy.get(".bx--header__action--menu").click();

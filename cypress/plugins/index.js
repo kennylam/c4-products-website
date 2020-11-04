@@ -17,20 +17,29 @@
  */
 
 module.exports = (on, config) => {
-  on('task', {
-    findFile(filename) {
-      const fs = require('fs');
-      const home = require('os').homedir();
-      const downloadPath = `${home}/Downloads`;
+  const fs = require("fs");
+  const home = require("os").homedir();
+  const downloadPath = `${home}/Downloads`;
+  const { promisify } = require("util");
+  const rimraf = promisify(require("rimraf"));
 
-      if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-          // dev code
-          return `${downloadPath}/${filename}`
-        } else {
-          // production code
-          return `${filename}`
+  on("task", {
+    findFile(filename) {
+      console.log("finding file");
+      if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
+        // dev code
+        return `${downloadPath}/${filename}`;
+      } else {
+        // production code
+        return `${filename}`;
       }
-  
-    }
-  })
-}
+    },
+    async cleanDownloads(filename) {
+      const path = `${downloadPath}/${filename}`;
+      console.log(`cleaning up downloads at ${downloadPath}/${filename}`);
+
+      await rimraf(path);
+      return null;
+    },
+  });
+};
