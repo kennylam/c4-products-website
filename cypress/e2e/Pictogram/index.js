@@ -47,7 +47,7 @@ describe("Test illustrations 'Light' theme library", () => {
   });
 });
 
-xdescribe("Test illustrations 'Dark' theme library", () => {
+describe("Test illustrations 'Dark' theme library", () => {
   it("should navigate to illustrations page from index", () => {
     cy.visit("/");
     cy.get(".bx--header__action--menu").click();
