@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("Illustrations", () => {
+describe("Test illustrations 'Light' theme library", () => {
   it("should navigate to illustrations page from index", () => {
     cy.visit("/");
     cy.get(".bx--header__action--menu").click();
@@ -8,11 +8,18 @@ describe("Illustrations", () => {
   });
 
   it("should check if first image in Pictogram is rendering", () => {
-    const image = cy.get('[alt="light theme Illustration of an Airport."]');
+    const image = cy.get('[alt="Illustration of an Airport."]');
     image.should("exist");
     image
       .should("have.attr", "src")
       .and("match", /d05801e41bf7b190681a15de6b20d05a/);
+  });
+
+  it("should check if all light images have an alt attribute", () => {
+    cy.findAllByTestId(/light-img-test/i).each(($el) => {
+      cy.wrap($el).should("have.attr", "alt");
+      cy.wrap($el).should("have.attr", "src");
+    });
   });
 
   it("can download a file", () => {
@@ -38,7 +45,7 @@ describe("Illustrations", () => {
   });
 });
 
-describe("Test illustrations dark theme library", () => {
+describe("Test illustrations 'Dark' theme library", () => {
   it("should navigate to illustrations page from index", () => {
     cy.visit("/");
     cy.get(".bx--header__action--menu").click();
@@ -48,5 +55,42 @@ describe("Test illustrations dark theme library", () => {
   it('should find and click on "Dark Theme" tab', () => {
     cy.findByText("Dark Theme").should("exist");
     const button = cy.findByText("Dark Theme").click();
+  });
+
+  it('should find the Dark themed "Airport" image exists', () => {
+    cy.findByAltText(/dark illustration of an airport/i).should("exist");
+  });
+
+  it('should check if the Dark themed "Airport" image is visible', () => {
+    cy.findByAltText(/dark illustration of an airport/i).should("be.visible");
+  });
+
+  it("should check if all dark images have an alt attribute", () => {
+    cy.findAllByTestId(/dark-img-test/i).each(($el) => {
+      cy.wrap($el).should("have.attr", "alt");
+      cy.wrap($el).should("have.attr", "src");
+    });
+  });
+
+  it("can download a file", () => {
+    cy.get("[data-cypress=Airport]").click();
+
+    const path = cy.task("findFile", "DarkTheme_Airport.svg").then((file) => {
+      cy.readFile(file).should("match", /svg/i);
+    });
+  });
+
+  it('should test "Dark" tab input field and type "truck" ', () => {
+    const input = cy.get("[data-cypress=dark-illustrations-search]");
+    input.type("truck", { waitForAnimations: true });
+
+    const image = cy.findByAltText(/Dark Illustration of a truck/i);
+    image
+      .should("have.attr", "src")
+      .and("match", /fca87da56b4d370878b742d53f8000b6/);
+  });
+
+  it("should check if first image in Pictogram has been removed", () => {
+    cy.findByAltText(/Dark Illustration of an Airport/i).should("not.exist");
   });
 });

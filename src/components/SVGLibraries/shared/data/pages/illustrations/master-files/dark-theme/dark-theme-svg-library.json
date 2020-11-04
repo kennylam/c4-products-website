@@ -371,7 +371,8 @@
     },
     {
       "title": "Server Mainframe Alt 2",
-      "image": "/static/1208485f86c9faf4291f9f1d6f80a48a/DarkTheme_ServerMainframeAlt2.svg"
+      "image": "/static/1208485f86c9faf4291f9f1d6f80a48a/DarkTheme_ServerMainframeAlt2.svg",
+      "alt": "Dark Illustration of a alternate dark colored server mainframe."
     },
     {
       "title": "Skyscrapers",
