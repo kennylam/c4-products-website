@@ -1,11 +1,16 @@
 import { useStaticQuery, graphql } from "gatsby";
 
-export const useAssetQuery = () => {
+export const useGetAllResourcesQuery = () => {
   const { files, site } = useStaticQuery(
     graphql`
       query IllustrationsLightThemeAssetQuery {
         files: allFile(
-          filter: { ext: { regex: "/zip|ai/" },  relativeDirectory: {eq: "pages/illustrations/master-files/light-theme"}}
+          filter: {
+            ext: { regex: "/zip|ai/" }
+            relativeDirectory: {
+              eq: "pages/illustrations/master-files/light-theme"
+            }
+          }
         ) {
           edges {
             node {

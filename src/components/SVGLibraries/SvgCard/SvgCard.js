@@ -5,7 +5,6 @@ import { svgCardVariants } from "../shared/variants";
 
 import {
   svgCard,
-  svgCardLight,
   svgCardDark,
   svgCardInside,
   svgImage,
