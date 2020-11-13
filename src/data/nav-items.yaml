@@ -26,6 +26,8 @@
       path: /components/slide-in-panel
     - title: "Slide-over panel"
       path: /components/slide-over-panel/usage
+    - title: "Tearsheet"
+      path: /components/tearsheet/usage
     - title: "Text bar"
       path: /components/text-bar
     - title: Widget
