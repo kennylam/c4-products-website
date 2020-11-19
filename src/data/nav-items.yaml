@@ -22,10 +22,8 @@
       path: /components/modified-tabs
     - title: "Page header"
       path: /components/page-header/usage
-    - title: "Slide-in panel"
-      path: /components/slide-in-panel
-    - title: "Slide-over panel"
-      path: /components/slide-over-panel/usage
+    - title: "Side panel"
+      path: /components/side-panel/usage
     - title: "Tearsheet"
       path: /components/tearsheet/usage
     - title: "Text bar"
