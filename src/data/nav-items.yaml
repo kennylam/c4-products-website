@@ -40,6 +40,11 @@
       path: /patterns/about-modal/usage
     - title: Create flows
       path: /patterns/creation-flows/usage
+    - title: Data table
+      path: /patterns/data-table/overview
+      subpage: 
+      - title: Data table column customization
+        path: /patterns/data-table/columncustomization
     - title: Edit and update
       path: /patterns/edit
     - title: Empty state
