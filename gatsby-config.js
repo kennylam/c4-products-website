@@ -44,7 +44,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#0062ff',
         display: 'browser',
-        icons: [],
+        icons: []
       },
     },
     {
