@@ -1,20 +1,20 @@
 language: node_js
-​
+
 node_js:
   - '10'
-​
+
 addons:
   apt:
     packages:
       # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
       - libgconf-2-4
-​
+
 cache:
   directories:
     - node_modules
     # - ~/.cache
     # - $TRAVIS_BUILD_DIR/src/
-​
+
 notifications:
   slack:
     rooms:
@@ -29,29 +29,29 @@ notifications:
     - "Execution time: *%{duration}*"
     - "Message: %{message}"
   email: false
-​
+
 branches:
   only:
     - master
-​
+
 script: skip
-​
+
 stages:
   - "deploy"
-​
+
 install:
   - sed -i "s#ssh://git@github.ibm.com:#https://$GITHUB_TOKEN@github.ibm.com/#g" package.json
-  - npm install
-​
+  - yarn
+
 jobs:
   fast_finish: true
   include:
   - stage: "deploy"
     # before_script:
-    # - npm run build
+    # - yarn build
     script:
-    - npm run build
-    # - npm run ci
+    - yarn build
+    # - yarn ci
     deploy:
       provider: pages
       skip_cleanup: true
