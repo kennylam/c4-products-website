@@ -59,3 +59,4 @@ jobs:
       github_url: github.ibm.com
       local_dir: public
       on:
+        branch: master
