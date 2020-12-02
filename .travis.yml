@@ -41,7 +41,7 @@ stages:
 ​
 install:
   - sed -i "s#ssh://git@github.ibm.com:#https://$GITHUB_TOKEN@github.ibm.com/#g" package.json
-  - npm
+  - npm install
 ​
 jobs:
   fast_finish: true
@@ -50,7 +50,6 @@ jobs:
     # before_script:
     # - npm run build
     script:
-    - npm install
     - npm run build
     # - npm run ci
     deploy:
@@ -60,4 +59,3 @@ jobs:
       github_url: github.ibm.com
       local_dir: public
       on:
-        branch: master
