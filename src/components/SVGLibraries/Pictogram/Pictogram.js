@@ -11,16 +11,16 @@ import {
 } from "./Pictogram.module.scss";
 import { searchVariants, pictogramVariants } from "../shared/variants";
 import resourceImages from "../shared/data/icons";
+import { useIntersectionObserver } from "../shared/utils/hooks/shared/index.js";
 
 const Pictogram = ({
   site,
   files,
-  sectionRef,
-  containerIsVisible,
   themedResources,
   allThemedResources,
   theme,
 }) => {
+  const [sectionRef, containerIsVisible] = useIntersectionObserver();
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleChange = (evt) => {

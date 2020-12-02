@@ -1,17 +1,13 @@
 import React from "react";
 import { Tabs, Tab } from "gatsby-theme-carbon";
 import Pictogram from "../Pictogram";
-import {
-  useIntersectionObserver,
-  useSvgLibrary,
-} from "../shared/utils/hooks/shared";
+import { useSvgLibrary } from "../shared/utils/hooks/shared";
 import { useGetAllResourcesQuery as useLightThemeResourceQuery } from "../shared/utils/hooks/illustrations/light-theme";
 import { useGetAllResourcesQuery as useDarkThemeResourceQuery } from "../shared/utils/hooks/illustrations/dark-theme";
 
 import "./_overrides.scss";
 
 const PictogramContainer = () => {
-  const [sectionRef, containerIsVisible] = useIntersectionObserver();
 
   const {
     allLightThemeSvgLibraryJson,
@@ -30,8 +26,6 @@ const PictogramContainer = () => {
         <Pictogram
           site={site}
           files={lightFiles}
-          sectionRef={sectionRef}
-          containerIsVisible={containerIsVisible}
           themedResources={allLightThemeSvgLibraryJson}
           allThemedResources={allLightThemeResourcesJson}
           theme="light"
@@ -41,8 +35,6 @@ const PictogramContainer = () => {
         <Pictogram
           site={site}
           files={darkFiles}
-          sectionRef={sectionRef}
-          containerIsVisible={containerIsVisible}
           themedResources={allDarkThemeSvgLibraryJson}
           allThemedResources={allDarkThemeResourcesJson}
           theme="dark"
