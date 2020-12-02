@@ -26,6 +26,8 @@
       path: /components/slide-in-panel
     - title: "Slide-over panel"
       path: /components/slide-over-panel/usage
+    - title: "Tearsheet"
+      path: /components/tearsheet/usage
     - title: "Text bar"
       path: /components/text-bar
     - title: Widget
@@ -81,6 +83,7 @@
       path: /cloud-paks/home-page/usage
     - title: "Cross Pak Switcher"
       path: /cloud-paks/cross-pak-switcher/usage
+  hasDivider: true
 - title: Work in progress
   pages:
     - title: "Button menu (com.)"
@@ -103,4 +106,4 @@
       path: /wip/notification-panel
     - title: "In-page navigation (com.)"
       path: /wip/in-page-navigation/usage
-  separator: true
+  hasDivider: true
