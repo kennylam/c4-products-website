@@ -44,7 +44,7 @@
       path: /patterns/data-table/overview
       subpage: 
       - title: Data table column customization
-        path: /patterns/data-table/columncustomization
+        path: /patterns/data-table/column-customization
     - title: Edit and update
       path: /patterns/edit
     - title: Empty state
