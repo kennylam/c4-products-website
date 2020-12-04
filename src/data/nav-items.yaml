@@ -26,8 +26,6 @@
       path: /components/side-panel/usage
     - title: "Tearsheet"
       path: /components/tearsheet/usage
-    - title: "Text bar"
-      path: /components/text-bar
     - title: Widget
       path: /components/widget/usage
 - title: Patterns
@@ -82,7 +80,7 @@
     - title: "Cross Pak Switcher"
       path: /cloud-paks/cross-pak-switcher/usage
     - title: "Cloud Pak login"
-      path: /cloud-paks/usage
+      path: /cloud-paks/login/usage
   hasDivider: true
 - title: Work in progress
   pages:
