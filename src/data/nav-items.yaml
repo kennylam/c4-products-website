@@ -81,6 +81,8 @@
       path: /cloud-paks/home-page/usage
     - title: "Cross Pak Switcher"
       path: /cloud-paks/cross-pak-switcher/usage
+    - title: "Cloud Pak login"
+      path: /cloud-paks/usage
   hasDivider: true
 - title: Work in progress
   pages:
