@@ -57,7 +57,7 @@ jobs:
     # - yarn build
     script:
     - npm run build
-    # - yarn ci
+    - npm run cy:ci
     deploy:
       provider: pages
       skip_cleanup: true
