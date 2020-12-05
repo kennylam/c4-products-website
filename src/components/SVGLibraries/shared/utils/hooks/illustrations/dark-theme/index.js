@@ -1,4 +1,3 @@
-import { useSvgLibraryDark } from "./useSvgLibraryDark";
-import { useDarkAssetQuery } from "./useDarkAssetQuery";
+import { useGetAllResourcesQuery } from "./useGetAllResourcesQuery";
 
-export { useDarkAssetQuery, useSvgLibraryDark };
+export { useGetAllResourcesQuery };

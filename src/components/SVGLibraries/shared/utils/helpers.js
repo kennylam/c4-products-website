@@ -1,7 +1,3 @@
-export const checkProdImage = (env, pathPrefix, data) => {
-  return env === "production" ? `${pathPrefix}${data}` : `${data}`;
-};
-
 export const handleDownload = (files, site, source) => {
   let foundFile = files.edges.find(({ node }) => node.publicURL === source);
  

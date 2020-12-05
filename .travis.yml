@@ -47,16 +47,17 @@ stages:
 
 install:
   - sed -i "s#ssh://git@github.ibm.com:#https://$GITHUB_TOKEN@github.ibm.com/#g" package.json
-  - yarn
+  - npm install
 
 jobs:
   fast_finish: true
   include:
   - stage: "deploy"
-    before_script:
-    - yarn build
+    # before_script:
+    # - yarn build
     script:
-    - yarn cy:ci
+    - npm run build
+    # - yarn ci
     deploy:
       provider: pages
       skip_cleanup: true

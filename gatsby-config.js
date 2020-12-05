@@ -9,6 +9,15 @@ module.exports = {
     keywords: 'cloud,data,AI,design,pattern,asset,library,pal,security',
   },
   plugins: [
+    // {
+    //   resolve: 'gatsby-theme-carbon',
+    //   options: {
+    //     theme: {
+    //       homepage: 'dark',
+    //       interior: 'white',
+    //     },
+    //   },
+    // },
      {
       resolve: 'gatsby-remark-images',
       options: {
@@ -35,6 +44,7 @@ module.exports = {
         background_color: '#ffffff',
         theme_color: '#0062ff',
         display: 'browser',
+        icons: []
       },
     },
     {

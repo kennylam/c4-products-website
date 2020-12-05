@@ -1,2 +1,3 @@
 import { useIntersectionObserver } from "./useIntersectionObserver";
-export { useIntersectionObserver };
+import { useSvgLibrary } from "./useSvgLibrary";
+export { useIntersectionObserver, useSvgLibrary };
