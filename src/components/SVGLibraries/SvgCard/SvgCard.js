@@ -41,12 +41,7 @@ const SvgCard = ({
           {title}
         </span>
         <div className={flexContainer}>
-          <img
-            className={svgImage}
-            src={image}
-            alt={alt}
-            data-testid={`${theme}-img-test`}
-          />
+          <img className={svgImage} src={image} alt={alt} />
         </div>
         {containerIsVisible && (
           <ActionBar
