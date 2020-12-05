@@ -16,51 +16,30 @@
  * @type {Cypress.PluginConfig}
  */
 
-const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
-
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-  on('task', {downloadFile});
+  const fs = require("fs");
+  const home = require("os").homedir();
+  const downloadPath = `${home}/Downloads`;
+  const { promisify } = require("util");
+  const rimraf = promisify(require("rimraf"));
 
-  // on('task', {
-	// 	deleteFile(fileName) {
-	// 		const fs = require('fs');
-  //     const userName = require('os').userInfo().username;
-  //     console.log(userName);
-	// 		const downloadPath = `/Users/${userName}/Downloads/`;
-	// 		const absolutePath = downloadPath + fileName;
-	// 		const fileStats = fs.statSync(absolutePath);
-	// 		const fileSize = fileStats.size;
-
-	// 		if (fs.existsSync(absolutePath) && fileSize > 0) {
-	// 			try {
-	// 				fs.unlinkSync(absolutePath);
-	// 				console.log('File deleted');
-	// 				return null;
-	// 			} catch (err) {
-	// 				console.log(err);
-	// 			}
-	// 		}
-	// 		console.log('File is not exists');
-	// 		return null;
-	// 	}
-  // });
-  
-  on('task', {
+  on("task", {
     findFile(filename) {
-      const fs = require('fs');
-      const home = require('os').homedir();
-      const downloadPath = `${home}/Downloads`;
-
-      if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-          // dev code
-          return `${downloadPath}/${filename}`
-        } else {
-          return `${filename}`
-          // production code
+      console.log("finding file");
+      if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
+        // dev code
+        return `${downloadPath}/${filename}`;
+      } else {
+        // production code
+        return `${filename}`;
       }
-  
-    }
-  })
-}
+    },
+    async cleanDownloads(filename) {
+      const path = `${downloadPath}/${filename}`;
+      console.log(`cleaning up downloads at ${downloadPath}/${filename}`);
+
+      await rimraf(path);
+      return null;
+    },
+  });
+};

@@ -371,11 +371,13 @@
   },
   {
     "title": "Server Mainframe Alt 2",
-    "image": "/static/1566c2c079bbc172e247a3e0b95d84a2/LightTheme_ServerMainframeAlt2.svg"
+    "image": "/static/1566c2c079bbc172e247a3e0b95d84a2/LightTheme_ServerMainframeAlt2.svg",
+    "alt": "Illustration of a alternate dark colored server mainframe."
   },
   {
     "title": "Skyscrapers",
-    "image": "/static/9c98eadc71a7573d6588e700facfc26e/LightTheme_Skyscrapers.svg"
+    "image": "/static/9c98eadc71a7573d6588e700facfc26e/LightTheme_Skyscrapers.svg",
+    "alt": "Illustration of a Skyscraper."
   },
   {
     "title": "Small Commerce",
