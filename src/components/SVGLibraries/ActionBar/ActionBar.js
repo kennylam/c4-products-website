@@ -47,7 +47,6 @@ const ActionBar = ({
               [containerDark]: theme === "dark",
             })}
             aria-hidden={isActionBarVisible}
-            data-testid={`${theme} ${title}`}
           >
             <TooltipIcon
               onFocus={() => setIsActionBarVisible(true)}
