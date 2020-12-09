@@ -82,26 +82,3 @@
     - title: "Cloud Pak login"
       path: /cloud-paks/login/usage
   hasDivider: true
-- title: Work in progress
-  pages:
-    - title: "Button menu (com.)"
-      path: /wip/button-menu
-    - title: "Multistep confirmation (com.)"
-      path: /wip/multistep-confirmation
-    - title: "Persistent banner (com.)"
-      path: /wip/persistent-banner
-    - title: "Filterable search tab dropdown (pat.)"
-      path: /wip/filterable-search-tab-dropdown
-    - title: "Learning panel (pat.)"
-      path: /wip/learning-panel
-    - title: "Reordering (pat.)"
-      path: /wip/reordering
-    - title: "State (pat.)"
-      path: /wip/state
-    - title: "Data tables (pat.)"
-      path: /wip/data-tables/usage
-    - title: "Notification panel (pat.)"
-      path: /wip/notification-panel
-    - title: "In-page navigation (com.)"
-      path: /wip/in-page-navigation/usage
-  hasDivider: true
