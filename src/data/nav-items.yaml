@@ -43,6 +43,8 @@
       subpage: 
       - title: Data table column customization
         path: /patterns/data-table/column-customization
+      - title: Data table column alignment
+        path: /patterns/data-table/column-alignment
     - title: Edit and update
       path: /patterns/edit
     - title: Empty state
