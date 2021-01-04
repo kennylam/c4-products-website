@@ -12,8 +12,6 @@
       path: /overview/carbon-guidance
 - title: Components
   pages:
-    - title: Component status
-      path: /components/component-status
     - title: "Additional tag features"
       path: /components/additional-tag-features
     - title: Cards
@@ -30,8 +28,6 @@
       path: /components/widget/usage
 - title: Patterns
   pages:
-    - title: Pattern status
-      path: /patterns/pattern-status
     - title: Advanced filtering
       path: /patterns/advanced-filtering/usage
     - title: About modal
