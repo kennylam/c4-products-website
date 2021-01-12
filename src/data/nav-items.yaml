@@ -15,7 +15,12 @@
     - title: "Additional tag features"
       path: /components/additional-tag-features
     - title: Cards
-      path: /components/card/usage
+      path: /components/card/overview
+      subpage: 
+      - title: Expressive cards
+        path: /components/card/expressive/usage
+      - title: Productive cards
+        path: /components/card/productive/usage     
     - title: "Modified tabs"
       path: /components/modified-tabs
     - title: "Page header"
