@@ -4,7 +4,7 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 const links = [
   {
     title: 'Sketch library',
-    href: 'sketch://add-library/cloud/a831d1a7-486c-4293-af6f-58543496c93a',
+    href: 'https://sketch.cloud/s/9cef53a0-d5fa-4741-adaa-55c92fab2fc8',
   },
   {
     title: 'GitHub repo',
