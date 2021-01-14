@@ -29,8 +29,6 @@
       path: /components/side-panel/usage
     - title: "Tearsheet"
       path: /components/tearsheet/usage
-    - title: Widget
-      path: /components/widget/usage
 - title: Patterns
   pages:
     - title: Advanced filtering
