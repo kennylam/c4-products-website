@@ -206,10 +206,10 @@ Contains the header text and label or description of the card purpose. The bloc
 
 ### 2. Body content
 
-Spacing in the body varies depending on the type of content. In most cases, there should be $space-05 between title and content type. This changes if the content beings with charts, tables, or multiple body content block stacked.
+Spacing in the body varies depending on the type of content. In most cases, there should be <br></br> `$space-05` between title and content type (spacing included in the title block). There are variations if the content beings with charts, tables, or multiple body content block stacked.
 
 
-  _If content begins with text_
+  _Regular content_
   
   <Row>
   <Column colMd={8} colLg={8} noGutterSm>
@@ -240,18 +240,6 @@ Spacing in the body varies depending on the type of content. In most cases, ther
 
   ![Type Variations](../images/stacked-body.png)
   <br></br>
-
-  </Column>
-  </Row>
-
-
- _If the card uses a label only in the title block_
-  
-  <Row>
-  <Column colMd={8} colLg={8} noGutterSm>
-
-  ![Content label only](../images/content-label-only.png)
-
 
   </Column>
   </Row>
@@ -300,7 +288,7 @@ Use a complex bottom bar for both primary and supplemental action **only** when:
 
 - The card uses just a label in the title block.
 - The title is longer than two lines and because its relevance it can’t be truncated.
-- There are multiple action states 
+- There are multiple action states.
 <br></br>
 <br></br>
 Do not use complex bottom action bars for chart actions, neither in combination with the standard primary action bar. If used, keep consistency across the page layout.
@@ -541,7 +529,7 @@ For more guidance around themes visit [Carbon's color guidelines](https://www.ca
 <Row className="resource-card-group">
   <Column colMd={4} colLg={4}>
     <ResourceCard
-      subTitle="Grid sketch file"
+      subTitle="Sketch file"
       href="https://ibm.box.com/s/zfd8akquqmumk46bjg97yv3fho8wcgzz">
     </ResourceCard>
   </Column>
