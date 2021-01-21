@@ -4,12 +4,12 @@
       path: /overview/about
     - title: Contacts
       path: /overview/contacts
-    - title: "Contribution process"
-      path: /overview/contribution-process
-    - title: "Delivering changes"
-      path: /overview/delivering-changes
-    - title: "Carbon guidelines"
-      path: /overview/carbon-guidance
+    - title: "C&C Carbon preferences"
+      path: /overview/carbon-preferences
+    - title: "C&C governance workflow"
+      path: /overview/governance-workflow
+    - title: "Contributing"
+      path: /overview/contributing/overview
 - title: Components
   pages:
     - title: "Additional tag features"
