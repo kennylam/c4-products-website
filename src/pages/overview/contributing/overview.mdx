@@ -1,0 +1,56 @@
+---
+title: 'Overview'
+tabs: ['Overview', 'One-time set-up', 'Making and delivering changes', 'Troubleshooting']
+---
+
+<PageDescription>
+
+This section details the technical steps you need to follow to contribute changes to this <strong>Carbon for Cloud & Cognitive</strong> site. 
+
+</PageDescription>
+
+<InlineNotification kind="info">
+
+For <strong>governance information</strong> about how new or updated components and patterns get reviewed and approved, 
+see the <a href="/overview/governance-workflow">C&C governance workflow</a> page.
+
+</InlineNotification>
+
+
+## Overview of the contribution process
+
+#### 1) Complete the one-time set-up needed to get your own local build running.
+In order to contribute, a local development environment is needed that can access the
+git repository, edit the source, run a local build, and display the site in your browser. 
+See the [One-time set up](./one-time-set-up) tab for full details.
+
+#### 2) In your local build, make your desired changes and test the output
+Now that you have a local development build, you can add/edit/delete content to your heart's content. 
+See the [Making and delivering changes](./making-and-delivering-changes) tab for 
+full details.
+
+#### 3) Deliver your changes to the `/pal` repo (aka make a "pull request").
+Once you are happy with your changes in your local build, it's time to contribute them back to the main 
+`/pal` repo. Do this by submitting a "pull request" (PR) and asking a colleague to review it. See 
+the [Making and delivering changes](./making-and-delivering-changes) tab for full details.
+
+#### 4) Approved changes get automatically built and deployed to the live site.
+When a submitted pull request (PR) is approved and merged, a new Travis build is automatically run, and 
+the output is then published to the live site. 🎉
+
+
+
+## Additional background information
+
+#### Site framework:
+This Carbon for Cloud & Cognitive site is based on the [gatsby-theme-carbon](https://github.com/carbon-design-system/gatsby-theme-carbon) 
+website starter, with a few minor enhancements.
+
+#### Website source:
+The source files for this  site are held in IBM's internal GitHub Enterprise instance. This means that 
+only IBMers can access it. You can access this `/pal` repo here: <https://github.ibm.com/CDAI-design/pal/>.
+
+#### File types:
+Almost all of the visible page content is written in MDX files (this is a hybrid of Markdown and JSX). 
+The good news is that even if you've never heard of Markdown or MDX before, the syntax is really very simple. 
+See this external [Markdown basic syntax](https://www.markdownguide.org/basic-syntax/) page for details.

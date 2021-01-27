@@ -4,20 +4,23 @@
       path: /overview/about
     - title: Contacts
       path: /overview/contacts
-    - title: "Contribution process"
-      path: /overview/contribution-process
-    - title: "Delivering changes"
-      path: /overview/delivering-changes
-    - title: "Carbon guidelines"
-      path: /overview/carbon-guidance
+    - title: "C&C Carbon preferences"
+      path: /overview/carbon-preferences
+    - title: "C&C governance workflow"
+      path: /overview/governance-workflow
+    - title: "Contributing"
+      path: /overview/contributing/overview
 - title: Components
   pages:
-    - title: Component status
-      path: /components/component-status
     - title: "Additional tag features"
       path: /components/additional-tag-features
     - title: Cards
-      path: /components/card/usage
+      path: /components/card/overview
+      subpage: 
+      - title: Expressive cards
+        path: /components/card/expressive/usage
+      - title: Productive cards
+        path: /components/card/productive/usage     
     - title: "Modified tabs"
       path: /components/modified-tabs
     - title: "Page header"
@@ -26,12 +29,8 @@
       path: /components/side-panel/usage
     - title: "Tearsheet"
       path: /components/tearsheet/usage
-    - title: Widget
-      path: /components/widget/usage
 - title: Patterns
   pages:
-    - title: Pattern status
-      path: /patterns/pattern-status
     - title: Advanced filtering
       path: /patterns/advanced-filtering/usage
     - title: About modal
@@ -43,6 +42,8 @@
       subpage: 
       - title: Data table column customization
         path: /patterns/data-table/column-customization
+      - title: Data table column alignment
+        path: /patterns/data-table/column-alignment
     - title: Edit and update
       path: /patterns/edit
     - title: Empty state
