@@ -44,6 +44,8 @@
         path: /patterns/data-table/column-customization
       - title: Data table column alignment
         path: /patterns/data-table/column-alignment
+      - title: Data table row action buttons
+        path: /patterns/data-table/row-action-buttons
     - title: Edit and update
       path: /patterns/edit
     - title: Empty state
