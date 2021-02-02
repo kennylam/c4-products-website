@@ -1,9 +1,15 @@
 ---
 title: Data table row action buttons
-
 ---
 
-<- [Back to data table overview](https://pages.github.ibm.com/cdai-design/pal/patterns/data-table/overview) 
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+
+<Breadcrumb>
+  <BreadcrumbItem href="/patterns/data-table/overview">Overview</BreadcrumbItem>
+  <BreadcrumbItem isCurrentPage href="/patterns/data-table/column-alignment">
+    Row action buttons
+  </BreadcrumbItem>
+</Breadcrumb>
 
 <PageDescription>
 
@@ -21,7 +27,13 @@ Inline actions are functions that may be performed on a specific table row. Each
   <AnchorLink>Related</AnchorLink>
 </AnchorLinks>
 
-_Note: Action buttons and overflow menus are not interchangeable in terminology and are refereed to as 2 different components in this document. [Action buttons](https://www.carbondesignsystem.com/components/button/usage) (rather icon action buttons) are buttons that use icons to instantiate an action or lead to a flow via a dialog. [Overflow menus](https://www.carbondesignsystem.com/components/overflow-menu/usage) always use the "..." icon to indicate multiple items are available._
+<InlineNotification kind="info">
+
+Action buttons and overflow menus are not interchangeable in terminology and are refereed to as 2 different components in this document. <Link to="https://www.carbondesignsystem.com/components/button/usage">Action buttons</Link> (rather icon action buttons) are buttons that use icons to instantiate an action or lead to a flow via a dialog. <Link to="https://www.carbondesignsystem.com/components/overflow-menu/usage">Overflow menus</Link> always use the "..." icon to indicate multiple items are available.
+
+</InlineNotification>
+
+
 
 ## Best practices
 
@@ -40,26 +52,35 @@ _Note: Action buttons and overflow menus are not interchangeable in terminology 
 - When a table has rows that include more than 2 action buttons, use an overflow menu instead.
 - When a table has rows that include actions which are dependent on other properties which can vary the amount of actions (role access, permissions, available content, asset type, etc) use an overflow menu instead of changing action button icons per row.
 
+<DoDontRow>
+
+<DoDont caption="Do show overflow menus persistently by default.">
+
+![Do show overflow menus persistently by default.](images/row-actions_overflow1.png)
+
+</DoDont>
+
+<DoDont caption="Do consider in condensed spaces to ensure the overflow menus can be shown on hover to keep focus on the table information itself.">
+
+![Do consider in condensed spaces to ensure the overflow menus can be shown on hover to keep focus on the table information itself.](images/row-actions_condensed.png)
+
+</DoDont>
+
+</DoDontRow>
+
+
 ### When not to use
 
 - Do not use if a table has rows with 1 or 2 static actions.
 
 <DoDontRow>
-  <DoDont caption="Do show overflow menus persistently by default.">
 
-![Do show overflow menus persistently by default.](images/row-actions_overflow1.png)
-
-  </DoDont>
-  <DoDont type="dont" caption="Don’t show overflow menus on hover by default. Overflow menus on hover are hard to discover due to the low visual contrast. Exception: condensed spaces.">
+<DoDont type="dont" caption="Don’t show overflow menus on hover by default. Overflow menus on hover are hard to discover due to the low visual contrast. Exception: condensed spaces.">
 
 ![Don’t show overflow menus on hover by default. Overflow menus on hover are hard to discover due to the low visual contrast. Exception: condensed spaces.](images/row-actions_overflow2.png)
 
-  </DoDont>
-  <DoDont caption="Do consider in condensed spaces to ensure the overflow menus can be shown on hover to keep focus on the table information itself.">
+</DoDont>
 
-![Do consider in condensed spaces to ensure the overflow menus can be shown on hover to keep focus on the table information itself.](images/row-actions_condensed.png)
-
-  </DoDont>
 </DoDontRow>
 
 <br />
@@ -70,6 +91,16 @@ _Note: Action buttons and overflow menus are not interchangeable in terminology 
 
 - When a table has rows that include 1 or 2 action button, use individual action buttons on hover.
 
+<DoDontRow>
+
+<DoDont caption="Do display action buttons on hover by default.">
+
+![Do display action buttons on hover by default.](images/row-actions_persistent1.png)
+
+</DoDont>
+
+</DoDontRow>
+
 ### When not to use
 
 - When a table has rows that include more than 2 action buttons, use an overflow menu instead.
@@ -77,16 +108,13 @@ When icons aren't able to fully represent the action behind the icon, use text b
 - When a table has rows that include actions which are dependent on other properties (role access. permissions, available content, asset type, etc) use an overflow menu instead of changing action button icons per row.
 
 <DoDontRow>
-  <DoDont caption="Do display action buttons on hover by default.">
 
-![Do display action buttons on hover by default.](images/row-actions_persistent1.png)
-
-  </DoDont>
-  <DoDont type="dont" caption="Do not use persistent action buttons if you want to discourage use and de-clutter content.">
+<DoDont type="dont" caption="Do not use persistent action buttons if you want to discourage use and de-clutter content.">
 
 ![Do not use persistent action buttons if you want to discourage use and de-clutter content.](images/row-actions_persistent2.png)
 
-  </DoDont>
+</DoDont>
+
 </DoDontRow>
 
 <br />
@@ -97,36 +125,41 @@ When icons aren't able to fully represent the action behind the icon, use text b
 
 - When a table has rows with actions that remove (destructively), delete, disconnect, or destroy the object being acted upon or if it may cripple the work in another system.
 
+<DoDontRow>
+
+<DoDont caption="Do add danger actions to the bottom of overflows.">
+
+![Do add danger actions to the bottom of overflows.](images/row-actions_destructive_last-item1.png)
+
+</DoDont>
+
+<DoDont caption="Do display destructive actions on hover of the row.">
+
+![Do display destructive actions on hover of the row.](images/row-actions_destructive_hover1.png)
+
+</DoDont>
+
+</DoDontRow>
+
 ### When not to use
 
 - For removal of objects that are not destroyed (i.e removing a user from a project does not delete the user from the system, as they can always be re-added again).
 
 
 <DoDontRow>
-  <DoDont caption="Do add danger actions to the bottom of overflows.">
 
-![Do add danger actions to the bottom of overflows.](images/row-actions_destructive_last-item1.png)
-
-  </DoDont>
-  <DoDont type="dont" caption="Do not include danger buttons at the top or middle of an overflow menu.">
+<DoDont type="dont" caption="Do not include danger buttons at the top or middle of an overflow menu.">
 
 ![Do not include danger buttons at the top or middle of an overflow menu.](images/row-actions_destructive_last-item2.png)
 
-  </DoDont>
-</DoDontRow>
+</DoDont>
 
-
-<DoDontRow>
-  <DoDont caption="Do display destructive actions on hover of the row.">
-
-![Do display destructive actions on hover of the row.](images/row-actions_destructive_hover1.png)
-
-  </DoDont>
-  <DoDont type="dont" caption="Don’t display destructive actions persistent. Exception: if we want to encourage the user to click on the action.">
+<DoDont type="dont" caption="Don’t display destructive actions persistent. Exception: if we want to encourage the user to click on the action.">
 
 ![Don’t display destructive actions persistent. Exception: if we want to encourage the user to click on the action.](images/row-actions_destructive_hover2.png)
 
-  </DoDont>
+</DoDont>
+
 </DoDontRow>
 
 <br />
