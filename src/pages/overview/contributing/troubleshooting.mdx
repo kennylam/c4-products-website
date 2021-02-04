@@ -17,6 +17,7 @@ Some troubleshooting hints and tips when working in your local environment and d
   <AnchorLink>Clearing the cache</AnchorLink>
   <AnchorLink>Moving your changes to a different branch</AnchorLink>
   <AnchorLink>Updating your project dependencies</AnchorLink>
+  <AnchorLink>Starting/stopping your server</AnchorLink>
 </AnchorLinks>
 
 <InlineNotification kind="warning">
@@ -182,6 +183,7 @@ However, if you hit unexpected build problems it can sometimes help to update th
   ```
   $ npm i
   ```
+  
   This will update the project dependencies. You should now be able to run the standard `npm run dev` command 
   to build and start your local environment again.
 
@@ -194,36 +196,37 @@ You will need to have a server running to be able to see the changes you're maki
 It is important that you close your server when you're finished making edits, as having a server running in the background can cause your machine to run slower. Closing your server can also help to avoid certain errors when starting it back up.
 
 To close your server:
-1) In the terminal, press Ctrl+C to stop your local development build.
+1. In the terminal, press Ctrl+C to stop your local development build.
 
 ### Common errors
   ```
-  $ Something is already running on port 8000. Would you like to run the app on another port instead? Y/n
+  $ Something is already running on port 8000. 
+    Would you like to run the app on another port instead? Y/n
   ```
-This means that you are already running a server that wasn't already closed. 
+This means that you are already running a server that wasn't previously closed. 
 
 <InlineNotification kind="info">
-This error message gives you the option of choosing "Y" which will open another port, `localhost:8001`. However, it is best practice to close other servers and only have one running, 
+This error message gives you the option of choosing "Y" which will open another port, `localhost:8001`. However, it is best practice to close other servers and only have one running.
 </InlineNotification>
 
 1. In the Terminal, press "n".
-2. Run this command:
+2. Run this command to find the PID number of the running server currently using port 8000:
 ```
 $ lsof -i :8000
 ```
 
-The output will be something along the lines of this:
-  ```
-  COMMAND   PID    USER   FD   TYPE             DEVI...
-  node    41613 alarner   13u  IPv6 0xa4a1be00a46ada...
-  ```
+  The output will be something along the lines of this:
+    ```
+    COMMAND   PID    USER   FD   TYPE             DEVI...
+    node    41613 alarner   13u  IPv6 0xa4a1be00a46ada...
+    ```
 
-You will need the above PID number to kill the running server.
+  You will need to enter the PID number below (without the brackets).
 
-3. Run this command:
-  ```
-  $ kill -9 <PID>
-  ```
+  3. Run this command:
+    ```
+    $ kill -9 <PID>
+    ```
 
 4. Start up your development server again using:
   ```
