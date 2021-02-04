@@ -24,26 +24,27 @@ The data table header provides a high-level context of the data and gives a brie
 
 We differentiate between two types of data table headers:
 
-#### 1. Default data table headers
+1. Default data table headers
 - using subline in table header
 - using tabs as table header
 - using page header as table header
 - using accordions in table headers
 
-#### 2. Dense data table headers
+2. Dense data table headers
 <br/>
 
 We use Carbon's white theme headers rather than the Gray 10 theme.
 
-![Data table header example](images/header_example.png) 
+![Data table header example](images/data_table_overview.png) 
 
-## Data table headers
+
+## Headers
 
 ### Default data table header
 
 Default data table header can be used for general data table use cases such as data set preview, data catalog, and any page with a full page data table. A data table must include a title. **If a page only has one table, the page header acts as the table title and no table header is required.**  Any metadata about the data can be added as a sub-line. 
 
-![Default data table header example](images/default_headers.png) 
+![Default data table header example](images/default_header.png) 
 
 The maximum title width should not display more than up to 65 characters. We recommend keeping the data table title in one line, and text that is longer than title width is truncated with an ellipsis and a tooltip showing the full string on hover.
 
@@ -51,6 +52,9 @@ The maximum title width should not display more than up to 65 characters. We rec
 | -------------                 | -----------    | -----        |    -----           | -----           |    -----     | -----           |
 | `$productive-heading-03`       | `$text-01`       | IBM Plex Sans |  20px / 1.25rem    | 26px / 1.625rem | 400 / Regular | 0px |
 
+<Row>
+
+<Column colMd={6} colLg={6}>
 
 ✅ **Do**
 
@@ -60,17 +64,25 @@ The maximum title width should not display more than up to 65 characters. We rec
 - If the title is longer than 8 column width, text should be truncated with an ellipsis. On hover, a tooltip shows the full name.
 - Data table titles should utilize sentence style capitalization.
 
+</Column>
+
+<Column colMd={6} colLg={6}>
+
 🚫 **Don't**
 
 ![Bad example of truncation with table headers ](images/dont_header_truncation.png) 
 
 - Data table title shouldn't be longer than one line.
 
+</Column>
+
+</Row>
+
 ### Sub-lines in table header
 
 Sub-line can be used to capture information such as number of total columns, number of sample data, and last updated etc. Any long data summary description or additional content should live in other places in the UI (e.g. side panels).
 
-![Table header sub-line example](images/header_subline.png) 
+![Table header sub-line example](images/header_sub_line.png) 
 
 The recommended maximum for a sub-line width is max. 60-80 characters. Longer lines are hard to read.
 
@@ -78,17 +90,29 @@ The recommended maximum for a sub-line width is max. 60-80 characters. Longer li
 | -------------                 | -----------    | -----        |    -----           | -----           |    -----     | -----           |
 | `$body-long-01 `       | `$text-02`       | IBM Plex Sans |  14px / .875rem    | 20px / 1.25rem | 400 / Regular | 16px |
 
+<Row>
+
+<Column colMd={6} colLg={6}>
+
 ✅ **Do**
 
 ![Table header sub-line example](images/header_subline.png) 
 
 - Use [space][space]  | (vertical divider)  [space][space] to separate content within sub-line. 
 
+</Column>
+
+<Column colMd={6} colLg={6}>
+
 🚫 **Don't**
 
 ![Bad example of truncation with table headers ](images/subline_dont.png) 
 
-- Sub-line shouldn't be a long description or more than one line.,
+- Sub-line shouldn't be a long description or more than one line.
+
+</Column>
+
+</Row>
 
 ### Tabs in a table header
 
@@ -111,19 +135,52 @@ When there are multiple tables on a page the spacing between tables is always 48
 
 ![Example of using multiple tables on a page](images/multiple_tables_specs.png)
 
+<br/>
+
+<Row>
+
+
+<Column colMd={6} colLg={6}>
+
+✅ **Do**
+
+![Proper usages of buttons with multiple tables](images/multiple_table_do.png)
+
+When there are multiple tables on the page, always use ghost buttons for actions. There shouldn’t be more than one primary action on a page.
+
+</Column>
+
+
+<Column colMd={6} colLg={6}>
+
+🚫 **Don't**
+
+![Bad usage of buttons with multiple tables](images/multiple_tables_dont.png)
+
+Don't use multiple primary buttons or mix and match primary or secondary button on a page. 
+
+</Column>
+
+
+</Row>
+
 ### Accordions in table headers 
 
 When a page has multiple tables and content it can get quickly overwhelmed. Therefore accordions can help to expand and collapse a table. In that case we use accordions in front of the table title. By default we recommend to expand all tables. 
 
-**Expanded table headers (default)**
+![Example of accordusing accordions in table headers](images/accordions.png)
 
-![Example of using multiple tables on a page](images/multiple_tables_specs.png)
+<Title> Collapsed table headers </Title>
 
-✅ **Do**
-- When there are multiple tables on the page, always use ghost buttons for actions. There shouldn’t be more than one primary action on a page.
+![Example of accordusing accordions in table headers](images/collapsed_accordions.png)
 
-🚫 **Don't**
-- Don't use multiple primary buttons or mix and match primary or secondary button on a page.
+For collapsed tables we use a 1px line (#E0E0E0) at the bottom to separate the different table titles.
+
+![Using specs in accordions](images/accordions_specs.png)
+
+<Title> Expanded and collapsed table headers </Title>
+
+![Example of expanded and collapsed table headers](images/expand_collapsed.png)
 
 ### Dense data table header 
 
@@ -136,4 +193,27 @@ Ghost button is the default button for dense table header, as dense header is in
 
 🚫 Don’t
 - Don’t use dense data table header with multi-select. Dense data table header pattern breaks once the user selects as least one row from the table, the batch action bar appears at the table and covers the table header. 
+
 **When a table requires multi-select, always use the default data table header.** 
+
+![Example of expanded and collapsed table headers](images/multi_select.png)
+
+<Title> Variation - Dense header with persistent filter  </Title>
+
+![Example of dense header headers](images/dense_header.png)
+
+<Title> Variation - Dense header with only search  </Title>
+
+![Example of dense header with search](images/dense_header_search.png)
+
+<Title> Tokens </Title>
+
+Divider-line icons/action button: `$ui-03`, 24 px height
+
+![Token usage in dense example](images/dense_header_specs.png)
+
+## Related
+
+- [Carbon data tables](https://www.carbondesignsystem.com/components/data-table/usage)
+- [Carbon accordions](https://www.carbondesignsystem.com/components/accordion/usage)
+- [Cloud PAL table headers](https://pages.github.ibm.com/ibmcloud/pal/components/data-table/usage/#table-header)
