@@ -1,0 +1,111 @@
+---
+title: Grid behaviors
+---
+
+<PageDescription>
+
+It’s fundamental to everything we design. The 2x Grid is the geometric foundation of all the visual elements of IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance for all creative decision-making.
+
+</PageDescription>
+
+As a designer, we always craft and maintain the quality of the work. We provide a major set of breakpoints for you to start with. We should always consider and care how your design works across screen sizes. Ignoring one of the artboards will lead to poor user experiences. 
+
+We also provide additional breakpoints for conveying content/layout adjustments.
+
+You are welcome to minimally divide the primary columns by two as needed. You are strongly encouraged to use the mini units for designing on the artboard.
+
+## Getting Started
+
+To get started with your design, copy and paste the artboards to the right into your new document. You can toggle seeing the columns on Sketch at “**View → Show layout***” and the units at “**View → Show grid**”.
+
+![Setting up your grid example](images/getting_started.png)
+
+## Breakpoints
+
+The layout settings change depending on which size screen you are designing for. Carbon gives us the requirements for standard breakpoints
+
+| Breakpoint        |      Value (px/rem)      |   Columns | Size (%)        |      Size      |   Padding |  Margin |
+| -------------     | -----------              | -----     | -------------   | -----------    | -----     |-----    |
+| Small         |   320 / 20               |     4  |            25%  |           80 px  |      16 px  |    0  |
+| Medium       |   672 / 42               |      8  |            12.5%  |           80 px  |      16 px   |    16 px   |
+| Large          |   1056 / 66               |     16  |            6.25%  |           64 px  |      16 px   |    16 px   |
+| X-Large      |   1312 / 82               |      16  |            6.25%  |           80 px  |      16 px   |    16 px   |
+| Max         |   1584 / 99               |      $16  |            6.25%  |           94 px  |     16 px   |    24 px   |
+
+For best results, test designs and code at each of these standard breakpoints.
+
+## Basic grid
+
+This basic grid is not affected by any influencers and would simply react to the product's breakpoints. Every layout and break points are included in the Sketch file
+
+<Row className="resource-card-group">
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="IBM grid template"
+      href="https://sketch.cloud/s/ngV7z">
+![Sketch icon](/images/sketch-icon.png)
+    </ResourceCard>
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Sketch file"
+      href="https://ibm.box.com/s/du4xu2wd2mdbcq17v5rf55yk89p1bvzj">
+![Sketch icon](/images/sketch-icon.png)
+    </ResourceCard>
+  </Column>
+</Row>
+
+## Grids with an influencer
+
+An influencer is a component that affects the content on the page. It can either appears on a page as the result of a user action or be part of your product's page. These influencers affect the grid and column which scale and resize its content. 
+
+### Possible scenarios
+
+#### Left hand side influencer
+
+![Example of left grid influencer](images/left_influencer.png)
+
+#### Right hand side influencer
+
+![Example of right grid influencer](images/right_influencer.png)
+
+#### Left and right hand side influencer
+
+![Example of right grid influencer](images/left_right_influencer.png)
+
+## Sketch layout settings
+
+Slide-in panels influence the page layout grid; below are some of the specifications for panel combinations and how they impact the grid at all sizes.
+
+- Breakpoint Width* = **Artboard Width**
+- Breakpoint Gutter* = **Left and Right Outside Margins**
+- Total Panel Width (“sidebar nav”) + Left outside margin + Right outside margin = **Total Margins**
+- Artboard Width - Total Margins = **Total Width**
+- Total Panel Width + Left margin = **Offset**
+
+_*Since we are following the Carbon Design responsive guidelines, we referenced this [table](https://www.carbondesignsystem.com/guidelines/2x-grid/implementation#responsive-options) to determine our common breakpoint widths and respective gutter specs._
+
+#### Example
+
+Let’s say we want to create a custom grid for a new design that uses the extra small panel (256px wide) on our x-large 1312px breakpoint. Applying the formula above, your calculations would look like this
+
+Breakpoint Width (1312px) = 1312px wide artboard
+Breakpoint gutter (32px) = 32px Left outside margin and 32px Right outside margin
+Total Panel Width (256px) + 16px Left + 16px Right = 288px Total Margins
+Artboard Width (1312px) - Total Margins (272px) = **1,056px Total Width**
+Total Panel Width (256px) + 16px Left = **272px Offset**
+
+
+_*If the grid influencer would cause the content view size to be smaller than 1056, then it would follow the next grid breakpoint setting the columns to 8. Which also avoids columns that are smaller than 32._
+
+### Specifications for all break points
+
+#### Extra small panel
+
+| Grid: sm-320px Margin: 0px     |    Grid: md-672px Margin: 16px    |   Grid: lg-1056px Margin: 16px | Grid: xlg-1312px Margin: 16px    |    Grid: max-1584px Margin: 24px     |
+| -------------                  | -----------                       | -----                          | -------------                     | -----------                         |
+| Small         |   320 / 20               |     4  |            25%  |           80 px  |      16 px  |    0  |
+| Medium       |   672 / 42               |      8  |            12.5%  |           80 px  |      16 px   |    16 px   |
+| Large          |   1056 / 66               |     16  |            6.25%  |           64 px  |      16 px   |    16 px   |
+| X-Large      |   1312 / 82               |      16  |            6.25%  |           80 px  |      16 px   |    16 px   |
+| Max         |   1584 / 99               |      $16  |            6.25%  |           94 px  |     16 px   |    24 px   |
