@@ -43,14 +43,14 @@ This basic grid is not affected by any influencers and would simply react to the
     <ResourceCard
       subTitle="IBM grid template"
       href="https://sketch.cloud/s/ngV7z">
-![Sketch icon](/images/sketch-icon.png)
+![Sketch icon](images/sketch.png)
     </ResourceCard>
   </Column>
   <Column colMd={4} colLg={4} noGutterSm>
     <ResourceCard
       subTitle="Sketch file"
       href="https://ibm.box.com/s/du4xu2wd2mdbcq17v5rf55yk89p1bvzj">
-![Sketch icon](/images/sketch-icon.png)
+![Sketch icon](images/sketch.png)
     </ResourceCard>
   </Column>
 </Row>
@@ -59,19 +59,33 @@ This basic grid is not affected by any influencers and would simply react to the
 
 An influencer is a component that affects the content on the page. It can either appears on a page as the result of a user action or be part of your product's page. These influencers affect the grid and column which scale and resize its content. 
 
-### Possible scenarios
+**Left hand side influencer**
 
-#### Left hand side influencer
+<Row>
+  <Column colMd={4} colLg={4}>
 
 ![Example of left grid influencer](images/left_influencer.png)
+Left hand grid influencer
 
-#### Right hand side influencer
+  </Column>
+
+  <Column colMd={4} colLg={4}>
 
 ![Example of right grid influencer](images/right_influencer.png)
+Right hand grid influencer
 
-#### Left and right hand side influencer
+  </Column>
+
+  <Column colMd={4} colLg={4}>
 
 ![Example of right grid influencer](images/left_right_influencer.png)
+Left and right grid influencer
+
+  </Column>
+
+</Row>
+
+
 
 ## Sketch layout settings
 
@@ -85,27 +99,158 @@ Slide-in panels influence the page layout grid; below are some of the specificat
 
 _*Since we are following the Carbon Design responsive guidelines, we referenced this [table](https://www.carbondesignsystem.com/guidelines/2x-grid/implementation#responsive-options) to determine our common breakpoint widths and respective gutter specs._
 
-#### Example
+**Example**
+
+![Input numbers in Sketch](images/sketch_numbers.png)
 
 Let’s say we want to create a custom grid for a new design that uses the extra small panel (256px wide) on our x-large 1312px breakpoint. Applying the formula above, your calculations would look like this
 
-Breakpoint Width (1312px) = 1312px wide artboard
-Breakpoint gutter (32px) = 32px Left outside margin and 32px Right outside margin
-Total Panel Width (256px) + 16px Left + 16px Right = 288px Total Margins
-Artboard Width (1312px) - Total Margins (272px) = **1,056px Total Width**
-Total Panel Width (256px) + 16px Left = **272px Offset**
+- Breakpoint Width (1312px) = 1312px wide artboard
+- Breakpoint gutter (32px) = 32px Left outside margin and 32px Right outside margin
+- Total Panel Width (256px) + 16px Left + 16px Right = 288px Total Margins
+- Artboard Width (1312px) - Total Margins (272px) = **1,056px Total Width**
+- Total Panel Width (256px) + 16px Left = **272px Offset**
 
 
 _*If the grid influencer would cause the content view size to be smaller than 1056, then it would follow the next grid breakpoint setting the columns to 8. Which also avoids columns that are smaller than 32._
 
-### Specifications for all break points
+## Specifications for all break points
 
-#### Extra small panel
+Use these sets of standard breakpoints to maintain layout integrity across screen sizes. For best results, test designs and code at each of these standard breakpoints.
 
-| Grid: sm-320px Margin: 0px     |    Grid: md-672px Margin: 16px    |   Grid: lg-1056px Margin: 16px | Grid: xlg-1312px Margin: 16px    |    Grid: max-1584px Margin: 24px     |
-| -------------                  | -----------                       | -----                          | -------------                     | -----------                         |
-| Small         |   320 / 20               |     4  |            25%  |           80 px  |      16 px  |    0  |
-| Medium       |   672 / 42               |      8  |            12.5%  |           80 px  |      16 px   |    16 px   |
-| Large          |   1056 / 66               |     16  |            6.25%  |           64 px  |      16 px   |    16 px   |
-| X-Large      |   1312 / 82               |      16  |            6.25%  |           80 px  |      16 px   |    16 px   |
-| Max         |   1584 / 99               |      $16  |            6.25%  |           94 px  |     16 px   |    24 px   |
+### Extra small panel
+
+**Left influencer**
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   # of Col: 8                         |      # of Col: 8                 |    # of Col: 16                     |           # of Col: 16                |      
+|                                        |   Width: 384px / 24rem                |    Width: 768px / 48rem          |            Width: 1024px / 64rem    |           Width: 1280px / 80rem       |
+|                                        |   Offset: 272px / 17rem              |      Offset: 272px / 17rem       |            Offset: 272px / 17rem    |           Offset: 280px / 17.5rem     |     
+|                                         |   Gutter: 32px / 2rem              |      Gutter: 32px / 2rem         |            Gutter: 32px / 2rem      |           Gutter: 32px / 2rem         |    
+|                                          |   Column: 16px / 1rem              |      Column: 64px / 4rem         |            Column: 32px / 2rem      |           Column: 48px / 3rem         | 
+
+**Right influencer**
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   # of Col: 8                        |      # of Col: 8                 |    # of Col: 16                     |           # of Col: 16                |      
+|                  -                      |   Width: 384px / 24rem               |    Width: 768px / 48rem          |            Width: 1024px / 64rem    |           Width: 1280px / 80rem       |
+|                 -                       |   Offset: 16px / 1rem                |      Offset: 16px / 1rem         |            Offset: 16px / 1rem      |           Offset: 24px / 1.5rem       |     
+|                -                        |   Gutter: 32px / 2rem                |      Gutter: 32px / 2rem         |            Gutter: 32px / 2rem      |           Gutter: 32px / 2rem         |    
+|               -                         |   Column: 16px / 1rem                |      Column: 64px / 4rem         |            Column: 32px / 2rem      |           Column: 48px / 3rem         | 
+
+<br/>
+
+
+### Small panel
+
+**Left influencer**
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   # of Col: 4                         |      # of Col: 8                 |    # of Col: 8                     |           # of Col: 16                |      
+|              -                          |   Width: 320px / 20rem                |   Width: 704px / 44rem         |            Width: 960px / 60rem    |           Width: 1216px  / 76rem       |
+|             -                           |   Offset: 336px / 21rem              |      Offset: 336px / 21rem       |            Offset: 336px / 21rem    |           Offset: 344px / 21.5 rem     |     
+|            -                             |   Gutter: 32px / 2rem             |      Gutter: 32px / 2rem        |            Gutter: 32px / 2rem     |           Gutter: 32px / 2rem       |    
+|           -                               |   Column: 48px / 3rem             |      Column: 56px / 3.5rem        |            Column: 88px / 5.5rem      |          Column: 44px / 2.75rem         | 
+
+**Right influencer**
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   # of Col: 4                        |      # of Col: 8                 |    # of Col: 8                     |           # of Col: 16                |      
+|               -                         |   Width: 320px / 20 rem             |    Width: 704px / 44rem         |            Width: 960px / 60 rem   |           Width: 1216px / 76rem       |
+|              -                          |   Offset: 16px / 1rem               |      Offset: 16px / 1rem        |            Offset: 16px / 1rem      |           Offset: 24px / 1.5rem       |     
+|             -                           |   Gutter: 32px / 2rem              |      Gutter: 32px / 2rem         |            Gutter: 32px / 2rem     |           Gutter: 32px / 2rem         |    
+|            -                            |   olumn: 16px / 1rem            |      Column: 56px / 3.5 rem        |            Column: 88px / 5.5rem     |           olumn: 44px / 2.75rem         | 
+
+### Medium panel
+
+**Left influencer**
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      # of Col: 8                 |    # of Col: 8                     |           # of Col: 16                |      
+|                -                        |            -                          |   Width: 544px / 34rem         |            Width: 800px / 50rem    |           Width: 1056px / 66rem       |
+|               -                         |           -                            |      Offset: 496px / 31rem       |            Offset: 496px / 31rem    |           Offset: 504px / 31.5     |     
+|              -                          |          -                            |      Gutter: 32px / 2rem        |            Gutter: 32px / 2rem     |           Gutter: 32px / 2rem       |    
+|             -                           |         -                            |      Column: 36px / 2.25rem       |            Column: 68px / 4.25rem      |          Column: 34px / 2.125rem        | 
+
+**Right influencer**
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      # of Col: 8                 |    # of Col: 8                     |           # of Col: 16                |      
+|                  -                      |                       -               |  Width: 544px / 34rem        |            Width: 800px / 50rem    |           Width: 1056px / 66rem      |
+|                 -                       |                      -                 |      Offset: 16px / 1rem       |            Offset: 16px / 1rem    |           Offset: 24px / 1.5rem    |     
+|                -                        |                     -                 |      Gutter: 32px / 2rem       |           Gutter: 32px / 2rem    |           Gutter: 32px / 2rem     |    
+|               -                         |                    -                 |      Column: 36px / 2.25rem       |            Column: 68px / 4.25rem      |          Column: 34px / 2.125rem       | 
+
+### Large panel
+
+**Left influencer**
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      # of Col: 4                 |    # of Col: 8                     |           # of Col: 8                |      
+|                   -                     |          -                            |   Width: 384px / 24rem         |            Width: 640px / 40rem    |           Width: 896px / 56rem       |
+|                  -                      |         -                              |     Offset: 656px / 41rem      |            Offset: 656px / 41rem    |           Offset: 664px / 41rem     |     
+|                 -                       |        -                              |     Gutter: 32px / 2rem      |            Gutter: 32px / 2rem     |          Gutter: 32px / 2rem       |    
+|                -                        |       -                              |      Column: 64px / 4rem       |            Column: 48px / 3rem     |          Column: 80px / 5rem       | 
+
+**Right influencer**
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      # of Col: 4                 |    # of Col: 8                     |           # of Col: 8                |      
+|                   -                     |               -                       |   Width: 384px / 24rem         |            Width: 640px / 40rem    |           Width: 896px / 56rem       |
+|                  -                      |              -                         |     Offset: 16px / 1rem      |            Offset: 16px / 1rem   |           Offset: 24px / 1.5rem     |     
+|                 -                       |             -                         |     Gutter: 32px / 2rem      |            Gutter: 32px / 2rem    |          utter: 32px / 2rem       |    
+|                -                        |            -                         |      Column: 64px / 4rem       |            Column: 48px / 3rem     |          Column: 80px / 5rem       | 
+
+### X-Large panel
+
+Not available as it would turn into a slide-over
+
+## Panels from both sides
+
+### Extra small on left; Extra small on right
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      # of Col: 4                 |    # of Col: 8                     |           # of Col: 8                |      
+|                   -                     |                 -                     |   Width: 512px / 32rem         |            Width: 768px / 48rem    |           Width: 1024px / 64rem       |
+|                  -                      |                -                       |     Offset: 272px / 17rem      |            Offset: 272px / 17rem    |           Offset: 280px / 17.5rem     |     
+|                 -                       |               -                       |     Gutter: 32px / 2rem      |            Gutter: 32px / 2rem     |          Gutter: 32px / 2rem      |    
+|                -                        |              -                       |      Column: 96px / 6rem     |            Column: 64px / 4rem    |          Column: 96px / 6rem       | 
+
+### Extra small on left; small on right
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      # of Col: 4                 |    # of Col: 8                     |           # of Col: 8                |      
+|          -                              |               -                       |  Width: 448px / 28rem         |            Width: 704px / 44rem    |           Width: 960px / 60rem       |
+|         -                               |                -                       |     Offset: 272px  / 17rem      |            Offset: 272px / 17rem    |           Offset: 280px /17.5rem     |     
+|        -                                |                 -                     |     Gutter: 32px / 2rem      |            Gutter: 32px / 2rem     |          Gutter: 32px / 2rem      |    
+|       -                                 |                  -                   |      Column: 80px / 5rem   |            Column: 56px / 3.5rem   |          Column: 88px / 5.5rem       | 
+
+### Extra small on left; medium on right
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      _n/a Will turn into slide-over_                 |    # of Col: 4                     |           # of Col: 8                |      
+|        -                                |     -                                 |    -       |            Width: 544px / 34rem    |           Width: 800px / 50rem       |
+|       -                                 |      -                                 |  -         |            ffset: 272px / 17rem    |           Offset: 280px / 17.5rem     |     
+|      -                                  |       -                               |  -         |            Gutter: 32px / 2rem     |          Gutter: 32px / 2rem      |    
+|     -                                   |        -                             |  -       |            Column: 104px / 6.5rem   |          Column: 68px / 4.25rem       | 
+
+### Extra small on left; large on right
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      _n/a Will turn into slide-over_                 |    # of Col: 4                     |           # of Col: 4                |      
+|       -                                 |               -                       |      -     |            Width: 384px / 24rem    |           Width: 640px / 40rem       |
+|          -                              |                -                       |       -    |            ffset: 272px / 17rem    |           Offset: 280px / 17.5rem     |     
+|    -                                    |                -                      |        -   |            Gutter: 32px / 2rem     |          Gutter: 32px / 2rem      |    
+|       -                                 |                 -                    |       -  |            Column: 64px / 4rem   |          Column: 128px       | 
