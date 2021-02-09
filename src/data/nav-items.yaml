@@ -48,6 +48,8 @@
         path: /patterns/data-table/column-alignment
       - title: Data table row action buttons
         path: /patterns/data-table/row-action-buttons
+      - title: Data table headers
+        path: /patterns/data-table/headers
     - title: Edit and update
       path: /patterns/edit
     - title: Empty state
