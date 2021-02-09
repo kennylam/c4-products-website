@@ -21,6 +21,8 @@
         path: /components/card/expressive/usage
       - title: Productive cards
         path: /components/card/productive/usage     
+    - title: Grid behaviors
+      path: /components/grid-behaviors
     - title: "Modified tabs"
       path: /components/modified-tabs
     - title: "Page header"
