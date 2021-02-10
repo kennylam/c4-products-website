@@ -56,6 +56,8 @@ If there are use cases that require a different solution, include those here wit
 ## Accessibility
 Evaluate your pattern to ensure it meets [accessibility standards](/guidelines/accessibility/overview) and guidelines, and provide details of compliance.
 For example, “Users should be able to TAB into the input field of the search box to begin typing and press ENTER to run the search query.”
+## Testing
+Outline user testing you have performed either external or internal to IBM. Include what context/domain it was tested in and any parts which were not tested. 
 ## Related
 Which components did you use when building this pattern? Did you reference other patterns? List them here.
 If necessary, clarify any differences between this pattern and related patterns.
