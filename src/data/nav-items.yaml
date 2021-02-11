@@ -70,6 +70,8 @@
       path: /patterns/saving/usage
     - title: "Status icons"
       path: /patterns/status-icons
+    - title: "Toolbars"
+      path: /patterns/toolbars
     - title: "User profile images"
       path: /patterns/user-profile-images
     - title: "Web terminal"
