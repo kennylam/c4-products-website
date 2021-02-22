@@ -27,10 +27,6 @@ const FirstRightText = () => (
       Where any of our products have requirements not already met by Carbon,
       these are provided as additional patterns and components here.
     </p>
-    <p className={rightText}>
-      This site contains assets that are platform agnostic and can be used by
-      any product design team.
-    </p>
   </div>
 );
 
