@@ -10,6 +10,11 @@
       path: /overview/governance-workflow
     - title: "Contributing"
       path: /overview/contributing/overview
+      subpage: 
+      - title: "Designers"
+        path: /overview/contributing/designers/overview
+      - title: "OMs and Development Managers"
+        path: /overview/contributing/managers/overview
 - title: Components
   pages:
     - title: "Additional tag features"

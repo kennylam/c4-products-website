@@ -18,24 +18,26 @@ reviewed and approved, see the <Link to="/overview/governance-workflow">C&C gove
 </InlineNotification>
 
 
-### Select your role to find info on how to contribute to the C&CS patterns and site
+## Overview of the contribution process
 
-<Row className="resource-card-group">
-  <Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      title="Designers"
-      href="/overview/contributing/designers/overview">
-![Github icon](/images/github-icon.png)
-    </ResourceCard>
-  </Column>
-  <Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      title="Managers"
-      href="/overview/contributing/managers/overview">
-![Github icon](/images/github-icon.png)
-    </ResourceCard>
-  </Column>
-</Row>
+#### 1) Complete the one-time set-up needed to get your own local build running.
+In order to contribute, a local development environment is needed that can access the
+git repository, edit the source, run a local build, and display the site in your browser. 
+See the [One-time set up](./one-time-set-up) tab for full details.
+
+#### 2) In your local build, make your desired changes and test the output
+Now that you have a local development build, you can add/edit/delete content to your heart's content. 
+See the [Making and delivering changes](./making-and-delivering-changes) tab for 
+full details.
+
+#### 3) Deliver your changes to the `/pal` repo (aka make a "pull request").
+Once you are happy with your changes in your local build, it's time to contribute them back to the main 
+`/pal` repo. Do this by submitting a "pull request" (PR) and asking a colleague to review it. See 
+the [Making and delivering changes](./making-and-delivering-changes) tab for full details.
+
+#### 4) Approved changes get automatically built and deployed to the live site.
+When a submitted pull request (PR) is approved and merged, a new Travis build is automatically run, and 
+the output is then published to the live site. 🎉
 
 
 
