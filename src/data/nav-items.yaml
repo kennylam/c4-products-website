@@ -50,6 +50,8 @@
         path: /patterns/data-table/row-action-buttons
       - title: Data table headers
         path: /patterns/data-table/headers
+      - title: Data table expandable rows
+        path: /patterns/data-table/expandable-rows
     - title: Edit and update
       path: /patterns/edit
     - title: Empty state
