@@ -6,15 +6,14 @@
       path: /overview/contacts
     - title: "C&C Carbon preferences"
       path: /overview/carbon-preferences
-    - title: "C&C governance workflow"
-      path: /overview/governance-workflow
-    - title: "Contributing"
-      path: /overview/contributing/overview
-      subpage: 
-      - title: "Designers"
-        path: /overview/contributing/designers/overview
-      - title: "Managers"
-        path: /overview/contributing/managers/overview
+- title: Contributing
+  pages:
+    - title: Designing components & patterns
+      path: /contributing/designing-components-patterns/overview
+    - title: Coding components & patterns
+      path: /contributing/coding-components-patterns/overview
+    - title: Updating this site
+      path: /contributing/updating-this-site/overview
 - title: Components
   pages:
     - title: "Additional tag features"
