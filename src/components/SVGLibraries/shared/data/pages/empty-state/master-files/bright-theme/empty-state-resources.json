@@ -16,17 +16,17 @@
       {
         "id": "01",
         "section": "Heading",
-        "text": "You don’t currently have any <variable>."
+        "text": "You don’t currently have any <variable>"
       },
       {
         "id": "02",
         "section": "Sub-text",
-        "text": "Optional extra sentence to describe the resource and how to create one."
+        "text": "Optional extra sentence to describe the resource and how to create one"
       },
       {
         "id": "03",
         "section": "CTA Buttons",
-        "text": "If relevant, add a relevant CTA button."
+        "text": "If relevant, add a relevant CTA button"
       }
     ]
   },
@@ -47,7 +47,7 @@
       {
         "id": "01",
         "section": "Heading",
-        "text": "Hmm, your search didn’t return any results."
+        "text": "Hmm, your search didn’t return any results"
       },
       {
         "id": "02",
@@ -79,7 +79,7 @@
       {
         "id": "02",
         "section": "Sub-text",
-        "text": "Optional: Where applicable, add further details regarding the error and how the user can fix it."
+        "text": "Optional: Where applicable, add further details regarding the error and how the user can fix it"
       },
       {
         "id": "03",
@@ -110,12 +110,12 @@
       {
         "id": "01",
         "section": "Heading",
-        "text": "You don't have have permission to view this."
+        "text": "You don't have have permission to view this"
       },
       {
         "id": "02",
         "section": "Sub-text",
-        "text": "Contact the admin in charge of your account to request access."
+        "text": "Contact the admin in charge of your account to request access"
       },
       { "id": "03", "section": "CTA Buttons", "text": "Not required." }
     ]
@@ -137,7 +137,7 @@
       {
         "id": "01",
         "section": "Heading",
-        "text": "You don't have any notifications."
+        "text": "You don't have any notifications"
       },
       {
         "id": "02",
@@ -164,12 +164,12 @@
       {
         "id": "01",
         "section": "Heading",
-        "text": "You don't have any tags yet."
+        "text": "You don't have any tags yet"
       },
       {
         "id": "02",
         "section": "Sub-text",
-        "text": "Optional: Tags make it easy for you to find things."
+        "text": "Optional: Tags make it easy for you to find things"
       },
       { "id": "03", "section": "CTA Buttons", "text": "Create +" }
     ]
