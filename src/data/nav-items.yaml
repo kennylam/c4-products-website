@@ -20,11 +20,11 @@
       path: /components/additional-tag-features
     - title: Cards
       path: /components/card/overview
-      subpage: 
+      subpage:
       - title: Expressive cards
         path: /components/card/expressive/usage
       - title: Productive cards
-        path: /components/card/productive/usage     
+        path: /components/card/productive/usage
     - title: Grid behaviors
       path: /components/grid-behaviors
     - title: "Modified tabs"
@@ -45,7 +45,7 @@
       path: /patterns/creation-flows/usage
     - title: Data table
       path: /patterns/data-table/overview
-      subpage: 
+      subpage:
       - title: Data table column customization
         path: /patterns/data-table/column-customization
       - title: Data table column alignment
@@ -84,6 +84,50 @@
   pages:
     - title: "Library"
       path: /illustrations/library
+- title: 'Content guide'
+  pages:
+    - title: Overview
+      path: /content/overview/overview
+    - title: Our personality
+      path: /content/our-personality
+    - title: Content principles
+      path: /content/content-principles
+    - title: Language and grammar
+      path: /content/language-and-grammar
+    - title: Capitalization
+      path: /content/capitalization
+    - title: Punctuation
+      path: /content/punctuation
+    - title: Numbers
+      path: /content/numbers
+    - title: Information architecture
+      path: /content/ia
+    - title: Navigation labels
+      path: /content/navigation-labels
+    - title: Button labels
+      path: /content/button-labels
+    - title: Content heuristics
+      path: /content/content-heuristics
+    - title: Glossary
+      path: /content/glossary
+#    - title: Education videos (NEW)
+#      path: /content/education
+- title: WalkMe guide
+  pages:
+    - title: Overview
+      path: /walkme/overview/overview
+    - title: WalkMe patterns
+      path: /walkme/walkme-patterns/overview
+    - title: Menu
+      path: /walkme/menu/usage
+    - title: Carousel
+      path: /walkme/carousel/usage
+    - title: Journey Selector
+      path: /walkme/journey-selector/usage
+    - title: ShoutOuts
+      path: /walkme/shoutouts/usage
+    - title: Smart Walk-Thrus
+      path: /walkme/smart-walk-thrus/overview
 - title: Cloud Pak guidance
   pages:
     - title: "Navigation"

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Row, Column } from 'gatsby-theme-carbon/src/components/Grid';
-import { bannerQuoteWrapper, bannerQuoteContainer, bannerQuoteLeft, bannerQuoteRight, bannerQuoteQuote, bannerQuoteAttribution, bannerQuoteImage } from './BannerQuote.module.scss';
+import { bannerQuoteWrapper, bannerQuoteContainer, bannerQuoteLeft, bannerQuoteRight, bannerQuoteQuote, bannerQuoteAttribution } from './BannerQuote.module.scss';
 
-const BannerQuote = ({ quote, attribution, image, bg='transparent', textColor='#fff' }) => {
+const BannerQuote = ({ quote, attribution, background='linear-gradient(45deg, #000, #000 60%, #491d8b)', backgroundColor='#000', backgroundHighlight, textColor='#fff', children }) => {
 
-  const divStyle = { background: bg };
+  const divStyle = { background: backgroundHighlight ?
+    `linear-gradient(45deg, ${backgroundColor}, ${backgroundColor} 60%, ${backgroundHighlight})` :
+    background };
   const textStyle = { color: textColor };
 
   return (
@@ -17,7 +19,7 @@ const BannerQuote = ({ quote, attribution, image, bg='transparent', textColor='#
             </div>
           </div>
           <div className={bannerQuoteRight}>
-            {image ? <img className={bannerQuoteImage} src={image} alt="" /> : null}
+            { children }
           </div>
         </Column>
       </Row>

@@ -1,0 +1,180 @@
+---
+title: Navigation labels
+---
+
+import { Link } from "gatsby";
+
+<BannerQuote
+  quote="If a word in the dictionary were misspelled, how would we know?"
+  backgroundHighlight="#003A6D"
+>
+
+![Image](./images/illustrations/navigation-labels.svg)
+
+</BannerQuote>
+
+<AnchorLinks>
+  <AnchorLink>Grammar and structure</AnchorLink>
+  <AnchorLink>Match link text to page heading</AnchorLink>
+  <AnchorLink>Capitalization</AnchorLink>
+  <AnchorLink>Punctuation and symbols</AnchorLink>
+  <AnchorLink>Using abbreviations</AnchorLink>
+  <AnchorLink>Use of pronouns</AnchorLink>
+</AnchorLinks>
+
+## Grammar and structure
+
+People use UI navigation links to get to a certain place within the product, so navigation labels should 
+predominantly use **nouns**. 
+
+(By contrast, people use buttons to perform actions — to add, to edit, to delete, and so on — 
+and so button labels use **verbs**. See <Link to="/content/button-labels">Button labels</Link> for more details.)
+
+But back to navigation labels... Of course, sometimes a noun alone is not sufficient. In such cases use an adjective to clarify the noun.
+
+<Row>
+  <Column colMd={4} colLg={4}>
+
+<DoDontExample
+type="do"
+captionTitle=""
+caption=""
+>
+
+![UI navigation menu items (all nouns)](images/Nav_menu_01.png)
+
+</DoDontExample>
+
+  </Column>
+  <Column colMd={4} colLg={4}>
+
+<DoDontExample
+  type="do"
+  captionTitle=""
+  caption=""
+  >
+
+![UI navigation menu items (with adjectives qualifying the nouns)](images/Nav_menu_02b.png)
+
+</DoDontExample>
+
+  </Column>
+</Row>
+
+Use as few words as possible, but remain clear. If your navigation labels are more than three or four words, see if you can shorten them.
+
+<DoDontRow>
+  <DoDont text="Support" aspectRatio="" />
+  <DoDont text="Getting support" type="dont" aspectRatio="" />
+</DoDontRow>
+
+<DoDontRow>
+  <DoDont text="Settings" aspectRatio="" />
+  <DoDont text="Configuring your settings" type="dont" aspectRatio="" />
+</DoDontRow>
+
+<DoDontRow>
+  <DoDont text="Appliance dashboard" aspectRatio="" />
+  <DoDont text="Appliance management and monitoring dashboard" type="dont" aspectRatio="" />
+</DoDontRow>
+
+
+## Match link text to page heading
+In most cases, navigation labels should match the heading of the page that they link to (or the subheading, 
+if they link to an anchor section within a page). 
+
+Users can find it confusing if the page that opens has a heading that does not match the link text that 
+they clicked on (and perhaps even question whether they clicked the correct link). To avoid this potential 
+confusion, match navigation labels with their corresponding page headings.
+
+#### Exception: Tab labels and tab body headings
+Tab labels are a type of navigation label in that they take the user to a given place within the product 
+(a specific tab in this case), but they differ from other navigation links in that they remain visible 
+to the user after they have been clicked. This means that the relationship between the link text (the tab label) 
+and the corresponding content that loads (the tab body) is unambiguous because the two are shown together 
+in the same context. For this reason, tab labels and tab body headings don't have to use identical text.
+
+<Row>
+<Column colMd={8} colLg={8}>
+<DoDontExample
+type="do"
+captionTitle=""
+caption="A valid example where the tab label and tab body heading differ."
+>
+
+![An example of a UI with multiple tabs](images/tab_labels_and_headings.png)
+
+</DoDontExample>
+</Column>
+</Row>
+
+
+## Capitalization
+
+Use sentence case capitalization for all navigation labels.  
+See the <Link to="/content/glossary">Glossary</Link> for more details.
+
+<DoDontRow>
+  <DoDont text="User groups" aspectRatio="" />
+  <DoDont text="User Groups" type="dont" aspectRatio="" />
+</DoDontRow>
+
+
+## Punctuation and symbols
+
+Don’t use periods, ellipses, or other symbols in navigation labels.
+
+<DoDontRow>
+  <DoDont text="Docs" aspectRatio="" />
+  <DoDont text="Docs." type="dont" aspectRatio="" />
+</DoDontRow>
+
+<DoDontRow>
+  <DoDont text="Preferences" aspectRatio="" />
+  <DoDont text="Preferences..." type="dont" aspectRatio="" />
+</DoDontRow>
+
+<DoDontRow>
+  <DoDont text="Users and groups" aspectRatio="" />
+  <DoDont text="Users & groups" type="dont" aspectRatio="" />
+</DoDontRow>
+
+
+
+## Using abbreviations
+
+Feel free to use common software navigation label abbreviations such as _admin_, _app_, _docs_, _org_, and so on 
+but avoid using less well-established abbreviations. If you do use an abbreviation, don’t add a period.
+
+As always, consistency is key, so if you are going to use an abbreviation (for example, _apps_) then ensure 
+that it is used throughout your product experience.
+
+<DoDontRow>
+  <DoDont text="Published apps" aspectRatio="" />
+  <DoDont text="Org settings" aspectRatio="" />
+</DoDontRow>
+
+<DoDontRow>
+  <DoDont text="Admin console" aspectRatio="" />
+  <DoDont text="Admin. console" type="dont" aspectRatio="" />
+</DoDontRow>
+
+<DoDontRow>
+  <DoDont text="KPI dashboard" aspectRatio="" />
+  <DoDont text="KPI dash" type="dont" aspectRatio="" />
+</DoDontRow>
+
+<DoDontRow>
+  <DoDont text="Kubernetes settings" aspectRatio="" />
+  <DoDont text="K8s settings" type="dont" aspectRatio="" />
+</DoDontRow>
+
+
+## Use of pronouns
+
+In general, avoid using pronouns (for example, _My apps_, _Your apps_, and so on) in navigation labels, except where it’s really necessary.
+For example, in some contexts it might be necessary to distinguish between the user’s own assets (for example, _My expenses_) and assets belonging to individuals whom they manage (for example, _Team expenses_).
+
+For more information see the article [Is this my interface or yours?](https://medium.com/@jsaito/is-this-my-interface-or-yours-b09a7a795256)
+
+

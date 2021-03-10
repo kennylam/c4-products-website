@@ -3,9 +3,11 @@ import { FourOhFour } from 'gatsby-theme-carbon';
 
 const links = [
   { href: 'https://pages.github.ibm.com/cdai-design/', text: 'CD&AI Design Home page' },
-  { href: '/overview/about', text: 'About this PAL site' },
-  { href: '/components/component-status', text: 'Components' },
-  { href: '/patterns/pattern-status', text: 'Patterns' },
+  { href: '/overview/about', text: 'About this site' },
+  { href: '/components/additional-tag-features', text: 'Components' },
+  { href: '/patterns/advanced-filtering/usage', text: 'Patterns' },
+  { href: '/content/overview/overview', text: 'Content guie' },
+  { href: '/walkme/overview/overview', text: 'WalkMe guie' },
 ];
 
 const Custom404 = () => <FourOhFour links={links} />;

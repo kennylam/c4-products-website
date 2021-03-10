@@ -1,1 +1,4 @@
 @import 'mixins';
+$carbon--theme: $carbon--theme--g10;
+@include carbon--theme();
+@import './glossary.scss';

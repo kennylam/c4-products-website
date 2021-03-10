@@ -1,0 +1,95 @@
+---
+title: Carousel
+tabs: ['Usage', 'Content', 'Implementation']
+---
+
+<PageDescription>
+
+Unlike most WalkMe components, Carousels should be implemented using the Solutions Gallery. Below, you'll find step-by-step instructions on how to use the WalkMe editor to create your desired Carousel.
+ 
+</PageDescription>
+
+Note: Carousels are built using multiple custom Popups that are located within a single Smart Walk-thru. To allow for this pre-built customization, the component is located within the solutions gallery. (If you don't have access, reach out to the [Growth team](/walkme/overview/contacts#additional-contacts) 
+
+- Select **Solutions** to enter Solution Gallery
+
+<Row>
+  <Column colLg={8}>
+
+![implementation](/images/carousel_implementation-1.png)
+
+  </Column>
+</Row>
+
+- Once you're in the gallery, you'll find different Carousel variations under the Shared Solutions header. 
+- Hover over the Carousel that fits best with your design and select **Use Solution.** 
+
+Once you've selected the Carousel solution, there are a few work-a-rounds you need to consider in order to implement the Carousel correctly.
+
+- In the editor you'll see a folder that pops up with the name of the Carousel you've selected. Click on the folder. Once inside this folder, you'll see two Carousels; one labeled 'forward' and one 'backward.' 
+
+Why the duplication? WalkMe does not have the functionality to let you move more than one step backward in a Smart Walk-Thru. To solve this problem, duplicated Smart Walk-Thrus are required. Make sure to copy all changes in the 'forward' labeled Carousel, to the 'backward' labeled Carousel.
+
+
+
+Once you're inside the Carousel itself, you will notice there are many different branches (also known as triggers) that link out to different items. You may need to update each branch individually depending on your use case.
+
+- Utilize the expand button to zoom out if you want to get a landscape view of all the branches.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-1](/images/carousel_implementation-1(.5).png)
+
+  </Column>
+</Row>
+
+
+- In order to make edits, select the  **first Popup tile** labeled "[img]".
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-2](/images/carousel_implementation-2.png)
+
+  </Column>
+</Row>
+
+- Click on div section of the Popup you would like to edit. Then select to edit the BB-code.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-3](/images/carousel_implementation-3.png)
+
+  </Column>
+</Row>
+
+- Once here you can input content of your choice by replacing the lorem ipsum text.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-3](/images/carousel_implementation-4.png)
+
+  </Column>
+</Row>
+
+- Repeat the previous step for each individual slide. 
+- You can also edit the buttons within the Carousels using the BB-code.
+
+To have your Carousel begin a separate Smart Walk-Thru (for Overview and Task patterns)
+
+- Scroll to the bottom of the editor, hover over the bottom most Popup tile, then hover over the plus icon that appears
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-3](/images/carousel_implementation-7.png)
+
+  </Column>
+</Row>
+
+- Next select **Connect to Smart Walk-Thru**
+- In the window that opens, click on the dropdown and select the Smart Walk-Thru you would like it to start.
+- Then click **Done.**
