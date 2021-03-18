@@ -4,8 +4,8 @@
       path: /overview/about
     - title: Contacts
       path: /overview/contacts
-    - title: "C&C Carbon preferences"
-      path: /overview/carbon-preferences
+    - title: "C&C Carbon specifications"
+      path: /overview/carbon-specifications
 - title: Contributing
   pages:
     - title: Designing components & patterns
