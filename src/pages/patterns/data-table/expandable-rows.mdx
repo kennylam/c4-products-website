@@ -13,97 +13,122 @@ import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 
 <PageDescription>
 
-
-Data tables display sets of data across rows and columns. They organize information in a way that’s easy to scan so that users can look for patterns and develop insights from data. By designing more efficient, clearer, and easier-to-use tables, we improve the experience of analyzing and understanding large sets of data.
+Expandable rows consist of expansion rows and expanded areas. Expansion rows (parent) assist users in navigating hierarchically organized data by initially showing only the primary data. Expanded areas (child) house secondary data and are nested underneath the respective primary data. Examples of secondary data include subcategories, child-to-parent relationships, and more details of row data.
 
 </PageDescription>
 
+## Expandable rows
+This pattern explains how to lay out content within an expanded area and why content within the expanded area cannot be aligned to the grid and should not be aligned to table columns.
 
-## Column headers
+### Anatomy
 
-Headers, generally, should carry whatever alignment their data has. This keeps the vertical lines of the table clean, and provides consistency and context.
+![Expandable row anatomy](images/expandable-row-anatomy.png)
 
-![Column alignment](images/column_alignment.png)
-
-- Show only one sorting carat in the table header to indicate the current sort column. By default, table sorting only happens when user clicks on sorting. [Table sorting](https://carbon-components-react.netlify.app/?path=/story/datatable-sorting--usage)
-- Use [sentence style capitalization](https://pages.github.ibm.com/cdai-design/guidance/voice-and-tone/capitalization/) for all column headers
-- Column titles should stick to one or two words that describe the data in that column.
-- In cases where a column title is too long, we follow [Carbon](https://www.carbondesignsystem.com/components/data-table/usage#content).
+1. Exansion row
+2. Expanded area
 
 ### Padding
+The expandable area should have the following padding. The padding remains the same regardless of the height of the table's rows.
 
-Minimum gap between columns should be 16/32 px
+| Property   |      Value      |  Token |
+|----------|-----------------|--------|
+| `padding-top` |  `16px` | `$layout-01` |
+| `padding-right` |    `16px`   | `$layout-01` |
+| `padding-bottom` | `24px` | `$layout-02` |
+| `padding-left` | `48px` | `$layout-04` |
 
-![Minimum padding between column headers](images/header_padding.png)
 
-## Data alignment
 
-**Basic rules**
+### When to use
+Use the expandable row for the following:
+- Supplementary information
+- Information that relates to the primary row content that is not initially crucial for user comprehension 
+- Data that needs additional query time
 
-1. Numerical data is right-aligned
-2. Textual data is left-aligned
-3. Headers are aligned with their data
 
-### Numerical data
+### When not to use
+When the content in the expanded area begins to feel cramped, consider using a dedicated page, sidebar, modal, or tearsheet to view information and complete tasks. 
 
-Numerical data is read right-to-left; that is, we compare numbers by first looking at their ones digit, then their tens, then their hundreds, and so on.
+*If my content is feeling cramped, can I  increase the expandable area's height?*
 
-- Sample: 1,230, $320, etc.
+In order to prevent a vertical scroll bar in the expanded area, the area does not have a `max-height`. However, you should consider the following:
 
-![Numerical column alignment example](images/right_alignment.png)
+- The purpose of an expanded area is to facilitate exploring additional item details in the context of a larger data set
+- If the expandable row area is too tall your user may lose their place within the data table when they expand a row
 
-<br />
+If your use case requires what feels like a page worth of content, consider displaying the content in a [side panel](https://www.carbondesignsystem.com/components/UI-shell-right-panel/usage), [tearsheet](https://pages.github.ibm.com/cdai-design/pal/components/tearsheet/usage), [modal](https://www.carbondesignsystem.com/components/modal/usage), or a dedicated page.
 
-### Textual data
+This is an example of how Watson Knowledge Catalog displays additional row information. Instead of opening an expanded row area, the additional information is placed in a side panel.
 
-Textual data is read _in English_ from left-to-right. Comparing textual elements is typically done by sorting into alphabetical order: if two entries start with the same letter, the second letter is used, and so on. Trying to quickly scan text can be infuriating if it’s not left-aligned.
+![Watson Knowledge Center](images/expandable-row-watson-knowledge-center.png)
 
-- Sample: San Francisco, (408) 555-1234, EXt14-ESE, 1/2/2020 10:00PM, etc.
+## Alignment
 
-![Left aligned textual data example](images/left_alignment.png)
+If you are working in Sketch it is easy to create a design where items in the expanded area align to the grid or to the table columns. However, as soon as a developer attempts to implement this design they will quickly encounter problems. 
 
-<br />
+Instead of aligning content to table columns or the grid, you should lay out your content in a manner that establishes clear relationships between content items and utilize Carbon's [layout scale](https://www.carbondesignsystem.com/guidelines/spacing/overview/#layout-scale).
 
-### Multi-part data
+#### *Why can't I align my content to the grid?*
 
-If it's a multi part value separated by common separator, align by the separator.
+The grid is built with a web layout model called flex-box. A flex layout allows elements within a container to resize and automatically arrange depending on the width of the container. In the case of the grid, think of the grid as the container and each column as an element within the grid. Each column's width is defined as a percentage of the grid's width.
 
-- Sample: 16:9, 1920 x 1080, 12.01
+Unfortunately, elements placed within each column of the grid do not have access to the width of the grid. If you examine the HTML, the expanded row is placed in the grid's columns. This means that the content within an expanded row cannot align to the grid.
 
-![multi-part data example](images/multi_part.png)
+While there may be methods to come close to aligning the content within an expanded area to the grid, that should not be your goal. Instead, you should focus on structuring the content in a way that is easy to process and maintains strong links between related information.
 
-<br />
+You should utilize Carbon’s layout spacers to separate content within expanded areas and to maintain consistency with the rest of your designs.
 
-### Icons
+#### *Can I align content to the table columns?*
 
-Status icons are an important method of communicating severity level information to users. When a column has one status icon, it is best to centre align it. When a column has multiple icons then they should be left-aligned
+Even though in certain cases it is possible to align the content within an expanded area to the table columns, it is not recommended.
 
-![Status icon alignment example](images/icons.png)
+Dynamic content, translation, and responsive tables can all cause misalignment between content in an expanded area and table columns. Additionally, in certain tables, users can resize and hide table columns.
 
-<br />
+Focus on structuring and presenting the content in a manner that is easy to understand and follows other Design Language principles.
 
-### Icons+label
+### How to lay out content
 
-This is considered as text and should be left-aligned
+Given that an expanded area is just an empty container, there will likely be numerous layout options for each use case. 
 
-![Status icons with label alignment example](images/icons_labels.png)
+`flex-box` is one method that you can use to arrange content within an expanded area. `flex-box` utilizes a property called `justify-content` to control how its items are distributed. `justify-content` has two values, `flex-start` and `space-between`,  that adhere to Carbon's propensity for left alignment and will work well for distributing content within an expanded area.
 
-## Column order
+#### `flex-start`
+Use this option to pack the items from left to right. A designer can then dictate the appropriate amount of space between items in the expanded area. The amount of space between items will remain consistent at each breakpoint unless dictated otherwise.
 
-Good column order allow users to scan, analyze, compare, filter, sort, and manipulate information to derive insights and commit actions.
+![flex-start explanation](images/expandable-row-flex-start-explanation.png)
 
-![Column order basic rules](images/columnOrder.png)
+#### `space-between`
+Use this option to evenly distribute items within the expanded area. The first item will be left-aligned to the expanded area and the last item will be right-aligned to the expanded area. This option should only be used if it is more important to distribute the items evenly than it is to preserve a specific spatial relationship between the items.
 
-Good column order allow users to scan, analyze, compare, filter, sort, and manipulate information to derive insights and commit actions. Identifiers should always be the first elements of a datable and actions last. The other elements can be changed to reflect your product needs.
+![space-between explanation](images/expandable-row-space-between-explanation.png)
 
-1. **Identifiers** (first item of table): Identifiers include name or ID and should be placed in the first section of the table. Either one can be the first column if both exist.
-2. **Type and source**: This section includes type, source, tags, parent, version, category, etc.
-3. **Status**: Status column should be responsive. When using icon+label for the status column, responsive will automatically hide the label as the table gets smaller. Tooltips are required when the label is hidden as a results of responsive behaviors.
-4. **Timestamp**: Timestamp includes Created on, Modified on, Uploaded on, etc. The date and time format should follow the Date and time guidelines and should be responsive. Use long format when space permits, change it to short format as the table gets smaller. For example, September 29, 2020 11:59:12 AM > 9/29/2020 11:59 AM
-5. **Description and URL**: Description and URL should be the first data to get truncated in a table. Users should be able to see or copy the full string by hovering on it.
-6. **Actions** (last item): All actions should be hidden until users hover the row to reduce visual clutter. However, when there are 3 or more actions, use overflow menu and which should be persistent and available to users all the time.
+In most cases, you should combine `flex-start` and intentional spacing between content items.
+
+![intentionally spaced example](images/expandable-row-intentional-spacing.png)
+
+### Aligning one or more items to the right
+`flex-box` also makes it possible to align one or more content items to the right side of the expanded area.
+
+You should only right align content if the main content items are already left aligned and if aligning content to the right improves the expanded area's usability.
+
+To align an item to the right you need to set the item's `margin-left` to `auto`.
+
+![right aligned example](images/expandable-row-right-aligned.png)
+
+### Wrapping
+In a responsive data table, the items in the expanded area may run out of space. If this happens you can consider wrapping the items or displaying the expanded content in a different manner.
+
+If you choose to wrap items make sure that the information in the expanded area is still usable and that important relationships between content are preserved.
+
+*Add an example of wrapping here*
+
+You should not wrap content if the table has a horizontal scroll bar or a fixed width.
+
+### Sizing
+Use the same principles you use elsewhere to size content within an expanded area. If your table stretches the width of the screen and the expanded area contains a paragraph, set a max-width on the paragraph to preserve legibility. A good rule of thumb is to keep paragraph line length between 50 and 70 characters.
+
+## Best Practices
 
 ## Related
 
 - [Reorder pattern](hhttps://pages.github.ibm.com/cdai-design/pal/wip/reordering/)
-- [Add-select modal pattern](https://ibm.ent.box.com/notes/574380001581?s=vldtegn7sphu7h19et40907f903wnqrt)
