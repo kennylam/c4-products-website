@@ -5,6 +5,7 @@ import MdxIcon from "../../../components/MdxIcon";
 import SubmittedToCarbon from "../../../components/SubmittedToCarbon";
 import EmptyStateAllAssetsCard from "../../../components/SVGLibraries/EmptyStateAllAssetsCard";
 import EmptyStateType from "../../../components/SVGLibraries/EmptyStateType";
+import Glossary from "../../../components/Glossary";
 
 export default {
   ...defaultComponents,
@@ -13,4 +14,5 @@ export default {
   SubmittedToCarbon,
   EmptyStateAllAssetsCard,
   EmptyStateType,
+  Glossary
 };

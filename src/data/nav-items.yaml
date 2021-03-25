@@ -108,8 +108,8 @@
       path: /content/button-labels
     - title: Content heuristics
       path: /content/content-heuristics
-    - title: Glossary
-      path: /content/glossary
+    - title: Terminology
+      path: /content/terminology/approved-terms
 #    - title: Education videos (NEW)
 #      path: /content/education
 - title: WalkMe guide
