@@ -1,0 +1,6 @@
+<svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g>
+    <path d="M29.42,14.59l-12-12a2,2,0,0,0-2.82,0l-12,12a2,2,0,0,0,0,2.82l12,12a2,2,0,0,0,2.82,0l12-12a2,2,0,0,0,0-2.82ZM21,18H11V14H21Z" fill="#491d8b"/>
+    <rect x="11" y="14" width="10" height="4" fill="none"/>
+  </g>
+</svg>
