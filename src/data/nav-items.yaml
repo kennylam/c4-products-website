@@ -80,6 +80,10 @@
       path: /patterns/user-profile-images
     - title: "Web terminal"
       path: /patterns/web-terminal
+- title: "Layouts"
+  pages:
+    - title: "Library"
+      path: /layouts/library
 - title: "Illustrations"
   pages:
     - title: "Library"
