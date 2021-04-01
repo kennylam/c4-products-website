@@ -91,10 +91,12 @@ Experiences that require a user to view the full screen content besides the cont
 
 | Number | Anatomy item                                   | Description                                                                                                                                               |
 | :----- | :------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1      | Header zone                         | Includes a title and optional description—or a combination of any of the three (always includes a title). The context-label (same as modals) is the overarching flow name and first step of the flow as well (I.e the new asset flow, “Create new asset” is the title of the flow in the tearsheet and the second step this becomes the context-label. A title must always be present. Typically includes the close button “X” if there are no actions in the bottom right or the view is read-only content. |
+| 1      | Header                         | Includes a title, an optional label, an optional description or a combination of any of the three (always includes a title). The context-label (same as modals) is the overarching flow name and first step of the flow as well (I.e the new asset flow, “Create new asset” is the title of the flow in the tearsheet and the second step this becomes the context-label. A title must always be present. Typically includes the close button “X” if there are no actions in the bottom right or the view is read-only content. |
 | 2      | Main content area                   | This typically contains forms, tables, and items that a user may interact with. This must always be available in a tearsheet. |
-| 3      | Navigation buttons                  | (Optional but typically the default) Use these to navigate the flow and to finalize/complete the steps required. Button combinations are listed below. |
-| 4      | Influencer _(Optional)_             | This is often present for dividing content. Typically, but not limited to, placement on the left side of the tearsheet, this space is usually reserved for a menu, vertical progress indicator, or filters. We advise not to use 2 influencers at the same time due to the lack of available screen space. |
+| 3      | Navigation buttons                  | (Optional but typically the default) Use these to navigate the flow and to finalize/complete the steps required. |
+| 4      | Influencer _(Optional)_             | This is often used
+
+ for dividing content. Typically, but not limited to, placement on the left side of the tearsheet, this space is usually reserved for a menu, vertical progress indicator, or filters. We advise not to use 2 influencers at the same time due to the lack of available screen space. |
 | 5      | Background overlay                  | Screen overlay that obscures the on page content. Same as modals. |
 
 <br />
@@ -321,65 +323,3 @@ Accessibility patterns should mimic the modal guidance.
 - [Buttons](https://www.carbondesignsystem.com/components/button/usage)
 - [Security's tearsheet](https://ibm-security.carbondesignsystem.com/?path=/story/patterns-tearsheet--with-open-close)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### Spacing
-
-The default spacing from the top edge of the tearsheet to the top of the viewport is 48px. However, this spacing is overridden by the platform it sits in to reveal the most import navigational elements (i.e a top nav and a tool bar.) For example, in Watson Studio we have a top nav with the platform name and below that a tool bar with breadcrumbs. To keep the user aware that they are not leaving that context, the tearsheet animates to the edge of that tool bar. This means the tearsheet in the Watson Studio platform (Watson Studio + Watson Knowledge Catalog + Watson Machine Learning + Watson OpenScale) shall be 88px from the top of the viewport (top nav = 48px, action bar = 40px).
-
-### Responsiveness
-
-When the viewport shrinks, so does the tearsheet. Because the wide tearsheet maintains at least a width of 32px from he right and let side of the viewport, change the grid to the next breakpoint.
-
-The sidemenu does not shrink, grow, or change in width if the viewport changes width. However, when the tearsheet becomes smaller, the sidemen becomes a dropdown component. Consider how the hierarchy of your sidemenu will collapse into 1 or 2 dropdown.
-
-Buttons have a responsive behavior depending on the breakpoint. They are as wide as 25% of the content area width with a max width of 312px for each button. The Cancel button, however, is a modified button that sits with a 24px left padding inside the button to align to the content area grid.
-
-
-
-
-#### Motion
-
-When the tearsheet is activated, the component will slide from the bottom of the view and the background will fade to the dark overlay. The deactivated version is the reverse.
-
-![Wide tearsheet entrance and exit](images/usage/motion/motion-01.gif)
-
-###### Entrance and exit
-
-| Piece              | Transitioning elements | Animation type |
-| :----------------- | :--------------------- | :------------- |
-| Card               | Position (X, Y)        | Expressive     |
-| Background overlay | Opacity                | Productive     |
-
-###### Stacks
-
-In order to achieve the illusion of depth, the main tearsheet card layer will animate on a z-axis backwards to make “room” for the second tearsheet card to slide in. The main card will have a faded overlay to subdue its prominence and reinforce the layering effect. The second tearsheet layer will assume the same animations as the entrance and exit guidelines.
-
-![Wide tearsheet layer 2](images/usage/motion/motion-02.gif)
-
-| Piece         | Transitioning elements            | Animation type |
-| :------------ | :-------------------------------- | :------------- |
-| Card 1        | Position (X, Y, Z), Width, Height |                |
-| Dimming layer | Opacity                           |                |
-| Card 2        | Position (X, Y)                   |                |

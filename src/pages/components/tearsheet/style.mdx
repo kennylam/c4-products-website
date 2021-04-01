@@ -6,12 +6,16 @@ tabs: ["Usage", "Style", "Styles2"]
 <AnchorLinks>
     <AnchorLink>Structure</AnchorLink>
     <AnchorLink>Theming</AnchorLink>
-    <AnchorLink>Grid</AnchorLink>
+    <AnchorLink>Layout</AnchorLink>
+    <AnchorLink>Motion</AnchorLink>
 </AnchorLinks>
 
 ## Structure
 
+
 ### 1. Header
+
+The header may include elements such as an optional label, a description, or even some actions buttons.
 
 <Accordion>
 
@@ -34,7 +38,7 @@ Tearsheet titles and labels should be set in sentence case. Keep all titles and 
 
 _Color_
 
-| Breakpoint                   | Property         | Type token    |
+| Class                        | Property         | Type token    |
 | :--------------------------- | :--------------- | :------------ |
 | `.bx--modal-container`       | background-color | `$ui-01`      |
 | `.bx--modal-header__label`   | text color       | `$text-02`    |
@@ -46,13 +50,14 @@ _Color_
 
 _Type_
 
-| Tearsheet type | Class                        | Font-size (px/rem) | Font-weight   | Type token      |
-| :------------- | :--------------------------- | :----------------- | :------------ | :-------------- |
-| Narrow         | `.bx--modal-header__label`   | 12 / 0.75          | Regular / 400 | `$label-01`     |
-| Narrow         | `.bx--modal-header__heading` | 20 / 1.25          | Regular / 400 | `$heading-03`   |
-| Wide           | `.bx--modal-header__label`   | 12 / 0.75          | Regular / 400 | `$label-01`     |
-| Wide           | `.bx--modal-header__heading` | 20 / 1.25          | Regular / 400 | `$heading-03`   |
-
+| Tearsheet type | Class                            | Font-size (px/rem) | Font-weight   | Type token      |
+| :------------- | :---------------------------     | :----------------- | :------------ | :-------------- |
+| Narrow         | `.bx--modal-header__label`       | 12 / 0.75          | Regular / 400 | `$label-01`     |
+| Narrow         | `.bx--modal-header__heading`     | 20 / 1.25          | Regular / 400 | `$heading-03`   |
+| Narrow         | `.bx--modal-header__description` | 14 / 0.875         | Regular / 400 | `$body-long-01` |
+| Wide           | `.bx--modal-header__label`       | 12 / 0.75          | Regular / 400 | `$label-01`     |
+| Wide           | `.bx--modal-header__heading`     | 20 / 1.25          | Regular / 400 | `$heading-03`   |
+| Narrow         | `.bx--modal-header__description` | 14 / 0.875         | Regular / 400 | `$body-long-01` |
 
 </Column>
 </Row>
@@ -63,6 +68,8 @@ _Type_
 
 ### 2. Main content area
 
+This typically contains forms, tables, and items that a user may interact with. This must always be available in a tearsheet.
+
 <Accordion>
 
 <AccordionItem title="Styling">
@@ -72,9 +79,10 @@ _Type_
 
 _Color_
 
-| Breakpoint                   | Property         | Type token    |
-| :--------------------------- | :--------------- | :------------ |
-| `.bx--modal-container`       | background-color | `$ui-01`      |
+| Class                        | Property         | Type token         |
+| :--------------------------- | :--------------- | :------------      |
+| `.bx--modal-container`       | background-color | `$background-ui`   |
+| Side-panel                   | background-color | `$ui-01`           |
 
 </Column>
 </Row>
@@ -86,12 +94,6 @@ _Color_
 <Row>
 <Column colMd={8} colLg={8}>
 
-_Color_
-
-| Breakpoint                   | Property         | Type token    |
-| :--------------------------- | :--------------- | :------------ |
-| `.bx--modal-container`       | background-color | `$ui-01`      |
-
 </Column>
 </Row>
 
@@ -99,9 +101,9 @@ _Color_
 
 </Accordion>
 
-
-
 ### 3. Navigation buttons
+
+(Optional but typically the default) Use these to navigate the flow and to finalize/complete the steps required.
 
 <Accordion>
 
@@ -161,6 +163,8 @@ _Type_
 
 ### 4. Influencers
 
+This is often used for dividing content. Typically, but not limited to, placement on the left side of the tearsheet, this space is usually reserved for a menu, vertical progress indicator, or filters.
+
 <Accordion>
 
 <AccordionItem title="Spacing & alignment">
@@ -194,6 +198,62 @@ Tearsheets use the same UI tokens for Grey 10 and Grey 100 themes. For more guid
 | Narrow         | $ui-background      |
 | Wide           | $ui-background      |
 
-## Grid
+## Layout
+
+### Grid
 
 To learn more about the grid, check out [grid behaviors](https://pages.github.ibm.com/cdai-design/pal/components/grid-behaviors).
+
+### Placement
+
+Both tearsheets types start **88px from the top** of the viewport (i.e the browser window.) Additionally, the wide tearsheet remains **64px from the left and right sides** of the viewport. The narrow tearsheet follows the percentage width pattern of the small modal.
+
+## Motion
+
+When the tearsheet is activated, the component will slide from the bottom of the view and the background will fade to the dark overlay. The deactivated version is the reverse.
+
+<Accordion>
+
+<AccordionItem title="1 Layer">
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+When a tearsheet is activated, this is considered the "first layer". Use this as the default experience for most cases.
+
+![Wide tearsheet entrance and exit](images/usage/motion/motion-01.gif)
+
+_Entrance and exit_
+
+| Piece              | Transitioning elements | Animation type |
+| :----------------- | :--------------------- | :------------- |
+| Card               | Position (X, Y)        | Expressive     |
+| Background overlay | Opacity                | Productive     |
+
+</Column>
+</Row>
+
+</AccordionItem>
+
+<AccordionItem title="2 Layers (stack)">
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+In order to achieve the illusion of depth, layer 1 card layer will animate on a z-axis backwards to make “room” for the second layer to slide in from the bottom. The first layer will have a faded overlay to reduce its prominence and reinforce the layering effect. The second layer will assume the same animations, positioning, and scale as the first layer.
+
+![Wide tearsheet layer 2](images/usage/motion/motion-02.gif)
+
+| Piece         | Transitioning elements            | Animation type |
+| :------------ | :-------------------------------- | :------------- |
+| Card 1        | Position (X, Y, Z), Width, Height | Expressive     |
+| Dimming layer | Opacity                           | Expressive     |
+| Card 2        | Position (X, Y)                   | Expressive     |
+
+
+</Column>
+</Row>
+
+</AccordionItem>
+
+</Accordion>
