@@ -72,27 +72,20 @@ This typically contains forms, tables, and items that a user may interact with. 
 
 <Accordion>
 
-<AccordionItem title="Styling">
-
-<Row>
-<Column colMd={8} colLg={8}>
-
-_Color_
-
-| Class                        | Property         | Type token         |
-| :--------------------------- | :--------------- | :------------      |
-| `.bx--modal-container`       | background-color | `$background-ui`   |
-| Side-panel                   | background-color | `$ui-01`           |
-
-</Column>
-</Row>
-
-</AccordionItem>
-
 <AccordionItem title="Spacing & alignment">
 
 <Row>
 <Column colMd={8} colLg={8}>
+
+_Narrow tearsheet_
+
+![Narrow tearsheet spacing and alignment](images/styles/updated/narrow-spacing-alignment.jpg)
+
+<br />
+
+_Wide tearsheet_
+
+![Wide tearsheet spacing and alignment](images/styles/updated/wide-spacing-alignment.jpg)
 
 </Column>
 </Row>
@@ -119,11 +112,15 @@ _Color_
 
 </AccordionItem>
 
-<AccordionItem title="Button sizes">
+<AccordionItem title="Button size">
 
 <Row>
 
 <Column colMd={8} colLg={8}>
+
+All navigation buttons are 64px tall. In wide tearsheers, the tertiary button remains the same size as the other buttons but as 16px extra margin on the left side.
+
+![Button sizes](images/styles/updated/wide-button-sizes.jpg)
 
 </Column>
 
@@ -149,9 +146,11 @@ _Color_
 
 <Column colMd={8} colLg={8}>
 
-_Color_
+![Wide tearsheet button container](images/styles/updated/wide-button-styling.jpg)
 
-_Type_
+| BG-color         | Border-color     | Border-size (px) |
+| :--              | :--              | :--              |
+| `$background-ui` | `$decorative-01` | 1                |
 
 </Column>
 
@@ -163,7 +162,7 @@ _Type_
 
 ### 4. Influencers
 
-This is often used for dividing content. Typically, but not limited to, placement on the left side of the tearsheet, this space is usually reserved for a menu, vertical progress indicator, or filters.
+This is often used for dividing content. Typically, but not limited to, placement on the left side of the wide tearsheet, this space is usually reserved for a menu, vertical progress indicator, or filters. The narrow tearsheet would not utilize a side panel.
 
 <Accordion>
 
@@ -193,10 +192,28 @@ This is often used for dividing content. Typically, but not limited to, placemen
 
 Tearsheets use the same UI tokens for Grey 10 and Grey 100 themes. For more guidance around themes visit [Carbon’s color guidelines](https://www.carbondesignsystem.com/guidelines/color/usage).
 
-| Tearsheet type | BG-color            |
-| :--            | :--                 |
-| Narrow         | $ui-background      |
-| Wide           | $ui-background      |
+<Row>
+<Column colMd={8} colLg={8}>
+
+_Narrow Tearsheet_
+
+![Narrow tearsheet light and dark modes](images/styles/updated/narrow-theming.jpg)
+
+<br />
+
+_Wide tearsheet_
+
+![Wide tearsheet light and dark modes](images/styles/updated/wide-theming.jpg)
+
+< br />
+
+| Tearsheet type | BG-color            | Title area     | Sidepanel      |
+| :--            | :--                 | :--            | :--            |
+| Narrow         | `$ui-01`            | —              | —              |
+| Wide           | `$ui-background`    | `ui-01`        | `ui-01`        |
+
+</Column>
+</Row>
 
 ## Layout
 
@@ -205,6 +222,14 @@ To learn more about the grid, check out [grid behaviors](https://pages.github.ib
 ### Placement
 
 Both tearsheets types start **88px from the top** of the viewport (i.e the browser window.) Additionally, the wide tearsheet remains **64px from the left and right sides** of the viewport. The narrow tearsheet follows the percentage width pattern of the small modal.
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![Wide tearsheet placement](images/styles/updated/wide-placement.jpg)
+
+</Column>
+</Row>
 
 ## Motion
 
@@ -255,3 +280,14 @@ In order to achieve the illusion of depth, layer 1 card layer will animate on a 
 </AccordionItem>
 
 </Accordion>
+
+<br />
+
+<Row className="resource-card-group">
+  <Column colMd={4} colLg={4}>
+    <ResourceCard
+      subTitle="Tearsheet sketch file"
+      href="https://???">
+    </ResourceCard>
+  </Column>
+</Row>
