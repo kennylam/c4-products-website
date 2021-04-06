@@ -3,24 +3,21 @@ title: Tearsheet
 tabs: ["Usage", "Style", "Styles2"]
 ---
 
-<AnchorLinks>
-    <AnchorLink>Structure</AnchorLink>
-    <AnchorLink>Theming</AnchorLink>
-</AnchorLinks>
+## Narrow tearsheet
 
-## Structure
+![Narrow Tearsheet](images/styles/narrow/01.png)
 
-### 1. Header
+### Color
 
-#### Spacing & alignment
+![White theme](images/styles/narrow/c-2.png)
 
-#### Styling
+![Gray 10 theme](images/styles/narrow/c-1.png)
 
-Tearsheet titles and labels should be set in sentence case. Keep all titles and labels concise and to the point. Tearsheet labels are optional.
+![Gray 90 theme](images/styles/narrow/c-3.png)
 
-##### Color
+![Gray 100 theme](images/styles/narrow/c-4.png)
 
-| Breakpoint                   | Property         | Column span   |
+| Breakpoint                   | Percentage width | Column span   |
 | :--------------------------- | :--------------- | :------------ |
 | `.bx--modal-container`       | background-color | `$ui-01`      |
 | `.bx--modal-header__label`   | text color       | `$text-02`    |
@@ -30,41 +27,140 @@ Tearsheet titles and labels should be set in sentence case. Keep all titles and 
 | `.bx--modal-close:hover`     | background-color | `$hover-ui`   |
 | Overlay                      | color            | `$overlay-01` |
 
+### Typography
 
-##### Type
+Tearsheet titles and labels should be set in sentence case. Keep all titles and labels concise and to the point. Tearsheet labels are optional.
 
-| Tearsheet type | Class                        | Font-size (px/rem) | Font-weight   | Type token      |
-| :------------- | :--------------------------- | :----------------- | :------------ | :-------------- |
-| Narrow         | `.bx--modal-header__label`   | 12 / 0.75          | Regular / 400 | `$label-01`     |
-| Narrow         | `.bx--modal-header__heading` | 20 / 1.25          | Regular / 400 | `$heading-03`   |
-| Wide           | `.bx--modal-header__label`   | 12 / 0.75          | Regular / 400 | `$label-01`     |
-| Wide           | `.bx--modal-header__heading` | 20 / 1.25          | Regular / 400 | `$heading-03`   |
+| Class                        | Font-size (px/rem) | Font-weight   | Type token      |
+| :--------------------------- | :----------------- | :------------ | :-------------- |
+| `.bx--modal-header__label`   | 12 / 0.75          | Regular / 400 | `$label-01`     |
+| `.bx--modal-header__heading` | 20 / 1.25          | Regular / 400 | `$heading-03`   |
+| `.bx--modal-content`         | 14 / 0.875         | Regular / 400 | `$body-long-01` |
 
-### 2. Main content area
+### Structure
 
-#### Spacing & alignment
+![Narrow tearsheet structure](images/styles/narrow/01-b.png)
 
-### 3. Navigation buttons
+| Class                      | Property                  | px / rem | Spacing token |
+| :------------------------- | :------------------------ | :------- | :------------ |
+| `.bx--modal-close`         | height, width             | 48 x 48  | –             |
+| `.bx--modal-close__icon`   | height, width             | 20 x 20  | –             |
+| `.bx--modal-header__label` | margin-bottom             | 4 / 0.25 | `$spacing-02` |
+| `.bx--modal-header`        | padding top, padding left | 16 / 1   | `$spacing-05` |
+| `.bx--modal-header`        | margin-bottom             | 16 / 1   | `$spacing-05` |
+| `.bx--modal-content`       | padding-left              | 16 / 1   | `$spacing-05` |
+| `.bx--modal-content`       | padding-right             | 20%      | –             |
+| `.bx--modal-content`       | margin-bottom             | 48 / 3   | `$spacing-09` |
 
-#### Spacing & alignment
-#### Button sizes
-#### Combinations
-#### Styling
+### Grid
 
-### 4. Influencers
+| Breakpoint | Percentage width | Column span | Margin-right |
+| :--------- | :--------------- | :---------- | :----------- |
+| 1584       | 36%              | 6 of 16     | 20%          |
+| 1312       | 36%              | 6 of 16     | 20%          |
+| 1056       | 42%              | 7 of 16     | 16px / 1rem  |
+| 672        | 60%              | 5 of 8      | 16px / 1rem  |
+| 320        | 100%             | 4 of 4      | 16px / 1rem  |
 
-#### Spacing & alignment
-#### Variations
+### Zones
 
-## Theming
+#### Header
 
-Tearsheets use the same UI tokens for Grey 10 and Grey 100 themes. For more guidance around themes visit [Carbon’s color guidelines](https://www.carbondesignsystem.com/guidelines/color/usage).
+![Narrow tearsheet header](images/styles/narrow/02.png)
 
-| Tearsheet type | BG-color            |
-| :--            | :--                 |
-| Narrow         | $ui-background      |
-| Wide           | $ui-background      |
+#### Main content area
 
-## Grid
+Table scrolling should keep a sticky header and roll the content underneath it.
+![Narrow tearsheet content scrolled to the top](images/styles/narrow/mca-1.png)
+![Narrow tearsheet content scrolled down](images/styles/narrow/mca-2.png)
 
-To learn more about the grid, check out [grid behaviors](https://pages.github.ibm.com/cdai-design/pal/components/grid-behaviors).
+Content that includes tables should become full width (100%). The cell of table rows should be the same as the background color.
+![Narrow tearsheet table](images/styles/narrow/mca-3.png)
+
+#### Navigation buttons
+
+Navigation buttons should mimic how modals handle them.
+
+![Narrow tearsheet buttons](images/styles/narrow/04.png)
+
+---
+
+## Wide tearsheet
+
+![Tearsheet wide](images/styles/wide/01.png)
+
+### Color (WIP)
+
+![White theme](images/styles/wide/c-01.png)
+
+![Gray 10 theme](images/styles/wide/c-02.png)
+
+![Gray 90 theme](images/styles/wide/c-03.png)
+
+![Gray 100 theme](images/styles/wide/c-04.png)
+
+### Typography
+
+Tearsheet titles and labels should be set in sentence case. Keep all titles and labels concise and to the point. Tearsheet labels are optional.
+
+| Class          | Font-size (px/rem) | Font-weight   | Type token      |
+| :------------- | :----------------- | :------------ | :-------------- |
+| header label   | 12 / 0.75          | Regular / 400 | `$label-01`     |
+| header heading | 28 / 1.75          | Regular / 400 | `$heading-04`   |
+| content        | 14 / 0.875         | Regular / 400 | `$body-long-01` |
+
+### Structureg
+
+![Wide tearsheet structure](images/styles/wide/01-b.png)
+
+### Grid (WIP)
+
+| Breakpoint | Full-width                                                                                     | 256px influencer                                                                                                  | 320px influencer                                                                               |
+| :--------- | :--------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| 1584       | Total: 1504px <br/> Column: 60px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 16 | Total: 1504px <br/> Column: 44px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 16                    | Total: 1504px <br/> Column: 40px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 16 |
+| 1312       | Total: 1248px <br/> Column: 44px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 16 | Total: 1248px <br/> Column: 88px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 8                     | Total: 1248px <br/> Column: 80px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 8  |
+| 1056       | Total: 992px <br/> Column: 88px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 8   | Total: 992px <br/> Column: 56px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 8                      | Total: 992px <br/> Column: 48px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 8   |
+| 672        | Total: 100% <br/> Column: 128px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 4   | Same as full-width, uses overlay influencer. (Stretches to viewport width but includes margins outside component) | Same as full-width, uses overlay influencer.                                                   |
+| 320        | Total: 100% <br/> Column: 60px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 16   | Same as full-width, uses overlay influencer.                                                                      | Same as full-width, uses overlay influencer.                                                   |
+
+### Zones
+
+#### Header
+
+![Wide tearsheet header](images/styles/wide/03.png)
+
+#### Main content area
+
+Table scrolling should keep a sticky header and roll the content underneath it.
+![Wide tearsheet content scrolled to the top](images/styles/wide/mca-1.png)
+![Wide tearsheet content scrolled down](images/styles/wide/mca-2.png)
+
+Content that includes tables should expand to take advantage of the real estate but leave 16px of padding on both sides within the content area for type alignment. The cell of table rows should not be the same as the background color.
+![Wide tearsheet table](images/styles/wide/mca-3.png)
+
+Maintain 32px around the top, right, and left of the main content area.
+
+#### Navigation buttons
+
+Buttons scale to the content area of the _main content area_ by percentage (being 25%) but have a max width of 312px.
+![Wide tearsheet buttons](images/styles/wide/04.png)
+
+| Breakpoint       | Full-width                  | 256px influencer            | 320px influencer            |
+| :--------------- | :-------------------------- | :-------------------------- | :-------------------------- |
+| Max (1584px)     | max width = 312px           | max width = 312px           | max width = 312px           |
+| X-Large (1312px) | 25% of content area = 312px | 25% of content area = 248px | 25% of content area = 232px |
+| Large (1056px)   | 25% of content area = 248px | 25% of content area = 184px | 25% of content area = 168px |
+| Medium (672px)   | -                           | -                           | -                           |
+| Small (320px)    | -                           | -                           | -                           |
+
+#### Influencer _(Optional)_
+
+Use 32px padding around the entire influencer to allow for alignment of the influencer content to the title of the tearsheet.
+
+![Wide tearsheet influencer](images/styles/wide/inf-1.png)
+
+#### Stacking
+
+Stacking leaves the second layer 16px below the first layer but reduces the width of the first layer by 16px on each side.
+
+![Wide tearsheet stacking](images/usage/stacking/stacking-02.png)
