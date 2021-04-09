@@ -20,7 +20,7 @@ tabs: ["Usage", "Style"]
 </Column>
 </Row>
 
-### 1. Header
+### 1. Headers
 
 The header may include elements such as an optional label, a description, tabs, or even some actions buttons. Header examples below are suggestions to follow. Do not put back buttons (i.e navigational buttons) in the header zone.
 
@@ -46,6 +46,26 @@ _With description_
 _With tabs_
 
 ![Tabs](images/styles/updated/header-tabs.png)
+
+<br />
+
+_With actions_
+
+Few scenarios would acitons be required to include in the header. Include 32px padding from the right of the container when using actions in the header. This would only be applicable to wide tearsheets.
+
+Due to the space utilized by the header and the nature of tearsheets removing 88px from the top, we encourage you to use small components.
+
+![Actions](images/styles/updated/header-actions.png)
+
+<br />
+
+_Using an X action button_
+
+In some tearsheets, an X action button may be placed in the top right corner. By default, the typical tearsheet would not include this. However, when present this is the styling that it may include.
+
+Use a 20px x 20px `$close` icon with a 48px x 48px button container that touches the top and right edges of the tearsheet.
+
+![X icon button](images/styles/updated/header-x.png)
 
 </Column>
 </Row>
@@ -231,24 +251,14 @@ Additionally, the influencer does not become apart of the tearsheet grid. Instea
 
 <Accordion>
 
-<AccordionItem title="Spacing & alignment">
+<AccordionItem title="Combinations, spacing & alignment">
 
 <Row>
 <Column colMd={8} colLg={8}>
 
-influencers in the tearsheet utilize `32px` padding on left and right and `24px` padding on top and bottom. They specifically deviate from side panel guidance on padding due to the inset of the tearsheet within another page, requiring alignment to the tearsheet title (`32px` padding on the left of the title.)
+Influencers in the tearsheet utilize `32px` padding on left and right and `24px` padding on top and bottom. They specifically deviate from side panel guidance on padding due to the inset of the tearsheet within another page, requiring alignment to the tearsheet title (`32px` padding on the left of the title.)
 
-</Column>
-</Row>
-
-</AccordionItem>
-
-<AccordionItem title="Variations">
-
-<Row>
-<Column colMd={8} colLg={8}>
-
-The influencers can be used for, but not limited to, the following situations. Use these to guide your work.
+These can be used in, but not limited to, the following situations. Use these to guide your work.
 
 <br />
 
@@ -256,7 +266,7 @@ _Menus_
 
 Menus can include sections to divide items up further and icons within each menu item. Refer to in-page navigation pattern for guidance.
 
-
+![Menu](images/styles/updated/influencer-menu.png)
 
 <br />
 
@@ -264,7 +274,7 @@ _Progress indicators_
 
 This utilizes the default vertical progress [indicator component](https://www.carbondesignsystem.com/components/progress-indicator/usage/).
 
-
+![Progress indicator](images/styles/updated/influencer-prog.png)
 
 <br />
 
@@ -272,15 +282,15 @@ _Filters_
 
 This is left up to the product as many tearsheet experiences may include varying filtering content.
 
-
+![Filter](images/styles/updated/influencer-filter.png)
 
 <br />
 
 _Shopping cart_
 
-Often used for previewing what contents are selected from a view (typically a table that cannot reveal all selections without scrolling or hiding content).
+Often used for previewing what contents are selected from a view (typically a table that cannot reveal all selections without scrolling or hiding content). Contents in a panel on the right do not have to adhere to 32px side gutters and instead may use 16px since the tearsheet title is not on the right side.
 
-
+![Shopping cart](images/styles/updated/influencer-cart.png)
 
 <br />
 
@@ -288,8 +298,7 @@ _Previews_
 
 This can be utilized for viewing metadata about an object that's selected in the same view.
 
-
-
+![Shopping cart](images/styles/updated/influencer-preview.png)
 
 </Column>
 </Row>
@@ -334,7 +343,9 @@ Both tearsheets types start **88px from the top** of the viewport (i.e the brows
 <Row>
 <Column colMd={8} colLg={8}>
 
-![Wide tearsheet placement](images/styles/updated/wide-placement.jpg)
+![Wide tearsheet placement](images/styles/updated/narrow-placement.png)
+
+![Wide tearsheet placement](images/styles/updated/wide-placement.png)
 
 </Column>
 </Row>
