@@ -30,11 +30,11 @@ Layout modules come in many types but maintain consistent anatomical characteris
   </Column>
 </Row>
 
-1. **Top spacer (optional):** Offsets the layout module from the object positioned directly above it. Top spacers use `layout tokens`
-2. **Title section (optional):** Layout modules often include nested titles or sub-titles. Reference the titleModule for header styles and tokens.
-3. **Component spacer (optional):** Offsets multiple objects within a single layout module. Component spacers use `spacing tokens`
+1. **Top spacer (optional):** Offsets the layout module from the object positioned directly above it. [Content layout modules](#content-layout-modules) often use a top spacer. If a top spacers is include, `$spacing-05` is typically the token used.
+2. **Title section (optional):** Layout modules can include nested titles or sub-titles. Reference the `titleModule` for type styles and tokens.
+3. **Component spacer (optional):** Offsets multiple objects using `spacing tokens` within a single layout module.
 4. **Main content:** The core component or attribute of the layout module.
-5. **Bottom spacer:** Creates padded space between the layout module and the object positioned directly below it. Bottom spacers use `layout tokens`
+5. **Bottom spacer:** Creates padded space between the layout module and the object positioned directly below it. Bottom spacers typically use `$spacing-05` or `$spacing-07` depending on the module.
 
 ### When to use
 
@@ -48,7 +48,7 @@ Structural layout modules, using the 2x Grid, set the page layout scaffolding. B
 
 ![structural](images/structural.jpg)
 
-Reference: `ContainerModule` `CardModule`
+Reference: `ContainerModule` `CardAreaModule`
 
 
 ### Content layout modules
@@ -63,8 +63,8 @@ Reference: `ActionBarModule` `DescriptionModule` `ListItemModule` `TitleBarModul
 
 Layout modules are design and coded to adapt with ease, accepting variants needed for each condition. They allow the flexibility needed when exploring page designs while still retaining consistency across broad page layout applications.
 
-<Video src="images/variants-pal.mov">
-  <track kind="captions" src="images/variants-pal.mov" />
+<Video src="images/module-variants.mp4">
+  <track kind="captions" src="images/module-variants.mp4" />
 </Video>
 
 ## Layouts
@@ -103,9 +103,6 @@ Page layouts are built using theme tokens, particularly for Gray 10 and Gray 100
 
 ![theming](images/theming.jpg)
 
-### Grid & responsive behavior
-
-The layouts are coded specifically for the 2x Grid and built to maintain proper spacing and content hierarchy from small to large screen sizes. Refer to the page layouts on Storybook for examples.
 
 ### Redlining
 
