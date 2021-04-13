@@ -58,6 +58,8 @@
       path: /patterns/edit
     - title: Empty state
       path: /patterns/empty-state/usage
+    - title: Header profile
+      path: /patterns/header-profile
     - title: Export
       path: /patterns/exporting/usage
     - title: Generating an API key
