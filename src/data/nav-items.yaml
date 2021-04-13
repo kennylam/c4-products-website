@@ -6,6 +6,8 @@
       path: /overview/contacts
     - title: "C&C Carbon specifications"
       path: /overview/carbon-specifications
+    - title: Pattern tracking
+      path: /overview/pattern-tracking
 - title: Contributing
   pages:
     - title: Designing components & patterns
