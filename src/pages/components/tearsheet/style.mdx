@@ -3,164 +3,410 @@ title: Tearsheet
 tabs: ["Usage", "Style"]
 ---
 
-## Narrow tearsheet
+<AnchorLinks>
+    <AnchorLink>Structure</AnchorLink>
+    <AnchorLink>Theming</AnchorLink>
+    <AnchorLink>Placement</AnchorLink>
+    <AnchorLink>Motion</AnchorLink>
+</AnchorLinks>
 
-![Narrow Tearsheet](images/styles/narrow/01.png)
+## Structure
 
-### Color
+<Row>
+<Column colMd={8} colLg={8}>
 
-![White theme](images/styles/narrow/c-2.png)
+![Structure](images/styles/updated/structure.png)
 
-![Gray 10 theme](images/styles/narrow/c-1.png)
+</Column>
+</Row>
 
-![Gray 90 theme](images/styles/narrow/c-3.png)
+### 1. Headers
 
-![Gray 100 theme](images/styles/narrow/c-4.png)
+The header may include elements such as an optional label, a description, tabs, or even some actions buttons. Header examples below are suggestions to follow. Do not put back buttons (i.e navigational buttons) in the header zone.
 
-| Breakpoint                   | Percentage width | Column span   |
-| :--------------------------- | :--------------- | :------------ |
-| `.bx--modal-container`       | background-color | `$ui-01`      |
-| `.bx--modal-header__label`   | text color       | `$text-02`    |
-| `.bx--modal-header__heading` | text color       | `$text-01`    |
-| `.bx--modal-content`         | text color       | `$text-01`    |
-| `.bx--modal-close__icon`     | fill             | `$icon-01`    |
-| `.bx--modal-close:hover`     | background-color | `$hover-ui`   |
-| Overlay                      | color            | `$overlay-01` |
+<Accordion>
 
-### Typography
+<AccordionItem title="Spacing & alignment">
 
-Tearsheet titles and labels should be set in sentence case. Keep all titles and labels concise and to the point. Tearsheet labels are optional.
+<Row>
+<Column colMd={8} colLg={8}>
 
-| Class                        | Font-size (px/rem) | Font-weight   | Type token      |
-| :--------------------------- | :----------------- | :------------ | :-------------- |
-| `.bx--modal-header__label`   | 12 / 0.75          | Regular / 400 | `$label-01`     |
-| `.bx--modal-header__heading` | 20 / 1.25          | Regular / 400 | `$heading-03`   |
-| `.bx--modal-content`         | 14 / 0.875         | Regular / 400 | `$body-long-01` |
+_With title_
 
-### Structure
+![Title](images/styles/updated/header-title.png)
 
-![Narrow tearsheet structure](images/styles/narrow/01-b.png)
+<br />
 
-| Class                      | Property                  | px / rem | Spacing token |
-| :------------------------- | :------------------------ | :------- | :------------ |
-| `.bx--modal-close`         | height, width             | 48 x 48  | –             |
-| `.bx--modal-close__icon`   | height, width             | 20 x 20  | –             |
-| `.bx--modal-header__label` | margin-bottom             | 4 / 0.25 | `$spacing-02` |
-| `.bx--modal-header`        | padding top, padding left | 16 / 1   | `$spacing-05` |
-| `.bx--modal-header`        | margin-bottom             | 16 / 1   | `$spacing-05` |
-| `.bx--modal-content`       | padding-left              | 16 / 1   | `$spacing-05` |
-| `.bx--modal-content`       | padding-right             | 20%      | –             |
-| `.bx--modal-content`       | margin-bottom             | 48 / 3   | `$spacing-09` |
+_With description_
 
-### Grid
+![Description](images/styles/updated/header-description.png)
 
-| Breakpoint | Percentage width | Column span | Margin-right |
-| :--------- | :--------------- | :---------- | :----------- |
-| 1584       | 36%              | 6 of 16     | 20%          |
-| 1312       | 36%              | 6 of 16     | 20%          |
-| 1056       | 42%              | 7 of 16     | 16px / 1rem  |
-| 672        | 60%              | 5 of 8      | 16px / 1rem  |
-| 320        | 100%             | 4 of 4      | 16px / 1rem  |
+<br />
 
-### Zones
+_With tabs_
 
-#### Header
+![Tabs](images/styles/updated/header-tabs.png)
 
-![Narrow tearsheet header](images/styles/narrow/02.png)
+<br />
 
-#### Main content area
+_With actions_
 
-Table scrolling should keep a sticky header and roll the content underneath it.
-![Narrow tearsheet content scrolled to the top](images/styles/narrow/mca-1.png)
-![Narrow tearsheet content scrolled down](images/styles/narrow/mca-2.png)
+Few scenarios would acitons be required to include in the header. Include 32px padding from the right of the container when using actions in the header. This would only be applicable to wide tearsheets.
 
-Content that includes tables should become full width (100%). The cell of table rows should be the same as the background color.
-![Narrow tearsheet table](images/styles/narrow/mca-3.png)
+Due to the space utilized by the header and the nature of tearsheets removing 88px from the top, we encourage you to use small components.
 
-#### Navigation buttons
+![Actions](images/styles/updated/header-actions.png)
 
-Navigation buttons should mimic how modals handle them.
+<br />
 
-![Narrow tearsheet buttons](images/styles/narrow/04.png)
+_Using an X action button_
 
----
+In some tearsheets, an X action button may be placed in the top right corner. By default, the typical tearsheet would not include this. However, when present this is the styling that it may include.
 
-## Wide tearsheet
+Use a 20px x 20px `$close` icon with a 48px x 48px button container that touches the top and right edges of the tearsheet.
 
-![Tearsheet wide](images/styles/wide/01.png)
+![X icon button](images/styles/updated/header-x.png)
 
-### Color (WIP)
+</Column>
+</Row>
 
-![White theme](images/styles/wide/c-01.png)
+</AccordionItem>
 
-![Gray 10 theme](images/styles/wide/c-02.png)
+<AccordionItem title="Styling">
 
-![Gray 90 theme](images/styles/wide/c-03.png)
-
-![Gray 100 theme](images/styles/wide/c-04.png)
-
-### Typography
+<Row>
+<Column colMd={8} colLg={8}>
 
 Tearsheet titles and labels should be set in sentence case. Keep all titles and labels concise and to the point. Tearsheet labels are optional.
 
-| Class          | Font-size (px/rem) | Font-weight   | Type token      |
-| :------------- | :----------------- | :------------ | :-------------- |
-| header label   | 12 / 0.75          | Regular / 400 | `$label-01`     |
-| header heading | 28 / 1.75          | Regular / 400 | `$heading-04`   |
-| content        | 14 / 0.875         | Regular / 400 | `$body-long-01` |
+![Header styling](images/styles/updated/header-styling.png)
 
-### Structureg
+_Color_
 
-![Wide tearsheet structure](images/styles/wide/01-b.png)
+| Class                             | Property         | Type token    |
+| :---------------------------      | :--------------- | :------------ |
+| `.bx--modal-header__heading`      | text color       | `$text-01`    |
+| `.bx--modal-header__description`  | text color       | `$text-02`    |
+| `.bx--modal-container`            | background-color | `$ui-01`      |
+| `.bx--modal-close__icon`          | fill             | `$icon-01`    |
+| `.bx--modal-close:hover`          | background-color | `$hover-ui`   |
 
-### Grid (WIP)
+_Type_
 
-| Breakpoint | Full-width                                                                                     | 256px influencer                                                                                                  | 320px influencer                                                                               |
-| :--------- | :--------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| 1584       | Total: 1504px <br/> Column: 60px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 16 | Total: 1504px <br/> Column: 44px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 16                    | Total: 1504px <br/> Column: 40px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 16 |
-| 1312       | Total: 1248px <br/> Column: 44px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 16 | Total: 1248px <br/> Column: 88px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 8                     | Total: 1248px <br/> Column: 80px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 8  |
-| 1056       | Total: 992px <br/> Column: 88px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 8   | Total: 992px <br/> Column: 56px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 8                      | Total: 992px <br/> Column: 48px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 8   |
-| 672        | Total: 100% <br/> Column: 128px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 4   | Same as full-width, uses overlay influencer. (Stretches to viewport width but includes margins outside component) | Same as full-width, uses overlay influencer.                                                   |
-| 320        | Total: 100% <br/> Column: 60px <br/> Margin: 32px <br/> Padding: 32px <br/> # of columns: 16   | Same as full-width, uses overlay influencer.                                                                      | Same as full-width, uses overlay influencer.                                                   |
+| Tearsheet type | Class                            | Font-size (px/rem) | Font-weight   | Type token      |
+| :------------- | :---------------------------     | :----------------- | :------------ | :-------------- |
+| Narrow         | `.bx--modal-header__heading`     | 20 / 1.25          | Regular / 400 | `$heading-03`   |
+| Narrow         | `.bx--modal-header__description` | 14 / 0.875         | Regular / 400 | `$body-long-01` |
+| Wide           | `.bx--modal-header__heading`     | 28 / 1.75          | Regular / 400 | `$heading-04`   |
+| Wide           | `.bx--modal-header__description` | 14 / 0.875         | Regular / 400 | `$body-long-01` |
 
-### Zones
+</Column>
+</Row>
 
-#### Header
+</AccordionItem>
 
-![Wide tearsheet header](images/styles/wide/03.png)
+</Accordion>
 
-#### Main content area
+### 2. Main content area
 
-Table scrolling should keep a sticky header and roll the content underneath it.
-![Wide tearsheet content scrolled to the top](images/styles/wide/mca-1.png)
-![Wide tearsheet content scrolled down](images/styles/wide/mca-2.png)
+This typically contains forms, tables, and items that a user may interact with. This must always be available in a tearsheet.
 
-Content that includes tables should expand to take advantage of the real estate but leave 16px of padding on both sides within the content area for type alignment. The cell of table rows should not be the same as the background color.
-![Wide tearsheet table](images/styles/wide/mca-3.png)
+<Accordion>
 
-Maintain 32px around the top, right, and left of the main content area.
+<AccordionItem title="Spacing & alignment">
 
-#### Navigation buttons
+<Row>
+<Column colMd={8} colLg={8}>
 
-Buttons scale to the content area of the _main content area_ by percentage (being 25%) but have a max width of 312px.
-![Wide tearsheet buttons](images/styles/wide/04.png)
+_Narrow tearsheet_
 
-| Breakpoint       | Full-width                  | 256px influencer            | 320px influencer            |
-| :--------------- | :-------------------------- | :-------------------------- | :-------------------------- |
-| Max (1584px)     | max width = 312px           | max width = 312px           | max width = 312px           |
-| X-Large (1312px) | 25% of content area = 312px | 25% of content area = 248px | 25% of content area = 232px |
-| Large (1056px)   | 25% of content area = 248px | 25% of content area = 184px | 25% of content area = 168px |
-| Medium (672px)   | -                           | -                           | -                           |
-| Small (320px)    | -                           | -                           | -                           |
+![Narrow tearsheet spacing and alignment](images/styles/updated/narrow-spacing-alignment.png)
 
-#### Influencer _(Optional)_
+Some flows in narrow tearsheets include multiple steps. The header zone exists on all steps but there can be additional content below it that scrolls beneath the header zone. This would be the title of the step in the flow. It can also include it's own description. See [create flows](https://www.carbondesignsystem.com/community/patterns/create-flows/) for further details. For understanding how the grid may be applied, visit the [grid behaviors](https://pages.github.ibm.com/cdai-design/pal/components/grid-behaviors) pattern.
 
-Use 32px padding around the entire influencer to allow for alignment of the influencer content to the title of the tearsheet.
+![Wizard flows](images/styles/updated/narrow-wizard.png)
 
-![Wide tearsheet influencer](images/styles/wide/inf-1.png)
+For these sub-titles, use `$productive-heading-02` with color `$text-01`. They may also include descriptions as well.
 
-#### Stacking
+<br />
 
-Stacking leaves the second layer 16px below the first layer but reduces the width of the first layer by 16px on each side.
+_Wide tearsheet_
 
-![Wide tearsheet stacking](images/usage/stacking/stacking-02.png)
+Content that sits in the Main content area (i.e the space with the grid outside of the influencer) is mainly up to the teams to decide how content is laid out. Keep in mind there is `32px` padding on left and right and `24px` padding on top and bottom of the main content area.
+
+![Wide tearsheet spacing and alignment](images/styles/updated/wide-spacing-alignment.png)
+
+![Wide tearsheet spacing and alignment](images/styles/updated/wide-spacing-alignment2.png)
+
+As a rule of thumb, we keep the space between columns 32px always and columns are always wider than the space between them (greater than 32px.) Thus, the amount of columns present should adjust if columns become less than 32px in width. 
+For guidance on how to apply the grid to wide tearsheets, visit the [grid behaviors](https://pages.github.ibm.com/cdai-design/pal/components/grid-behaviors) pattern.
+
+</Column>
+</Row>
+
+</AccordionItem>
+
+</Accordion>
+
+### 3. Navigation buttons
+
+(Optional but typically the default) Use these to navigate the flow and to finalize/complete the steps required. Buttons may include icons if required by the experience and would follow suit with side panels and modals for how they behave.
+
+<Accordion>
+
+<AccordionItem title="Combinations, spacing & alignment">
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Button combinations will follow suit similarly to that of modals and side panels. Keep in mind we have a modified "Tiertiary" button that sits 16px away from the left of the tearsheet edge or influencer edge.
+
+Avoid using "Done" as a button. Actions should be reserved for specific tasks (Save, Cancel, etc). Done is not inidactive of what will happen and can be replaced all together by using the "passive" tearsheet type (uses an X in the top right corner instead of a navigation button in the bottom right).
+
+Often, there may need to be a trigger to initiate a "save progress" function so users may return to complete a form. Use a "Save progress" as a navigational button. Wording may vary.
+
+<br />
+
+_1 button_
+
+Typically this would not appear as tearsheets are mainly for taking action, in which you would typically have a Cancel button.
+
+![1 button](images/styles/updated/buttons-1.png)
+
+<br />
+
+_2 buttons_
+
+This is the most widely used button combination for narrow tearsheets. In wide tearsheets, having the Cancel button as a tertiary type button is hard to see, therefore it is only recommended to use a tertiary button in a narrow tearsheet as a fall back option if the first pairing type is not applicable.
+
+![1 button](images/styles/updated/buttons-2.png)
+
+<br />
+
+_3 buttons_
+
+This type is the most widely used button combination for wide tearsheets. It is not recommended to use for narrow tearsheets.
+
+![1 button](images/styles/updated/buttons-3.png)
+
+<br />
+
+_4 buttons_
+
+Rarely should cases use 4 buttons. The more buttons, the harder it is for users to make decisions on what to click. Attempt to reduce the number of options available. Avoid using this amount of buttons for narrow tearsheets as it is difficult to wrap text or fit text that becomes long when translated.
+
+![1 button](images/styles/updated/buttons-4.png)
+
+<br />
+
+Buttons have a max-width of `232px` but may shrink based on percentage for wide tearsheets. Narrow tearsheets use a percentage.
+
+</Column>
+</Row>
+
+</AccordionItem>
+
+<AccordionItem title="Button size">
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Narrow tearsheet navigation buttons are 64px tall. Wide tearsheet navigation buttons are 80px tall. In wide tearsheers, the tertiary button remains the same size as the other buttons but as 16px extra margin on the left side.
+
+![Button sizes](images/styles/updated/button-sizes.png)
+
+| Tearsheet type   | Height | 1 button | 2 buttons | 3 buttons | 4 buttons | Max-width |
+| :-------         | :--    | :--      | :--       | :--       | :--       | :--       |
+| Narrow tearsheet | 64px   | 50%      | 50%       | 25%       | 25%       | 50%       |
+| Wide tearsheet   | 80px   | 25%      | 25%       | 25%       | 25%       | 232px     |
+
+</Column>
+</Row>
+
+</AccordionItem>
+
+<AccordionItem title="Styling">
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![Wide tearsheet button container](images/styles/updated/button-styling.png)
+
+| BG-color         | Border-color     | Border-size (px) |
+| :--              | :--              | :--              |
+| `$background-ui` | `$decorative-01` | 1                |
+
+</Column>
+</Row>
+
+</AccordionItem>
+
+</Accordion>
+
+### 4. Influencers
+
+This is often used for dividing content. Typically, but not limited to, placement on the left side of the wide tearsheet, this space is usually reserved for menus, vertical progress indicators, filters, or "shopping-cart-like experiences". **The narrow tearsheet would not utilize an influencer side panel.**
+
+Additionally, the influencer does not become apart of the tearsheet grid. Instead it sits outside the tearsheet grid.
+
+<Accordion>
+
+<AccordionItem title="Combinations, spacing & alignment">
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Influencers in the tearsheet utilize `32px` padding on left and right and `24px` padding on top and bottom. They specifically deviate from side panel guidance on padding due to the inset of the tearsheet within another page, requiring alignment to the tearsheet title (`32px` padding on the left of the title.)
+
+These can be used in, but not limited to, the following situations. Use these to guide your work.
+
+<br />
+
+_Menus_
+
+Menus can include sections to divide items up further and icons within each menu item. Refer to in-page navigation pattern for guidance.
+
+![Menu](images/styles/updated/influencer-menu.png)
+
+<br />
+
+_Progress indicators_
+
+This utilizes the default vertical progress [indicator component](https://www.carbondesignsystem.com/components/progress-indicator/usage/).
+
+![Progress indicator](images/styles/updated/influencer-prog.png)
+
+<br />
+
+_Filters_
+
+This is left up to the product as many tearsheet experiences may include varying filtering content.
+
+![Filter](images/styles/updated/influencer-filter.png)
+
+<br />
+
+_Shopping cart_
+
+Often used for previewing what contents are selected from a view (typically a table that cannot reveal all selections without scrolling or hiding content). Contents in a panel on the right do not have to adhere to 32px side gutters and instead may use 16px since the tearsheet title is not on the right side.
+
+![Shopping cart](images/styles/updated/influencer-cart.png)
+
+<br />
+
+_Previews_
+
+This can be utilized for viewing metadata about an object that's selected in the same view.
+
+![Shopping cart](images/styles/updated/influencer-preview.png)
+
+</Column>
+</Row>
+
+</AccordionItem>
+
+</Accordion>
+
+## Theming
+
+Tearsheets use the same UI tokens for Grey 10 and Grey 100 themes. For more guidance around themes visit [Carbon’s color guidelines](https://www.carbondesignsystem.com/guidelines/color/usage).
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+_Narrow Tearsheet_
+
+![Narrow tearsheet light and dark modes](images/styles/updated/narrow-theming.png)
+
+<br />
+
+_Wide tearsheet_
+
+![Wide tearsheet light and dark modes](images/styles/updated/wide-theming.png)
+
+< br />
+
+| Tearsheet type | BG-color            | Title area     | Sidepanel      |
+| :--            | :--                 | :--            | :--            |
+| Narrow         | `$ui-01`            | `$ui-01`       | `$ui-01`       |
+| Wide           | `$ui-background`    | `$ui-01`       | `$ui-01`       |
+
+</Column>
+</Row>
+
+## Placement
+
+To learn more about the grid, check out [grid behaviors](https://pages.github.ibm.com/cdai-design/pal/components/grid-behaviors).
+
+Both tearsheets types start **88px from the top** of the viewport (i.e the browser window.) Additionally, the wide tearsheet remains **64px from the left and right sides** of the viewport. The narrow tearsheet follows the percentage width pattern of the small modal.
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![Wide tearsheet placement](images/styles/updated/narrow-placement.png)
+
+![Wide tearsheet placement](images/styles/updated/wide-placement.png)
+
+</Column>
+</Row>
+
+## Motion
+
+When the tearsheet is activated, the component will slide from the bottom of the view and the background will fade to the dark overlay. The deactivated version is the reverse.
+
+<Accordion>
+
+<AccordionItem title="1 Layer">
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+When a tearsheet is activated, this is considered the "first layer". Use this as the default experience for most cases.
+
+![Wide tearsheet entrance and exit](images/usage/motion/motion-01.gif)
+
+_Entrance and exit_
+
+| Piece              | Transitioning elements | Animation type |
+| :----------------- | :--------------------- | :------------- |
+| Card               | Position (X, Y)        | Expressive     |
+| Background overlay | Opacity                | Productive     |
+
+</Column>
+</Row>
+
+</AccordionItem>
+
+<AccordionItem title="2 Layers (stack)">
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+In order to achieve the illusion of depth, layer 1 card layer will animate on a z-axis backwards to make “room” for the second layer to slide in from the bottom. The first layer will have a faded overlay to reduce its prominence and reinforce the layering effect. The second layer will assume the same animations, positioning, and scale as the first layer.
+
+![Wide tearsheet layer 2](images/usage/motion/motion-02.gif)
+
+| Piece         | Transitioning elements            | Animation type |
+| :------------ | :-------------------------------- | :------------- |
+| Card 1        | Position (X, Y, Z), Width, Height | Expressive     |
+| Dimming layer | Opacity                           | Expressive     |
+| Card 2        | Position (X, Y)                   | Expressive     |
+
+
+</Column>
+</Row>
+
+</AccordionItem>
+
+</Accordion>
+
+<br />
+
+<Row className="resource-card-group">
+  <Column colMd={4} colLg={4}>
+    <ResourceCard
+      subTitle="Tearsheet sketch file"
+      href="https://sketch.cloud/s/db71ec37-fbf5-4895-9b90-7a9f5b269d5a">
+    </ResourceCard>
+  </Column>
+</Row>
