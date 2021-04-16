@@ -6,8 +6,8 @@
       path: /overview/contacts
     - title: "C&C Carbon specifications"
       path: /overview/carbon-specifications
-    - title: Pattern tracking
-      path: /overview/pattern-tracking
+    - title: Asset tracking
+      path: /overview/asset-tracking
 - title: Contributing
   pages:
     - title: Designing components & patterns
@@ -138,12 +138,12 @@
       path: /walkme-guide/steps/usage
 - title: Cloud Pak guidance
   pages:
-    - title: "Navigation"
-      path: /cloud-paks/navigation/usage
+    - title: "Login"
+      path: /cloud-paks/login/usage
     - title: "Homepage"
       path: /cloud-paks/home-page/usage
-    - title: "Cross Pak Switcher"
+    - title: "Navigation"
+      path: /cloud-paks/navigation/usage
+    - title: "Cross Pak switcher"
       path: /cloud-paks/cross-pak-switcher/usage
-    - title: "Cloud Pak login"
-      path: /cloud-paks/login/usage
   hasDivider: true
