@@ -6,6 +6,7 @@
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby build --prefix-paths",
     "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=dev gatsby develop",
     "dev:clean": "gatsby clean && npm run dev",
+    "reinstall": "echo Clearing npm cache; npm cache clean --force; echo Removing npm package-lock.json; rimraf package-lock.json; echo Removing package folders; rimraf node_modules; npm install",
     "serve": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby serve"
   },
   "dependencies": {
