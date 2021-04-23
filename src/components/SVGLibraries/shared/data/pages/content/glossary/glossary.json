@@ -1003,6 +1003,20 @@
       "last_updated": "01/11/19",
       "used_by": ["AI Apps"],
       "source": ["C&C"]
+    },
+
+    {
+      "id": "78",
+      "title": "autosave",
+      "definition": "Saves UI modifications (or an open document) automatically at periodic intervals to reduce the risk of data loss.",
+      "compare": ["apply", "save", "save as"],
+      "usage": "Suitable for situations where the task in hand is complex or time consuming to complete. There should be a visible indication to the user that autosave is happening.",
+      "example": "",
+      "notification": {},
+      "last_updated": "23/04/21",
+      "used_by": ["(Global)"],
+      "source": ["Carbon > C&C"]
     }
+
   ]
 }
