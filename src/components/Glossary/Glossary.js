@@ -61,7 +61,7 @@ const Glossary = () => {
     "AI Apps": {
       color: "red"
     },
-    "Automation": {
+    Automation: {
       color: "teal"
     },
     "Cloud Paks": {
@@ -76,9 +76,9 @@ const Glossary = () => {
     "Red Hat": {
       color: "magenta"
     },
-    "Security": {
+    Security: {
       color: "cyan"
-    },
+    }
   };
 
   const filterByTag = (e) => {
@@ -87,16 +87,19 @@ const Glossary = () => {
   };
 
   const sortTerms = (a, b) => {
-    return  a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1 
-  }
-  
+    return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
+  };
+
   useEffect(() => {
     allGlossaryJson && setTerms(allGlossaryJson.edges[0].node.terms);
     setViewableItems(allGlossaryJson.edges[0].node.terms.sort(sortTerms));
   }, [terms, allGlossaryJson]);
 
   return (
-    <DataTable rows={viewableItems} headers={headers} isSortable 
+    <DataTable
+      rows={viewableItems}
+      headers={headers}
+      isSortable
       render={({ rows, headers, getTableProps, getHeaderProps, getRowProps, onInputChange }) => (
         <TableContainer title="">
           <TableToolbar aria-label="data table toolbar">
@@ -128,7 +131,13 @@ const Glossary = () => {
             <TableHead>
               <TableRow>
                 {headers.map((header, headerIndex) => (
-                  <TableHeader key={headerIndex} style={{ minWidth: header.header === 'Used by' && '7rem'}} {...getHeaderProps({ header })}>{header.header}</TableHeader>
+                  <TableHeader
+                    key={headerIndex}
+                    style={{ minWidth: header.header === "Used by" && "7rem" }}
+                    {...getHeaderProps({ header })}
+                  >
+                    {header.header}
+                  </TableHeader>
                 ))}
               </TableRow>
             </TableHead>
@@ -155,16 +164,22 @@ const Glossary = () => {
                         {cell.value &&
                           cell.value.length > 0 &&
                           cell.value.map((value, valueIndex) => {
-                            return <Tag key={valueIndex} type={usedByTags[value] && usedByTags[value].color}>{value}</Tag>;
+                            return (
+                              <Tag key={valueIndex} type={usedByTags[value] && usedByTags[value].color}>
+                                {value}
+                              </Tag>
+                            );
                           })}
                       </TableCell>
                     ) : cell.id.includes("title") ? (
                       <TableCell key={cell.id}>
                         <strong>{cell.value}</strong>
                       </TableCell>
-                    ) : cell.id.includes("last_updated") ? <TableCell>{cell.value && new Date(cell.value).toLocaleDateString()}</TableCell> :(
+                    ) : cell.id.includes("last_updated") ? (
+                      <TableCell key={cell.id}>{cell.value && new Date(cell.value).toLocaleDateString()}</TableCell>
+                    ) : (
                       <TableCell key={cell.id}>{cell.value}</TableCell>
-                    ) 
+                    )
                   )}
                 </TableRow>
               ))}
