@@ -52,6 +52,8 @@
         path: /patterns/data-table/column-customization
       - title: Data table column alignment
         path: /patterns/data-table/column-alignment
+      - title: Data table clickable row items
+        path: /patterns/data-table/clickable-row-items
       - title: Data table row action buttons
         path: /patterns/data-table/row-action-buttons
       - title: Data table headers
