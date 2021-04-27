@@ -4,7 +4,7 @@ export const useJSONQuery = () => {
   const { allGlossaryJson } = useStaticQuery(
     graphql`
       query GlossaryJSONQuery {
-        allGlossaryJson {
+        allGlossaryJson{
           edges {
             node {
               terms {
