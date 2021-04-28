@@ -1,12 +1,13 @@
 ---
 title: Data table clickable row items
-tabs: ['Usage', 'Style']
 ---
 
 import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 
 <Breadcrumb>
-  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/patterns/data-table/overview">Overview</BreadcrumbItem>
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/patterns/data-table/overview">
+    Overview
+  </BreadcrumbItem>
   <BreadcrumbItem isCurrentPage href="/patterns/data-table/clickable-row-items">
     Column Alignment
   </BreadcrumbItem>
@@ -14,11 +15,12 @@ import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 
 <PageDescription>
 
-Data table rows can contain one or multiple interactive components. Users need to distinguish which items in a data table are plain static content, and which are actionable. 
+Data table rows can contain one or multiple interactive components. Users need to distinguish which items in a data table are plain static content, and which are actionable.
 
 </PageDescription>
 
 #### We distinguish the following interactions in data table rows:
+
 1. Clickable links - Drilldown into new page
 2. Clickable rows - Data preview in context of the page
 3. Select checkbox - Muti-select + batch actions
@@ -43,7 +45,6 @@ Clickable links are used for navigational purposes (drilling down into details o
 </DoDont>
 
 </DoDontRow>
-
 
 ### Interactions
 
@@ -75,7 +76,7 @@ Click on a row won’t navigate to a new page. When users require a preview of d
 
 ### Limit interactive links
 
-There might be tables that require multiple interactive links. It is highly recommended to limit the amount of clickable elements as much as possible to avoid cognitive overload and distraction from the actual data. We recommend to keep always the first column clickable only. 
+There might be tables that require multiple interactive links. It is highly recommended to limit the amount of clickable elements as much as possible to avoid cognitive overload and distraction from the actual data. We recommend to keep always the first column clickable only.
 
 <DoDontRow>
 
@@ -95,13 +96,14 @@ There might be tables that require multiple interactive links. It is highly reco
 
 #### Designing for touch devices
 
-If your experience is for both mobile and desktop – hover will transform into the double tap behavior on touch screens. If you are designing for mobile devices only, consider to display links persistently. 
+If your experience is for both mobile and desktop – hover will transform into the double tap behavior on touch screens. If you are designing for mobile devices only, consider to display links persistently.
 
 ## Clickable rows – Data preview in context of the page
 
-When the main intent is to keep users in the context of a page – and navigating to a different page should be intentionally avoided, users can click a row which triggers a preview of further information in a side panel. This is not required for all products and use cases. Evaluate if this functionality is applicable in your use case and if it will provide benefit to your users. 
+When the main intent is to keep users in the context of a page – and navigating to a different page should be intentionally avoided, users can click a row which triggers a preview of further information in a side panel. This is not required for all products and use cases. Evaluate if this functionality is applicable in your use case and if it will provide benefit to your users.
 
 #### When to use clickable rows:
+
 - To trigger data in a preview panel, that won’t fit in the regular table view, but should be displayed in context of the page (e.g. description, relationships,...)
 - When users require a preview of further meta data in context of the page in order to understand details of a row item better and make an informed decision
 - To avoid navigating to a different page and not pulling users out of their current work context, which might slow down accomplishing their task
@@ -110,7 +112,7 @@ When the main intent is to keep users in the context of a page – and navigatin
 
 ### Interactions
 
-Click on a row is reserved for launching a side panel in context of the page only. Click on the row will not trigger any other actions such as drill down into a new page or batch editing. 
+Click on a row is reserved for launching a side panel in context of the page only. Click on the row will not trigger any other actions such as drill down into a new page or batch editing.
 
 #### Single click on row
 
@@ -140,7 +142,8 @@ Action icons in single table rows should also contain the action “_View detail
 </Row>
 
 #### Sidepanel preview
-- Call out the name of the asset in the header to give the user enough context to what item on the page the meta data relate to. 
+
+- Call out the name of the asset in the header to give the user enough context to what item on the page the meta data relate to.
 - Limit the amount of displayed data to a minimum. The preview shouldn’t replace an actual details place. Display the essence that is required for the user to understand the data in the table better and to make a decision.
 - Add a link to details page, so the user can drill down, if edits or more information are needed
 
@@ -172,11 +175,11 @@ Action icons in single table rows should also contain the action “_View detail
 
 ## Multi-select & batch action
 
-Batch actions are functions that may be performed on multiple items within a table. Once the user selects at least one checkbox from a row, the batch action bar appears at the top of the table, presenting the user with actions they can take. To exit or escape “batch action mode”, the user can cancel out or deselect the items. See [Carbon guidelines](https://www.carbondesignsystem.com/components/data-table/usage/#multi-select-and-batch-action). 
+Batch actions are functions that may be performed on multiple items within a table. Once the user selects at least one checkbox from a row, the batch action bar appears at the top of the table, presenting the user with actions they can take. To exit or escape “batch action mode”, the user can cancel out or deselect the items. See [Carbon guidelines](https://www.carbondesignsystem.com/components/data-table/usage/#multi-select-and-batch-action).
 
 ### Interactions
 
-To enable batch actions users can click the checkbox in front of the row. When batch mode is active, single action icons and overflow menus on the row will be disabled. 
+To enable batch actions users can click the checkbox in front of the row. When batch mode is active, single action icons and overflow menus on the row will be disabled.
 
 <Row>
 <Column colLg={8}>
@@ -192,6 +195,7 @@ To enable batch actions users can click the checkbox in front of the row. When b
 If content doesn’t fit into a column we use tooltips to display further information. We can have additional content for listed items or also for tags.
 
 #### Listed items
+
 For listed items we indicate a “+”-link and show more items listed in a tooltip on click.
 When the user clicks on the link “View all” it opens a modal with all listed items in a focused view.
 
@@ -218,50 +222,51 @@ For tags we indicate more items in “+” tag. Follow guidelines for Additional
 
 ### Light mode (Gray 10)
 
-|   Token               |      Role                |   Hex value      |
-| -------------         | -----------              |       -----      |
-|  `$ui-01`             |      Row-background      |   `#fffff`       |
-|  `$text-02`           |      Link                |   `#525252`      |
-|  `$hover-row`         |      Row-hover           |   `#e5e5e5`      |
-|  `$active-ui`         |      Row-active state    |   `#c6c6c6`      |
-|  `$text-01`           |      Row-Text            |   `#161616`      |
-|  `$interactive-04`    |      Indicator line      |   `#0f62fe`      |
-|  `$selected-ui`       |      Selected row        |   `#e0e0e0`      |
-|  `$link-02`           |      Selected link       |   `#0043ce`      |
-|  `$hover-selected-ui` |      Row-Selected hover  |   `#cacaca`      |
-|  `$focus`             |      Row-Selected hover  |   `#0f62fe`      |
+| Token                | Role               | Hex value |
+| -------------------- | ------------------ | --------- |
+| `$ui-01`             | Row-background     | `#fffff`  |
+| `$text-02`           | Link               | `#525252` |
+| `$hover-row`         | Row-hover          | `#e5e5e5` |
+| `$active-ui`         | Row-active state   | `#c6c6c6` |
+| `$text-01`           | Row-Text           | `#161616` |
+| `$interactive-04`    | Indicator line     | `#0f62fe` |
+| `$selected-ui`       | Selected row       | `#e0e0e0` |
+| `$link-02`           | Selected link      | `#0043ce` |
+| `$hover-selected-ui` | Row-Selected hover | `#cacaca` |
+| `$focus`             | Row-Selected hover | `#0f62fe` |
 
 ![Examples of all different data table states](images/light-theme-states.png)
 
 ### Dark mode (Gray 100)
 
-|   Token               |      Role                |   Hex value      |
-| -------------         | -----------              |       -----      |
-|  `$ui-01`             |      Row-background      |   `#262626`       |
-|  `$text-02`           |      Row-text            |   `#c6c6c6`      |
-|  `$hover-row`         |      Row-hover           |   `#353535`      |
-|  `$active-ui`         |      Row-active state    |   `#525252`      |
-|  `$text-01`           |      Row-selected Text   |   `#f4f4f4`      |
-|  `$interactive-04`    |      Indicator line      |   `#4589ff`      |
-|  `$selected-ui`       |      Selected row        |   `#393939`      |
-|  `$link-02`           |      Row-text hover      |   `#a6c8ff`      |
-|  `$hover-selected-ui` |      Row-Selected hover  |   `#4c4c4c`      |
-|  `$focus`             |      Row-Focus state     |   `#ffffff`      |
+| Token                | Role               | Hex value |
+| -------------------- | ------------------ | --------- |
+| `$ui-01`             | Row-background     | `#262626` |
+| `$text-02`           | Row-text           | `#c6c6c6` |
+| `$hover-row`         | Row-hover          | `#353535` |
+| `$active-ui`         | Row-active state   | `#525252` |
+| `$text-01`           | Row-selected Text  | `#f4f4f4` |
+| `$interactive-04`    | Indicator line     | `#4589ff` |
+| `$selected-ui`       | Selected row       | `#393939` |
+| `$link-02`           | Row-text hover     | `#a6c8ff` |
+| `$hover-selected-ui` | Row-Selected hover | `#4c4c4c` |
+| `$focus`             | Row-Focus state    | `#ffffff` |
 
 ![Examples of all different data table states in dark theme](images/dark-theme-states.png)
 
 ## Accessibility  
 
-The link color for selected rows and rows with hover need to have enough visual contrast between text and background of the table row. Therefore we use for both the default and the hover state the following color tokens for the link component: 
+The link color for selected rows and rows with hover need to have enough visual contrast between text and background of the table row. Therefore we use for both the default and the hover state the following color tokens for the link component:
+
 - Light mode (Gray 10): `$link-02` #0043CE
 - Dark mode (Gray 100): `$link-02` #A6C8FF
 
 **Mouse and keyboard interactions**
 
-|                        |      Drilldown in new page      |   Launching meta datain context     | Interactive tooltip     |   Definition tooltip   |   Row Multi-selection*  |   Row Range selection*   |
-| -------------          | -----------                     | -----                                |    -----                | -----                  |    -----                | -----                    |
-| Mouse interaction      | Single click on item (link)     | Single click on row                  |  Single click on item   | Hover on item          | Click on row checkboxes | Click on row checkboxes  |
-| Keyboard interaction   | Keyboard interaction            | Tab row                              |  Tab item               | Tab item               | Cmd+click               | Shift+click              |
+|                      | Drilldown in new page       | Launching meta datain context | Interactive tooltip  | Definition tooltip | Row Multi-selection\*   | Row Range selection\*   |
+| -------------------- | --------------------------- | ----------------------------- | -------------------- | ------------------ | ----------------------- | ----------------------- |
+| Mouse interaction    | Single click on item (link) | Single click on row           | Single click on item | Hover on item      | Click on row checkboxes | Click on row checkboxes |
+| Keyboard interaction | Keyboard interaction        | Tab row                       | Tab item             | Tab item           | Cmd+click               | Shift+click             |
 
 ## Related
 
