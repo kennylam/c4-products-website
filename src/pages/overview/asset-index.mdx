@@ -1,0 +1,110 @@
+---
+title: Asset index
+---
+import { Link } from "gatsby";
+import { Launch16 } from '@carbon/icons-react';
+
+
+
+<PageDescription>
+
+A list of our Cloud & Cognitive components and patterns, along with their current status, maintainers, and relevant links.
+
+</PageDescription>
+
+<InlineNotification kind="info">
+
+This page will be updated twice a month: on or around the 1st and 15th of the month.
+
+</InlineNotification>
+
+<Row>
+<Column colMd={8} colLg={16}>
+
+<Accordion>
+<AccordionItem title="About this data table">
+
+#### Asset
+- The Asset column provides a link to the asset specification, guidelines, or in-progress GitHub issue.
+- Carbon community assets as tagged with `Carbon` and links to GitHue issues are tagged with `GHE issue`.
+- Core assets that the majority of C&C products are expected to adopt are indicated with a green check mark (✅).
+
+#### Maintainers
+- Your point of contact for further information about the asset.
+
+#### Design status
+- `In progress`: a workgroup is currently working on the design specification.
+- `Done`: the asset has been designed, evaluated, and approved by the DSAG / DSIT.
+- When an asset has been approved and published on this site (or on the <a href="https://www.carbondesignsystem.com/community/overview/" target="_blank">Carbon community assets<Launch16 fill="#0F62FE" style="vertical-align:middle; margin: 0 2px 2px 0"/></a> page), 
+code implementation can begin.
+
+#### Code status
+- `NA`: Code implementation work not yet possible as the design is still in progress.
+- `Needs dev resource`: The design is done and we're now waiting for a development resource to get this asset implementd in code. If you think you can help, see our <Link to="/contributing/coding-components-patterns/overview">Coding components & patterns</Link> page.
+- `In progress`: a developer is working on implementing the asset.
+- `Available in Canary`: the component is coded and available but still going through final release review testing.
+- `Done`: When the code has been built, tested, and approved, a link is provided to our <a href="https://ibm-cloud-cognitive.netlify.app/?path=/story/getting-started--page" target="_blank">Storybook<Launch16 fill="#0F62FE" style="vertical-align:middle; margin: 0 2px 2px 0"/></a> showing the runing code.
+- When complete, our coded assets are added to one of the following two React libraries: 
+  - The <a href="https://github.com/carbon-design-system/ibm-cloud-cognitive" target="_blank">IBM Cloud & Cognitive React library<Launch16 fill="#0F62FE" style="vertical-align:middle; margin: 0 2px 2px 0"/></a>
+  - The <a href="https://github.com/carbon-design-system/carbon-components-react" target="_blank">Carbon React library<Launch16 fill="#0F62FE" style="vertical-align:middle; margin: 0 2px 2px 0"/></a>
+
+#### Further guidance
+- For more information or updates regarding the table, please reach out to <Link to="https://w3.ibm.com/bluepages/profile.html?uid=2D1739897">Carrie Lloyd</Link>.
+
+</AccordionItem>
+</Accordion>
+
+</Column>
+</Row>
+
+<Row>
+<Column colMd={8} colLg={16}>
+
+| Asset spec                                                                                                         | Maintainers                       | Design status  | Code status |
+|--------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------|-------------|
+| <Link to="/patterns/about-modal/usage">About modal</Link> ✅                                                       | Pascal Potvin                     | Done           | Done<br/><Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-released-aboutmodal--about-modal">Storybook link</Link> |
+| <Link to="https://www.carbondesignsystem.com/community/patterns/create-flows/">Create (modal)</Link> ✅ `Carbon`     | Andrew Smith<br/>Andrea Garcia    | Done           | Done<br/><Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-released-createmodal--default">Storybook link</Link> |
+| <Link to="/patterns/notifications">Notifications</Link> ✅                                                         | Josh Vaughn                       | Done           | Done<br/><Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-released-notificationspanel--default">Storybook link</Link> |
+| <Link to="/patterns/status-icons">Status icon</Link> ✅                                                            | David Levinson                    | Done           | Done<br/><Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-released-statusicon--default">Storybook link</Link> |
+| <Link to="/components/tearsheet/usage">Tearsheet</Link>                                                            | Mitchell Bernstein                | Done           | Done<br/><Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-released-tearsheets-tearsheet--tearsheet">Storybook link</Link> |
+| <Link to="/cloud-paks/login/usage">Cloud Pak login</Link>                                                          | Rami Alayan                       | Done           | Done<br/>Available via Zen |
+| <Link to="/cloud-paks/home-page/usage">Cloud Pak homepage</Link>                                                   | Carmen Darlach<br/>Cameron Calder<br/>Shell Zhu | Done | Done<br/>Available via Zen |
+| <Link to="/cloud-paks/navigation/usage/">Cloud Pak navigation</Link>                                               | Shell Zhu                         | Done           | Done<br/>Available via Zen |
+| <Link to="/cloud-paks/cross-pak-switcher/usage">Cloud Pak switcher</Link>                                          | Shell Zhu                         | Done           | Done<br/>Available via Zen |
+| <Link to="https://www.carbondesignsystem.com/community/patterns/generate-an-api-key/">Generating an API key</Link> `Carbon` | Vikki Paterson<br/>Chloe Poulter | Done   | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-apikeymodal--standard">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="/components/card/overview/">Cards</Link> ✅                                                              | Johanna Koval<br/>Kacie Eberhart  | Done           | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-cards-expressivecard--default">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="/patterns/empty-state/usage/">Empty state</Link> ✅                                                      | Morgana D’Almeida                 | Done           | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-emptystates-emptystate--default">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="https://www.carbondesignsystem.com/community/patterns/export-pattern/">Export</Link> `Carbon`            | Vikki Paterson<br/>Chloe Poulter  | Done           | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-exportmodal--with-success-message">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="https://www.carbondesignsystem.com/community/patterns/import-pattern/">Import</Link> `Carbon`            | Vikki Paterson<br/>Chloe Poulter  | Done           | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-importmodal--with-state-manager">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="/patterns/http-errors/usage">HTTP errors</Link> ✅                                                       | Gregor Cowie<br/>Vikki Paterson<br/>Chloe Poulter | Done | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-httperrors-httperror403--with-all-props-set">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="/components/modified-tabs">Modified tabs</Link>                                                          | Marcie Coral                      | Done           | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-modifiedtabs--default">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="/components/page-header/usage">Page header</Link> ✅                                                     | Cameron Calder                    | Done           | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-pageheader--all-attributes-set">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="https://www.carbondesignsystem.com/community/patterns/remove-pattern/">Remove</Link> ✅  `Carbon`        | Vikki Paterson<br/>Chloe Poulter  | Done           | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-removedeletemodal--with-state-manager">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="/patterns/saving/usage">Saving</Link>                                                                    | Vikki Paterson<br/>Chloe Poulter  | Done           | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-saving--auto">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="/components/side-panel/usage">Side panel</Link> ✅                                                       | Kacie Eberhart<br/>Pascal Potvin<br/>Mitchell Bernstein<br/>Cameron Calder | Done | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-sidepanel--slide-over">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="/patterns/user-profile-images">User profile images</Link> ✅                                             | Marion Brülls                     | Done           | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-userprofileimage--default">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="/patterns/web-terminal">Web terminal</Link>                                                              | Courtney Banning                  | Done           | Available in <Link to="https://ibm-cloud-cognitive.netlify.app/?path=/story/cloud-cognitive-canary-webterminal--default">Canary</Link><br/>(Stable release due Q2) |
+| <Link to="https://www.carbondesignsystem.com/community/patterns/create-flows/">Create (side panel)</Link>  ✅ `Carbon` | Andrew Smith<br/>Andrea Garcia | Done          | In progress<br/>(Due Q3) |
+| <Link to="https://www.carbondesignsystem.com/community/patterns/create-flows/">Create (tearsheet)</Link>  ✅ `Carbon`  | Andrew Smith<br/>Andrea Garcia | Done          | In progress<br/>(Due Q3) |
+| <Link to="/components/additional-tag-features/">Additional tag features</Link>                                     | Courtney Banning                  | Done           | In progress<br/>(Due Q3) |
+| <Link to="/patterns/advanced-filtering/usage/">Advanced filtering</Link>                                           | Tom Solomon                       | Done           | Not started<br/><Link to="/contributing/coding-components-patterns/overview">Needs dev resource</Link> |
+| <Link to="https://www.carbondesignsystem.com/community/patterns/create-flows/">Create (full page)</Link>  ✅ `Carbon` | Andrew Smith<br/>Andrea Garcia | Done          | Not started<br/><Link to="/contributing/coding-components-patterns/overview">Needs dev resource</Link> |
+| _Data table extensions:_<br />&gt;&nbsp;<Link to="/patterns/data-table/headers/">Headers</Link><br />&gt;&nbsp;<Link to="/patterns/data-table/row-action-buttons/">Row action buttons</Link><br />&gt;&nbsp;<Link to="/patterns/data-table/column-customization/">Column customization</Link><br />&gt;&nbsp;<Link to="/patterns/data-table/column-alignment/">Column alignment</Link>| Pascal Potvin | Done | Not started<br/><Link to="/contributing/coding-components-patterns/overview">Needs dev resource</Link> |
+| <Link to="https://www.carbondesignsystem.com/community/patterns/edit-pattern/">Edit and update</Link> `Carbon`     | Vikki Paterson<br/>Chloe Poulter  | Done           | Not started<br/><Link to="/contributing/coding-components-patterns/overview">Needs dev resource</Link> |
+| <Link to="/components/slide-over-panel/usage/">Slide-over panel</Link>                                             | Pascal Potvin<br/>Mitchell Bernstein<br/>Marion Brülls | Done | Not started<br/><Link to="/contributing/coding-components-patterns/overview">Needs dev resource</Link> |
+| <Link to="/patterns/toolbars">Toolbars</Link>                                                                      | Myriam Batteli<br/>Pascal Potvin  | Done           | Not started<br/><Link to="/contributing/coding-components-patterns/overview">Needs dev resource</Link> |
+| <Link to="https://github.ibm.com/CDAI-design/pal/issues/465">Add/select dialog</Link> `GHE issue`                  | Michael Friess<br/>Oliver Kauselmann | In progress | NA          |
+| <Link to="/wip/button-menu/">Button menu </Link>                                                                   | Alex Swain                        | In progress    | NA          |
+| <Link to="https://github.ibm.com/CDAI-design/pal/issues/349">Conditions builder</Link> `GHE issue`                 | Tomer Maimoni                     | In progress    | NA          |
+| <Link to="https://github.ibm.com/CDAI-design/pal/issues/368">Color picker</Link> `GHE issue`                       | Kacie Eberhart<br/>Pascal Potvin<br/>Derien M Brown | In progress | NA |
+| <Link to="/wip/filterable-search-tab-dropdown/">Filterable search tab dropdown </Link>                             | ?                                 | In progress    | NA          |
+| <Link to="https://github.ibm.com/CDAI-design/pal/issues/382">Keyboard navigation</Link> `GHE issue`                |  Sam Ting                         | In progress    | NA          |
+| <Link to="/wip/learning-panel/">Learning panel </Link>                                                             | Tom Solomon                       | In progress    | NA          |
+| <Link to="/wip/multistep-confirmation/">Multistep confirmation </Link>                                             | Chloe Poulter                     | In progress    | NA          |
+| <Link to="/wip/persistent-banner/">Persistent banner </Link>                                                       | Vikki Paterson<br/>Chloe Poulter  | In progress    | NA          |
+| <Link to="https://github.ibm.com/CDAI-design/pal/issues/390">Projects</Link> `GHE issue`                           | Mitchell Bernstein                | In progress    | NA          |
+| <Link to="/wip/state/">State</Link>                                                                                | Vikki Paterson<br/>Chloe Poulter  | In progress    | NA          |
+| <Link to="https://github.ibm.com/CDAI-design/pal/issues/290">Theme switcher</Link> `GHE issue`                     | Morgana D'Almeida                 | In progress    | NA          |
+
+</Column>
+</Row>

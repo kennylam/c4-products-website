@@ -6,8 +6,8 @@
       path: /overview/contacts
     - title: "C&C Carbon specifications"
       path: /overview/carbon-specifications
-    - title: Asset tracking
-      path: /overview/asset-tracking
+    - title: Asset index
+      path: /overview/asset-index
 - title: Contributing
   pages:
     - title: Designing components & patterns
