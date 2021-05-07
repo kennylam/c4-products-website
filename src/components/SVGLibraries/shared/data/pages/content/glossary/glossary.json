@@ -1016,6 +1016,19 @@
       "last_updated": "04/23/21",
       "used_by": ["(Global)"],
       "source": ["Carbon > C&C"]
+    },
+
+    {
+      "id": "79",
+      "title": "on-premises / on-prem",
+      "definition": "Pertaining to software that is installed and run on the local computers of a user or organization.",
+      "compare": ["-"],
+      "usage": "Use \"on-premises\" or the abbreviation \"on-prem\". Do not use \"on-premise\" (without the s). The word \"premise\" relates to a proposition or argument, whereas the word \"premises\" relates to a building or site.",
+      "example": "",
+      "notification": {},
+      "last_updated": "05/07/21",
+      "used_by": ["(Global)"],
+      "source": ["C&C"]
     }
 
   ]
