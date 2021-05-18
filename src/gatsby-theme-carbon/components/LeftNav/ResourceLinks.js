@@ -13,6 +13,10 @@ const links = [
   {
     title: 'Slack channel',
     href: 'https://ibm-casdesign.slack.com/archives/CQGR0HC05',
+  },
+  {
+    title: 'Storybook',
+    href: 'https://ibm-cloud-cognitive.netlify.app/?path=/story/getting-started--page',
   }
 ];
 
