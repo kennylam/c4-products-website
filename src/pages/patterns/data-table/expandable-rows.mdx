@@ -30,7 +30,7 @@ This pattern explains how to lay out content within an expanded area and why con
 
 ### Padding
 
-The expandable area should have the following padding. The padding remains the same regardless of the height of the table's rows.
+The expanded area should have the following padding. The padding remains the same regardless of the height of the table's rows.
 
 | Property         | Value  | Token        |
 | ---------------- | ------ | ------------ |
@@ -49,9 +49,9 @@ Use the expandable row for the following:
 
 ### When not to use
 
-When the content in the expanded area begins to feel cramped, consider using a dedicated page, sidebar, modal, or tearsheet to view information and complete tasks.
+When the content in the expanded area begins to feel cramped, consider using a dedicated page, [side panel](https://www.carbondesignsystem.com/components/UI-shell-right-panel/usage), [modal](https://www.carbondesignsystem.com/components/modal/usage/), or [tearsheet](https://pages.github.ibm.com/cdai-design/pal/components/tearsheet/usage) to view information and complete tasks.
 
-_If my content is feeling cramped, can I  increase the expandable area's height?_
+_If my content is feeling cramped, can I  increase the expanded area's height?_
 
 In order to prevent a vertical scroll bar in the expanded area, the area does not have a `max-height`. However, you should consider the following:
 
@@ -60,9 +60,9 @@ In order to prevent a vertical scroll bar in the expanded area, the area does no
 
 If your use case requires what feels like a page worth of content, consider displaying the content in a [side panel](https://www.carbondesignsystem.com/components/UI-shell-right-panel/usage), [tearsheet](https://pages.github.ibm.com/cdai-design/pal/components/tearsheet/usage), [modal](https://www.carbondesignsystem.com/components/modal/usage), or a dedicated page.
 
-This is an example of how Watson Knowledge Catalog displays additional row information. Instead of opening an expanded row area, the additional information is placed in a side panel.
+Here is one example of how a side panel can be used to display additional row information.
 
-![Watson Knowledge Center](images/expandable-row-watson-knowledge-center.png)
+![Side panel example](images/expandable-row-side-panel.png)
 
 ## Alignment
 
@@ -138,13 +138,23 @@ If you are using a responsive data table, the items in the expanded area may nee
 
 You should only wrap the items in the expanded area if you are able to preserve important relationships between content items and ensure that the expanded area is still usable. If this is not possible, consider displaying the content in a different manner.
 
-Here is an example of how you can wrap from one of the previous examples.
+In the _do_ example all of the items in the expanded area wrap to one column. This prevents the _Provision Status_ section's placement from bisecting the *Details* section in a way that makes it difficult to tell that the *Details* section contains key value pairs.
+
+<DoDontRow>
+
+<DoDont type="do">
 
 ![Example of how to wrap content in an expanded area.](images/expandable-row-wrapping-do-load-balancer.png)
 
-The following is an example of how not to wrap items in an expanded area. The _Provision Status_ section's placement bisects the *Details* section in a way that makes it difficult to tell that the *Details* section contains key value pairs.
+</DoDont>
+
+<DoDont type="dont">
 
 ![Example of how to wrap content in an expanded area.](images/expandable-row-wrapping-don't-load-balancer.png)
+
+</DoDont>
+
+</DoDontRow>
 
 ### Sizing
 
@@ -184,11 +194,7 @@ Use the same principles you use elsewhere to size content within an expanded are
 
 </DoDontRow>
 
-## Examples
-
-![Code and Tag Manager](images/expandable-row-code-tags.png)
-![Resource Usage](images/expandable-row-resource-usage.png)
-
 ## Related
 
-- [Reorder pattern](hhttps://pages.github.ibm.com/cdai-design/pal/wip/reordering/)
+- [Data table](https://pages.github.ibm.com/cdai-design/pal/patterns/data-table/overview)
+- [Side panel](https://pages.github.ibm.com/cdai-design/pal/components/side-panel/usage)
