@@ -18,8 +18,8 @@
       path: /contributing/updating-this-site/overview
 - title: Components
   pages:
-    - title: "Additional tag features"
-      path: /components/additional-tag-features
+    - title: "Tag set"
+      path: /components/tag-set
     - title: Cards
       path: /components/card/overview
       subpage:
