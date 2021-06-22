@@ -61,7 +61,7 @@ const Glossary = () => {
     "AI Apps": {
       color: "red"
     },
-    Automation: {
+    "Automation": {
       color: "teal"
     },
     "Cloud Paks": {
@@ -76,7 +76,7 @@ const Glossary = () => {
     "Red Hat": {
       color: "magenta"
     },
-    Security: {
+    "Security": {
       color: "cyan"
     }
   };
