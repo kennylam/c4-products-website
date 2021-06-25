@@ -31,9 +31,9 @@ cache:
 #     - "Message: %{message}"
 #   email: false
 
-branches:
-  only:
-    - master
+# branches:
+#   only:
+#     - master
 
 script:
   - npm run build
