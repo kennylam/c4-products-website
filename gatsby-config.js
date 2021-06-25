@@ -8,15 +8,6 @@ module.exports = {
     keywords: "cloud,data,AI,design,pattern,asset,library,pal,security"
   },
   plugins: [
-    // {
-    //   resolve: 'gatsby-theme-carbon',
-    //   options: {
-    //     theme: {
-    //       homepage: 'dark',
-    //       interior: 'white',
-    //     },
-    //   },
-    // },
     {
       resolve: "gatsby-remark-images",
       options: {
@@ -44,14 +35,6 @@ module.exports = {
         theme_color: "#0062ff",
         display: "browser",
         icons: []
-      }
-    },
-    {
-      resolve: "gatsby-plugin-matomo",
-      options: {
-        siteId: "4",
-        matomoUrl: "https://hcd-matomo.w3ibm.mybluemix.net",
-        siteUrl: "https://pages.github.ibm.com/cdai-design/pal"
       }
     },
     {
