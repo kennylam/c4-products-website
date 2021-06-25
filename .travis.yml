@@ -35,7 +35,8 @@ branches:
   only:
     - master
 
-script: skip
+script:
+  - npm run build
 
 stages:
   - "deploy"
@@ -49,7 +50,7 @@ jobs:
   include:
   - stage: "deploy"
     script:
-    - npm run build
+    - echo skip second build
     deploy:
       provider: pages
       skip_cleanup: true
