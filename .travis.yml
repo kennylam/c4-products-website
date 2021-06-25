@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - '10'
+  - '14'
 
 addons:
   apt:
@@ -16,20 +16,20 @@ cache:
     - ./node_modules
     - ~/.cache
 
-notifications:
-  slack:
-    rooms:
-    - ibm-casdesign:P44xeoRDixDw38uE025Qoekz
-    on_pull_requests: false
-    on_success: change
-    on_failure: always
-    template:
-    - "`%{repository_name}` *%{result}* build <%{build_url}|#%{build_number}>"
-    - "Commit #<%{compare_url}|%{commit}> %{commit_message}"
-    - "Author: *%{author}*"
-    - "Execution time: *%{duration}*"
-    - "Message: %{message}"
-  email: false
+# notifications:
+#   slack:
+#     rooms:
+#     - ibm-casdesign:P44xeoRDixDw38uE025Qoekz
+#     on_pull_requests: false
+#     on_success: change
+#     on_failure: always
+#     template:
+#     - "`%{repository_name}` *%{result}* build <%{build_url}|#%{build_number}>"
+#     - "Commit #<%{compare_url}|%{commit}> %{commit_message}"
+#     - "Author: *%{author}*"
+#     - "Execution time: *%{duration}*"
+#     - "Message: %{message}"
+#   email: false
 
 branches:
   only:
@@ -48,8 +48,6 @@ jobs:
   fast_finish: true
   include:
   - stage: "deploy"
-    # before_script:
-    # - yarn build
     script:
     - npm run build
     deploy:
