@@ -35,8 +35,7 @@ cache:
 #   only:
 #     - master
 
-script:
-  - npm run build
+script: skip
 
 stages:
   - "deploy"
@@ -50,7 +49,7 @@ jobs:
   include:
   - stage: "deploy"
     script:
-    - echo skip second build
+    - npm run build
     deploy:
       provider: pages
       skip_cleanup: true
