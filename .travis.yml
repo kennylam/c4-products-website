@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - '10'
+  - '14'
 
 addons:
   apt:
@@ -10,11 +10,9 @@ addons:
       - libgconf-2-4
 
 cache:
-  npm: true
   directories:
-    - ~/.npm
-    - ./node_modules
-    - ~/.cache
+    - .cache
+    - public
 
 notifications:
   slack:
@@ -48,8 +46,6 @@ jobs:
   fast_finish: true
   include:
   - stage: "deploy"
-    # before_script:
-    # - yarn build
     script:
     - npm run build
     deploy:

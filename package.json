@@ -19,7 +19,6 @@
     "front-matter": "^3.2.1",
     "gatsby": "^2.32.3",
     "gatsby-cli": "^2.19.0",
-    "gatsby-plugin-matomo": "^0.8.1",
     "gatsby-plugin-sharp": "^2.6.27",
     "gatsby-remark-images": "^3.3.25",
     "gatsby-source-filesystem": "^2.3.24",
