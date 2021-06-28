@@ -14,24 +14,24 @@ cache:
     - .cache
     - public
 
-# notifications:
-#   slack:
-#     rooms:
-#     - ibm-casdesign:P44xeoRDixDw38uE025Qoekz
-#     on_pull_requests: false
-#     on_success: change
-#     on_failure: always
-#     template:
-#     - "`%{repository_name}` *%{result}* build <%{build_url}|#%{build_number}>"
-#     - "Commit #<%{compare_url}|%{commit}> %{commit_message}"
-#     - "Author: *%{author}*"
-#     - "Execution time: *%{duration}*"
-#     - "Message: %{message}"
-#   email: false
+notifications:
+  slack:
+    rooms:
+    - ibm-casdesign:P44xeoRDixDw38uE025Qoekz
+    on_pull_requests: false
+    on_success: change
+    on_failure: always
+    template:
+    - "`%{repository_name}` *%{result}* build <%{build_url}|#%{build_number}>"
+    - "Commit #<%{compare_url}|%{commit}> %{commit_message}"
+    - "Author: *%{author}*"
+    - "Execution time: *%{duration}*"
+    - "Message: %{message}"
+  email: false
 
-# branches:
-#   only:
-#     - master
+branches:
+  only:
+    - master
 
 script: skip
 
@@ -55,4 +55,4 @@ jobs:
       github_url: github.ibm.com
       local_dir: public
       on:
-        branch: travis-cache
+        branch: master
