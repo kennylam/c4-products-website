@@ -259,49 +259,31 @@ Also, avoid cliches like the plague.\*
 
 ## Referring to UI elements
 
-When you refer to a UI element in text, write it exactly as it is written in the UI. This includes using 
-the same capitalization as used in the UI.
+When you refer to UI elements in text, write out the UI labels exactly as they are written in the UI (that is, 
+follow the same capitalization) but render the UI controls in **bold** text to make them stand out from the 
+surrounding text. 
 
-<Row>
-  <Column colMd={4} colLg={4}>
-    <DoDontExample
-      type="do"
-      text="You can view recently performed tasks from the Home page."
-      aspectRatio="1:1"
-    />
-  </Column>
-  <Column colMd={4} colLg={4}>
-    <DoDontExample
-      type="do"
-      text="After you have configured your notification settings, click Next."
-      aspectRatio="1:1"
-    />
-  </Column>
-</Row>
-<Row>
-  <Column colMd={4} colLg={4}>
-    <DoDontExample
-      type="do"
-      text="To view more detailed information, click the Status and logs tab."
-      aspectRatio="1:1"
-    />
-  </Column>
-</Row>
+Examples:
+- You can view recently performed tasks from the **Home** page.
+- After you have configured your notification settings, click **Next**.
+- To view more detailed information, click the **Status and logs** tab.
+
+
 
 ### How to refer to different UI elements in text
 
 | UI element      | How to refer to it              | Examples                      |
 | --------------- | --------------------------------| ----------------------------- |
-| button          | **Verb:** Use _click_.<br/><br/>**Label:** Refer to a push button by its label only | Click OK.<br/><br/>Click Cancel. |
-| checkbox        | **Verb:** Use _select_ to refer to selecting the choice. Use _clear_ to refer to deselecting the choice.<br/><br/>**Label:** Refer to the checkbox by its label followed by _checkbox_. | To enable email notifications select the Notify me checkbox.<br/><br/>To stop receiving email notifications, clear the Notify me checkbox. |
-| drop-down list  | **Verb:** Use _select_ to refer to selecting an item from a list.<br/><br/>**Label:** Refer to a drop-down list by its label, followed by _list_. | From the Export file list, select PDF. |
-| icon            | **Verb:** Use _click_, _double-click_, or _right-click_ as necessary.<br/><br/>**Label:** Refer to the icon by its label, followed by _icon_, or by the name that is indicated by the tooltip, followed by _icon_.<br/><br/>If an icon does not have a label or tooltip, refer to the icon by a generic description. | Double-click the IBM MQ icon.<br/><br/>Click Cancel. |
-| input field     | **Verb:** Use _type_, _enter_, or _specify_.<br/><br/>**Label:** Refer to the input field by its label, followed by _field_. | In the Server URL field, enter the URL of the server. |
-| menu item       | **Verb:** Use _click_ for the menu name and for the menu item.<br/><br/>**Label:** Refer to a menu or menu item by its label only, unless _menu_ or _menu item_ is required for clarity. | Click File > New > New memo.<br/><br/>From the Format menu, click Edit.<br/><br/>Right-click the folder name and click Copy. |
-| pane<br/><br/>_(A framed section of a window or web page.)_ | **Verb:** Use _is displayed_ to describe the presence of the pane in the window or on the page.<br/><br/>**Label:** If a pane has a title, refer to it by its title, followed by _pane_. If a pane does not have a title, refer to it by a descriptive name. | The Properties pane is displayed.<br/><br/>Authoring standards are displayed in the Complying with standards pane. |
-| radio button    | **Verb:** Use _click_ to refer to selecting and deselecting a radio button; when you refer to a radio button that is selected, use _selected_.<br/><br/>**Label:** Refer to a radio button by its label only. | Click Light theme.<br/><br/>In the Notification settings area, click Enable web browser notifications.<br/><br/>If Enable web browser notifications is selected, ... |
-| switch / toggle<br/><br/>_(A control that is used to quickly switch between two possible states. See the Carbon [toggle](https://www.carbondesignsystem.com/components/toggle/usage) component.)_ | **Verb:** Use _set_, specifying the label of the thing being set, and the state that it is being set to.<br/><br/>**Label:** Refer to a switch by its label, followed by either _switch_ or _toggle_. | Set Data roaming to On.<br/><br/>If the Slack notification switch is set to On then when widgets are created, edited, or deleted a message is sent to your specified Slack channel. |
-| tab             | **Verb:** Use _click_.<br/><br/>**Label:** Refer to the tab by its label, followed by _tab_. | Click the Monitoring tab.<br/><br/>To view a list of supported capabilities and functions, click the Features tab. |
-| table           | **Verb:** Use _select_ to refer to selecting an item in a table.<br/><br/>**Label:** Refer to a table by its label, followed by _table_. | In the Test results table, select the test results you want to display. |
-| toolbar         | **Verb:** Use _click_.<br/><br/>**Label:** If there is only one toolbar in the UI, just refer to the toolbar. If there are multiple toolbars use the particular toolbar label or refer to it by a descriptive name, followed by _toolbar_. | On the toolbar, click Save.<br/><br/>On the Editing toolbar, click Remove formatting. |
-| window          | **Verb:** Use _open_ and _close_ to describe the immediate result of a user action; use _is displayed_ to describe the presence of the window on the screen. Don’t use _appear_ or _display_.<br/><br/>**Label:** Refer to a window by its title, followed by _window_. | In the Print window, click All.<br/><br/>The Print window opens.<br/><br/>The Print window is displayed. |
+| button          | **Verb:** Use _click_.<br/><br/>**Label:** Refer to a push button by its label only | Click **OK**.<br/><br/>Click **Cancel**. |
+| checkbox        | **Verb:** Use _select_ to refer to selecting the choice. Use _clear_ to refer to deselecting the choice.<br/><br/>**Label:** Refer to the checkbox by its label followed by _checkbox_. | To enable email notifications select the **Notify me** checkbox.<br/><br/>To stop receiving email notifications, clear the **Notify me** checkbox. |
+| drop-down list  | **Verb:** Use _select_ to refer to selecting an item from a list.<br/><br/>**Label:** Refer to a drop-down list by its label, followed by _list_. | From the **Export file** list, select **PDF**. |
+| icon            | **Verb:** Use _click_, _double-click_, or _right-click_ as necessary.<br/><br/>**Label:** Refer to the icon by its label, followed by _icon_, or by the name that is indicated by the tooltip, followed by _icon_.<br/><br/>If an icon does not have a label or tooltip, refer to the icon by a generic description. | Double-click the **IBM MQ** icon.<br/><br/>Click **Cancel**. |
+| input field     | **Verb:** Use _type_, _enter_, or _specify_.<br/><br/>**Label:** Refer to the input field by its label, followed by _field_. | In the **Server URL** field, enter the URL of the server. |
+| menu item       | **Verb:** Use _click_ for the menu name and for the menu item.<br/><br/>**Label:** Refer to a menu or menu item by its label only, unless _menu_ or _menu item_ is required for clarity. | Click **File > New > New memo**.<br/><br/>From the **Format** menu, click **Edit**.<br/><br/>Right-click the folder name and click **Copy**. |
+| pane<br/><br/>_(A framed section of a window or web page.)_ | **Verb:** Use _is displayed_ to describe the presence of the pane in the window or on the page.<br/><br/>**Label:** If a pane has a title, refer to it by its title, followed by _pane_. If a pane does not have a title, refer to it by a descriptive name. | The **Properties** pane is displayed.<br/><br/>Authoring standards are displayed in the **Complying with standards** pane. |
+| radio button    | **Verb:** Use _click_ to refer to selecting and deselecting a radio button; when you refer to a radio button that is selected, use _selected_.<br/><br/>**Label:** Refer to a radio button by its label only. | Click **Light theme**.<br/><br/>In the **Notification settings** area, click **Enable web browser notifications**.<br/><br/>If **Enable web browser notifications** is selected, ... |
+| switch / toggle<br/><br/>_(A control that is used to quickly switch between two possible states. See the Carbon [toggle](https://www.carbondesignsystem.com/components/toggle/usage) component.)_ | **Verb:** Use _set_, specifying the label of the thing being set, and the state that it is being set to.<br/><br/>**Label:** Refer to a switch by its label, followed by either _switch_ or _toggle_. | Set **Data roaming** to **On**.<br/><br/>If the **Slack notification** switch is set to **On** then when widgets are created, edited, or deleted a message is sent to your specified Slack channel. |
+| tab             | **Verb:** Use _click_.<br/><br/>**Label:** Refer to the tab by its label, followed by _tab_. | Click the **Monitoring** tab.<br/><br/>To view a list of supported capabilities and functions, click the **Features** tab. |
+| table           | **Verb:** Use _select_ to refer to selecting an item in a table.<br/><br/>**Label:** Refer to a table by its label, followed by _table_. | In the **Test results** table, select the test results you want to display. |
+| toolbar         | **Verb:** Use _click_.<br/><br/>**Label:** If there is only one toolbar in the UI, just refer to the toolbar. If there are multiple toolbars use the particular toolbar label or refer to it by a descriptive name, followed by _toolbar_. | On the toolbar, click **Save**.<br/><br/>On the **Editing** toolbar, click **Remove formatting**. |
+| window          | **Verb:** Use _open_ and _close_ to describe the immediate result of a user action; use _is displayed_ to describe the presence of the window on the screen. Don’t use _appear_ or _display_.<br/><br/>**Label:** Refer to a window by its title, followed by _window_. | In the **Print** window, click **Print all**.<br/><br/>The **Print** window opens.<br/><br/>The **Print** window is displayed. |
