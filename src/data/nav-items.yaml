@@ -62,6 +62,8 @@
         path: /patterns/data-table/headers
       - title: Data table expandable rows
         path: /patterns/data-table/expandable-rows
+      - title: Data table resizable rows
+        path: /patterns/data-table/resizable-rows
     - title: Edit and update
       path: /patterns/edit
     - title: Empty state
