@@ -62,8 +62,8 @@
         path: /patterns/data-table/headers
       - title: Data table expandable rows
         path: /patterns/data-table/expandable-rows
-      - title: Data table resizable rows
-        path: /patterns/data-table/resizable-rows
+      - title: Data table resizable columns
+        path: /patterns/data-table/resizable-columns
     - title: Edit and update
       path: /patterns/edit
     - title: Empty state
@@ -126,8 +126,6 @@
       path: /content/content-heuristics
     - title: Terminology
       path: /content/terminology/approved-terms
-#    - title: Education videos (NEW)
-#      path: /content/education
 - title: WalkMe guide
   pages:
     - title: Overview
@@ -154,4 +152,10 @@
       path: /cloud-paks/navigation/usage
     - title: "Cross Pak switcher"
       path: /cloud-paks/cross-pak-switcher/usage
+- title: AI Design
+  pages:
+    - title: "Overview"
+      path: /ai-design/overview
+    - title: "AI Explainability"
+      path: /ai-design/ai-explainability
   hasDivider: true
