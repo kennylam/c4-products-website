@@ -46,7 +46,7 @@ The integrated interaction framework enables teams to build seamless workflows a
 
 ## Overview
 
-The integrated interaction framework is a set of Zen components functioning to connect the seamless experience across composable Pak services. Text placeholder here... topic notes: Composability, nimble purpose-driven applications & services choreographed together, smart integration points...
+The Cloud Pak brings together teams from different backgrounds and roles to complete their jobs-to-be-done. With the diversity of use-cases, composable experiences are strategic to enabling users the ability to use only the services they need. Nimble, purpose-driven applications and services choreographed together make this possible. The integrated interaction framework is the glue that holds composability together to streamline workflows through smart, contextual integration points. The framework is a comprised of specific components available through Zen to create these seamless experiences across the Cloud Pak, targeting 3 key areas; in-context enrichment, passing information, and seamless navigation.
 
 ### Framework demonstration
 
@@ -54,7 +54,7 @@ The integrated interaction framework is a set of Zen components functioning to c
  <Column colLg={12}>
 
 <Video src="images/IIF-pal-demo-video.mp4">
-  <track kind="captions" src="images/IIF-pal-demo-videomp4" />
+  <track kind="captions" src="images/IIF-pal-demo-video.mp4" />
 </Video>
 
  </Column>
@@ -65,27 +65,35 @@ The integrated interaction framework is a set of Zen components functioning to c
 
 In-context enrichment is an important facet of integrated experiences as it provides the means for the user to access relevant information from across the platform when they need it, avoiding unneccesary navigation elsewhere. When relevant information is surfaced at the right time within a logical workflow, users feel as if the platform is working harder to keep them on track.
 
-### Example
+### Panel data fragment enrichment
+
+Through the use of data decorators, an application can provide their point of view to enrich the data itself. The side panel provides a space for data fragments about the data to be displayed directly within the context of the data object.
 
 <Row>
  <Column colLg={8}>
 
-![None](images/no-content.jpg)
+<Video src="images/panel-data-fragment.mov">
+  <track kind="captions" src="images/panel-data-fragment.mov" />
+</Video>
 
  </Column>
 </Row>
 
-### Use cases
 
-- Text placeholder here...
-- Text placeholder here...
-- Text placeholder here...
+### Screen influencers
 
-### Considerations
+Screen influencers, like tearsheets, enable an experience hosted by another service to be viewed in-context without requiring the user to navigate to that experience elsewhere across the platform.
 
-- Text placeholder here...
-- Text placeholder here...
-- Text placeholder here...
+<Row>
+ <Column colLg={8}>
+
+<Video src="images/screen-influencer.mov">
+  <track kind="captions" src="images/screen-influencer.mov" />
+</Video>
+
+ </Column>
+</Row>
+
 
 ### Related components
 
@@ -120,16 +128,6 @@ In-context enrichment is an important facet of integrated experiences as it prov
       >
   </ResourceCard>
 </Column>
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      color="light"
-      title="Custom integrations"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/cloud-paks/integrated-framework/components#custom-integrations"
-      >
-  </ResourceCard>
-</Column>
 </Row>
 
 
@@ -138,27 +136,47 @@ In-context enrichment is an important facet of integrated experiences as it prov
 
 Share information, from application to application, across the platform.
 
-### Example
+### Pass data to from one app to another
 
 <Row>
  <Column colLg={8}>
 
-![None](images/no-content.jpg)
+<Video src="images/pass-information.mov">
+  <track kind="captions" src="images/pass-information.mov" />
+</Video>
 
  </Column>
 </Row>
 
-### Use cases
 
-- Text placeholder here...
-- Text placeholder here...
-- Text placeholder here...
+### Custom embedded app integrations
 
-### Considerations
+Custom integrations take shape based on the experience it supports and can be placed directly within the UI. These are experiences owned and created by the application team. The example shown is a scan functionality from a hosting application that automatically creates a case in another application based on scan results. It then provides the means to navigate directly to the new case.
 
-- Text placeholder here...
-- Text placeholder here...
-- Text placeholder here...
+<Row>
+ <Column colLg={8}>
+
+<Video src="images/custom-integration.mov">
+  <track kind="captions" src="images/custom-integration.mov" />
+</Video>
+
+ </Column>
+</Row>
+
+
+### Run app actions from anywhere
+
+<Row>
+ <Column colLg={8}>
+
+<Video src="images/run-actions.mov">
+  <track kind="captions" src="images/run-actions.mov" />
+</Video>
+
+ </Column>
+</Row>
+
+
 
 ### Related components
 
@@ -193,6 +211,16 @@ Share information, from application to application, across the platform.
       >
   </ResourceCard>
 </Column>
+<Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      color="light"
+      title="Custom integrations"
+      aspectRatio="2:1"
+      actionIcon="arrowRight"
+      href="/cloud-paks/integrated-framework/components#custom-integrations"
+      >
+  </ResourceCard>
+</Column>
 </Row>
 
 
@@ -203,27 +231,21 @@ Integrated, seamless navigation between applications and services is key to opti
 
 Breadcrumb navigation across the platform reflects the hierarchical structure of an application/service. The returnTo banner supplements cross-platform navigation pivots with a simple back action as a means to seamlessly way-find back to that previous location on the platform.
 
-### Example
+
+### Pivot from one app to another
+
+It’s often necessary to transition to another application to continue a fluid workflow. This example shows a pivot button placed within the side panel. It has a primary action based on the type of data being viewed, but other applications, which are action providers, can provide actions to pivot to as well.
 
 <Row>
  <Column colLg={8}>
 
-![None](images/no-content.jpg)
+<Video src="images/app-pivot-to-app.mov">
+  <track kind="captions" src="images/app-pivot-to-app.mov" />
+</Video>
 
  </Column>
 </Row>
 
-### Use cases
-
-- Pivot from an application to connect a data source needed to run a capability.
-- Upsell relevant applications & services in-context that could provide direct value to a user’s job goals. Pivot to the Catalog to browse specific applications and services directly from a related a topic or data object within a workflow.
-- Text placeholder here...
-
-### Considerations
-
-- Text placeholder here...
-- Text placeholder here...
-- Text placeholder here...
 
 ### Related components
 
