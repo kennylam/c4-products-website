@@ -30,17 +30,6 @@ The integrated interaction framework enables teams to build seamless workflows a
 
   </ResourceCard>
   </Column>
-  <Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      subTitle="Playback video"
-      actionIcon="launch"
-      aspectRatio="2:1"
-      href="https://ibm.box.com/s/ifjm85g2zspgzfw1pzg6mwdlem7y86cn">
-
-![Sketch file](images/box.svg)
-
-  </ResourceCard>
-  </Column>
 </Row>
 
 
@@ -134,9 +123,11 @@ Screen influencers, like tearsheets, enable an experience hosted by another serv
 
 ## Passing information
 
-Share information, from application to application, across the platform.
+The integrated interaction framework facilitates the passing of information across composable workflows, enabling the user to run tasks across the platform and to send related information to other applications within their workflow.
 
 ### Pass data to from one app to another
+
+Pivot buttons coordinating with platform tearsheets are a common method to pass information. An application can host information and functionality inside a tearsheet, within another application, to capture appropriate information prior to passing it to the hosting application or service.
 
 <Row>
  <Column colLg={8}>
@@ -166,11 +157,25 @@ Custom integrations take shape based on the experience it supports and can be pl
 
 ### Run app actions from anywhere
 
+Another method to pass data or run actions across the platform is through the use of pivot buttons and confirmation modals. Actions can be run in application A even if a user is viewing application B.
+
 <Row>
  <Column colLg={8}>
 
 <Video src="images/run-actions.mov">
   <track kind="captions" src="images/run-actions.mov" />
+</Video>
+
+ </Column>
+</Row>
+
+Custom modals can be used as well. For example, a user within the Case Management app can initiate a federated search using another application, Data Explorer, straight from the Case Management UI.
+
+<Row>
+ <Column colLg={8}>
+
+<Video src="images/run-actions-2.mov">
+  <track kind="captions" src="images/run-actions-2.mov" />
 </Video>
 
  </Column>
@@ -234,7 +239,7 @@ Breadcrumb navigation across the platform reflects the hierarchical structure of
 
 ### Pivot from one app to another
 
-It’s often necessary to transition to another application to continue a fluid workflow. This example shows a pivot button placed within the side panel. It has a primary action based on the type of data being viewed, but other applications, which are action providers, can provide actions to pivot to as well.
+It’s often necessary to transition to another application to continue a fluid workflow. This example shows a pivot button placed within a side panel. It has a primary action based on the type of data being viewed, but other applications can provide actions to pivot to as well.
 
 <Row>
  <Column colLg={8}>
