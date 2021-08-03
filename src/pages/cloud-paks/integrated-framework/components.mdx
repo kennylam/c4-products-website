@@ -212,7 +212,7 @@ Data fragments are structured information sourced from elsewhere across the Pak 
 
 ### Anatomy
 
-Data fragments are designed for universal consistency and common data formatting, primarily using the `DescriptionListModule`. `DescriptionModule` can be used as an alternative for long form content.
+Data fragments are designed for universal consistency and common data formatting, primarily using the `DescriptionListModule`. `DescriptionModule` can be used as an alternative for long form content. If necessary for the experience, data fragments can take the shape of a custom design. 
 
 <Row>
  <Column colLg={8}>
@@ -254,9 +254,9 @@ Data fragments can be used within a page UI but are typically observed within pa
 
 </DoDont>
 
-<DoDont caption="If a data fragment is supplemental and not mandatory based on the configuration for the user or organization, hide the section and do not display an empty state.">
+<DoDont caption="If a data fragment is supplemental, does not return any information, or is not mandatory based on the configuration for the user or organization, hide the section and do not display an empty state.">
 
-![If a data fragment is supplemental and not expected based on the configuration for the user or organization, hide the section and do not display an empty state.](images/data-fragment-empty-state-none.jpg)
+![If a data fragment is supplemental, does not return any information, or is not mandatory based on the configuration for the user or organization, hide the section and do not display an empty state.](images/data-fragment-empty-state-none.jpg)
 
 </DoDont>
 
@@ -265,23 +265,75 @@ Data fragments can be used within a page UI but are typically observed within pa
 
 ## Tearsheets
 
+Tearsheets, as part of the IIF, are used to bring correlated information from other sources (applications & services) to the user, avoiding unneccesary navigation elsewhere across the platform.
+
+Tearsheets choreograph with other IIF components, like pivot buttons, to initiate the passing of information or to contextually bring experiences in to the current view.
+
+### Anatomy
+
 <Row>
  <Column colLg={8}>
 
-![None](images/no-content.jpg)
+![Data decorators anatomy](images/contextual-tearsheet-anatomy.jpg)
 
  </Column>
 </Row>
+
+1. **Tearsheet:** The tearsheet is hosted by the platform. The Tearsheet is an ideal component because of it’s ability to retain context above the user’s current page.
+2. **Content:** The content within the tearsheet is owned by an application or service. Through the tearsheet, content is surfaced within any app, anywhere on the platform to capture information and pass it back.
+
+
+
+### When to use
+- Narrow tearsheets can be used to pass information to another place or service on the Pak.
+- Wide tearsheets can be used to shift focus to a related experience while keeping the context to the originating page.
+ 
+
+<DoDontRow>
+
+<DoDont caption="This use case demostrates that an “investigation artifact” can be captured from any app and the platform facilitates the use of the “Case Management” app to save the artifact back to a case.">
+
+![This use case demostrates that an “investigation artifact” can be captured from any app and the platform facilitates the use of the “Case Management” app to save the artifact back to a case.](images/tearsheet-howto-1.jpg)
+
+</DoDont>
+
+<DoDont caption="In the wide tearsheet, you can import a visualization, a table, or a full experience from another page, application, or service.">
+
+![In the wide tearsheet, you can import a visualization, a table, or a full experience from another page, application, or service.](images/tearsheet-howto-2.jpg)
+
+</DoDont>
+
+</DoDontRow>
+
+
+
+
+
+
+
 
 ## Modals
 
+Placeholder text...
+
+### Anatomy
+
 <Row>
  <Column colLg={8}>
 
-![None](images/no-content.jpg)
+![Data decorators anatomy](images/modal-anatomy.jpg)
 
  </Column>
 </Row>
+
+1. **Modal:** The modal can utilize default Carbon components or use a custom modal if the experience dictates it (like the example shown).
+2. **Content:** The content within the modal is owned by an application or service. It can host simple inputs and/or confirmations that trigger an action elsewhere on the platform.
+
+
+
+### When to use
+- Placeholder text...
+
 
 ## Custom integrations
 
