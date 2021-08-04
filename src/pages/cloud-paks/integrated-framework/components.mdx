@@ -102,14 +102,14 @@ The transition serves to distinguish against conventional navigation within an a
  </Column>
 </Row>
 
-### Usage
-- The banner displays the name of the application and the page that was pivoted away from.
-- Pressing on the ReturnTo banner will take you back to the page within the original app.
-- There should only be one ReturnTo path tracked at a time.
-- The banner is only displayed if moving from a pivot point from within the page of an application to another application.
-- It is dismissed when navigating back to the platform homepage or using the navigation panel menu to move to another destination.
-- The banner is not shown when navigating within the same app.
-- Using the global navigation should not reveal the ReturnTo banner.
+### When to use
+- The returnTo banner displays the name of the application and the page that was pivoted away from.
+- Pressing on the returnTo banner will take you back to the page within the original app.
+- There should only be one returnTo path tracked at a time.
+- The returnTo banner is only displayed if moving from a pivot point from within the page of an application to another application.
+- The returnTo banner automatically dismisses when navigating back to the platform homepage or when the navigation panel menu is used to move to another destination.
+- The returnTo banner is not shown when navigating within the same app.
+- Using the global navigation should not reveal the returnTo banner.
 
 ### When not to use
 - 🚫 Not displayed if navigating using the launchbar, global navigation, or platform homepage.
@@ -280,7 +280,7 @@ Tearsheets choreograph with other IIF components, like pivot buttons, to initiat
 </Row>
 
 1. **Tearsheet:** The tearsheet is hosted by the platform. The Tearsheet is an ideal component because of it’s ability to retain context above the user’s current page.
-2. **Content:** The content within the tearsheet is owned by an application or service. Through the tearsheet, content is surfaced within any app, anywhere on the platform to capture information and pass it back.
+2. **Content:** The content within the tearsheet is owned by an application. Through the tearsheet, content is surfaced within any app, anywhere on the platform to capture information and pass it back.
 
 
 
@@ -297,9 +297,9 @@ Tearsheets choreograph with other IIF components, like pivot buttons, to initiat
 
 </DoDont>
 
-<DoDont caption="In the wide tearsheet, you can import a visualization, a table, or a full experience from another page, application, or service.">
+<DoDont caption="In the wide tearsheet, you can place a visualization, a table, or a full experience from another application.">
 
-![In the wide tearsheet, you can import a visualization, a table, or a full experience from another page, application, or service.](images/tearsheet-howto-2.jpg)
+![In the wide tearsheet, you can place a visualization, a table, or a full experience from another application.](images/tearsheet-howto-2.jpg)
 
 </DoDont>
 
@@ -314,7 +314,7 @@ Tearsheets choreograph with other IIF components, like pivot buttons, to initiat
 
 ## Modals
 
-Placeholder text...
+Modals, as part of the IIF, are used to provide context when confirming actions or to request necessary user input in order to continue initiating integration actions.
 
 ### Anatomy
 
@@ -326,22 +326,60 @@ Placeholder text...
  </Column>
 </Row>
 
-1. **Modal:** The modal can utilize default Carbon components or use a custom modal if the experience dictates it (like the example shown).
+1. **Modal:** The modal can utilize default Carbon components or use a custom modal if the experience dictates it.
 2. **Content:** The content within the modal is owned by an application or service. It can host simple inputs and/or confirmations that trigger an action elsewhere on the platform.
 
 
 
 ### When to use
-- Placeholder text...
+
+<DoDontRow>
+
+<DoDont caption="This use case demostrates an “Am I affected” threat scan from the Threat Intelligence Insights app initiated through a modal from any application across the platform.">
+
+![This use case demostrates an “Am I affected” threat scan from the Threat Intelligence Insights app initiated through a modal from any application across the platform.](images/modal-howto-1.jpg)
+
+</DoDont>
+
+<DoDont caption="This use case demostrates a federated query from the Data Explorer app initiated through a custom modal from any application across the platform.">
+
+![This use case demostrates a federated query from the Data Explorer app initiated through a custom modal from any application across the platform.](images/modal-howto-2.jpg)
+
+</DoDont>
+
+</DoDontRow>
 
 
 ## Custom integrations
 
+On occasion, to meet customer experience needs, a custom integration component is required. Custom integrations can be created to contextually enrich a current page through a reference from another application source, it can be used as a means to pass information elsewhere, or it can be used to thread app to app experiences together across the platform. The IIF doesn’t dictate the experience structure but the custom integration should utilize common elements, like pivot buttons, where applicable to craft the experience.
+
+### Example use-cases
+
+#### Application to service integration
+
+In this example, there is a custom integration within the application “Threat Intelligence Insights” that connects to the customer’s data sources via the platform. The customer can contextually initiate a scan across their connected data sources to locate any indicators listed in the threat report. Details of the scan and results are provided in the same view.
+
 <Row>
  <Column colLg={8}>
 
-![None](images/no-content.jpg)
+<Video src="images/custom-integration-example-1.mov">
+  <track kind="captions" src="images/custom-integration-example-1.mov" />
+</Video>
 
  </Column>
 </Row>
 
+#### Application to application integration
+
+In this example, there is a custom integration between the applications “Threat Intelligence Insights” and “Case Management”. If indicators from the scan are found (from the above referenced example), then a case is automatically created in “Case Management”. The custom integration within the “Threat Intelligence Insights” page shows case details and provides a direct link to the newly created case.
+
+<Row>
+ <Column colLg={8}>
+
+<Video src="images/custom-integration-example-2.mov">
+  <track kind="captions" src="images/custom-integration-example-2.mov" />
+</Video>
+
+ </Column>
+</Row>
