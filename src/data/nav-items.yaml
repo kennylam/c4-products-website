@@ -103,7 +103,7 @@
 - title: 'Content guide'
   pages:
     - title: Overview
-      path: /content/overview/overview
+      path: /content/main/overview
     - title: Our personality
       path: /content/our-personality
     - title: Content principles
@@ -129,7 +129,7 @@
 - title: WalkMe guide
   pages:
     - title: Overview
-      path: /walkme-guide/overview/overview
+      path: /walkme-guide/main/overview
     - title: WalkMe patterns
       path: /walkme-guide/walkme-patterns/overview
     - title: Menu
