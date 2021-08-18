@@ -112,20 +112,21 @@ Refer to [Behaviors](#behaviors) and [Best practices](#best-practices).
 
 ## Inline edit
 
-#### States
+### States
 
 Inline editing requires particular visual and behavioral cues to make the experience clear to the user. Use the following states and behaviors when using this edit variation: 
 
 1. When a user hovers static content, it will show an edit icon and background hover color to let the user know they can edit it. Note: Make sure the item being edited is visually distinct and separate from other values that cannot be inline edited to avoid confusion.
 2. Once the user clicks the content/editable item, the Restore (Cancel) and Check (Save) icon buttons appear. 
 3. Once a change is detected, the Check (Save) icon button becomes enabled.
-4. If an item is not editable near other items that are, show the lock icon on hover. A tooltip should briefly state why it's locked. 
+4. If an item is not editable near other items that are, show the read-only (edit off) icon on hover. A tooltip should briefly state why it's locked. 
 5. To cancel the edits, the user can click the restore icon to revert the field back to a static view and the latest value.
 6. If the field has an error, the error icon shows next to the cancel and save buttons.
 
 
 ![Inline edit states](images/Inline-editing-states.png)
 
+![Inline edit behavior](images/inline-edit608.gif)
 
 ### When to use
 
@@ -133,9 +134,7 @@ Use this pattern when the user needs to make and apply quick, simple text input 
 
 ### When not to use
 
-Do not use when:
-
-- The user will likely make many changes at a time (instead, use a pattern that enables them to make several edits before committing the changes as a group).
+- The user will likely make many changes at a time - instead, use a pattern that enables them to make several edits before committing the changes as a group.
 - The change will affect another setting.
 - The field will be any form element other than text input or text area.
 - Consider using a bulk edit pattern if there are several values in a section that can be edited.
@@ -143,9 +142,9 @@ Do not use when:
 
 ## Modal edit
 
-## Anatomy
+### Anatomy
 
-![Anatomy modal](images/EditModal-Anatomy.png)
+![Anatomy modal](images/Edit-Modal-Anatomy.png)
 
 1. **Modal size & overlay:** Small modal.Screen overlay that obscures the on-page content.
 2. **Edit title:** Title line for edit flow with optional subtitle. 
@@ -155,15 +154,14 @@ Do not use when:
 ### When to use
 
 - Use a modal for simple edits with one or two form fields to be filled out.
-
-- For example, use this pattern when: Summary in panel (read only) clicking edit
+- For example, for a read-only summary in a panel, clicking edit
   opens edit modal (only for edits with 1-2 form fields).
 
 ### When not to use
 
-- Don’t use a modal in place of inline editing.
-- Don’t use a modal if the content is being "edited" frequently, use inline edit instead.
-- Don’t use a modal if there are more than three form fields or if there is
+- When inline editing can be done instead.
+- The content is being "edited" frequently - use inline edit instead.
+- There are more than three form fields, or if there is
   scrolling inside the modal. Modals should not have more than two form fields within them.
 
 ## Side panel edit
@@ -172,13 +170,16 @@ Do not use when:
 
 ![Anatomy side panel](images/Side-Panel-Anatomy.png)
 
-1. **Title block (optional)** The title block contains navigational elements such as closing, go back, and pop out, along with header text and description that describes the side panel’s purpose.
-2. **Action toolbar (optional)** The action toolbar is a set of global secondary action buttons the user can perform with the side panel’s content. 
-3. **Body content (required)** The body content area displays various informational and editable elements based on the use-case. The body content is the only scrollable area within the side panel.
-4. **Primary actions (optional)** This area is for significant actions the user needs to take on within the sidebar; they are useful in creating, editing, and confirmation use-cases. The primary actions will always remain visible to the user.
+1. **Title block**: The title block contains navigational elements such as closing, go back, and pop out, along with header text (always begins with "Edit [object name]") and description that describes the side panel’s purpose.
+2. **Action toolbar (optional)**: The action toolbar is a set of global secondary action buttons the user can perform with the side panel’s content. 
+3. **Body content**: The body content area displays various informational and editable elements based on the use-case. The body content is the only scrollable area within the side panel.
+4. **Primary actions**: For an edit side pannel, the primary and secondary buttons are "Save" and "Cancel".
 
 #### Panel size
-One reason for editing in side panels is that they allow the user to stay in context. Choose a side panel size that allows enough of the background to stay in context, while is also being mindful of a size that comfortably and appropriately fits the content that needs to be edited. Refer to C&CS PAL Side Panel guidelines for available sizes and grids
+One reason for editing in side panels is that they allow the user to stay in context. 
+Choose a side panel size that allows enough of the background to stay in context, while 
+is also being mindful of a size that comfortably and appropriately fits the content that 
+needs to be edited. Refer to C&CS PAL Side Panel guidelines for available sizes and grids.
 
 #### Slide-in
 Use a slide-in panel when the user needs to reference page-level information to complete the edits. The user needs the ability to interact with the panel alongside of the page content.
@@ -200,15 +201,15 @@ Use a slide-over panel when the user does not need to interact or reference the 
  
 
 ### When to use
-- Use a side panel when editing the content in a data table row
-- Consider a side panel to show additional information on the object being edited 
-- When the user needs to stay in context with the surrounding content as they make their edits
-- When the original create flow was in a narrow tear sheet and you don't want to obstruct the context by re-opening the narrrow tear sheet for edits.
+- When editing the content in a data table row (and inline edit for the table is not appropriate).
+- Consider a side panel to show additional information on the object being edited. 
+- The user needs to stay in context with the surrounding content as they make their edits.
+- The original create flow was in a narrow tear sheet and you don't want to obstruct the context by re-opening the narrrow tear sheet for edits.
 
 ### When not to use
 - Do not use a side panel for simple one-task edits - consider inline editing instead.
-- If the information being referenced is complex or if launching an extensive create flow - use a tearsheet instead. 
-- If the information being reference is simple or if launching a simple create or edit flow.
+- The information being referenced is complex or if launching an extensive create flow - use a tearsheet instead. 
+- The information being reference is simple or if launching a simple create or edit flow.
 - If needing a complex edit or create flow.
 
 ## Tearsheet edit
@@ -217,12 +218,12 @@ Use a slide-over panel when the user does not need to interact or reference the 
 
 #### Anatomy
 
-![Anatomy side panel](images/Anatomy-Narrow-Tearsheet.png)
+![Anatomy narrow tearsheet](images/Anatomy-Narrow-Tearsheet.png)
 
-1. **Header** - can include title, description, labels, and tabs. Always use "Edit" in the title.
-2. **Main content area**
-3. **Navigation buttons**
-4. **Background overlay** (same as modals)
+1. **Header**: The header can include title, description, labels, and tabs. Always use "Edit" in the title.
+2. **Main content area**: This area includes the editable content. 
+3. **Save/cancel buttons**: The primary and secondary buttons are "Save" and "Cancel".
+4. **Background overlay**: (same as modals)
 
 
 #### When to use
@@ -247,10 +248,12 @@ Use a slide-over panel when the user does not need to interact or reference the 
 
 ![Anatomy side panel](images/Anatomy-Wide-Tearsheet.png)
 
-1. **Header** - can include title, description, labels, and tabs. Must include "Edit" in the title.
-2. **Main content area**
-3. **Navigation buttons** - up to 4 may be used - 1 primary, 2 secondary, 1 tertiary
-4. **Influencer (optional)** - aa left or right side panel that can be used, for example,  as a menu, progress indicator, or filter. 
+1. **Header**: The header can include title, description, labels, and tabs. Must include "Edit" in the title.
+2. **Main content area**: This area includes the editable content.
+3. **Navigation buttons**: In most cases, the navigation buttons are limited to primary and secondary 
+buttons ("Save" and "Cancel"). If the edit flow requires steps (not common), the Next/previous buttons serve as 
+the primary and secondary buttons until the last step, where the primary button is "Save" (Cancel is the ghost button in this case).  
+4. **Influencer (optional)**: A left or right side panel that can be used, for example,  as a menu, progress indicator, or filter. 
 5. **Background overlay (same as modals)**
 
 
@@ -271,13 +274,7 @@ Do not use when the edit actions are few/simple - consider using a modal instead
 
 ### Anatomy and behaviors
 
-<Row>
- <Column colLg={8}>
-
-![Anatomy side panel](images/Anatomy-Full-Page-Edit.png)
-
- </Column>
-</Row>
+![Anatomy side panel](images/Full-page-edit-Anatomy.png)
 
 1. **Editable content.** Everything in the page is editable and shown in the editable state.
 2. **Save/cancel buttons.** Cancel changes and save changes buttons are always shown as disabled until a change is detected on the page. Note that "changes" is added to the button names in this case because the title of the page does not have "Edit" in it. In a toggle use case where the content on the page was static until the user turned on an edit mode, the title of the page would change to "Edit [object]" and the buttons would be labeled "Cancel" and "Save".
@@ -304,32 +301,6 @@ Some components have their own distinct edit behaviors.
 <Column colMd={3} colLg={3} noGutterSm>
 
 <ImageCard 
-sub-title="Component: Dashboard edit"
-sub-titleColor="dark"
-aspectRatio="4:3"
-hoverColor="dark"
-href="#dashboards">
-
-![Square](images/Overview-Dashboard.png)
-
-</ImageCard>
-
-<ImageCard
-sub-title="Component: Text editor"
-sub-titleColor="dark"
-aspectRatio="4:3"
-hoverColor="dark"
-href="#text-editors">
-
-![Square](images/Overview-TextEditor.png)
-
-</ImageCard>
-
-</Column>
-
-<Column colMd={3} colLg={3} noGutterSm>
-
-<ImageCard 
 sub-title="Component: Card edit"
 sub-titleColor="dark"
 aspectRatio="4:3"
@@ -340,16 +311,6 @@ href="#cards">
 
 </ImageCard>
 
-<ImageCard
-sub-title="Component: Property editor"
-sub-titleColor="dark"
-aspectRatio="4:3"
-hoverColor="dark"
-href="#property-editors">
-
-![Square](images/Overview-PropertyEditor.png)
-
-</ImageCard>
 
 </Column>
 
@@ -368,9 +329,23 @@ href="#data-tables">
 
 </Column>
 
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard
+sub-title="Component: Text editor"
+sub-titleColor="dark"
+aspectRatio="4:3"
+hoverColor="dark"
+href="#text-editors">
+
+![Square](images/Overview-TextEditor.png)
+
+</ImageCard>
+
+</Column>
+
 </Row>
 
-### Dashboards
 
 ### Cards
 
@@ -406,88 +381,6 @@ Refer to the [Text editor toolbar documentation](https://www.carbondesignsystem.
 
 
 ## Other considerations
-
-<Row className="image-card-group">
-
-<Column colMd={3} colLg={3} noGutterSm>
-
-<ImageCard 
-sub-title="Summary of changes"
-sub-titleColor="dark"
-aspectRatio="4:3"
-hoverColor="dark"
-href="#summary-of-changes">
-
-![Square](images/Overview-PropertyEditor.png)
-
-</ImageCard>
-
-<ImageCard
-sub-title="Undo"
-sub-titleColor="dark"
-aspectRatio="4:3"
-hoverColor="dark"
-href="#undo">
-
-![Square](images/Overview-PropertyEditor.png)
-
-</ImageCard>
-
-</Column>
-
-<Column colMd={3} colLg={3} noGutterSm>
-
-<ImageCard
-sub-title="Preview of changes"
-sub-titleColor="dark"
-aspectRatio="4:3"
-hoverColor="dark"
-href="#preview-of-changes">
-
-![Square](images/Overview-PropertyEditor.png)
-
-</ImageCard>
-
-<ImageCard
-sub-title="Success messages"
-sub-titleColor="dark"
-aspectRatio="4:3"
-hoverColor="dark"
-href="#success-messages">
-
-![box](images/Overview-PropertyEditor.png)
-
-</ImageCard>
-
-</Column>
-
-<Column colMd={3} colLg={3} noGutterSm>
-
-<ImageCard 
-sub-title="Warnings"
-sub-titleColor="dark"
-aspectRatio="4:3"
-hoverColor="dark"
-href="#warnings">
-
-![Square](images/Overview-PropertyEditor.png)
-
-</ImageCard>
-
-<ImageCard
-sub-title="Errors"
-sub-titleColor="dark"
-aspectRatio="4:3"
-hoverColor="dark"
-href="#errors">
-
-![box](images/Overview-PropertyEditor.png)
-
-</ImageCard>
-
-</Column>
-
-</Row>
 
 ### Summary of changes
 
@@ -647,7 +540,7 @@ editable. Consider how many values a user is likely to edit in each interaction.
 **Do: Provide the data in a read-only format if the user's intent is often to
 view rather than edit.**  
 Consider using an "edit" button to reveal the edit form. See
-[edit mode](#edit-mode).
+[edit mode](#behaviors).
 
 **Do: Provide users feedback**  
 Alert users when saving changes fails. If possible retain their work and allow
@@ -668,9 +561,8 @@ edit unless edits can only be made sequentially.**
 
 ## Related use cases
 
-See Add  
-See Create  
-Versioning doesn't exist yet, but probably should.
+See [Create flows](https://pages.github.ibm.com/cdai-design/pal/patterns/creation-flows/usage).
+
 
 ## Terminology
 
@@ -700,7 +592,4 @@ combined with the action "Cancel changes"._
 user.  
 _Avoid "Restore", "Revert"._
 
-## Accessibility
-
-## Related
 
