@@ -62,6 +62,8 @@
         path: /patterns/data-table/headers
       - title: Data table expandable rows
         path: /patterns/data-table/expandable-rows
+      - title: Data table nested rows
+        path: /patterns/data-table/nested-rows
       - title: Data table resizable columns
         path: /patterns/data-table/resizable-columns
     - title: Edit and update
