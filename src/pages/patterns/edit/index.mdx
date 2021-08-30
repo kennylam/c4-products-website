@@ -130,7 +130,8 @@ Inline editing requires particular visual and behavioral cues to make the experi
 
 ### When to use
 
-Use this pattern when the user needs to make and apply quick, simple text input or text area edits one field at a time.
+Use this pattern when the user needs to make and apply quick, simple edits to a 
+text input or text area field one at a time.
 
 ### When not to use
 
@@ -179,7 +180,7 @@ Use this pattern when the user needs to make and apply quick, simple text input 
 One reason for editing in side panels is that they allow the user to stay in context. 
 Choose a side panel size that allows enough of the background to stay in context, while 
 is also being mindful of a size that comfortably and appropriately fits the content that 
-needs to be edited. Refer to C&CS PAL Side Panel guidelines for available sizes and grids.
+needs to be edited. Refer to [Side Panel guidelines](https://pages.github.ibm.com/cdai-design/pal/components/side-panel/usage) for available sizes and grids.
 
 #### Slide-in
 Use a slide-in panel when the user needs to reference page-level information to complete the edits. The user needs the ability to interact with the panel alongside of the page content.
@@ -188,16 +189,9 @@ Use a slide-in panel when the user needs to reference page-level information to 
 Use a slide-over panel when the user does not need to interact or reference the main page below the panel.  The user should have their focus on the panel and editing the workflow within it.
 
 #### Example usage situations:
-- Editing properties of nodes in canvas-based products (for example, Elyra/Common Canvas products such as DataStage, Orchestration, and Modeler)
+- Editing properties of nodes in canvas-based products (for example, Elyra/Common Canvas 
+products such as DataStage, Orchestration, and Modeler).
 - Editing objects in a data table.
-
-<Row>
- <Column colLg={8}>
-
-![Side panel edit example](images/Side-Panel-Behaviors-Navigation.gif)
-
- </Column>
-</Row>
  
 
 ### When to use
@@ -261,8 +255,8 @@ the primary and secondary buttons until the last step, where the primary button 
 
 - The create flow happened in a tear sheet.
 - A subset of the related item will be edited.
-- You want to keep the user in context instead of taking the user to a new page
-- The amount of content is too much for a modal or narrow tear sheet
+- You want to keep the user in context instead of taking the user to a new page.
+- The amount of content is too much for a modal or narrow tear sheet.
 - The content is too complex for a modal or narrow tear sheet. 
 - If the space to edit in the original location is too restricted (i.e. in a narrow side panel), a tear sheet can provide more area to work.
 
@@ -277,7 +271,11 @@ Do not use when the edit actions are few/simple - consider using a modal instead
 ![Anatomy side panel](images/Full-page-edit-Anatomy.png)
 
 1. **Editable content.** Everything in the page is editable and shown in the editable state.
-2. **Save/cancel buttons.** Cancel changes and save changes buttons are always shown as disabled until a change is detected on the page. Note that "changes" is added to the button names in this case because the title of the page does not have "Edit" in it. In a toggle use case where the content on the page was static until the user turned on an edit mode, the title of the page would change to "Edit [object]" and the buttons would be labeled "Cancel" and "Save".
+2. **Save/cancel buttons.** Cancel changes and save changes buttons are always shown as disabled until 
+a change is detected on the page. Note that "changes" is added to the button names in this case because 
+the title of the page does not have "Edit" in it. In a toggle use case where the content on the page was 
+static until the user turned on an edit mode, the title of the page would change to "Edit [object]" and 
+the buttons would be labeled "Cancel" and "Save".
 
 | Use case                          | Behavior                                                                                                
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------- 
@@ -400,7 +398,7 @@ Use a right side panel to show the changes that the user is making.  The summar
 ### Warnings
 
 Notify and warn users if saving the edits made will have an impact in other
-areas or will make changes elsewhere.  Inform the user if their changes or edits
+areas or will make changes elsewhere. Inform the user if their changes or edits
 cannot be undone. 
 
 Consider the level of severity of the edits to make sure the users are warned and 
@@ -408,7 +406,7 @@ aware of the consequence of the changes they made:
 
 #### Low severity edits  
 Changes that are only to a non-functional values and that
-don't have impacts on other areas are considered low severity edits.  For low
+don't have impacts on other areas are considered low severity edits. For low
 severity edits, the "always editable" or "batch edit"  patterns can be used. Don't 
 show a warning model for low severity edits.
 
@@ -527,8 +525,8 @@ Edits that have a wider impact on the system or user experience should use
 are.**  
 Explicit IA lets us use succinct button terms such as "Save" or "Cancel".
 
-**Do: Use the same behavior as when the resource is created.**  
-Where the number of editable values is significantly smaller or larger than
+**Do: Consider using the same edit variation as is used to create the resource.**  
+Exceptions: Where the number of editable values is significantly smaller or larger than
 during creation, or the context of current settings is required, use a different
 behavior to when the resource is created.
 
