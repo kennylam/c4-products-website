@@ -21,6 +21,23 @@ The following components can be used to created integrated interactions across t
 </AnchorLinks>
 
 
+## Resources
+
+<Row className="resource-card-group">
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Integrated interaction components"
+      actionIcon="download"
+      aspectRatio="2:1"
+      href="https://ibm.box.com/s/pop95z30sbjvhi7v9oqegcxmrcu24hxl">
+
+![Sketch file](images/sketch-icon.png)
+
+  </ResourceCard>
+  </Column>
+</Row>
+
+
 ## Pivot buttons
 
 Pivot buttons provide the ease and means to contextually work from one application to another application, keeping the user in a fluid workflow. Pivot buttons can be used as a [single button](https://www.carbondesignsystem.com/components/button/usage/) action or presented as a [split button](https://pages.github.ibm.com/ai-applications/design/components/buttons/usage#split-button) when multiple options are available.
@@ -41,7 +58,7 @@ Pivot buttons leverage Carbon buttons. Pivot buttons augment Carbon buttons with
 2. **Upsell nudge (optional):** Apps that are not available to the user but can perform an action or provide a point of view about the subject.
 3. **Default action:** Primary app action for the subject.
 4. **Text label:** Indicates what action will occur. The application name should not be included in the text label.
-5. **App icon:** Indicates the app where the action will take place or where the user will be taken.  The solid color icon is predominantly used within buttons unless a ghost button is used. In this case, the gradient icon should be used. For better legibility, icons are size 20.
+5. **App icon:** Indicates the app where the action will take place or where the user will be taken.  The solid color icon is predominantly used within buttons unless a ghost button is used. For better legibility, icons are size 20.
 
 ### When to use
 
@@ -72,7 +89,7 @@ Pivot buttons leverage Carbon buttons. Pivot buttons augment Carbon buttons with
 
 ## ReturnTo banner
 
-The ReturnTo banner is a platform navigation component that displays when a pivot happens from one application page to another application page. The ReturnTo banner can also be used when pivoting from an application page to a platform page (ex: pivoting from an application to connect a data source). It is not a replacement for breadcrumbs but rather it serves to inform when cross-navigating applications occurs with a visible beacon to return to the previous application experience.
+The ReturnTo banner is a platform navigation component that displays when a pivot happens from one application page to another application page. The ReturnTo banner can also be used when pivoting from an application page to a platform page (ex: pivoting from an application to settings). It is not a replacement for breadcrumbs but rather it serves to inform when cross-navigating applications occurs with a visible beacon to return to the previous application experience.
 
 ### Anatomy
 
@@ -154,9 +171,9 @@ A decorator is composed of a severity icon, an object type, and a value. Everyth
 3. **Value only:** Use this variant when there is no severity or risk and the type is defined otherwise.
 4. **Sizes:** There are two decorator sizes: `default` and `inline` (small). Choose a size that works best for the context of the data. Decorators within a standard table (48px) should use a default decorator; for smaller formats, such as use within body text, the inline size will be more accommodating.
 
-### Indicator icons
+### Shape indicators
 
-Data decorators are designed to display the objects severity or risk. The indicators above can be used within data decorators. More info can be found under [status indicators](https://www.carbondesignsystem.com/patterns/status-indicator-pattern/)
+Data decorators are designed to display the objects severity or risk. The indicators above can be used within data decorators. More info can be found under [status indicators](https://www.carbondesignsystem.com/patterns/status-indicator-pattern/#shape-indicators).
 
 <Row>
  <Column colLg={8}>
@@ -168,7 +185,7 @@ Data decorators are designed to display the objects severity or risk. The indica
 
 ### Text truncation
 
-When the value of a decorator is more than 20 characters, truncate to 16 characters. Truncation happens between the first 12 characters and the last 4 characters. If the value is less than or equal to 20 characters then show the entire value. If the data decorator resides within a table, the truncation is determined by the width of the containing column.
+When the value of a decorator is more than 20 characters, truncate to 16. Truncation happens between the first 12 characters and the last 4. If the value is less than or equal to 20 characters then show the entire value. If the data decorator resides within a table, the truncation is determined by the width of the column. More info about truncation can be found under [Overflow content](https://www.carbondesignsystem.com/patterns/overflow-content/).
 
 <Row>
  <Column colLg={8}>

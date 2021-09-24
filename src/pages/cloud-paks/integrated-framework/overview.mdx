@@ -16,26 +16,10 @@ The integrated interaction framework (IIF) enables teams to build seamless workf
   <AnchorLink>Seamless navigation</AnchorLink>
 </AnchorLinks>
 
-## Resources
-
-<Row className="resource-card-group">
-  <Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      subTitle="Integrated interaction components"
-      actionIcon="download"
-      aspectRatio="2:1"
-      href="https://ibm.box.com/s/pop95z30sbjvhi7v9oqegcxmrcu24hxl">
-
-![Sketch file](images/sketch-icon.png)
-
-  </ResourceCard>
-  </Column>
-</Row>
-
 
 ## Overview
 
-The Cloud Pak brings together teams from different backgrounds and roles to complete their jobs-to-be-done. With the diversity of use-cases, composable experiences are strategic to enabling users with the ability to use only the services they need. Nimble, purpose-driven applications choreographed together make this possible. The IIF is the glue that holds composability together to streamline workflows through smart, contextual integration points. The framework is a comprised of specific components available through Zen to create these seamless experiences across the Cloud Pak, targeting 3 key areas; in-context enrichment, passing information, and seamless navigation.
+The Cloud Pak brings together teams from different backgrounds and roles to complete their job. With the diversity of use-cases, composable experiences enable customers to use only the services they need. The IIF is the glue that holds composability together to streamline workflows through smart, contextual integration points. The framework comprises specific components available through ZenRock to create these seamless experiences across the Cloud Pak, targeting 3 key areas: **in-context enrichment**, **passing information**, and **seamless navigation**.
 
 ### Framework demonstration
 
@@ -52,11 +36,11 @@ The Cloud Pak brings together teams from different backgrounds and roles to comp
 
 ## In-context enrichment
 
-In-context enrichment is an important facet of integrated experiences as it provides the means for the user to access relevant information from across the platform when they need it, avoiding unneccesary navigation elsewhere. When relevant information is surfaced at the right time within a logical workflow, users feel as if the platform is working harder to keep them on track.
+Enriching users’ experiences in-context is an essential facet of an integrated experience. In-context enrichment allows users to access relevant information from across the platform when they need it and where they need it—reducing navigation points. When relevant information is surfaced at the right time within the users workflow, the platform is working hard to keep them on track.
 
 ### Panel data fragment enrichment
 
-Through the use of data decorators, an application can provide their point of view to enrich the data itself. The side panel provides a space for data fragments about the data to be displayed directly within the context of the data object.
+An application or service can provide a point of view across the platform by leveraging [data fragments](/cloud-paks/integrated-framework/components#data-fragments), which are a structured collections of informational metadata, and can be visually distinguished with [data decorators](/cloud-paks/integrated-framework/components#data-decorators). The side panel offers a space for [data fragments](/cloud-paks/integrated-framework/components#data-fragments) to present additional information about a piece of data so that the user can get a richer/fuller picture within the same window without navigating away.
 
 <Row>
  <Column colLg={8}>
@@ -71,7 +55,7 @@ Through the use of data decorators, an application can provide their point of vi
 
 ### Screen influencers
 
-Screen influencers, like tearsheets, enable an experience hosted by another application to be viewed in-context without requiring the user to navigate to that experience elsewhere across the platform.
+Screen influencers, like [tearsheets](/cloud-paks/integrated-framework/components#tearsheets), can bring forward experiences that belong to other applications or services and present themselves in-context without requiring the user to move away from their current workflow to complete the task.
 
 <Row>
  <Column colLg={8}>
@@ -86,48 +70,21 @@ Screen influencers, like tearsheets, enable an experience hosted by another appl
 
 ### Related components
 
-<Row className="resource-card-group">
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      color="light"
-      title="Data decorators"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/cloud-paks/integrated-framework/components#data-decorators"
-      >
-  </ResourceCard>
-</Column>
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      color="light"
-      title="Data fragments"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/cloud-paks/integrated-framework/components#data-fragments"
-      >
-  </ResourceCard>
-</Column>
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      color="light"
-      title="Tearsheets"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/cloud-paks/integrated-framework/components#tearsheets"
-      >
-  </ResourceCard>
-</Column>
-</Row>
+The following components, located under the IIF/[Components tab](/cloud-paks/integrated-framework/components), are key to building in-context enrichment experiences.
+
+- [Data decorators](/cloud-paks/integrated-framework/components#data-decorators)
+- [Data fragments](/cloud-paks/integrated-framework/components#data-fragments)
+- [Tearsheets](/cloud-paks/integrated-framework/components#tearsheets)
 
 
 
 ## Passing information
 
-The integrated interaction framework facilitates the passing of information across composable workflows, enabling the user to run tasks across the platform and to send related information to other applications within their workflow.
+Passing information across different applications enables users to contextually conduct actions using another platform service or to send related information elsewhere from their current view, retaining their fluid momentum as they complete their tasks across the platform.
 
 ### Pass data to from one app to another
 
-Pivot buttons coordinating with platform tearsheets are a common method to pass information. An application can host information and functionality inside a tearsheet, within another application, to capture appropriate information prior to passing it to the hosting application.
+[Pivot buttons](/cloud-paks/integrated-framework/components#pivot-buttons) coordinating with platform [tearsheets](/cloud-paks/integrated-framework/components#tearsheets) are a common method to pass information. An application can host information and functionality inside a [tearsheet](/cloud-paks/integrated-framework/components#tearsheets), within another application, to capture appropriate information prior to passing it to the hosting application.
 
 <Row>
  <Column colLg={8}>
@@ -142,7 +99,7 @@ Pivot buttons coordinating with platform tearsheets are a common method to pass 
 
 ### Custom embedded app integrations
 
-Custom integrations take shape based on the experience it supports and can be placed directly within the UI. These are experiences owned and created by the application team. The example shown is a scan functionality from a hosting application that automatically creates a case in another application based on scan results. It then provides the means to navigate directly to the new case.
+[Custom integrations](/cloud-paks/integrated-framework/components#custom-integrations) bring small experiences from one app or service and embed within another to provide the user with fuller context and enable in-context navigation within the workflow. These smaller experiences are owned and delivered by the hosting app/service. The example shown below is a scan functionality from one app that automatically creates a case in another application based on scan results. It then provides a way for the user to navigate to the next destination.
 
 <Row>
  <Column colLg={8}>
@@ -157,7 +114,7 @@ Custom integrations take shape based on the experience it supports and can be pl
 
 ### Run app actions from anywhere
 
-Another method to pass data or run actions across the platform is through the use of pivot buttons and confirmation modals. Actions can be run in application A even if a user is viewing application B.
+Another method to pass data or run actions across the platform is through the use of pivot buttons and confirmation [modals](/cloud-paks/integrated-framework/components#modals). Actions can be run in application A even if a user is viewing application B.
 
 <Row>
  <Column colLg={8}>
@@ -169,7 +126,7 @@ Another method to pass data or run actions across the platform is through the us
  </Column>
 </Row>
 
-Custom modals can be used as well. For example, a user within the Case Management app can initiate a federated search using another application, Data Explorer, straight from the Case Management UI.
+Custom [modals](/cloud-paks/integrated-framework/components#modals) can be used as well. For example, a user within the Case Management app can initiate a federated search using another application, Data Explorer, straight from the Case Management UI.
 
 <Row>
  <Column colLg={8}>
@@ -181,58 +138,20 @@ Custom modals can be used as well. For example, a user within the Case Managemen
  </Column>
 </Row>
 
-
-
 ### Related components
 
-<Row className="resource-card-group">
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      color="light"
-      title="Pivot buttons"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/cloud-paks/integrated-framework/components#pivot-buttons"
-      >
-  </ResourceCard>
-</Column>
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      color="light"
-      title="Tearsheets"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/cloud-paks/integrated-framework/components#tearsheets"
-      >
-  </ResourceCard>
-</Column>
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      color="light"
-      title="Modals"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/cloud-paks/integrated-framework/components#modals"
-      >
-  </ResourceCard>
-</Column>
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      color="light"
-      title="Custom integrations"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/cloud-paks/integrated-framework/components#custom-integrations"
-      >
-  </ResourceCard>
-</Column>
-</Row>
+The following components, located under the IIF/[Components tab](/cloud-paks/integrated-framework/components), are key to building experiences to pass information.
+
+- [Pivot buttons](/cloud-paks/integrated-framework/components#pivot-buttons)
+- [Tearsheets](/cloud-paks/integrated-framework/components#tearsheets)
+- [Modals](/cloud-paks/integrated-framework/components#modals)
+- [Custom integrations](/cloud-paks/integrated-framework/components##custom-integrations)
 
 
 
 ## Seamless navigation
 
-Integrated, seamless navigation between applications is key to optimizing and maintaining fluid analysis within a workflow. Strategically placed navigation points within the platform experience promotes forward momentum and sets contextual pivot options for the user to navigate elsewhere across the platform.
+Seamless navigation between applications is key to optimizing and maintaining fluid analysis within a workflow. Strategically placed navigation points within the platform experience promote forward momentum and set contextual pivot options for the user to navigate across the platform.
 
 
 ### Pivot from one app to another
@@ -251,28 +170,10 @@ Since breadcrumb navigation across the platform reflects the hierarchical struct
  </Column>
 </Row>
 
-
 ### Related components
 
-<Row className="resource-card-group">
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      color="light"
-      title="Pivot buttons"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/cloud-paks/integrated-framework/components#pivot-buttons"
-      >
-  </ResourceCard>
-</Column>
-<Column colMd={4} colLg={4} noGutterSm>
-    <ResourceCard
-      color="light"
-      title="ReturnTo banner"
-      aspectRatio="2:1"
-      actionIcon="arrowRight"
-      href="/cloud-paks/integrated-framework/components#returnto-banner"
-      >
-  </ResourceCard>
-</Column>
-</Row>
+The following components, located under the IIF/[Components tab](/cloud-paks/integrated-framework/components), are key to building seamless navigation experiences.
+
+- [Pivot buttons](/cloud-paks/integrated-framework/components#pivot-buttons)
+- [ReturnTo banner](/cloud-paks/integrated-framework/components#returnto-banner)
+
