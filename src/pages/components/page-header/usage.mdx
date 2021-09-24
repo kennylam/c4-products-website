@@ -34,42 +34,15 @@ The page header is comprised of 6 zones, allowing for the flexibility to include
 3. **Subtitle / description (optional):** This zone is for the inclusion of a subtitle or description to provide additional context to identify the current page.
 4. **Available space (optional):** This zone is for placing high-level content above page tabs.
 5. **Tabs (optional):** This zone is for placing navigation within a page. e.g. tabs, content switcher etc.
-6. **Actions (optional):** This zone is for placing critical page actions.
+6. **Actions (optional):** This zone is for placing critical page actions. While this zone is for actions, the specific type of component is left to product team discretion to meet the needs of the page experience. Some examples of appropriate components within the action zone would be buttons, dropdowns, overflow menus...
 
 ## Types
 
-There are two main structural types of page headers. One with a background and one without.
-
-### Page header without background
-The simplest expression of the page header. A background-less page header should be used if only the breadcrumb, title, actions, and/or simple status are required.
-
-![page header without background](images/page-header-without-background.png)
 
 ### Page header with background
-The more complex expression of the page header. The background provides structurality and aids in establishing hierarchy for page headers with more items. The page header with a background should be used if tabs, subtitles, and/or more global items are required.
+This is the primary expression of the page header. The background provides structurality and aids in establishing hierarchy for page headers with more items. The page header with a background should be used if tabs, subtitles, and/or more global items are required.
 
 ![page header with background](images/page-header-with-background.png)
-
-
-### Examples without background
-
-#### Page title only
-This is the base of the page header, establishing spacing/title structure that all other sans background page headers follow. The base is best used to accommodate simple requirements, including page title only, or page title + buttons.
-
-![title only](images/title-only.png)
-
-#### With breadcrumbs
-This variant of the page header accounts for page title, buttons, breadcrumbs, and occasionally icons and metadata.
-
-![with breadcrumbs](images/with-breadcrumbs.png)
-
-#### With status indicator
-Structured similarly to the examples above, this variant is for the inclusion of a page level status indicator.
-
-![with status](images/with-status.png)
-
-
-### Examples with background
 
 #### With tabs
 Tabs are positioned underneath the page title and sit flush at the base of the page header background.
@@ -102,6 +75,10 @@ If the page header contains action icons, the default state includes a toolbar d
 ![with breadcrumb bar](images/with-breadcrumb-bar.png)
 
 
+### Page header without background
+The background-less page header should be used sparingly and with consistency consideration of the page headers across the rest of your product. In cases where it’s relevant to use, it should be used for simple expressions leveraging only the breadcrumb, title, actions, and/or status.
+
+![page header without background](images/page-header-without-background.png)
 
 
 
@@ -110,19 +87,17 @@ If the page header contains action icons, the default state includes a toolbar d
 ### Page title length
 
 #### Character count
-To maintain page titles that are efficient to read and avoid crowding within the page header, the title length should be no more than ~56 characters.
+To maintain page titles that are efficient to read and avoid crowding within the page header, the title length should be no more than 60% of the browser view width and remain on a single line instead of wrapping to multiple lines. Title truncation occurs if the title exceeds 60% of the browser view width. If the titles become truncated, ensure browser tooltips over the page title are used on hover to display the full string.
+
 
 ![character count](images/character-count.png)
-
-#### Truncation
-Page titles should remain on a single line instead of wrapping to multiple lines. Use truncation for titles that must exceed the 56 character count and/or stages with narrow widths. If the titles become truncated, ensure browser tooltips over the page title are used on hover to display the full string.
 
 ![truncation](images/truncation.png)
 
 ![truncation breadcrumb](images/truncation-breadcrumb.png)
 
 #### Subtitles
-If titles are frequently longer than ~56 characters, consider using a generic title and include a subtitle for dynamic, descriptive use.
+If titles are frequently longer than 60% of the browser view width, consider using a generic title and include a subtitle for dynamic, descriptive use.
 
 <Caption>If a unique URL page ID or an informative breadcrumb string is required, consider using a more descriptive page title and truncate as needed.</Caption>
 
