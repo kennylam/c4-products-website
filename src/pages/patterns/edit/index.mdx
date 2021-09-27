@@ -7,12 +7,34 @@ title: Edit
 Carbon for Cloud & Cognitive Design system adoption guild -
 [#ccs-pal](https://ibm-casdesign.slack.com/archives/CQGR0HC05) on Slack
 
+<PageDescription>
+
+To edit is to change values or data. This pattern focuses on how to place 
+the user in a flow when there's a need for editing an existing asset, and 
+provides important considerations to keep in mind when creating edit flows.
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink>Overview</AnchorLink>
+  <AnchorLink>Inline edit</AnchorLink>
+  <AnchorLink>Modal edit</AnchorLink>
+  <AnchorLink>Side panel edit</AnchorLink>
+  <AnchorLink>Tearsheet edit</AnchorLink>
+  <AnchorLink>Full page edit</AnchorLink>
+  <AnchorLink>Other edit behaviors</AnchorLink>
+  <AnchorLink>Other considerations</AnchorLink>
+  <AnchorLink>Designing with edit flows</AnchorLink>
+  <AnchorLink>Related use cases</AnchorLink>
+  <AnchorLink>Terminology</AnchorLink>
+</AnchorLinks>
+
 ## Overview
 
-To edit is to change values or data. Users often need to edit different types of
-assets, and they can have simple or complex requirements. This pattern focuses
-on how to place the user in a flow when there's a need for editing an existing
-asset.
+Users often need to edit different types of
+assets and information, and they can have simple or complex requirements. 
+Choosing an edit flow that matches the complexity and context of the data will
+help ensure users can easily edit and update assets and information in your product.
 
 <Row className="image-card-group">
 
@@ -105,9 +127,9 @@ Refer to [Behaviors](#behaviors) and [Best practices](#best-practices).
 | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
 | [Inline edit](#inline-edit)                    | Use with quick, simple edits of individual fields.                                                                                | On-page content can be seen and interacted with. |
 | [Modal edit](#modal-edit)                      | Use with simple or transitional edits of no more than a couple of form fields.                                                    | On-page content is obscured.                     |
-| [Edit in side panel](#side-panel-edit)         | Use with medium complexity edits if the user needs page context.                                                                  | On-page content can be seen.                     |
-| [Edit in tearsheets](#tearsheet-edit)          | Use with medium to complex edits.                                                                                                 | On-page content is obscured.                     |
-| [Full-page or takeover edits](#full-page-edit) | Use with edits to a usable service.                                                                                               | N/A                                              |
+| [Side panel edit](#side-panel-edit)         | Use with medium complexity edits if the user needs page context.                                                                  | On-page content can be seen.                     |
+| [Tearsheet edit](#tearsheet-edit)          | Use with medium to complex edits.                                                                                                 | On-page content is obscured.                     |
+| [Full-page edit](#full-page-edit) | Use when settings on a page need to always be shown in edit mode, or when the context of the page is needed to make several changes.                                                                                               | N/A                                              |
 | [Other edit behaviors](#other-edit-behaviors) | UI components with their own edit interaction patterns such as cards, dashboards, data tables, text editors and property editors. | N/A                                              |
 
 ## Inline edit
@@ -116,17 +138,60 @@ Refer to [Behaviors](#behaviors) and [Best practices](#best-practices).
 
 Inline editing requires particular visual and behavioral cues to make the experience clear to the user. Use the following states and behaviors when using this edit variation: 
 
-1. When a user hovers static content, it will show an edit icon and background hover color to let the user know they can edit it. Note: Make sure the item being edited is visually distinct and separate from other values that cannot be inline edited to avoid confusion.
-2. Once the user clicks the content/editable item, the Restore (Cancel) and Check (Save) icon buttons appear. 
-3. Once a change is detected, the Check (Save) icon button becomes enabled.
-4. If an item is not editable near other items that are, show the read-only (edit off) icon on hover. A tooltip should briefly state why it's locked. 
-5. To cancel the edits, the user can click the restore icon to revert the field back to a static view and the latest value.
-6. If the field has an error, the error icon shows next to the cancel and save buttons.
+- When a user hovers or tabs to static content, it will show an edit icon and background hover color 
+to let the user know they can edit it. Note: Make sure the item being edited is visually distinct 
+and separate from other values that cannot be inline edited to avoid confusion. For mobile and tablet screens, 
+show the edit icon always (instead of just on hover).
+- Once the user clicks the content/editable item, the Restore (Cancel) and Check (Save) icon buttons appear. 
+- Once a change is detected, the Check (Save) icon button becomes enabled.
+- If an item is not editable near other items that are, show the read-only (edit off) icon on hover. A tooltip should briefly state why it's locked. 
+- To cancel the edits, the user can click the restore icon or press the Escape key to revert the field back to a static view and the latest value.
+- If the field has an error, the error icon shows next to the cancel and save buttons. 
 
+<Row>
+<Column colMd={8} colLg={8}>
 
-![Inline edit states](images/Inline-editing-states.png)
+![Inline edit states](images/edit-inline-1.png)
 
-![Inline edit behavior](images/inline-edit608.gif)
+</Column>
+</Row>
+
+<Row>
+<Column colLg={8}>
+<GifPlayer color='dark'>
+
+![Inline edit behavior](images/edit-inline-2.gif)
+
+![Inline edit behavior](images/edit-inline-2.png) 
+
+</GifPlayer>
+</Column>
+</Row>
+
+#### Additional behavior notes
+- Saving the value. Clicking the Save button or pressing the Enter/Return key will save the new input. 
+- If the user clicks away from the field instead of clicking the Save button, 
+as long as no errors were detected, and the user did not click to navigate away from the current page/view, 
+the new value will be saved automatically. If an error was detected, show the field in an error state with 
+the Save button disabled.
+- A user should be able to undo changes they have made to a value by pressing cmd/ctrl + Z on the keyboard.
+- If the user tries to navigate away from the page before changes are saved, show a confirmation modal letting 
+them know they have unsaved changes, and explaining that if they proceed, their changes will not be saved. If 
+they Cancel out of this modal, they will remain on the current page and see the value still in the editable state 
+with the Save and Cancel buttons enabled.  
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![Unsaved changes confirmation](images/edit-inline-3.png)
+
+</Column>
+</Row>
+
+- If the user tries to navigate away from the page and an error exists on an edited value, a low-contrast inline error notification 
+letting the user know they have an unsaved value(s) with errors should appear at the top of the section where the 
+error exists and should automatically scroll to that section so that the inline error notification can be read. 
+
 
 ### When to use
 
@@ -145,9 +210,9 @@ text input or text area field one at a time.
 
 ### Anatomy
 
-![Anatomy modal](images/Edit-Modal-Anatomy.png)
+![Modal edit anatomy](images/edit-modal-1.png)
 
-1. **Modal size & overlay:** Small modal.Screen overlay that obscures the on-page content.
+1. **Modal size & overlay:** Small modal. Screen overlay that obscures the on-page content.
 2. **Edit title:** Title line for edit flow with optional subtitle. 
 3. **Body:** Contains the information and/or controls needed to populate the task. It can include message text and components (1 or 2 form fields).
 4. **Buttons:** The primary and secondary buttons are "Save" and "Cancel".
@@ -169,7 +234,13 @@ text input or text area field one at a time.
 
 ### Anatomy
 
-![Anatomy side panel](images/Side-Panel-Anatomy.png)
+<Row>
+<Column colMd={8} colLg={8}>
+
+![Side panel edit anatomy](images/edit-side-panel-1.png)
+
+</Column>
+</Row>
 
 1. **Title block**: The title block contains navigational elements such as closing, go back, and pop out, along with header text (always begins with "Edit [object name]") and description that describes the side panel’s purpose.
 2. **Action toolbar (optional)**: The action toolbar is a set of global secondary action buttons the user can perform with the side panel’s content. 
@@ -183,10 +254,15 @@ is also being mindful of a size that comfortably and appropriately fits the cont
 needs to be edited. Refer to [Side Panel guidelines](https://pages.github.ibm.com/cdai-design/pal/components/side-panel/usage) for available sizes and grids.
 
 #### Slide-in
-Use a slide-in panel when the user needs to reference page-level information to complete the edits. The user needs the ability to interact with the panel alongside of the page content.
+Use a slide-in panel when the user needs to reference page-level information to complete the edits. 
+The user needs the ability to interact with the panel alongside of the page content. In this case, if the 
+user tries to navigate away from the page without saving their changes, show the confirmation modal outlined
+in the [Inline edit section](#inline-edit)) to let the user know they have unsaved changes and confirm 
+they want to proceed without saving. 
 
 #### Slide-over
-Use a slide-over panel when the user does not need to interact or reference the main page below the panel.  The user should have their focus on the panel and editing the workflow within it.
+Use a slide-over panel when the user does not need to interact or reference the main page below the panel.  
+The user should have their focus on the panel and editing the workflow within it.
 
 #### Example usage situations:
 - Editing properties of nodes in canvas-based products (for example, Elyra/Common Canvas 
@@ -212,7 +288,13 @@ products such as DataStage, Orchestration, and Modeler).
 
 #### Anatomy
 
-![Anatomy narrow tearsheet](images/Anatomy-Narrow-Tearsheet.png)
+<Row>
+<Column colMd={8} colLg={8}>
+
+![Narrow tearsheet edit anatomy](images/edit-tearsheet-1.png)
+
+</Column>
+</Row>
 
 1. **Header**: The header can include title, description, labels, and tabs. Always use "Edit" in the title.
 2. **Main content area**: This area includes the editable content. 
@@ -240,14 +322,20 @@ products such as DataStage, Orchestration, and Modeler).
 
 #### Anatomy
 
-![Anatomy side panel](images/Anatomy-Wide-Tearsheet.png)
+<Row>
+<Column colMd={8} colLg={8}>
+
+![Wide tearsheet edit antatomy](images/edit-tearsheet-2.png)
+
+</Column>
+</Row>
 
 1. **Header**: The header can include title, description, labels, and tabs. Must include "Edit" in the title.
 2. **Main content area**: This area includes the editable content.
 3. **Navigation buttons**: In most cases, the navigation buttons are limited to primary and secondary 
 buttons ("Save" and "Cancel"). If the edit flow requires steps (not common), the Next/previous buttons serve as 
 the primary and secondary buttons until the last step, where the primary button is "Save" (Cancel is the ghost button in this case).  
-4. **Influencer (optional)**: A left or right side panel that can be used, for example,  as a menu, progress indicator, or filter. 
+4. **Influencer (optional)**: A left side panel that can be used, for example, as a menu, progress indicator, or filter. Alternatively, a right side panel can be used for a Summary (of changes). 
 5. **Background overlay (same as modals)**
 
 
@@ -268,7 +356,7 @@ Do not use when the edit actions are few/simple - consider using a modal instead
 
 ### Anatomy and behaviors
 
-![Anatomy side panel](images/Full-page-edit-Anatomy.png)
+![Full page edit anatomy](images/edit-full-page-1.png)
 
 1. **Editable content.** Everything in the page is editable and shown in the editable state.
 2. **Save/cancel buttons.** Cancel changes and save changes buttons are always shown as disabled until 
@@ -354,13 +442,19 @@ plan, etc. Editable cards allow a user to edit something within context.
 
 #### Cards - simple edits
 
-![Editable card](images/editable_card.png)
+<Row>
+<Column colMd={12} colLg={12}>
+
+![Editable card](images/edit-other-edit-behaviors-1.png)
+
+</Column>
+</Row>
 
 For simple edits such as changing the name of an object, editable cards can be used. Edit mode is triggered by clicking on the edit button (left card, top-right). When in edit mode (right card) highlight what is editable with active inline inputs and disable what is not.
 
 Note: Your card height might vary if you don’t use inline inputs when the user toggles the edit mode on/off.
 
-![Editable card - simple](images/card-automatic-edit.png)
+![Editable card - simple](images/edit-other-edit-behaviors-2.png)
 
 #### Cards - complex edits
 
@@ -369,7 +463,7 @@ card can’t be contained in place and/or have high-impact (ex: dependencies or
 plan/cost change) use the side panel to display all fields that can be edited
 and needed information.
 
-![Editable card - complex](images/card-manual-edit-complex.png)
+![Editable card - complex](images/edit-other-edit-behaviors-3.png)
 
 ### Data tables
 Refer to [data table pattern documentation](https://pages.github.ibm.com/cdai-design/pal/patterns/data-table) for editing content in a data table. 
@@ -392,8 +486,13 @@ long forms.
 
 Use a right side panel to show the changes that the user is making.  The summary of changes should show the information in the way that suits the content. For example, show a list of fields changed or a list of the selections made. If possible, users should be able to remove the changes listed in the summary from the side panel before saving. 
 
-![Summary of changes](images/Summary.png)
+<Row>
+<Column colMd={12} colLg={12}>
 
+![Summary of changes](images/other-considerations-1.png)
+
+</Column>
+</Row>
 
 ### Warnings
 
@@ -419,15 +518,23 @@ Changes are considered high severity edits if they will cause any of the followi
 
 High severity edits require a confirmation dialog. The button to confirm the changes should use the [danger button](https://www.carbondesignsystem.com/components/button/usage/).  
 
-![Warning dialog](images/Warning-dialog.png)
+<Row>
+<Column colMd={8} colLg={8}>
+
+![Warning dialog](images/edit-other-considerations-2.png)
+
+</Column>
+</Row>
 
 ### Undo
 
 Consider how the edits fits in the undo stack:
 - If fields are always editable, users should be able to undo each step or element.
-- If there is an "edit mode", consider allowing the user to undo specific element changes in addition to the an overall undo after the user saves changes that would revert all of the changes made. 
+- If there is an "edit mode", consider allowing the user to undo specific element 
+changes in addition to the an overall undo after the user saves changes that would revert all of the changes made. 
 
-Undo is dependent on use case however consider adding "undo" as an action in the confirmation notification or options to clear edit if it fits in editing mode.  
+Undo is dependent on the use case, however, consider adding "undo" as an action 
+in the confirmation notification or options to clear edits if it fits in editing mode.  
 
 ### User feedback
 
@@ -453,7 +560,7 @@ as well as the [notifications pattern](https://www.carbondesignsystem.com/patter
 
 As the users are making edits, show immediate feedback about their changes as
 much as possible. Show inline errors when applicable, following [validation and
-error pattern guidance](https://www.carbondesignsystem.com/components/form/usage/#validation-and-errors\).  
+error pattern guidance](https://www.carbondesignsystem.com/components/form/usage/#validation-and-errors).  
 Try to highlight errors that have dependents as early as possible.
 
 In the case that the "save changes" operation fails:
@@ -541,7 +648,7 @@ Consider using an "edit" button to reveal the edit form. See
 [edit mode](#behaviors).
 
 **Do: Provide users feedback**  
-Alert users when saving changes fails. If possible retain their work and allow
+Alert users when saving changes fails. If possible, retain their work and allow
 the user to try saving again.
 
 **Do: Provide any context needed for a user to make edits to a value.** 
@@ -553,6 +660,10 @@ values or to the system as a whole.**
 Use steps, validation and progressive disclosure to help users avoid error. When
 editing a resource affects system availability, use warnings, messages and
 notifications if necessary to inform the user.
+
+**Do: Show a confirmation modal if the user tries to navigate away from a page when there are unsaved edits.**
+Show the confirmation modal outlined in the [Inline edit section](#inline-edit)) to let the user know they 
+have unsaved changes and confirm they want to proceed without saving.
 
 **Do: Default users to the non-stepped view of a multiple-step flow when they
 edit unless edits can only be made sequentially.**
@@ -583,7 +694,7 @@ _Avoid "Apply changes" and "Finish".  Do not use "Done", "Commit", "OK", or
 
 **Cancel:** Stops the current action and closes the dialog.  
 _Avoid "Discard", "Clear", "Remove", "Reset", "Revert". Title pages/dialogs
-"Edit (object) (object name)" so that "the object "changes" does not need to be
+"Edit (object) (object name)" so that the word "changes" does not need to be
 combined with the action "Cancel changes"._
 
 **Undo:** Reverts to the state before the most recent changes made by the
