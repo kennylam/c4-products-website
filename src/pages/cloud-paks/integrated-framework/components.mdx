@@ -29,7 +29,7 @@ The following components can be used to created integrated interactions across t
       subTitle="Integrated interaction components"
       actionIcon="download"
       aspectRatio="2:1"
-      href="https://ibm.box.com/s/pop95z30sbjvhi7v9oqegcxmrcu24hxl">
+      href="https://ibm.box.com/shared/static/pop95z30sbjvhi7v9oqegcxmrcu24hxl.sketch">
 
 ![Sketch file](images/sketch-icon.png)
 
@@ -54,10 +54,10 @@ Pivot buttons leverage Carbon buttons. Pivot buttons augment Carbon buttons with
  </Column>
 </Row>
 
-1. **Available actions:** Supplementary apps that perform an action or take the user further obtain information about the subject.
-2. **Upsell nudge (optional):** Apps that are not available to the user but can perform an action or provide a point of view about the subject.
+1. **Available actions:** Supplementary apps that perform an action or take the user further in to the experience to obtain information about the subject.
+2. **Upsell nudge (optional):** Apps that are not available to the user but can perform an action or provide a point of view about the subject. To avoid over exposure to upsell nudges in productive use, conditionally considered use for appropriate contexts (ex. Trials. First 30 days of productive use).
 3. **Default action:** Primary app action for the subject.
-4. **Text label:** Indicates what action will occur. The application name should not be included in the text label.
+4. **Text label:** Indicates what action will occur. The application name should not be included in the text label. Button labels should follow [Carbon text label guidance](https://www.carbondesignsystem.com/components/button/usage/#text-labels), using the {verb} + {noun} formula and leverage common [action labels](https://www.carbondesignsystem.com/guidelines/content/action-labels).
 5. **App icon:** Indicates the app where the action will take place or where the user will be taken.  The solid color icon is predominantly used within buttons unless a ghost button is used. For better legibility, icons are size 20.
 
 ### When to use
@@ -142,7 +142,7 @@ Data decorators distinguishes important data points from less important content.
 
 ### Anatomy
 
-A decorator is composed of a severity icon, an object type, and a value. Everything but the value is optional. There is a spacer line used only when the icon and/or the type is displayed to separate the value. 
+A decorator is composed of a severity indicator, an object type, and a value. Everything but the value is optional. There is a spacer line used only when the indicator and/or the type is displayed to separate the value. 
 
 <Row>
  <Column colLg={8}>
@@ -152,7 +152,7 @@ A decorator is composed of a severity icon, an object type, and a value. Everyth
  </Column>
 </Row>
 
-1. **Indicator icon (optional):** The severity of the object. (Ex: critical, high, medium, low)
+1. **Indicator shape (optional):** The severity of the object. (Ex: critical, high, medium, low)
 2. **Object type (optional):** Lets the user know what type of object this is. (Ex: IP, URL, USER, VUL, HASH, DMN, MAC)
 3. **Object value:** The name of the object. The “data” part of the decorator.
 
@@ -166,7 +166,7 @@ A decorator is composed of a severity icon, an object type, and a value. Everyth
  </Column>
 </Row>
 
-1. **Icon + value:** Use this variant when the type is a label or when it is used within a table column and the column header is the object type.
+1. **Indicator + value:** Use this variant when the type is a label or when it is used within a table column and the column header is the object type.
 2. **Type + value:** Use this variant when there is no severity or risk score.
 3. **Value only:** Use this variant when there is no severity or risk and the type is defined otherwise.
 4. **Sizes:** There are two decorator sizes: `default` and `inline` (small). Choose a size that works best for the context of the data. Decorators within a standard table (48px) should use a default decorator; for smaller formats, such as use within body text, the inline size will be more accommodating.
@@ -197,17 +197,34 @@ When the value of a decorator is more than 20 characters, truncate to 16. Trunc
 
 ### Interaction
 
+#### Panels
+
 The distinct data decorator design is a cue to inform users that more information about the object can be progressively discovered. The most typical follow through action is to initiate a side panel to display additional information, data fragments, available actions, and platform pivot options.
 
 <Row>
  <Column colLg={8}>
 
-<Video src="images/data-decorators-interactions.mov">
-  <track kind="captions" src="images/data-decorators-interactions.mov" />
+<Video src="images/data-decorators-panel-interactions.mov">
+  <track kind="captions" src="images/data-decorators-panel-interactions.mov" />
 </Video>
 
  </Column>
 </Row>
+
+#### Context menu
+
+Actions can be taken directly from a data decorator using right click to initiate a context menu. The contents of the menu can include actions to be taken within the current page as well as pivot actions to continue analysis across other applications within the platform.
+
+<Row>
+ <Column colLg={8}>
+
+<Video src="images/data-decorators-context-menu-interactions.mov">
+  <track kind="captions" src="images/data-decorators-context-menu-interactions.mov" />
+</Video>
+
+ </Column>
+</Row>
+
 
 ### When to use
 
@@ -308,9 +325,9 @@ Tearsheets choreograph with other IIF components, like pivot buttons, to initiat
 
 <DoDontRow>
 
-<DoDont caption="This use case demostrates that an “investigation artifact” can be captured from any app and the platform facilitates the use of the “Case Management” app to save the artifact back to a case.">
+<DoDont caption="This use case demostrates that an “artifact” can be captured from any app. The platform brokers the exchange using the tearsheet to house the experience from the sending and receiving apps to save the artifact to the receiving app.">
 
-![This use case demostrates that an “investigation artifact” can be captured from any app and the platform facilitates the use of the “Case Management” app to save the artifact back to a case.](images/tearsheet-howto-1.jpg)
+![This use case demostrates that an “artifact” can be captured from any app. The platform brokers the exchange using the tearsheet to house the experience from the sending and receiving apps to save the artifact to the receiving app.](images/tearsheet-howto-1.jpg)
 
 </DoDont>
 
@@ -369,7 +386,7 @@ Modals, as part of the IIF, are used to provide context when confirming actions 
 
 ## Custom integrations
 
-On occasion, to meet customer experience needs, a custom integration component is required. Custom integrations can be created to contextually enrich a current page through a reference from another application source, it can be used as a means to pass information elsewhere, or it can be used to thread app to app experiences together across the platform. The IIF doesn’t dictate the experience structure but the custom integration should utilize common elements, like pivot buttons, where applicable to craft the experience.
+On occasion, to meet customer experience needs, a custom integration component is required. Custom integrations can be valuable for a number of use cases. It can contextually enrich a current page by referencing another application as the information source. It can be used as a means to pass information elsewhere. Or it can be used to thread app to app experiences together across the platform. The IIF doesn’t dictate the experience structure but the custom integration should utilize common elements, like pivot buttons, where applicable to craft the experience.
 
 ### Example use-cases
 
