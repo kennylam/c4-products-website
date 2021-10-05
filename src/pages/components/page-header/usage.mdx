@@ -34,7 +34,7 @@ The page header is comprised of 6 zones, allowing for the flexibility to include
 3. **Subtitle / description (optional):** This zone is for the inclusion of a subtitle or description to provide additional context to identify the current page.
 4. **Available space (optional):** This zone is for placing high-level content above page tabs.
 5. **Tabs (optional):** This zone is for placing navigation within a page. e.g. tabs, content switcher etc.
-6. **Actions (optional):** This zone is for placing critical page actions. While this zone is for actions, the specific type of component is left to product team discretion to meet the needs of the page experience. Some examples of appropriate components within the action zone would be buttons, dropdowns, overflow menus...
+6. **Actions (optional):** This zone is for placing critical page actions. While this zone is primarily for actions, the specific type of component is left to product team discretion to meet user experience needs. Some examples of appropriate components within the action zone would be buttons, dropdowns, overflow menus...
 
 ## Types
 
@@ -74,9 +74,14 @@ If the page header contains action icons, the default state includes a toolbar d
 
 ![with breadcrumb bar](images/with-breadcrumb-bar.png)
 
+#### With actions toolbar only
+Some pages may require maximum utilization of the browser window to create an full canvas experience. For experiences that meet this specification, the page header can default to the collapsed state. 
+
+![with breadcrumb bar](images/with-breadcrumb-bar.png)
+
 
 ### Page header without background
-The background-less page header should be used sparingly and with consistency consideration of the page headers across the rest of your product. In cases where it’s relevant to use, it should be used for simple expressions leveraging only the breadcrumb, title, actions, and/or status.
+The background-less page header should be used sparingly and with consideration to page header consistency across the rest of your product. In cases where it’s relevant to use, it should be used for simple expressions leveraging only the breadcrumb, title, actions, and/or status.
 
 ![page header without background](images/page-header-without-background.png)
 
@@ -143,15 +148,23 @@ If the page header includes a toolbar, the buttons scroll with the page next to 
 </Video>
 
 #### With tabs
-The page title transition remains the same. After this initial transition, the tabs push the breadcrumbs out of view as the page is scrolled further. As soon as the page is scrolled towards the top, the breadcrumb row reveals again stacked above the tabs. 
+There are two available behaviors for scrolling with tabs.
+
+1. The primary scrolling behavior is to position the tabs directly underneath the breadcrumb toolbar upon collapse. This keeps the breadcrumbs and page title always visible for wayfinding and to navigate elsewhere on the product.
 
 <Video src="images/page-header-transition-4.mov" autoPlay loop>
   <track kind="captions" src="images/page-header-transition-4.mov" />
 </Video>
 
+2. The second option pushes the breadcrumb out of view, replacing it with tabs on scroll. This should be only be used for stage space saving needs. The intial page title transition remains the same. After this initial transition, the tabs push the breadcrumbs out of view as the page is scrolled further. As soon as the page is scrolled towards the top, the breadcrumb row reveals again stacked above the tabs. 
+
+<Video src="images/page-header-transition-5.mov" autoPlay loop>
+  <track kind="captions" src="images/page-header-transition-5.mov" />
+</Video>
+
 ## Best practices
 ### Do's
-- Follow the breadcrumb component for proper usage of breadcrumbs
+- Follow the [breadcrumb component](https://www.carbondesignsystem.com/components/breadcrumb/usage) for proper usage of breadcrumbs
 - Where possible, move metadata out of header and either onto the page or a “details” button
 - Include sentence-case for page titles. Reference the [voice & tone guidance](https://www.carbondesignsystem.com/guidelines/content/guidance/#use-sentence-case-capitalization)
 
