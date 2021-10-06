@@ -154,6 +154,8 @@
       path: /cloud-paks/navigation/usage
     - title: "Cross Pak switcher"
       path: /cloud-paks/cross-pak-switcher/usage
+    - title: "Integrated interactions"
+      path: /cloud-paks/integrated-framework/overview
 - title: AI Design
   pages:
     - title: "Overview"
