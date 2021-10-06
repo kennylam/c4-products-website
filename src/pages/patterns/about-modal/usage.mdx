@@ -1,5 +1,5 @@
 ---
-title: About screen modal
+title: About modal
 ---
 
 <PageDescription>
@@ -36,7 +36,7 @@ The about modal should provide information about the product. It may include the
 5. **Content:** A summary that supports the title of the card, such as: Version name, Server name, User name, User role, Browser version, Browser OS
 7. **Links (_optional_):** User links if there are additional information to call out within the card. The about modal should be used to display the product information and not where users go to find help
 8. **Legal text (_optional_):** Subhead text providing legal information
-9. **Trademark and copyright information (_optional_):** Optionally include legal text. Suggested format for copyright - Copyright (c) 2018 Company
+9. **Trademark and copyright information (_optional_):** Optionally include legal text. Displays first year of product release to current year. Suggested format for copyright - Copyright (c) 2018 Company
 10. **Version number:** Text that provided information on the version number of your product
 
 Each about modal is built out with content blocks of elements related to the product or topic. The about container (modal), title and version number are required to provide enough information about the intention of the card. All other elements are optional and layout can vary depending on the information that the modal provides.
@@ -70,10 +70,11 @@ All card titles, subtitles, labels and description are set in sentence case. Set
 | -------------                                  | -------------------------------- | --------------------------------                              |
 | 01. Title                                      | `Text-01: Productive-heading-04` | IBM 8-bar logo: IBM Plex Sans (Regular) - 28px, IBM Services logotype: IBM Plex Sans (Medium) - 28px |
 | 02. Subtitle                                   |   `Text-02: Body-short-02`    |   IBMIBM Plex Sans (Regular) - 16px |
-| 03. Link / Action                              |   `Body-short-01, link-01`  |    IBM Plex Sans, 14px |
-| 04. Description                                |   `Text-03: Body-short-02`    |    IIBM Plex Sans (Regular) - 16px |
+| 03. Link(s) / Action(s)                              |   `Body-short-01, link-01`  |    IBM Plex Sans, 14px |
+| 03a. Link(s) dividers                              |   `$ui-04`  |    16px height |
+| 04. Description                               |   `Text-02: Body-short-02`    |    IBM Plex Sans (Regular) - 16px |
 | 05. Version number / title                      |   `Text-01: Productive-heading-01`   |    IBM Plex Sans (semi-bold) - 14px |
-| 07. Primary/secondary button(Button Component) |   `Text-01: Body-short-01`    |    IBM Plex Sans (Regular) - 14px |
+| 06. Primary/secondary button (Button Component) |   `Text-01: Body-short-01`    |    IBM Plex Sans (Regular) - 14px |
 
 #### Spacing
 
@@ -115,9 +116,15 @@ About modal content should never scroll horizontally; instead, use a larger size
 
 #### Display additional information
 
-Use [tabs](https://www.carbondesignsystem.com/components/tabs/usage)to display additional information that can help inform your users. For example, used to display technologie requirements being used in your product.
+Use [tabs](https://www.carbondesignsystem.com/components/tabs/usage) to display additional information that can help inform your users. For example, used to display technology requirements being used in your product.
 
 ![Displaying additional information](images/12.png)
+
+#### Displaying service version details
+
+If your product is comprised of multiple services and it is important for your customers to know what they are and what version of each service they might be using, you can link to a separate page from the modal to a "Version details" page. The page contains a data table listing each service and its corresponding version number.
+
+![Version details](images/17.png)
 
 ## Related
 

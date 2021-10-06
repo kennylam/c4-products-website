@@ -1029,6 +1029,305 @@
       "last_updated": "05/07/21",
       "used_by": ["(Global)"],
       "source": ["C&C"]
+    },
+
+    {
+      "id": "80",
+      "title": "accelerator",
+      "definition": "A set of assets that enable customers to understand core concepts and implement solutions.",
+      "compare": ["-"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "81",
+      "title": "add on",
+      "definition": "-",
+      "compare": ["service"],
+      "usage": "Do not use to mean \"an additional product or capability to your core product or capability\", use \"service\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "82",
+      "title": "application",
+      "definition": "One or more computer programs or software components that provide a function in direct support of a specific business process or processes.",
+      "compare": ["-"],
+      "usage": "Term is understood in context. Do not create additional specific definitions if you can help it.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "83",
+      "title": "capability",
+      "definition": "The core functions of a service. For example, the XYZ service provides \"monitoring\" capability.",
+      "compare": ["service"],
+      "usage": "Do not use synonymously with \"service.\" A \"capability\" is the function of the \"service.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "84",
+      "title": "cartridge",
+      "definition": "-",
+      "compare": ["service"],
+      "usage": "Do not use to mean \"an additional product or capability to your core product or capability\", use \"service\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "85",
+      "title": "component",
+      "definition": "-",
+      "compare": ["service"],
+      "usage": "Do not use to mean \"an additional product or capability to your core product or capability\", use \"service\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "86",
+      "title": "connector",
+      "definition": "The means by which a data source is connected to a product or service. For example, in CP4D, a template specifies the metadata required to connect, or, in CP4S, the code that facilitates the connection by way of a template between product and data source.",
+      "compare": ["integration", "service"],
+      "usage": "Do not use interchangeably with \"integration\". An integration exists outside of a product or service, a connector becomes one with the product or service.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "87",
+      "title": "custom resource",
+      "definition": "An instance of a custom resource definition.",
+      "compare": ["-"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "88",
+      "title": "custom resource definition",
+      "definition": "A customizable YAML file that defines a logically related group of objects in a cluster. Custom resource definitions enable a custom resource to be used like any native Kubernetes object in the cluster.",
+      "compare": ["-"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "89",
+      "title": "integration",
+      "definition": "ny independent application that provides additional capabilities to an IBM service or base product.",
+      "compare": ["connector", "service"],
+      "usage": "Do not use interchangeably with \"connector\". An integration exists outside of a product or service, a connector becomes one with the product or service.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "90",
+      "title": "migration",
+      "definition": "The process of moving applications, infrastructure, or data from one platform or system to another.",
+      "compare": ["modernization", "transformation"],
+      "usage": "Migration refers specifically to the act of moving content from a platform or system to another. Do not use to mean modernization or transformation.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "91",
+      "title": "modernization",
+      "definition": "The process of updating and improving the architecture of a system, application, or infrastructure by building on previously unused capabilities. Capabilities can be from unused features of a current platform or system, or from the migration to a new platform or system.",
+      "compare": ["migration", "transformation"],
+      "usage": "Modernization is the act of updating applications/platforms/infrastructure. Do not use to mean a migration or transformation.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "92",
+      "title": "module",
+      "definition": "-",
+      "compare": ["service"],
+      "usage": "Do not use to mean \"an additional product or capability to your core product or capability\", use \"service\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "93",
+      "title": "OpenID Connect (OIDC)",
+      "definition": "An identity protocol and open standard that is built on top of the OAuth 2.0 protocol. It enables client applications to rely on authentication that is performed by an OpenID Connect provider to verify the identity of a user.",
+      "compare": ["-"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "94",
+      "title": "operand",
+      "definition": "The service component used by an operator to execute actions.",
+      "compare": ["-"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "95",
+      "title": "operator",
+      "definition": "A system design that simulates user behavior by linking a controller to custom resources, simulating the act of observing differences in states then acting on them.",
+      "compare": ["-"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "96",
+      "title": "private key",
+      "definition": "The secret half of a cryptographic key pair that is used with a public key algorithm. The private key is known only to its owner. Private keys are typically used to digitally sign data and to decrypt data that has been encrypted with the corresponding public key.",
+      "compare": ["public key"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "97",
+      "title": "public key",
+      "definition": "The non-secret half of a cryptographic key pair that is used with a public key algorithm. The public key is made available to everyone. Public keys are typically used to verify digital signatures and to encrypt data that can be decrypted only with the corresponding private key.",
+      "compare": ["private key"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "98",
+      "title": "required component",
+      "definition": "In IBM Cloud Pak solutions, a non-client-facing component that supports one or more services.",
+      "compare": ["service"],
+      "usage": "See also \"service.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "99",
+      "title": "resource",
+      "definition": "A physical or logical component that can be provisioned or reserved for an application or service instance. Examples of resources can include storage, processors, memory, clusters, and VMs.",
+      "compare": ["-"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "100",
+      "title": "service",
+      "definition": "In IBM Cloud Pak solutions, a set of capabilities that provide functionality to a product.",
+      "compare": ["add on", "capability", "cartridge", "component", "connector", "integration", "module", "required component"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "101",
+      "title": "transformation",
+      "definition": "The process of replacing a platform or system to introduce additional capability or capacity. Migration and modernization can be facets of a transformation.",
+      "compare": ["migration", "modernization"],
+      "usage": "Moving to the IBM Cloud Paks. Standalone non-Kubernetes product to a IBM Cloud Pak or containerized software.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "102",
+      "title": "upgrade",
+      "definition": "To install a new version or release of a product to replace an earlier version or release of the same product.",
+      "compare": ["-"],
+      "usage": "Within a product, going from one version to another.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
     }
 
   ]

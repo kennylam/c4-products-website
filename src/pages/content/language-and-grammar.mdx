@@ -34,8 +34,8 @@ Quite a few English words are spelled differently in different parts of the worl
 we always use US English spelling.
 
 <DoDontRow>
-  <DoDont text="The artifact is colored gray" aspectRatio="" />
-  <DoDont text="The artefact is coloured grey" type="dont" aspectRatio="" />
+  <DoDont text="The artifact is colored gray" aspectRatio="1:1" />
+  <DoDont text="The artefact is coloured grey" type="dont" aspectRatio="1:1" />
 </DoDontRow>
 
 **Some examples:**
@@ -102,7 +102,7 @@ In contrast, in a passive voice construction, the target of the action is emphas
 Using the passive voice is occasionally useful though — such as when you want to avoid blaming the user:
 
 <DoDontRow>
-  <DoDont text="Error: An incorrect value was entered" aspectRatio="" />
+  <DoDont text="Error: An incorrect value was entered" aspectRatio="1:1" />
 </DoDontRow>
 
 
@@ -113,8 +113,8 @@ Wherever possible, use simple, single-word verb forms. This makes text easier to
 For example, avoid using verb phrases when the verb alone will suffice.
 
 <DoDontRow>
-  <DoDont text="Start the monitoring service" aspectRatio="" />
-  <DoDont text="Start up the monitoring service" type="dont" aspectRatio="" />
+  <DoDont text="Start the monitoring service" aspectRatio="1:1" />
+  <DoDont text="Start up the monitoring service" type="dont" aspectRatio="1:1" />
 </DoDontRow>
 
 ## Use the present tense
@@ -123,8 +123,8 @@ There are twelve major verb tenses in the English language, but thankfully, we r
 most of these when writing text for our product UIs. In general, write using simple, present tense verbs.
 
 <DoDontRow>
-  <DoDont text="Message sent" aspectRatio="" />
-  <DoDont text="Your message has been sent" type="dont" aspectRatio="" />
+  <DoDont text="Message sent" aspectRatio="1:1" />
+  <DoDont text="Your message has been sent" type="dont" aspectRatio="1:1" />
 </DoDontRow>
 
 If you'd like more detail, there are plenty of good online grammar resources, including information 
@@ -174,18 +174,47 @@ Use your judgement as to whether phrases or full sentences are most appropriate 
 
 ## The use of pronouns
 
-A pronoun is used in place of a noun (for example, _she_ instead of _Ginni_ or _it_ instead of _the car_). Sounds simple, but be careful not to fall into any of the following pitfalls:
+<InlineNotification kind="info">
 
-- Don’t use a plural pronoun (_they_, _their_, _theirs_, _them_, or _themselves_) to refer to a singular noun. (While this usage is fairly common, it is grammatically incorrect.)
+<strong>Note:</strong><br/>
+The general pronoun guidance contained in this sub-section is worth knowing. However, do note that the pronoun <em>they</em> is 
+now commonly used to refer to a single person whose gender is either intentionally not revealed or whose gender 
+identity is nonbinary, so feel free to use <em>they</em> as a singular pronoun where relevant.
+
+</InlineNotification>
+
+A pronoun is used in place of a noun (for example, _she_ instead of _Ginni_ or _it_ instead of _the car_). 
+This sounds simple, but it's not always so.
+
+- In general, don’t combine a plural pronoun (_they_, _their_, _theirs_, _them_, or _themselves_) with a singular noun:
+
+<Row>
+  <Column colMd={4} colLg={4}>
+    <DoDontExample
+      type="do"
+      text="All employees are expected to clean their work areas before they go home."
+      aspectRatio="1:1"
+    />
+  </Column>
+  <Column colMd={4} colLg={4}>
+    <DoDontExample
+      type="dont"
+      text="An employee is expected to clean their work area before they go home."
+      aspectRatio="1:1"
+    />
+  </Column>
+</Row>
+
 - Don’t use gender-specific pronouns such as _he_, _him_, _himself_, _his_ or _she_, _her_, _herself_, _hers_ when the gender of the subject is unknown.
+- **Tip:** You can generally avoid needing to use a gendered pronoun by simply referring to _the user_.
 - Don’t try to cover both genders by using a construction such as _he/she_, _(s)he_, _him/her_, _his/hers_, and so on.
 - Don’t use _it_ to refer to a person.
 
-So what's ~~a guy~~ ~~a girl~~ one to do?
+**So what's ~~a guy~~ ~~a girl~~ one to do?**
 
-- You can use the [imperative mood](https://dictionary.cambridge.org/grammar/british-grammar/imperative-clauses-be-quiet) 
-(for example, "Print document") to avoid needing a pronoun at all.
-- Use a second person pronoun: _you_, _your_, _yours_, or _yourself_.
+1. You can use the [imperative mood](https://dictionary.cambridge.org/grammar/british-grammar/imperative-clauses-be-quiet) 
+(for example, "Print document" or "Publish changes") to avoid needing a pronoun at all.
+1. Use a second person pronoun: _you_, _your_, _yours_, or _yourself_.
 
 <Row>
   <Column colMd={4} colLg={4}>
@@ -204,7 +233,11 @@ So what's ~~a guy~~ ~~a girl~~ one to do?
   </Column>
 </Row>
 
+3. When referring to a single person whose gender is either intentionally not revealed or whose gender identity is nonbinary, use _they_.
+
+
 > When I was a kid, my teacher looked my way and said, “Name two pronouns.” I said, “Who, me?
+
 
 ## The use of non-English words
 
@@ -241,11 +274,12 @@ Also, avoid cliches like the plague.\*
 
 | 🚫 Jargon to avoid   | Guidance                                                                                                                     |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| abort / terminate    | Use a simpler, less emotive term such as _cancel_, _stop_, or _end_.                                                         |
 | drill down           | Use a more direct term such as _refine_, _explore_, or _expand_.                                                             |
-| drive                | Don't use in the abstract sense of driving change. Use a more concrete verb such as _control_, _manage_, or _increase_. |
+| drive                | Don't use in the abstract sense of driving change. Use a more concrete verb such as _control_, _manage_, or _increase_.      |
 | facilitate           | Don’t use in an abstract sense such as to facilitate progress. Instead, say something specific about how you are helping.    |
 | going forward        | Use _in future_ or a similar, more concrete phrase.                                                                          |
-| monetize             | Re-word if possible to use more natural language, such as _chargeable_ or _paid plans_.                                 |
+| monetize             | Re-word if possible to use more natural language, such as _chargeable_ or _paid plans_.                                      |
 | no holds barred      | If there are no restrictions, it is clearer to write something such as _without restrictions_.                               |
 | opinionated          | Don’t use in relation to inanimate objects or tools.                                                                         |
 | religion / religious | Don’t use to refer to a person or group taking a particular stance or approach to something.                                 |
@@ -259,49 +293,31 @@ Also, avoid cliches like the plague.\*
 
 ## Referring to UI elements
 
-When you refer to a UI element in text, write it exactly as it is written in the UI. This includes using 
-the same capitalization as used in the UI.
+When you refer to UI elements in text, write out the UI labels exactly as they are written in the UI (that is, 
+follow the same capitalization) but render the UI controls in **bold** text to make them stand out from the 
+surrounding text. 
 
-<Row>
-  <Column colMd={4} colLg={4}>
-    <DoDontExample
-      type="do"
-      text="You can view recently performed tasks from the Home page."
-      aspectRatio="1:1"
-    />
-  </Column>
-  <Column colMd={4} colLg={4}>
-    <DoDontExample
-      type="do"
-      text="After you have configured your notification settings, click Next."
-      aspectRatio="1:1"
-    />
-  </Column>
-</Row>
-<Row>
-  <Column colMd={4} colLg={4}>
-    <DoDontExample
-      type="do"
-      text="To view more detailed information, click the Status and logs tab."
-      aspectRatio="1:1"
-    />
-  </Column>
-</Row>
+Examples:
+- You can view recently performed tasks from the **Home** page.
+- After you have configured your notification settings, click **Next**.
+- To view more detailed information, click the **Status and logs** tab.
+
+
 
 ### How to refer to different UI elements in text
 
 | UI element      | How to refer to it              | Examples                      |
 | --------------- | --------------------------------| ----------------------------- |
-| button          | **Verb:** Use _click_.<br/><br/>**Label:** Refer to a push button by its label only | Click OK.<br/><br/>Click Cancel. |
-| checkbox        | **Verb:** Use _select_ to refer to selecting the choice. Use _clear_ to refer to deselecting the choice.<br/><br/>**Label:** Refer to the checkbox by its label followed by _checkbox_. | To enable email notifications select the Notify me checkbox.<br/><br/>To stop receiving email notifications, clear the Notify me checkbox. |
-| drop-down list  | **Verb:** Use _select_ to refer to selecting an item from a list.<br/><br/>**Label:** Refer to a drop-down list by its label, followed by _list_. | From the Export file list, select PDF. |
-| icon            | **Verb:** Use _click_, _double-click_, or _right-click_ as necessary.<br/><br/>**Label:** Refer to the icon by its label, followed by _icon_, or by the name that is indicated by the tooltip, followed by _icon_.<br/><br/>If an icon does not have a label or tooltip, refer to the icon by a generic description. | Double-click the IBM MQ icon.<br/><br/>Click Cancel. |
-| input field     | **Verb:** Use _type_, _enter_, or _specify_.<br/><br/>**Label:** Refer to the input field by its label, followed by _field_. | In the Server URL field, enter the URL of the server. |
-| menu item       | **Verb:** Use _click_ for the menu name and for the menu item.<br/><br/>**Label:** Refer to a menu or menu item by its label only, unless _menu_ or _menu item_ is required for clarity. | Click File > New > New memo.<br/><br/>From the Format menu, click Edit.<br/><br/>Right-click the folder name and click Copy. |
-| pane<br/><br/>_(A framed section of a window or web page.)_ | **Verb:** Use _is displayed_ to describe the presence of the pane in the window or on the page.<br/><br/>**Label:** If a pane has a title, refer to it by its title, followed by _pane_. If a pane does not have a title, refer to it by a descriptive name. | The Properties pane is displayed.<br/><br/>Authoring standards are displayed in the Complying with standards pane. |
-| radio button    | **Verb:** Use _click_ to refer to selecting and deselecting a radio button; when you refer to a radio button that is selected, use _selected_.<br/><br/>**Label:** Refer to a radio button by its label only. | Click Light theme.<br/><br/>In the Notification settings area, click Enable web browser notifications.<br/><br/>If Enable web browser notifications is selected, ... |
-| switch / toggle<br/><br/>_(A control that is used to quickly switch between two possible states. See the Carbon [toggle](https://www.carbondesignsystem.com/components/toggle/usage) component.)_ | **Verb:** Use _set_, specifying the label of the thing being set, and the state that it is being set to.<br/><br/>**Label:** Refer to a switch by its label, followed by either _switch_ or _toggle_. | Set Data roaming to On.<br/><br/>If the Slack notification switch is set to On then when widgets are created, edited, or deleted a message is sent to your specified Slack channel. |
-| tab             | **Verb:** Use _click_.<br/><br/>**Label:** Refer to the tab by its label, followed by _tab_. | Click the Monitoring tab.<br/><br/>To view a list of supported capabilities and functions, click the Features tab. |
-| table           | **Verb:** Use _select_ to refer to selecting an item in a table.<br/><br/>**Label:** Refer to a table by its label, followed by _table_. | In the Test results table, select the test results you want to display. |
-| toolbar         | **Verb:** Use _click_.<br/><br/>**Label:** If there is only one toolbar in the UI, just refer to the toolbar. If there are multiple toolbars use the particular toolbar label or refer to it by a descriptive name, followed by _toolbar_. | On the toolbar, click Save.<br/><br/>On the Editing toolbar, click Remove formatting. |
-| window          | **Verb:** Use _open_ and _close_ to describe the immediate result of a user action; use _is displayed_ to describe the presence of the window on the screen. Don’t use _appear_ or _display_.<br/><br/>**Label:** Refer to a window by its title, followed by _window_. | In the Print window, click All.<br/><br/>The Print window opens.<br/><br/>The Print window is displayed. |
+| button          | **Verb:** Use _click_.<br/><br/>**Label:** Refer to a push button by its label only | Click **OK**.<br/><br/>Click **Cancel**. |
+| checkbox        | **Verb:** Use _select_ to refer to selecting the choice. Use _clear_ to refer to deselecting the choice.<br/><br/>**Label:** Refer to the checkbox by its label followed by _checkbox_. | To enable email notifications select the **Notify me** checkbox.<br/><br/>To stop receiving email notifications, clear the **Notify me** checkbox. |
+| drop-down list  | **Verb:** Use _select_ to refer to selecting an item from a list.<br/><br/>**Label:** Refer to a drop-down list by its label, followed by _list_. | From the **Export file** list, select **PDF**. |
+| icon            | **Verb:** Use _click_, _double-click_, or _right-click_ as necessary.<br/><br/>**Label:** Refer to the icon by its label, followed by _icon_, or by the name that is indicated by the tooltip, followed by _icon_.<br/><br/>If an icon does not have a label or tooltip, refer to the icon by a generic description. | Double-click the **IBM MQ** icon.<br/><br/>Click **Cancel**. |
+| input field     | **Verb:** Use _type_, _enter_, or _specify_.<br/><br/>**Label:** Refer to the input field by its label, followed by _field_. | In the **Server URL** field, enter the URL of the server. |
+| menu item       | **Verb:** Use _click_ for the menu name and for the menu item.<br/><br/>**Label:** Refer to a menu or menu item by its label only, unless _menu_ or _menu item_ is required for clarity. | Click **File > New > New memo**.<br/><br/>From the **Format** menu, click **Edit**.<br/><br/>Right-click the folder name and click **Copy**. |
+| pane<br/><br/>_(A framed section of a window or web page.)_ | **Verb:** Use _is displayed_ to describe the presence of the pane in the window or on the page.<br/><br/>**Label:** If a pane has a title, refer to it by its title, followed by _pane_. If a pane does not have a title, refer to it by a descriptive name. | The **Properties** pane is displayed.<br/><br/>Authoring standards are displayed in the **Complying with standards** pane. |
+| radio button    | **Verb:** Use _click_ to refer to selecting and deselecting a radio button; when you refer to a radio button that is selected, use _selected_.<br/><br/>**Label:** Refer to a radio button by its label only. | Click **Light theme**.<br/><br/>In the **Notification settings** area, click **Enable web browser notifications**.<br/><br/>If **Enable web browser notifications** is selected, ... |
+| switch / toggle<br/><br/>_(A control that is used to quickly switch between two possible states. See the Carbon [toggle](https://www.carbondesignsystem.com/components/toggle/usage) component.)_ | **Verb:** Use _set_, specifying the label of the thing being set, and the state that it is being set to.<br/><br/>**Label:** Refer to a switch by its label, followed by either _switch_ or _toggle_. | Set **Data roaming** to **On**.<br/><br/>If the **Slack notification** switch is set to **On** then when widgets are created, edited, or deleted a message is sent to your specified Slack channel. |
+| tab             | **Verb:** Use _click_.<br/><br/>**Label:** Refer to the tab by its label, followed by _tab_. | Click the **Monitoring** tab.<br/><br/>To view a list of supported capabilities and functions, click the **Features** tab. |
+| table           | **Verb:** Use _select_ to refer to selecting an item in a table.<br/><br/>**Label:** Refer to a table by its label, followed by _table_. | In the **Test results** table, select the test results you want to display. |
+| toolbar         | **Verb:** Use _click_.<br/><br/>**Label:** If there is only one toolbar in the UI, just refer to the toolbar. If there are multiple toolbars use the particular toolbar label or refer to it by a descriptive name, followed by _toolbar_. | On the toolbar, click **Save**.<br/><br/>On the **Editing** toolbar, click **Remove formatting**. |
+| window          | **Verb:** Use _open_ and _close_ to describe the immediate result of a user action; use _is displayed_ to describe the presence of the window on the screen. Don’t use _appear_ or _display_.<br/><br/>**Label:** Refer to a window by its title, followed by _window_. | In the **Print** window, click **Print all**.<br/><br/>The **Print** window opens.<br/><br/>The **Print** window is displayed. |
