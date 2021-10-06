@@ -1,14 +1,15 @@
 ---
 title: Integrated interaction framework
-tabs: ['Overview', 'Components']
+tabs: ["Overview", "Components"]
 ---
+
+import { Link } from "gatsby";
 
 <PageDescription>
 
 The following components can be used to created integrated interactions across the Pak.
 
 </PageDescription>
-
 
 <AnchorLinks>
   <AnchorLink>Pivot buttons</AnchorLink>
@@ -19,7 +20,6 @@ The following components can be used to created integrated interactions across t
   <AnchorLink>Modals</AnchorLink>
   <AnchorLink>Custom integrations</AnchorLink>
 </AnchorLinks>
-
 
 ## Resources
 
@@ -37,14 +37,13 @@ The following components can be used to created integrated interactions across t
   </Column>
 </Row>
 
-
 ## Pivot buttons
 
 Pivot buttons provide the ease and means to contextually work from one application to another application, keeping the user in a fluid workflow. Pivot buttons can be used as a [single button](https://www.carbondesignsystem.com/components/button/usage/) action or presented as a [combo button](https://pages.github.ibm.com/ai-applications/design/components/buttons/usage#split-button) when multiple options are available.
 
 ### Anatomy
 
-Pivot buttons leverage Carbon buttons. Pivot buttons augment Carbon buttons with the use of application icons to set destination expectations.  This anatomy example uses a [combo button](https://pages.github.ibm.com/ai-applications/design/components/buttons/usage#split-button).
+Pivot buttons leverage Carbon buttons. Pivot buttons augment Carbon buttons with the use of application icons to set destination expectations. This anatomy example uses a [combo button](https://pages.github.ibm.com/ai-applications/design/components/buttons/usage#split-button).
 
 <Row>
  <Column colLg={8}>
@@ -57,8 +56,8 @@ Pivot buttons leverage Carbon buttons. Pivot buttons augment Carbon buttons with
 1. **Available actions:** Supplementary apps that perform an action or take the user further in to the experience to obtain information about the subject.
 2. **Upsell nudge (optional):** Apps that are not available to the user but can perform an action or provide a point of view about the subject. To avoid over exposure to upsell nudges in productive use, conditionally considered use for appropriate contexts (ex: Trials. First 30 days of productive use).
 3. **Default action:** Primary app action for the subject.
-4. **Text label:** Indicates what action will occur. The application name should not be included in the text label. Button labels should follow [Carbon text label guidance](https://www.carbondesignsystem.com/components/button/usage/#text-labels), using the {verb} + {noun} formula and leverage common [action labels](https://www.carbondesignsystem.com/guidelines/content/action-labels).
-5. **App icon:** Indicates the app where the action will take place or where the user will be taken.  The solid color icon is predominantly used within buttons unless a ghost button is used. Ghost buttons use the color icon. For better legibility, icons are size 20.
+4. **Text label:** Indicates what action will occur. The application name should not be included in the text label. Button labels should follow <Link to="https://www.carbondesignsystem.com/components/button/usage/#text-labels">Carbon text label guidance</Link>, using the {verb} + {noun} formula and leverage common <Link to="https://www.carbondesignsystem.com/guidelines/content/action-labels">action labels</Link>.
+5. **App icon:** Indicates the app where the action will take place or where the user will be taken. The solid color icon is predominantly used within buttons unless a ghost button is used. Ghost buttons use the color icon. For better legibility, icons are size 20.
 
 ### When to use
 
@@ -81,11 +80,10 @@ Pivot buttons leverage Carbon buttons. Pivot buttons augment Carbon buttons with
 
 </DoDontRow>
 
-
 ### When not to use
+
 - 🚫 Do not use if the button does not perform an action facilitated by another application.
 - 🚫 Do not use if the button does not pivot to another application.
-
 
 ## ReturnTo banner
 
@@ -120,6 +118,7 @@ The transition serves to distinguish against conventional navigation within an a
 </Row>
 
 ### When to use
+
 - The returnTo banner displays the name of the application and the page that was pivoted away from.
 - Pressing on the returnTo banner will take you back to the page within the original app.
 - There should only be one returnTo path tracked at a time.
@@ -129,12 +128,11 @@ The transition serves to distinguish against conventional navigation within an a
 - Using the global navigation should not reveal the returnTo banner.
 
 ### When not to use
+
 - 🚫 Not displayed if navigating using the launchbar, global navigation, or platform homepage.
 - 🚫 Not displayed if using the breadcrumbs to navigate backwards.
 - 🚫 Not displayed if making lateral jumps from platform-level pages.
 - 🚫 Not displayed if navigating around within the same application.
-
-
 
 ## Data decorators
 
@@ -142,7 +140,7 @@ Data decorators distinguishes important data points from less important content.
 
 ### Anatomy
 
-A decorator is composed of a severity indicator, an object type, and a value. Everything but the value is optional. There is a spacer line used only when the indicator and/or the type is displayed to separate the value. 
+A decorator is composed of a severity indicator, an object type, and a value. Everything but the value is optional. There is a spacer line used only when the indicator and/or the type is displayed to separate the value.
 
 <Row>
  <Column colLg={8}>
@@ -225,28 +223,25 @@ Actions can be taken directly from a data decorator using right click to initiat
  </Column>
 </Row>
 
-
 ### When to use
 
-- Data decorators can be used anywhere enriched data is presented. They mostly occur in tabular format, but there is an inline version for displaying with other text. The inline version could also be used where the space is limited (ex: side panels). 
+- Data decorators can be used anywhere enriched data is presented. They mostly occur in tabular format, but there is an inline version for displaying with other text. The inline version could also be used where the space is limited (ex: side panels).
 - Data decorators should only apply to data objects that are enriched or could potentially be enriched
 - Data decorators define/contain data as objects to the user
 
 ### When not to use
 
 - 🚫 Data decorators should not be used to contain simple text
-- 🚫 Data decorators should not be used to emphasize/stylize text in a paragraph 
+- 🚫 Data decorators should not be used to emphasize/stylize text in a paragraph
 - 🚫 Data decorators should not be used as titles or headlines
-
 
 ## Data fragments
 
 Data fragments are structured information sourced from elsewhere across the Pak to augment the contextual understanding of a specific subject without needing to observe the information from multiple page destinations and sources. Data fragments can be sourced from applications, connected data sources, and informational API feeds.
 
-
 ### Anatomy
 
-Data fragments are designed for universal consistency and common data formatting, primarily using the `DescriptionListModule`. `DescriptionModule` can be used as an alternative for long form content. If necessary for the experience, data fragments can take the shape of a custom design. 
+Data fragments are designed for universal consistency and common data formatting, primarily using the `DescriptionListModule`. `DescriptionModule` can be used as an alternative for long form content. If necessary for the experience, data fragments can take the shape of a custom design.
 
 <Row>
  <Column colLg={8}>
@@ -256,9 +251,9 @@ Data fragments are designed for universal consistency and common data formatting
  </Column>
 </Row>
 
-1. **Accordion item:** Title identifying the source of the data fragment. 
+1. **Accordion item:** Title identifying the source of the data fragment.
 2. **Sub-section title:** Sub-section title used to identify information at a glance.
-2. **Fragment content:** Information related to the subject, sourced from another application(s) or connected data source(s).
+3. **Fragment content:** Information related to the subject, sourced from another application(s) or connected data source(s).
 
 ### Placement
 
@@ -296,7 +291,6 @@ Data fragments can be used within a page UI but are typically observed within pa
 
 </DoDontRow>
 
-
 ## Tearsheets
 
 Tearsheets, as part of the IIF, are used to bring correlated information from other sources (applications & services) to the user, avoiding unneccesary navigation elsewhere across the platform.
@@ -316,12 +310,10 @@ Tearsheets choreograph with other IIF components, like pivot buttons, to initiat
 1. **Tearsheet:** The tearsheet is hosted by the platform. The Tearsheet is an ideal component because of it’s ability to retain context above the user’s current page.
 2. **Content:** The content within the tearsheet is owned by an application. Through the tearsheet, content is surfaced within any app, anywhere on the platform to capture information and pass it back.
 
-
-
 ### When to use
+
 - Narrow tearsheets can be used to pass information to another place or service on the Pak.
 - Wide tearsheets can be used to shift focus to a related experience while keeping the context to the originating page.
- 
 
 <DoDontRow>
 
@@ -338,13 +330,6 @@ Tearsheets choreograph with other IIF components, like pivot buttons, to initiat
 </DoDont>
 
 </DoDontRow>
-
-
-
-
-
-
-
 
 ## Modals
 
@@ -363,8 +348,6 @@ Modals, as part of the IIF, are used to provide context when confirming actions 
 1. **Modal:** The modal can utilize default Carbon components or use a custom modal if the experience dictates it.
 2. **Content:** The content within the modal is owned by an application or service. It can host simple inputs and/or confirmations that trigger an action elsewhere on the platform.
 
-
-
 ### When to use
 
 <DoDontRow>
@@ -382,7 +365,6 @@ Modals, as part of the IIF, are used to provide context when confirming actions 
 </DoDont>
 
 </DoDontRow>
-
 
 ## Custom integrations
 
