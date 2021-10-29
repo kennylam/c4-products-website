@@ -18,8 +18,6 @@
       path: /contributing/updating-this-site/overview
 - title: Components
   pages:
-    - title: "Tag set"
-      path: /components/tag-set
     - title: Cards
       path: /components/card/overview
       subpage:
@@ -31,12 +29,16 @@
       path: /components/grid-behaviors
     - title: "Modified tabs"
       path: /components/modified-tabs
+    - title: "Options tile"
+      path: /components/options-tile/usage
     - title: "Page header"
       path: /components/page-header/usage
     - title: "Progressive loading bar"
       path: /components/progressive-loading-bar
     - title: "Side panel"
       path: /components/side-panel/usage
+    - title: "Tag set"
+      path: /components/tag-set
     - title: "Tearsheet"
       path: /components/tearsheet/usage
 - title: Patterns
