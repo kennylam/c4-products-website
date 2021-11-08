@@ -27,6 +27,8 @@
         path: /components/card/productive/usage
     - title: Grid behaviors
       path: /components/grid-behaviors
+    - title: Menu and combo buttons
+      path: /components/button-menu
     - title: "Modified tabs"
       path: /components/modified-tabs
     - title: "Options tile"
