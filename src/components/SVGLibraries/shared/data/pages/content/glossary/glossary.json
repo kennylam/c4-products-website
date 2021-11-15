@@ -170,8 +170,8 @@
     {
       "id": "14",
       "title": "create",
-      "definition": "Makes a new object from scratch (for example, creates a calendar event or creates a new document). ",
-      "compare": ["add", "copy", "insert", "new"],
+      "definition": "In general usage: Makes a new object from scratch (for example, creates a calendar event or creates a new document). ",
+      "compare": ["add", "copy", "create (IBM Cloud entry)", "insert", "new"],
       "usage": "In scenarios where the user needs to supply some details or settings as part of the create process, use \"new\" to initiate the action and \"create\" to apply the user-supplied details or settings to the new object.",
       "example": "",
       "notification": {},
@@ -358,7 +358,7 @@
       "example": "",
       "notification": {},
       "last_updated": "01/01/19",
-      "used_by": ["Cloud Platform"],
+      "used_by": ["IBM Cloud"],
       "source": ["Carbon"]
     },
 
@@ -910,7 +910,7 @@
       "example": "",
       "notification": {},
       "last_updated": "01/01/19",
-      "used_by": ["Cloud Platform"],
+      "used_by": ["IBM Cloud"],
       "source": ["Carbon"]
     },
 
@@ -1328,6 +1328,201 @@
       "last_updated": "06/22/21",
       "used_by": ["Cloud Paks"],
       "source": ["CCPCG"]
+    },
+
+    {
+      "id": "103",
+      "title": "billable account",
+      "definition": "Use to generically refer to Pay-As-You-Go and Subscription accounts.",
+      "compare": ["-"],
+      "usage": "Example: \"When you’re ready to grow, you can upgrade your Lite account to a billable account: Pay-As-You-Go or Subscription.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "104",
+      "title": "classic infrastructure",
+      "definition": "Use to refer to an infrastructure as a service (IaaS) solution that doesn’t include Virtual Private Cloud (VPC) offerings.",
+      "compare": ["-"],
+      "usage": "Example: \"Classic infrastructure and VPC infrastructure are cost neutral, so you can focus on which environment best meets your needs.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "105",
+      "title": "cloud",
+      "definition": "Use to describe remote computing setups that can be used without owning the entire machine. Write as shown (lower case) except for when it’s part of the platform name.",
+      "compare": ["-"],
+      "usage": "Example: \"The IBM Cloud platform is composed of multiple components that work together to provide a consistent and dependable cloud experience.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "106",
+      "title": "compute",
+      "definition": "Use to refer to infrastructure resources that serve as the basis for building apps in the cloud.",
+      "compare": ["-"],
+      "usage": "Example: \"You can demonstrate your skills with the compute, network, and storage capabilities of IBM Cloud.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "107",
+      "title": "cost estimator",
+      "definition": "Use to refer to the tool that is used to calculate the price of an offering before it’s purchased and an instance is created. Use sentence-style capitalization except for when you’re referring to the icon name.",
+      "compare": ["-"],
+      "usage": "Example: \"At any point, you can click the Cost estimator icon in the console menu to get a summary of your estimated costs.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "108",
+      "title": "create",
+      "definition": "IBM Cloud context: Use to refer to the process of creating (provisioning) an instance of an offering.",
+      "compare": ["create (general usage entry)"],
+      "usage": "Use as the label for a button, stand-alone or in a dialog or form, that creates a new object. Don’t include the offering name in the label.",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "109",
+      "title": "dashboard",
+      "definition": "Use to describe the default page that users land on when they log in to the IBM Cloud console. Contains numerous widgets for viewing a high-level summary of usage, users, support cases, resources, and more.",
+      "compare": ["-"],
+      "usage": "Example: \"You can customize your dashboard to ensure that what’s displayed is relevant to you.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "110",
+      "title": "devices",
+      "definition": "Use to refer to instances of Bare Metal Server and Virtual Server.",
+      "compare": ["-"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "111",
+      "title": "feature code",
+      "definition": "Use to refer to an IBM-provided code that is used to unlock new features, such as increased memory, and expand the capabilities of a Lite account.",
+      "compare": ["-"],
+      "usage": "Example: \"Feature codes are typically provided for certain events, such as educational sessions or conference workshops.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "112",
+      "title": "IBM Cloud catalog",
+      "definition": "Use to refer to the menu of available offerings. When referencing in the docs, include “IBM Cloud” in the first instance in each topic. Use “catalog” for subsequent instances within each topic. Use lower case for all instances of “catalog.”",
+      "compare": ["IBM Cloud console"],
+      "usage": "Example: \"Use resource groups to organize the resources that you create from the IBM Cloud catalog.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "113",
+      "title": "IBM Cloud console",
+      "definition": "Use to refer to the core UI for managing accounts, billing and usage, and access. When referencing in the docs, include “IBM Cloud” in the first instance in each topic. Use “console” for subsequent instances within each topic. Use lower case for all instances of “console.”",
+      "compare": ["IBM Cloud catalog"],
+      "usage": "Example: \"You can search for your resources from anywhere in the IBM Cloud console. From the console menu bar, type the name of a resource in the search field.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "114",
+      "title": "offering details page",
+      "definition": "Use to refer to the page that contains metadata, text, and media that describes an offering and configuration fields or pages, depending on the complexity of the offering’s configuration. Formerly known as the catalog details page.",
+      "compare": ["-"],
+      "usage": "Example: \"You can find details about the pricing plan on the offering details page.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "115",
+      "title": "promo code",
+      "definition": "Use to refer to how discounts are applied to an order at checkout.",
+      "compare": ["-"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "116",
+      "title": "provision",
+      "definition": "Do not use. See \"create\".",
+      "compare": ["create"],
+      "usage": "-",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "117",
+      "title": "repo",
+      "definition": "Short for repository. Use to refer to the place where source code is created and updated.",
+      "compare": ["-"],
+      "usage": "-",
+      "example": "Example: \"Click View repo to access the starter kit code.\"",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
     }
 
   ]
