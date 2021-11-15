@@ -2,3 +2,36 @@
 $carbon--theme: $carbon--theme--g10;
 @include carbon--theme();
 @import './glossary.scss';
+
+main.container--homepage {
+  background: #000;
+}
+
+#homepage-cards {
+  .bx--aspect-ratio {
+    width: 100%;
+  }
+
+  .bx--aspect-ratio--object {
+    position: inherit;
+  }
+
+  .bx--col-lg-4 {
+    display: flex;
+  }
+
+  .bx--resource-card {
+    display: flex;
+    width: 100%;
+  }
+
+  @media (min-width:66rem) and (max-width:82rem) {
+    .bx--resource-card__subtitle {
+      font-size: .75rem;
+    }
+
+    .bx--resource-card__title {
+      font-size: 1rem;
+    }
+  }
+}

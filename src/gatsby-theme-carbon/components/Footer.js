@@ -4,38 +4,30 @@ import pageContext from '../pageContext';
 
 const Content = () => (
   <>
+    <p>Have questions? Email us for site feedbacks or open an issue in <a href="https://github.ibm.com/CDAI-design/pal/issues">GitHub</a></p>
     <p>
-        Have questions or feedback for us?
-      </p>
-      <p>
-        Contact us via {' '}
-        <a href="https://ibm-casdesign.slack.com/messages/G7LSWTAA0">
-          Slack
-        </a>{' '}
-        or open an issue in our {' '}
-        <a href="https://github.ibm.com/CDAI-design/pal/issues"> GitHub </a> repo.
-      </p>
-       <p>Page last updated: { pageContext.MdxNode && pageContext.MdxNode.fields.gitDate.split('T')[0]}</p>
+      Vanilla Components version <a href="#">9.9.0</a>
+      <br />
+      React Components version <a href="#">6.26.2</a>
+      <br />
+      Last updated {pageContext.MdxNode && pageContext.MdxNode.fields.gitDate.split('T')[0]}
+      <br />
+      Copyright © 2018 IBM
+    </p>
   </>
 );
 
 const links = {
   firstCol: [
-// Commenting out the 1st placeholder links column
-/*
-    { href: 'https://ibm.com/design', linkText: 'IBM Design' },
-    { href: 'https://ibm.com/design', linkText: 'IBM Design' },
-    { href: 'https://ibm.com/design', linkText: 'IBM Design' },
-*/
+    { href: '#', linkText: 'Contribute' },
+    { href: 'https://www.ibm.com/privacy', linkText: 'Privacy' },
+    { href: 'https://www.ibm.com/legal', linkText: 'Terms of use' },
+    { href: 'https://www.ibm.com/', linkText: 'IBM.com' },
   ],
   secondCol: [
-// Commenting out the 2nd placeholder links column
-/*
-    { href: 'https://ibm.com/design', linkText: 'IBM Design' },
-    { href: 'https://ibm.com/design', linkText: 'IBM Design' },
-    { href: 'https://ibm.com/design', linkText: 'IBM Design' },
-    { href: 'https://ibm.com/design', linkText: 'IBM Design' },
-*/
+    { href: '#', linkText: 'Dribble' },
+    { href: 'https://medium.com/carbondesign', linkText: 'Medium' },
+    { href: 'https://twitter.com/_carbondesign', linkText: 'Twitter' },
   ],
 };
 

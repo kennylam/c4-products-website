@@ -14,5 +14,5 @@ export default {
   SubmittedToCarbon,
   EmptyStateAllAssetsCard,
   EmptyStateType,
-  Glossary
+  Glossary,
 };

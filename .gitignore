@@ -68,12 +68,18 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-# Common components imported from node dependencies
-src/gatsby-theme-carbon/components/Switcher.js
-
 # Ignore cypress like videos
 /cypress/videos/
 /cypress/screenshots/
 
 # Ignore prettier config
 .prettierrc
+
+# `cdai-microsite-common` components.
+src/gatsby-theme-carbon/components/GlobalSearch
+
+src/gatsby-theme-carbon/components/LeftNav
+src/gatsby-theme-carbon/util/NavItems.js
+
+src/gatsby-theme-carbon/components/Header.js
+src/gatsby-theme-carbon/components/Switcher.js

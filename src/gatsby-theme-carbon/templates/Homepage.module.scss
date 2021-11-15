@@ -1,16 +1,18 @@
 .banner-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  z-index: 1;
-  pointer-events: none;
+  margin-top: 3rem;
 }
 
 .banner-text-heading {
-  max-width: 16ch;
+  margin-bottom: 1rem;
+
+  h1 {
+    @include carbon--type-style('productive-heading-02');
+  }
+
+  h2 {
+    @include carbon--type-style('expressive-heading-04');
+    max-width: 40rem;
+  }
 }
 
 .right-text {
@@ -21,5 +23,22 @@
 :global {
   .homepage--header {
     height:560px;
+  }
+}
+
+.homepage--header {
+  background: url('../../images/home-background.svg') no-repeat left top;
+  background-size: 1300px 350px;
+
+  @media (min-width: 66rem) {
+    background-position: 256px top;
+  }
+
+  img {
+    width: auto;
+    position: static;
+    top: 0;
+    right: 0;
+    margin-top: 0;
   }
 }

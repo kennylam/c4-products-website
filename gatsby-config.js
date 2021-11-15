@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   pathPrefix: "/cdai-design/pal",
   siteMetadata: {
-    title: "Carbon for Cloud and Cognitive - Pattern asset library",
+    title: "Carbon for IBM Products",
     description: "Product design library for IBM Cloud, Data and Security",
     keywords: "cloud,data,AI,design,pattern,asset,library,pal,security"
   },
