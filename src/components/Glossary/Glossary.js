@@ -67,10 +67,10 @@ const Glossary = () => {
     "Cloud Paks": {
       color: "green"
     },
-    "Cloud Platform": {
+    "Data and AI": {
       color: "purple"
     },
-    "Data and AI": {
+    "IBM Cloud": {
       color: "blue"
     },
     "Red Hat": {
