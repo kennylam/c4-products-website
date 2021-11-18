@@ -1,156 +1,172 @@
 .barsLoading {
+  opacity: 0;
+}
+
+.chart--container {
+  position: relative;
+}
+
+.showBars {
+  opacity: 1;
+}
+
+.chart {
+  position: relative;
+  width: calc(100% - 3rem);
+  height: 100%;
+  transform: translate(-22px);
+  &:focus,
+  &.chart-with-focus {
+    outline: 2px solid $inverse-link;
+  }
+}
+
+.chart--lottie {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  animation: fader 2s ease-in-out 1;
+  opacity: 1;
+}
+
+@keyframes fader {
+  0% {
     opacity: 0;
   }
-  
-  .showBars {
+  100% {
     opacity: 1;
   }
-  
-  .chart {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform: translate(-22px);
-    padding-right: $spacing-09;
-  }
-  
-  .chart--lottie {
-    position: absolute;
-    pointer-events: none;
-    z-index: 0;
-    animation: fader 2s ease-in-out 1;
+}
+
+.chart--bars {
+  position: relative;
+  z-index: 0;
+  padding-top: 3.75%;
+  left: 2.85%;
+}
+
+.chart--label {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #00c8c5;
+}
+
+.hide-tooltip {
+  animation: fade-out 0.25s ease-out;
+  opacity: 0;
+}
+
+@keyframes fade-out {
+  0% {
     opacity: 1;
-    padding-right: $spacing-09;
   }
-  
-  @keyframes fader {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .chart--bars {
-    position: relative;
-    z-index: 0;
-    padding-top: 3.75%;
-    left: 2.85%;
-  }
-  
-  .chart--label {
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #00c8c5;
-  }
-  
-  .hide-tooltip {
-    animation: fade-out 0.25s ease-out;
+
+  100% {
     opacity: 0;
   }
-  
-  @keyframes fade-out {
-    0% {
-      opacity: 1;
-    }
-  
-    100% {
-      opacity: 0;
-    }
+}
+
+.tooltip {
+  background-color: #212121;
+  text-align: left;
+  width: 280px;
+  height: 176px;
+  padding: $spacing-05 calc(#{$spacing-05} + #{$spacing-02});
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.75));
+}
+
+.tooltip:before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: calc(100% - 5px); /*i.e. half the height*/
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #212121;
+  pointer-events: none;
+}
+
+.tooltip--sub-title {
+  @include carbon--type-style("productive-heading-01");
+
+  color: #00c8c5;
+}
+
+.tooltip--title {
+  @include carbon--type-style("productive-heading-03");
+
+  line-height: 22px;
+  color: #efefef;
+  padding: 0 0 $spacing-05 0;
+  margin: 0 0 5px 0;
+  border-bottom: 1px solid #404040;
+  height: 64px;
+  white-space: pre-line;
+}
+
+.tooltip--count {
+  @include carbon--type-style("expressive-heading-04");
+
+  color: #d8d8d8;
+  margin-top: $spacing-05;
+}
+
+.tooltip--label {
+  @include carbon--type-style("productive-heading-01");
+
+  color: #979797;
+  z-index: 25;
+  margin-top: -6px;
+}
+
+.chart--bars {
+  path {
+    opacity: 0;
+    stroke-dasharray: 265px 265px;
+    stroke-dashoffset: -265px;
+    fill: none;
+    stroke-width: 10px;
+    stroke-miterlimit: 10px;
+    transition: 0.07s all;
   }
-  .tooltip {
-    background-color: #212121;
-    text-align: left;
-    width: 280px;
-    height: 176px;
-    padding: $spacing-05 calc(#{$spacing-05} + #{$spacing-02});
-    position: absolute;
-    z-index: 20;
-    pointer-events: none;
-    filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.75));
+
+  path:hover {
+    transition: 0.07s all;
+    stroke-width: 12px;
   }
-  
-  .tooltip:before {
-    content: "";
-    position: absolute;
-    left: 12px;
-    top: calc(100% - 5px); /*i.e. half the height*/
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid #212121;
-    pointer-events: none;
+
+  path:focus {
+    outline: 0;
   }
-  
-  .tooltip--sub-title {
-    @include carbon--type-style("productive-heading-01");
-  
-    color: #00c8c5;
+
+  #pink--automation > path:hover,
+  #pink--automation > path:focus {
+    stroke: #ffcaff;
   }
-  
-  .tooltip--title {
-    @include carbon--type-style("productive-heading-03");
-  
-    line-height: 22px;
-    color: #efefef;
-    padding: 0 0 $spacing-05 0;
-    margin: 0 0 5px 0;
-    border-bottom: 1px solid #404040;
-    height: 64px;
-    white-space: pre-line;
+
+  #blue--ai > path:hover,
+  #blue--ai > path:focus {
+    stroke: #9fd3ff;
   }
-  
-  .tooltip--count {
-    @include carbon--type-style("expressive-heading-04");
-  
-    color: #d8d8d8;
-    margin-top: $spacing-05;
+
+  #cloud--light-blue > path:hover,
+  #cloud--light-blue > path:focus {
+    stroke: #fff;
   }
-  
-  .tooltip--label {
-    @include carbon--type-style("productive-heading-01");
-  
-    color: #979797;
-    z-index: 25;
-    margin-top: -6px;
+
+  #information--green > path:hover,
+  #information--green > path:focus {
+    stroke: #b5ffff;
   }
-  
-  .chart--bars {
-    path {
-      opacity: 0;
-      stroke-dasharray: 265px 265px;
-      stroke-dashoffset: -265px;
-      fill: none;
-      stroke-width: 10px;
-      stroke-miterlimit: 10px;
-      transition: 0.07s all;
-    }
-  
-    path:hover {
-      transition: 0.07s all;
-      stroke-width: 12px;
-    }
-  
-    #pink--automation > path:hover {
-      stroke: #ffcaff;
-    }
-  
-    #blue--ai > path:hover {
-      stroke: #9fd3ff;
-    }
-  
-    #cloud--light-blue > path:hover {
-      stroke: #fff;
-    }
-  
-    #information--green > path:hover {
-      stroke: #b5ffff;
-    }
-  
-    #security--purple > path:hover {
-      stroke: #e7a7ff;
-    }
+
+  #security--purple > path:hover,
+  #security--purple > path:focus {
+    stroke: #e7a7ff;
   }
+}
