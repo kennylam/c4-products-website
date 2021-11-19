@@ -41,7 +41,7 @@
 .chart--bars {
   position: relative;
   z-index: 0;
-  padding-top: 3.75%;
+  padding-top: 3.9%;
   left: 2.85%;
 }
 
@@ -70,8 +70,8 @@
 .tooltip {
   background-color: #212121;
   text-align: left;
-  width: 280px;
-  height: 176px;
+  width: 246px;
+  height: 160px;
   padding: $spacing-05 calc(#{$spacing-05} + #{$spacing-02});
   position: absolute;
   z-index: 20;
@@ -103,10 +103,8 @@
 
   line-height: 22px;
   color: #efefef;
-  padding: 0 0 $spacing-05 0;
-  margin: 0 0 5px 0;
   border-bottom: 1px solid #404040;
-  height: 64px;
+  height: 56px;
   white-space: pre-line;
 }
 
@@ -114,7 +112,7 @@
   @include carbon--type-style("expressive-heading-04");
 
   color: #d8d8d8;
-  margin-top: $spacing-05;
+  margin-top: $spacing-03;
 }
 
 .tooltip--label {
