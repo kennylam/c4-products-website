@@ -2,13 +2,13 @@
 name: Carbon for IBM Products Bug Report
 about: Create a report to help us improve
 title: ''
-labels: 'next, bug'
+labels: 'bug'
 assignees: ''
 
 ---
 
 # Welcome!
-Thanks for taking the time to view our beta version of Carbon for IBM products and fill out this bug report!
+Thanks for taking the time to fill out this bug report!
 
 ## Bug description
 Tell us more about the problem that you're running into.
