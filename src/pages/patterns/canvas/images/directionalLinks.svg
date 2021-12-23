@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="544px" height="128px" viewBox="0 0 544 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>directionalLinks</title>
+    <g id="directionalLinks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="544" height="128"></rect>
+        <text id="8-X-8px-filled-arrow" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" fill="#D02670">
+            <tspan x="16" y="81">8 X 8px filled arrow </tspan>
+        </text>
+        <g id="Group" transform="translate(220.000000, 72.000000)">
+            <polygon id="Rectangle-Copy-7" fill="#8D8D8D" transform="translate(182.000000, 4.000000) scale(-1, 1) translate(-182.000000, -4.000000) " points="186 -4.54830618e-13 186 8 178 4"></polygon>
+            <line x1="183" y1="4.5" x2="1.09124949e-13" y2="4.5" id="Line-Copy" stroke="#8D8D8D" stroke-linecap="square"></line>
+        </g>
+        <text id="16px-open-arrow-ui-i" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" fill="#D02670">
+            <tspan x="16" y="30">16px open arrow</tspan>
+            <tspan x="16" y="48" font-size="10">ui icon equivalent size</tspan>
+        </text>
+        <g id="line-/-open-arrow-" transform="translate(220.000000, 18.000000)">
+            <line x1="174" y1="8" x2="0.0642272681" y2="8" id="Line-Copy-3" stroke="#8D8D8D"></line>
+            <polygon id="Fill" fill="#8D8D8D" points="181 3 180.285 3.6965 184.075 7.5 174 7.5 174 8.5 184.075 8.5 180.285 12.2865 181 13 186 8"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1312px" height="800px" viewBox="0 0 1312 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>configuringNode</title>
+    <defs>
+        <rect id="path-1" x="16" y="16" width="1276" height="768"></rect>
+        <path d="M6,6 L7,6 L7,12 L6,12 L6,6 Z M9,6 L10,6 L10,12 L9,12 L9,6 Z M2,3 L2,4 L3,4 L3,14 C3,14.5522847 3.44771525,15 4,15 L12,15 C12.5522847,15 13,14.5522847 13,14 L13,4 L14,4 L14,3 L2,3 Z M4,14 L4,4 L12,4 L12,14 L4,14 Z M6,1 L10,1 L10,2 L6,2 L6,1 Z" id="path-3"></path>
+        <rect id="path-5" x="-2" y="-2" width="208" height="63.7714286"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="210" height="65.7714286">
+            <rect x="-3" y="-3" width="210" height="65.7714286" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+        <path d="M6,6 L7,6 L7,12 L6,12 L6,6 Z M9,6 L10,6 L10,12 L9,12 L9,6 Z M2,3 L2,4 L3,4 L3,14 C3,14.5522847 3.44771525,15 4,15 L12,15 C12.5522847,15 13,14.5522847 13,14 L13,4 L14,4 L14,3 L2,3 Z M4,14 L4,4 L12,4 L12,14 L4,14 Z M6,1 L10,1 L10,2 L6,2 L6,1 Z" id="path-7"></path>
+        <path d="M13.25,9.815 L10.12,8 L13.25,6.185 C14.2515212,5.62844918 14.7465138,4.46231411 14.4511441,3.35526839 C14.1557744,2.24822266 13.1456556,1.48366481 12,1.5 C11.5628485,1.50089513 11.1335731,1.61640295 10.755,1.835 C10.1767338,2.16656937 9.75482775,2.71534347 9.58301633,3.35940159 C9.41120491,4.0034597 9.50371726,4.68946204 9.84,5.265 C10.1142244,5.73390948 10.5337146,6.10074402 11.035,6.31 L9.125,7.415 L2,3.3 L1.5,4.17 L8.12,8 L1.5,11.84 L2,12.71 L9.12,8.58 L11.03,9.685 C10.5287146,9.89425598 10.1092244,10.2610905 9.835,10.73 C9.49871726,11.305538 9.40620491,11.9915403 9.57801633,12.6355984 C9.74982775,13.2796565 10.1717338,13.8284306 10.75,14.16 C11.1295568,14.3811911 11.5606977,14.4984614 12,14.5 C13.1466079,14.5187077 14.1589144,13.7549217 14.4556424,12.6472158 C14.7523704,11.53951 14.2574213,10.3719661 13.255,9.815 L13.25,9.815 Z M10.7,4.765 C10.4976727,4.41937848 10.4419585,4.00719945 10.5452661,3.62026523 C10.6485738,3.23333102 10.9023239,2.90377596 11.25,2.705 C11.5947296,2.50586219 12.0044832,2.4519349 12.3889982,2.55509749 C12.7735133,2.65826007 13.1012453,2.91004934 13.3,3.255 C13.5007291,3.60017764 13.5555474,4.01114274 13.4523125,4.39686587 C13.3490776,4.78258901 13.0963107,5.11123204 12.75,5.31 L12.75,5.31 C12.0334043,5.72554737 11.115623,5.48155186 10.7,4.765 L10.7,4.765 Z M13.295,12.765 C13.0962453,13.1099507 12.7685133,13.3617399 12.3839982,13.4649025 C11.9994832,13.5680651 11.5897296,13.5141378 11.245,13.315 C10.5242684,12.9007864 10.2757865,11.9807316 10.69,11.26 C11.1042136,10.5392684 12.0242684,10.2907865 12.745,10.705 L12.745,10.705 C13.4562362,11.1167582 13.7037109,12.0241653 13.3,12.74 L13.295,12.765 Z" id="path-9"></path>
+        <path d="M3,9 L2,9 L2,3 C2,2.44771525 2.44771525,2 3,2 L9,2 L9,3 L3,3 L3,9 Z M14,6 L14,14 L6,14 L6,6 L14,6 L14,6 Z M14,5 L6,5 C5.44771525,5 5,5.44771525 5,6 L5,14 C5,14.5522847 5.44771525,15 6,15 L14,15 C14.5522847,15 15,14.5522847 15,14 L15,6 C15,5.44771525 14.5522847,5 14,5 Z" id="path-11"></path>
+        <path d="M13,10 L8.915,10 L10.21,8.705 L9.5,8 L7,10.5 L9.5,13 L10.205,12.295 L8.915,11 L13,11 L13,15 L14,15 L14,11 C14,10.4477153 13.5522847,10 13,10 Z M11.855,4.645 L8.355,1.145 C8.26064058,1.05140674 8.13290149,0.999231621 8,0.999991632 L3,0.999991632 C2.44771525,0.999991632 2,1.44771525 2,1.99999163 L2,13.9999916 C2,14.5522847 2.44771525,14.9999916 3,14.9999916 L7,14.9999916 L7,13.9999916 L3,13.9999916 L3,1.99999163 L7,1.99999163 L7,4.99999163 C7,5.55228475 7.44771525,5.99999163 8,5.99999163 L11,5.99999163 L11,6.99999163 L12,6.99999163 L12,4.99999163 C12.0007684,4.86709851 11.9485933,4.73935942 11.855,4.645 Z M8,2.205 L10.795,5 L8,5 L8,2.205 Z" id="path-13"></path>
+        <rect id="path-15" x="16" y="16" width="1276" height="768"></rect>
+    </defs>
+    <g id="configuringNode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1312" height="800"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" stroke="#E0E0E0" fill="#F4F4F4" xlink:href="#path-1"></use>
+        <g id="Group-6" transform="translate(81.000000, 270.000000)">
+            <g id="Group">
+                <g id="node-/-gray-10-theme-/-card-node-/-color-/-01-enabled">
+                    <rect id="Background" fill="#FFFFFF" x="0" y="0" width="204" height="68"></rect>
+                    <rect id="Left-border" fill="#24A148" x="0" y="0" width="3" height="68"></rect>
+                    <g id="Icon" transform="translate(16.006033, 14.968777)" fill="#000000">
+                        <path d="M15.625,8.125 L15.625,2.5 L14.375,2.5 L14.375,3.75 L12.5,3.75 L12.5,5 L14.375,5 L14.375,8.125 L12.5,8.125 L12.5,9.375 L17.5,9.375 L17.5,8.125 L15.625,8.125 L15.625,8.125 Z M5.3125,3.75 C6.52062289,3.75 7.5,4.72937711 7.5,5.9375 C7.5,7.14562289 6.52062289,8.125 5.3125,8.125 C4.10437711,8.125 3.125,7.14562289 3.125,5.9375 C3.125,4.72937711 4.10437711,3.75 5.3125,3.75 M5.3125,2.5 C3.41402117,2.5 1.875,4.03902117 1.875,5.9375 C1.875,7.83597883 3.41402117,9.375 5.3125,9.375 C7.21097883,9.375 8.75,7.83597883 8.75,5.9375 C8.75,5.02581832 8.38783586,4.15147674 7.74317956,3.50682044 C7.09852326,2.86216414 6.22418168,2.5 5.3125,2.5 Z M5.3125,12.5 C6.52062289,12.5 7.5,13.4793771 7.5,14.6875 C7.5,15.8956229 6.52062289,16.875 5.3125,16.875 C4.10437711,16.875 3.125,15.8956229 3.125,14.6875 C3.125,13.4793771 4.10437711,12.5 5.3125,12.5 M5.3125,11.25 C3.41402117,11.25 1.875,12.7890212 1.875,14.6875 C1.875,16.5859788 3.41402117,18.125 5.3125,18.125 C7.21097883,18.125 8.75,16.5859788 8.75,14.6875 C8.75,12.7890212 7.21097883,11.25 5.3125,11.25 L5.3125,11.25 Z M14.6875,12.5 C15.8956229,12.5 16.875,13.4793771 16.875,14.6875 C16.875,15.8956229 15.8956229,16.875 14.6875,16.875 C13.4793771,16.875 12.5,15.8956229 12.5,14.6875 C12.5,13.4793771 13.4793771,12.5 14.6875,12.5 M14.6875,11.25 C12.7890212,11.25 11.25,12.7890212 11.25,14.6875 C11.25,16.5859788 12.7890212,18.125 14.6875,18.125 C16.5859788,18.125 18.125,16.5859788 18.125,14.6875 C18.125,12.7890212 16.5859788,11.25 14.6875,11.25 L14.6875,11.25 Z" id="Fill"></path>
+                    </g>
+                    <text id="Secondary-text" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.159999996" fill="#161616">
+                        <tspan x="52.0060332" y="48">Customer service</tspan>
+                    </text>
+                    <text id="Primary-text" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.159999996" fill="#161616">
+                        <tspan x="52.0060332" y="30">Dataset 01</tspan>
+                    </text>
+                </g>
+                <g transform="translate(0.000000, 156.000000)" id="node-/-gray-10-theme-/-card-node-/-color-/-01-enabled-copy">
+                    <rect id="Background" fill="#FFFFFF" x="0" y="0" width="204" height="68"></rect>
+                    <rect id="Left-border" fill="#F1C21B" x="0" y="0" width="3" height="68"></rect>
+                    <g id="Icon" transform="translate(16.006033, 14.968777)" fill="#000000">
+                        <path d="M15.625,8.125 L15.625,2.5 L14.375,2.5 L14.375,3.75 L12.5,3.75 L12.5,5 L14.375,5 L14.375,8.125 L12.5,8.125 L12.5,9.375 L17.5,9.375 L17.5,8.125 L15.625,8.125 L15.625,8.125 Z M5.3125,3.75 C6.52062289,3.75 7.5,4.72937711 7.5,5.9375 C7.5,7.14562289 6.52062289,8.125 5.3125,8.125 C4.10437711,8.125 3.125,7.14562289 3.125,5.9375 C3.125,4.72937711 4.10437711,3.75 5.3125,3.75 M5.3125,2.5 C3.41402117,2.5 1.875,4.03902117 1.875,5.9375 C1.875,7.83597883 3.41402117,9.375 5.3125,9.375 C7.21097883,9.375 8.75,7.83597883 8.75,5.9375 C8.75,5.02581832 8.38783586,4.15147674 7.74317956,3.50682044 C7.09852326,2.86216414 6.22418168,2.5 5.3125,2.5 Z M5.3125,12.5 C6.52062289,12.5 7.5,13.4793771 7.5,14.6875 C7.5,15.8956229 6.52062289,16.875 5.3125,16.875 C4.10437711,16.875 3.125,15.8956229 3.125,14.6875 C3.125,13.4793771 4.10437711,12.5 5.3125,12.5 M5.3125,11.25 C3.41402117,11.25 1.875,12.7890212 1.875,14.6875 C1.875,16.5859788 3.41402117,18.125 5.3125,18.125 C7.21097883,18.125 8.75,16.5859788 8.75,14.6875 C8.75,12.7890212 7.21097883,11.25 5.3125,11.25 L5.3125,11.25 Z M14.6875,12.5 C15.8956229,12.5 16.875,13.4793771 16.875,14.6875 C16.875,15.8956229 15.8956229,16.875 14.6875,16.875 C13.4793771,16.875 12.5,15.8956229 12.5,14.6875 C12.5,13.4793771 13.4793771,12.5 14.6875,12.5 M14.6875,11.25 C12.7890212,11.25 11.25,12.7890212 11.25,14.6875 C11.25,16.5859788 12.7890212,18.125 14.6875,18.125 C16.5859788,18.125 18.125,16.5859788 18.125,14.6875 C18.125,12.7890212 16.5859788,11.25 14.6875,11.25 L14.6875,11.25 Z" id="Fill"></path>
+                    </g>
+                    <text id="Secondary-text" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.159999996" fill="#161616">
+                        <tspan x="52.0060332" y="48">Accommodations</tspan>
+                    </text>
+                    <text id="Primary-text" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.159999996" fill="#161616">
+                        <tspan x="52.0060332" y="30">Dataset 02</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="node-/-gray-10-theme-/-card-node-/-color-/-01-enabled-copy-2" transform="translate(311.000000, 83.000000)">
+                <g id="Group" transform="translate(107.000000, -31.764706)">
+                    <rect id="Far-right-button-background" fill="#FFFFFF" x="64" y="0" width="32" height="32"></rect>
+                    <g id="Far-right-button" transform="translate(64.000000, 0.000000)">
+                        <rect id="Background" x="0" y="0" width="32" height="32"></rect>
+                        <g id="Icon" transform="translate(8.000000, 8.000000)" fill="#161616">
+                            <path d="M8,5 C8.55228475,5 9,4.55228475 9,4 C9,3.44771525 8.55228475,3 8,3 C7.44771525,3 7,3.44771525 7,4 C7,4.55228475 7.44771525,5 8,5 Z M8,9 C8.55228475,9 9,8.55228475 9,8 C9,7.44771525 8.55228475,7 8,7 C7.44771525,7 7,7.44771525 7,8 C7,8.55228475 7.44771525,9 8,9 Z M8,13 C8.55228475,13 9,12.5522847 9,12 C9,11.4477153 8.55228475,11 8,11 C7.44771525,11 7,11.4477153 7,12 C7,12.5522847 7.44771525,13 8,13 Z" id="Fill"></path>
+                        </g>
+                    </g>
+                    <rect id="Center-button-background" fill="#FFFFFF" x="32" y="0" width="32" height="32"></rect>
+                    <g id="Center-button" transform="translate(32.000000, 0.000000)">
+                        <rect id="Background" x="0" y="0" width="32" height="32"></rect>
+                        <g id="Icon" transform="translate(8.000000, 8.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="icon-color" fill="#161616" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                    <rect id="Left-button-background" fill="#FFFFFF" x="0" y="0" width="32" height="32"></rect>
+                    <g id="Left-button">
+                        <rect id="Background" x="0" y="0" width="32" height="32"></rect>
+                        <g id="Icon" transform="translate(8.000000, 8.000000)" fill="#000000">
+                            <path d="M6,5 L13,5 C13.5519992,4.99931129 13.9993113,4.55199923 14,4 L14,2 C13.9993113,1.44800077 13.5519992,1.00068871 13,1 L6,1 C5.44800077,1.00068871 5.00068871,1.44800077 5,2 L5,2.5 L3,2.5 L3,1 L2,1 L2,12.5 C2.00068871,13.0519992 2.44800077,13.4993113 3,13.5 L5,13.5 L5,14 C5.00068871,14.5519992 5.44800077,14.9993113 6,15 L13,15 C13.5519992,14.9993113 13.9993113,14.5519992 14,14 L14,12 C13.9993113,11.4480008 13.5519992,11.0006887 13,11 L6,11 C5.44800077,11.0006887 5.00068871,11.4480008 5,12 L5,12.5 L3,12.5 L3,8.5 L5,8.5 L5,9 C5.00068871,9.55199923 5.44800077,9.99931129 6,10 L13,10 C13.5519992,9.99931129 13.9993113,9.55199923 14,9 L14,7 C13.9993113,6.44800077 13.5519992,6.00068871 13,6 L6,6 C5.44800077,6.00068871 5.00068871,6.44800077 5,7 L5,7.5 L3,7.5 L3,3.5 L5,3.5 L5,4 C5.00068871,4.55199923 5.44800077,4.99931129 6,5 Z M6,2 L13,2 L13.0006,4 L6,4 L6,2 Z M6,12 L13,12 L13.0006,14 L6,14 L6,12 Z M6,7 L13,7 L13.0006,9 L6,9 L6,7 Z" id="Fill"></path>
+                        </g>
+                    </g>
+                </g>
+                <use id="Selection" stroke="#000000" mask="url(#mask-6)" stroke-width="2" stroke-dasharray="4,4.1" xlink:href="#path-5"></use>
+                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="204" height="60"></rect>
+                <rect id="Focus" stroke="#0F62FE" stroke-width="2" x="1" y="1" width="202" height="58"></rect>
+                <g id="Icon" transform="translate(16.000000, 16.000000)" fill="#161616">
+                    <path d="M10,6.25 C7.92893219,6.25 6.25,7.92893219 6.25,10 L6.25,15 C6.25,17.0710678 7.92893219,18.75 10,18.75 C12.0710678,18.75 13.75,17.0710678 13.75,15 L13.75,10 C13.75,7.92893219 12.0710678,6.25 10,6.25 Z M7.34375,11.16875 L12.65625,11.16875 L12.65625,13.825 L7.34375,13.825 L7.34375,11.16875 Z M10,17.65625 C8.53583704,17.649408 7.35059199,16.464163 7.34375,15 L7.34375,14.91875 L12.65625,14.91875 L12.65625,15 C12.649408,16.464163 11.464163,17.649408 10,17.65625 L10,17.65625 Z M12.65625,10.075 L7.34375,10.075 L7.34375,10 C7.34375,8.53299363 8.53299363,7.34375 10,7.34375 C11.4670064,7.34375 12.65625,8.53299363 12.65625,10 L12.65625,10.075 Z M19.1625,12.00625 L15,8.125 L15,13.8125 C15,15.1932119 16.1192881,16.3125 17.5,16.3125 C18.8807119,16.3125 20,15.1932119 20,13.8125 C19.99634,13.1173734 19.6906884,12.4581697 19.1625,12.00625 L19.1625,12.00625 Z M17.5,15.21875 C16.7233496,15.21875 16.09375,14.5891504 16.09375,13.8125 L16.09375,10.625 L18.41875,12.79375 L18.41875,12.79375 C18.7016767,13.0317436 18.8680062,13.3803521 18.875,13.75 C18.8919155,14.1283018 18.7555452,14.4974378 18.4967463,14.7738822 C18.2379473,15.0503265 17.8785945,15.2107129 17.5,15.21875 L17.5,15.21875 Z M0,13.8125 C0,15.1932119 1.11928813,16.3125 2.5,16.3125 C3.88071187,16.3125 5,15.1932119 5,13.8125 L5,8.125 L0.8375,12.00625 C0.312648649,12.4606915 0.00774088769,13.118291 0,13.8125 L0,13.8125 Z M1.55,12.8375 L1.55,12.8375 L3.90625,10.625 L3.90625,13.8125 C3.90625,14.5891504 3.27665043,15.21875 2.5,15.21875 C1.72334957,15.21875 1.09375,14.5891504 1.09375,13.8125 C1.09530728,13.4362762 1.26214314,13.0797503 1.55,12.8375 L1.55,12.8375 Z M9.375,3.4375 C9.375,2.22937711 8.39562289,1.25 7.1875,1.25 C5.97937711,1.25 5,2.22937711 5,3.4375 C5,4.64562289 5.97937711,5.625 7.1875,5.625 C8.39562289,5.625 9.375,4.64562289 9.375,3.4375 Z M6.09375,3.4375 C6.09375,2.83343855 6.58343855,2.34375 7.1875,2.34375 C7.79156145,2.34375 8.28125,2.83343855 8.28125,3.4375 C8.28125,4.04156145 7.79156145,4.53125 7.1875,4.53125 C6.58625928,4.52449385 6.10050615,4.03874072 6.09375,3.4375 Z M12.8125,1.25 C11.6043771,1.25 10.625,2.22937711 10.625,3.4375 C10.625,4.64562289 11.6043771,5.625 12.8125,5.625 C14.0206229,5.625 15,4.64562289 15,3.4375 C15,2.22937711 14.0206229,1.25 12.8125,1.25 Z M12.8125,4.53125 C12.2084386,4.53125 11.71875,4.04156145 11.71875,3.4375 C11.71875,2.83343855 12.2084386,2.34375 12.8125,2.34375 C13.4165614,2.34375 13.90625,2.83343855 13.90625,3.4375 C13.8994938,4.03874072 13.4137407,4.52449385 12.8125,4.53125 L12.8125,4.53125 Z" id="Fill"></path>
+                </g>
+                <text id="Secondary-text" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.159999996"></text>
+                <text id="Primary-text" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.159999996" fill="#161616">
+                    <tspan x="52" y="31.0312227">Type</tspan>
+                </text>
+            </g>
+            <g id="node-/-gray-10-theme-/-card-node-/-color-/-01-enabled-copy-3" transform="translate(623.000000, 13.000000)">
+                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="204" height="86"></rect>
+                <rect id="Left-border" fill="#DA1E28" x="0" y="0" width="3" height="86"></rect>
+                <g id="Icon" transform="translate(16.006033, 14.968777)" fill="#000000">
+                    <path d="M11.25,17.5 L16.25,17.5 L16.25,18.75 L11.25,18.75 L11.25,17.5 Z M11.25,15 L18.75,15 L18.75,16.25 L11.25,16.25 L11.25,15 Z M11.25,12.5 L18.75,12.5 L18.75,13.75 L11.25,13.75 L11.25,12.5 Z M10.000625,16.545625 L10,16.545625 L2.6775,8.096875 L5.9375,3.75 L14.0625,3.75 L17.3225,8.096875 L15.2975,10.4325 L16.243125,11.25125 L18.9275,8.153125 L14.6875,2.5 L5.3125,2.5 L1.0725,8.153125 L9.055,17.36375 L10.000625,16.545625 L10.000625,16.545625 Z" id="Fill"></path>
+                </g>
+                <text id="Secondary-text" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.159999996" fill="#161616">
+                    <tspan x="52.0060332" y="48">Customer service </tspan>
+                    <tspan x="52.0060332" y="66">and Accommodat…</tspan>
+                </text>
+                <text id="Primary-text" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.159999996" fill="#161616">
+                    <tspan x="52.0060332" y="30">Text mining</tspan>
+                </text>
+            </g>
+            <g id="node-/-gray-10-theme-/-card-node-/-color-/-01-enabled-copy-4" transform="translate(623.000000, 254.000000)">
+                <rect id="Background" fill="#FFFFFF" x="0" y="0" width="204" height="68"></rect>
+                <rect id="Left-border" fill="#DA1E28" x="0" y="0" width="3" height="68"></rect>
+                <g id="Icon" transform="translate(16.006033, 14.968777)" fill="#000000">
+                    <path d="M8.125,18.75 C4.32804234,18.75 1.25,15.6719577 1.25,11.875 C1.25,8.07804234 4.32804234,5 8.125,5 C8.47017797,5 8.75,5.27982203 8.75,5.625 L8.75,11.25 L14.375,11.25 C14.720178,11.25 15,11.529822 15,11.875 C15,15.6719577 11.9219577,18.75 8.125,18.75 Z M7.5,6.2875 C4.57251589,6.61320942 2.3920636,9.14217577 2.50083115,12.0857144 C2.6095987,15.029253 4.97074704,17.3904013 7.91428564,17.4991689 C10.8578242,17.6079364 13.3867906,15.4274841 13.7125,12.5 L8.75,12.5 C8.05964406,12.5 7.5,11.9403559 7.5,11.25 L7.5,6.2875 Z M17.5,8.75 L11.875,8.75 C11.1846441,8.75 10.625,8.19035594 10.625,7.5 L10.625,1.875 C10.625,1.52982203 10.904822,1.25 11.25,1.25 C15.0469577,1.25 18.125,4.32804234 18.125,8.125 C18.125,8.47017797 17.845178,8.75 17.5,8.75 Z M11.875,7.5 L16.8375,7.5 C16.5445823,4.89021658 14.4847834,2.83041765 11.875,2.5375 L11.875,7.5 Z" id="Fill"></path>
+                </g>
+                <text id="Secondary-text" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.159999996" fill="#161616">
+                    <tspan x="52.0060332" y="48">Pie chart</tspan>
+                </text>
+                <text id="Primary-text" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.159999996" fill="#161616">
+                    <tspan x="52.0060332" y="30">Chart</tspan>
+                </text>
+            </g>
+            <path id="Line-2" d="M216.416845,40.7977997 L216.809522,41.1073222 L295.134,102.845 L297.61018,99.7040179 L301.892678,108.809522 L292.038776,106.772218 L294.514,103.631 L216.190478,41.8926778 L215.7978,41.5831553 L216.416845,40.7977997 Z" fill="#979797" fill-rule="nonzero"></path>
+            <path id="Line-2-Copy" d="M216.416845,118.7978 L216.809522,119.107322 L295.134,180.845 L297.61018,177.704018 L301.892678,186.809522 L292.038776,184.772218 L294.514,181.631 L216.190478,119.892678 L215.7978,119.583155 L216.416845,118.7978 Z" transform="translate(259.000000, 153.000000) scale(1, -1) translate(-259.000000, -153.000000) " fill="#979797" fill-rule="nonzero"></path>
+            <path id="Line-2-Copy" d="M529.34455,55.8101918 L529.767179,56.077371 L609.582,106.535 L611.719921,103.154292 L616.922629,111.767179 L606.910694,110.761614 L609.047,107.38 L529.232821,56.922629 L528.810192,56.6554497 L529.34455,55.8101918 Z" transform="translate(573.000000, 84.000000) scale(1, -1) translate(-573.000000, -84.000000) " fill="#979797" fill-rule="nonzero"></path>
+            <path id="Line-3" d="M725.002028,116.99798 L726.00202,117.002028 L725.999996,117.502024 L725.534,232.502 L729.534376,232.518288 L724.997976,241.499996 L720.53445,232.481851 L724.534,232.497 L725.000004,117.497976 L725.002028,116.99798 Z" fill="#979797" fill-rule="nonzero"></path>
+        </g>
+        <rect id="Rectangle" fill="#C6C6C6" x="133" y="287" width="74" height="15"></rect>
+        <rect id="Rectangle-Copy-2" fill="#C6C6C6" x="133" y="444" width="74" height="15"></rect>
+        <rect id="Rectangle-Copy-4" fill="#C6C6C6" x="756" y="301" width="85.8151261" height="15"></rect>
+        <rect id="Rectangle-Copy-8" fill="#C6C6C6" x="756" y="541" width="85.8151261" height="15"></rect>
+        <rect id="Rectangle-Copy-7" fill="#C6C6C6" x="439" y="373" width="85.8151261" height="15"></rect>
+        <rect id="Rectangle-Copy" fill="#E5E5E5" x="133" y="306" width="119" height="15"></rect>
+        <rect id="Rectangle-Copy-3" fill="#E5E5E5" x="133" y="463" width="119" height="15"></rect>
+        <rect id="Rectangle-Copy-5" fill="#E5E5E5" x="756" y="320" width="138" height="15"></rect>
+        <rect id="Rectangle-Copy-9" fill="#E5E5E5" x="756" y="560" width="138" height="15"></rect>
+        <rect id="Rectangle-Copy-6" fill="#E5E5E5" x="756" y="338" width="138" height="15"></rect>
+        <g id="global-layout/-header-components-/-toolbar-/-super-condensed" transform="translate(16.000000, 15.000000)">
+            <rect id="Toolbar-bg" fill="#FFFFFF" transform="translate(478.000000, 20.000000) scale(-1, 1) translate(-478.000000, -20.000000) " x="0" y="0" width="956" height="40"></rect>
+            <g id="Group-4" transform="translate(4.000000, 0.000000)">
+                <rect id="Rectangle-Copy-30" fill="#DFE3E6" x="192" y="0" width="1" height="40"></rect>
+                <g id="Group-3" transform="translate(200.000000, 0.000000)">
+                    <rect id="Rectangle-Copy-29" fill="#DFE3E6" x="32" y="0" width="1" height="40"></rect>
+                    <g id="icon-button-/-01-enabled-copy-3" transform="translate(0.000000, 8.000000)">
+                        <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+                        <g id="Icon" transform="translate(4.000000, 4.000000)">
+                            <mask id="mask-8" fill="white">
+                                <use xlink:href="#path-7"></use>
+                            </mask>
+                            <use id="icon-color" fill="#161616" xlink:href="#path-7"></use>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle-Copy-29" fill="#DFE3E6" x="72" y="0" width="1" height="40"></rect>
+                <g id="icon-button-/-01-enabled" transform="translate(80.000000, 8.000000)">
+                    <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Icon" transform="translate(4.000000, 4.000000)">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <use id="icon-color" fill="#161616" xlink:href="#path-9"></use>
+                    </g>
+                </g>
+                <g id="icon-button-/-01-enabled-copy" transform="translate(120.000000, 8.000000)">
+                    <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Icon" transform="translate(4.000000, 4.000000)">
+                        <mask id="mask-12" fill="white">
+                            <use xlink:href="#path-11"></use>
+                        </mask>
+                        <use id="icon-color" fill="#161616" xlink:href="#path-11"></use>
+                    </g>
+                </g>
+                <g id="icon-button-/-01-enabled-copy-2" transform="translate(160.000000, 8.000000)">
+                    <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Icon" transform="translate(4.000000, 4.000000)">
+                        <mask id="mask-14" fill="white">
+                            <use xlink:href="#path-13"></use>
+                        </mask>
+                        <use id="icon-color" fill="#161616" xlink:href="#path-13"></use>
+                    </g>
+                </g>
+                <g id="icon-button-/-01-enabled-copy-5" transform="translate(0.000000, 8.000000)">
+                    <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Icon" transform="translate(4.000000, 4.000000)" fill="#161616">
+                        <path d="M10,5 L3.90745,5 L5.70115,3.20705 L5,2.5 L2,5.5 L5,8.5 L5.70115,7.7927 L3.90895,6 L10,6 C11.6568542,6 13,7.34314575 13,9 C13,10.6568542 11.6568542,12 10,12 L6,12 L6,13 L10,13 C12.209139,13 14,11.209139 14,9 C14,6.790861 12.209139,5 10,5 Z" id="Fill"></path>
+                    </g>
+                </g>
+                <g id="icon-button-/-01-enabled-copy-6" transform="translate(40.000000, 8.000000)">
+                    <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Icon" transform="translate(4.000000, 4.000000)" fill="#161616">
+                        <path d="M6,5 L12.09255,5 L10.29885,3.20705 L11,2.5 L14,5.5 L11,8.5 L10.29885,7.7927 L12.09105,6 L6,6 C4.34314575,6 3,7.34314575 3,9 C3,10.6568542 4.34314575,12 6,12 L10,12 L10,13 L6,13 C3.790861,13 2,11.209139 2,9 C2,6.790861 3.790861,5 6,5 Z" id="Fill"></path>
+                    </g>
+                </g>
+            </g>
+            <rect id="Bottom-divider" fill="#8D8D8D" x="0" y="39" width="956" height="1"></rect>
+            <rect id="Divider---far-right-side" fill="#8D8D8D" x="955" y="0" width="1" height="40"></rect>
+            <g id="global-layout/-header-components/-messages/-active-" transform="translate(918.000000, 0.000000)">
+                <rect id="Rectangle" x="0" y="0" width="38" height="39"></rect>
+            </g>
+            <g id="Group-2" transform="translate(844.000000, 0.000000)">
+                <rect id="Divider---right-side" fill="#DFE3E6" x="112" y="0" width="1" height="40"></rect>
+                <g id="Zoom-in" transform="translate(0.000000, 8.000000)">
+                    <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Icon" transform="translate(4.000000, 4.000000)" fill="#161616">
+                        <path d="M9,6 L7,6 L7,4 L6,4 L6,6 L4,6 L4,7 L6,7 L6,9 L7,9 L7,7 L9,7 L9,6 L9,6 Z M10.72395,10 C11.5488722,9.0203987 12.0008598,7.78066962 12,6.5 C12,3.46243388 9.53756612,1 6.5,1 C3.46243388,1 1,3.46243388 1,6.5 C1,9.53756612 3.46243388,12 6.5,12 C7.78066962,12.0008598 9.0203987,11.5488722 10,10.72395 L13.79295,14.5 L14.5,13.79295 L10.72395,10 Z M6.5,11 C4.01471863,11 2,8.98528137 2,6.5 C2,4.01471863 4.01471863,2 6.5,2 C8.98528137,2 11,4.01471863 11,6.5 C10.9972444,8.98413909 8.98413909,10.9972444 6.5,11 Z" id="Fill"></path>
+                    </g>
+                </g>
+                <g id="Zoom-out" transform="translate(40.000000, 8.000000)">
+                    <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Icon" transform="translate(4.000000, 4.000000)" fill="#161616">
+                        <path d="M4,6 L9,6 L9,7 L4,7 L4,6 Z M10.72395,10 C11.5488722,9.0203987 12.0008598,7.78066962 12,6.5 C12,3.46243388 9.53756612,1 6.5,1 C3.46243388,1 1,3.46243388 1,6.5 C1,9.53756612 3.46243388,12 6.5,12 C7.78066962,12.0008598 9.0203987,11.5488722 10,10.72395 L13.79295,14.5 L14.5,13.79295 L10.72395,10 Z M6.5,11 C4.01471863,11 2,8.98528137 2,6.5 C2,4.01471863 4.01471863,2 6.5,2 C8.98528137,2 11,4.01471863 11,6.5 C10.9972444,8.98413909 8.98413909,10.9972444 6.5,11 Z" id="Fill"></path>
+                    </g>
+                </g>
+            </g>
+            <g id="center-to-fit" transform="translate(927.000000, 12.000000)">
+                <polygon id="Path" fill="#161616" fill-rule="nonzero" points="4 1 1 1 1 4 2 4 2 2 4 2"></polygon>
+                <polygon id="Path" fill="#161616" fill-rule="nonzero" points="12 1 15 1 15 4 14 4 14 2 12 2"></polygon>
+                <polygon id="Path" fill="#161616" fill-rule="nonzero" points="4 15 1 15 1 12 2 12 2 14 4 14"></polygon>
+                <polygon id="Path" fill="#161616" fill-rule="nonzero" points="12 15 15 15 15 12 14 12 14 14 12 14"></polygon>
+                <path d="M12,12 L4,12 C3.44797796,11.9993663 3.00063373,11.552022 3,11 L3,5 C3.00063373,4.44797796 3.44797796,4.00063373 4,4 L12,4 C12.552022,4.00063373 12.9993663,4.44797796 13,5 L13,11 C12.9993663,11.552022 12.552022,11.9993663 12,12 Z M4,5 L4,11 L12,11 L12,5 L4,5 Z" id="Shape" fill="#161616" fill-rule="nonzero"></path>
+                <rect id="_Transparent_Rectangle_" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+        <g id="panels-/-properties-panel" transform="translate(971.000000, 15.000000)">
+            <g id="ui-shell-/-left-panel-/-panel-/-floating">
+                <rect id="panel" fill="#FFFFFF" x="1" y="0" width="320" height="767"></rect>
+                <rect id="Rectangle" fill="#E0E0E0" x="0" y="0" width="1" height="768"></rect>
+                <rect id="border-right" fill="#FFFFFF" x="320" y="0" width="1" height="767"></rect>
+            </g>
+            <g id="panels/-palette-panel-/-panel-title" transform="translate(17.000000, 18.000000)" fill="#525252" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="16" font-weight="500" line-spacing="22">
+                <text id="Panel-node-title">
+                    <tspan x="0" y="16">Type</tspan>
+                </text>
+            </g>
+            <rect id="Panel-divider" fill="#E0E0E0" x="1" y="56" width="320" height="1"></rect>
+            <g id="modal-/-pieces-/-footer-/-2-action" transform="translate(1.000000, 720.000000)">
+                <g id="Group" transform="translate(160.000000, 0.000000)">
+                    <g id="Right-button">
+                        <polygon id="Background" fill="#0F62FE" points="160 48 0 48 0 0 160 0"></polygon>
+                        <g id="Spacer" transform="translate(96.000000, 0.000000)">
+                            <rect id="spacer" x="0" y="0" width="64" height="48"></rect>
+                        </g>
+                    </g>
+                    <rect id="border" fill="#E0E0E0" x="0" y="0" width="1" height="48"></rect>
+                </g>
+                <g id="Left-button">
+                    <rect id="Background" fill="#393939" x="0" y="0" width="160" height="48"></rect>
+                    <g id="Spacer" transform="translate(78.080000, 0.000000)">
+                        <rect id="spacer" x="16.96" y="0" width="48" height="48"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Group" transform="translate(988.000000, 88.000000)" fill="#E5E5E5">
+            <polygon id="Field-color" points="0 16 288 16 288 56 0 56"></polygon>
+            <rect id="helper-text-" x="0" y="64" width="164" height="8"></rect>
+            <rect id="label" x="0" y="0" width="40" height="8"></rect>
+        </g>
+        <g id="text-input-/-default-/-medium-/-02-label-+-helper-text-/-09-skeleton" transform="translate(988.000000, 296.000000)" fill="#E5E5E5">
+            <polygon id="Field-color" points="0 0 288 0 288 40 0 40"></polygon>
+        </g>
+        <g id="Group" transform="translate(988.000000, 200.000000)">
+            <polygon id="Field-color" fill="#E5E5E5" points="0 16 288 16 288 56 0 56"></polygon>
+            <rect id="text-line" fill="#E5E5E5" x="0" y="0" width="40" height="8"></rect>
+            <g transform="translate(256.000000, 28.000000)" fill="#161616" id="icon-/-navigation-/-chevron-/-down-/-16-copy">
+                <polygon id="Fill" points="8 11 3 6 3.7 5.3 8 9.6 12.3 5.3 13 6"></polygon>
+            </g>
+        </g>
+        <g id="Group" transform="translate(988.000000, 377.000000)" fill="#E5E5E5">
+            <polygon id="Field-color" points="0 16 288 16 288 136 0 136"></polygon>
+            <rect id="Character-counter-text" x="266" y="0" width="22" height="8"></rect>
+            <rect id="label-text" x="0" y="0" width="40" height="8"></rect>
+        </g>
+        <mask id="mask-16" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+        <use id="Mask" stroke="#E0E0E0" xlink:href="#path-15"></use>
+        <rect id="Rectangle-Copy-7" fill="#C6C6C6" mask="url(#mask-16)" x="988" y="36" width="85.8151261" height="19"></rect>
+    </g>
+</svg>

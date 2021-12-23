@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="544px" height="128px" viewBox="0 0 544 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>dottedLines</title>
+    <g id="dottedLines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="544" height="128"></rect>
+        <text id="0/4-rounded" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" fill="#D02670">
+            <tspan x="16" y="26">0/4 rounded</tspan>
+        </text>
+        <text id="4/4" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" fill="#D02670">
+            <tspan x="16" y="51.4">4/4</tspan>
+        </text>
+        <text id="8/4" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" fill="#D02670">
+            <tspan x="16" y="76.8">8/4</tspan>
+        </text>
+        <text id="16/4" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" fill="#D02670">
+            <tspan x="16" y="102.2">16/4</tspan>
+        </text>
+        <path d="M130.5,47.7 C195.3407,47.7 241.19599,47.7 355.131411,47.7 C431.088359,47.7 488.544555,47.7 527.5,47.7" id="Path-2" stroke="#8D8D8D" stroke-dasharray="4,4"></path>
+        <path d="M130.5,22.7 C195.3407,22.7 241.19599,22.7 355.131411,22.7 C431.088359,22.7 488.544555,22.7 527.5,22.7" id="Path-2-Copy-3" stroke="#8D8D8D" stroke-linecap="round" stroke-dasharray="0,4"></path>
+        <path d="M130.5,97.7 C195.3407,97.7 241.19599,97.7 355.131411,97.7 C431.088359,97.7 488.544555,97.7 527.5,97.7" id="Path-2-Copy" stroke="#8D8D8D" stroke-dasharray="16,4"></path>
+        <path d="M130.5,72.7 C195.3407,72.7 241.19599,72.7 355.131411,72.7 C431.088359,72.7 488.544555,72.7 527.5,72.7" id="Path-2-Copy-2" stroke="#8D8D8D" stroke-dasharray="8,4"></path>
+    </g>
+</svg>

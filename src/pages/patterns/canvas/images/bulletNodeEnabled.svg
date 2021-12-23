@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="448px" height="244px" viewBox="0 0 448 244" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bulletNodeEnabled</title>
+    <g id="bulletNodeEnabled" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="448" height="244"></rect>
+        <g id="node/white-theme/bullet-node/default-02" transform="translate(175.000000, 107.000000)">
+            <g id="circle" transform="translate(8.000000, 8.000000)" fill="#000000">
+                <rect x="0" y="0" width="8" height="8" rx="4"></rect>
+            </g>
+            <text id="Label-Copy" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.159999996" fill="#161616">
+                <tspan x="24" y="17">Primary text</tspan>
+            </text>
+            <rect id="space-copy" x="103" y="0" width="8" height="24"></rect>
+        </g>
+    </g>
+</svg>

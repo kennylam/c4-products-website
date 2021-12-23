@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="448px" height="252px" viewBox="0 0 448 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>solidLines</title>
+    <g id="solidLines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="448" height="252"></rect>
+        <line x1="32" y1="127" x2="415.999822" y2="126.997201" id="Line-Copy-5" stroke="#FB4B53" stroke-linecap="square"></line>
+    </g>
+</svg>

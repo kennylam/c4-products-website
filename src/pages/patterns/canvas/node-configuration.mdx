@@ -1,0 +1,38 @@
+---
+title: Node configuration
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+
+<Breadcrumb>
+  <BreadcrumbItem href="/patterns/canvas">
+    Canvas
+  </BreadcrumbItem>
+  <BreadcrumbItem isCurrentPage href="/patterns/canvas/node-configuration">
+    Node configuration
+  </BreadcrumbItem>
+</Breadcrumb>
+
+
+<PageDescription>
+
+Nodes often will require configuration after they have been added to a canvas. This configuration, typically formatted as a side panel, can be used refine small details or to establish large-scale adjustments to the canvas.
+
+</PageDescription>
+
+## Overview
+
+Nodes, when being configured, should follow pre-existing patterns like the [side panel](https://pages.github.ibm.com/cdai-design/cloud-pal/components/side-panel-on-cloud/usage) and [form](https://www.carbondesignsystem.com/components/form/usage/) UX. 
+
+It is also important that the node being configured should enter into a `selected-focus` state when the configuration panel is open. This will signify which node is being configured.
+
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![configuring nodes](/images/configuringNode.svg)
+
+  </Column>
+</Row>
+
+### Non-prescriptive canvas positioning
+When using non-prescriptive flows, the configured node should be visually-centered on the canvas. This can be done using scripts that will automatically pan the canvas to place the node in question into the visual center.

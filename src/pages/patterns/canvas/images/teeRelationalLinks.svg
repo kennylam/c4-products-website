@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="608px" height="608px" viewBox="0 0 608 608" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>teeRelationalLinks</title>
+    <g id="teeRelationalLinks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="608" height="608"></rect>
+        <g id="Group" transform="translate(255.000000, 288.000000)" stroke="#161616" stroke-width="4">
+            <line x1="96" y1="16" x2="2" y2="16" id="Line-Copy-4" fill="#4178BE"></line>
+            <line x1="2" y1="0" x2="2" y2="32" id="Path"></line>
+        </g>
+    </g>
+</svg>

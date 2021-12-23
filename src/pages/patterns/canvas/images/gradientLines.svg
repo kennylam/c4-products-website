@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="448px" height="252px" viewBox="0 0 448 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>gradientLines</title>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#4589FF" offset="0%"></stop>
+            <stop stop-color="#8A3FFC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="gradientLines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="448" height="252"></rect>
+        <line x1="32" y1="126.558354" x2="415.999822" y2="126.997201" id="Line-Copy-19" stroke="url(#linearGradient-1)" stroke-linecap="square"></line>
+    </g>
+</svg>

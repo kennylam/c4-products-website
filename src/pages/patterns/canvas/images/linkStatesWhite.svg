@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="608px" height="608px" viewBox="0 0 608 608" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>linkStatesWhite</title>
+    <defs>
+        <rect id="path-1" x="0" y="182.027513" width="363" height="5.95936397"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="365" height="7.95936397">
+            <rect x="-1" y="181.027513" width="365" height="7.95936397" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <polygon id="path-3" points="0 366.003281 363 366.003281 363 372.006349 198.496348 372.006349 0 372.006349"></polygon>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="365" height="8.00306837">
+            <rect x="-1" y="365.003281" width="365" height="8.00306837" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="linkStatesWhite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="608" height="608"></rect>
+        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="608" height="608"></rect>
+        <g id="Group" transform="translate(196.000000, 119.000000)">
+            <line x1="2.41760485" y1="1" x2="363" y2="1" id="Line-Copy-32" stroke="#8D8D8D" stroke-linecap="square"></line>
+            <line x1="2.41760485" y1="277" x2="363" y2="277" id="Line-Copy-34" stroke="#0043CE" stroke-width="2" stroke-linecap="square"></line>
+            <line x1="2.41760485" y1="369" x2="363" y2="369" id="Line-Copy-35" stroke="#0043CE" stroke-width="2" stroke-linecap="square"></line>
+            <line x1="2.41760485" y1="93" x2="363" y2="93" id="Line-Copy-31" stroke="#171717" stroke-width="2" stroke-linecap="square"></line>
+            <line x1="2.41760485" y1="185" x2="363" y2="185" id="Line-Copy-33" stroke="#8D8D8D" stroke-linecap="square"></line>
+            <use id="Rectangle-Copy-374" stroke="#000000" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4,4" xlink:href="#path-1"></use>
+            <use id="Rectangle-Copy-377" stroke="#000000" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="4,4" xlink:href="#path-3"></use>
+            <g transform="translate(150.145985, 93.000000)" fill="#000000" id="Cursor/Default/Black-Copy" stroke="#FFFFFF">
+                <path d="M0.5,1.18918421 L14.0760346,14.4795255 L8.10641054,14.8650208 L10.9361013,21.7708917 L7.57882287,23.3259328 L4.76721051,16.4125471 L0.5,20.7937061 L0.5,1.18918421 Z" id="Path-2"></path>
+            </g>
+        </g>
+        <g id="Group" transform="translate(48.000000, 111.000000)" fill="#6F6F6F" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" letter-spacing="0.159999996" line-spacing="18">
+            <text id=":enabled">
+                <tspan x="0" y="14">:enabled</tspan>
+            </text>
+            <text id=":hover">
+                <tspan x="0" y="106">:hover</tspan>
+            </text>
+            <text id=":selected">
+                <tspan x="0" y="198">:selected</tspan>
+            </text>
+            <text id=":focus">
+                <tspan x="0" y="290">:focus</tspan>
+            </text>
+            <text id=":focus-selected">
+                <tspan x="0" y="382">:focus-selected</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

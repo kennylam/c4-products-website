@@ -72,6 +72,23 @@
       path: /patterns/advanced-filtering/usage
     - title: About modal
       path: /patterns/about-modal/usage
+    - title: Canvas
+      path: /patterns/canvas/
+      subpage:
+        - title: Canvas style
+          path: /patterns/canvas/canvas-style
+        - title: Nodes
+          path: /patterns/canvas/nodes/nodes-overview
+        - title: Card nodes
+          path: /patterns/canvas/nodes/card-nodes
+        - title: Shape nodes
+          path: /patterns/canvas/nodes/shape-nodes
+        - title: Bullet nodes
+          path: /patterns/canvas/nodes/bullet-nodes
+        - title: Links
+          path: /patterns/canvas/links
+        - title: Node configuration
+          path: /patterns/canvas/node-configuration
     - title: Create flows
       path: /patterns/creation-flows/usage
     - title: Edit and update

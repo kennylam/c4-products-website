@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="608px" height="608px" viewBox="0 0 608 608" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>circleRelationalLinks</title>
+    <g id="circleRelationalLinks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="608" height="608"></rect>
+        <g id="Group-3" transform="translate(240.000000, 229.000000)">
+            <ellipse id="Oval" stroke="#161616" stroke-width="4" fill="#FFFFFF" cx="16" cy="16.0301472" rx="14" ry="14.0301472"></ellipse>
+            <ellipse id="Oval-Copy" fill="#161616" cx="16" cy="132.969853" rx="16" ry="16.0301472"></ellipse>
+            <line x1="125" y1="16.0301472" x2="31" y2="16.0301472" id="Line-Copy-4" stroke="#161616" stroke-width="4" fill="#4178BE"></line>
+            <line x1="125" y1="132.969853" x2="31" y2="132.969853" id="Line-Copy-10" stroke="#161616" stroke-width="4"></line>
+        </g>
+    </g>
+</svg>

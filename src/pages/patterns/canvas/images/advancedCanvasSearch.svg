@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>advancedCanvasSearch</title>
+    <g id="advancedCanvasSearch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Actions-/-Navigation-/-zoom--in-/-16" transform="translate(86.000000, 86.000000)" fill="#525252">
+            <path d="M116,110.3436 L85.7916,80.1352 C100.871112,62.0316543 99.0441497,35.2693824 81.6442745,19.3830862 C64.2443994,3.49679001 37.426763,4.10619698 20.76648,20.76648 C4.10619698,37.426763 3.49679001,64.2443994 19.3830862,81.6442745 C35.2693824,99.0441497 62.0316543,100.871112 80.1352,85.7916 L110.3436,116 L116,110.3436 Z M16,52 C16,32.117749 32.117749,16 52,16 C71.882251,16 88,32.117749 88,52 C88,71.882251 71.882251,88 52,88 C32.1268873,87.9779555 16.0220445,71.8731127 16,52 Z" id="Fill"></path>
+        </g>
+    </g>
+</svg>
