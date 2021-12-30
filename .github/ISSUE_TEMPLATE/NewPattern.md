@@ -4,10 +4,9 @@ about: Use this template to submit a pattern
 title: New pattern
 labels: New Pattern
 assignees: ''
-
 ---
 
-### Acceptance Criteria 
+**Acceptance Criteria**
 - [ ] Define pattern and explain the rationale
 - [ ] Include mockups and/or prototypes of any fidelity
 - [ ] Clarify whether it uses existing components, new components, or both
@@ -17,8 +16,17 @@ assignees: ''
 
 We encourage you to surface work in progress. If you’re not able to complete all of the parts yourself, someone in the community may be able to help.
 
+**Ownership**
+Would you like to take ownership of this asset or should the proposal be assigned to a workgroup of the Design System Adoption Guild (DSAG)?
+- [ ] I will take ownership
+- [ ] Please assign a DSAG workgroup
+
+*Taking ownership doesn't mean you'll have to work on this asset alone. The first presentation at DSAG is a great opportunitiy to invite peers to join you.*
+
 **How to write a pattern**
 We’ve created guidelines to help you prepare a complete and comprehensive pattern. These guidelines and the required structure are included in the Markdown template below.
+
+---
 
 ## Overview
 This section answers the question: “What problem does this pattern solve?”
