@@ -68,6 +68,8 @@
       path: /components/tearsheet/usage
 - title: Patterns
   pages:
+    - title: Add and select
+      path: /patterns/add-and-select/usage
     - title: Advanced filtering
       path: /patterns/advanced-filtering/usage
     - title: About modal
