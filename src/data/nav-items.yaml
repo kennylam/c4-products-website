@@ -6,8 +6,8 @@
       path: /overview/contacts
     - title: IBM Product specifications
       path: /overview/carbon-specifications
-    - title: Component index
-      path: /overview/component-index
+    - title: Asset index
+      path: /overview/asset-index
     - title: Carbon for IBM Products
       path: /overview/video
 - title: Contributing
@@ -68,6 +68,8 @@
       path: /components/tearsheet/usage
 - title: Patterns
   pages:
+    - title: Add and select
+      path: /patterns/add-and-select/usage
     - title: Advanced filtering
       path: /patterns/advanced-filtering/usage
     - title: About modal
