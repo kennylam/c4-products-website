@@ -2,15 +2,9 @@
 title: Inline editing
 ---
 
-import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 import { Link } from "gatsby";
 
-<Breadcrumb>
-  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/components/data-table/overview">Overview</BreadcrumbItem>
-  <BreadcrumbItem isCurrentPage href="/patterns/data-table/inline-editing">
-    Inline editing
-  </BreadcrumbItem>
-</Breadcrumb>
+<- [Back to data table overview](https://pages.github.ibm.com/cdai-design/pal/components/data-table/overview) 
 
 <PageDescription>
 
@@ -61,13 +55,26 @@ By default, the user can enter edit mode by any of the following interactions:
 - Pressing `Enter + F2` or `Space` on the keyboard when a cell is focused
 - For text and number cells: Start typing while cell is focused. Cell will enter edit mode and replace the current content with the typed character/digit
 
-![Example of Auto save feature during Inline editing](images/Inline_editing_auto_save.gif)
+
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Example of Auto save feature during Inline editing](images/inline_editing_auto_save.gif)
+  
+  </Column>
+</Row>
 
 Inline editing is disabled and hidden when batch edit mode is enabled
 
 - If the user has the ability to multi-select in the data table, inline editing will be hidden (not just disabled, but completely removed from view). This aligns with the guidance for actions in batch edit mode for the data table.
 
-![Edit mode batch edit example](images/EditMode_BatchEdit.png)
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Edit mode batch edit example](images/editMode_batchEdit.png)
+
+  </Column>
+</Row>
 
 ## Auto save
 
@@ -99,7 +106,18 @@ In auto-save a user should be able to undo/redo changes they have made to a cell
 
 Example of a transactional modal used to edit the data instead of inline.
 
-![Example of a transactional modal](images/transactionalModal.jpg)
+<Row>
+  <Column colMd={4} colLg={4}>
+
+![Example of a transactional modal](images/transactionalModal1.png)
+
+  </Column>
+  <Column colMd={4} colLg={4}>
+
+![Example of a transactional modal](images/transactionalModal2.png)
+  
+  </Column>
+</Row>
 
 ## Complex cells
 
@@ -107,7 +125,30 @@ A complex cell may have one or more more clickable links in one cell.
 
 In the example below, the user has the ability to edit the asset_name, click on the asset_name to open the asset, and click on the location path of the asset, which will bring them to where that asset lives. It has an edit icon that appears closer to the content of a cell. To edit the name, the user will need to click on the icon to enable the inline editing.
 
-![Example of an interaction with a complex cell](images/complexCells.png)
+<Row>
+  <Column colMd={4} colLg={4}>
+
+  ![Example of an interaction with a complex cell](images/complexCells1.png)
+
+  </Column>
+  <Column colMd={4} colLg={4}>
+
+   ![Example of an interaction with a complex cell](images/complexCells2.png)
+
+   </Column>
+</Row>
+<Row>
+  <Column colMd={4} colLg={4}>
+
+![Example of an interaction with a complex cell](images/complexCells3.png)
+
+  </Column>
+  <Column colMd={4} colLg={4}>
+
+![Example of an interaction with a complex cell](images/complexCells4.png)
+
+  </Column>
+</Row>
 
 ## Data types
 
@@ -121,10 +162,64 @@ There are 4 data types which can be edited directly inside the data table.
 - Number input without steppers
 - Number input with steppers
 
-![Example of data types](images/datatype_hover.png)
+<Row>
+  <Column colMd={3} colLg={3}>
 
-![Example of data types](images/data_type_default.png)
-![Example of data types](images/data_types.png)
+![The four data types](images/datatype_hover.jpg) 
+
+<Caption>
+  The four data types
+</Caption>
+
+  </Column>
+  <Column colMd={3} colLg={3}>
+
+![Example of a default data type](images/data_type_default.png)
+
+<Caption>
+  Default
+</Caption>
+
+  </Column>
+  <Column colMd={3} colLg={3}>
+
+![Example of selection data type](images/data_types4.png)
+
+<Caption>
+  Selection
+</Caption>
+
+  </Column>
+</Row>
+<Row>
+  <Column colMd={3} colLg={3}>
+
+![Example of date data type](images/data_types5.png)
+
+<Caption>
+  Date
+</Caption>
+
+  </Column>
+  <Column colMd={3} colLg={3}>
+
+![Example of number input without steppers data type](images/data_types6.png)
+
+<Caption>
+  Number without steppers
+</Caption>
+
+  </Column>
+  <Column colMd={3} colLg={3}>
+
+![Example of number input with steppers data type](images/data_types7.png)
+
+<Caption>
+  Number with steppers
+</Caption>
+
+  </Column>
+</Row>
 
 ### Number input
 
@@ -145,11 +240,23 @@ When a column has been resized to a compact size where the cells are truncated, 
 
 When editing a compact column, the column will resize. Once the user has finished editing the data, the column width will revert back to it's original width.
 
-![Example of data types](images/06_CompactColumns-01.gif)
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Example of a compact column interaction](images/06_CompactColumns-01.gif)
+
+  </Column>
+</Row>
 
 When a compact column appears on the very right edge of the table, the cell will remain in view and the columns on the left side of the column will push left.
 
+<Row>
+  <Column colMd={8} colLg={8}>
+
 ![Example of compact column interaction](images/06_CompactColumns-02.gif)
+
+  </Column>
+</Row>
 
 | Compact column max-widths | Width         |
 | ------------------------- | ------------- |
@@ -159,7 +266,13 @@ When a compact column appears on the very right edge of the table, the cell will
 
 When inline editing in a cell, if the text exceeds the width of the cell it will begin to push the text left.
 
+<Row>
+  <Column colMd={8} colLg={8}>
+
 ![Example of overflow content interaction](images/07_OverflowContent-01.gif)
+
+  </Column>
+</Row>
 
 ## Validation
 
@@ -169,13 +282,25 @@ Input validation is communicated in the active cell and an error state. If an er
 
 If the user loses focus without resolving the issue, the change is automatically discarded and the cell's content is reverted to its previous value.
 
-![Example of overflow content interaction](images/08_Validation-01.gif)
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Example of a cell validation interaction](images/08_Validation-01.gif)
+
+  </Column>
+</Row>
 
 ### System errors
 
 If any error has occurred in the back end while a user was inline editing. An inline notification will appear above the table to let the user know that there was an error and the edit they just made was not saved. The guidance follows the inline notification, which requires the user to dismiss the error.
 
-![Example of overflow content interaction](images/system_errors.png)
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Example of a system error](images/system_errors.png)
+
+  </Column>
+</Row>
 
 ## Cell states and structure
 
@@ -185,7 +310,13 @@ If any error has occurred in the back end while a user was inline editing. An in
 
 #### Cell states
 
+<Row>
+  <Column colMd={8} colLg={8}>
+
 ![Cell states](images/09_CellStates_Structure-01.png)
+
+  </Column>
+</Row>
 
 | Interactive states | Background Tokens                |
 | ------------------ | -------------------------------- |
@@ -209,13 +340,25 @@ If any error has occurred in the back end while a user was inline editing. An in
 
 #### Structure
 
-![Cell states](images/09_CellStates_Structure-02.png)
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Cell structure](images/09_CellStates_Structure-02.png)
+
+  </Column>
+</Row>
 
 #### Rows with selection (checkbox)
 
 The hover state of a row that is selected with editable cells have a different hover state style. The hover state style is a border on the row in `$ui-05`.
 
-![Cell states](images/09_CellState_Stucture-03.png)
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Rows with selection (checkbox)](images/09_CellState_Stucture-03.png)
+  
+  </Column>
+</Row>
 
 | Interactive states | Background Tokens |
 | ------------------ | ----------------- |
@@ -225,7 +368,13 @@ The hover state of a row that is selected with editable cells have a different h
 
 Complex cell states follow the style of clickable rows. Here are the row states along with the active inline edit.
 
-![Cell states](images/complex_cell_states.png)
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Complex cell states](images/complex_cell_states.png)
+
+  </Column>
+</Row>
 
 | Interactive states          | Background Tokens                 |
 | --------------------------- | --------------------------------- |
@@ -247,7 +396,13 @@ Complex cell states follow the style of clickable rows. Here are the row states 
 
 #### Structure
 
-![Cell states](images/09_CellStates_Structure-05.png)
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Cell state structure](images/09_CellStates_Structure-05.png)
+
+  </Column>
+</Row>
 
 | Interactive states | Background Tokens            |
 | ------------------ | ---------------------------- |
@@ -257,4 +412,10 @@ Complex cell states follow the style of clickable rows. Here are the row states 
 
 Inline editing scales across the 3 different data table row sizes, which are 32 short, 48 default and 64 tall.
 
-![Cell states](images/09_CellStates_Structure-05.png)
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Row sizes](images/10_RowSizes-01.png)
+
+  </Column>
+</Row>
