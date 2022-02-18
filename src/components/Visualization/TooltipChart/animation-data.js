@@ -3,7 +3,7 @@ const businessUnits = {
         businessUnit: "Information Architecture",
         color: "#4fbaba" //green
     },
-    "ai": {
+    "hps": {
         businessUnit: "HPS, CCBAAS",
         color: "#5286fb" //blue
     },
@@ -50,12 +50,12 @@ const data = {
     "automation--cloud-pak-business" : {
         businessUnit: businessUnits["automation"],
         productName: "Cloud Pak for Business Automation - Studio",
-        numberOfComponents: 0
+        numberOfComponents: 12
     },
     "automation--cloud-pak-integration" : {
         businessUnit: businessUnits["automation"],
         productName: "Cloud Pak for Integration",
-        numberOfComponents: 0
+        numberOfComponents: 14
     },
     "automation--cloud-pak-ai-ops" : {
         businessUnit: businessUnits["automation"],
@@ -115,14 +115,14 @@ const data = {
     "automation--mono2micro" : {
         businessUnit: businessUnits["automation"],
         productName: "Mono2Micro",
-        numberOfComponents: 0
+        numberOfComponents: 1
     },
     "automation--myinvenio" : {
         businessUnit: businessUnits["automation"],
         productName: "MyInvenio - \n Process mining",
         numberOfComponents: 13
     },
-    "automation--no-investment" : {
+    "automation--business-performance-center" : {
         businessUnit: businessUnits["automation"],
         productName: "Business Performance Center",
         numberOfComponents: 8
@@ -152,63 +152,63 @@ const data = {
         productName: "Workstreams",
         numberOfComponents: 7
     },
-    "ai--alert-insights" : {
-        businessUnit: businessUnits["ai"],
+    "hps--alert-insights" : {
+        businessUnit: businessUnits["hps"],
         productName: "Alert Insight - \n Primary Monitoring",
         numberOfComponents: 3
     },
-    "ai--cognos" : {
-        businessUnit: businessUnits["ai"],
+    "hps--cognos" : {
+        businessUnit: businessUnits["hps"],
         productName: "Cognos Analytics",
         numberOfComponents: 15
     },
-    "ai--commercial-payments" : {
-        businessUnit: businessUnits["ai"],
+    "hps--commercial-payments" : {
+        businessUnit: businessUnits["hps"],
         productName: "Commercial Payments",
         numberOfComponents: 1
     },
-    "ai--due-dilligence" : {
-        businessUnit: businessUnits["ai"],
-        productName: "Due Dilligence",
+    "hps--due-diligence" : {
+        businessUnit: businessUnits["hps"],
+        productName: "Due Diligence",
         numberOfComponents: 3
     },
-    "ai--insurance-claim-fraud" : {
-        businessUnit: businessUnits["ai"],
+    "hps--insurance-claim-fraud" : {
+        businessUnit: businessUnits["hps"],
         productName: "Insurance Claim Fraud",
         numberOfComponents: 5
     },
-    "ai--investigative" : {
-        businessUnit: businessUnits["ai"],
+    "hps--investigative" : {
+        businessUnit: businessUnits["hps"],
         productName: "Investigative UI",
         numberOfComponents: 1
     },
-    "ai--open-pages" : {
-        businessUnit: businessUnits["ai"],
+    "hps--open-pages" : {
+        businessUnit: businessUnits["hps"],
         productName: "Open Pages",
         numberOfComponents: 14
     },
-    "ai--planning-analytics" : {
-        businessUnit: businessUnits["ai"],
+    "hps--planning-analytics" : {
+        businessUnit: businessUnits["hps"],
         productName: "Planning Analytics",
         numberOfComponents: 18
     },
-    "ai--safer-payments" : {
-        businessUnit: businessUnits["ai"],
+    "hps--safer-payments" : {
+        businessUnit: businessUnits["hps"],
         productName: "Safer Payments",
         numberOfComponents: 1
     },
-    "ai--surveillance" : {
-        businessUnit: businessUnits["ai"],
+    "hps--surveillance" : {
+        businessUnit: businessUnits["hps"],
         productName: "Surveillance Insight",
         numberOfComponents: 1
     },
-    "ai--watson-assistant" : {
-        businessUnit: businessUnits["ai"],
+    "hps--watson-assistant" : {
+        businessUnit: businessUnits["hps"],
         productName: "Watson Assistant",
         numberOfComponents: 14
     },
-    "ai--watson-discovery" : {
-        businessUnit: businessUnits["ai"],
+    "hps--watson-discovery" : {
+        businessUnit: businessUnits["hps"],
         productName: "Watson Discovery \n (Ninja Z)",
         numberOfComponents: 17
     },
