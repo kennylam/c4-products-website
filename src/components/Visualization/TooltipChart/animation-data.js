@@ -50,12 +50,12 @@ const data = {
     "automation--cloud-pak-business" : {
         businessUnit: businessUnits["automation"],
         productName: "Cloud Pak for Business Automation - Studio",
-        numberOfComponents: 0
+        numberOfComponents: 12
     },
     "automation--cloud-pak-integration" : {
         businessUnit: businessUnits["automation"],
         productName: "Cloud Pak for Integration",
-        numberOfComponents: 0
+        numberOfComponents: 14
     },
     "automation--cloud-pak-ai-ops" : {
         businessUnit: businessUnits["automation"],
@@ -115,7 +115,7 @@ const data = {
     "automation--mono2micro" : {
         businessUnit: businessUnits["automation"],
         productName: "Mono2Micro",
-        numberOfComponents: 0
+        numberOfComponents: 1
     },
     "automation--myinvenio" : {
         businessUnit: businessUnits["automation"],
