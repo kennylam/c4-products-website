@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { data, businessUnits } from './animation-data';
 import { gsap } from "gsap";
-import video from './background_high_res.mp4';
+import Lottie from 'react-lottie';
+import combinedSVG from './combined.json'
 import './TooltipChart.scss';
 
 const documentExists = typeof window !== `undefined` ? true : false;
@@ -208,7 +209,7 @@ const TooltipChart = () => {
             strokeDashoffset: function (index, target) {
               return ( -1 * (265 - (100 * (target.dataset.length / 25)) * 2.65));
             },
-            opacity: 1,
+            opacity: 0,
             stagger: {
               amount: -2
             }
@@ -221,6 +222,13 @@ const TooltipChart = () => {
     getClasses();
     playTooltipChartAnimation()
   }, 1000);
+
+  const defaultOptions = {
+    renderer: 'svg',
+    loop: false,
+    autplay: true,
+    animationData: combinedSVG,
+  }
 
   const tooltipCoordinates = {
     left: mouseCoords.x - 25,
@@ -249,9 +257,7 @@ const TooltipChart = () => {
       {/* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */}
       <div className={`chart ${chartContainerHasFocus ? 'chart-with-focus' : ' '}`} tabIndex="0">
         <div role="presentation" className="chart--lottie">
-          <video onLoadedData={getClasses} id="background-video" width="100%" autoPlay="autoplay" muted>
-            <source src={video} type="video/mp4"/>
-          </video>
+          <Lottie options={defaultOptions} />
         </div>
         <div className="chart--bars">
           <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="chart-title chart-desc" aria-details="det" viewBox="0 0 1300 800" className={isLoading ? 'barsLoading' : 'showBars'}>

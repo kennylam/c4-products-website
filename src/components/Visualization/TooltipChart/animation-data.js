@@ -25,22 +25,22 @@ const data = {
     "automation--content-navigator" : {
         businessUnit: businessUnits["automation"],
         productName: "Content Navigator",
-        numberOfComponents: 7
+        numberOfComponents: 4
     },
     "automation--app-designer" : {
         businessUnit: businessUnits["automation"],
         productName: "App Designer",
-        numberOfComponents: 1
+        numberOfComponents: 9
     },
     "automation--app-navigator" : {
         businessUnit: businessUnits["automation"],
         productName: "App Navigator",
-        numberOfComponents: 2
+        numberOfComponents: 8
     },
     "automation--autopilot" : {
         businessUnit: businessUnits["automation"],
         productName: "Autopilot",
-        numberOfComponents: 9
+        numberOfComponents: 3
     },
     "automation--cloud-pak-automation" : {
         businessUnit: businessUnits["automation"],
@@ -50,47 +50,47 @@ const data = {
     "automation--cloud-pak-business" : {
         businessUnit: businessUnits["automation"],
         productName: "Cloud Pak for Business Automation - Studio",
-        numberOfComponents: 12
+        numberOfComponents: 0
     },
     "automation--cloud-pak-integration" : {
         businessUnit: businessUnits["automation"],
         productName: "Cloud Pak for Integration",
-        numberOfComponents: 14
+        numberOfComponents: 0
     },
     "automation--cloud-pak-ai-ops" : {
         businessUnit: businessUnits["automation"],
         productName: "Cloud Pak for \n Watson AI Ops",
-        numberOfComponents: 14
+        numberOfComponents: 16
     },
     "automation--content-designer" : {
         businessUnit: businessUnits["automation"],
         productName: "Content Designer",
-        numberOfComponents: 8
+        numberOfComponents: 10
     },
     "automation--api-connect" : {
         businessUnit: businessUnits["automation"],
         productName: "CP4I - API Connect",
-        numberOfComponents: 13
+        numberOfComponents: 4
     },
     "automation--api-connect-test" : {
         businessUnit: businessUnits["automation"],
         productName: "CP4I - API Connect \n Test and Monitor",
-        numberOfComponents: 4
+        numberOfComponents: 13
     },
     "automation--app-connect" : {
         businessUnit: businessUnits["automation"],
         productName: "CP4I - App Connect",
-        numberOfComponents: 12
+        numberOfComponents: 14
     },
     "automation--data-power" : {
         businessUnit: businessUnits["automation"],
         productName: "CP4I - DataPower",
-        numberOfComponents: 9
+        numberOfComponents: 11
     },
     "automation--event-streams" : {
         businessUnit: businessUnits["automation"],
         productName: "CP4I - Event Streams",
-        numberOfComponents: 11
+        numberOfComponents: 12
     },
     "automation--mq" : {
         businessUnit: businessUnits["automation"],
@@ -100,22 +100,22 @@ const data = {
     "automation--decision-designer" : {
         businessUnit: businessUnits["automation"],
         productName: "Decision Designer",
-        numberOfComponents: 7
+        numberOfComponents: 3
     },
     "automation--edge-application" : {
         businessUnit: businessUnits["automation"],
         productName: "Edge Application Manager",
-        numberOfComponents: 3
+        numberOfComponents: 9
     },
     "automation--workflow-designer" : {
         businessUnit: businessUnits["automation"],
         productName: "Intelligent Workflow Designer",
-        numberOfComponents: 11
+        numberOfComponents: 9
     },
     "automation--mono2micro" : {
         businessUnit: businessUnits["automation"],
         productName: "Mono2Micro",
-        numberOfComponents: 1
+        numberOfComponents: 0
     },
     "automation--myinvenio" : {
         businessUnit: businessUnits["automation"],
@@ -125,17 +125,17 @@ const data = {
     "automation--no-investment" : {
         businessUnit: businessUnits["automation"],
         productName: "Business Performance Center",
-        numberOfComponents: 4
+        numberOfComponents: 8
     },
     "automation--platform-navigator" : {
         businessUnit: businessUnits["automation"],
         productName: "Platform Navigator",
-        numberOfComponents: 4
+        numberOfComponents: 1
     },
     "automation--robotic-process" : {
         businessUnit: businessUnits["automation"],
         productName: "Robotic Process Automation - Server",
-        numberOfComponents: 4
+        numberOfComponents: 13
     },
     "automation--turbonomic" : {
         businessUnit: businessUnits["automation"],
@@ -145,12 +145,12 @@ const data = {
     "automation--websphere" : {
         businessUnit: businessUnits["automation"],
         productName: "Websphere Automation",
-        numberOfComponents: 8
+        numberOfComponents: 1
     },
     "automation--workstreams" : {
         businessUnit: businessUnits["automation"],
         productName: "Workstreams",
-        numberOfComponents: 5
+        numberOfComponents: 7
     },
     "ai--alert-insights" : {
         businessUnit: businessUnits["ai"],
@@ -160,7 +160,7 @@ const data = {
     "ai--cognos" : {
         businessUnit: businessUnits["ai"],
         productName: "Cognos Analytics",
-        numberOfComponents: 16
+        numberOfComponents: 15
     },
     "ai--commercial-payments" : {
         businessUnit: businessUnits["ai"],
@@ -185,12 +185,12 @@ const data = {
     "ai--open-pages" : {
         businessUnit: businessUnits["ai"],
         productName: "Open Pages",
-        numberOfComponents: 13
+        numberOfComponents: 14
     },
     "ai--planning-analytics" : {
         businessUnit: businessUnits["ai"],
         productName: "Planning Analytics",
-        numberOfComponents: 16
+        numberOfComponents: 18
     },
     "ai--safer-payments" : {
         businessUnit: businessUnits["ai"],
@@ -210,17 +210,17 @@ const data = {
     "ai--watson-discovery" : {
         businessUnit: businessUnits["ai"],
         productName: "Watson Discovery \n (Ninja Z)",
-        numberOfComponents: 14
+        numberOfComponents: 17
     },
     "public-cloud--platform" : {
         businessUnit: businessUnits["cloud"],
         productName: "Public Cloud Platform",
-        numberOfComponents: 11
+        numberOfComponents: 9
     },
     "information--cloud-pak" : {
         businessUnit: businessUnits["information"],
         productName: "Cloud Pak for Data",
-        numberOfComponents: 18
+        numberOfComponents: 20
     },
     "information--data-lineage" : {
         businessUnit: businessUnits["information"],
@@ -255,7 +255,7 @@ const data = {
     "information--data-stage" : {
         businessUnit: businessUnits["information"],
         productName: "Data Stage",
-        numberOfComponents: 15
+        numberOfComponents: 16
     },
     "information--db2-oncloud" : {
         businessUnit: businessUnits["information"],
@@ -265,7 +265,7 @@ const data = {
     "information--decision-optimization" : {
         businessUnit: businessUnits["information"],
         productName: "Decision Optimization",
-        numberOfComponents: 15
+        numberOfComponents: 16
     },
     "information--match-360" : {
         businessUnit: businessUnits["information"],
@@ -290,7 +290,7 @@ const data = {
     "information--watson-machine-learning" : {
         businessUnit: businessUnits["information"],
         productName: "Watson Machine Learning",
-        numberOfComponents: 14
+        numberOfComponents: 16
     },
     "information--watson-openscale" : {
         businessUnit: businessUnits["information"],
@@ -300,7 +300,7 @@ const data = {
     "information--watson-studio" : {
         businessUnit: businessUnits["information"],
         productName: "Watson Studio/Desktop",
-        numberOfComponents: 15
+        numberOfComponents: 18
     },
     "security--case-management" : {
         businessUnit: businessUnits["security"],
@@ -310,7 +310,7 @@ const data = {
     "security--cp4s" : {
         businessUnit: businessUnits["security"],
         productName: "CP4S Platform",
-        numberOfComponents: 17
+        numberOfComponents: 19
     },
     "security--data-explorer" : {
         businessUnit: businessUnits["security"],
