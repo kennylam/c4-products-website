@@ -178,7 +178,7 @@ const Glossary = () => {
                     ) : cell.id.includes("last_updated") ? (
                       <TableCell key={cell.id}>{cell.value && new Date(cell.value).toLocaleDateString()}</TableCell>
                     ) : (
-                      <TableCell key={cell.id}>{cell.value}</TableCell>
+                      <TableCell key={cell.id}>{String(cell.value).replaceAll("\"", "”").replaceAll(" ”", " “")}</TableCell>
                     )
                   )}
                 </TableRow>
