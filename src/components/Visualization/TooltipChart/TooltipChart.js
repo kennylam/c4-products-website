@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { data, businessUnits } from './animation-data';
 import { gsap } from "gsap";
 import Lottie from 'react-lottie';
-import combinedSVG from './combined.json'
+import combinedSVG from './combined-no-padding.json'
 import './TooltipChart.scss';
 
 const documentExists = typeof window !== `undefined` ? true : false;
@@ -207,9 +207,9 @@ const TooltipChart = () => {
           q(".line"),
           {
             strokeDashoffset: function (index, target) {
-              return ( -1 * (265 - (100 * (target.dataset.length / 25)) * 2.65));
+              return ( -1 * (265 - (100 * (target.dataset.length / 25)) * 2.65) + 4);
             },
-            opacity: 0,
+            //opacity: .85,
             stagger: {
               amount: -2
             }
@@ -231,8 +231,8 @@ const TooltipChart = () => {
   }
 
   const tooltipCoordinates = {
-    left: mouseCoords.x - 25,
-    top: mouseCoords.y
+    left: mouseCoords.x - 26,
+    top: mouseCoords.y + 14
   }
 
   return (
@@ -260,7 +260,7 @@ const TooltipChart = () => {
           <Lottie options={defaultOptions} />
         </div>
         <div className="chart--bars">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="chart-title chart-desc" aria-details="det" viewBox="0 0 1300 800" className={isLoading ? 'barsLoading' : 'showBars'}>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="chart-title chart-desc" aria-details="det" viewBox="-13 -27 1251 800" className={isLoading ? 'barsLoading' : 'showBars'}>
             <title id="chart-title">655 Total instances of pattern adoption</title>
             <desc id="chart-desc">Bar graph depicting instances of pattern adoption for each product, grouped by business unit, animating in sequentially with an animated background.  There are 655 total instances of pattern adoption, with a range of 1 to 23 instances adpoted per product. Data for each product and business unit is availble in table format by clicking the next link, or by pressing left or right arrow keys to cycle through the bars.</desc>
             <g id="pink--automation" stroke={businessUnits['automation'].color}>
