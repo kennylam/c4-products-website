@@ -2,9 +2,12 @@
   td {
     padding-top: $spacing-05;
     padding-bottom: $spacing-05;
+    vertical-align: text-top;
   }
 }
 
 .tag-container {
   background-color: $ui-01;
+  padding-top: $spacing-04;
+  padding-bottom: $spacing-04;
 }
