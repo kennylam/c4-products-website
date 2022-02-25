@@ -4,6 +4,7 @@
 
 .chart--container {
   position: relative;
+  width: 100%;
 }
 
 .showBars {
@@ -12,9 +13,9 @@
 
 .chart {
   position: relative;
-  width: calc(100% - 3rem);
+  width: 100%;
   height: 100%;
-  transform: translate(-22px);
+  //transform: translate(-22px);
   &:focus,
   &.chart-with-focus {
     outline: 2px solid $inverse-link;
@@ -41,8 +42,8 @@
 .chart--bars {
   position: relative;
   z-index: 0;
-  padding-top: 3.9%;
-  left: 2.85%;
+  //padding-top: 3.9%;
+  //left: 2.85%;
 }
 
 .chart--label {
@@ -135,8 +136,10 @@
   }
 
   path:hover {
+    opacity: 1;
     transition: 0.07s all;
     stroke-width: 12px;
+    
   }
 
   path:focus {
