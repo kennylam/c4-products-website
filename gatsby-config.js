@@ -28,7 +28,8 @@ module.exports = {
         repository: {
           baseUrl: "https://github.ibm.com/cdai-design/pal",
           branch: "master"
-        }
+        },
+        iconPath: './src/images/carbon-for-ibm-product.png',
       }
     },
     {
