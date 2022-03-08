@@ -1,8 +1,9 @@
 import React from 'react';
 import Footer from 'gatsby-theme-carbon/src/components/Footer';
-import pageContext from '../pageContext';
 
-const Content = () => (
+const currentYear = new Date().getFullYear();
+
+const Content = ({ buildTime }) => (
   <>
     <p>Have questions? Email us for site feedbacks or open an issue in <a href="https://github.ibm.com/CDAI-design/pal/issues">GitHub</a></p>
     <p>
@@ -10,9 +11,9 @@ const Content = () => (
       <br />
       React Components version <a href="#">6.26.2</a>
       <br />
-      Last updated {pageContext.MdxNode && pageContext.MdxNode.fields.gitDate.split('T')[0]}
+      Last updated {buildTime}
       <br />
-      Copyright © 2018 IBM
+      Copyright © {currentYear} IBM
     </p>
   </>
 );
