@@ -25,9 +25,7 @@ Some troubleshooting hints and tips when working in your local environment and d
 1) The following instructions assume you are using a MacOS machine.<br />
 2) You'll be asked to execute some commands in the Terminal. Each command is presented like this:
 
-```$ command options```
-
-But when copying these commands do **not** include the dollar symbol ($).
+```command options```
 </InlineNotification>
 
 
@@ -81,15 +79,15 @@ This can be accomplished two different ways.
 
 - If you are already _in_ the master/main branch, run the following commands:
   ```
-  $ git fetch
+  git fetch
   ```
   ```
-  $ git pull
+  git pull
   ```
 - If you are in your feature branch, first stage and commit all changes you currently have. 
 Then, run the following command:
   ```
-  $ git merge master
+  git merge master
   ```
 - You may be required to entire a merge message. If so, press **Enter** on your keyboard until you reach the `#` line. 
   You can enter `:wq!` to exit this stage and all changes from master will now be in your repository.
@@ -116,12 +114,12 @@ section even though you haven't manually edited those files.
 Generally speaking, these files do not need to be included in commits you make. 
 1. To prevent them from ever being included, run the following command: 
   ```
-  $ git update-index --skip-worktree package-lock.json package.json
+  git update-index --skip-worktree package-lock.json package.json
   ```
 
 - Note that, if needed, this can be reversed by running this command: 
   ```
-  $ git update-index --no-skip-worktree package-lock.json package.json
+  git update-index --no-skip-worktree package-lock.json package.json
   ```
 
 
@@ -149,7 +147,7 @@ or introduced or modified images.
 1. In the terminal, press **Ctrl**+**C** to stop your local development build.
 1. The run this command:
   ```
-  $ npm run dev:clean
+  npm run dev:clean
   ```
 
 ## Moving your changes to a different branch
@@ -159,12 +157,12 @@ you forgot to create a new branch and have made changes in the `master` branch),
 help.
 1. Run the following command (which will remove your changes from the current branch but store them in memory):
   ```
-  $ git stash
+  git stash
   ```
 2. Create a new branch. (See the [Create a new branch](./making-and-delivering-changes#create-a-new-branch) section for details.) 
 3. Run the following command:
   ```
-  $ git stash pop
+  git stash pop
   ```
 Your changes will now be applied to your new branch.
 
@@ -181,7 +179,7 @@ However, if you hit unexpected build problems it can sometimes help to update th
 1. First, pull the latest changes from the master repository.
 2. In the Terminal run this install command:
   ```
-  $ npm i
+  npm i
   ```
   
   This will update the project dependencies. You should now be able to run the standard `npm run dev` command 
@@ -191,7 +189,7 @@ However, if you hit unexpected build problems it can sometimes help to update th
 
 You will need to have a server running to be able to see the changes you're making in real time on your local environment. Starting your server is as easy as running:
   ```
-  $ npm run dev
+  npm run dev
   ```
 It is important that you close your server when you're finished making edits, as having a server running in the background can cause your machine to run slower. Closing your server can also help to avoid certain errors when starting it back up.
 
@@ -200,8 +198,8 @@ To close your server:
 
 ### Common errors
   ```
-  $ Something is already running on port 8000. 
-    Would you like to run the app on another port instead? Y/n
+  Something is already running on port 8000. 
+  Would you like to run the app on another port instead? Y/n
   ```
 This means that you are already running a server that wasn't previously closed. 
 
@@ -211,9 +209,9 @@ This error message gives you the option of choosing "Y" which will open another 
 
 1. In the Terminal, press "n".
 2. Run this command to find the PID number of the running server currently using port 8000:
-```
-$ lsof -i :8000
-```
+  ```
+  lsof -i :8000
+  ```
 
   The output will be something along the lines of this:
     ```
@@ -225,12 +223,12 @@ $ lsof -i :8000
 
   3. Run this command:
     ```
-    $ kill -9 <PID>
+    kill -9 <PID>
     ```
 
 4. Start up your development server again using:
   ```
-  $ npm run dev
+  npm run dev
   ```
 
 Your error message should disappear, and your server should be running on `localhost:8000`

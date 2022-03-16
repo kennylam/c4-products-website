@@ -25,11 +25,9 @@ The steps you need to follow to set up a development environment on your local m
 <InlineNotification kind="warning">
 <strong>Notes:</strong><br />
 1) The following instructions assume you are using a MacOS machine.<br />
-2) You'll be asked to execute some commands in the Terminal. Each command is presented like this:
+2) You'll be asked to execute some commands in the Terminal. Each command is presented like this: 
 
-```$ command options```
-
-But when copying these commands do **not** include the dollar symbol ($).
+```command options```
 </InlineNotification>
 
 
@@ -87,7 +85,7 @@ There are some special characters that can be used in the terminal to specify fo
 1. Open a finder window and locate your home folder.  
 If you'd prefer, you can do this via the Terminal by running this command:
   ```
-  $ open ~/
+  open ~/
   ```
 
 2. Create a folder called something like 'Source' or 'Projects' to hold your
@@ -105,12 +103,12 @@ manage versions of Node.js. For more details, see <https://github.com/nvm-sh/nvm
 1. You must have a `.bash_profile` (which is a hidden file) present in your home folder. If not go
 to the MacOS terminal window and execute this command:
   ```
-  $ touch ~/.bash_profile
+  touch ~/.bash_profile
   ```
 
 2. To install NVM paste the following into a MacOS terminal window
   ```
-  $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
   ```
 
   <InlineNotification kind="info">
@@ -124,7 +122,7 @@ to the MacOS terminal window and execute this command:
 3. Close the existing macOS Terminal window and open a new one. 
 4. Then run this command: 
   ```
-  $ nvm --version
+  nvm --version
   ```
 This will confirm that you now have NVM installed and will list the version number.
 
@@ -136,7 +134,7 @@ This installs the Node.js Javascript engine that is used to build and test the w
 
 1. In the Terminal, run the following command:
   ```
-  $ nvm install 12
+  nvm install 12
   ```
 
   <InlineNotification kind="warning">
@@ -183,7 +181,7 @@ need to install it now.
 #### To install Yarn: 
 1. In your Terminal, run the command:
   ```
-  $ curl -o- -L https://yarnpkg.com/install.sh | bash
+  curl -o- -L https://yarnpkg.com/install.sh | bash
   ```
 
 
@@ -234,7 +232,7 @@ in the [Configure macOS settings](#configure-macos-settings) step earlier on.
 1. In the Terminal window, use the `cd` (change directory) command, followed by the name of the directory you chose 
 (e.g. "Source" or "Projects" etc.):
   ```
-  $ cd ~/Source
+  cd ~/Source
   ```
 At present this directory will be empty.
 
@@ -244,7 +242,7 @@ At present this directory will be empty.
 
 2. To clone all of the `pal` source files into this directory on your local machine, run this command:
   ```
-  $ git clone git@github.ibm.com:CDAI-design/pal.git
+  git clone git@github.ibm.com:CDAI-design/pal.git
   ```
 Your chosen directory will now contain all of the source files for this site.
 
@@ -255,11 +253,11 @@ This is very quick to do.
 1. In the terminal window, change directory to the `pal` directory (which was just created in the previous step) 
 by running this command: 
   ```
-  $ cd pal
+  cd pal
   ```
 2. Install the dependencies of the project by running this command:
   ```
-  $ npm i
+  npm i
   ```
 3. Open VS Code and from the menu, click **File** > **Open...**. In the diretory window, navigate to 
 the `pal` subdirectory and click **Open**.  
@@ -274,7 +272,7 @@ the `pal` subdirectory and click **Open**.
 
 1. In the Terminal window, run this command: 
   ```
-  $ npm run dev
+  npm run dev
   ```
 
   The first time you start your development environment server it can take longer than normal as it has additional work to do.
@@ -287,7 +285,7 @@ the `pal` subdirectory and click **Open**.
   1. In the Terminal window, run this command instead:<br />
 
   ```
-  $ yarn run
+  yarn run
   ```
 
   </AccordionItem>
