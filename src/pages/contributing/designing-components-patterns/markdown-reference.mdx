@@ -1,0 +1,337 @@
+---
+title: 'Markdown Reference'
+tabs: ['Overview', 'Markdown Reference']
+description:
+    This markdown reference page shows the best practices for creating a new pattern
+    on the pal website. They're code blocks in each section which you can easily copy
+    to use on your own site. Happy coding!
+---
+<!-- Frontmatter (^^) contains data about the post, such as the title and description. It is written in YAML. 
+Frontmatter is placed at the top of the MDX file between sets of three hyphens (---). Each frontmatter 
+field should be placed on its own line. THIS MUST BE THE FIRST THING IN THE FILE. -->
+
+![Hello world](../images/hello-world.jpeg)
+
+<!-- Customize this section with your name and GitHub repository URL to inform viewers who maintains this page -->
+#### Maintainer:
+[Drew Glapa](https://github.ibm.com/Drew-Glapa)
+
+<!-- Page description is your first block of text describing what your pattern accomplishes -->
+<PageDescription>
+    This markdown reference page shows the best practices for creating a new pattern
+    on the pal website. They're code blocks in each section which you can easily copy
+    to use on your own site. Happy coding!
+</PageDescription>
+
+<!-- Use anchor links like below to quickly link to below sections on the page. Match the AnchorLink
+text with the header link text below -->
+<AnchorLinks Links>
+
+<AnchorLink>Headings</AnchorLink>
+<AnchorLink>Emphasis</AnchorLink>
+<AnchorLink>Block Quotes</AnchorLink>
+<AnchorLink>Lists</AnchorLink>
+<AnchorLink>Tables</AnchorLink>
+<AnchorLink>Images</AnchorLink>
+<AnchorLink>Links</AnchorLink>
+<AnchorLink>Escaping characters</AnchorLink>
+
+</AnchorLinks>
+
+## Headings
+
+# Heading Level 1
+
+The following code renders the level 1 heading shown above:
+```
+# Heading Level 1
+```
+
+## Heading Level 2
+
+The following code renders the level 2 heading shown above:
+```
+## Heading Level 2
+```
+
+### Heading Level 3
+
+The following code renders the level 3 heading shown above:
+```
+### Heading Level 3
+```
+
+#### Heading Level 4
+
+The following code renders the level 4 heading shown above:
+```
+#### Heading Level 4
+```
+
+<br/>
+
+##### Heading Level 5
+
+The following code renders the level 5 heading shown above:
+```
+##### Heading Level 5
+```
+
+###### Heading Level 6
+
+The following code renders the level 6 heading shown above:
+```
+###### Heading Level 6
+```
+
+## Emphasis
+
+### Italics
+*Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.*
+
+The following code renders text in *italics* shown above:
+```
+*Lorem ipsum dolor sit amet, consectetur adipiscing elit ...*
+```
+
+```
+*these_words_are_italic*
+```
+
+### Bold
+**Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.**
+
+The following code renders text in **boldface** shown above:
+```
+**Lorem ipsum dolor sit amet, consectetur adipiscing elit ...**
+```
+
+```
+**these_words_are_bold**
+```
+
+### Bold and italics together
+***Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.***
+
+The following code renders text in ***italics and boldface*** shown above:
+```
+***Lorem ipsum dolor sit amet, consectetur adipiscing elit ...***
+```
+
+```
+***these_words_are_italic_and_bold***
+```
+
+### Linebreaks
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+The following code adds a linebreak/new paragrpah shown above:
+```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+```
+
+```
+<br />
+```
+
+Note: Be sure to use the self-closing syntax for the &lt;br /> tag. Don't just write &lt;br> or you'll get an error 
+(the parser will complain that the &lt;br> tag has been left unclosed) and the post will not be published.
+
+## Block Quotes
+A block quote is a piece of text that is *indented* from the rest of the text. Examples are seen in poetry or an email:
+
+> Dear Arvind
+<br />
+>
+> *"The trouble with every one of us is that we don't think enough. We don't get paid for working with our feet — we get paid for working with our heads"*
+<br />
+>
+> Best,
+>> Drew Glapa
+
+The following code renders the block quotes shown above:
+```
+> Dear Arvind
+<br />
+>
+> *"The trouble with every one of us is that we don't think enough. We don't get paid for working with our feet — we get paid for working with our heads"*
+<br />
+>
+> Best,
+>> Drew Glapa
+```
+
+```
+> One layer of indentation
+>> Two layers of indentation
+>>> Three layers of indentation
+```
+Note: Each carot adds a new layer of indentation
+
+## Lists
+There are several ways to organize related items into unordered, ordered & nested lists in Markdown.
+
+### Unordered lists
+
+* Oranges
+* Apples
+* Berries
+
+The following code renders the undordered list shown above:
+```
+* Oranges
+* Apples
+* Berries
+```
+
+```
+* Item 1
+* Item 2
+* Item 3
+```
+An asterisk (\*), minus sign (\-) or plus sign (\+) can be used for unordered lists
+
+### Ordered lists
+
+1. Oranges
+2. Apples
+3. Berries
+
+The following code renders the ordered list shown above:
+```
+1. Oranges
+2. Apples
+3. Berries
+```
+
+```
+1. Item 1
+2. Item 2
+3. Item 3
+```
+
+### Nested lists
+
+* Apples
+* Oranges
+* Berries
+  * Strawberries
+  * Raspberries
+
+The following code renders the nested list shown above:
+```
+* Apples
+* Oranges
+* Berries
+  * Strawberries
+  * Raspberries
+```
+
+```
+* Item 1
+* Item 2
+* Item 3
+  * Item 3.1
+  * Item 3.2
+```
+
+## Tables
+
+|  Name  |  Type  | Description |
+| ------ | ------ | ----------- |
+| `name` | string | Name of the resource |
+| `path` | string | Path to the resource |
+
+The following code renders the table shown above:
+```
+|  Name  |  Type  | Description |
+| ------ | ------ | ----------- |
+| `name` | string | Name of the resource |
+| `path` | string | Path to the resource |
+```
+
+```
+| Header 1 | Header 2 | Header 3 |
+| -------- | -------- | -------- |
+|    A1    |    B1    |    C1    |
+|    A2    |    B2    |    C2    |
+```
+
+Note: The first row becomes the header
+
+### Alignment of Columns
+
+| Left | Center | Right |
+| :--- | :----: | ----: |
+| Left-aligned text | Center-aligned text | Right-aligned text |
+
+The following code renders the table shown above:
+```
+| Left | Center | Right |
+| :--- | :----: | ----: |
+| Left-aligned text | Center-aligned text | Right-aligned text |
+```
+
+Note: Cells are left aligned by default
+
+## Images
+![IBM Rebus](../images/ibm-logo.png)
+
+The following code renders the IBM Logo (image) shown above:
+```
+![IBM Rebus](../images/ibm-logo.png)
+```
+
+```
+![Image Alt Text](/path/to/img.png)
+```
+[Image Alt Text](https://www.carbondesignsystem.com/guidelines/accessibility/developers/#multimedia-text-alternatives) is Required
+
+When providing the file path for your image you can either use the relative or absolute URL. The example shown above is an example of using the relative
+file path. An absolute file path will look more like a traditional URL: https://pbs.twimg.com/media/DHSvdkSU0AApZbj?format=png&name=large
+
+## Links
+
+[IBM Homepage](https://www.ibm.com)
+
+The following code renders a hyerlink shown above:
+```
+[IBM Homepage](https://www.ibm.com)
+```
+
+```
+[Text to Display](URL)
+```
+
+## Escaping characters
+Certain characters, such as the hash symbol (\#) and the plus sign (\+), can be interpreted by Markdown as part of its syntax. 
+To print one of these characters literally on screen, you can escape it using a backslash (\\). **Ex.** 
+"\\#" prints the "\#" character itself, instead of creating a <a href="usage#headings">heading</a>. <br />
+
+\# Not a heading
+
+The following code renders an actually '\#' that is not a heading shown above:
+```
+\# Not a heading
+```
+
+The following characters can be escaped using a backslash (\\) to ensure they are rendered literally on screen: 
+
+| Symbol | Name |
+| --- | --- |
+| \* | asterisk |
+| \\ |	backslash |
+| \`	| backtick |
+| \[\]	| brackets |
+| \{\} | curly braces |
+| \(\) |	parentheses |
+| \. |	period or dot |
+| \# |	hash or pound sign |
+| \+ |	plus sign |
+| \-	| minus sign or hyphen |
+| \_	| underscore |
+| \! |	exclamation mark |
+| \| |	pipe |
