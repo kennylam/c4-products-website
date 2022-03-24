@@ -26,7 +26,6 @@
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-theme-carbon": "^1.27.0",
     "gatsby-transformer-json": "^2.4.11",
-    "gsap": "^3.8.0",
     "lodash": "^4.17.13",
     "node-sass": "4.14.1",
     "react": "^16.13.1",

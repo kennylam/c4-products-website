@@ -15,20 +15,13 @@
   position: relative;
   width: 100%;
   height: 100%;
-  //transform: translate(-22px);
   &:focus,
   &.chart-with-focus {
     outline: 2px solid $inverse-link;
   }
 }
 
-.chart--lottie {
-  position: absolute;
-  pointer-events: none;
-  z-index: 0;
-  animation: fader 2s ease-in-out 1;
-  opacity: 1;
-}
+
 
 @keyframes fader {
   0% {
@@ -39,11 +32,33 @@
   }
 }
 
-.chart--bars {
-  position: relative;
-  z-index: 0;
-  //padding-top: 3.9%;
-  //left: 2.85%;
+@media screen and (max-width: 672px) {
+  .chart--bars, .chart--lottie {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    margin: 75px 0 -50px 0;
+  }
+}
+
+@media screen and (min-width: 672px) {
+  .chart--lottie {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 1;
+  }
+
+  .chart--bars {
+    position: relative;
+    z-index: 0;
+  }
+
+  .mobile {
+    display: none;
+  }
 }
 
 .chart--label {
@@ -53,7 +68,7 @@
   background-color: #00c8c5;
 }
 
-.hide-tooltip {
+.hide-tooltip { 
   animation: fade-out 0.25s ease-out;
   opacity: 0;
 }
@@ -118,7 +133,6 @@
 
 .tooltip--label {
   @include carbon--type-style("productive-heading-01");
-
   color: #979797;
   z-index: 25;
   margin-top: -6px;
@@ -128,11 +142,9 @@
   path {
     opacity: 0;
     stroke-dasharray: 265px 265px;
-    stroke-dashoffset: -265px;
     fill: none;
     stroke-width: 10px;
     stroke-miterlimit: 10px;
-    transition: 0.07s all;
   }
 
   path:hover {
@@ -143,7 +155,10 @@
   }
 
   path:focus {
-    outline: 0;
+    opacity: 1;
+    transition: 0.07s all;
+    stroke-width: 12px;
+    outline: none;
   }
 
   #pink--automation > path:hover,
@@ -151,8 +166,8 @@
     stroke: #ffcaff;
   }
 
-  #blue--ai > path:hover,
-  #blue--ai > path:focus {
+  #blue--hps > path:hover,
+  #blue--hps > path:focus {
     stroke: #9fd3ff;
   }
 
@@ -170,4 +185,10 @@
   #security--purple > path:focus {
     stroke: #e7a7ff;
   }
+}
+
+@for $i from 1 through 25 {
+    .components--#{$i} {
+        stroke-dashoffset:  -1 * (265 - (100 * ($i / 25)) * 2.65) + 1;
+    }
 }
