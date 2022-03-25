@@ -232,6 +232,18 @@ const TooltipChart = () => {
     top: mouseCoords.y + 14
   }
 
+  // Calculate total pattern adoption count, min and max instances per product
+  var totalPatternAdoption=0,minInstancesAdoptedPerProduct=Infinity,maxInstancesAdoptedPerProduct=0;
+  Object.keys(businessUnits).map(function(unit) {
+    Object.keys(businessUnits[unit]["products"]).map(function(product, productIndex) {
+      totalPatternAdoption += businessUnits[unit]["products"][product].numberOfComponents;
+      minInstancesAdoptedPerProduct = Math.min(minInstancesAdoptedPerProduct, productIndex+1);
+      maxInstancesAdoptedPerProduct = Math.max(maxInstancesAdoptedPerProduct, productIndex+1);
+    })  
+  });
+
+  var chartTitle = `${totalPatternAdoption} Total instances of pattern adoption`;
+  var chartDescription = `Bar graph depicting instances of pattern adoption for each product, grouped by business unit, animating in sequentially with an animated background. There are ${totalPatternAdoption} total instances of pattern adoption, with a range of ${minInstancesAdoptedPerProduct} to ${maxInstancesAdoptedPerProduct} instances adopted per product. Data for each product and business unit is available in table format by clicking the previous link, or by pressing left or right arrow keys to cycle through the bars.`;
   const tooltipChart = useRef();
 
   return (
@@ -260,9 +272,9 @@ const TooltipChart = () => {
           <Lottie options={defaultOptions} eventListeners={lottieListeners} />
         </div>
         <div className="chart--bars">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="chart-title chart-desc" aria-details="det" viewBox="0 0 1248 758" className={isLoading ? 'barsLoading' : 'showBars'}>
-            <title id="chart-title">655 Total instances of pattern adoption</title>
-            <desc id="chart-desc">Bar graph depicting instances of pattern adoption for each product, grouped by business unit, animating in sequentially with an animated background.  There are 655 total instances of pattern adoption, with a range of 1 to 23 instances adpoted per product. Data for each product and business unit is availble in table format by clicking the next link, or by pressing left or right arrow keys to cycle through the bars.</desc>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="chart-title" aria-describedby="chart-desc" viewBox="0 0 1248 758" className={isLoading ? 'barsLoading' : 'showBars'}>
+            <title id="chart-title">{chartTitle}</title>
+            <desc id="chart-desc">{chartDescription}</desc>
             {
               Object.keys(businessUnits).map((unit) => (                
                   <g id={businessUnits[unit].id} stroke={businessUnits[unit].color}>

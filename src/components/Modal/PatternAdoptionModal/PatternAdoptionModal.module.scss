@@ -1,0 +1,35 @@
+@import '@carbon/themes/scss/themes';
+
+.modal-theme {
+  @include carbon--theme($carbon--theme--g100, true);
+}
+
+.modal-icon {
+  display: flex;
+}
+
+.modal-icon>svg:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.modal-icon>svg:focus:not([disabled]), .modal-icon>svg:active:not([disabled]) {
+  outline: 2px solid #78a9ff;
+}
+
+.table-download {
+  padding: var(--cds-spacing-05, 1rem);
+}
+
+.table-download:hover {
+  background-color: var(--cds-field-hover, #e5e5e5);
+}
+
+.table-download:focus:not([disabled]), .table-download:active:not([disabled]) {
+  outline: 2px solid var(--cds-focus, #0f62fe);
+  outline-offset: -2px;
+}
+
+.table-download-icon {
+  fill: $icon-03;
+}

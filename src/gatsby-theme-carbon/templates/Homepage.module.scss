@@ -3,8 +3,6 @@
 }
 
 .banner-text-heading {
-  margin-bottom: 1rem;
-
   h1 {
     @include carbon--type-style('productive-heading-02');
   }
@@ -13,6 +11,13 @@
     @include carbon--type-style('expressive-heading-04');
     max-width: 40rem;
   }
+}
+
+.banner-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
 }
 
 .right-text {
@@ -42,3 +47,5 @@
     margin-top: 0;
   }
 }
+
+

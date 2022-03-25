@@ -29,6 +29,7 @@
     "lodash": "^4.17.13",
     "node-sass": "4.14.1",
     "react": "^16.13.1",
+    "react-csv": "^2.2.2",
     "react-dom": "^16.13.1",
     "react-lottie": "^1.2.3",
     "sass": "^1.43.4"
