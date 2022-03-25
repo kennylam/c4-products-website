@@ -1,15 +1,20 @@
 import React from 'react';
 import Footer from 'gatsby-theme-carbon/src/components/Footer';
+import packageJson from 'gatsby-theme-carbon/package.json';
 
 const currentYear = new Date().getFullYear();
+const versions = {
+  'vanilla-components': packageJson.dependencies["carbon-components"],
+  'react-components': packageJson.dependencies["carbon-components-react"]
+};
 
 const Content = ({ buildTime }) => (
   <>
     <p>Have questions? Email us for site feedbacks or open an issue in <a href="https://github.ibm.com/CDAI-design/pal/issues">GitHub</a></p>
     <p>
-      Vanilla Components version <a href="#">9.9.0</a>
+      Vanilla Components version {versions['vanilla-components']}
       <br />
-      React Components version <a href="#">6.26.2</a>
+      React Components version {versions['react-components']}
       <br />
       Last updated {buildTime}
       <br />
@@ -26,7 +31,7 @@ const links = {
     { href: 'https://www.ibm.com/', linkText: 'IBM.com' },
   ],
   secondCol: [
-    { href: '#', linkText: 'Dribble' },
+    { href: 'https://dribbble.com/_carbondesign/about', linkText: 'Dribble' },
     { href: 'https://medium.com/carbondesign', linkText: 'Medium' },
     { href: 'https://twitter.com/_carbondesign', linkText: 'Twitter' },
   ],
