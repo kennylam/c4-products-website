@@ -309,7 +309,7 @@ const businessUnits = {
     },
 
     "Security": {
-        color:"#8141f7", //purple
+        color:"#a56eff", //purple
         id: "security--purple",
         products: {    
             "security--verify" : {
