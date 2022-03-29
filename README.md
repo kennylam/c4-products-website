@@ -1,4 +1,4 @@
-[![Build Status](https://travis.ibm.com/CDAI-design/pal.svg?token=GNdrd9N7tDoHxsqaxdg9&branch=master)](https://travis.ibm.com/CDAI-design/pal)
+[![Build Status](https://travis.ibm.com/CDAI-design/pal.svg?token=GNdrd9N7tDoHxsqaxdg9&branch=main)](https://travis.ibm.com/CDAI-design/pal)
 
 <h1 align="center">
   Carbon for IBM Products
