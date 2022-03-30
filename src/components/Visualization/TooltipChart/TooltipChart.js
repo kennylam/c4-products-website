@@ -4,6 +4,7 @@ import Lottie from 'react-lottie';
 import combinedSVG from './combined-no-padding.json'
 import './TooltipChart.scss';
 import mobile from './static_mobile.svg';
+import desktop from './static_homepage_desktop.svg';
 
 const documentExists = typeof window !== `undefined` ? true : false;
 const useActiveElement = () => {
@@ -246,6 +247,23 @@ const TooltipChart = () => {
   var chartDescription = `Bar graph depicting instances of pattern adoption for each product, grouped by business unit, animating in sequentially with an animated background. There are ${totalPatternAdoption} total instances of pattern adoption, with a range of ${minInstancesAdoptedPerProduct} to ${maxInstancesAdoptedPerProduct} instances adopted per product. Data for each product and business unit is available in table format by clicking the previous link, or by pressing left or right arrow keys to cycle through the bars.`;
   const tooltipChart = useRef();
 
+  const [width, setWindowWidth] = useState(0)
+  useEffect(() => { 
+    updateDimensions();
+
+    window.addEventListener("resize", updateDimensions);
+    return () => 
+      window.removeEventListener("resize", updateDimensions);
+  }, [])
+  const updateDimensions = () => {
+    const width = window.innerWidth
+    setWindowWidth(width)
+  }
+
+  const responsive = {
+    isMobile: width < 672,
+  }
+
   return (
     <div
       className="App chart--container"
@@ -267,7 +285,7 @@ const TooltipChart = () => {
       </div>
       {/* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */}
       <div className={`chart ${chartContainerHasFocus ? 'chart-with-focus' : ' '}`} tabIndex="0">
-        <img className="mobile" src={mobile} alt="static animation" />
+        {responsive.isMobile ? <img className="reduced-motion mobile" src={mobile} alt="static animation" /> : <img className="reduced-motion" src={desktop} alt="static animation" />}
         <div role="presentation" className="chart--lottie">
           <Lottie options={defaultOptions} eventListeners={lottieListeners} />
         </div>

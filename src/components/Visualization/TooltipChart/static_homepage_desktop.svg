@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1248 758" style="enable-background:new 0 0 1248 758;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);fill-opacity:0.29;}
+	.st1{fill:url(#SVGID_00000092455644570876191360000014457288278419569593_);fill-opacity:0.23;}
+	.st2{fill:url(#SVGID_00000026870464440123366300000018390978462878155148_);fill-opacity:0.42;}
+	.st3{fill:url(#SVGID_00000058554329515899576550000008413563795472421043_);fill-opacity:0.33;}
+	
+		.st4{opacity:0.6;fill:url(#SVGID_00000130631209478949942300000009928250473773842080_);fill-opacity:0.42;enable-background:new    ;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-opacity:0.15;}
+	.st6{fill:none;stroke:#CECECE;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.1,4.858;}
+	.st7{fill:none;stroke:#CECECE;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.1,5.55;}
+	.st8{fill:none;stroke:#CECECE;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.1,6.345;}
+	.st9{fill:none;stroke:#CECECE;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.1,7.088;}
+	.st10{fill:none;stroke:#CECECE;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.1,7.83;}
+	.st11{fill:none;stroke:#CECECE;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.1,8.574;}
+	.st12{fill:#CDCDCD;}
+	.st13{font-family:'IBMPlexSans-Bold';}
+	.st14{font-size:15px;}
+	.st15{opacity:0.6;}
+	.st16{fill:none;stroke:#B4B4B4;stroke-linejoin:round;}
+	.st17{fill:#B4B4B4;}
+	.st18{font-family:'IBMPlexSans-Medium';}
+	.st19{font-size:19px;}
+	.st20{fill:#FFFFFF;}
+	.st21{font-family:'IBMPlexSans-ExtraLight';}
+	.st22{font-size:36px;}
+	.st23{font-family:'IBMPlexMono';}
+	.st24{font-size:166px;}
+	.st25{letter-spacing:-3;}
+	.st26{fill-opacity:0;stroke:#8141F7;stroke-width:10;}
+	.st27{fill-opacity:0;stroke:#4FBABA;stroke-width:10;}
+	.st28{fill-opacity:0;stroke:#C2E5FE;stroke-width:10;}
+	.st29{fill-opacity:0;stroke:#5286FB;stroke-width:10;}
+	.st30{fill-opacity:0;stroke:#F185B5;stroke-width:10;}
+</style>
+<rect width="1248" height="758"/>
+<g>
+	<g transform="matrix(1,0,0,1,-261.9639892578125,-167.19000244140625)">
+		
+			<radialGradient id="SVGID_1_" cx="1172.4559" cy="1066.212" r="617.4341" gradientTransform="matrix(1 0 0 -1 -287.077 1267.1639)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.7" style="stop-color:#000000;stop-opacity:0"/>
+			<stop  offset="0.85" style="stop-color:#4B1680;stop-opacity:0.5"/>
+			<stop  offset="1" style="stop-color:#962CFF"/>
+		</radialGradient>
+		<path class="st0" d="M272.767,201.952c0,0.2,0,0.5,0,0.7c0,97.2,23.5,191.3,66,275.3l234.8-118.4c-24.2-48-37.7-102-37.7-157.6
+			L272.767,201.952L272.767,201.952z"/>
+		
+			<radialGradient id="SVGID_00000095300350935644932680000001413107228539959688_" cx="1027.887" cy="1307.4791" r="623.0413" gradientTransform="matrix(1 0 0 -1 -142.946 1508.0609)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.7" style="stop-color:#00BEBA;stop-opacity:0"/>
+			<stop  offset="0.85" style="stop-color:#00BEBA;stop-opacity:0.5"/>
+			<stop  offset="1" style="stop-color:#00BEBA"/>
+		</radialGradient>
+		<path style="fill:url(#SVGID_00000095300350935644932680000001413107228539959688_);fill-opacity:0.23;" d="M580.629,372.382
+			l-229.6,128.2c75.3,134.8,200.6,240.9,355.6,288l77.1-251.7C695.129,509.882,623.629,449.382,580.629,372.382z"/>
+		
+			<radialGradient id="SVGID_00000024696687225164591760000003961723709591284149_" cx="620.361" cy="1394.5781" r="626.235" gradientTransform="matrix(1 0 0 -1 263.404 1595.485)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.7" style="stop-color:#2982FF;stop-opacity:0"/>
+			<stop  offset="0.85" style="stop-color:#2982FF;stop-opacity:0.5"/>
+			<stop  offset="1" style="stop-color:#2982FF"/>
+		</radialGradient>
+		<path style="fill:url(#SVGID_00000024696687225164591760000003961723709591284149_);fill-opacity:0.42;" d="M886.653,552.307
+			c-15.3,0-30.3-1-44.9-2.8l-33.4,261c25.6,3.2,51.9,4.9,78.7,4.9c88.3,0,173.9-19.4,251.9-54.7l-108.3-239.6
+			C985.953,541.207,937.053,552.307,886.653,552.307z"/>
+		
+			<radialGradient id="SVGID_00000102517709681436030040000015825365666363625127_" cx="323.6181" cy="1203.457" r="624.3199" gradientTransform="matrix(1 0 0 -1 561.1221 1403.1019)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.7" style="stop-color:#000000;stop-opacity:0"/>
+			<stop  offset="0.85" style="stop-color:#80395C;stop-opacity:0.5"/>
+			<stop  offset="1" style="stop-color:#FF73B7"/>
+		</radialGradient>
+		<path style="fill:url(#SVGID_00000102517709681436030040000015825365666363625127_);fill-opacity:0.33;" d="M1236.89,201.693
+			c-0.2,141.6-80.9,256.8-192.8,313.3l118.4,234.8c195.8-98.9,337.2-300.6,337.4-548.1L1236.89,201.693L1236.89,201.693z"/>
+		
+			<radialGradient id="SVGID_00000173858286777944732340000018038536469216843682_" cx="981.2537" cy="1050.1882" r="353.1308" fx="780.4101" fy="1051.5031" gradientTransform="matrix(1 0 0 -1 -142.946 1508.0609)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.7" style="stop-color:#AEE6FF;stop-opacity:0"/>
+			<stop  offset="0.8516" style="stop-color:#AEE6FF;stop-opacity:0.5"/>
+			<stop  offset="1" style="stop-color:#AEE6FF"/>
+		</radialGradient>
+		
+			<path style="opacity:0.6;fill:url(#SVGID_00000173858286777944732340000018038536469216843682_);fill-opacity:0.42;enable-background:new    ;" d="
+			M782.688,806.479c-17.216-2.886-34.376-6.521-51-10.801l66.3-254.7l0,0c10.374,2.621,19.926,4.616,29.2,6.1L782.688,806.479
+			L782.688,806.479z"/>
+	</g>
+	<path class="st5" d="M1237.855,34.788l-264.178-0.011 M973.357,49.603l263.944,11.223 M1235.642,86.818L972.423,64.404
+		 M970.872,79.153l262.01,33.562 M1229.026,138.472l-260.34-44.65 M965.886,108.387l258.193,55.656 M1218.052,189.38l-255.585-66.56
+		 M958.431,137.094l252.524,77.345 M1202.801,239.174l-249.005-87.99 M948.555,165.061l245.049,98.479 M1183.382,287.494
+		L942.736,178.705 M936.33,192.084l235.822,118.909 M1159.935,333.994L929.372,205.183 M921.854,217.97l224.899,138.486
+		 M1132.629,378.338L913.81,230.432 M905.238,242.536l212.352,157.065 M1101.661,420.207L896.17,254.273 M886.609,265.613
+		l198.264,174.505 M1067.254,459.298L876.583,276.543 M866.102,287.039l182.736,190.675 M1029.656,495.331L855.19,297.087
+		 M843.862,306.666l165.882,205.453 M989.137,528.046L832.14,315.758 M820.044,324.35l147.829,218.734 M945.99,557.206
+		L807.593,332.42 M794.812,339.96l128.715,230.427 M900.526,582.603L781.718,346.946 M768.34,353.374l108.686,240.457
+		 M853.071,604.052l-98.373-244.83 M740.818,364.486l87.886,248.761 M803.969,621.399l-77.244-252.25 M712.444,373.207
+		l66.466,255.288 M753.572,634.52l-55.568-257.866 M683.428,379.475l44.573,259.99 M702.244,643.32l-33.498-261.638
+		 M653.983,383.256l22.363,262.823 M650.355,647.736l-11.189-263.527 M624.316,648.288l0.006-263.743 M598.278,647.735
+		l11.197-263.477 M594.653,383.348l-22.367,262.729 M579.88,381.82l-33.491,261.497 M565.183,379.662l-44.552,259.799
+		 M550.59,376.879l-55.529,257.636 M536.127,373.483l-66.403,255.005 M521.823,369.46l-77.158,251.932 M507.699,364.839
+		L419.93,613.238 M493.789,359.607l-98.226,244.435 M480.111,353.794L371.609,593.82 M466.697,347.395L348.109,582.591
+		 M453.563,340.437L325.108,570.374 M440.741,332.918L302.646,557.193 M428.245,324.87l-147.482,218.2 M416.106,316.29L259.5,528.03
+		 M404.335,307.213L238.894,512.102 M392.964,297.638L218.983,495.314 M382.001,287.597L199.802,477.696 M371.477,277.097
+		L181.386,459.28 M361.4,266.164L163.768,440.099 M351.796,254.813L146.981,420.187 M342.679,243.066L131.053,399.581
+		 M334.066,230.943L116.014,378.317 M325.976,218.463L101.892,356.434 M318.419,205.651L88.71,333.972 M311.419,192.526
+		L76.494,310.97 M304.979,179.115L65.266,287.471 M299.123,165.439L55.044,263.516 M293.852,151.525L45.849,239.149
+		 M289.187,137.397L37.695,214.414 M285.128,123.082L30.6,189.355 M281.686,108.606L24.573,164.018 M278.87,93.996L19.628,138.447
+		 M276.671,79.281L15.772,112.69 M275.11,64.485L13.013,86.792 M274.171,49.636L11.356,60.801 M273.849,34.762H10.803"/>
+	<g>
+		<path class="st6" d="M273.995,35.254c0,193.3,156.7,350,350.01,350c193.3,0,350-156.7,350-350c0.5-4,0-3.38,0-3.38"/>
+		<path class="st7" d="M221.445,35.254c0,222.29,180.21,402.5,402.5,402.5c222.3,0,402.5-180.21,402.5-402.5
+			c0.06-2.5,0.06-2.75,0.06-2.75"/>
+		<path class="st8" d="M168.895,35.254c0,251.29,203.71,455,455,455s455-203.71,455-455c0.1-2.75,0.02-3.09,0.23-3.38"/>
+		<path class="st9" d="M116.345,35.264c0,280.28,227.22,507.5,507.5,507.5c280.29,0,507.5-227.22,507.5-507.5
+			c-0.1-3.01,0.04-2.76,0.04-2.76"/>
+		<path class="st10" d="M63.795,35.264c0,309.28,250.72,560,560,560s560-250.72,560-560c0.08-2.76-0.04-2.64-0.04-2.64"/>
+		<path class="st11" d="M11.245,35.264c0,338.28,274.22,612.5,612.5,612.5c338.27,0,612.5-274.22,612.5-612.5
+			c-0.24-5.01,0.01-4.01,0.01-4.01"/>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 268.8771 14.339)" class="st12 st13 st14">0</text>
+		<text transform="matrix(1 0 0 1 216.264 14.249)" class="st12 st13 st14">5</text>
+		<text transform="matrix(1 0 0 1 158.4481 14.339)" class="st12 st13 st14">10</text>
+		<text transform="matrix(1 0 0 1 106.2051 14.249)" class="st12 st13 st14">15</text>
+		<text transform="matrix(1 0 0 1 53.9271 14.339)" class="st12 st13 st14">20</text>
+		<text transform="matrix(1 0 0 1 0.3591 14.339)" class="st12 st13 st14">25</text>
+		<text transform="matrix(1 0 0 1 969.082 14.339)" class="st12 st13 st14">0</text>
+		<text transform="matrix(1 0 0 1 1021.9651 14.249)" class="st12 st13 st14">5</text>
+		<text transform="matrix(1 0 0 1 1070.3721 14.339)" class="st12 st13 st14">10</text>
+		<text transform="matrix(1 0 0 1 1123.1422 14.249)" class="st12 st13 st14">15</text>
+		<text transform="matrix(1 0 0 1 1175.7542 14.339)" class="st12 st13 st14">20</text>
+		<text transform="matrix(1 0 0 1 1227.9861 14.339)" class="st12 st13 st14">25</text>
+	</g>
+	<g class="st15">
+		<path class="st16" d="M11.5,214.391v509.39"/>
+		<path class="st16" d="M131.5,439.795c0,136.321,0,283.986,0,283.986"/>
+		<path class="st16" d="M495.5,660.11c0,38.779,0,63.671,0,63.671"/>
+		<path class="st16" d="M728.5,665.211c0,35.847,0,58.57,0,58.57"/>
+		<path class="st16" d="M1236.5,214.391v509.39"/>
+	</g>
+	<text transform="matrix(1 0 0 1 8.809 752.146)" class="st17 st18 st19">Security</text>
+	<text transform="matrix(1 0 0 1 128.31 752.146)" class="st17 st18 st19">Data &amp; AI, Information Architecture</text>
+	<text transform="matrix(1 0 0 1 492.309 752.146)" class="st17 st18 st19">Public Cloud Platform</text>
+	<text transform="matrix(1 0 0 1 726.4341 752.146)" class="st17 st18 st19">HPS, CCBAAS</text>
+	<text transform="matrix(1 0 0 1 1036.4298 752.146)" class="st17 st18 st19">Automation Foundation</text>
+	<text transform="matrix(1 0 0 1 483.0267 226)" class="st20 st21 st22">Total instances of </text>
+	<text transform="matrix(1 0 0 1 487.8151 264)" class="st20 st21 st22">universal pattern </text>
+	<text transform="matrix(1 0 0 1 554.5754 302)" class="st20 st21 st22">adoption</text>
+	<g transform="matrix(1,0,0,1,474,166)">
+		<text transform="matrix(1 0 0 1 6.3293 0)" class="st20 st23 st24 st25">679</text>
+	</g>
+	<g transform="matrix(1,0,0,1,0,-1)">
+		<g id="security--case-management" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-350.597-307.488c0,0-43.261,0-94.695,0"/>
+			</g>
+		</g>
+		<g id="security--cp4s" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-350.275-292.614c0,0-121.985,5.182-199.743,8.486"/>
+			</g>
+		</g>
+		<g id="security--data-explorer" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-349.336-277.765c0,0-69.066,5.878-136.291,11.6"/>
+			</g>
+		</g>
+		<g id="security--guardium" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-347.775-262.969c0,0-37.189,4.762-83.486,10.691"/>
+			</g>
+		</g>
+		<g id="security--gradar" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-345.576-248.254c0,0-100.443,17.222-176.286,30.227"/>
+			</g>
+		</g>
+		<g id="security--risk-manager" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-342.76-233.644c0,0-31.266,6.738-71.991,15.515"/>
+			</g>
+		</g>
+		<g id="security--risk-manager_00000138564084039894820240000011462190062692308142_" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-342.76-233.644c0,0-31.266,6.738-71.991,15.515"/>
+			</g>
+		</g>
+		<g id="security--soar" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-339.318-219.168c0,0-41.86,10.899-91.628,23.858"/>
+			</g>
+		</g>
+		<g id="security--threat-investigator" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-335.259-204.853c0,0-41.361,12.666-90.536,27.726"/>
+			</g>
+		</g>
+		<g id="security--uba" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-330.594-190.725c0,0-30.158,10.655-69.44,24.535"/>
+			</g>
+		</g>
+		<g id="security--ucm" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-325.323-176.811c0,0-40.142,16.13-87.867,35.307"/>
+			</g>
+		</g>
+		<g id="security--verify" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st26" d="M-319.467-163.135c0,0-69.923,31.607-134.24,60.68"/>
+			</g>
+		</g>
+		<g id="information--cloud-pak" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-298.47-123.787c0,0-113.875,70.114-179.269,110.378"/>
+			</g>
+		</g>
+		<g id="information--data-lineage" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-290.38-111.307c0,0-35.861,24.237-78.497,53.054"/>
+			</g>
+		</g>
+		<g id="information--data-management-console" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-281.767-99.184c0,0-50.122,37.069-101.58,75.127"/>
+			</g>
+		</g>
+		<g id="information--data-privacy" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-272.65-87.437c0,0-65.862,53.179-122.89,99.225"/>
+			</g>
+		</g>
+		<g id="information--data-quality" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-263.046-76.086c0,0-20.075,17.668-47.429,41.742"/>
+			</g>
+		</g>
+		<g id="information--data-virtualization" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-252.969-65.153c0,0-73.65,70.586-129.263,123.886"/>
+			</g>
+		</g>
+		<g id="information--data-warehouse" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-242.445-54.653c0,0-124.415,129.81-167.625,174.893"/>
+			</g>
+		</g>
+		<g id="information--data-stage" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-231.482-44.612c0,0-61.482,69.856-111.349,126.514"/>
+			</g>
+		</g>
+		<g id="information--db2-oncloud" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-220.111-35.037c0,0-53.201,65.886-99.265,122.934"/>
+			</g>
+		</g>
+		<g id="information--decision-optimization" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-208.34-25.96c0,0-55.342,74.826-100.229,135.515"/>
+			</g>
+		</g>
+		<g id="information--match-360" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-196.201-17.38c0,0-43.02,63.648-82.59,122.193"/>
+			</g>
+		</g>
+		<g id="information--spss" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-183.705-9.332c0,0-2.002,3.251-5.523,8.97"/>
+			</g>
+		</g>
+		<g id="information--uniscan" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-170.883-1.813c0,0-37.47,67.071-71.935,128.765"/>
+			</g>
+		</g>
+		<g id="information--watson-knowledge" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-157.749,5.145c0,0-41.907,83.115-75.897,150.527"/>
+			</g>
+		</g>
+		<g id="information--watson-machine-learning" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-144.335,11.544c0,0-38.343,84.821-69.442,153.618"/>
+			</g>
+		</g>
+		<g id="information--watson-openscale" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-130.657,17.357c0,0-25.884,64.412-51.078,127.106"/>
+			</g>
+		</g>
+		<g id="information--watson-studio" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st27" d="M-116.747,22.589c0,0-37.229,105.364-63.194,178.848"/>
+			</g>
+		</g>
+		<g id="public-cloud--platform" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st28" d="M-73.856,34.629c0,0-9.132,42.371-19.99,92.747"/>
+			</g>
+		</g>
+		<g id="hps--alert-insights" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st29" d="M-29.793,41.098c0,0-1.045,12.277-2.684,31.524"/>
+			</g>
+		</g>
+		<g id="hps--cognos" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st29" d="M-14.971,42.008c0,0-3.601,84.726-6.718,158.087"/>
+			</g>
+		</g>
+		<g id="hps--commercial-payments" transform="matrix(1,0,0,1,624.5,343.25)">
+			<path class="st29" d="M-0.124,42.295c0,0,0,3.823,0,10.548"/>
+		</g>
+		<g id="hps--due-diligence" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st29" d="M14.72,41.959c0,0,0.523,12.315,1.343,31.62"/>
+			</g>
+		</g>
+		<g id="hps--insurance-claim-fraud" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st29" d="M29.537,41.006c0,0,1.844,21.668,4.472,52.562"/>
+			</g>
+		</g>
+		<g id="hps--investigative" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st29" d="M44.3,39.432c0,0,0.486,3.792,1.34,10.464"/>
+			</g>
+		</g>
+		<g id="hps--open-pages" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st29" d="M58.982,37.225c0,0,13.002,75.838,24.961,145.595"/>
+			</g>
+		</g>
+		<g id="hps--planning-analytics" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st29" d="M73.558,34.404c0,0,23.57,109.379,40.009,185.664"/>
+			</g>
+		</g>
+		<g id="hps--safer-payments" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st29" d="M87.998,30.957c0,0,0.963,3.7,2.658,10.21"/>
+			</g>
+		</g>
+		<g id="hps--surveillance" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st29" d="M102.279,26.899c0,0,1.12,3.656,3.089,10.089"/>
+			</g>
+		</g>
+		<g id="hps--watson-assistant" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st29" d="M116.372,22.236c0,0,25.636,72.562,49.216,139.307"/>
+			</g>
+		</g>
+		<g id="hps--watson-discovery" transform="matrix(1,0,0,1,624.5,343.25)">
+			<path class="st29" d="M130.252,16.972c0,0,38.114,94.859,66.894,166.486"/>
+		</g>
+		<g id="automation--content-navigator" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M170.366-2.29c0,0,8.259,14.785,20.593,36.865"/>
+			</g>
+		</g>
+		<g id="automation--app-designer" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M183.147-9.83c0,0,22.761,36.969,49.822,80.922"/>
+			</g>
+		</g>
+		<g id="automation--app-navigator" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M195.598-17.9c0,0,21.072,31.179,47.304,69.994"/>
+			</g>
+		</g>
+		<g id="automation--autopilot" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M207.694-26.492c0,0,7.337,9.92,18.838,25.472"/>
+			</g>
+		</g>
+		<g id="automation--cloud-pak-automation" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M219.416-35.584c0,0,20.172,24.984,46.447,57.527"/>
+			</g>
+		</g>
+		<g id="automation--cloud-pak-business" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M230.744-45.163c0,0,41.321,46.952,83.744,95.157"/>
+			</g>
+		</g>
+		<g id="automation--cloud-pak-integration" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M241.656-55.211c0,0,53.303,55.619,102.333,106.779"/>
+			</g>
+		</g>
+		<g id="automation--cloud-pak-ai-ops" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M252.137-65.707c0,0,67.38,64.583,122.031,116.964"/>
+			</g>
+		</g>
+		<g id="automation--content-designer" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M262.163-76.637c0,0,37.16,32.707,79.305,69.801"/>
+			</g>
+		</g>
+		<g id="automation--api-connect" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M271.724-87.977c0,0,13.185,10.647,32.876,26.547"/>
+			</g>
+		</g>
+		<g id="automation--api-connect-test" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M280.792-99.714c0,0,55.958,41.389,110.423,81.674"/>
+			</g>
+		</g>
+		<g id="automation--app-connect" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M289.364-111.818c0,0,63.828,43.143,122.539,82.828"/>
+			</g>
+		</g>
+		<g id="automation--data-power" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M297.408-124.28c0,0,47.57,29.292,98.955,60.933"/>
+			</g>
+		</g>
+		<g id="automation--event-streams" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M304.926-137.067c0,0,54.607,30.508,110.67,61.829"/>
+			</g>
+		</g>
+		<g id="automation--mq" transform="matrix(1,0,0,1,624.5,343.25)">
+			<path class="st30" d="M311.884-150.166c0,0,49.881,25.152,103.761,52.32"/>
+			<g transform="matrix(1,0,0,1,0,0)">
+			</g>
+		</g>
+		<g id="automation--decision-designer" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M318.29-163.545c0,0,11.245,5.084,28.874,13.053"/>
+			</g>
+		</g>
+		<g id="automation--edge-application" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M324.109-177.189c0,0,40.301,16.196,88.216,35.452"/>
+			</g>
+		</g>
+		<g id="automation--workflow-designer" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M329.35-191.066c0,0,40.952,14.471,89.64,31.676"/>
+			</g>
+		</g>
+		<g id="automation--mono2micro" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M333.985-205.156c0,0,3.66,1.121,10.099,3.093"/>
+			</g>
+		</g>
+		<g id="automation--myinvenio" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M338.021-219.43c0,0,67.35,17.54,132.904,34.611"/>
+			</g>
+		</g>
+		<g id="automation--no-investment" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M341.44-233.863c0,0,36.803,7.933,82.62,17.81"/>
+			</g>
+		</g>
+		<g id="automation--platform-navigator" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M344.24-248.428c0,0,3.774,0.647,10.412,1.786"/>
+			</g>
+		</g>
+		<g id="automation--robotic-process" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M346.426-263.097c0,0,69.044,8.844,136.245,17.452"/>
+			</g>
+		</g>
+		<g id="automation--turbonomic" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M347.977-277.846c0,0,7.937,0.676,21.055,1.793"/>
+			</g>
+		</g>
+		<g id="automation--websphere" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M348.911-292.647c0,0,3.826,0.163,10.556,0.449"/>
+			</g>
+		</g>
+		<g id="automation--workstreams" transform="matrix(1,0,0,1,624.5,343.25)">
+			<g transform="matrix(1,0,0,1,0,0)">
+				<path class="st30" d="M349.231-307.473c0,0,32.125,0.001,73.969,0.003"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
