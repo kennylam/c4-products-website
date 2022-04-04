@@ -1,5 +1,6 @@
 ---
 title: Data table clickable row items
+tabs: ["Usage", "Code"]
 ---
 
 <- [Back to data table overview](https://pages.github.ibm.com/cdai-design/pal/components/data-table/overview) 
@@ -25,13 +26,13 @@ Clickable links are used for navigational purposes (drilling down into details o
 
 <DoDont aspectRatio="1:1" caption="Show blue links on hovering a table row">
 
-![Good example of clickable links](images/do-clickable-links-1x1.png)
+![Good example of clickable links](../images/do-clickable-links-1x1.png)
 
 </DoDont>
 
 <DoDont type="dont" aspectRatio="1:1" caption="Persistent blue links get too much attention. Too many clickable links on a page can distract and mislead the user from the actual task.">
 
-![Bad example of clickable links](images/dont-clickable-links-1x1.png)
+![Bad example of clickable links](../images/dont-clickable-links-1x1.png)
 
 </DoDont>
 
@@ -47,7 +48,7 @@ Clicking on a link is reserved for drilling down into a new page. Clicking on th
 
 **Click on link**
 
-![Drill down example](images/drill-down.png)
+![Drill down example](../images/drill-down.png)
 
 Click on a link navigates to a new page, indicate blue links on hover only.
 
@@ -57,7 +58,7 @@ Click on a link navigates to a new page, indicate blue links on hover only.
 
 **Click on row**
 
-![Example of clicking on row to launch panel](images/launch-panel.png)
+![Example of clicking on row to launch panel](../images/launch-panel.png)
 
 Click on a row won’t navigate to a new page. When users require a preview of data on the same page, click on a row will trigger a side panel with further data (if appropriate). See: Clickable rows.
 
@@ -73,13 +74,13 @@ There might be tables that require multiple interactive links. It is highly reco
 
 <DoDont aspectRatio="1:1" caption="Limit the amount of interactive links. The main drill-down link should be on the first column only (usually Name). ">
 
-![Good example of multiple links](images/do-multiple-links.png)
+![Good example of multiple links](../images/do-multiple-links.png)
 
 </DoDont>
 
 <DoDont type="dont" aspectRatio="1:1" caption="Avoid having multiple interactive links in tables as much as possible. If there are too many blue links in a table there is no clear focus on the main action anymore. ">
 
-![Bad example of multiple links](images/dont-multiple-links.png)
+![Bad example of multiple links](../images/dont-multiple-links.png)
 
 </DoDont>
 
@@ -99,7 +100,7 @@ When the main intent is to keep users in the context of a page – and navigatin
 - When users require a preview of further meta data in context of the page in order to understand details of a row item better and make an informed decision
 - To avoid navigating to a different page and not pulling users out of their current work context, which might slow down accomplishing their task
 
-![Animated example of the panel being launched from clicking on a row](images/launch-panel.gif)
+![Animated example of the panel being launched from clicking on a row](../images/launch-panel.gif)
 
 ### Interactions
 
@@ -113,7 +114,7 @@ Launches side panel with details in context of the page. To indicate the user wh
 
 <Column colLg={8}>
 
-![Example of the panel being launched from clicking on a row](images/launch-panel.png)
+![Example of the panel being launched from clicking on a row](../images/launch-panel.png)
 
 </Column>
 
@@ -126,7 +127,7 @@ Action icons in single table rows should also contain the action “_View detail
 <Row>
 <Column colLg={8}>
 
-![Example of row action buttons](images/row-action-buttons.png)
+![Example of row action buttons](../images/row-action-buttons.png)
 
 </Column>
 
@@ -142,7 +143,7 @@ Action icons in single table rows should also contain the action “_View detail
 
 <Column colLg={8}>
 
-![Example of row action buttons](images/launch-panel-02.png)
+![Example of row action buttons](../images/launch-panel-02.png)
 
 </Column>
 
@@ -152,13 +153,13 @@ Action icons in single table rows should also contain the action “_View detail
 
 <DoDont aspectRatio="1:1">
 
-![Proposed solution on interactive elements](images/do-panel.png)
+![Proposed solution on interactive elements](../images/do-panel.png)
 
 </DoDont>
 
 <DoDont type="dont" aspectRatio="1:1">
 
-![Examples to avoid with interactive elements](images/dont-panel.png)
+![Examples to avoid with interactive elements](../images/dont-panel.png)
 
 </DoDont>
 
@@ -175,7 +176,7 @@ To enable batch actions users can click the checkbox in front of the row. When b
 <Row>
 <Column colLg={8}>
 
-![Example batch actions in a data table](images/batch-actions.png)
+![Example batch actions in a data table](../images/batch-actions.png)
 
 </Column>
 
@@ -195,7 +196,7 @@ When the user clicks on the link “View all” it opens a modal with all listed
 - When the user hovers over this link text in the tooltip, an underline appears on the text
 - When the user clicks on the “View all” link, a modal appears with a list of all the items
 
-![Example of additional links in a data table](images/more-links.png)
+![Example of additional links in a data table](../images/more-links.png)
 
 #### Tags
 
@@ -207,7 +208,7 @@ For tags we indicate more items in “+” tag. Follow guidelines for Additional
 - When the user hovers over this link text in the tooltip, an underline appears on the text
 - When the user clicks on the “view all labels” link, a modal appears with a list of all the labels
 
-![Example of additional tags in a data table](images/more-tags-2.png)
+![Example of additional tags in a data table](../images/more-tags-2.png)
 
 ## Style
 
@@ -226,7 +227,7 @@ For tags we indicate more items in “+” tag. Follow guidelines for Additional
 | `$hover-selected-ui` | Row-Selected hover | `#cacaca` |
 | `$focus`             | Row-Selected hover | `#0f62fe` |
 
-![Examples of all different data table states](images/light-theme-states.png)
+![Examples of all different data table states](../images/light-theme-states.png)
 
 ### Dark mode (Gray 100)
 
@@ -243,7 +244,7 @@ For tags we indicate more items in “+” tag. Follow guidelines for Additional
 | `$hover-selected-ui` | Row-Selected hover | `#4c4c4c` |
 | `$focus`             | Row-Focus state    | `#ffffff` |
 
-![Examples of all different data table states in dark theme](images/dark-theme-states.png)
+![Examples of all different data table states in dark theme](../images/dark-theme-states.png)
 
 ## Accessibility  
 

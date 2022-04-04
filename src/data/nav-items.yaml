@@ -53,15 +53,15 @@
     - title: Grid behaviors
       path: /components/grid-behaviors
     - title: Menu and combo buttons
-      path: /components/button-menu
+      path: /components/button-menu/usage
     - title: "Modified tabs"
-      path: /components/modified-tabs
+      path: /components/modified-tabs/usage
     - title: Options tile
       path: /components/options-tile/usage
     - title: Page header
       path: /components/page-header/usage
     - title: "Progressive loading bar"
-      path: /components/progressive-loading-bar
+      path: /components/progressive-loading-bar/usage
     - title: "Side panel"
       path: /components/side-panel/usage
     - title: "Tag set"

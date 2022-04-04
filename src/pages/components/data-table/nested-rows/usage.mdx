@@ -1,5 +1,6 @@
 ---
 title: Nested rows
+tabs: ["Usage", "Code"]
 ---
 
 import { Link } from "gatsby";
@@ -32,9 +33,9 @@ Nested rows display sublevel rows that follow the primary table's structure (col
 
 <GifPlayer color='dark'>
 
-![scroll behavior example](images/overview-nested-rows.gif)
+![scroll behavior example](../images/overview-nested-rows.gif)
 
-![Scroll behavior example](images/overview-nested-rows.png)
+![Scroll behavior example](../images/overview-nested-rows.png)
 
 </GifPlayer>
 </Column>
@@ -61,7 +62,7 @@ Nested rows help to progressively disclose sublevels of information inside a dat
 
 Nested rows should follow the primary row structure, which should align with Carbon's data table guidelines. Although the content in the rows can vary depending on the table's intention, you must clearly indicate the relationship and hierarchies within nested rows by using the following elements.
 
-![Nested rows anatomy](images/nested-rows-anatomy.png)
+![Nested rows anatomy](../images/nested-rows-anatomy.png)
 
 #### 1. Parent 
 
@@ -93,7 +94,7 @@ Maintain the regular 16px padding of the Carbon data table cell.
 
 <br></br>
 
-![Simple single nesting spacing](images/single-spacing.png)
+![Simple single nesting spacing](../images/single-spacing.png)
 
 </Column>
 </Row>
@@ -105,7 +106,7 @@ Maintain the regular 16px padding of the Carbon data table cell.
 
 <br></br>
 
-![selectable single nesting spacing](images/selectable-single-spacing.png)
+![selectable single nesting spacing](../images/selectable-single-spacing.png)
 
 </Column>
 </Row>
@@ -126,7 +127,7 @@ If using multiple nesting levels, each expandable child should indent 32px after
 
 <br></br>
 
-![Multilevel nesting spacing](images/multilevel-nesting-spacing.png)
+![Multilevel nesting spacing](../images/multilevel-nesting-spacing.png)
 
 </Column>
 
@@ -148,7 +149,7 @@ If using multiple nesting levels, each expandable child should indent 32px after
 
 <br></br>
 
-![Multilevel selectable spacing](images/multilevel-spacing-selectable.png)
+![Multilevel selectable spacing](../images/multilevel-spacing-selectable.png)
 
 </Column>
 </Row>
@@ -172,7 +173,7 @@ Nested rows should match the size used in the data table. Keep consistency acros
 <Tab label="Compact">
 <Column colLg='8' noGutterMdLeft>
 
-![compact row size](images/compact-size.png)
+![compact row size](../images/compact-size.png)
 
 </Column>
 
@@ -181,7 +182,7 @@ Nested rows should match the size used in the data table. Keep consistency acros
 <Tab label="Short">
 <Column colLg='8' noGutterMdLeft>
 
-![short row size](images/short-size.png)
+![short row size](../images/short-size.png)
 
 </Column>
 
@@ -189,7 +190,7 @@ Nested rows should match the size used in the data table. Keep consistency acros
 <Tab label="Default">
 <Column colLg='8' noGutterMdLeft>
 
-![default row size](images/default-size.png)
+![default row size](../images/default-size.png)
 
 </Column>
 </Tab>
@@ -197,7 +198,7 @@ Nested rows should match the size used in the data table. Keep consistency acros
 <Tab label="Tall">
 <Column colLg='8' noGutterMdLeft>
 
-![default row size](images/tall-size.png)
+![default row size](../images/tall-size.png)
 
 </Column>
 </Tab>
@@ -213,7 +214,7 @@ Avoid using more than four sublevels of nesting. If your data requires more leve
 
 <br></br>
 
-![nesting levels](images/nesting-levels.png)
+![nesting levels](../images/nesting-levels.png)
 
 </Column>
 </Row>
@@ -227,7 +228,7 @@ Avoid using more than four sublevels of nesting. If your data requires more leve
 
 Following Carbon X guidelines for expandable rows, the user must click on the chevron to expand or collapse the row. Given that nested rows have a similar use case to a tree structure in which there are multiple parent-child relationships in one component, the chevron’s orientation has been adjusted in this pattern to a right-down direction. The chevron icon also serves to signify the expandable row state. If the row is expanded, the chevron points towards the nested rows (down), and if the row is collapsed, it points towards the parent row text (right).
 
-![nesting levels](images/chevron-behavior.png)
+![nesting levels](../images/chevron-behavior.png)
 
 </Column>
 </Row>
@@ -254,7 +255,7 @@ _Hover on collapsed row_
 <Row>
 <Column colMd={8} colLg={8} noGutterSm>
 
-![Hover on collapsed row](images/hover-collapsed.png)
+![Hover on collapsed row](../images/hover-collapsed.png)
 
 </Column>
 </Row>
@@ -267,7 +268,7 @@ _Hover on chevron_
 <Row>
 <Column colMd={8} colLg={8} noGutterSm>
 
-![Hover on chevron](images/hover-on-chevron.png)
+![Hover on chevron](../images/hover-on-chevron.png)
 
 </Column>
 </Row>
@@ -280,7 +281,7 @@ _Hover on expanded row, indicator line displays_
 <Row>
 <Column colMd={8} colLg={8} noGutterSm>
 
-![Hover on expanded parent](images/hover-parent-expanded.png)
+![Hover on expanded parent](../images/hover-parent-expanded.png)
 
 </Column>
 </Row>
@@ -294,7 +295,7 @@ _The background extends to the left side of the table in every child row_
 <Row>
 <Column colMd={8} colLg={8} noGutterSm>
 
-![Hover on child row](images/hover-on-child.png)
+![Hover on child row](../images/hover-on-child.png)
 
 </Column>
 </Row>
@@ -315,9 +316,9 @@ Consider using a different pattern if the number of nested rows is significant a
 
 <GifPlayer color='dark'>
 
-![scroll behavior example](images/scroll-animation.gif)
+![scroll behavior example](../images/scroll-animation.gif)
 
-![Scroll behavior example](images/scroll-behavior.jpg)
+![Scroll behavior example](../images/scroll-behavior.jpg)
 
 </GifPlayer>
 </Column>
@@ -334,7 +335,7 @@ Do not use a separate pagination for the nested rows.
 
 <br></br>
 
-![Simple pagination](images/pagination.png)
+![Simple pagination](../images/pagination.png)
 
 </Column>
 </Row>
@@ -373,13 +374,13 @@ Keeping secondary data in nested rows saves loading time by postponing some data
 
 <DoDont caption="Do use nested rows when the data structure follows the main table.">
 
-![Do use same structure](images/do-1.png)
+![Do use same structure](../images/do-1.png)
 
 </DoDont>
 
 <DoDont type="dont" caption="Do not use nested rows for data that differs from the main table structure and need a separate header.">
 
-![Don't use nested headers](images/dont-1.png)
+![Don't use nested headers](../images/dont-1.png)
 
 </DoDont>
 
@@ -389,13 +390,13 @@ Keeping secondary data in nested rows saves loading time by postponing some data
 
 <DoDont caption="Use a data tree if secondary and primary data don't need more than one column.">
 
-![Do include minor actions, descriptions, and details.](images/do3.png)
+![Do include minor actions, descriptions, and details.](../images/do3.png)
 
 </DoDont>
 
 <DoDont type="dont" caption="Do not use nested rows to categorize or group items that do not need a table structure.">
 
-![Do include minor actions, descriptions, and details.](images/dont3.png)
+![Do include minor actions, descriptions, and details.](../images/dont3.png)
 
 </DoDont>
 
@@ -405,13 +406,13 @@ Keeping secondary data in nested rows saves loading time by postponing some data
 
 <DoDont caption="Use the same row size for nested and parent rows.">
 
-![Do include minor actions, descriptions, and details.](images/do2.png)
+![Do include minor actions, descriptions, and details.](../images/do2.png)
 
 </DoDont>
 
 <DoDont type="dont" caption="Don't mix multiple sizes across nesting levels. If matching parent rows with a smaller row size, keep it consistent across nesting levels and layouts.">
 
-![Do include minor actions, descriptions, and details.](images/dont2.png)
+![Do include minor actions, descriptions, and details.](../images/dont2.png)
 
 </DoDont>
 

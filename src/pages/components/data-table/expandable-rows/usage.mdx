@@ -1,5 +1,6 @@
 ---
 title: Expandable rows
+tabs: ["Usage", "Code"]
 ---
 
 <- [Back to data table overview](https://pages.github.ibm.com/cdai-design/pal/components/data-table/overview) 
@@ -16,7 +17,7 @@ This pattern explains how to lay out content within an expanded area and why con
 
 ### Anatomy
 
-![Expandable row anatomy](images/expandable-row-anatomy.png)
+![Expandable row anatomy](../images/expandable-row-anatomy.png)
 
 1. Exansion row
 2. Expanded area
@@ -55,7 +56,7 @@ If your use case requires what feels like a page worth of content, consider disp
 
 Here is one example of how a side panel can be used to display additional row information.
 
-![Side panel example](images/expandable-row-side-panel.png)
+![Side panel example](../images/expandable-row-side-panel.png)
 
 ## Alignment
 
@@ -103,17 +104,17 @@ Given that an expanded area is just an empty container, there will likely be num
 
 Use this option to pack the items from left to right. A designer can then dictate the appropriate amount of space between items in the expanded area. The amount of space between items will remain consistent at each breakpoint unless dictated otherwise.
 
-![flex-start explanation](images/expandable-row-flex-start-explanation.png)
+![flex-start explanation](../images/expandable-row-flex-start-explanation.png)
 
 #### `space-between`
 
 Use this option to evenly distribute items within the expanded area. The first item will be left-aligned to the expanded area and the last item will be right-aligned to the expanded area. This option should only be used if it is more important to distribute the items evenly than it is to preserve a specific spatial relationship between the items.
 
-![space-between explanation](images/expandable-row-space-between-explanation.png)
+![space-between explanation](../images/expandable-row-space-between-explanation.png)
 
 In most cases, you should combine `flex-start` and intentional spacing between content items.
 
-![intentionally spaced example](images/expandable-row-intentional-spacing.png)
+![intentionally spaced example](../images/expandable-row-intentional-spacing.png)
 
 ### Aligning one or more items to the right
 
@@ -123,7 +124,7 @@ You should only right align content if the main content items are already left a
 
 To align an item to the right you need to set the item's `margin-left` to `auto`.
 
-![right aligned example](images/expandable-row-right-aligned.png)
+![right aligned example](../images/expandable-row-right-aligned.png)
 
 ### Wrapping
 
@@ -137,13 +138,13 @@ In the _do_ example all of the items in the expanded area wrap to one column. Th
 
 <DoDont type="do">
 
-![Example of how to wrap content in an expanded area.](images/expandable-row-wrapping-do-load-balancer.png)
+![Example of how to wrap content in an expanded area.](../images/expandable-row-wrapping-do-load-balancer.png)
 
 </DoDont>
 
 <DoDont type="dont">
 
-![Example of how to wrap content in an expanded area.](images/expandable-row-wrapping-don't-load-balancer.png)
+![Example of how to wrap content in an expanded area.](../images/expandable-row-wrapping-don't-load-balancer.png)
 
 </DoDont>
 
@@ -157,13 +158,13 @@ Use the same principles you use elsewhere to size content within an expanded are
 
 <DoDont>
 
-![Don't include major actions in an expanded area.](images/expandable-row-max-width.png)
+![Don't include major actions in an expanded area.](../images/expandable-row-max-width.png)
 
 </DoDont>
 
 <DoDont type="dont">
 
-![Don't include major actions in an expanded area.](images/expandable-row-no-max-width.png)
+![Don't include major actions in an expanded area.](../images/expandable-row-no-max-width.png)
 
 </DoDont>
 
@@ -175,13 +176,13 @@ Use the same principles you use elsewhere to size content within an expanded are
 
 <DoDont caption="Do use the expandable row to house more details, descriptions, and minor actions.">
 
-![Do include minor actions, descriptions, and details.](images/expandable-row-do-minor-actions.png)
+![Do include minor actions, descriptions, and details.](../images/expandable-row-do-minor-actions.png)
 
 </DoDont>
 
 <DoDont type="dont" caption="Don't use the expandable row to hide important information or actions that are often used. ">
 
-![Don't include major actions in an expanded area.](images/expandable-row-dont-major-actions.png)
+![Don't include major actions in an expanded area.](../images/expandable-row-dont-major-actions.png)
 
 </DoDont>
 
