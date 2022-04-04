@@ -77,7 +77,7 @@
     - title: About modal
       path: /patterns/about-modal/usage
     - title: Canvas
-      path: /patterns/canvas/
+      path: /patterns/canvas/usage
       subpage:
         - title: Canvas style
           path: /patterns/canvas/canvas-style
@@ -95,8 +95,10 @@
           path: /patterns/canvas/node-configuration
     - title: Create flows
       path: /patterns/creation-flows/usage
+    - title: Drag and drop
+      path: /patterns/drag-and-drop/usage
     - title: Edit and update
-      path: /patterns/edit
+      path: /patterns/edit/usage
     - title: Empty state
       path: /patterns/empty-state/usage
     - title: Export
@@ -108,21 +110,21 @@
     - title: Import and upload
       path: /patterns/importing/usage
     - title: Notifications
-      path: /patterns/notifications
+      path: /patterns/notifications/usage
     - title: Profile header menu
-      path: /patterns/profile-header-menu
+      path: /patterns/profile-header-menu/usage
     - title: Remove
       path: /patterns/removing/usage
     - title: Saving
       path: /patterns/saving/usage
     - title: "Status icons"
-      path: /patterns/status-icons
+      path: /patterns/status-icons/usage
     - title: "Toolbars"
-      path: /patterns/toolbars
+      path: /patterns/toolbars/usage
     - title: "User profile images"
-      path: /patterns/user-profile-images
+      path: /patterns/user-profile-images/usage
     - title: "Web terminal"
-      path: /patterns/web-terminal
+      path: /patterns/web-terminal/usage
 - title: "IBM Product layouts"
   pages:
     - title: "Library"
