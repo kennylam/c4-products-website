@@ -33,6 +33,10 @@ branches:
   only:
     - main
 
+branches:
+  except:
+    - master
+
 script: skip
 
 stages:
