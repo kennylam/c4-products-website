@@ -32,8 +32,6 @@ notifications:
 branches:
   only:
     - main
-
-branches:
   except:
     - master
 
