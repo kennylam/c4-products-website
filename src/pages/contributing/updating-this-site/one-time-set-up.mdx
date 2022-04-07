@@ -185,6 +185,36 @@ need to install it now.
   ```
 
 
+### Pulling all dependencies from artifactory
+Npm is capable of pulling different packages from different repositories. This means some people will have a mix 
+of the default npm registry, sinopia, and artifactory.
+
+For fedramp compliance, we must be able to scan every single dependency, thus necessitating everything be from 
+our artifactory server. This means all registries in your package-lock.json file need to point to our artifactory server.
+
+#### Follow these instructions to setup your IBM Artifactory:
+
+Open terminal and copy the below command filling in your `{ibm_email}` and `{API_key}` found at [IBM Artifactory](https://na.artifactory.swg-devops.com/ui/admin/artifactory/user_profile).
+If you don't already have an API Key request one.
+
+```
+curl -u {ibm_email}:{API_key} https://na.artifactory.swg-devops.com/artifactory/api/npm/auth
+```
+
+```
+curl -u john.doe@ibm.com:A1B2C3D4E5F6G7H8I9J0 https://na.artifactory.swg-devops.com/artifactory/api/npm/auth
+```
+
+It will output something like:
+
+```
+_auth = YourLongBasicAuthToken
+always-auth = true
+email = john.doe@ibm.com
+```
+
+Copy and replace content in your .npmrc file in your home directory `(pal/.npmrc)` with these 3 lines. If you don't have a .npmrc file create one.
+
 ## Setup your github account to accept SSH connections
 
 <Accordion>
