@@ -1,6 +1,6 @@
 import React , { useState } from "react";
 import { TableOfContents32 } from '@carbon/icons-react';
-import { Modal, DataTable } from 'carbon-components-react';
+import { Modal } from 'carbon-components-react';
 import PatternAdoptionTable from "./PatternAdoptionTable";
 import { modalTheme, modalIcon} from "./PatternAdoptionModal.module.scss";
 

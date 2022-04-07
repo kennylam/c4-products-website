@@ -138,6 +138,7 @@ const TooltipChart = () => {
             bar.classList.add('line', `components--${components}`); // add line class for gsap animation
             return null
           })  
+          return null
         });
         setIsLoading(false)
       }
@@ -240,7 +241,9 @@ const TooltipChart = () => {
       totalPatternAdoption += businessUnits[unit]["products"][product].numberOfComponents;
       minInstancesAdoptedPerProduct = Math.min(minInstancesAdoptedPerProduct, productIndex+1);
       maxInstancesAdoptedPerProduct = Math.max(maxInstancesAdoptedPerProduct, productIndex+1);
+      return null
     })  
+    return null
   });
 
   var chartTitle = `${totalPatternAdoption} Total instances of pattern adoption`;
@@ -295,10 +298,10 @@ const TooltipChart = () => {
             <desc id="chart-desc">{chartDescription}</desc>
             {
               Object.keys(businessUnits).map((unit) => (                
-                  <g id={businessUnits[unit].id} stroke={businessUnits[unit].color}>
+                  <g key={businessUnits[unit].id} id={businessUnits[unit].id} stroke={businessUnits[unit].color}>
                     {
                       Object.keys(businessUnits[unit].products).map((product) => (
-                          <path data-unit={unit} tabIndex={focusIndex.current === 0 ? 0 : -1} aria-hidden={ product === currentProductKey ? false : true } onKeyDown={(e) => hideTooltip(e)} onKeyUp={(e) => showToolTip(e)} onMouseEnter={(e) => showToolTip(e)} onMouseLeave={(e) => hideTooltip(e)} onMouseMove={(e) => updateTooltipPosition(e)} id={product} d={businessUnits[unit].products[product].d}/>
+                          <path data-unit={unit} tabIndex={focusIndex.current === 0 ? 0 : -1} aria-hidden={ product === currentProductKey ? false : true } onKeyDown={(e) => hideTooltip(e)} onKeyUp={(e) => showToolTip(e)} onMouseEnter={(e) => showToolTip(e)} onMouseLeave={(e) => hideTooltip(e)} onMouseMove={(e) => updateTooltipPosition(e)} id={product} key={product} d={businessUnits[unit].products[product].d}/>
                       ))
                     }
                   </g>                

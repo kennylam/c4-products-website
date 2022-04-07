@@ -10,9 +10,7 @@ import {
     TableContainer,
     TableToolbar, 
     TableToolbarContent, 
-    TableToolbarSearch,
-    TableToolbarMenu,
-    TableToolbarAction
+    TableToolbarSearch
 } from 'carbon-components-react';
 import { CSVLink } from "react-csv";
 import { Download16 } from '@carbon/icons-react';
@@ -46,13 +44,15 @@ const PatternAdoptionTable = (title) => {
                     numberOfComponents : businessUnits[unit]["products"][product].numberOfComponents
                 }
             );
-        })  
+            return null
+        }) 
+        return null
     });
 
     const csv_headers = ['ID', 'Business Unit', 'Product Name', 'Number of Components'];
     const csv_data = React.useMemo(() => {
         return rows.map((d) => Object.values(d));
-    }, []);
+    }, [rows]);
     const tableAriaLabel = `Download ${Object.values(title)[0]} Table`;
 
     return (
