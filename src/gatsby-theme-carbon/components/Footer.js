@@ -10,7 +10,7 @@ const versions = {
 
 const Content = ({ buildTime }) => (
   <>
-    <p>Have questions? Email us for site feedbacks or open an issue in <a href="https://github.ibm.com/CDAI-design/pal/issues">GitHub</a></p>
+    <p>Have questions? Email us for site feedback or open an issue in <a href="https://github.ibm.com/CDAI-design/pal/issues">GitHub</a></p>
     <p>
       Vanilla Components version {versions['vanilla-components']}
       <br />
