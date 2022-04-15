@@ -1,6 +1,8 @@
 import React from 'react';
 import Footer from 'gatsby-theme-carbon/src/components/Footer';
 import packageJson from 'gatsby-theme-carbon/package.json';
+import pageContext from '../pageContext';
+import cdaiConfig from '../../../cdai-config.json';
 
 const currentYear = new Date().getFullYear();
 const versions = {
@@ -10,7 +12,8 @@ const versions = {
 
 const Content = ({ buildTime }) => (
   <>
-    <p>Have questions? Email us for site feedback or open an issue in <a href="https://github.ibm.com/CDAI-design/pal/issues">GitHub</a></p>
+    <p>Have questions? Email us for site feedbacks or open an issue in <a href="https://github.ibm.com/CDAI-design/pal/issues">GitHub</a></p>
+    <p><a href={`https://pages.github.ibm.com/${cdaiConfig.repo}/editor/?page=src/pages${pageContext.relativePagePath}`}>Edit this page</a></p>
     <p>
       Vanilla Components version {versions['vanilla-components']}
       <br />

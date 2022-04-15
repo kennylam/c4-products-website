@@ -1,3 +1,10 @@
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: "empty",
+    },
+  })
+}
 const { spawn } = require('child_process');
 const getDate = path => new Promise((res) => {
   const git = spawn('git', ['log', '-1', '--format="%ad"', '--', path]);
