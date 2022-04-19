@@ -1,0 +1,103 @@
+---
+title: Accessibility
+tabs: ['Overview', 'Search bar', 'Search results', 'Accessibility']
+stage: '3'
+---
+
+<PageDescription>
+
+Guidelines on how to handle keyboard navigation within global search.
+
+</PageDescription>
+
+
+## Keyboard navigation
+
+### Page tab order
+The order of tab stops is shown below. 
+
+If no filters are applied:
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Page tab order (default)](/images/PageTabOrder-NoFilters.png)
+
+</Column>
+</Row>
+
+
+
+<br/>
+<br/>
+
+If filters are applied:
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Page tab order (filters)](/images/PageTabOrder-Filters.png)
+
+</Column>
+</Row>
+
+
+<br/>
+<br/>
+
+### Dropdown tab order
+
+The first tab stop is the search field. The second tab stop contains the Types the user is able to scope by. The user can navigate between the Types using the left and right arrow keys. Tapping 'Enter' will select and apply a scoping filter.
+The third tab stop contains the recent searches. The user can navigate between the each of the options using the up and down arrow keys.
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Dropdown tab order](/images/DropdownTabOrder.png)
+
+</Column>
+</Row>
+
+
+<br/>
+<br/>
+
+When the user selects a Type, the focus moves back up to the cursor in the search field. 
+To user may remove the Type tag using the backspace key. The user may also navigate to the recent searches by tapping the Tab key.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Dropdown tab order (with Type)](/images/DropdownTabOrder-Type.png)
+
+</Column>
+</Row>
+
+
+
+<br/>
+<br/>
+
+### Results tab order
+
+The interactive components in each result tile are within the page's tab order.
+To navigate between tiles' first tab stop (the result title), the user may use the up and down arrow keys.
+
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Result tab order](/images/ResultTileTabOrder.png)
+
+</Column>
+</Row>
+
+### Filters tab order
+The single select and multiselect filters follow the the standard keyboard annotation guidelines noted in Carbon. 
+Single select filters utilize the [radio button](https://www.carbondesignsystem.com/components/radio-button/accessibility) component while multiselect filters utilize the 
+[dropdown](https://www.carbondesignsystem.com/components/dropdown/accessibility) component. Both single and multiselect filters may include the [checkbox](https://www.carbondesignsystem.com/components/checkbox/accessibility) component.
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Filter tab order](/images/FilterTabOrder.png)
+
+</Column>
+</Row>
