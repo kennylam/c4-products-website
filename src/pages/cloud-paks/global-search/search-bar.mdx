@@ -12,6 +12,8 @@ The search bar lives in the global header at all times.
 
 <AnchorLinks>
     <AnchorLink>Anatomy</AnchorLink>
+    <AnchorLink>Behavior</AnchorLink>
+    <AnchorLink>States</AnchorLink>
     <AnchorLink>Interaction</AnchorLink>
 </AnchorLinks>
 
@@ -72,6 +74,39 @@ When the result is clicked on, the user is navigated to the object/asset page in
 
 <br/>
 <br/>
+
+
+## Behavior
+The search bar renders differently in response to the browser screen size to maximize the space and magnify the search experience. 
+The search bar has a width of 720px and lives in the center of the items on the left and right side of the header. 
+As the screen gets smaller and is no longer able to contain a 720px search bar, the search bar will be the length of the leftover space 
+between the items on the left and right of the header. 
+When the screen size is 768px or smaller, the search bar turns into an icon, which will be located on the right side of the header. 
+When a user clicks on the search icon, the search bar will appear across the header, leaving 48px on each side revealing first and last icon on the header.
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Search locations](images/searchLocations.png)
+
+</Column>
+</Row>
+
+<br/>
+
+
+## States 
+
+The search bar has four states: default/hover, hover, clicked in, focus/typing, and finished typing.
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Search bar states](images/searchBarStates.png)
+
+</Column>
+</Row>
+
 
 ## Interaction
 
