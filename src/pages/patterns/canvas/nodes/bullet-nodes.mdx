@@ -42,17 +42,97 @@ Dendrograms, also known as Tree Diagrams, are typically use bullet nodes and can
 
 <ImageGalleryImage alt="Tririga" title="Tririga dendrogram" col={4}>
 
-![Tririga](../images/tririgaDendro.png)
+![Tririga](../images/gallery/tririgaDendro.png)
 
 </ImageGalleryImage>  
 
 </ImageGallery>
 
 
-### Node states
+## Node states
 
-Guidance coming Q1 2022
+Hover, focus, and any other node state that depicts button UX may have a minimum of zero buttons and a maximum of three buttons. All other actions should be placed into the `Overflow`.  button. 
 
-### Visual guidance
 
-Guidance coming Q1 2022
+| State | Element      | Token (Default)     |
+| -------- | --------- | ---------- |
+| Enabled        | Primary text         | `$body-short-01`          |
+| Hover       | Primary text         | `$productive-heading-01`          |
+| Hover        | Background fill         | `$hover-ui`          |
+| Selected        | Bullet outline         | `$ui-05`, 4 dash-4 gap          |
+| Focus        | Bullet border         | `$focus`          |
+| Disabled        | Primary/Secondary text         | `$disabled-02`          |
+| Read-only        | Bullet background fill         | `$ui-background`          |
+| Read-only        | Bullet border         | `$ui-05`          |
+
+
+<br /> 
+
+
+<Row>
+
+<Column colLg={12}>
+<Tabs>
+<Tab label="White theme">
+
+  ![Bullet node using low-contrast gray](../images/BulletNodeWhiteTheme.png)
+
+</Tab>
+
+<Tab label="Gray 10 theme">
+
+  ![Bullet node using low-contrast gray](../images/BulletNodeGray10Theme.png)
+
+</Tab>
+
+<Tab label="Gray 90 theme">
+
+  ![Bullet node using low-contrast gray](../images/BulletNodeGray90Theme.png)
+
+</Tab>
+
+<Tab label="Gray 100 theme">
+
+  ![Bullet node using low-contrast gray](../images/BulletNodeGray100Theme.png)
+
+</Tab>
+
+</Tabs>
+
+</Column>
+
+</Row>
+
+
+
+
+## Visual guidance
+
+### Spacing
+
+#### Enabled node spacing
+
+Since space is quite limited on the bullet node, the separation of text and bullet is minimal and takes into account the vertical spacing already included in the text token; hence the variance between `8 pixels` and `10 pixels`.
+
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Bullet node spacing specs](../images/bulletNodeSpacing.png)
+
+</Column>
+
+</Row>
+
+#### Hover node spacing
+
+On hover, the bullet node's bullet increases in size to `12 pixels` from `8 pixels`, and the text becomes bold (if it is a single line of text).
+
+Buttons appear on focus and/or hover and will appear in the upper left corner (or centered with text if text is centered below the bullet) with a 4px buffer and behave exactly like a standard small button.
+
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Bullet node spacing specs](../images/bulletNodeSpacingHover.png)
+
+</Column>
+</Row>
