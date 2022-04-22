@@ -59,6 +59,62 @@
   }
 }
 
+@media screen and (min-width: 672px) and (max-width: 1056px) {
+  .counter {
+    font-size: 13vw;
+  }
+}
+
+@media screen and (min-width: 1056px) and (max-width: 1584px) {
+  .counter {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (min-width: 1584px) {
+  .counter {
+    font-size: 160px;
+  }
+}
+
+//score counter styles to separate file
+.counter {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: -60px;
+  letter-spacing: -1px;
+  opacity: 0;  
+  pointer-events: none; 
+  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+  transition: transform .85s cubic-bezier(1.00, 0.00, 0.66, 1.00);  
+}
+
+.counter--animate-translate {
+  transform: translateY(20px);
+}
+
+.counter--animate-opacity {
+  opacity: 0;
+  animation: fadeIn .75s cubic-bezier(0.90, 0.00, 0.10, 1.00); 
+  animation-delay: .1s;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .hide-tooltip { 
   animation: fade-out 0.25s ease-out;
   opacity: 0;
@@ -81,6 +137,7 @@
   position: relative;
   width: 100%;
   height: 100%;
+  margin-top: 3rem;
   &:focus,
   &.chart-with-focus {
     outline: 2px solid $inverse-link;
@@ -129,8 +186,8 @@
   @include carbon--type-style("productive-heading-03");
 
   line-height: 22px;
-  color: #efefef;
-  border-bottom: 1px solid #404040;
+  color: #f4f4f4;
+  border-bottom: 1px solid #393939;
   height: 56px;
   white-space: pre-line;
 }
@@ -138,13 +195,13 @@
 .tooltip--count {
   @include carbon--type-style("expressive-heading-04");
 
-  color: #d8d8d8;
+  color: #e0e0e0;
   margin-top: $spacing-03;
 }
 
 .tooltip--label {
   @include carbon--type-style("productive-heading-01");
-  color: #979797;
+  color: #8d8d8d;
   z-index: 25;
   margin-top: -6px;
 }

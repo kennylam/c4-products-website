@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { businessUnits } from './animation-data';
 import Lottie from 'react-lottie';
-import combinedSVG from './combined-no-padding.json'
+import combinedSVG from './combined-nocount.json'
 import './TooltipChart.scss';
 import mobile from './static_mobile.svg';
 import desktop from './static_homepage_desktop.svg';
+import Counter from './Counter'
 
 const documentExists = typeof window !== `undefined` ? true : false;
 const useActiveElement = () => {
@@ -220,11 +221,22 @@ const TooltipChart = () => {
     animationData: combinedSVG,
   }
 
+  const animateCounter = () => {    
+    const counter = document.getElementById('counter');
+    counter.classList.add('counter--animate-translate', 'counter--animate-opacity'); 
+  }
+
   const lottieListeners = [
     {
       eventName: 'complete',
       callback: () => {
         getClasses();
+      }
+    },
+    {
+      eventName: 'DOMLoaded',
+      callback: () => {
+        animateCounter();
       }
     }
   ]
@@ -235,7 +247,7 @@ const TooltipChart = () => {
   }
 
   // Calculate total pattern adoption count, min and max instances per product
-  var totalPatternAdoption=0,minInstancesAdoptedPerProduct=Infinity,maxInstancesAdoptedPerProduct=0;
+  let totalPatternAdoption=0,minInstancesAdoptedPerProduct=Infinity,maxInstancesAdoptedPerProduct=0;
   Object.keys(businessUnits).map(function(unit) {
     Object.keys(businessUnits[unit]["products"]).map(function(product, productIndex) {
       totalPatternAdoption += businessUnits[unit]["products"][product].numberOfComponents;
@@ -246,8 +258,8 @@ const TooltipChart = () => {
     return null
   });
 
-  var chartTitle = `${totalPatternAdoption} Total instances of pattern adoption`;
-  var chartDescription = `Bar graph depicting instances of pattern adoption for each product, grouped by business unit, animating in sequentially with an animated background. There are ${totalPatternAdoption} total instances of pattern adoption, with a range of ${minInstancesAdoptedPerProduct} to ${maxInstancesAdoptedPerProduct} instances adopted per product. Data for each product and business unit is available in table format by clicking the previous link, or by pressing left or right arrow keys to cycle through the bars.`;
+  const chartTitle = `${totalPatternAdoption} Total instances of pattern adoption`;
+  const chartDescription = `Bar graph depicting instances of pattern adoption for each product, grouped by business unit, animating in sequentially with an animated background. There are ${totalPatternAdoption} total instances of pattern adoption, with a range of ${minInstancesAdoptedPerProduct} to ${maxInstancesAdoptedPerProduct} instances adopted per product. Data for each product and business unit is available in table format by clicking the previous link, or by pressing left or right arrow keys to cycle through the bars.`;
   const tooltipChart = useRef();
 
   const [width, setWindowWidth] = useState(0)
@@ -265,6 +277,16 @@ const TooltipChart = () => {
 
   const responsive = {
     isMobile: width < 672,
+  }
+
+  const getTotalPatterns = () => {
+    let totalPatterns = 0
+    Object.keys(businessUnits).forEach(unit => {
+      Object.keys(businessUnits[unit]["products"]).forEach(product => {
+        totalPatterns += businessUnits[unit]["products"][product]["numberOfComponents"]
+      })
+    })
+    return totalPatterns
   }
 
   return (
@@ -308,10 +330,10 @@ const TooltipChart = () => {
               ))
             }
           </svg>
+          <div className="counter" id="counter"><Counter from="0" end={getTotalPatterns()} /></div>
         </div>
       </div>
     </div>
   );
 }
-
 export default TooltipChart

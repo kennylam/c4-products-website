@@ -76,7 +76,7 @@ const businessUnits = {
             "automation--app-connect" : {
                 d: "M1132.7 378.4 913.9 230.5",
                 productName: "CP4I - App Connect",
-                numberOfComponents: 14
+                numberOfComponents: 4
             },
             "automation--api-connect-test" : {
                 d: "M1117.7 399.7 905.3 242.6",
@@ -86,7 +86,7 @@ const businessUnits = {
             "automation--api-connect" : {
                 d: "M1101.7 420.3 896.2 254.4",
                 productName: "CP4I - API Connect",
-                numberOfComponents: 4
+                numberOfComponents: 14
             },
             "automation--content-designer" : {
                 d: "M1084.9 440.2 886.7 265.7",
