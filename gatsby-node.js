@@ -1,10 +1,27 @@
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
+exports.onCreateWebpackConfig = ({
+  actions: { setWebpackConfig },
+  plugins: { provide },
+}) => {
+  setWebpackConfig({
     node: {
-      fs: "empty",
+      fs: 'empty',
     },
-  })
-}
+    plugins: [
+      provide({
+        Buffer: ["buffer", "Buffer"],
+        process: "process/browser",
+      }),
+    ],
+    resolve: {
+      fallback: {
+        fs: false,
+        path: require.resolve('path-browserify'),
+        buffer: require.resolve("buffer"),
+      },
+    },
+  });
+};
+
 const { spawn } = require('child_process');
 const getDate = path => new Promise((res) => {
   const git = spawn('git', ['log', '-1', '--format="%ad"', '--', path]);

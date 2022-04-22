@@ -1,6 +1,6 @@
 export const handleDownload = (files, site, source) => {
   let foundFile = files.edges.find(({ node }) => node.publicURL === source);
- 
+
   const a = document.body.appendChild(document.createElement("a"));
   a.href = `${source}`;
   a.download = `${foundFile.node.name}${foundFile.node.ext}`;
@@ -9,9 +9,9 @@ export const handleDownload = (files, site, source) => {
 };
 
 export const handleAllAssetsDownload = (files, site, source) => {
-  let foundFile; 
+  let foundFile;
 
-  if (process.env.NODE_ENV === "dev") {
+  if (process.env.NODE_ENV === "development") {
     // console.log("To download the assets make sure you are in production mode");
     // return;
   foundFile = files.edges.find(
@@ -37,7 +37,7 @@ export const handleAllAssetsDownload = (files, site, source) => {
       ({ node }) => node.publicURL === `${site.pathPrefix}${source}`
     );
   }
-  
+
   const a = document.body.appendChild(document.createElement("a"));
   a.href = `${site.pathPrefix}${source}`;
   a.download = `${foundFile.node.name}${foundFile.node.ext}`;
