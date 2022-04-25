@@ -4,7 +4,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby build --prefix-paths",
-    "copy": "node node_modules/cdai-microsite-common-module/dist/postInstall",
+    "copy": "npx microsite-common copy",
     "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=development run-s copy 'gatsby develop'",
     "dev:clean": "run-s 'gatsby clean' dev",
     "gatsby": "gatsby",
