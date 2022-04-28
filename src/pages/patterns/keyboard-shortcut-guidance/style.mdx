@@ -1,0 +1,53 @@
+---
+title: Keyboard Shortcut Guidance
+tabs: ['Usage', 'Style']
+---
+
+<Row>
+  <Column colLg={8}>
+
+![Keyboard shortcut indicator in the different carbon themes](images/style-indicator-themes.png)
+
+  </Column>
+</Row>
+
+## Color
+
+| Element | Property | Color token |
+| :- | :- | :- |
+| Indicator | `background-color` | `$ui-03` |
+| | `fill` | `$icon-01` |
+| | `stroke` | `$interactive-01` (when running)<br />`$ui-04` (when aborted) |
+| Key | `background-color` | `transparent` |
+| | `color` | `$text-01` |
+| | `border-color` | `$ui-03` |
+
+## Typography
+
+| Element | Type style |
+| :- | :- |
+| Key | `body-short-01` |
+
+## Structure
+
+| Element | Property | px / rem | Spacing token |
+| :- | :- | :- | :- |
+| Indicator | `width`, `height` | - | `$layout-05` |
+| | `stroke-width` | - | `$spacing-02` |
+| Key | `min-width` | - | `$layout-03` |
+| | `height` | - | `$layout-03` |
+| | `border-radius` | 4 / .25 | - |
+| | `padding` | - | `$spacing-03` |
+| Operator | `margin-left`, `margin-right` | - | `$spacing-03` |
+
+<Row>
+  <Column colLg={8}>
+
+![Spacing and color tokens for keyboard shortcut indicator](images/style-indicator.png)
+
+![Spacing and color tokens for keys and operators](images/style-key.png)
+
+</Column>
+</Row>
+
+Note that the keys have a minimum width of `$layout-03`, making them square when only one character is displayed (see the example with "A" and "A" above). The text will remain centered, resulting in a higher horizontal spacing on low-width characters such as "I".
