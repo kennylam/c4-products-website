@@ -105,6 +105,8 @@
       path: /patterns/exporting/usage
     - title: Generating an API key
       path: /patterns/generating-api-key/usage
+    - title: Global header
+      path: /patterns/global-header/usage
     - title: HTTP errors
       path: /patterns/http-errors/usage
     - title: Import and upload
