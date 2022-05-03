@@ -1,8 +1,8 @@
 import React from 'react';
 import Footer from 'gatsby-theme-carbon/src/components/Footer';
 import packageJson from 'gatsby-theme-carbon/package.json';
-import pageContext from '../pageContext';
-import cdaiConfig from '../../../cdai-config.json';
+import pageContext from '../../pageContext';
+import cdaiConfig from '../../../../cdai-config.json';
 
 const currentYear = new Date().getFullYear();
 const versions = {
