@@ -4,146 +4,144 @@
       path: /overview/about/
     - title: Contacts
       path: /overview/contacts
-    - title: IBM Product specifications
+    - title: 'IBM Product specifications'
       path: /overview/carbon-specifications
-    - title: Asset index
+    - title: 'Asset index'
       path: /overview/asset-index
-    - title: Carbon for IBM Products
+    - title: 'Carbon for IBM Products'
       path: /overview/video
 - title: Contributing
   pages:
-    - title: Designing components & patterns
+    - title: 'Designing components & patterns'
       path: /contributing/designing-components-patterns/overview
-    - title: Coding components & patterns
+    - title: 'Coding components & patterns'
       path: /contributing/coding-components-patterns/overview
-    - title: Updating this site
+    - title: 'Updating this site'
       path: /contributing/updating-this-site/overview
 - title: Components
   pages:
     - title: Cards
       path: /components/card/overview
       subpage:
-        - title: Expressive cards
+        - title: 'Expressive cards'
           path: /components/card/expressive/usage
-        - title: Productive cards
+        - title: 'Productive cards'
           path: /components/card/productive/usage
-    - title: Color picker
+    - title: 'Color picker'
       path: /components/color-picker/usage
-    - title: Data table extensions
+    - title: 'Data table extensions'
       path: /components/data-table/overview
       subpage:
-        - title: Data table column customization
+        - title: 'Data table column customization'
           path: /components/data-table/column-customization
-        - title: Data table column alignment
+        - title: 'Data table column alignment'
           path: /components/data-table/column-alignment
-        - title: Data table clickable row items
+        - title: 'Data table clickable row items'
           path: /components/data-table/clickable-row-items
-        - title: Data table row action buttons
+        - title: 'Data table row action buttons'
           path: /components/data-table/row-action-buttons
-        - title: Data table headers
+        - title: 'Data table headers'
           path: /components/data-table/headers
-        - title: Data table expandable rows
+        - title: 'Data table expandable rows'
           path: /components/data-table/expandable-rows
-        - title: Data table inline editing
+        - title: 'Data table inline editing'
           path: /components/data-table/inline-editing
-        - title: Data table nested rows
+        - title: 'Data table nested rows'
           path: /components/data-table/nested-rows
-        - title: Data table resizable columns
+        - title: 'Data table resizable columns'
           path: /components/data-table/resizable-columns
-    - title: Grid behaviors
+    - title: 'Grid behaviors'
       path: /components/grid-behaviors
-    - title: Menu and combo buttons
+    - title: 'Menu and combo buttons'
       path: /components/button-menu/usage
-    - title: "Modified tabs"
+    - title: 'Modified tabs'
       path: /components/modified-tabs/usage
-    - title: Options tile
+    - title: 'Options tile'
       path: /components/options-tile/usage
-    - title: Page header
+    - title: 'Page header'
       path: /components/page-header/usage
-    - title: "Progressive loading bar"
+    - title: 'Progressive loading bar'
       path: /components/progressive-loading-bar/usage
-    - title: "Side panel"
+    - title: 'Side panel'
       path: /components/side-panel/usage
-    - title: "Tag set"
+    - title: 'Tag set'
       path: /components/tag-set
-    - title: "Tearsheet"
+    - title: Tearsheet
       path: /components/tearsheet/usage
 - title: Patterns
   pages:
-    - title: Add and select
+    - title: 'Add and select'
       path: /patterns/add-and-select/usage
-    - title: Advanced filtering
+    - title: 'Advanced filtering'
       path: /patterns/advanced-filtering/usage
-    - title: About modal
+    - title: 'About modal'
       path: /patterns/about-modal/usage
     - title: Canvas
       path: /patterns/canvas/usage
       subpage:
-        - title: Canvas style
+        - title: 'Canvas style'
           path: /patterns/canvas/canvas-style
         - title: Nodes
           path: /patterns/canvas/nodes/nodes-overview
-        - title: Card nodes
+        - title: 'Card nodes'
           path: /patterns/canvas/nodes/card-nodes
-        - title: Shape nodes
+        - title: 'Shape nodes'
           path: /patterns/canvas/nodes/shape-nodes
-        - title: Bullet nodes
+        - title: 'Bullet nodes'
           path: /patterns/canvas/nodes/bullet-nodes
         - title: Links
           path: /patterns/canvas/links
-        - title: Node configuration
+        - title: 'Node configuration'
           path: /patterns/canvas/node-configuration
-    - title: Create flows
+    - title: 'Create flows'
       path: /patterns/creation-flows/usage
-    - title: Drag and drop
+    - title: 'Drag and drop'
       path: /patterns/drag-and-drop/usage
-    - title: Edit and update
+    - title: 'Edit and update'
       path: /patterns/edit/usage
-    - title: Empty state
+    - title: 'Empty state'
       path: /patterns/empty-state/usage
     - title: Export
       path: /patterns/exporting/usage
-    - title: Generating an API key
+    - title: 'Generating an API key'
       path: /patterns/generating-api-key/usage
-    - title: Global header
+    - title: 'Global header'
       path: /patterns/global-header/usage
-    - title: HTTP errors
+    - title: 'HTTP errors'
       path: /patterns/http-errors/usage
-    - title: Import and upload
+    - title: 'Import and upload'
       path: /patterns/importing/usage
     - title: Notifications
       path: /patterns/notifications/usage
-    - title: Profile header menu
+    - title: 'Profile header menu'
       path: /patterns/profile-header-menu/usage
     - title: Remove
       path: /patterns/removing/usage
     - title: Saving
       path: /patterns/saving/usage
-    - title: "Status icons"
+    - title: 'Status icons'
       path: /patterns/status-icons/usage
-    - title: "Toolbars"
+    - title: Toolbars
       path: /patterns/toolbars/usage
-    - title: "User profile images"
+    - title: 'User profile images'
       path: /patterns/user-profile-images/usage
-    - title: "Web terminal"
+    - title: 'Web terminal'
       path: /patterns/web-terminal/usage
-- title: "IBM Product layouts"
+- title: 'IBM Product layouts'
   pages:
-    - title: "Library"
-      path: /layouts/library
-- title: "Illustrations"
+    - path: /layouts/library
+- title: Illustrations
   pages:
-    - title: "Library"
-      path: /illustrations/library
-- title: "Content guide"
+    - path: /illustrations/library
+- title: 'Content guide'
   pages:
     - title: Overview
       path: /content/main/overview
-    - title: Our personality
+    - title: 'Our personality'
       path: /content/our-personality
-    - title: Content principles
+    - title: 'Content principles'
       path: /content/content-principles
-    - title: Language and grammar
+    - title: 'Language and grammar'
       path: /content/language-and-grammar
     - title: Capitalization
       path: /content/capitalization
@@ -151,48 +149,48 @@
       path: /content/punctuation
     - title: Numbers
       path: /content/numbers
-    - title: Information architecture
+    - title: 'Information architecture'
       path: /content/ia
-    - title: Navigation labels
+    - title: 'Navigation labels'
       path: /content/navigation-labels
-    - title: Button labels
+    - title: 'Button labels'
       path: /content/button-labels
-    - title: Content heuristics
+    - title: 'Content heuristics'
       path: /content/content-heuristics
     - title: Terminology
       path: /content/terminology/approved-terms
-- title: WalkMe guide
+- title: 'WalkMe guide'
   pages:
     - title: Overview
       path: /walkme-guide/main/overview
-    - title: WalkMe patterns
+    - title: 'WalkMe patterns'
       path: /walkme-guide/walkme-patterns/overview
     - title: Menu
       path: /walkme-guide/menu/usage
     - title: Carousel
       path: /walkme-guide/carousel/usage
-    - title: Journey selector
+    - title: 'Journey selector'
       path: /walkme-guide/journey-selector/usage
     - title: Popups
       path: /walkme-guide/popups/usage
     - title: Steps
       path: /walkme-guide/steps/usage
-- title: Cloud Pak guidance
+- title: 'Cloud Pak guidance'
   pages:
-    - title: "Login"
+    - title: Login
       path: /cloud-paks/login/usage
-    - title: "Homepage"
+    - title: Homepage
       path: /cloud-paks/home-page/usage
-    - title: "Navigation"
+    - title: Navigation
       path: /cloud-paks/navigation/usage
-    - title: "Cross Pak switcher"
+    - title: 'Cross Pak switcher'
       path: /cloud-paks/cross-pak-switcher/usage
-    - title: "Integrated interactions"
+    - title: 'Integrated interactions'
       path: /cloud-paks/integrated-framework/overview
-- title: AI Design
+- title: 'AI Design'
   pages:
-    - title: "Overview"
+    - title: Overview
       path: /ai-design/overview
-    - title: "AI explainability"
+    - title: 'AI explainability'
       path: /ai-design/ai-explainability
   hasDivider: true
