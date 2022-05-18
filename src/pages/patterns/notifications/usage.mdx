@@ -1,11 +1,11 @@
 ---
 title: Notifications
-tabs: ['Usage', 'Code']
+tabs: ["Usage", "Code"]
 ---
 
 <PageDescription>
 
-Notifications provides a way to communicate product information to users. They range from granular, inline responses to user actions to system-wide messages 
+Notifications provides a way to communicate product information to users. They range from granular, inline responses to user actions to system-wide messages
 
 </PageDescription>
 <AnchorLinks>
@@ -18,22 +18,22 @@ Notifications provides a way to communicate product information to users. They r
 
 ## Overview
 
-The notification pattern provides a consistent experience to users and designers crafting experiences no matter what offering they use or work on. It sets expectations on the behavior for notifications, allowing the user to view and interact with them all in one place. 
+The notification pattern provides a consistent experience to users and designers crafting experiences no matter what offering they use or work on. It sets expectations on the behavior for notifications, allowing the user to view and interact with them all in one place.
 
 ## Anatomy
 
 ### Notifications indicator in the header
 
-In order to inform a user that they have new or unread notifications, an indicator ensures that there is a clear distinction. 
+In order to inform a user that they have new or unread notifications, an indicator ensures that there is a clear distinction.
 
 ![Notification's position in the header](images/header1.png)
 
-1. **Bell indicator**: Indicator serves as an indication that there are unread or new messages in the queue. 
+1. **Bell indicator**: Indicator serves as an indication that there are unread or new messages in the queue.
 
-| **Item** | **Description (spec)** |
-| ------------- | ----------- |
-| No messages in header (bell icon) | Will not show indicator, or red dot. User can still activate panel when there are no messages. |
-| Messages in header (bell icon) | Will show indicator, or red dot, and not the count of messages. This was determined to be sufficient and more legible than a number indicating the amount of notifications (which could be multiple types).  |
+| **Item**                          | **Description (spec)**                                                                                                                                                                                       |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| No messages in header (bell icon) | Will not show indicator, or red dot. User can still activate panel when there are no messages.                                                                                                               |
+| Messages in header (bell icon)    | Will show indicator, or red dot, and not the count of messages. This was determined to be sufficient and more legible than a number indicating the amount of notifications (which could be multiple types).  |
 
 ### Notification Panel
 
@@ -49,7 +49,7 @@ This is particularly useful as by default, toast notifications disappear after a
 4. **View all CTA**: Allows users to access the notifications history page, and also shows a count of how many total notifications exist for a users account.
 5. **Separator**: A segmented summary role up of notifications received by days
 6. **Notification body**: Description of notification message. Limited to 2 lines with the ability to expand and collapse to display more info if needed.
-7. **Notification title**: Title of the notification/alert/announcement. 
+7. **Notification title**: Title of the notification/alert/announcement.
 8. **Severity indicator/Notification title**: Indicator of level of severity, usually sorted in order of priority
 9. **Do not disturb**: Pauses incoming notifications from the screen, but still chronicles them within the Notification center for a user to interact with at their own pace.
 10. **Panel Title**: Name of the notifications panel overlay
@@ -165,6 +165,7 @@ This is particularly useful as by default, toast notifications disappear after a
 ### When to use
 
 Include a short list describing situations where this pattern could be applied.For example, use this pattern when:
+
 - Always use the bell indicator when there are new or unused notifications or messages
 - Always use the panel for accessing notifications or messages from the header bell icon indicator
 - Use the view all page to show a users historical list of all of the users notifications or messages
@@ -179,7 +180,7 @@ Include a short list describing situations where this pattern could be applied.F
 
 ## The solution
 
-Notifications are an important method of communicating with users and providing feedback. They range from granular, inline responses to user actions to system-wide messages. Notification panels are helpful for users who receive a large number of system-generated notifications or may need to reference their notifications later. They are used in conjunction with toasts to alert users of notifications as they come in. 
+Notifications are an important method of communicating with users and providing feedback. They range from granular, inline responses to user actions to system-wide messages. Notification panels are helpful for users who receive a large number of system-generated notifications or may need to reference their notifications later. They are used in conjunction with toasts to alert users of notifications as they come in.
 
 - Process handler usage from [Carbon](https://www.carbondesignsystem.com/components/notification/usage/) (inline, toast, system-based, task-based)
 - Process handler usage from [Cloud Pak for Data](https://ibm.box.com/s/yuw4bin4ca2xcpzdd3j2ys2l16l2s079) (inline, toast, system-based, task-based)
@@ -213,10 +214,10 @@ Source anchored, an indicator is a way of making a page element (be it content o
 - Indicators are conditional — they are not always present, but appear or change depending on certain conditions.
 - Indicators are passive. They do not require that a user take action, but are used as a communication tool to cue the user to something of note.
 
-| **Type** | **Description** |
-| ------------- | ----------- |
-| Icon | [Status iconography](https://pages.github.ibm.com/cdai-design/pal/patterns/status-icons/usage) | Typographical | Boldfacing unread email messages, etc.  |
-| Size and animation | Other sensory elements like vibration, relativity to other elements on the page, etc. |
+| **Type**           | **Description**                                                                                |
+| ------------------ | ---------------------------------------------------------------------------------------------- | ------------- | --------------------------------------- |
+| Icon               | [Status iconography](https://pages.github.ibm.com/cdai-design/pal/patterns/status-icons/usage) | Typographical | Boldfacing unread email messages, etc.  |
+| Size and animation | Other sensory elements like vibration, relativity to other elements on the page, etc.          |
 
 ### Browser Based (web push) notifications
 
@@ -236,7 +237,7 @@ Browser based notifications are supported by the platform that is being used at 
 
 ## Accessibility
 
-Evaluate your pattern to ensure it meets [accessibility standards](/guidelines/accessibility/overview) and guidelines, and provide details of compliance.
+Evaluate your pattern to ensure it meets [accessibility standards](https://carbondesignsystem.com/guidelines/accessibility/overview/) and guidelines, and provide details of compliance.
 
 ## Related
 
