@@ -27,6 +27,8 @@
           path: /components/card/expressive/usage
         - title: 'Productive cards'
           path: /components/card/productive/usage
+    - title: "Data spreadsheet"
+      path: /components/data-spreadsheet/usage
     - title: 'Color picker'
       path: /components/color-picker/usage
     - title: 'Data table extensions'
