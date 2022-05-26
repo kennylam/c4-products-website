@@ -35,26 +35,60 @@ Use sentence style capitalization for all text elements in the UI (headings, sub
 </Row>
 
 - In sentence style capitalization, only the initial letter of the initial word is capitalized (plus any proper nouns).
-- Studies show that this is the easiest and quickest form to read (especially when the text is more than a few words in length).
+- Studies show that this is the easiest and quickest form to read, especially when the text is more than a few words in length.
 - It makes it easy to distinguish between common nouns and proper nouns (for example, in the following text, the initial capital letter used in the word “Padlock” suggests that this is the official name of a product or service).
 
 <Row>
   <Column colMd={4} colLg={4}>
     <DoDontExample
+      caption="With sentence case capitalization any proper nouns ('IBM Padlock' in this case) stand out."
+      text="Secure your enterprise applications with IBM Padlock"
       type="do"
-      caption="Correct example using sentence style capitalization."
-      text="Secure your enterprise applications with Padlock"
-      aspectRatio="1:1"
+      aspectRatio="2:1"
+    />
+  </Column>
+  <Column colMd={4} colLg={4}>
+    <DoDontExample
+      caption="With title case capitalization, proper nouns look no different to other text."
+      text="Secure Your Enterprise Applications With IBM Padlock"
+      aspectRatio="2:1"
     />
   </Column>
 </Row>
 
-<InlineNotification kind="warning">
-It’s a common mistake for teams to capitalize product features. Avoid this.
-</InlineNotification>
+- Do not capitalize product features when you are mentioning them in general text. For example, connections, 
+dashboards, integrations, reports, and so on are all common nouns and should not be capitalized in normal text. 
+- The only time when such words should be capitalized is if they begin a sentence or if you are instructing 
+the user to navigate to a page heading or UI control (in which case the text should match the capitalization used 
+in the UI.
+
+<Row>
+  <Column colMd={4} colLg={4}>
+    <DoDontExample
+      caption="Product features are not proper nouns and should not be capitalized in normal text."
+      text="Product X enables you to set up custom dashboards and reports."
+      type="do"
+      aspectRatio="2:1"
+    />
+  </Column>
+  <Column colMd={4} colLg={4}>
+    <DoDontExample
+      caption="But when referencing specific UI headings and controls, copy the capitalization used in the UI."
+      text="On the Dashboard page, click New report."
+      type="do"
+      aspectRatio="2:1"
+    />
+  </Column>
+</Row>
+
+<br/>
 
 > Do not capitalize the names of features and components unless they are sold separately or are trademarked.
 > <cite>— The IBM Style Guide: Conventions for writers and editors</cite>
+
+<InlineNotification kind="warning">
+It’s a common mistake for teams to incorrectly capitalize product features. Avoid this.
+</InlineNotification>
 
 See also the <Link to="#capitalizing-all-other-words">Capitalizing all other words</Link> sub-section below for further guidance.
 
@@ -76,15 +110,15 @@ See also the <Link to="#capitalizing-all-other-words">Capitalizing all other wor
   <Column colMd={4} colLg={4}>
     <DoDontExample
       caption="Headline (or title) case capitalization."
-      text="Secure Your Enterprise Applications with Padlock"
-      aspectRatio="1:1"
+      text="Secure Your Enterprise Applications with IBM Padlock"
+      aspectRatio="2:1"
     />
   </Column>
   <Column colMd={4} colLg={4}>
     <DoDontExample
       caption="All caps (or uppercase) capitalization."
-      text="SECURE YOUR ENTERPRISE APPLICATIONS WITH PADLOCK"
-      aspectRatio="1:1"
+      text="SECURE YOUR ENTERPRISE APPS WITH IBM PADLOCK"
+      aspectRatio="2:1"
     />
   </Column>
 </Row>
@@ -100,11 +134,14 @@ When referencing the name of any IBM product, use the official (full) name, not 
     <DoDontExample
       type="do"
       text="Experience WebSphere Application Server on IBM Cloud..."
-      aspectRatio="1:1"
+      aspectRatio="2:1"
     />
   </Column>
   <Column colMd={4} colLg={4}>
-    <DoDontExample text="Experience WAS on IBM Cloud..." aspectRatio="1:1" />
+    <DoDontExample
+      text="Experience WAS on IBM Cloud..."
+      aspectRatio="2:1" 
+    />
   </Column>
 </Row>
 
@@ -126,13 +163,13 @@ Note: If an abbreviation might not be known to the target audience it’s good p
     <DoDontExample
       type="do"
       text="The configuration can be exported as a WSDL file."
-      aspectRatio="1:1"
+      aspectRatio="2:1"
     />
   </Column>
   <Column colMd={4} colLg={4}>
     <DoDontExample
       text="The configuration can be exported as a wsdl file."
-      aspectRatio="1:1"
+      aspectRatio="2:1"
     />
   </Column>
 </Row>
@@ -167,13 +204,13 @@ Also, do remember that there are many words that can act as either a common noun
     <DoDontExample
       type="do"
       text="Our JavaScript plugin is available in GitHub."
-      aspectRatio="1:1"
+      aspectRatio="2:1"
     />
   </Column>
   <Column colMd={4} colLg={4}>
     <DoDontExample
       text="Our Javascript plugin is available in Github."
-      aspectRatio="1:1"
+      aspectRatio="2:1"
     />
   </Column>
 </Row>
@@ -203,13 +240,13 @@ section for further details.
     <DoDontExample
       type="do"
       text="You can use a global policy to apply changes to all users."
-      aspectRatio="1:1"
+      aspectRatio="2:1"
     />
   </Column>
   <Column colMd={4} colLg={4}>
     <DoDontExample
       text="You can use a Global Policy to apply changes to all users."
-      aspectRatio="1:1"
+      aspectRatio="2:1"
     />
   </Column>
 </Row>
