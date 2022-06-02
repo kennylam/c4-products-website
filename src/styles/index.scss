@@ -1,13 +1,15 @@
-@import 'mixins';
+@import "mixins";
 $carbon--theme: $carbon--theme--g10;
 @include carbon--theme();
-@import './glossary.scss';
+@import "./glossary.scss";
 
 main.container--homepage {
   background: #000;
 }
 
 #homepage-cards {
+  padding-top: calc(#{$spacing-05} * 5);
+
   .bx--aspect-ratio {
     width: 100%;
   }
@@ -25,9 +27,9 @@ main.container--homepage {
     width: 100%;
   }
 
-  @media (min-width:66rem) and (max-width:82rem) {
+  @media (min-width: 66rem) and (max-width: 82rem) {
     .bx--resource-card__subtitle {
-      font-size: .75rem;
+      font-size: 0.75rem;
     }
 
     .bx--resource-card__title {
