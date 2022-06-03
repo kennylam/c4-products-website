@@ -37,3 +37,11 @@ main.container--homepage {
     }
   }
 }
+
+[class^="ExpressiveListContainer-module--text"] .bx--row[class*="CardGroup-module--cardGroup"] {
+  margin-left: -#{$spacing-05};
+}
+
+[class^="ExpressiveListContainer-module--text"] .bx--row[class*="CardGroup-module--cardGroup"] > div {
+  max-width: 50%;
+}

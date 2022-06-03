@@ -12,11 +12,13 @@
       path: /overview/video
 - title: Contributing
   pages:
-    - title: 'Designing components & patterns'
-      path: /contributing/designing-components-patterns/overview
-    - title: 'Coding components & patterns'
+    - title: 'Overview'
+      path: /contributing/overview
+    - title: 'Contribution framework'
+      path: /contributing/contribution-framework/intent
+    - title: 'Implementation'
       path: /contributing/coding-components-patterns/overview
-    - title: 'Updating this site'
+    - title: 'Publishing documentation'
       path: /contributing/updating-this-site/overview
 - title: Components
   pages:

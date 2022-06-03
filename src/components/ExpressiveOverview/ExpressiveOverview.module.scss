@@ -1,0 +1,43 @@
+.intro {
+  background-color: $ui-01;
+  box-shadow: 1rem 0 0 0 $ui-01;
+}
+
+.title {
+  display: grid;
+  background-color: $ui-01;
+  grid-template-rows: 1fr max-content;
+  height: 100%;
+  padding: $spacing-05 $spacing-05 $spacing-05 0;
+}
+
+.content {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.content > :nth-child(1n+6) {
+  color: $text-04;
+}
+
+$colors: (
+  "red": ($red-10, $red-20, $red-30, $red-40, $red-50, $red-60, $red-70, $red-80, $red-90, $red-100),
+  "magenta": ($magenta-10, $magenta-20, $magenta-30, $magenta-40, $magenta-50, $magenta-60, $magenta-70, $magenta-80, $magenta-90, $magenta-100),
+  "purple": ($purple-10, $purple-20, $purple-30, $purple-40, $purple-50, $purple-60, $purple-70, $purple-80, $purple-90, $purple-100),
+  "blue": ($blue-10, $blue-20, $blue-30, $blue-40, $blue-50, $blue-60, $blue-70, $blue-80, $blue-90, $blue-100),
+  "cyan": ($cyan-10, $cyan-20, $cyan-30, $cyan-40, $cyan-50, $cyan-60, $cyan-70, $cyan-80, $cyan-90, $cyan-100),
+  "teal": ($teal-10, $teal-20, $teal-30, $teal-40, $teal-50, $teal-60, $teal-70, $teal-80, $teal-90, $teal-100),
+  "green": ($green-10, $green-20, $green-30, $green-40, $green-50, $green-60, $green-70, $green-80, $green-90, $green-100),
+);
+
+@each $color, $shades in $colors {
+  .#{$color} .pictogram {
+    color: nth($shades, 6);
+  }
+
+  @for $i from 1 through 10 {
+    .#{$color} .content > :nth-child(#{$i}) {
+      background-color: nth($shades, $i);
+    }
+  }
+}
