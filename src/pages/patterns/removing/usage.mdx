@@ -81,6 +81,91 @@ combination of one modal and a notification).
 </Column>
 </Row>
 
+
+
+
+### Deletion with connected items
+When deleting a resource that has connected items, users will enter the name of the resource in the text field and use the checkbox to confirm the deletion the all it's connected items. 
+
+
+What should be in the modal:
+- The name of the resource and items
+- The consequences of the deletion
+- The phrase, "this action cannot be undone"
+- An editable text field for the name of the resource to be entered
+- A checkbox to confirm the deletion of connected resources
+
+<Row>
+<Column colLg={8}>
+
+![Deletion with connected items](images/deletion-with-connected-items.png)
+
+</Column>
+</Row>
+
+
+### Manual deletion of connected items
+When there is a resource that has connected items that need to be deleted first, a passive modal should appear stating that the user needs to first manage the connected items before being able to delete this main resource. Once the items are deleted, the user can then delete this main resource via a standard [high impact modal](http://localhost:8000/components/catalog-tile/usage/#high-impact-deletion). 
+
+
+What should be in the modal:
+- State that the main resource cannot be deleted
+- The name of the items that are connected to the main resource that are hindering it's deletion
+
+<Row>
+<Column colLg={8}>
+
+![Manual deletion of connected items](images/manually-delete-connected-items.png)
+
+</Column>
+</Row>
+
+### Batch deletion 
+Friction can also be added to batch deletion. A list of the items selected will be provided to the user. Once they have reviewed that list - they will select the check box and the delete button will be activated.
+
+
+If the user selects more than 10 items, the modal no longer needs to display the item names. It should just provide the number of items that cannot be deleted from the selection.
+
+
+Note - if the user selects an item that cannot be deleted, there should be a short description notifying them inside the modal.
+
+
+What should be in the modal:
+- The name of the items selected
+- The consequences of the deletion
+- The phrase, "this action cannot be undone"
+- A checkbox to confirm the deletion of the selected resources
+- A note of items that cannot be deleted in batch selection (optional)
+
+<Row>
+<Column colLg={8}>
+
+![Batch deletion](images/batch-deletion-(1).png)
+
+</Column>
+</Row>
+
+<Row>
+<Column colLg={8}>
+
+![Batch deletion](images/batch-deletion-(2).png)
+
+</Column>
+</Row>
+
+## Do's & Don'ts
+
+** Do's **
+- Always include the name of the resource, consequences of the deletion, the phrase, "this action cannot be undone", and an editable text field for the name of the resource to be entered.
+- Do use a checkbox when referencing the deletion of multiple related items.
+- Do list the items that cannot be deleted in batch selection.
+
+** Don'ts **
+- Do not replace mandatory modal content with a warning notification.
+- Do not use a checkbox to replace the editable text field for the name of the resource to be entered.
+- Do not alter the way the checkbox is shown in the modal.
+
+
 ## Medium-impact deletion
 
 A medium-impact deletion is one that cannot be reversed, but would not be
