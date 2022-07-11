@@ -1,8 +1,13 @@
+#glossaryBody{
+  td {
+    vertical-align: text-top;
+  }
+}
+
 .glossary-row {
   td {
     padding-top: $spacing-05;
     padding-bottom: $spacing-05;
-    vertical-align: text-top;
   }
 }
 

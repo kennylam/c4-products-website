@@ -13,7 +13,7 @@ import {
   Tag
 } from "carbon-components-react";
 import { useJSONQuery } from "../SVGLibraries/shared/utils/hooks/content/glossary/useJSONQuery";
-import { glossaryRow, tagContainer } from "./Glossary.module.scss";
+import { glossaryRow, tagContainer, glossaryBody } from "./Glossary.module.scss";
 
 const Glossary = () => {
   const { allGlossaryJson } = useJSONQuery();
@@ -141,7 +141,7 @@ const Glossary = () => {
                 ))}
               </TableRow>
             </TableHead>
-            <TableBody>
+            <TableBody id={glossaryBody}>
               {rows.map((row, rowIndex) => (
                 <TableRow key={rowIndex} {...getRowProps({ row })} className={glossaryRow}>
                   {row.cells.map((cell, cellIndex) =>
