@@ -7,12 +7,6 @@ module.exports = {
     description: "Product design library for IBM Cloud, Data and Security",
     keywords: "cloud,data,AI,design,pattern,asset,library,pal,security"
   },
-  flags: {
-    FAST_DEV: true,
-    PARALLEL_SOURCING: true,
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-    PRESERVE_WEBPACK_CACHE: true
-  },
   plugins: [
     {
       resolve: "gatsby-remark-images",

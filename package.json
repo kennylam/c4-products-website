@@ -1,15 +1,16 @@
 {
-  "name": "gatsby-starter-carbon-theme",
+  "name": "cdai-design-pal",
   "version": "1.0.0",
   "license": "Apache-2.0",
+  "engines": {
+    "node": "=14",
+    "npm": "=6"
+  },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby build --prefix-paths",
-    "copy": "npx microsite-common copy",
-    "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=development run-s copy 'gatsby develop'",
-    "dev:clean": "run-s 'gatsby clean' dev",
-    "gatsby": "gatsby",
-    "reinstall": "echo Clearing npm cache; npm cache clean --force; echo Removing npm package-lock.json; rimraf package-lock.json; echo Removing package folders; rimraf node_modules; npm install",
-    "serve": "cross-env NODE_OPTIONS=--max_old_space_size=4096 npm run gatsby serve"
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby build --log-pages --prefix-paths --verbose",
+    "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=development gatsby develop",
+    "dev:clean": "gatsby clean && npm run dev",
+    "serve": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby serve"
   },
   "dependencies": {
     "@mdx-js/runtime": "^1.6.5",
@@ -39,6 +40,6 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "npm-run-all": "^4.1.5"
+    "gh-pages": "^2.2.0"
   }
 }
