@@ -98,14 +98,14 @@ What should be in the modal:
 <Row>
 <Column colLg={8}>
 
-![Deletion with connected items](images/deletion-with-connected-items.png)
+![Deletion with connected items](images/Connectdelete.png)
 
 </Column>
 </Row>
 
 
 ### Manual deletion of connected items
-When there is a resource that has connected items that need to be deleted first, a passive modal should appear stating that the user needs to first manage the connected items before being able to delete this main resource. Once the items are deleted, the user can then delete this main resource via a standard [high impact modal](http://localhost:8000/components/catalog-tile/usage/#high-impact-deletion). 
+When there is a resource that has connected items that need to be deleted first, a passive modal should appear stating that the user needs to first manage the connected items before being able to delete this main resource. Once the items are deleted, the user can then delete this main resource via a standard [high impact modal](#high-impact-deletion). 
 
 
 What should be in the modal:
@@ -115,7 +115,7 @@ What should be in the modal:
 <Row>
 <Column colLg={8}>
 
-![Manual deletion of connected items](images/manually-delete-connected-items.png)
+![Manual deletion of connected items](images/ManualDel.png)
 
 </Column>
 </Row>
@@ -140,7 +140,7 @@ What should be in the modal:
 <Row>
 <Column colLg={8}>
 
-![Batch deletion](images/batch-deletion-(1).png)
+![Batch deletion](images/Batch1.png)
 
 </Column>
 </Row>
@@ -148,22 +148,42 @@ What should be in the modal:
 <Row>
 <Column colLg={8}>
 
-![Batch deletion](images/batch-deletion-(2).png)
+![Batch deletion](images/Batch2.png)
 
 </Column>
 </Row>
 
 ## Do's & Don'ts
 
-** Do's **
+**Do's**
 - Always include the name of the resource, consequences of the deletion, the phrase, "this action cannot be undone", and an editable text field for the name of the resource to be entered.
 - Do use a checkbox when referencing the deletion of multiple related items.
 - Do list the items that cannot be deleted in batch selection.
 
-** Don'ts **
+**Don'ts**
 - Do not replace mandatory modal content with a warning notification.
 - Do not use a checkbox to replace the editable text field for the name of the resource to be entered.
 - Do not alter the way the checkbox is shown in the modal.
+
+<Row>
+<Column colMd={2} colLg={4}>
+
+![Dont example](images/No-1.png)
+
+<Caption>Don't examples</Caption>
+
+</Column>
+<Column colMd={2} colLg={4}>
+
+![Dont example](images/No-2.png)
+
+</Column>
+<Column colMd={2} colLg={4}>
+
+![Dont example](images/No-3.png)
+
+</Column>
+</Row>
 
 
 ## Medium-impact deletion
