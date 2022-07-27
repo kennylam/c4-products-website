@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>read-onlyCanvas</title>
-    <g id="read-onlyCanvas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Actions-/-Navigation-/-zoom--in-/-16" transform="translate(86.000000, 86.000000)" fill="#525252">
-            <path d="M120,114.4 L13.6,8 L8,13.6 L48.4,54 L16,86.4 L16,112 L41.6,112 L74,79.6 L114.4,120 L120,114.4 Z M38.4,104 L24,104 L24,89.6 L54,59.6 L68.4,74 L38.4,104 Z M117.6,24.8 L117.6,24.8 L103.2,10.4 C100,7.2 95.2,7.2 92,10.4 L92,10.4 L92,10.4 L60,42.4 L65.6,48 L80,33.6 L94.4,48 L80,62.4 L85.6,68 L117.6,36 C120.8,32.8 120.8,28 117.6,24.8 L117.6,24.8 Z M100,42.4 L85.6,28 L97.6,16 L112,30.4 L100,42.4 Z" id="Fill"></path>
-        </g>
-    </g>
-</svg>

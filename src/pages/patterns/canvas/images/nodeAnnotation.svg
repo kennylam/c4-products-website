@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>nodeAnnotation</title>
-    <g id="nodeAnnotation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Actions-/-Navigation-/-zoom--in-/-16" transform="translate(86.000000, 86.000000)" fill="#525252">
-            <path d="M70.96,120 L64,116 L80,88 L104,88 C108.418278,88 112,84.418278 112,80 L112,32 C112,27.581722 108.418278,24 104,24 L24,24 C19.581722,24 16,27.581722 16,32 L16,80 C16,84.418278 19.581722,88 24,88 L60,88 L60,96 L24,96 C15.163444,96 8,88.836556 8,80 L8,32 C8,23.163444 15.163444,16 24,16 L104,16 C112.836556,16 120,23.163444 120,32 L120,80 C120,88.836556 112.836556,96 104,96 L84.64,96 L70.96,120 Z M32,40 L96,40 L96,48 L32,48 L32,40 Z M32,64 L72,64 L72,72 L32,72 L32,64 Z" id="Fill"></path>
-        </g>
-    </g>
-</svg>

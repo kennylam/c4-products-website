@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>keyboardCommands</title>
-    <g id="keyboardCommands" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Actions-/-Navigation-/-zoom--in-/-16" transform="translate(86.000000, 86.000000)" fill="#525252">
-            <path d="M112,104 L16,104 C11.581722,104 8,100.418278 8,96 L8,40 C8,35.581722 11.581722,32 16,32 L112,32 C116.418278,32 120,35.581722 120,40 L120,96 C120,100.418278 116.418278,104 112,104 Z M16,40 L16,96 L112,96 L112,40 L16,40 Z M40,80 L84,80 L84,88 L40,88 L40,80 Z M24,48 L32,48 L32,56 L24,56 L24,48 Z M40,48 L48,48 L48,56 L40,56 L40,48 Z M56,48 L64,48 L64,56 L56,56 L56,48 Z M72,48 L80,48 L80,56 L72,56 L72,48 Z M24,80 L32,80 L32,88 L24,88 L24,80 Z M24,64 L32,64 L32,72 L24,72 L24,64 Z M40,64 L48,64 L48,72 L40,72 L40,64 Z M56,64 L64,64 L64,72 L56,72 L56,64 Z M88,48 L104,48 L104,56 L88,56 L88,48 Z M88,64 L104,64 L104,72 L88,72 L88,64 Z M72,64 L80,64 L80,72 L72,72 L72,64 Z M92,80 L104,80 L104,88 L92,88 L92,80 Z" id="Fill"></path>
-        </g>
-    </g>
-</svg>

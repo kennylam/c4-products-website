@@ -83,3 +83,5 @@ src/gatsby-theme-carbon/util/NavItems.js
 
 src/gatsby-theme-carbon/components/Header.js
 src/gatsby-theme-carbon/components/Switcher.js
+
+.npmrc
