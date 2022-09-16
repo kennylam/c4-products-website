@@ -1,6 +1,6 @@
 import React from "react";
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
-import SEO from "../../components/SEO";
+import Seo from "../../components/Seo";
 import pageContext from "../pageContext";
 import {
   bannerText,
@@ -45,7 +45,7 @@ function ShadowedHomepage(props) {
   Object.assign(pageContext, props.pageContext);
   return (
     <>
-      <SEO pageContext={props.pageContext} />
+      <Seo pageContext={props.pageContext} />
       <HomepageTemplate {...props} {...customProps} />
     </>
   );

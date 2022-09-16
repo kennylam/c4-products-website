@@ -6,7 +6,6 @@ import DownloadAssetCard from "../DownloadAssetCard";
 
 import {
   svgGrid,
-  pictogramSearch,
   resourceCard,
 } from "./Pictogram.module.scss";
 import { searchVariants, pictogramVariants } from "../shared/variants";
@@ -34,7 +33,6 @@ const Pictogram = ({
     <>
       <motion.div variants={searchVariants} initial="hidden" animate="visible">
         <Search
-          className={pictogramSearch}
           onChange={handleChange}
           labelText="Search SVG Library"
           placeHolderText='Search for descriptors like "warehouse" or "bar chart"'

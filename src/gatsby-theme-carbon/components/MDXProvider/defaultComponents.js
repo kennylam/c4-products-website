@@ -11,7 +11,7 @@ import MdxIcon from "../../../components/MdxIcon";
 import StepCard from "../../../components/StepCard";
 import SubmittedToCarbon from "../../../components/SubmittedToCarbon";
 
-export default {
+const components = {
   ...defaultComponents,
   BannerQuote,
   EmptyStateAllAssetsCard,
@@ -22,5 +22,7 @@ export default {
   Glossary,
   MdxIcon,
   StepCard,
-  SubmittedToCarbon,
+  SubmittedToCarbon
 };
+
+export default components;

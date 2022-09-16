@@ -257,6 +257,6 @@
 
 @for $i from 1 through 25 {
     .components--#{$i} {
-        stroke-dashoffset:  -1 * (265 - (100 * ($i / 25)) * 2.65) + 1;
+        stroke-dashoffset:  -1 * (265 - (100 * (calc($i / 25))) * 2.65) + 1;
     }
 }

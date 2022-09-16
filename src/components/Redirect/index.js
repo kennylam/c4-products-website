@@ -6,4 +6,4 @@ export default path => function Redirect() {
         navigate(path);
     });
     return <div>Redirecting</div>;
-}
+} 

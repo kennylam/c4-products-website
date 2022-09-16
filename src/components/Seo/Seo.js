@@ -6,7 +6,7 @@ const formatTitle = (title) => {
   return title + ' - %s';
 }
 
-const SEO = (props) => {
+const Seo = (props) => {
   const { site } = useStaticQuery(graphql`
     query HeadingQuery {
       site {
@@ -30,4 +30,4 @@ const SEO = (props) => {
   );
 }
 
-export default SEO;
+export default Seo;

@@ -33,7 +33,7 @@ const PatternAdoptionTable = (title) => {
         },
     ];
 
-    const rows = [];
+    const rows = React.useMemo(() => [], []);
     Object.keys(businessUnits).map(function(unit) {
         Object.keys(businessUnits[unit]["products"]).map(function(product) {
             rows.push(
