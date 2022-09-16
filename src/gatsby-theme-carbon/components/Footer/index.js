@@ -12,7 +12,13 @@ const versions = {
 
 const Content = ({ buildTime }) => (
   <>
-    <p>Have questions? Email us for site feedbacks or open an issue in <a href="https://github.ibm.com/CDAI-design/pal/issues">GitHub</a></p>
+    <p>
+      Have questions? Talk to us
+      <br />
+      on <a href="https://ibm-casdesign.slack.com/archives/CQGR0HC05">#ibmproducts-pal</a>
+      <br />
+      or open an issue in <a href="https://github.ibm.com/CDAI-design/pal/issues">GitHub</a>
+    </p>
     <p><a href={`https://pages.github.ibm.com/${cdaiConfig.repo}/editor/?page=src/pages${pageContext.relativePagePath}`}>Edit this page</a></p>
     <p>
       Vanilla Components version {versions['vanilla-components']}
