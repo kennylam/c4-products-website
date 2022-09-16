@@ -22,11 +22,13 @@ Data spreadsheets are used to organize and display large amounts of structured d
 
 # Overview
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet](images/usage/frame1.png)
 
 </Column>
+</Row>
 
 Data spreadsheets are best used for viewing data that span many columns and potentially hundreds or even thousands of rows. Users are able to easily scroll right, left, up, and down to view content. These spreadsheets typically are derived from tables in databases and data assets such as CSVs. Their main use is for editing and understanding data before data analysis.
 
@@ -56,11 +58,13 @@ Data spreadsheets are best used for viewing data that span many columns and pote
 
 ## Anatomy
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet with anatomy](images/usage/frame2.png)
 
 </Column>
+</Row>
 
 1. **Cells:** A cell holds data and is formed by the intersection of a column and row, forming a rectangle along a grid pf other cells.
 
@@ -82,11 +86,13 @@ The data spreadsheet is available in five different row sizes:
 
 Data spreadsheets typically use the same column and row headers as the hight of the cells. However, the headers' heights may also act independently of the rows' heights and cells' heights. 
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet with sizing](images/usage/frame3.png)
 
 </Column>
+</Row>
 
 ## General alignment
 
@@ -99,21 +105,25 @@ A general rule of thumb is that 16px padding exists on the left and right of eac
 
 Attempt to keep the same alignment throughout the entire column. This makes it easier to scan vertically. Content is by default tyop aligned, but can be altered for specific cases.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - column alignment](images/usage/frame4.png)
 
 </Column>
+</Row>
 
 ## Rows
 
 Rows do not have to maintain the same alignment through each cell (via left or right), but if there are no specific cases of altering a single cell, content is top aligned in the cell.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - row alignment](images/usage/frame5.png)
 
 </Column>
+</Row>
 
 # Content
 
@@ -131,11 +141,13 @@ Cells may contain a variety of content including:
 
 Do not attempt to include too much in a cell. Too much variety of content (i.e string + icon + symbol + button + accordian + emoji + divider) will cause discomfort to viewers when scanning down columns.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - cells](images/usage/frame6.png)
 
 </Column>
+</Row>
 
 Attempt to keep action-oriented icons opposite alignment of text to increase visibility and breathing room, increasing distinction of what it is.
 
@@ -143,11 +155,13 @@ Attempt to keep action-oriented icons opposite alignment of text to increase vis
 
 Headers main content include text, but may also include buttons and icons.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - headers](images/usage/frame7.png)
 
 </Column>
+</Row>
 
 # Behaviors
 
@@ -157,11 +171,13 @@ Headers main content include text, but may also include buttons and icons.
 
 When hovering over a cell, the corresponding column and row header will darken to help make it clear what is active. There is no color or state change on cells with a cursor hovering.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - hover state](images/usage/frame8.png)
 
 </Column>
+</Row>
 
 ### Selection & focus
 
@@ -171,67 +187,85 @@ Selection uses 2 types of focus borders thickness: a 1px and 2px.
 
 When selecting a single cell, the 2px focus border appears and the corresponding column and row headers become selected.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - selecting a single cell](images/usage/frame9.png)
 
 </Column>
+</Row>
 
 When multiple cells are selected, the first one to be clicked-down by the cursor will use a 2px focus border but the remaining will retain a 1px focus border. This helps create heirarchy of which cell is being edited and which is only selected. The corresponding column and row headers will become selected.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - selecting multiple cells](images/usage/frame10.png)
 
 </Column>
+</Row>
 
 When selecting a column or row, the first cell in the sequence becomes the active cell while the remaining are only selected. The header changes to a active state.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - selecting a column](images/usage/frame11.png)
 
 </Column>
+</Row>
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - selecting a row](images/usage/frame14.png)
 
 </Column>
+</Row>
 
 When selecting multiple columns or rows, the last column or row's first cell in the sequence becomes the active cell. The headers change to a active state.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - selecting multiple columns - adjacent](images/usage/frame12.png)
 
 </Column>
+</Row>
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - selecting multiple columns](images/usage/frame13.png)
 
 </Column>
+</Row>
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - selecting multiple rows - adjacent](images/usage/frame15.png)
 
 </Column>
+</Row>
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - selecting multiple rows](images/usage/frame16.png)
 
 </Column>
+</Row>
 
 When selecting all cells (by clicking the top-left column box), the very first available cell in the spreadsheet becomes active. The headers change to a selected state.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - selecting all cells](images/usage/frame17.png)
 
 </Column>
+</Row>
 
 ### Editing
 
@@ -243,11 +277,13 @@ If editing is enabled, only the focused cell(s) may be edited (unless specified 
 
 If a user edits a cell that has a lot of content, refer to the in-line editing for how to handle overflowing content. The content in the popover editable input should face the same direction as the content when enabled.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - editing the data contents](images/usage/frame18.png)
 
 </Column>
+</Row>
 
 ### Deleting
 
@@ -274,29 +310,35 @@ To move multiple columns or rows, select them via holding shift and clicking, do
 
 You may not move columns and rows as the same time. 
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - moving selected columns](images/usage/frame19.png)
 
 </Column>
+</Row>
 
 ## Scrolling
 
 Vertical and horizontal scroll are always available in spreadsheet unless otherwise specified. The content dictates length of scrollbar and scroll-area. When there is no data, limit the number of columns and rows that users can see by scrolling.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - vertical and horizontal scroll](images/usage/frame22.png)
 
 </Column>
+</Row>
 
 When data is not loaded, the default would be to use a lazy load (using skeleton loading rows) to indicate to users the service is fetching data.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - lazy load on scroll](images/usage/frame23.png)
 
 </Column>
+</Row>
 
 While a user scrolls in a spreadsheet, the column headers will stay put to the top of the spreadsheet and the row headers will stay put to the left of the spreadsheet. Optionally, some headers and cells can be pinned to not scroll.
 
@@ -313,11 +355,13 @@ This acts as what is expected, an image or call-to-action in the cells content a
 - Data with special loading visualizations
 - Selecting data
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - empty state](images/usage/frame20.png)
 
 </Column>
+</Row>
 
 ### Visible cells
 
@@ -327,11 +371,13 @@ This is reserved for tools that allow users to start from empty spreadsheets. Sc
 - Loading a data set that is expected to show data
 - Column title text is optional depending on the tool's requirements.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - empty spreadsheets](images/usage/frame21.png)
 
 </Column>
+</Row>
 
 
 # Modifers
@@ -342,11 +388,13 @@ Spreadsheets use the same UI tokens for Grey 10 and Grey 100 themes.
 
 For the color, we use the `Blue hue` in Carbon for Light theme and `Cyan hue` for Dark theme. You can see more of this is the styles section.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - theming](images/usage/frame24.png)
 
 </Column>
+</Row>
 
 ## Overflow menu (optional)
 
@@ -358,11 +406,13 @@ When multiple columns or rows are selected, the overflow menu selected on any of
 
 See more in the menus pattern.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - overflow menu by hovering](images/usage/frame25.png)
 
 </Column>
+</Row>
 
 ## Context menu (optional)
 
@@ -370,11 +420,13 @@ Users can trigger an optional context menu by right-clicking on a cell or header
 
 Use the top section of a context menu for common actions, the middle section for context specific actions, and the bottom section for destructive actions.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - context menu by right-clicking](images/usage/frame26.png)
 
 </Column>
+</Row>
 
 ## Context panels (optional)
 
@@ -382,29 +434,35 @@ Double clicking a column header should trigger a context panel. Controls within 
 
 See more guidance in the context panel sub-pattern on what content can appear in the context panel.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet - context panel](images/usage/frame27.png)
 
 </Column>
+</Row>
 
 ## Loading
 
 When a spreadsheet is initializing, use the skeleton "lazy" load on column and row headers only. Do not showcase a loading element in every visible cell, which would be overwhelming to users if the content takes a long time to fetch.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - lazy load on headers only](images/usage/frame28.png)
 
 </Column>
+</Row>
 
 When a user scrolls and there is no pagination, use lazy load to add more data to the memory of the browser. In this case, a user may see the skeleton loader inside the cells to differentiate between empty cells and loading cells. Amount of content loaded per fetching of data is up to the product. Once data is available, quickly fade out the lazy loader and fade in the content from top to bottom.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - skeleton loader on scroll](images/usage/frame23.png)
 
 </Column>
+</Row>
 
 ## Errors
 
@@ -412,11 +470,13 @@ When a user scrolls and there is no pagination, use lazy load to add more data t
 
 If an error prevents data from being displayed for the entire data spreadsheet, use a similar pattern to the empty state.
 
+<Row>
 <Column colMd={8} colLg={8}>
 
 ![Data spreadsheet example - showing error state](images/usage/frame29.png)
 
 </Column>
+</Row>
 
 # Best practices
 
