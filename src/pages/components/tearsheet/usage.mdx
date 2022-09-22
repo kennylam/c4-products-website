@@ -219,6 +219,8 @@ Typically, the standard influencer sizes included are 256px or 320px. See [side 
 
 ### Sizing
 
+There are two tearsheet widths available for use. Tearsheet content, interactions, and user intention should drive the panel width used. Use **narrow tearsheets** for experiences that include simplistic content and may require scrolling or simple tables. Use **wide tearsheets** for complex experiences and elongated flows. For the need to scroll larger tables, to complete operations that require many options, to guide the user and separate content with deeper navigation, wide tearsheets are more appropriate.
+
 <Row>
 <Column colMd={8} colLg={8}>
 
@@ -227,9 +229,9 @@ Typically, the standard influencer sizes included are 256px or 320px. See [side 
 </Column>
 </Row>
 
-There are two tearsheet widths available for use. Tearsheet content, interactions, and user intention should drive the panel width used. Use **narrow tearsheets** for experiences that include simplistic content and may require scrolling or simple tables. Use **wide tearsheets** for complex experiences and elongated flows. For the need to scroll larger tables, to complete operations that require many options, to guide the user and separate content with deeper navigation, wide tearsheets are more appropriate.
-
 ### Placement
+
+Both tearsheet sizes should appear centered in the viewport. They should adjust according to the grid guidance, but will always remain **88px from the top of the viewport**. This is to ensure users may see enough content (i.e the top level navigation and breadcrumbs) to understand they have not yet been removed from the previous context entirely. There is a prop to allow for a different height, but it is discouraged from being used unless there is a future need.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -240,8 +242,6 @@ There are two tearsheet widths available for use. Tearsheet content, interaction
 
 </Column>
 </Row>
-
-Both tearsheet sizes should appear centered in the viewport. They should adjust according to the grid guidance, but will always remain **88px from the top of the viewport**. This is to ensure users may see enough content (i.e the top level navigation and breadcrumbs) to understand they have not yet been removed from the previous context entirely. There is a prop to allow for a different height, but it is discouraged from being used unless there is a future need.
 
 ## Behaviors
 
@@ -271,7 +271,11 @@ A unique element to the tearsheet (for both narrow and wide) is the idea of **st
 </Column>
 </Row>
 
+<Caption fullWidth>
+
 The tearsheet's main layer starts at a fix distance from the top of the screen. But when a stack is initiated, i.e an additional tearsheet layer, the original layer moves backwards in the Z-space, and seemingly up in positioning as well as narrower in width.
+
+</Caption>
 
 ### When to use
 
