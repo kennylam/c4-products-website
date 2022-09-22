@@ -118,7 +118,7 @@ The action toolbar is a set of global secondary action buttons the user can perf
 The body content area displays various informational and editable elements based on the use-case. The body content is the only scrollable area within the side panel.
 
 #### 4. Primary actions (optional)
-This area is for significant actions the user needs to take on within the sidebar; they are useful in creating, editing, and confirmation use-cases. The primary actions will always remain visible to the user.
+This area is for significant actions the user needs to take on within the side panel; they are useful in creating, editing, and confirmation use-cases. The primary actions will always remain visible to the user.
 
 </Column>
 
@@ -335,6 +335,88 @@ Recommendation: Keep content levels within panels as concise as possible.
 </GifPlayer>
 </Column>
 </Row>
+
+### Resize
+Resizable side panels help users organize their workspace by providing a consistent way for users to expand and collapse side panels from their default width. The resizable border can only be enabled on slide-over panels.
+
+ <Row>
+ <Column colMd={8} colLg={8}>
+
+![Side panel resize example](./images/image_panel-resize-full.gif)
+
+</Column>
+</Row>
+
+#### Recommended sizing:
+Users can resize the side panel by dragging the resizable border across a set of defined maximum and minimum widths. 
+When a user resizes the panel, the panel's size should persist if the user closes the application and enters it once more. 
+
+
+The panel default is set by the system, and should be no less than the width of an x-small side-panel. The maximum size can go up to 75% of the page layout. Ideally use only one resizable panel per screen. If multiple panels need to be expanded, make sure 25% of the content behind the panel is still in view. 
+
+
+<Row>
+  <Column colMd={4} colLg={4}>
+
+![Side panel resize default state](./images/image_assistance-panel-default.png)
+
+
+**Default**<br />
+By default, the resizable panel does not have a visible resizable border which allows the user to focus more on other more important components on the interface.
+
+  </Column>
+
+  <Column colMd={4} colLg={4}>
+
+![Side panel resize hover state](./images/image_panel-hover.gif)
+
+
+**Hover**<br />
+  When a user hovers over the nearby area, a draggable border appears.
+
+  </Column>
+</Row>
+
+
+<Row>
+  <Column colMd={4} colLg={4}>
+
+![Side panel resize selected state](./images/image_panel-resize.gif)
+
+
+**Drag**<br />
+Dragging on the border of the panel or the icon resizes the panel. The size of the panel stays once dragging is completed.
+
+  </Column>
+
+  <Column colMd={4} colLg={4}>
+
+![Side panel resize double click state](./images/image_panel-doubleclick.gif)
+
+
+**Resize to default**<br />
+Double clicking the resizable border resizes the side panel to its default size.
+
+  </Column>
+</Row>
+
+<br />
+
+
+**Resizable border anatomy**<br />
+
+![Resizeable border anatomy](./images/image_ResizePanelGraphic.jpg)
+
+#### Accessibility
+The resizable border should be the first focused item within the panel whenever possible. This border should be visible on focus. When it is in focus, the user can use the arrow keys to adjust the size of the panel. 
+
+
+For vertical panels, the user can use left and right arrow keys to resize the panel. For horizontal panels, the user can use the up and down arrow keys to resize the panel.
+
+
+*Home (Optional):* Reduce the resizable panel to its minimum size.
+*End (Optional):* Increase the resizable panel to the maximum size. 
+*Escape (Optional):* Close the side panel. 
 
 ## Modifiers
 
