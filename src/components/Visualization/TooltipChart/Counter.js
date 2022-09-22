@@ -15,7 +15,7 @@ const Counter = ({from, end}) => {
             }
         })
         return () => controls.stop();
-    }, [num, end])
+    }, [ ])
     return(
         <span>{num}</span>
     )
