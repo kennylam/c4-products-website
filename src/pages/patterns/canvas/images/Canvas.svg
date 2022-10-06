@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>B01</title>
+    <g id="B01" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(50.000000, 70.000000)">
+            <rect id="Rectangle" fill="#F4F4F4" x="0" y="32" width="200" height="128"></rect>
+            <g id="Group-3">
+                <rect id="Rectangle" stroke="#0F62FE" stroke-width="2" x="1" y="33" width="198" height="126"></rect>
+                <g id="Group-2" transform="translate(40.000000, 88.000000)">
+                    <g id="Group" fill="#8D8D8D">
+                        <rect id="Rectangle" x="0" y="0" width="40" height="16"></rect>
+                        <rect id="Rectangle-Copy" x="80" y="0" width="40" height="16"></rect>
+                    </g>
+                    <path id="Line" d="M64.3093429,3.31908161 L64.7451306,3.56421223 L72.7451306,8.06421223 L73.5198644,8.5 L72.7451306,8.93578777 L64.7451306,13.4357878 L64.3093429,13.6809184 L63.8190816,12.8093429 L64.2548694,12.5642122 L70.591,9 L47.5,9 L47.5,8 L70.591,8 L64.2548694,4.43578777 L63.8190816,4.19065715 L64.3093429,3.31908161 Z" fill="#979797" fill-rule="nonzero"></path>
+                </g>
+                <rect id="Rectangle" fill="#161616" x="0" y="0" width="200" height="16"></rect>
+                <rect id="Rectangle-Copy-2" fill="#E0E0E0" x="0" y="16" width="200" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
