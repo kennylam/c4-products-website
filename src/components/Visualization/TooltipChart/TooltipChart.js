@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { businessUnits } from './animation-data';
 import Lottie from 'react-lottie';
-import combinedSVG from './combined-nocount.json'
+import combinedSVG from './homepage_data_viz_17_nocount_fontshapes.json'
 import './TooltipChart.scss';
 import mobile from './static_mobile.svg';
 import desktop from './static_homepage_desktop.svg';
