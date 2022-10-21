@@ -45,3 +45,23 @@ main.container--homepage {
 [class^="ExpressiveListContainer-module--text"] .bx--row[class*="CardGroup-module--cardGroup"] > div {
   max-width: 50%;
 }
+
+// FIX FOR ANCHOR LINK BUG //
+// See https://github.com/carbon-design-system/gatsby-theme-carbon/issues/1070
+//
+// To ensure that scrolling to anchor headers is not hidden behind
+// the site header banner.
+html {
+  --header-row-spacing: 6em;
+  scroll-padding-top: var(--header-row-spacing);
+}
+
+// TEMPORARY FIX FOR A BUG WITH LINKS WITHIN BULLET POINTS
+//
+// Without this, lots of margin gets added above and below a link 
+// within a Markdown bullet point. 
+.noLinkPadding {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
