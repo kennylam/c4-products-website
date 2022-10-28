@@ -20,7 +20,7 @@ Data spreadsheets are used to organize and display large amounts of structured d
     <AnchorLink>Feedback</AnchorLink>
 </AnchorLinks>
 
-# Overview
+## Overview
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -32,7 +32,7 @@ Data spreadsheets are used to organize and display large amounts of structured d
 
 Data spreadsheets are best used for viewing data that span many columns and potentially hundreds or even thousands of rows. Users are able to easily scroll right, left, up, and down to view content. These spreadsheets typically are derived from tables in databases and data assets such as CSVs. Their main use is for editing and understanding data before data analysis.
 
-## When to use
+### When to use
 
 <ul>
     <li>Use to display content with little-to-no intrinsic relationships.</li>
@@ -44,7 +44,7 @@ Data spreadsheets are best used for viewing data that span many columns and pote
     <li>Use to display content that can have absence of value—`empty`, beyond `null`, `NA`, `––`. etc.</li>
 </ul>
 
-## When not to use
+### When not to use
 
 <ul>
     <li>Do not use to display or manipulate statuses on running activities. Use a data table instead.</li>
@@ -54,9 +54,9 @@ Data spreadsheets are best used for viewing data that span many columns and pote
     <li>Do not use if row actions are required (i.e overlfow menu to delete or pause items).</li>
 </ul>
 
-# Formatting
+## Formatting
 
-## Anatomy
+### Anatomy
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -74,7 +74,7 @@ Data spreadsheets are best used for viewing data that span many columns and pote
 
 4. **Rows:** Horizontal stacks of cells and a header.
 
-## Sizing
+### Sizing
 
 The data spreadsheet is available in five different row sizes:
 
@@ -94,14 +94,14 @@ Data spreadsheets typically use the same column and row headers as the hight of 
 </Column>
 </Row>
 
-## General alignment
+### General alignment
 
 Alignment of content can be viewed below. It bases the spacing off of Carbon's default scales and the 2px grid and typical 16px insets. More general alignment guidelines can be viewed at the styles page of this component and alignment of content in the cells and headers can be viewed in our data content pattern.
 
 A general rule of thumb is that 16px padding exists on the left and right of each cell.
 
 
-## Columns
+### Columns
 
 Attempt to keep the same alignment throughout the entire column. This makes it easier to scan vertically. Content is by default tyop aligned, but can be altered for specific cases.
 
@@ -113,7 +113,7 @@ Attempt to keep the same alignment throughout the entire column. This makes it e
 </Column>
 </Row>
 
-## Rows
+### Rows
 
 Rows do not have to maintain the same alignment through each cell (via left or right), but if there are no specific cases of altering a single cell, content is top aligned in the cell.
 
@@ -125,9 +125,9 @@ Rows do not have to maintain the same alignment through each cell (via left or r
 </Column>
 </Row>
 
-# Content
+## Content
 
-## Cells
+### Cells
 
 Cells may contain a variety of content including:
 
@@ -151,7 +151,7 @@ Do not attempt to include too much in a cell. Too much variety of content (i.e s
 
 Attempt to keep action-oriented icons opposite alignment of text to increase visibility and breathing room, increasing distinction of what it is.
 
-## Headers
+### Headers
 
 Headers main content include text, but may also include buttons and icons.
 
@@ -163,11 +163,11 @@ Headers main content include text, but may also include buttons and icons.
 </Column>
 </Row>
 
-# Behaviors
+## Behaviors
 
-## Actions
+### Actions
 
-### Hover
+#### Hover
 
 When hovering over a cell, the corresponding column and row header will darken to help make it clear what is active. There is no color or state change on cells with a cursor hovering.
 
@@ -179,7 +179,7 @@ When hovering over a cell, the corresponding column and row header will darken t
 </Column>
 </Row>
 
-### Selection & focus
+#### Selection & focus
 
 User can select single or multiple cells, single or multiple columns, single or multiple rows, or a combination of any of the three. Some tools may dictate how selection behaves. For example, tools that cannot currently edit individual cells restrict selection to whole columns only. For read-only usecases, selection can be used to copy content or reveal insights to selections through context panels.
 
@@ -267,7 +267,7 @@ When selecting all cells (by clicking the top-left column box), the very first a
 </Column>
 </Row>
 
-### Editing
+#### Editing
 
 When using an editable spreadsheet, if the tool allows, there may be multiple behaviors for how to edit the data contents (per the tool's abilities). 
 
@@ -285,7 +285,7 @@ If a user edits a cell that has a lot of content, refer to the in-line editing f
 </Column>
 </Row>
 
-### Deleting
+#### Deleting
 
 Content in a column or row, or columns or rows themselves can be removed from the spreadsheet using multiple methods. Selecting a cell or group of cells can be deleted (emptied) by clicking the "delete" keyboard key or using a context menu item to delete contents.
 
@@ -300,7 +300,7 @@ Alternately, an optional warning modal may be presented if the action of deletin
 You may be able to delete columns and rows at the same time.
 
 
-### Moving content
+#### Moving content
 
 A user can select and move contents from cells, columns, or rows depending if the tool can allow for such behavior.
 
@@ -318,7 +318,7 @@ You may not move columns and rows as the same time.
 </Column>
 </Row>
 
-## Scrolling
+### Scrolling
 
 Vertical and horizontal scroll are always available in spreadsheet unless otherwise specified. The content dictates length of scrollbar and scroll-area. When there is no data, limit the number of columns and rows that users can see by scrolling.
 
@@ -342,11 +342,11 @@ When data is not loaded, the default would be to use a lazy load (using skeleton
 
 While a user scrolls in a spreadsheet, the column headers will stay put to the top of the spreadsheet and the row headers will stay put to the left of the spreadsheet. Optionally, some headers and cells can be pinned to not scroll.
 
-## Empty
+### Empty
 
 Empty state for spreadsheets can fall under two contexts: traditional empty state or visible cells.
 
-### Traditional empty state
+#### Traditional empty state
 
 This acts as what is expected, an image or call-to-action in the cells content area. Scenarios that include this traditional empty state are:
 
@@ -363,7 +363,7 @@ This acts as what is expected, an image or call-to-action in the cells content a
 </Column>
 </Row>
 
-### Visible cells
+#### Visible cells
 
 This is reserved for tools that allow users to start from empty spreadsheets. Scenarios that include visible cells are: 
 
@@ -380,9 +380,9 @@ This is reserved for tools that allow users to start from empty spreadsheets. Sc
 </Row>
 
 
-# Modifers
+## Modifers
 
-## Light & Dark theming
+### Light & Dark theming
 
 Spreadsheets use the same UI tokens for Grey 10 and Grey 100 themes.
 
@@ -396,7 +396,7 @@ For the color, we use the `Blue hue` in Carbon for Light theme and `Cyan hue` fo
 </Column>
 </Row>
 
-## Overflow menu (optional)
+### Overflow menu (optional)
 
 Hovering on a column or row can reveal an overflow menu. Most products will not need a row overflow menu.
 
@@ -414,7 +414,7 @@ See more in the menus pattern.
 </Column>
 </Row>
 
-## Context menu (optional)
+### Context menu (optional)
 
 Users can trigger an optional context menu by right-clicking on a cell or header (column or row).
 
@@ -428,7 +428,7 @@ Use the top section of a context menu for common actions, the middle section for
 </Column>
 </Row>
 
-## Context panels (optional)
+### Context panels (optional)
 
 Double clicking a column header should trigger a context panel. Controls within typically include insights or properties to manipulate the selection.
 
@@ -442,7 +442,7 @@ See more guidance in the context panel sub-pattern on what content can appear in
 </Column>
 </Row>
 
-## Loading
+### Loading
 
 When a spreadsheet is initializing, use the skeleton "lazy" load on column and row headers only. Do not showcase a loading element in every visible cell, which would be overwhelming to users if the content takes a long time to fetch.
 
@@ -464,9 +464,9 @@ When a user scrolls and there is no pagination, use lazy load to add more data t
 </Column>
 </Row>
 
-## Errors
+### Errors
 
-### Big errors
+#### Big errors
 
 If an error prevents data from being displayed for the entire data spreadsheet, use a similar pattern to the empty state.
 
@@ -478,7 +478,7 @@ If an error prevents data from being displayed for the entire data spreadsheet, 
 </Column>
 </Row>
 
-# Best practices
+## Best practices
 
 - Use the first row of a data source's table as the column headers. Typically, our tools do not display the letter number of the order.
 - Do not overload cells with varied content, making it hard to scan.
@@ -487,11 +487,14 @@ If an error prevents data from being displayed for the entire data spreadsheet, 
 - Do not use buttons inside cells. Use the entire cell as the clickable area for an action.
 - If a type of action (button, dropdown, etc.) exist in the header, the minimum height of the header should be 32px.
 
-## Other use cases
+### Other use cases
 
 <!-- ### Accessibility -->
 
-### Keyboard shortcuts
+<Title>Keyboard shortcuts</Title>
+
+<Row>
+<Column colLg={8}>
 
 | Keyboard (macOS)          | Keyboard (Windows)          | Description                                                                                 |
 | :--                       | :--                         | :--                                                                                         |
@@ -512,8 +515,10 @@ If an error prevents data from being displayed for the entire data spreadsheet, 
 | `↩` (With area selected)  | `↩` (With area selected)    | Move placement of active cell within selection areas vertically.                            |
 | `tab` (With area selected)| `tab` (With area selected)  | Move placement of active cell within selection areas horizontally.                          |
 
+</Column>
+</Row>
 
-# Related
+## Related
 
 - [Data tables](https://carbondesignsystem.com/components/data-table/usage/)
 - [Data table extensions](https://pages.github.ibm.com/cdai-design/pal/components/data-table/overview)
@@ -523,6 +528,6 @@ If an error prevents data from being displayed for the entire data spreadsheet, 
 - [Text input](https://carbondesignsystem.com/components/text-input/usage/)
 
 
-# Feedback
+## Feedback
 
 - [Component code](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-components-dataspreadsheet-dataspreadsheet-canary--data-spreadsheet)
