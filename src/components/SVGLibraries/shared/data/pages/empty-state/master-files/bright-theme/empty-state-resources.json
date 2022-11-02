@@ -10,7 +10,7 @@
     "alt": "Illustration of a closed box.",
     "sources": {
       "bright": "/static/e0a731b81cee6f75618bd15190762174/empty-state-bright-box.svg",
-      "dark": "/static/150fefde572653b7b2ee9c942977c486/empty-state-dark-box.svg"
+      "dark": "/static/8f9ef08d455e621d30c97eb0b80e095a/empty-state-dark-box.svg"
     },
     "tableData": [
       {
@@ -41,7 +41,7 @@
     "alt": "Illustration of a magnifying glass.",
     "sources": {
       "bright": "/static/8dacc9e2902750650f079504768c0fae/empty-state-bright-magnifying-glass.svg",
-      "dark": "/static/6313d3cd92bfca1005128b96498b8961/empty-state-dark-magnifying-glass.svg"
+      "dark": "/static/233e48c0fc00066f863be20d24629be2/empty-state-dark-magnifying-glass.svg"
     },
     "tableData": [
       {
@@ -68,7 +68,7 @@
     "alt": "Illustration of an exclamation point.",
     "sources": {
       "bright": "/static/782a0afeef9ab4fb9e792f2bca0928f5/empty-state-bright-error.svg",
-      "dark": "/static/5634e91f67fa17890c3bf7e6bae31ab5/empty-state-dark-error.svg"
+      "dark": "/static/b0323fbae5afd0c3f9748b97e02da8b0/empty-state-dark-error.svg"
     },
     "tableData": [
       {
@@ -104,7 +104,7 @@
     "alt": "Illustration of a padlock.",
     "sources": {
       "bright": "/static/e18feb2982fa65a6f40a6f48d7d8b8bb/empty-state-bright-lock.svg",
-      "dark": "/static/850ad7bf6e6e4d6548a6c55c25139c92/empty-state-dark-lock.svg"
+      "dark": "/static/0bbb167b787e067d4376def0119b3598/empty-state-dark-lock.svg"
     },
     "tableData": [
       {
@@ -131,7 +131,7 @@
     "alt": "Illustration of a text notification.",
     "sources": {
       "bright": "/static/27a61da2e1f92e670cf2543b096c912e/empty-state-bright-notification.svg",
-      "dark": "/static/34b2ff67286f760894d1a2c90c86275c/empty-state-dark-notification.svg"
+      "dark": "/static/c4860cdcb568ecf0547080271e663bd6/empty-state-dark-notification.svg"
     },
     "tableData": [
       {
@@ -158,7 +158,7 @@
     "alt": "Illustration of a tag.",
     "sources": {
       "bright": "/static/d6bd6a1b10e0d0c375eb18e4608aed8d/empty-state-bright-tag.svg",
-      "dark": "/static/d3340d7342b59641eea9dc5a53db6fda/empty-state-dark-tag.svg"
+      "dark": "/static/f9fd12d51a497cfdda06e9f1a271f2fa/empty-state-dark-tag.svg"
     },
     "tableData": [
       {
