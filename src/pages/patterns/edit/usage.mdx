@@ -143,29 +143,16 @@ Inline editing requires particular visual and behavioral cues to make the experi
   to let the user know they can edit it. Note: Make sure the item being edited is visually distinct
   and separate from other values that cannot be inline edited to avoid confusion. For mobile and tablet screens,
   show the edit icon always (instead of just on hover).
-- Once the user clicks the content/editable item, the Restore (Cancel) and Check (Save) icon buttons appear.
+- Once the user clicks the content/editable item, the Close (Cancel) and Check (Save) icon buttons appear.
 - Once a change is detected, the Check (Save) icon button becomes enabled.
-- If an item is not editable near other items that are, show the read-only (edit off) icon on hover. A tooltip should briefly state why it's locked.
-- To cancel the edits, the user can click the restore icon or press the Escape key to revert the field back to a static view and the latest value.
+- To cancel the edits, the user can click the cancel button or press the Escape key to revert the field back to a static view and the latest value.
 - If the field has an error, the error icon shows next to the cancel and save buttons.
 
 <Row>
-<Column colMd={8} colLg={8}>
+<Column colMd={8} colLg={6}>
 
 ![Inline edit states](images/edit-inline-1.png)
 
-</Column>
-</Row>
-
-<Row>
-<Column colLg={8}>
-<GifPlayer color='dark'>
-
-![Inline edit behavior](images/edit-inline-2.gif)
-
-![Inline edit behavior](images/edit-inline-2.png)
-
-</GifPlayer>
 </Column>
 </Row>
 
