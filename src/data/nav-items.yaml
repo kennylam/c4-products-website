@@ -99,6 +99,43 @@
           path: /patterns/canvas/node-configuration
     - title: 'Create flows'
       path: /patterns/creation-flows/usage
+    - title: 'Dashboards'
+      path: /patterns/dashboards/usage
+      subpage: 
+        - title: 'Dashboard intent'
+          path: /patterns/dashboards/dashboard-intent
+        - title: 'Dashboard hierarchy'
+          path: /patterns/dashboards/dashboard-hierarchy/overview  
+        - title: 'Dashboard list page'
+          path: /patterns/dashboards/dashboard-hierarchy/dashboard-list-page
+        - title: 'Views'
+          path: /patterns/dashboards/dashboard-hierarchy/views
+        - title: 'Sections'
+          path: /patterns/dashboards/dashboard-hierarchy/sections
+        - title: 'Dashboard layouts'
+          path: /patterns/dashboards/layouts
+        - title: 'Dashboard functions'
+          path: /patterns/dashboards/dashboard-functions/overview
+        - title: 'Additive and destrictve functions'
+          path: /patterns/dashboards/dashboard-functions/additive-and-destructive-functions
+        - title: 'Edit'
+          path: /patterns/dashboards/dashboard-functions/edit
+        - title: 'Filter'
+          path: /patterns/dashboards/dashboard-functions/filter
+        - title: 'Refresh'
+          path: /patterns/dashboards/dashboard-functions/refresh
+        - title: 'Bulk actions'
+          path: /patterns/dashboards/dashboard-functions/bulk-actions
+        - title: 'Card functions'
+          path: /patterns/dashboards/card-functions/overview
+        - title: 'Additive and destructive functions'
+          path: /patterns/dashboards/card-functions/additive-and-destructive-functions
+        - title: 'Edit'
+          path: /patterns/dashboards/card-functions/edit
+        - title: 'Miscellaneous functions'
+          path: /patterns/dashboards/card-functions/misc-functions
+        - title: 'Dashboard card types'
+          path: /patterns/dashboards/card-types
     - title: 'Drag and drop'
       path: /patterns/drag-and-drop/usage
     - title: 'Edit and update'
