@@ -200,6 +200,16 @@
       path: /content/content-heuristics
     - title: Terminology
       path: /content/terminology/approved-terms
+- title: Novice to pro guidance
+  pages:
+    - title: Overview
+      path: /novice-to-pro/overview
+    - title: Experience playbook
+      path: /novice-to-pro/experience-playbook
+    - title: Experience integration
+      path: /novice-to-pro/experience-integration
+    - title: Components
+      path: /novice-to-pro/components/overview
 - title: 'WalkMe guide'
   pages:
     - title: Overview
