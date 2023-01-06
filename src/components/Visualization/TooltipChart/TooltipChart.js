@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { businessUnits } from './animation-data';
 import Lottie from 'react-lottie';
-import combinedSVG from './homepage_data_viz_17_nocount_fontshapes.json'
+
+import combinedSVG from './homepage_data_viz_21.json'
 import './TooltipChart.scss';
 import mobile from './static_mobile.svg';
 import desktop from './static_homepage_desktop.svg';
@@ -132,7 +133,7 @@ const TooltipChart = () => {
     const getClasses = () => {
       if (documentExists) {
         Object.keys(businessUnits).map(unit => {
-          Object.keys(businessUnits[unit]["products"]).map(product => {
+          Object.keys(businessUnits[unit]["products"]).map(product => {            
             let bar = document.getElementById(product);
             let components = businessUnits[unit]["products"][product].numberOfComponents;
             bar.dataset.length=components;
@@ -217,7 +218,7 @@ const TooltipChart = () => {
   const defaultOptions = {
     renderer: 'svg',
     loop: false,
-    autplay: true,
+    autoplay: true,
     animationData: combinedSVG,
   }
 
