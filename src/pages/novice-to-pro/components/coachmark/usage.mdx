@@ -49,10 +49,11 @@ on their own.
 
 
 ## Variants
-| Variant   | Purpose                                                                                                                           |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Variant   | Purpose                                                                                                                                       |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------             |
 | [Tooltip](#tooltip)   | Draws the user’s attention to a specific area within the UI.                                                                      |
 | [Fixed](#fixed)       | Calls attention to an action the user should take or a concept they should understand that is not specific to one area of the UI. |
+| [Stacked](#stacked)   | Provides additional context to the main coachmark message.                                                                        |
 | [Floating](#floating) | Paired with an insight to provide additional context or detailed information.                                                     |
 
 
@@ -112,12 +113,11 @@ disruptive, use these sparingly.
 
 ### Fixed
 
-This variant appears fixed at the bottom right corner of the browser window upon page load after a delay 
-(to allow the user to take in the page), or after the user performs another action that warrants calling out 
-this information. It slides in from the right side of the screen and exits the same way when dismissed. Because 
-these also interrupt a user’s focus, be sure these are used very intentionally for important information a user 
-will need to know at the moment you present it. Showing these too often and on too many pages within the same 
-session will likely increase user fatigue with the coachmark.
+This variant appears fixed at the bottom right corner of the browser window,  either after the page loads or while the page is 
+loading. It can also appear after a user performs a specific action in the page (e.g. to celebrate reaching a milestone and suggest 
+a next action). It slides in from the right side of the screen and exits the same way when dismissed. Because these also interrupt 
+a user’s focus, be sure these are used very intentionally for important information a user will need to know at the moment you 
+present it. Showing these too often and on too many pages within the same session will likely increase user fatigue with the coachmark.
 
 <Row>
 <Column colMd={12} colLg={12}>
@@ -138,6 +138,28 @@ the coachmark as a teaching moment and minimizes the chance it will be interpret
 
 </Column>
 </Row>
+
+
+### Stacked
+Sometimes a capability or concept introduced in a fixed coachmark needs supporting information to help a user understand a concept 
+more fully. You may want to nudge the user to interact with a capability without bogging them down with more information, but know 
+some users will need further clarification before they will move forward. The stacked coachmark can be used in this case. 
+
+The main layer of a stacked coachmark can include ghost buttons to trigger another layer to slide up from the bottom of the 
+screen to stack on top of it, much like the stacked tearsheet. When dismissed, the stacked layer exits by sliding back down off 
+the screen, revealing the main layer. Up to 3 ghost buttons can be used on the main layer to trigger stacked layers, and only one 
+layer can be stacked on the main layer.
+
+<Row>
+<Column colMd={12} colLg={12}>
+
+<Video src="images/coachmark-06.1.mp4" autoPlay loop>
+    <track kind="captions" src="images/coachmark-06.1.mp4" />
+</Video>
+
+</Column>
+</Row>
+
 
 ### Floating
 
