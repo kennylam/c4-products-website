@@ -1,212 +1,115 @@
 ---
-title: Profile header menu
-tabs: ['Usage', 'Code']
+title: Profile menu
 ---
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
 
-<PageDescription>
+<Breadcrumb>
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/patterns/global-header/usage/#header-patterns">
+    Global header
+  </BreadcrumbItem>
 
-Users rely on the profile menu to find information related to their account, the product they are using and their active session. This pattern describes the types of content, the layout and the interactions to be used with the profile menu in the global toolbar.
-
-</PageDescription>
+  <BreadcrumbItem isCurrentPage href="https://pages.github.ibm.com/cdai-design/pal/patterns/profile-header-menu/usage/">
+    Profile menu
+  </BreadcrumbItem>
+</Breadcrumb>
 
 <AnchorLinks>
-  <AnchorLink>Overview</AnchorLink>
-  <AnchorLink>Anatomy</AnchorLink>
-  <AnchorLink>The solution</AnchorLink>
-  <AnchorLink>Related</AnchorLink>
-  <AnchorLink>References</AnchorLink>
-  <AnchorLink>Feedback</AnchorLink>
-</AnchorLinks>
+ <AnchorLink>Overview</AnchorLink>
+ <AnchorLink>Anatomy</AnchorLink>
+ <AnchorLink>States</AnchorLink>
+ <AnchorLink>Styling</AnchorLink>
+ </AnchorLinks>
 
 ## Overview
 
-The profile menu is essential to a product’s UI. It is a consistently available user interface element that contains account, product and active session information. It is where they go to log in or out and, when logged in, it is where they access their account information and personal settings among other global content. 
-
-While individual product and product family teams are expected to define the content and design of the profile menus for their products, this pattern lays out how the profile menu should be organized and structured and how common elements should be implemented.  
+The profile menu is a consistently available user interface element that contains an essential account, product and active session information. It is only available in the logged in state.
 
 ## Anatomy
 
-The profile menu provides valuable information for our users. It may be used with any product that has a global toolbar and users log in to their accounts to access capabilities.    
+![Profile menu default](images/profileMenu-cropped.png)
 
-![Anatomy of the profile header menu](images/post_login.png)
+![Profile menu anatomy](images/profileMenu-anatomy.png)
 
-1. **User profile image in the toolbar**: The profile menu uses an icon-size image of the user in the toolbar. If an image of the user is not found, a placeholder thumbnail with the user's initials is used instead.  It is placed in the right most position in the toolbar or, if a 9 dot switcher is used, next to the switcher. When clicked, the profile menu opens. 
-2. **Divider**: The profile menu is organized in multiple sections each unified by common content type or theme. The divider delineates the sections. 
-3. **User information**: User information includes full name, username and thumbnail picture or placeholder thumbnail with user's initials. 
-4. **Profile and settings link**: points to the location (page, dialog or otherwise) where users can view their profile and personal settings. 
-5. **Contextual information**: Global contextual information and call to action related to the account or session. (optional) 
-6. **Highlighted settings**: Few key or frequently changed global settings can be exposed in the menu. (optional) 
-7. **Navigational menu items**. 
-8. **Log out**.   
-9. **When the user is not logged in**: A log in link is displayed instead of the profile menu.  
+1. **Header (required)** - This section displays necessary details about the user.
+    1. **User profile image** - See full guidance [here](https://pages.github.ibm.com/cdai-design/pal/patterns/user-profile-images/usage/)
+        1. **Image** - Images are used only when the user uploads their own.
+        2. **Initials** - This is the default until the user uploads their own image.
+    2. **User name** - The user's name is located on the right side of the user profile icon which will wrap depending on the length and should never truncate.
+    3. **User email** - The email address attached to the account being used will be displayed below the username and will wrap depending on the length.
+    4. **Edit profile** - This is utilized when the user needs to update their profile information.
+2. **Row** - Each row contains a UI icon on the left side of the link name. (required icon)
+3. **About** - Only required for on prem.
+4. **Log out (required)** - The last row of the dropdown should be reserved for "log out" only.
 
-### When to use
+<Title>
+Profile menu name
+</Title>
+<Row>
+<Column colMd={4} colLg={8}>
 
-This pattern can be used with any product that has a global toolbar and users log in to their accounts to access capabilities.    
+![Profile menu long name](images/profileMenu_wrap.png)
 
-## The solution
+</Column>
+</Row>
 
-The profile menu pattern supports a variety of menus of increasing complexity. Starting from from short simple menus to longer and more structured ones, the profile menu can accommodate a wide range of content both in terms of type and amount. The pattern aims to maintain a consistent information architecture and hierarchy centered around the end user's profile, account or product in use, and the active session. 
+<Caption>
+Long user name will wrap to second line.
+</Caption>
 
-![Examples of profile header menu](images/menu_solution.png)
+<Title>
+Profile menu images
+</Title>
 
-<br/>
+![Profile menu images](images/profileMenu-image.png)
 
-#### Layout
+<Caption>
+Initials or image.
+</Caption>
 
-The profile menu is made up of multiple sections that should be kept in a particular order. The required order of sections is as follows: 
+### Read only
+![Profile menu read only](images/profileMenu-readOnly.png)
 
-1. User information section, always appears on top. (_mandatory_) 
-2. Contextual information section. (_optional_) 
-3. Highlighted end user settings section. (_optional_)  
-4. One or more sections for navigational menu items. (_recommended_) 
-5. The log out menu item sits in a section of its own at the bottom. (_mandatory_) 
+<Caption>
+1. <strong>Read only (optional)</strong> - This section of the profile menu is not meant to be interacted with but instead give the user a summary of all the required details they might need. This information will also depend based on product needs and should always sit on top of the profile menu.
+</Caption>
 
-![Layout of profile header menu](images/layout.png)
+## States
 
-<br/>
+1. The "edit profile" link can also change to profile settings.
+2. On row hover, if an item opens a new page the launch icon appears.
 
-**Layout tokens**
+![Profile menu states](images/profileMenu-states.png)
 
-![Spacing tokens for profile header menu](images/visuals.png)
+#### Accessibility
 
-### Behaviors, structure, and functionality
+Use arrow key to move the focus down.
 
-**Menu section details**
+#### When to use
 
-![Section details examples](images/menu_section.png)
+This pattern can be used with any product that has a global header and users log in to their accounts to access capabilities. 
 
-Required
-- The icon menu in the toolbar displays the user's profile image.
-- It is placed in the right most position among the icon buttons. If a 9 dot switcher is in use, then the profile menu goes next to it. 
-- Please refer to the Profile Image pattern on Carbon for more details. 
+#### When not to use
 
-Variations
-- If the user is logged in, but no profile image is available, the toolbar displays a placeholder with the user's initials on it. 
-- Please refer to the [Profile image](https://pages.github.ibm.com/cdai-design/pal/patterns/user-profile-images/usage) pattern on Carbon for more details. 
+Do not use this pattern when the user is not logged in.
 
-<br/>
+## Styling
 
-**User information section** (_Required_)
+![Profile menu styling](images/profileMenu-styling.png)
 
-![User information examples](images/user_information.png)
+<Caption>
+The profile menu is a fixed width of 256px.
+</Caption>
 
-Required
-- User's profile image. Please refer to the [Profile image](https://pages.github.ibm.com/cdai-design/pal/patterns/user-profile-images/usage) pattern for more details. 
-- User's full name. 
-- User's login ID (username or email). 
-- Profile and settings link pointing to the location where the user's profile and settings information are available. 
+#### Resources
+- [Figma file](https://www.figma.com/file/7htmsCZvTI8ZO6baZZ1sZY/Global-header-031422?node-id=429%3A2275)
 
-Variations
-- If no user photo is available, the thumbnail displays the user's initials. Please refer to the [Profile image](https://pages.github.ibm.com/cdai-design/pal/patterns/user-profile-images/usage) pattern for more details. 
-- If user profile information and user settings information are not co-located or there are no end user settings, then the Profile and settings link is replaced by a View profile link. 
+#### Contributors
+- [Chriscel Halili](https://w3.ibm.com/#/people/3J3194897)
+- [Gentry Baird](https://w3.ibm.com/#/people/1J5123897)
 
-<br/>
+#### Reviewed by
+- [Lydia Samuel](https://w3.ibm.com/#/people/4J6877897)
 
-**Contextual information Section** (_Optional_)
-
-![Contextual information examples](images/contextual_info.png)
-
-Content
-
-- Only when needed, a contextual information section can be included . 
-- The contextual information has to be global in nature and relevant to the user's profile, account or product in use or active session. 
-- Call to action links can be used to allow the user to change or modify the context. 
-
-Variations
-
-- Layout of the contextual content can be flexible to accommodate the best way to relay the contextual information to the user. 
-- In order not to overwhelm the profile menu, it is best to keep contextual information to a minimum, 1 or 2 items if at all. 
-
-<br/>
-
-**Highlighted settings** (_Optional_)
-
-![Highlighted Settings examples](images/highlighted_settings.png)
-	
-Content 
-
-- Only when needed, a handful of key or frequently used global settings can be surfaced in a single section for highlighted settings. 
-- These are end user settings, not system settings managed by an administrator. 
-- Ideally no more than 3 settings. Other settings should be placed in the dedicated profile and settings area. 
-
-Variations
-- If the profile content and the settings content are no co-located, the highlighted settings section (if used) can serve as a way to direct users to the full set of end user settings. 
-
-Required elements
-- While which settings are displayed are not required, the following is: 
-- If theme switching is displayed, alignment on the approach is required. 
-- If settings and user profile are not co-located, the highlighted settings section is used and there are additional end user settings, then the More settings link is required.  
-
-**Menu links** (_Recommended_)
-
-![Menu links examples](images/menu_link.png)
-
-Content
-- Individual product teams can determine what content applies to their product. 
-- This is a sample of common profile menu items. It is recommended, where possible, to use this order for this content to help consistency across products.  
-- Certain content is required. (Please see required elements below). 
-	
-Variations
-- Links can be grouped and organized in multiple sections as need be based on common themes or functionality. 
-- Other links may be needed for certain products and can be added. 
-- Some of the proposed links may not be needed or available for all products and can be removed. 
-- It is recommended to keep the About link towards the bottom of the list just above Log out. 
-- If the settings content and the user profile content are not colocated and there is no highlighted settings section to be used to point users to the settings area, then settings should be included as a menu link as shown and placed at the top of the menu links as shown.  
-- If some of the menu items lead to content outside of the system, that should be indicated with a punch out icon.
-
-Required elements
-- About is required. As far its placement, it is recommended to keep it in the lowest position (just above the Log out section).
-- If settings and user profile are not co-located and there is no highlighted settings section to place a link that directs users to the settings, then Settings would be a required element in the menu items. It is required to be at the top of the menu items (closest to where the highlighted settings section would have been). 
-- All menu items directing the user outside of the product should be marked with a punch out / launch icon. 
-- Do not include any content pertaining to notifications. See notifications pattern. 
-- For any content pertaining to user assistance, support or documentation, please follow any respective guidance in these regards (e.g. uptake Assist me and/or Walk me). Also, consider using a dedicated help menu if possible since help content can benefit from direct visibility in the global toolbar instead of being hidden inside the profile menu. 
-
-**Log out**
-
-![Menu links examples](images/logout.png)
-	
-Content
-- Log out sits in a section of its own. 
-
-Variations
-- None 
-	
-Required elements
-- Log out has to be in a section of its own. 
-- It has to be the last section at the bottom. 
-- The CTA text must read Log out. 
-
-**Log in**
-
-![Menu links examples](images/login.png)
-
-Content 
-- When the user is not logged in, the profile menu is replaced by a single Log in link in the global toolbar. 
-	
-Variations 
-- None
-
-Required elements
-- If the toolbar is displayed pre-login, a log in link is required in the same location where the profile menu would be post log-in. If there is no toolbar displayed, then login would be available to the user elsewhere as best suits the pre-login design. 
-
-### Best practices
-
-- Ensure all content in the profile menu is global and pertinent regardless of where users are in the product. Do not include content that depends on the context of specific pages or areas of the product. 
-- Keep the length of the profile menu balanced and manageable. Try to limit the number of items in the menu to less than 15. 
-- Do not use fly-out menus. 
-- To display and change highlighted settings, use UI components that allow the user to change a setting with a single click or launch the change flow with a single click. Do not use UI components that require the user to make multiple clicks. 
-- If you have many menu items to include, try to organize them in multiple sections based on common themes or functions. Use a divider for delineation. 
-- Always indicate menu items that direct users outside of the confines of the product with punch out icons. 
-
-## Related
-
-Components
-- [UI shell header](https://www.carbondesignsystem.com/components/UI-shell-header/usage/)
-
-Patterns
-- [Global header](https://www.carbondesignsystem.com/patterns/global-header/)
-
-## Feedback
-
-Help us improve this pattern by providing feedback, asking questions, and leaving any other comments on [GitHub](https://github.com/carbon-design-system/carbon-website/issues/new?assignees=&labels=feedback&template=feedback.md)
+#### Last updated
+Feb 22, 2023
