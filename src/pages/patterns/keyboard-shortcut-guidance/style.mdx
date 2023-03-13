@@ -15,27 +15,27 @@ tabs: ['Usage', 'Style']
 
 | Element | Property | Color token |
 | :- | :- | :- |
-| Indicator | `background-color` | `$ui-03` |
-| | `fill` | `$icon-01` |
-| | `stroke` | `$interactive-01` (when running)<br />`$ui-04` (when aborted) |
+| Indicator | `background-color` | `$layer-accent` |
+| | `fill` | `$icon-primary` |
+| | `stroke` | `$background-brand` (when running)<br />`$border-strong` (when aborted) |
 | Key | `background-color` | `transparent` |
-| | `color` | `$text-01` |
-| | `border-color` | `$ui-03` |
+| | `color` | `$text-primary` |
+| | `border-color` | `$border-subtle` |
 
 ## Typography
 
 | Element | Type style |
 | :- | :- |
-| Key | `body-short-01` |
+| Key | `body-compact-01` |
 
 ## Structure
 
 | Element | Property | px / rem | Spacing token |
 | :- | :- | :- | :- |
-| Indicator | `width`, `height` | - | `$layout-05` |
+| Indicator | `width`, `height` | - | `$spacing-10` |
 | | `stroke-width` | - | `$spacing-02` |
-| Key | `min-width` | - | `$layout-03` |
-| | `height` | - | `$layout-03` |
+| Key | `min-width` | - | `$spacing-07` |
+| | `height` | - | `$spacing-07` |
 | | `border-radius` | 4 / .25 | - |
 | | `padding` | - | `$spacing-03` |
 | Operator | `margin-left`, `margin-right` | - | `$spacing-03` |
@@ -50,4 +50,4 @@ tabs: ['Usage', 'Style']
 </Column>
 </Row>
 
-Note that the keys have a minimum width of `$layout-03`, making them square when only one character is displayed (see the example with "A" and "A" above). The text will remain centered, resulting in a higher horizontal spacing on low-width characters such as "I".
+Note that the keys have a minimum width of `$spacing-07`, making them square when only one character is displayed (see the example with "A" and "A" above). The text will remain centered, resulting in a higher horizontal spacing on low-width characters such as "I".
