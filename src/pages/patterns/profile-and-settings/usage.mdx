@@ -1,0 +1,199 @@
+---
+title: Profile and Settings
+---
+
+<PageDescription>
+
+Profile and settings allows end users to manage and modify their product settings.
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink>Overview</AnchorLink>
+  <AnchorLink>Anatomy</AnchorLink>
+  <AnchorLink>Saving behavior</AnchorLink>
+  <AnchorLink>Best practices</AnchorLink>
+  <AnchorLink>Related components</AnchorLink>
+</AnchorLinks>
+
+## Overview
+
+Profile and settings is accessed from the profile header menu and should only be used to manage end-user settings of a product or platform.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Profile and settings access point](/images/access-point.png)
+
+</Column>
+</Row>
+
+## Anatomy
+
+### Single setting
+
+When there is a single setting, all contents should be displayed on a scrollable page.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Single setting anatomy](/images/anatomy-single-setting.png)
+
+</Column>
+</Row>
+
+1. Page header: Profile and settings
+2. Section header: title of setting
+3. Supporting text (optional): any additional information necessary about the setting
+4. Setting configurations: varies per product
+
+### Multiple settings
+
+When there are multiple settings, include a left panel for navigation.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Multiple settings anatomy](/images/anatomy-multiple-settings.png)
+
+</Column>
+</Row>
+
+1. Page header: Profile and settings title - this will appear on every page and does not change
+2. Left panel: allows users to navigate between settings
+3. Section header: title of setting
+4. Supporting text (optional): any additional information necessary about the setting
+5. Setting configurations: varies per product
+
+## Saving behavior
+
+There are 2 types of saving behaviors based on the impact of the Setting on the system: autosave and manual save. The different options should be used at your own discretion,
+however it’s important to ensure as much consistency as possible when switching from one setting to another.
+
+### Autosave
+
+When changing a setting configuration has a low impact on the system (i.e. updating appearance preferences, changing a profile photo, etc.), the changes will be autosaved.
+Saving progress should be indicated at the top of the page using the [inline loading](https://carbondesignsystem.com/components/inline-loading/usage) component.
+Additionally, [options tiles](https://pages.github.ibm.com/cdai-design/pal/components/options-tile/usage/) should be used to contain and group the information.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Autosave](/images/autosave.png)
+
+</Column>
+</Row>
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+<Video src="/videos/Autosave-video.mov" poster="/images/autosave.png">
+<track kind="captions" src="/videos/Autosave-video.mov"/>
+</Video>
+
+</Column>
+</Row>
+
+### Manual save
+
+When the impact of changing a setting configuration is high, the changes should be saved explicitly. [Edit](https://pages.github.ibm.com/cdai-design/pal/patterns/edit/usage#full-page-edit) patterns suitable for settings are: full page edit, tearsheet edit,
+card edit, modal edit and data table edit.
+
+#### Full page edit
+
+A page-level [manual save](<https://pages.github.ibm.com/cdai-design/pal/patterns/saving/usage/#manual-saving-(when-auto-saving-isn't-appropriate-or-may-not-be-necessary)>) can be used when the setting configuration has a high impact on the system, but edits are simple enough to be done on the page (i.e. changing the user interface language). In this saving pattern, the changes are applied only after the user clicks on the Save button.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Full page edit](/images/full-page-edit.png)
+
+</Column>
+</Row>
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+<Video src="/videos/Full-page-edit-video.mov" poster="/images/full-page-edit.png">
+<track kind="captions" src="/videos/Full-page-edit-video.mov"/>
+</Video>
+
+</Column>
+</Row>
+
+If the user attempts to exit the page without saving, they should be warned of potential losses in a modal.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Unsaved changes modal](/images/unsaved-changes-modal.png)
+
+</Column>
+</Row>
+
+#### Tearsheet edit
+
+An Edit button along with a [tearsheet](https://pages.github.ibm.com/cdai-design/pal/components/tearsheet/usage) can be used when the setting configuration is high impact and requires more screen real estate to make edits (i.e. an edit that requires many steps, data tables, etc).
+The Edit button will launch a tearsheet where the user will make changes. Once all changes have been saved, the user will receive a toast notification informing them that their updates were successful.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Tearsheet edit](/images/tearsheet-edit.png)
+
+</Column>
+</Row>
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+<Video src="/videos/Tearsheet-edit-video.mov" poster="/images/tearsheet-edit.png">
+<track kind="captions" src="/videos/Tearsheet-edit-video.mov"/>
+</Video>
+
+</Column>
+</Row>
+
+#### Card edit
+
+The [card edit](https://pages.github.ibm.com/cdai-design/pal/patterns/edit/usage#cards) pattern can be used when there are multiple configurations under a single setting.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Card edit](/images/card-edit.png)
+
+</Column>
+</Row>
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+<Video src="/videos/Card-edit-video.mov" poster="/images/card-edit.png">
+<track kind="captions" src="/videos/Card-edit-video.mov"/>
+</Video>
+
+</Column>
+</Row>
+
+## Best practices
+
+### Do
+
+- Use this framework for end-user settings only
+- Group similar/related settings
+- Use options tiles when possible to consolidate the content for low impact changes
+
+### Don't
+
+- Use this framework for system or admin settings
+- Use options tiles for high impact changes
+- Combine options tiles with a manual saving pattern
+
+## Related components
+
+- [Options tiles](https://pages.github.ibm.com/cdai-design/pal/components/options-tile/usage/)
+- [Inline loading](https://carbondesignsystem.com/components/inline-loading/usage)
+- [Saving](https://pages.github.ibm.com/cdai-design/pal/patterns/saving/usage)
+- [Edit and update](https://pages.github.ibm.com/cdai-design/pal/patterns/edit/usage/)
+- [UI shell left panel](https://carbondesignsystem.com/components/UI-shell-left-panel/usage/)
