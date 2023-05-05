@@ -6,32 +6,39 @@ import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 import { Link } from "gatsby";
 
 <Breadcrumb>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/">
-   Home
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/">
+    Home
   </BreadcrumbItem>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/overview">
-   SaaS for hyperscalers
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/overview">
+    SaaS for hyperscalers
   </BreadcrumbItem>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/use">
-   Use
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/use">
+    Use
   </BreadcrumbItem>
-  <BreadcrumbItem isCurrentPage href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/use-patterns/login-logout">
-   Login and Logout
+  <BreadcrumbItem
+    isCurrentPage
+    href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/use-patterns/login-logout"
+  >
+    Login and Logout
   </BreadcrumbItem>
 </Breadcrumb>
 
 <PageDescription>
 
-Products can provide users with a consistent log out experience by adopting these two patterns. 
+Products can provide users with a consistent log out experience by adopting these two patterns.
+
 <br />
 1. Enabling the log out menu action in the profile menu provided by MCSP. <br />
 2. Customizing the reusable log out dialog provided by MCSP.
 
-The resources in this section provide both the design and reusable code components for these patterns. 
+The resources in this section provide both the design and reusable code components for these patterns.
+
 </PageDescription>
 
 ## Login
-The login page allows a user to gain access to their applications.  The standard IBM login dialog should be used here for SaaS products access. There is no need for SaaS products to provide a customized or product specific login dialog.
+
+The login page allows a user to gain access to their applications. The standard IBM login dialog should be used here for SaaS products access. There is no need for SaaS products to provide a customized or product specific login dialog.
+
 #### SaaS products login screen
 
 ![Login anatomy](images/login-Anatomy2.png)
@@ -52,14 +59,14 @@ User can log out from the profile menu dropdown
 
 <br />
 <CardGroup>
-  <MiniCard 
-    title="Figma file" 
+  <MiniCard
+    title="Figma file"
     href="https://www.figma.com/file/SlZ7TK2mTzNLIHZB2dGXRF/MCSP-Onboarding-Design-Guide?node-id=2123%3A400806&t=HLaG62yqbYuR0XKo-1"
-    actionIcon="launch">
-  </MiniCard>
-  <MiniCard 
-    title="Storybook" 
+    actionIcon="launch"
+  ></MiniCard>
+  <MiniCard
+    title="Storybook"
     href="https://pages.github.ibm.com/automation-saas/automation-common-header/?path=/story/logout--tile"
-    actionIcon="launch">
-  </MiniCard>
-</CardGroup> 
+    actionIcon="launch"
+  ></MiniCard>
+</CardGroup>{" "}

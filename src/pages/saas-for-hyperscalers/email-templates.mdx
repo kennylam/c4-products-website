@@ -5,22 +5,6 @@ title: Email templates
 import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 import { Link } from "gatsby";
 
-<Breadcrumb>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/">
-   Home
-  </BreadcrumbItem>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/overview">
-   SaaS for hyperscalers
-  </BreadcrumbItem>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/common-patterns-components">
-   SaaS patterns and components
-  </BreadcrumbItem>
-  <BreadcrumbItem isCurrentPage href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/email-templates">
-    Hyperscaler email templates
-  </BreadcrumbItem>
-</Breadcrumb>
-
-
 <PageDescription>
 
 Emails provide a way to asynchronously communicate with users about their trials and subscriptions outside of the product.
@@ -36,9 +20,11 @@ Emails provide a way to asynchronously communicate with users about their trials
 </AnchorLinks>
 
 ## Overview
+
 Emails are sent to users to communicate information about their product trials and paid subscriptions. To avoid spamming, emails should be sent only when necessary.
 
 ## Anatomy
+
 <Row>
 <Column colMd={4} colLg={8}>
 
@@ -50,25 +36,25 @@ Emails are sent to users to communicate information about their product trials a
 1. **Subject line:** A description of the topic of the email that’s displayed in the user’s inbox before they open it
 2. **Sender:** The email address and display name of the user that’s sending the email
 3. **Header:** <br />
-a. **Product name** <br />
-b. **Title:** Title does not need to match the subject line verbatim but it should reflect the main content of the email <br />
-c. **Product icon** <br />
-d. **Banner graphic** <br />
+   a. **Product name** <br />
+   b. **Title:** Title does not need to match the subject line verbatim but it should reflect the main content of the email <br />
+   c. **Product icon** <br />
+   d. **Banner graphic** <br />
 4. **Body** <br />
-a. **Salutation:** The way you greet the user, typically the first line or two in the email <br />
-b. **Body content:** The main content in the email that conveys the message that you want the user to receive <br />
-c. **Call to action:** The action that you want the user to take as a result of reading the email <br />
-d. **Signature:** The way you close the email content <br />
+   a. **Salutation:** The way you greet the user, typically the first line or two in the email <br />
+   b. **Body content:** The main content in the email that conveys the message that you want the user to receive <br />
+   c. **Call to action:** The action that you want the user to take as a result of reading the email <br />
+   d. **Signature:** The way you close the email content <br />
 5. **Footer** <br />
-a. **IBM Support Center link** <br />
-b. **Copyright disclaimer** <br />
-c. **IBM 8-bar logo**
+   a. **IBM Support Center link** <br />
+   b. **Copyright disclaimer** <br />
+   c. **IBM 8-bar logo**
 
 ## When to use
 
 The MultiCloud SaaS platform has an email notification system which can send emails on behalf of the products.
 
-The above email template design is used in order to make sure that communications are consistent across all SaaS products.  Email templates are sent throughout try and buy SaaS Hyperscaler flows. Here are the templates used by the platform.
+The above email template design is used in order to make sure that communications are consistent across all SaaS products. Email templates are sent throughout try and buy SaaS Hyperscaler flows. Here are the templates used by the platform.
 
 <Accordion>
   <AccordionItem title="Trial email - Trial has begun">This email is sent as soon as the user has subscribed to the Trial from one of the 2 entry points of the Trial Pivot flows (ibm.com or AWS product listing trial link). This email is sent as soon as the user lands in the platform's instance provisioning screen from the IBM ID login flow from URX.
@@ -147,8 +133,8 @@ Since URX would have registered the Trial subscription in SSM but provisioning h
 
 Leverage the Carbon Design System for content guidance on things like capitalization, tone, voice, and terminology. In addition to the content guidance in Carbon, use the following checklist as another aid:
 
-
 #### Do's 
+
 - Use a conversational voice and tone that is personal, relatable, clear, helpful, and engaging.
 - Use plain language that users can understand the first time that they read it.
 - Use approved names in official spelling when referring to products.
@@ -159,6 +145,7 @@ Leverage the Carbon Design System for content guidance on things like capitaliza
 - Use simple past tense (“was” rather than “has been”).
 
 #### Don'ts
+
 - Be afraid to use contractions once in a while. Decide whether they fit the context.
 - Use abbreviations that users might not understand without spelling them out first.
 - Use relational positioning wording, such as “below” or “above.” Avoid other sensory words, such as “top” or “right,” due to accessibility.
@@ -166,11 +153,12 @@ Leverage the Carbon Design System for content guidance on things like capitaliza
 
 ## Email creation
 
-[SendGrid](https://sendgrid.com/) is the email delivery platform used. Our use of SendGrid follows a federated model. Automation SaaS Platform has a parent SendGrid account which gives sub accounts to products under ASP who want to use SendGrid for email notifications (These sub accounts function as their own SendGrid accounts). 
+[SendGrid](https://sendgrid.com/) is the email delivery platform used. Our use of SendGrid follows a federated model. Automation SaaS Platform has a parent SendGrid account which gives sub accounts to products under ASP who want to use SendGrid for email notifications (These sub accounts function as their own SendGrid accounts).
 
-SendGrid is a user friendly tool allowing for designs to be created with their design editor, however HTML can also be used. With SendGrid's web API, you are able to send out an email using a template you have created in your SendGrid account by specifying the templateID. 
+SendGrid is a user friendly tool allowing for designs to be created with their design editor, however HTML can also be used. With SendGrid's web API, you are able to send out an email using a template you have created in your SendGrid account by specifying the templateID.
 
 SendGrid also supports handlebars, which is SendGrid's variable replacement within the templates. When using SendGrid's web API, you are able to send an extra object that will replace the labels specified in the handlebars within the email templates with fields you have defined. This allows emails to be customized dynamically.
+
 <Row>
 <Column colMd={8} colLg={8}>
 
@@ -182,9 +170,9 @@ SendGrid also supports handlebars, which is SendGrid's variable replacement with
 <br />
 
 <CardGroup>
-  <MiniCard 
-    title="Figma template" 
+  <MiniCard
+    title="Figma template"
     href="https://www.figma.com/file/SlZ7TK2mTzNLIHZB2dGXRF/MCSP-Onboarding-Design-Guide?node-id=2032-429768&t=UwSHXaeG1gmo19f5-0"
-    actionIcon="launch">
-  </MiniCard>
-</CardGroup> 
+    actionIcon="launch"
+  ></MiniCard>
+</CardGroup>{" "}

@@ -6,23 +6,26 @@ import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 import { Link } from "gatsby";
 
 <Breadcrumb>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/">
-   Home
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/">
+    Home
   </BreadcrumbItem>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/overview">
-   SaaS for hyperscalers
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/overview">
+    SaaS for hyperscalers
   </BreadcrumbItem>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/common-patterns-components">
-   SaaS patterns and components
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/common-patterns-components">
+    SaaS patterns and components
   </BreadcrumbItem>
-  <BreadcrumbItem isCurrentPage href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/common-patterns/urx">
-   IBM account sign-up
+  <BreadcrumbItem
+    isCurrentPage
+    href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/common-patterns/urx"
+  >
+    IBM account sign-up
   </BreadcrumbItem>
 </Breadcrumb>
 
-<PageDescription>  
+<PageDescription>
 
-Before users can access an IBM SaaS product or a product trial, they must first be authenticated with an IBMid, otherwise known as their IBMId account.  Users can create an IBMid using the standard URX (Unified Registration Experience) form.
+Before users can access an IBM SaaS product or a product trial, they must first be authenticated with an IBMid, otherwise known as their IBMId account. Users can create an IBMid using the standard URX (Unified Registration Experience) form.
 
 </PageDescription>
 
@@ -58,9 +61,10 @@ The URX form collects and validate the user's account information, and record th
   </Column>
 </Row>
 
+#### Step 2: Verify email
 
-#### Step 2: Verify email 
 An email verification message will be sent to the email address provided in step 1. User will copy and paste the verification code in the URX form.
+
 <Row>
   <Column colMd={8} colLg={10}>
 
@@ -69,9 +73,10 @@ An email verification message will be sent to the email address provided in step
   </Column>
 </Row>
 
-
 #### Step 3: Account Privacy
+
 After the user accept the terms and conditions, an account is created and user is presented with the Account Privacy policy.
+
 <Row>
   <Column colMd={8} colLg={10}>
 

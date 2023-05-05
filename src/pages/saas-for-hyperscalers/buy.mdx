@@ -5,25 +5,11 @@ title: Buy
 import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 import { Link } from "gatsby";
 
-<Breadcrumb>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/">
-   Home
-  </BreadcrumbItem>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/overview">
-   SaaS for hyperscalers
-  </BreadcrumbItem>
-  <BreadcrumbItem isCurrentPage href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/buy">
-   Buy
-  </BreadcrumbItem>
-</Breadcrumb>
-
-
 <PageDescription>
 
 When user is ready to buy or upgrade, an easy transition from trial to paid with efficiency and transparency can help cultivate trust between our customers and IBM.
 
 </PageDescription>
-
 
 <AnchorLinks>
   <AnchorLink>Public vs private offer</AnchorLink>
@@ -33,65 +19,73 @@ When user is ready to buy or upgrade, an easy transition from trial to paid with
   <AnchorLink>References</AnchorLink>
 </AnchorLinks>
 
-
 ## Public vs private offer
+
 The user can initiate the subscription process from our product listing in the marketplaces or from within the trial.
 
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/TrialCountDown.png)
+![trial to buy](images/TrialCountDown.png)
 
-  <Caption>
+<Caption>
   Trial countdown offers a quick way to initiate the purchasing actions
-  </Caption>
+</Caption>
 
   </Column>
-</Row>  
+</Row>
 
 ### Public offer
+
 The ** Buy button ** in the trial countdown takes the user to the hyperscaler marketplace according to where the trial is originated. For example, if the trial is originated from AWS Marketplace, the user will be taken to the product listing page on AWS Marketplace. One or more subscription options are available in the marketplace listing. These options are generally available to anyone who is interested in subscribing to the product. The terms and conditions that come with these options are also standard to everyone who chooses to subscribe.
 
 See prototype: <a target="_blank" href="https://www.figma.com/proto/AdslrSd7PwrntFZehRcTjb/SaaS-for-Hyperscalers-Design-Templates?node-id=232%3A360856&scaling=min-zoom&page-id=163%3A351403&starting-point-node-id=232%3A360856&show-proto-sidebar=1">Buy on AWS</a>
 
 ### Private offer
-Some customers may prefer to work directly with our Sales team to customize a plan that work best for their needs. They can choose the ** Contact sales link ** to initiate the interaction. They will need to provide the contact information in the form and will later be contacted by the seller. An offer customized to the customer’s specific needs with an agreed pricing is created. See [private offer](https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/user-scenarios/private-offer#private-offer).
+
+Some customers may prefer to work directly with our Sales team to customize a plan that work best for their needs. They can choose the ** Contact sales link ** to initiate the interaction. They will need to provide the contact information in the form and will later be contacted by the seller. An offer customized to the customer’s specific needs with an agreed pricing is created. See [private offer](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/user-scenarios/private-offer#private-offer).
+
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/ContactSales.png)
+![trial to buy](images/ContactSales.png)
 
-  <Caption>
-  An example of contact sales form
-  </Caption>
+{" "}
+
+<Caption>An example of contact sales form</Caption>
 
   </Column>
-</Row> 
+</Row>
 
 ## Subscription and provision
+
 Once the transaction on the marketplace is complete, the user will be directed to IBM to set up their account with the following steps:
 
 #### Step 1: Login or create IBMid sign up
-The user is required to create an IBMid using the URX form or log in with an existing one. See [IBMid sign up](https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/common-patterns/urx) for details
 
-The customizable panel of the URX form should have the sub-headline ** "Thank you for subscribing" ** to differentiate from a trial sign up. 
+The user is required to create an IBMid using the URX form or log in with an existing one. See [IBMid sign up](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/common-patterns/urx) for details
+
+The customizable panel of the URX form should have the sub-headline ** "Thank you for subscribing" ** to differentiate from a trial sign up.
+
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/URX-subscribe.png)
+![trial to buy](images/URX-subscribe.png)
 
   </Column>
-</Row> 
+</Row>
 
 #### Step 2: Account setup (Commerce)
+
 To enable the proper accounting of the subscription, the user needs to provide additional information to complete the company account set up.
 
 **Private offer** <br />
-In the case of private offer, the user needs to provide the quote number they received from the seller  in order to fetch their company details.
+In the case of private offer, the user needs to provide the quote number they received from the seller in order to fetch their company details.
+
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/Commerce-private.png)
+![trial to buy](images/Commerce-private.png)
 
   </Column>
 </Row>
@@ -99,30 +93,31 @@ In the case of private offer, the user needs to provide the quote number they re
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/Commerce-private2.png)
+![trial to buy](images/Commerce-private2.png)
 
   </Column>
-</Row> 
+</Row>
 
-If the user has negotiated an offer with IBM sales and the system successfully detects that there is an offer tied in with the user’s account, then their quote number and company information will automatically be fetched. 
+If the user has negotiated an offer with IBM sales and the system successfully detects that there is an offer tied in with the user’s account, then their quote number and company information will automatically be fetched.
+
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/Commerce-private-detected.png)
+![trial to buy](images/Commerce-private-detected.png)
 
   </Column>
-</Row> 
+</Row>
 
 **Public offer** <br />
 If the user did not negotiate an offer with IBM sales, they will have to select the Public offer tile and manually enter their company information.
+
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/Commerce-public.png)
+![trial to buy](images/Commerce-public.png)
 
   </Column>
-</Row> 
-
+</Row>
 
 #### Step 3: Instance provisioning information
 
@@ -135,69 +130,77 @@ If the user did not negotiate an offer with IBM sales, they will have to select 
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/ProvisioningInfo_buy.png)
+![trial to buy](images/ProvisioningInfo_buy.png)
 
   </Column>
-</Row> 
-
+</Row>
 
 #### Step 4: Getting instance ready
+
 **New instance**
+
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/Provisioning_buy1.png)
+![trial to buy](images/Provisioning_buy1.png)
 
   </Column>
-</Row> 
+</Row>
 
 **Trial upgrade instance**
+
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/provisioning-upgrade.png)
+![trial to buy](images/provisioning-upgrade.png)
 
   </Column>
-</Row> 
-
+</Row>
 
 #### Step 5: Instance is ready
+
 **New instance**
+
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/ProvisioningInstanceReady.png)
+![trial to buy](images/ProvisioningInstanceReady.png)
 
   </Column>
-</Row> 
+</Row>
 
 **Trial upgrade instance**
+
 <Row>
   <Column colMd={8} colLg={10}>
 
-  ![trial to buy](images/ProvisioningInstanceReady2.png)
+![trial to buy](images/ProvisioningInstanceReady2.png)
 
   </Column>
-</Row> 
+</Row>
 
 <br />
 
 <CardGroup>
-  <MiniCard 
-    title="Figma template" 
+  <MiniCard
+    title="Figma template"
     href="https://www.figma.com/file/SlZ7TK2mTzNLIHZB2dGXRF/MCSP-Onboarding-Guide?node-id=1903%3A423457&t=luuwcPD9pEO2cr6L-1"
-    actionIcon="launch">
-  </MiniCard>
-  <MiniCard 
-    title="App icons library" 
+    actionIcon="launch"
+  ></MiniCard>
+  <MiniCard
+    title="App icons library"
     href="https://www.ibm.com/design/language/iconography/app-icons/library"
-    actionIcon="launch">
-  </MiniCard>
+    actionIcon="launch"
+  ></MiniCard>
 </CardGroup>
 
 ## Related
-- [Account Sign up](https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/common-patterns/urx)
-- [Email template](https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/email-templates)
+
+- [Account Sign up](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/common-patterns/urx)
+- [Email template](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/email-templates)
 
 ## References
-- <a target="_blank" href="https://w3.ibm.com/w3publisher/urx">URX</a>
+
+- <a target="_blank" href="https://w3.ibm.com/w3publisher/urx">
+    URX
+  </a>

@@ -6,17 +6,20 @@ import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 import { Link } from "gatsby";
 
 <Breadcrumb>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/">
-   Home
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/">
+    Home
   </BreadcrumbItem>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/overview">
-   SaaS for hyperscalers
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/overview">
+    SaaS for hyperscalers
   </BreadcrumbItem>
-  <BreadcrumbItem href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/use">
-   Use
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/use">
+    Use
   </BreadcrumbItem>
-  <BreadcrumbItem isCurrentPage href="https://pages.github.ibm.com/CDAI-design/cpp-foundation-microsite/saas-for-hyperscalers/use-patterns/ui-navigation">
-   UI navigation
+  <BreadcrumbItem
+    isCurrentPage
+    href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/use-patterns/ui-navigation"
+  >
+    UI navigation
   </BreadcrumbItem>
 </Breadcrumb>
 
@@ -24,7 +27,7 @@ MCSP expects products to provide **one URL** which takes users to the main landi
 
 While we encourage offerings to converge access to their offering capabilities into a single UI experience, it is understandable that existing products onboarding to MCSP may have more than one distinct UI driving their experiences, for several reasons.
 
-In the case when a product has multiple UIs, the product should provide the link to the default UI or a product landing page, from which the user can navigate to the UI of their choice.  The design of the contents of the landing page itself is **not mandated by MCSP** but should help the user in navigating amongst the offered capabilities.
+In the case when a product has multiple UIs, the product should provide the link to the default UI or a product landing page, from which the user can navigate to the UI of their choice. The design of the contents of the landing page itself is **not mandated by MCSP** but should help the user in navigating amongst the offered capabilities.
 
 That said, based on the number of UIs an offering has, MCSP has provided the following guidance to promote a minimum level of navigational consistency for the users.
 
@@ -35,8 +38,8 @@ That said, based on the number of UIs an offering has, MCSP has provided the fol
 
 ![example image](images/APIconnect.png)
 
-
 ## Products that require multiple UIs
+
 ### Default entry UI
 
 - The URL goes to the product’s chosen main UI, thus that UI’s landing page content
@@ -63,14 +66,14 @@ That said, based on the number of UIs an offering has, MCSP has provided the fol
 <br />
 
 <CardGroup>
-  <MiniCard 
-    title="Figma template" 
+  <MiniCard
+    title="Figma template"
     href="https://www.figma.com/file/SlZ7TK2mTzNLIHZB2dGXRF/MCSP-Onboarding-Design-Guide?node-id=2462%3A704594&t=jUV3FLbX6twMmqBh-1"
-    actionIcon="launch">
-  </MiniCard>
-  <MiniCard 
-    title="Storybook" 
+    actionIcon="launch"
+  ></MiniCard>
+  <MiniCard
+    title="Storybook"
     href="https://pages.github.ibm.com/automation-saas/automation-common-header/?path=/story/automation-header--with-account-switcher"
-    actionIcon="launch">
-  </MiniCard>
-</CardGroup> 
+    actionIcon="launch"
+  ></MiniCard>
+</CardGroup>{" "}
