@@ -90,7 +90,7 @@ dismisses the tooltip, the beacon disappears as well.
 </Column>
 </Row>
 
-#### With ring beacon
+<!-- #### With ring beacon
 To draw the user’s attention to an important icon or icon button within the UI, use the ring beacon. The 
 ring beacon’s appearance should automatically be accompanied by its tooltip so it won’t conflict with any 
 of the icon’s interactions (i.e. any hover or click functionality of the icon should work even when the 
@@ -109,20 +109,22 @@ disruptive, use these sparingly.
 </Video>
 
 </Column>
-</Row>
+</Row> -->
 
 ### Fixed
 
-This variant appears fixed at the bottom right corner of the browser window,  either after the page loads or while the page is 
-loading. It can also appear after a user performs a specific action in the page (e.g. to celebrate reaching a milestone and suggest 
-a next action). It slides in from the right side of the screen and exits the same way when dismissed. Because these also interrupt 
-a user’s focus, be sure these are used very intentionally for important information a user will need to know at the moment you 
-present it. Showing these too often and on too many pages within the same session will likely increase user fatigue with the coachmark.
+This variant appears fixed at the bottom right corner of the browser window  with page load. It starts in a minimized 
+state to cover as little of the UI as possible (in tests, when shown expanded by default, users immediately closed 
+them without reading to get them out of their way). When dismissed, it slides down off the page. Be sure these are used 
+very intentionally for key information a user will need to know when viewing the page. Showing these too often will 
+likely produce user fatigue with the coachmark.
 
 <Row>
 <Column colMd={12} colLg={12}>
 
-![Fixed coachmark](images/coachmark-05.png)
+<Video src="images/coachmark-05.mp4" autoPlay loop>
+    <track kind="captions" src="images/coachmark-05.mp4" />
+</Video>
 
 </Column>
 </Row>
@@ -130,6 +132,7 @@ present it. Showing these too often and on too many pages within the same sessio
 #### Without illustration
 When an illustration isn’t helpful for the fixed coachmark, include an idea icon above the content. This helps frame 
 the coachmark as a teaching moment and minimizes the chance it will be interpreted as a system or status notification.
+
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -139,16 +142,33 @@ the coachmark as a teaching moment and minimizes the chance it will be interpret
 </Column>
 </Row>
 
+<br/>
+
+<DoDontRow>
+
+<DoDont caption="Do start the fixed coachmark in a minimized state.">
+
+![Do start the fixed coachmark in a minimized state.](images/coachmark-05.1.png)
+
+</DoDont>
+
+<DoDont type="dont" caption="Do not show the fixed coachmark expanded to start because it is too disruptive.">
+
+![Do not show the fixed coachmark expanded to start because it is too disruptive.](images/coachmark-05.2.png)
+
+</DoDont>
+
+</DoDontRow>
 
 ### Stacked
 Sometimes a capability or concept introduced in a fixed coachmark needs supporting information to help a user understand a concept 
 more fully. You may want to nudge the user to interact with a capability without bogging them down with more information, but know 
 some users will need further clarification before they will move forward. The stacked coachmark can be used in this case. 
 
-The main layer of a stacked coachmark can include ghost buttons to trigger another layer to slide up from the bottom of the 
-screen to stack on top of it, much like the stacked tearsheet. When dismissed, the stacked layer exits by sliding back down off 
-the screen, revealing the main layer. Up to 3 ghost buttons can be used on the main layer to trigger stacked layers, and only one 
-layer can be stacked on the main layer.
+Like the fixed coachmark, the main layer of a stacked coachmark starts in a minimized state. It can include ghost buttons to trigger 
+another layer to slide up  to stack on top of it, much like the [stacked tearsheet](https://pages.github.ibm.com/cdai-design/pal/components/tearsheet/usage/#navigation). When dismissed, the stacked layer exits by sliding 
+back down, revealing the main layer. Up to 3 ghost buttons can be used on the main layer to trigger stacked layers, and only one layer 
+can be stacked on the main layer.
 
 <Row>
 <Column colMd={12} colLg={12}>
@@ -210,7 +230,7 @@ the page.
 
 ### Alignment
 
-When used with a beacon or ring beacon, the tooltip coachmark’s caret should be aligned to the beacon much like a standard toggletip or popover 
+When used with a beacon, the tooltip coachmark’s caret should be aligned to the beacon much like a standard toggletip or popover 
 would be. The beacon and caret tip should be center-aligned with each other to clearly associate the tooltip coachmark and the beacon. Refer to the Carbon [toggletip](https://carbondesignsystem.com/components/toggletip/usage/) and [popover](https://carbondesignsystem.com/components/popover/usage/) guidance for more detail. 
 
 <Row>
@@ -227,7 +247,7 @@ Coachmark placement is determined by the variant.
 
 **Tooltip coachmarks** should not cover the related parts of the UI that are essential to the user’s tasks. They should not bleed off page or sit behind other content. Because the tooltip (regardless of the variant) will not go away unless the user dismisses it, or refreshes or navigates to another page, the tooltip will remain connected to the element and beacon if the user scrolls the page.
 
-**Fixed coachmarks** will always sit `16px` from the bottom right corner of the browser window, and will not scroll away when the user scrolls the page. 
+**Fixed coachmarks** will always sit flush with the bottom right corner of the browser window, and will not scroll away when the user scrolls the page. 
 
 **Floating coachmarks** will sit `8px` under the button that triggered it, unless the user drags the coachmark to another position. Closing the floating coachmark will reset its position.
 
@@ -252,19 +272,19 @@ Coachmark placement is determined by the variant.
 
 ### Main elements
 
-#### Title
-The title should be value-oriented, and be as brief as possible while still being clear, descriptive, and detailed enough to 
-get the main idea across. When writing the title, you should assume that the user will not read the body content, so try to 
-ensure that the title will accurately communicate the message you want to deliver. 
+#### Heading
+The heading should be direct, and be as brief as possible while still being clear, descriptive, and detailed enough to get the main 
+idea across. Assume that the user will not read the body content, so try to ensure that the heading will accurately communicate the 
+message you want to deliver.  
 
 #### Body content
-The body content should contain information that provides additional detail or context to the title, without repeating the title itself. 
+The body content should contain information that provides additional detail or context to the heading, without repeating the title itself. 
 
 ### Additional content information
 
 #### Stepped coachmarks
 When a concept is too complex or detailed to fit into a single coachmark, the content can be split into smaller steps (ideally 2-3, 
-and up to 5 max.), each step containing a unique title, illustration (if applicable), and body content. 
+and up to 5 max.), each step containing a unique heading, illustration (if applicable), and body content. 
 
 ### Content best practices
 When writing content for your novice to pro experiences, remember the following best practices:
