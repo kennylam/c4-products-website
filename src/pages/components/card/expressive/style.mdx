@@ -26,7 +26,7 @@ tabs: ["Usage", "Style", "Code"]
 
 ### 1. Title block
 
-The title block contains the card's title, label or caption. The purpose of this block is to provide a context of the content's intent. 
+The title block contains the card’s title, label, or caption. The purpose of this block is to provide a context of the content’s intent. 
 
 
 <Accordion>
@@ -81,7 +81,7 @@ _Label only_
 
 ![Label only](../images/label-only.png)
 
-To learn more about type spacing styles visit Carbon's [guidelines](https://www.carbondesignsystem.com/guidelines/spacing/overview).
+To learn more about spacing styles visit Carbon’s [guidelines](https://www.carbondesignsystem.com/guidelines/spacing/overview).
 
 </Column>
 </Row>
@@ -90,7 +90,7 @@ To learn more about type spacing styles visit Carbon's [guidelines](https://www.
 
   <AccordionItem title="Typography">
 
-By default, the Expressive card title should use `$productive-heading-03`. 
+By default, the expressive card title should use `$heading-03`. 
 
 Use `$label-01` for title labels and descriptions.
 <br></br>
@@ -99,7 +99,7 @@ Use `$label-01` for title labels and descriptions.
 
   ![Type Variations](../images/expressive-title4.png)
 
-  To learn more about type styles visit Carbon's [typography guidelines](https://www.carbondesignsystem.com/guidelines/typography/productive).
+  To learn more about type styles visit Carbon's [typography guidelines](https://carbondesignsystem.com/guidelines/typography/overview/).
 
   </Column>
   </Row>
@@ -113,7 +113,7 @@ Use `$label-01` for title labels and descriptions.
 ### 2. Body content
 
 The type of content can vary depending on the use case, spacing remains the same. <br></br>
-If the content includes a chart, consider using a Productive card instead.
+If the content includes a chart, consider using a [productive card](https://pages.github.ibm.com/cdai-design/pal/components/card/productive/usage) instead.
 
 <Row>
 <Column colMd={8} colLg={8} noGutterMdLeft>
@@ -129,11 +129,11 @@ If the content includes a chart, consider using a Productive card instead.
 ### 3. Action bar (optional)
 <Row>
 <Column colMd={8} colLg={8}>
-Use an action bar to include buttons that take the user to the card's related content. Use action bars only if the card is not clickable and avoid using more than two buttons. 
+Use an action bar to include buttons that take the user to the card’s related content. Use action bars only if the card is not clickable and avoid using more than two buttons. 
 </Column>
 <Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
   <Aside>
-Use up to two levels of actions hierarchy, do not use Terciary buttons. 
+Use up to two levels of actions hierarchy, do not use tertiary buttons. 
   </Aside>
 </Column>
 </Row>
@@ -141,7 +141,7 @@ Use up to two levels of actions hierarchy, do not use Terciary buttons.
 <Accordion>
   <AccordionItem title="Button size">
 
-Use field size buttons in all Expressive cards
+Use medium size buttons in all expressive cards
 
 <br></br>
 
@@ -156,13 +156,13 @@ Use field size buttons in all Expressive cards
 <br></br>
 <br></br>
 
-  _Button specifications_
+_Button specifications_
 
 <br></br>
 
 | Button size | Height (px/rem)   | Use case |
 | :---------- | :---------------- | :------------- |
-| Field    | 40 / 2.5            | Use when the card is not clickable or there is more than one CTA. |
+| Medium      | 40 / 2.5            | Use when the card is not clickable or there is more than one CTA. |
 
 <br></br>
 
@@ -175,17 +175,18 @@ Use field size buttons in all Expressive cards
 
 _Singular action_
 
-Alignment of a singular primary or ghost button will always be to the right of the Expressive card for all sizes. 
+Alignment of a singular primary or ghost button will always be to the right of the expressive card for all sizes. 
 
 ![Button single](../images/single-button-aligment.png)
 
   <br></br>
-  Button specifications
+
+  _Button specifications_
 
 | Button kind | Button size   | Use case |
-| :---------- | :---------------- | :------------- |
-| Primary   | Field          | Use when the card is not clickable and the action needs to be highlighted. Avoid using multiple cards with primary buttons in one layout. |
-| Ghost    | Field         | Use when the card is not clickable and the action needs to be labeled.|
+| :---------- | :------------ | :------------- |
+| Primary     | Medium        | Use when the card is not clickable and the action needs to be highlighted. Avoid using multiple cards with primary buttons in one layout. |
+| Ghost       | Medium        | Use when the card is not clickable and the action needs to be labeled.|
 
 
 </Column>
@@ -209,10 +210,10 @@ When the card is small, buttons secondary and primary buttons take full width.
 
 ![twobuttons](../images/ghost-primary.png)
 
-Button widths
+_Button widths_
 
-| Variation | Small | Medium | Large | Max |
-| :---- | :----- | :---- | :-- |
+| Variation | Small | Medium | Large |
+| :-------- | :---- | :----- | :---- |
 | Secondary and primary | 100%  | Maintain button size aligned to the right. | Maintain button size aligned to the right. | 
 | Ghost and primary | Maintain button size aligned to the right. | Maintain button size aligned to the right. | Maintain button size aligned to the right. |
 
@@ -232,11 +233,13 @@ Button widths
 ### 3. Media (optional)
 <Row>
 <Column colMd={8} colLg={8}>
-Use pictograms, illustrations, photography or videos in Expressive cards to support the card’s context or highlight a call to action.
+Use pictograms, illustrations, photography, or videos in expressive cards to support the card’s context or highlight a call to action.
 </Column>
 <Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
   <Aside>
-Maintain consistency of style, ratio and placement across cards in a layout.
+
+Maintain consistency of style, ratio, and placement across cards in a layout.
+
   </Aside>
 </Column>
 </Row>
@@ -244,7 +247,7 @@ Maintain consistency of style, ratio and placement across cards in a layout.
 <Accordion>
   <AccordionItem title="Ratio">
 
-Use common aspect ratios, such as 16:9, 4:3, 3:2, 2:1 and 1:1 for photography, illustrations and videos. The content and intent of the visual determine its ratio and placement in the card.
+Use common aspect ratios, such as 16:9, 4:3, 3:2, 2:1 and 1:1 for photography, illustrations, and videos. The content and intent of the visual determine its ratio and placement in the card.
 
 <br></br>
 
@@ -299,7 +302,7 @@ Use a 1:1 ratio for launch action indicators in the bottom right of card. Only u
 
 _Aligment_
 
-Align all media to the **top** or **left** of the card except for lauch indicators which are aligned to the bottom right of the card's body content.
+Align all media to the **top** or **left** of the card except for lauch indicators which are aligned to the bottom right of the card’s body content.
 
 <GifPlayer color='dark'>
 
@@ -321,7 +324,7 @@ Align all media to the **top** or **left** of the card except for lauch indicato
 
 _Images with background_
 
-Illustrations with color background, photography or videos should be full bleed.  
+Illustrations with color background, photography, or videos should be full bleed.  
 
 ![Images with background](../images/imagebg-1.png)
 
@@ -390,13 +393,13 @@ To learn more about pictograms and icon and illustration usage see:
 
 <br></br>
 
-[IBM's design language](https://www.ibm.com/design/language/iconography/ui-icons/library)
+[IBM’s design language](https://www.ibm.com/design/language/iconography/ui-icons/library)
 
 
-[Carbon for Could & Cognitive](https://pages.github.ibm.com/cdai-design/pal/illustrations/library)
+[Carbon for IBM Products illustration guidance](https://pages.github.ibm.com/cdai-design/pal/illustrations/library)
 
 
-[Carbon's pictogram guidance ](https://www.carbondesignsystem.com/guidelines/pictograms/library)
+[Carbon’s pictogram guidance ](https://www.carbondesignsystem.com/guidelines/pictograms/library)
 <br></br>
 
 
@@ -408,13 +411,13 @@ To learn more about pictograms and icon and illustration usage see:
 
 ## Sizing
 
-The Carbon's 2x grid determines card width; the content defines the height. There are four sizes of cards to use according to the use case need and layout.
+The Carbon 2x grid determines card width; the content defines the height. There are four sizes of cards to use according to the use case need and layout.
 
 <Accordion>
 
   <AccordionItem title="Small">
 
-  Use this size as the standard size for most of the Expressive cards.
+  Use this size as the standard size for most of the expressive cards.
 <br></br>
 <Row>
 <Column colMd={8} colLg={8}>
@@ -434,13 +437,13 @@ The Carbon's 2x grid determines card width; the content defines the height. Ther
 <Column colMd={8} colLg={8}>
 
 
-| Breakpoint | Percentage width | Column span | Padding| 
-| :---------- | :---------- | :------ | :-------------------- | 
-| 1584          | 25%          | 4 of 16           | 16px/ 1rem        | 
-| 1312          | 25%           | 4 of 16            | 16px/ 1rem        | 
-| 1056          | 25%           | 4 of 16           | 16px/ 1rem        | 
-| 672         | 50%           | 4 of 8            | 16px/ 1rem        | 
-| 320        | 100%           | 4 of 4           | 16px/ 1rem        | 
+| Breakpoint | Percentage width | Column span | Padding    | 
+| :--------- | :--------------- | :---------- | :--------- | 
+| 1584       | 25%              | 4 of 16     | 16px/ 1rem | 
+| 1312       | 25%              | 4 of 16     | 16px/ 1rem | 
+| 1056       | 25%              | 4 of 16     | 16px/ 1rem | 
+| 672        | 50%              | 4 of 8      | 16px/ 1rem | 
+| 320        | 100%             | 4 of 4      | 16px/ 1rem | 
 
 
 </Column>
@@ -450,7 +453,7 @@ The Carbon's 2x grid determines card width; the content defines the height. Ther
 
   <AccordionItem title="Medium">
 
-  Use this size for more essential call-outs. Large size works well for Expressive cards that require more than two levels of CTA or large media.
+  Use this size for more essential callouts. Large size works well for expressive cards that require more than two levels of CTA or large media.
 
 <br></br>
 <Row>
@@ -473,13 +476,13 @@ The Carbon's 2x grid determines card width; the content defines the height. Ther
 
 
 
-| Breakpoint | Percentage width | Column span | Padding | 
-| :---------- | :---------- | :------ | :-------------------- | 
-| 1584          | 50%          | 8 of 16           | 16px/ 1rem        | 
-| 1312          | 50%           | 8 of 16            | 16px/ 1rem        | 
-| 1056          | 50%           | 8 of 16           | 16px/ 1rem        | 
-| 672         | 100%           | 8 of 8            | 16px/ 1rem        | 
-| 320        | 100%           | 4 of 4           | 16px/ 1rem        | 
+| Breakpoint | Percentage width | Column span | Padding    | 
+| :--------- | :--------------- | :---------- | :--------- | 
+| 1584       | 50%              | 8 of 16     | 16px/ 1rem | 
+| 1312       | 50%              | 8 of 16     | 16px/ 1rem | 
+| 1056       | 50%              | 8 of 16     | 16px/ 1rem | 
+| 672        | 100%             | 8 of 8      | 16px/ 1rem | 
+| 320        | 100%             | 4 of 4      | 16px/ 1rem | 
 
 
 </Column>
@@ -489,8 +492,10 @@ The Carbon's 2x grid determines card width; the content defines the height. Ther
 
   <AccordionItem title="Large">
 
-  Use large cards when there is multiple levels of information hierarchy or larger media.
+  Use large cards when there are multiple levels of information hierarchy or larger media.
+
 <br></br>
+
 <Row>
 <Column colMd={8} colLg={8}>
 
@@ -509,13 +514,13 @@ The Carbon's 2x grid determines card width; the content defines the height. Ther
 <Column colMd={8} colLg={8}>
 
 
-| Breakpoint | Percentage width | Column span | Padding | 
-| :---------- | :---------- | :------ | :-------------------- | 
-| 1584          | 75%          | 12 of 16           | 16px/ 1rem        | 
-| 1312          | 75%           | 12 of 16            | 16px/ 1rem        | 
-| 1056          | 75%           | 12 of 16           | 16px/ 1rem        | 
-| 672         | 100%           | 8 of 8            | 16px/ 1rem        | 
-| 320        | 100%           | 4 of 4           | 16px/ 1rem        | 
+| Breakpoint | Percentage width | Column span | Padding    | 
+| :--------- | :--------------- | :---------- | :--------- | 
+| 1584       | 75%              | 12 of 16    | 16px/ 1rem | 
+| 1312       | 75%              | 12 of 16    | 16px/ 1rem | 
+| 1056       | 75%              | 12 of 16    | 16px/ 1rem | 
+| 672        | 100%             | 8 of 8      | 16px/ 1rem | 
+| 320        | 100%             | 4 of 4      | 16px/ 1rem | 
 
 
 </Column>
@@ -525,7 +530,7 @@ The Carbon's 2x grid determines card width; the content defines the height. Ther
 
   <AccordionItem title="Max">
 
-  Use 16 column cards for larget call to actions, avoid using more than one max card in one layout. Consider adapting the card's content in smaller screen sizes.
+  Use 16 column cards for large calls to action, and avoid using more than one max card in a layout. Consider adapting the card’s content in smaller screen sizes.
 <br></br>
 <Row>
 <Column colMd={8} colLg={8}>
@@ -545,13 +550,13 @@ The Carbon's 2x grid determines card width; the content defines the height. Ther
 <Column colMd={8} colLg={8}>
 
 
-| Breakpoint | Percentage width | Column span | Padding | 
-| :---------- | :---------- | :------ | :-------------------- | 
-| 1584          | 100%          | 16 of 16           | 16px/ 1rem        | 
-| 1312          | 100%           | 16 of 16            | 16px/ 1rem        | 
-| 1056          | 100%           | 16 of 16           | 16px/ 1rem        | 
-| 672         | 100%           | 8 of 8            | 16px/ 1rem        | 
-| 320        | 100%           | 4 of 4           | 16px/ 1rem        | 
+| Breakpoint | Percentage width | Column span | Padding    | 
+| :--------- | :--------------- | :---------- | :--------- | 
+| 1584       | 100%             | 16 of 16    | 16px/ 1rem |  
+| 1312       | 100%             | 16 of 16    | 16px/ 1rem | 
+| 1056       | 100%             | 16 of 16    | 16px/ 1rem | 
+| 672        | 100%             | 8 of 8      | 16px/ 1rem | 
+| 320        | 100%             | 4 of 4      | 16px/ 1rem | 
 
 
 </Column>
@@ -563,28 +568,7 @@ The Carbon's 2x grid determines card width; the content defines the height. Ther
 </Accordion>
 
 
-For more information around the 2x grid visit [Carbon's guidelines](https://www.carbondesignsystem.com/guidelines/2x-grid/overview).
-
-
-## Theming
-
-Expresive cards use the same UI tokens for Grey 10 and Grey 100 themes. 
-
-<Row>
-<Column colMd={8} colLg={8}>
-
-![Theming](../images/theming-expressive.png)
-
-<br></br>
-
-| BG-color | Hover  | Focus             | 
-| :------- | :------------- | :------------------ |
-| `$ui-01`   | `$hover-ui` | `$focus` |
-
-For more guidance around themes visit [Carbon's color guidelines](https://www.carbondesignsystem.com/guidelines/color/usage).
-
-</Column>
-</Row>
+For more information around the 2x grid, visit [Carbon’s guidelines](https://www.carbondesignsystem.com/guidelines/2x-grid/overview).
 
 
 <br></br>
