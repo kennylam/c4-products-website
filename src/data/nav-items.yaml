@@ -238,26 +238,26 @@
       path: /cloud-paks/cross-pak-switcher/usage
     - title: 'Integrated interactions'
       path: /cloud-paks/integrated-framework/overview
-- title: 'SaaS for hyperscalers'
+- title: 'PLG and MultiCloud SaaS'
   pages:
     - title: Overview
-      path: /saas-for-hyperscalers/overview
+      path: /plg-and-multicloud-saas/overview
     - title: User scenarios
-      path: /saas-for-hyperscalers/user-scenarios
+      path: /plg-and-multicloud-saas/user-scenarios
     - title: Discover
-      path: /saas-for-hyperscalers/discover
+      path: /plg-and-multicloud-saas/discover
     - title: Learn
-      path: /saas-for-hyperscalers/learn
+      path: /plg-and-multicloud-saas/learn
     - title: Try
-      path: /saas-for-hyperscalers/try
+      path: /plg-and-multicloud-saas/try
     - title: Buy
-      path: /saas-for-hyperscalers/buy
+      path: /plg-and-multicloud-saas/buy
     - title: Use
-      path: /saas-for-hyperscalers/use
+      path: /plg-and-multicloud-saas/use
     - title: Support
-      path: /saas-for-hyperscalers/support
+      path: /plg-and-multicloud-saas/support
     - title: Patterns and components
-      path: /saas-for-hyperscalers/common-patterns-components
+      path: /plg-and-multicloud-saas/common-patterns-components
 - title: 'AI Design'
   pages:
     - title: Overview
