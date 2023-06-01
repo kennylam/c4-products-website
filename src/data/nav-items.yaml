@@ -241,23 +241,23 @@
 - title: 'PLG and MultiCloud SaaS'
   pages:
     - title: Overview
-      path: /plg-and-multicloud-saas/overview
+      path: /saas-for-hyperscalers/overview
     - title: User scenarios
-      path: /plg-and-multicloud-saas/user-scenarios
+      path: /saas-for-hyperscalers/user-scenarios
     - title: Discover
-      path: /plg-and-multicloud-saas/discover
+      path: /saas-for-hyperscalers/discover
     - title: Learn
-      path: /plg-and-multicloud-saas/learn
+      path: /saas-for-hyperscalers/learn
     - title: Try
-      path: /plg-and-multicloud-saas/try
+      path: /saas-for-hyperscalers/try
     - title: Buy
-      path: /plg-and-multicloud-saas/buy
+      path: /saas-for-hyperscalers/buy
     - title: Use
-      path: /plg-and-multicloud-saas/use
+      path: /saas-for-hyperscalers/use
     - title: Support
-      path: /plg-and-multicloud-saas/support
+      path: /saas-for-hyperscalers/support
     - title: Patterns and components
-      path: /plg-and-multicloud-saas/common-patterns-components
+      path: /saas-for-hyperscalers/common-patterns-components
 - title: 'AI Design'
   pages:
     - title: Overview
