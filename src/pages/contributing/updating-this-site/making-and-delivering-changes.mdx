@@ -42,30 +42,33 @@ For information about key GitHub terms and workflow, see [Understanding GitHub t
 
 1. Ensure you have your local development environment running. If not, see [Start the development server](./one-time-set-up#start-the-development-server).
 
+
 2. Open the local clone of the `/pal` repository in VS Code.
+
 
 3. Create a new branch.
 
   a. Click on the name of the current branch (probably `main`) shown in the bottom-left corner of VS Code.
   
-  ![Image of UI to use](../images/5.png)
+  ![Screenshot showing branch name "main"](../images/5.png)
 
   b. Click on **Create new branch...** and specify a name for the branch. Branch names must not include any 
   spaces; use dashes instead.
 
-![Image of UI to use](../images/6.png)
+  ![Screenshot showing where to click to create a new branch](../images/6.png)
 
-<InlineNotification kind="info">
+  <InlineNotification kind="info">
 
-When choosing a branch name, do be specific — for example:<br />
-`updating-card-pattern-to-include-icons`<br />
-And if relevant, include the associated issue number:<br />
-`issue-45/enhancement-to-button-pattern`
+  When choosing a branch name, do be specific — for example:<br />
+  `updating-card-pattern-to-include-icons`<br />
+  And if relevant, include the associated issue number:<br />
+  `issue-45/enhancement-to-button-pattern`
 
-</InlineNotification>
+  </InlineNotification>
 
-You should now see the new branch listed in the bottom-left corner of VS Code.
-![Image of UI to use](../images/7.png)
+  You should now see the new branch listed in the bottom-left corner of VS Code.
+
+  ![Screenshot showing example of new name](../images/7.png)
 
 <InlineNotification kind="warning">
 
@@ -81,106 +84,107 @@ See also: [Move your changes to a different branch](./troubleshooting#move-your-
 
 1. Ensure that your development server is running. If it's not, then start it by running the command:
 
-```
-npm run dev
-```
+  ```
+  npm run dev
+  ```
 
 2. Open <http://localhost:8000/> in your browser. This should display your local version of the site.
+
+
 3. Now it's time to make some edits.
 
-<InlineNotification kind="info">
+  <InlineNotification kind="info">
 
-If this is your first time making any changes, we suggest you experiment using the **Testing** file/page that
-we have created for this purpose.<br />
-However, the process is the same, regardless of the file/page you are editing.
+  If this is your first time making any changes, we suggest you experiment using the **Testing** file/page that
+  we have created for this purpose.<br />
+  However, the process is the same, regardless of the file/page you are editing.
 
-</InlineNotification>
+  </InlineNotification>
 
-a. In the left-hand **Explorer** pane in VS Code, find and open the `src/pages/testing.mdx` file.
+  a. In the left-hand **Explorer** pane in VS Code, find and open the `src/pages/testing.mdx` file.
 
-b. Make some edits to the file (for example, add some new text).
+  b. Make some edits to the file (for example, add some new text).
 
-<InlineNotification kind="warning">
+  <InlineNotification kind="warning">
 
-Note that at the top of MDX files, there is a special section starting and ending with `---`.
-This contains meta information for the page. Unless you're really sure what you are doing, do not edit this section.
+  Note that at the top of MDX files, there is a special section starting and ending with `---`.
+  This contains meta information for the page. Unless you're really sure what you are doing, do not edit this section.
 
-</InlineNotification>
+  </InlineNotification>
 
 4. To see the effect of your edits, in your browser, navigate to the **Testing** page: <http://localhost:8000/testing>
    (or whatever page you edited) to verify your changes.
 
+
 5. Review your changes.
 
-a. In the left-hand toolbar in VS Code, the **Source Control** tab should have a visual indication as to the
-number of files you have changed. Click on this **Source Control** tab to see the list of files you've changed.
+  a. In the left-hand toolbar in VS Code, the **Source Control** tab should have a visual indication as to the number of files you have changed. Click on this **Source Control** tab to see the list of files you've changed.
 
-![Image of UI to use](../images/10c.png)
+  ![Screenshot of changed files with focus in the Source Control tab](../images/10c.png)
 
-b. If you click on an individual file in the left pane, you will see the actual changes you made highlighted
-in the right-hand pane:
+  b. If you click on an individual file in the left pane, you will see the actual changes you made highlighted in the right-hand pane:
 
-![Image of UI to use](../images/11.png)
+  ![Screenshot showing changes made to the file](../images/11.png)
 
 6. Add to Sidebar before submitting the changes.
 
-a. You will need to submit an issue titled **Add to left hand nav**. The issue needs to contain the wording of the left hand navigation item, as well as the location it should occupy within the left hand navigation.
-For example: If your page is called Canvas your message should be similar to the following. "Please place Canvas in the Patterns section between Create flows and Breadcrumbs."
+  a. You will need to submit an issue titled **Add to left hand nav**. The issue needs to contain the wording of the left hand navigation item, as well as the location it should occupy within the left hand navigation.
+  For example: If your page is called Canvas your message should be similar to the following. "Please place Canvas in the Patterns section between Create flows and Breadcrumbs."
 
-b. Assign either [Drew Glapa](https://github.ibm.com/Drew-Glapa) or [Krista Starr](https://github.ibm.com/Krista-Starr) to the issue so that either one will take care of adding the new page to the left hand navigation.
+  b. Assign either [Drew Glapa](https://github.ibm.com/Drew-Glapa) or [Krista Starr](https://github.ibm.com/Krista-Starr) to the issue so that either one will take care of adding the new page to the left hand navigation.
 
-c. Once the PR is approved (usually within 1-2 business days) your new page will be accessible from the left hand navigation.
+  c. Once the PR is approved (usually within 1-2 business days) your new page will be accessible from the left hand navigation.
 
 ## Commit your changes
 
 1. If you are happy with the changes that you have made, the next step is to commit them and push (upload) the
   branch to the main repository.
 
-a. Stage each of the files you wish to push by clicking the plus to the right of it:
+  a. Stage each of the files you wish to push by clicking the plus to the right of it:
 
-    ![Image of UI to use](../images/12b.png)
+  ![Screenshot showing where to click to stage a file](../images/12b.png)
 
-b. Commit the changes by adding a commit message to the text box and clicking the
+  b. Commit the changes by adding a commit message to the text box and clicking the
 checkmark / tick icon positioned above the text input field.<br />
 
-<InlineNotification kind="info">
+  <InlineNotification kind="info">
 
-**NOTE:** Commit messages should be prefixed with <br />
-`feat:` a new 'big' feature we want to track (new components, new patterns etc)<br />
-`chore:` small changes we don’t want to track (text changes that do not result in a new asset, etc)<br />
-`style:` visual changes that do not affect the meaning of the code (white-space, formatting etc)<br /><br />
-Some examples of good commit messages:<br />
-`feat(pattern): add export pattern`<br />
-`feat(component): add new page header component`<br />
-`feat(page): add page for data table nested rows`<br />
-`feat(component, page): add color picker component and page`<br />
-`feat(pattern, needs code): add new data table extension`<br />
-`feat(website enhancement): add new landing page animation`<br />
-`feat(terminology): added new definition to terminology page`<br />
-`feat(guidelines): grid or color theme that we extrapolate from Carbon`<br />
-`feat(design kit): added new component to Figma kit`<br />
-`chore: alphabetize asset index`<br />
-`chore: fix typo on faq page`<br />
-`style: change image sizes for keyboard nav page`
+  **NOTE:** Commit messages should be prefixed with <br />
+  `feat:` a new 'big' feature we want to track (new components, new patterns etc)<br />
+  `chore:` small changes we don’t want to track (text changes that do not result in a new asset, etc)<br />
+  `style:` visual changes that do not affect the meaning of the code (white-space, formatting etc)<br /><br />
+  Some examples of good commit messages:<br />
+  `feat(pattern): add export pattern`<br />
+  `feat(component): add new page header component`<br />
+  `feat(page): add page for data table nested rows`<br />
+  `feat(component, page): add color picker component and page`<br />
+  `feat(pattern, needs code): add new data table extension`<br />
+  `feat(website enhancement): add new landing page animation`<br />
+  `feat(terminology): added new definition to terminology page`<br />
+  `feat(guidelines): grid or color theme that we extrapolate from Carbon`<br />
+  `feat(design kit): added new component to Figma kit`<br />
+  `chore: alphabetize asset index`<br />
+  `chore: fix typo on faq page`<br />
+  `style: change image sizes for keyboard nav page`
 
-</InlineNotification>
+  </InlineNotification>
 
-![Image of UI to use](../images/13.png)
+  ![Screenshot showing a commit message with correct prefix](../images/13.png)
 
-c. Push your changes by clicking on the cloud or up arrow icon in the bottom-left of the VS Code window.
+  c. Push your changes by clicking on the cloud or up arrow icon in the bottom-left of the VS Code window.
 (Which icon you see depends on whether or not you have already pushed changes to a branch).
 If clicking on the cloud you will be asked to select where to send the changes. Select 'origin'.
 
-    ![Image of UI to use](../images/14.png)
+  ![Screenshot showing the cloud icon](../images/14.png)
 
-    ![Image of UI to use](../images/15.png)
+  ![Screenshot showing selection of branch to push to](../images/15.png)
 
-    You will see a spinner in the bottom-left of the VS Code window until the push is complete.
+  You will see a spinner in the bottom-left of the VS Code window until the push is complete.
 
-    Note: If you've already pushed changes to this branch previously, you'll see an icon showing an
-    up and a down arrow instead:
+  Note: If you've already pushed changes to this branch previously, you'll see an icon showing an
+  up and a down arrow instead:
 
-    ![Image of UI to use](../images/16.png)
+  ![IScreenshot showing the up - down arrow icon](../images/16.png)
 
 ## Submit a pull request
 
@@ -191,65 +195,57 @@ will cause them to be deployed to the site).
   a. Go to the main repository <https://github.ibm.com/CDAI-design/pal/> and click on the **Compare & pull request** button, 
   which should appear any time you have recently uploaded changes:
 
-![Image of UI to use](../images/17.png)
+  ![Screenshot of Github UI "Compare and pull request" button](../images/17.png)
 
-If it does not you can achieve the same result by clicking on the **Pull requests** tab and then clicking
-the **Create pull request** button.
+  If it does not you can achieve the same result by clicking on the **Pull requests** tab and then clicking
+  the **Create pull request** button.
 
-![Image of UI to use](../images/18.png)
+  ![Screenshot of Github UI "Create pull request" button](../images/18.png)
 
-b. Give the pull request a meaningful title and capture relevant information in the **Description** field.
+  b. Give the pull request a meaningful title and capture relevant information in the **Description** field.
 
-<InlineNotification kind="info">
+  <InlineNotification kind="info">
 
-Providing a good summary detailing the purpose of the PR and what changes it includes is really important and will help your reviewer.<br />
-See the example PR and template text below.
+  Providing a good summary detailing the purpose of the PR and what changes it includes is really important and will help your reviewer.<br />
+  See the example PR and template text below.
 
-</InlineNotification>
+  </InlineNotification>
 
-<Accordion>
-  <AccordionItem title="Example of a clear, well written pull request">
+  #### Example of a clear, well written pull request
 
-![Screenshot of an example pull request, containing relevant details](../images/Example_PR.png)
+  ![Screenshot of an example pull request, containing relevant details](../images/Example_PR.png)
 
-  </AccordionItem>
-  <AccordionItem title="Pull request template text you can copy and paste">
+  #### Pull request template text you can copy and paste
 
-```
-## Description
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
+      ## Description
+      Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
 
-Fixes #(issue)
+      Fixes #(issue)
 
-## Type of change
+      ## Type of change
 
-Please delete options that are not relevant and add an "x" into the option that is.
+      Please delete options that are not relevant and add an "x" into the option that is.
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
-```
+      - [ ] Bug fix (non-breaking change which fixes an issue)
+      - [ ] New feature (non-breaking change which adds functionality)
+      - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+      - [ ] This change requires a documentation update
 
-  </AccordionItem>
-</Accordion>
+  <InlineNotification kind="warning">
 
-<InlineNotification kind="warning">
+  Please use one of the newly added labels: `pattern`, `component`, `page`, `needs code`, `guidelines`, `design kit`, `chore`, `style` so that reviewers can easily filter the PRs by type.
 
-Please use one of the newly added labels: `pattern`, `component`, `page`, `needs code`, `guidelines`, `design kit`, `chore`, `style` so that reviewers can easily filter the PRs by type.
+  </InlineNotification>
 
-</InlineNotification>
+  c. From the **Reviewers** section in the right-hand pane, select an appropriate colleague.<br />
+  (Hint: You might want to ask them via Slack first 😉)
 
-c. From the **Reviewers** section in the right-hand pane, select an appropriate colleague.<br />
-(Hint: You might want to ask them via Slack first 😉)
+  d. If the reviewer approves your pull request and the automated build checks complete successfully, the **Squash and merge** button will be green and enabled. Click this to merge your changes into the main branch.   
 
-d. If the reviewer approves your pull request and the automated build checks complete successfully, the
-**Squash and merge** button will be green and enabled. Click this to merge your changes into the main branch.
-
-![Image of UI to use](../images/19.png)
-
-e. A new, full deployment build will now automatically run. You can view the status of such Travis builds
-for the site here: <https://travis.ibm.com/CDAI-design/pal/builds/>.
+  ![Screenshot of Github "Squash and merge" button](../images/19.png)
+    
+  e. A new, full deployment build will now automatically run. You can view the status of such Travis builds
+  for the site here: <https://travis.ibm.com/CDAI-design/pal/builds/>.
 
 #### Congratulations! 🙌
 
