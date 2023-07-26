@@ -93,3 +93,10 @@ html {
     margin: 0;
   }
 }
+
+// Fix for 404 page backgroud
+.container-404 {
+  main.container--homepage {
+    background: $background;
+  }
+}

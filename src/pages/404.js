@@ -10,6 +10,6 @@ const links = [
   { href: '/walkme-guide/overview/overview', text: 'WalkMe guide' },
 ];
 
-const Custom404 = () => <FourOhFour links={links} />;
+const Custom404 = () => <div className={`container-404`}><FourOhFour links={links} /></div>;
 
 export default Custom404;
