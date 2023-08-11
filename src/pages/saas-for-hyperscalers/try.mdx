@@ -7,7 +7,7 @@ import { Link } from "gatsby";
 
 <PageDescription>
 
-People need to evaluate if a solution is the best option for them, gain expertise ana get their questions answered. An engaging trial experience that provides an accurate demonstration of the product capabilities can increase the trial conversion, and boost brand equity.
+People need to evaluate if a solution is the best option for them, gain expertise and get their questions answered. An engaging trial experience that provides an accurate demonstration of the product capabilities can increase the trial conversion, and boost brand equity.
 
 </PageDescription>
 
@@ -17,7 +17,6 @@ People need to evaluate if a solution is the best option for them, gain expertis
   <AnchorLink>URX and IBMid</AnchorLink>
   <AnchorLink>Signup and provision</AnchorLink>
   <AnchorLink>Related</AnchorLink>
-  <AnchorLink>Design resources</AnchorLink>
   <AnchorLink>References</AnchorLink>
 </AnchorLinks>
 
@@ -109,6 +108,230 @@ The URX form used for SaaS product trail sign up should use the following templa
 6. **Hyperscaler cloud provider logo:** This logo should be displayed if the user launches the sign up flow from one of the hyperscaler marketplaces.
 7. **Product highlight:** Concise product highlight that helps reinforce user's trial signup decision
 
+
+
+## IBMid log in (URX form)
+
+This flow allows users to access their product or Try experience and applies to non-IBM Cloud products provisioned through IBM. 
+
+### User encounters log in screen
+
+The user is prompted to enter their IBMid/ email address. The user can either manually enter this information or utilize browser autofill functionalities. 
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Login Screen 1](images/URX-Login/URX-Login-Screen-1.png)
+
+  </Column>
+</Row>
+
+1. **Create an IBMid link:** Directs user to the IBMid account creation form (URX)
+2. **Existing IBMid field** 
+3. **Continue button:** Remains disabled until IBMid has been entered and validated
+4. **Remember IBMid:** User can optionally select for their browser to remember their IBMid faster login in the future
+5. **Forgot IBMid link**  
+6. **Support link**
+
+### Email validation and password field
+
+The system verifies that the email address is registered to an IBMid. Once validated, the user is presented with a field to enter their password. 
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Login Screen 4](images/URX-Login/URX-Login-Screen-4.png)
+
+  </Column>
+</Row>
+
+1. **Load indicator:** Replaces the Continue button once clicked before loading the password screen
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Login Screen 5](images/URX-Login/URX-Login-Screen-5.png)
+
+  </Column>
+</Row>
+
+1. **Account label:** Indicates the account the user is logging into, as entered on previous screen
+2. **Password field** 
+3. **Log in button:** Remains disabled until password has been entered 
+4. ** Forgot password link:** Allows user to reset their password
+
+
+### User enters their password and logs in
+
+The user may manually enter their account password or utilize their browser’s saved password autofill functionality. Once submitted, their password is validated and the user is logged in to their account.
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Login Screen 8](images/URX-Login/URX-Login-Screen-8.png)
+
+  </Column>
+</Row>
+
+1. **Load indicator:** Replaces the Log in button once clicked before redirecting the user into the product or Try experience 
+
+
+
+## URX Sandbox Trial, Trial, and Freemium registration flow
+
+This flow allows users to sign up for a Sandbox Trial, Trial, or Freemium account for products that are provisioned on IBM Marketplace and are not IBM Cloud products. In signing up for a Try experience, users will be creating an IBMid (unless they already have one).
+
+### Navigating to the Try experience sign-up page
+
+There are multiple ways a user can navigate to a Try experience registration form. The most common is from the marketing site, where users can click on a CTA on the homepage, navigation, or interior site pages.
+
+<InlineNotification kind="info">
+
+**Note:** Users cannot access the URX registration form via the IBM Cloud Catalog because the Cloud Catalog only includes products that are provisioned on IBM Cloud. If this is the case, its Try experience would be registered via the IBM Cloud registration form (pattern coming soon).
+
+</InlineNotification>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Sandbox Trial Freemium CTA Screen](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-CTA-Screen.png)
+
+  </Column>
+</Row>
+
+### Registration process
+
+There are three unique scenarios for the first step which are dependent on whether the user already has an IBMid or needs to create one. 
+
+1. Users without an IBMid can enter the account information and create a new IBMid.
+
+2. Users without an IBMid can use the LinkedIn auto-fill option to enter their account information and create a new IBMid. 
+
+3. Users who already have an IBMid can log in and register for the product-specific Try experience. 
+
+<br></br>
+
+<Tabs>
+
+<Tab label="User needs to create an IBMid">
+
+Users who do not have an existing IBMid are prompted to continue through the registration process, including the following steps:
+
+- **Password creation:** In order to maintain platform and account security, stringent password requirements are enforced. The user is presented with these requirements in real time upon clicking into the field, which are automatically checked off as they are met.
+
+- **Email validation:** A verifcation code is sent to the user’s email which must be entered in the email verification field to confirm the user's identity and ownership of their account.
+
+- **Notice and choice acknowledgement:** The notice and choice widget is used to obtain consent to contact the user by email and/or phone. 
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX-Sandbox-Trial-Freemium-Screen-1](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX-Sandbox-Trial-Freemium-Screen-3](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-3.png)
+
+  </Column>
+</Row>
+
+1. **Log in link:** Users who already have an IBMid can log in directly
+2. **Autofill with LinkedIn:** Users have the ability to autofill their first name, last name, and email address using their LinkedIn account information
+3. **Pictograms and benefits:** Content and pictograms are determined by the product teams and should explain the value proposition in two lines or less (excluding titles) and be limited to four bullet points per form. Designers must leverage the [IBM pictogram library](https://www.ibm.com/design/language/iconography/pictograms/library/).
+4. ** Password field:** Password requirements are displayed upon clicking into the field
+5. **Create account button:** Remains disabled until all fields have been filled 
+
+<br></br>
+<br></br>
+
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX-Sandbox-Trial-Freemium-Screen-5](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-5.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX-Sandbox-Trial-Freemium-Screen-7](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-7.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+1. **Log in link:** Users who already have an IBMid can log in directly
+2. **Verification code:** Users are emailed a verification code which must be confirmed in this field
+3. **Resend code button:** If users do not receive the verification code, they may request a new one here
+4. ** Notice and choice widget:** Users review the terms and conditions and set their contact consent selections
+5. **Create account button:** Remains disabled until all fields and checkboxes have been filled
+
+<br></br>
+
+</Tab>
+
+<Tab label="User creates account using LinkedIn autofill">
+
+Users who do not have an existing IBMid can choose to use the LinkedIn autofill feature on the page. This feature will automatically fill the user's first name, last name, and email address for the user based on the information in their LinkedIn profile. 
+
+<br></br>
+
+If the user is not logged into LinkedIn at the time of selecting the autofill functionality, they will be prompted to log in so that IBM can access their profile information. After their information from LinkedIn is populated, the user must then follow all of the same steps laid out in the previous tab.
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX-Sandbox-Trial-Freemium-Screen-1A](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-1A.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+1. **Autofill browser modal:** Upon clicking Autofill with LinkedIn, a browser permissions modal appears for users to allow LinkedIn to autofill their account details
+
+<br></br>
+
+
+</Tab>
+
+<Tab label="User already has an IBMid">
+
+Users who already have an IBMid are redirected to the IBMid log in page as outlined [here](#ibmid-log-in-(urx-form)).
+
+</Tab>
+
+
+</Tabs>
+
+### Successful registration
+
+Upon successfully registering for their account or Try experience, the user is redirected into the product. The next time the user logs in, they will be redirected to the IBMid log in page as outlined [here](#ibmid-log-in-(urx-form)). 
+
+<InlineNotification kind="warning">
+
+**Note:** Pattern currently in development
+
+</InlineNotification>
+
+
 ## Signup and provision
 
 The user will go through the IBMid signup (URX form) and trial instance provisioning in a sequential manner.
@@ -159,7 +382,7 @@ User may provide the needed information on the screen right away. However, they 
   </Column>
 </Row>
 
-<InlineNotification>
+<InlineNotification kind="info">
 
 **Note:** The instance provisioning information screen is not part of the URX form. However, in order to provide a seamless experience to the user, the same product trial sign-up panel should be used.
 
@@ -205,6 +428,646 @@ An email will be sent to the user once the provisioning process is complete. Use
     actionIcon="launch"
   ></MiniCard>
 </CardGroup>{" "}
+
+
+## Multi-factor authentication enrollment
+
+Multi-factor authentication requires users to complete an additional layer of identification beyond their username and password to enhance security. Users can choose from five verification options and can configure more than one.
+
+Multi-factor authentication can be implemented for all products and Try experiences and is up to the discretion of product teams when to incorporate into the registration flow. If implemented, the multi-factor authentication enrollment page will appear as the final step of the registration flow.
+
+### User encounters multi-factor authentication enrollment screen
+
+The user is prompted to select at least one of the following multi-factor authentication methods to begin enrollment as part of their first time accessing a product. 
+
+- IBM Security Verify app
+
+- Third-party verification apps
+
+- Built-in device sensor(s) (biometric)
+
+- Physical security key
+
+- Email verification.
+
+
+### Selecting multi-factor authentication method
+
+The user can choose from five different authentication methods (IBM Security Verify app, Authenticator app, Built-in device sensor, Physical security key, or Email). The following steps will depend on the user's authentication method(s) of choice.
+
+<Tabs>
+
+<Tab label="IBM Security Verify app">
+
+Users who select authentication through the IBM Security Verify app are presented with the following screens and instructions to walk them through the registration process. 
+
+<br></br>
+
+Upon successful registration using the IBM Security Verify App, the user is presented with the successful enrollment screen. If the user changes their mind or is unable to enroll using this method, they may click Use another method to go back to the initial screen.
+
+<br></br>
+
+<InlineNotification kind="info">
+
+**Note:** This method requires the use of a mobile device that is installed with an IBM Security Verify application.
+
+</InlineNotification>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Choose-method-Security-Verify-app](images/Multi-factor-authentication/Choose-method-Security-Verify-app.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-verify-1](images/Multi-factor-authentication/Security-verify-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-verify-2](images/Multi-factor-authentication/Security-verify-2.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-verify-3](images/Multi-factor-authentication/Security-verify-3.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-verify-4](images/Multi-factor-authentication/Security-verify-4.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-verify-5](images/Multi-factor-authentication/Security-verify-5.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-verify-success](images/Multi-factor-authentication/Security-verify-success.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+
+</Tab>
+
+<Tab label="Authenticator app">
+
+Users who select authentication through a third-party authenticator app are presented with the following screens and instructions to walk them through the registration process. 
+
+<br></br>
+
+Upon successful registration using a third-party authenticator app, the user is presented with the successful enrollment screen. If the user changes their mind or is unable to enroll using this method, they may click Use another method to go back to the initial screen.
+
+<br></br>
+
+<InlineNotification kind="info">
+
+**Note:** This method requires the use of a mobile device with a compatible authenticator application installed.
+
+</InlineNotification>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Choose-method-Authentication-app](images/Multi-factor-authentication/Choose-method-Authentication-app.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Authentication-app-1](images/Multi-factor-authentication/Authentication-app-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Authentication-app-2](images/Multi-factor-authentication/Authentication-app-2.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Authentication-app-3](images/Multi-factor-authentication/Authentication-app-3.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Authentication-app-4](images/Multi-factor-authentication/Authentication-app-4.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Authentication-app-success](images/Multi-factor-authentication/Authentication-app-success.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+</Tab>
+
+<Tab label="Built-in device sensor">
+
+Users who select authentication through a built-in sensor are presented with the following screens and instructions to walk them through the registration process. 
+
+<br></br>
+
+Upon successful registration and naming their built-in sensor enabled device, the user is presented with the successful enrollment screen. If the user changes their mind or is unable to enroll using this method, they may click Use another method to go back to the initial screen.
+
+<br></br>
+
+<InlineNotification kind="info">
+
+**Note:** This method requires a compatible device with a built-in sensor, such as a Macbook with TouchID enabled.
+
+</InlineNotification>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Choose-method-Authentication-sensor](images/Multi-factor-authentication/Choose-method-Authentication-sensor.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device-sensor-1](images/Multi-factor-authentication/Device-sensor-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device-sensor-2](images/Multi-factor-authentication/Device-sensor-2.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device-sensor-3](images/Multi-factor-authentication/Device-sensor-3.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device-sensor-4](images/Multi-factor-authentication/Device-sensor-4.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device-sensor-5](images/Multi-factor-authentication/Device-sensor-5.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device-sensor-success](images/Multi-factor-authentication/Device-sensor-success.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+</Tab>
+
+<Tab label="Physical security key">
+
+Users who select authentication through a physical security key are presented with the following screens and instructions to walk them through the registration process. 
+
+<br></br>
+
+Upon successful registration and naming their physical security key device, the user is presented with the successful enrollment screen. If the user changes their mind or is unable to enroll using this method, they may click Use another method to go back to the initial screen.
+
+<br></br>
+
+<InlineNotification kind="info">
+
+**Note:** This method requires the use of a physical hardware security key (e.g. Yubikey).
+
+</InlineNotification>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Choose-method-Security-key](images/Multi-factor-authentication/Choose-method-Security-key.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-key-1](images/Multi-factor-authentication/Security-key-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-key-2](images/Multi-factor-authentication/Security-key-2.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-key-3](images/Multi-factor-authentication/Security-key-3.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-key-4](images/Multi-factor-authentication/Security-key-4.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-key-5](images/Multi-factor-authentication/Security-key-5.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-key-6](images/Multi-factor-authentication/Security-key-6.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-key-7](images/Multi-factor-authentication/Security-key-7.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-key-8](images/Multi-factor-authentication/Security-key-8.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security-key-success](images/Multi-factor-authentication/Security-key-success.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+
+</Tab>
+
+<Tab label="Email">
+
+Users who select authentication using an email address are presented with the following screens and instructions to walk them through the registration process. 
+
+<br></br>
+
+After entering their email address and requesting a verification code, the user is sent an automated email. Upon receiving and entering the verification code into the input field, the user is presented with the successful enrollment screen. If the user changes their mind or is unable to enroll using this method, they may click Use another method to go back to the initial screen.
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Choose-method-email](images/Multi-factor-authentication/Choose-method-Email.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Email-1](images/Multi-factor-authentication/Email-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Email-2](images/Multi-factor-authentication/Email-2.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Email-3](images/Multi-factor-authentication/Email-3.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Email-4](images/Multi-factor-authentication/Email-4.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Email-success](images/Multi-factor-authentication/Email-success.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+</Tab>
+
+</Tabs>
+
+<InlineNotification kind="warning">
+
+**Note:** Pattern currently in development
+
+</InlineNotification>
+
+
+## Try experience upgrade
+
+This flow is intended to provides users with a self-service upgrade path from a Sandbox Trial or Trial. As a product team, you can use the steps listed below to upgrade a user’s Try experience.
+
+### Navigating to the upgrade options
+
+The upgrade pattern must be visible for Sandbox Trial and Trial users. 
+
+The starting point of the flow is when the user is using a Try experience and hovers over the Days remaining indicator and clicks View purchase options.  
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![In-product-upgrade-screen-1](images/In-Product-Upgrade/In-product-upgrade-screen-1.png)
+
+  </Column>
+</Row>
+
+1. **Days remaining in Try experience:** Persistent indicator shows user the number of days remaining in their Try experience and clicking on the indicator opens a modal below
+
+<br></br>
+
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![In-product-upgrade-screen-2](images/In-Product-Upgrade/In-product-upgrade-screen-2.png)
+
+  </Column>
+</Row>
+
+1. **Trial end text:** Trial end date is displayed to user
+2. **View purchase options button:** User can access in-product upgrade and pricing screen at any time from this screen
+
+<br></br>
+
+
+### Selecting a plan
+
+The user can view their current plan, compare costs, and select the plan that suits their needs within the pricing table. 
+
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![In-product-upgrade-screen-4A](images/In-Product-Upgrade/In-product-upgrade-screen-4A.png)
+
+  </Column>
+</Row>
+
+1. **Current plan indicator**
+2. **Features:** This column lists the plan's available features which should be value-focused and specific to individual plans for easy comparison 
+3. **Selected plan indicator:** Indicates the plan the user has selected to upgrade to
+4. **Pricing:** May be listed per feature, per month, or per user
+5. **Upgrade button:** Remains disabled until a new plan in selected
+
+
+
+### Choosing a payment method
+
+The user is prompted to enter their credit card and the billing information.
+
+<Tabs>
+<Tab label="Payment saved screen">
+
+If the user has already added their credit card information (e.g. the card they entered during registration), the payment screen will display the saved credit card and the associated billing details. The user has the option to use the saved credit card or add a new one.
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![In-product-upgrade-screen-6](images/In-Product-Upgrade/In-product-upgrade-screen-6.png)
+
+  </Column>
+</Row>
+
+1. **Saved payment method:** User already has a payment method saved to their account
+2. **Order summary:** A summary of billing line items is shown to the user to estimate costs associated with upgrade 
+3. **Upgrade button:** Remains disabled until a valid payment method is selected
+
+
+</Tab>
+
+<Tab label="New card">
+
+The user can add a new credit card by clicking Add a new payment method.  
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![In-product-upgrade-screen-9](images/In-Product-Upgrade/In-product-upgrade-screen-9.png)
+
+  </Column>
+</Row>
+
+1. **New payment method:** User must add a new payment method to their account before proceeding with upgrade
+2. **Order summary:** A summary of billing line items is shown to the user to estimate costs associated with upgrade 
+3. **Upgrade button:** Remains disabled until a valid payment method is selected
+
+</Tab>
+
+<Tab label="New card billing information">
+
+The user is asked to provide the associated billing information for their new credit card. The user can click the Add payment method button to save their new card details.
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![In-product-upgrade-screen-10](images/In-Product-Upgrade/In-product-upgrade-screen-10.png)
+
+  </Column>
+</Row>
+
+1. **New payment method billing details:** User must enter their billing details for their new payment method
+2. **Order summary:** A summary of billing line items is shown to the user to estimate costs associated with upgrade 
+3. **Upgrade button:** Remains disabled until a valid payment method is selected
+
+
+</Tab>
+
+</Tabs>
+
+### Successful upgrade 
+
+After the user has saved and/or selected their payment method, they can proceed with the upgrade. 
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![In-product-upgrade-success-screen](images/In-Product-Upgrade/In-product-upgrade-success-screen.png)
+
+  </Column>
+</Row>
+
+<InlineNotification kind="warning">
+
+**Note:** Pattern currently in development
+
+</InlineNotification>
+
+<br></br>
 
 ## Related
 
