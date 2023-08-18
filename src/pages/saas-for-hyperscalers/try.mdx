@@ -15,7 +15,12 @@ People need to evaluate if a solution is the best option for them, gain expertis
   <AnchorLink>Types of trial</AnchorLink>
   <AnchorLink>Launch points</AnchorLink>
   <AnchorLink>URX and IBMid</AnchorLink>
+  <AnchorLink>IBMid log in (URX form)</AnchorLink>
+  <AnchorLink>URX Sandbox Trial, Trial, and Freemium registration flow</AnchorLink>
   <AnchorLink>Signup and provision</AnchorLink>
+  <AnchorLink>Multi-factor authentication enrollment</AnchorLink>
+  <AnchorLink>Try experience upgrade</AnchorLink>
+  <AnchorLink>Try experience components</AnchorLink>
   <AnchorLink>Related</AnchorLink>
   <AnchorLink>References</AnchorLink>
 </AnchorLinks>
@@ -42,10 +47,12 @@ If trial is time-bound, a [trial period count down widget](https://pages.github.
   <Column colMd={8} colLg={10}>
 
 ![time-bound trial](images/NonTimeBoundTrial.png)
-If trial is not time-bound, a Buy button is displayed in the global header
 
   </Column>
 </Row>
+
+If trial is not time-bound, a Buy button is displayed in the global header
+
 
 ### Test drive
 
@@ -56,10 +63,11 @@ Test drive is an assigned, pre-configured environment that allowed users to try 
   <Column colMd={6} colLg={6}>
 
 ![time-bound trial](images/TestDrive.png)
-Access Test Drive from Azure Marketplace
 
   </Column>
 </Row>
+
+Access Test Drive from Azure Marketplace
 
 ## Launch points
 
@@ -79,10 +87,11 @@ User can sign up for the SaaS product trial through the different product market
 
 ** AWS Marketplace **
 ![time-bound trial](images/ProductDetails1.png)
-When user clicks on the "Try for Free" button in AWS product listing, they need to sign into their AWS Marketplace account first and create a $0 contract through AWS. At the end of the transaction, they will be provided a link to configure their account with IBM. See the <a target="_blank" href="https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-saas-products.html#saas-free-trials-for-contracts">documentation on AWS Marketplace</a> for details
 
   </Column>
 </Row>
+
+When user clicks on the "Try for Free" button in AWS product listing, they need to sign into their AWS Marketplace account first and create a $0 contract through AWS. At the end of the transaction, they will be provided a link to configure their account with IBM. See the <a target="_blank" href="https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-saas-products.html#saas-free-trials-for-contracts">documentation on AWS Marketplace</a> for details
 
 ## URX and IBMid
 
@@ -109,10 +118,13 @@ The URX form used for SaaS product trail sign up should use the following templa
 7. **Product highlight:** Concise product highlight that helps reinforce user's trial signup decision
 
 
-
 ## IBMid log in (URX form)
 
 This flow allows users to access their product or Try experience and applies to non-IBM Cloud products provisioned through IBM. 
+
+#### Example
+
+Reference this product agnostic [IBMid login example](https://login.ibm.com/idaas/mtfim/sps/idaas/login?client_id=ZTY0MDc5OGUtOTE3OC00&Ta[…]d458-4b83-9372-4fd592b92bd8%26client_id%3DZTY0MDc5OGUtOTE3OC00) to see how this flow can be used in practice.
 
 ### User encounters log in screen
 
@@ -121,7 +133,7 @@ The user is prompted to enter their IBMid/ email address. The user can either ma
 <Row>
   <Column colMd={8} colLg={10}>
 
-![URX Login Screen 1](images/URX-Login/URX-Login-Screen-1.png)
+![URX Login Screen](images/URX-Login/URX-Login-Screen-1.png)
 
   </Column>
 </Row>
@@ -140,7 +152,7 @@ The system verifies that the email address is registered to an IBMid. Once valid
 <Row>
   <Column colMd={8} colLg={10}>
 
-![URX Login Screen 4](images/URX-Login/URX-Login-Screen-4.png)
+![URX Login Screen with email](images/URX-Login/URX-Login-Screen-4.png)
 
   </Column>
 </Row>
@@ -152,7 +164,7 @@ The system verifies that the email address is registered to an IBMid. Once valid
 <Row>
   <Column colMd={8} colLg={10}>
 
-![URX Login Screen 5](images/URX-Login/URX-Login-Screen-5.png)
+![URX Login Screen with password](images/URX-Login/URX-Login-Screen-5.png)
 
   </Column>
 </Row>
@@ -170,7 +182,7 @@ The user may manually enter their account password or utilize their browser’s 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![URX Login Screen 8](images/URX-Login/URX-Login-Screen-8.png)
+![URX Login Screen logging in](images/URX-Login/URX-Login-Screen-8.png)
 
   </Column>
 </Row>
@@ -182,6 +194,10 @@ The user may manually enter their account password or utilize their browser’s 
 ## URX Sandbox Trial, Trial, and Freemium registration flow
 
 This flow allows users to sign up for a Sandbox Trial, Trial, or Freemium account for products that are provisioned on IBM Marketplace and are not IBM Cloud products. In signing up for a Try experience, users will be creating an IBMid (unless they already have one).
+
+#### Example
+
+Reference this product agnostic [IBMid registration example]( https://www.ibm.com/account/reg/us-en/signup?formid=urx-19776&target=https%3A%2F%2[…]319-9762-4be6-b91f-9745e9e30625%26client_id%3DMyIBMDallasProdCI) to see how this flow can be used in practice.
 
 ### Navigating to the Try experience sign-up page
 
@@ -230,7 +246,7 @@ Users who do not have an existing IBMid are prompted to continue through the reg
 <Row>
   <Column colMd={8} colLg={10}>
 
-![URX-Sandbox-Trial-Freemium-Screen-1](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-1.png)
+![URX Sandbox Trial Freemium create IBMid](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-1.png)
 
   </Column>
 </Row>
@@ -240,7 +256,7 @@ Users who do not have an existing IBMid are prompted to continue through the reg
 <Row>
   <Column colMd={8} colLg={10}>
 
-![URX-Sandbox-Trial-Freemium-Screen-3](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-3.png)
+![URX Sandbox Trial Freemium add password](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-3.png)
 
   </Column>
 </Row>
@@ -254,11 +270,10 @@ Users who do not have an existing IBMid are prompted to continue through the reg
 <br></br>
 <br></br>
 
-
 <Row>
   <Column colMd={8} colLg={10}>
 
-![URX-Sandbox-Trial-Freemium-Screen-5](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-5.png)
+![URX Sandbox Trial Freemium add password](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-5.png)
 
   </Column>
 </Row>
@@ -268,7 +283,7 @@ Users who do not have an existing IBMid are prompted to continue through the reg
 <Row>
   <Column colMd={8} colLg={10}>
 
-![URX-Sandbox-Trial-Freemium-Screen-7](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-7.png)
+![URX Sandbox Trial Freemium verify](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-7.png)
 
   </Column>
 </Row>
@@ -298,7 +313,7 @@ If the user is not logged into LinkedIn at the time of selecting the autofill fu
 <Row>
   <Column colMd={8} colLg={10}>
 
-![URX-Sandbox-Trial-Freemium-Screen-1A](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-1A.png)
+![URX Sandbox Trial Freemium linkedin autofill](images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-1A.png)
 
   </Column>
 </Row>
@@ -309,7 +324,6 @@ If the user is not logged into LinkedIn at the time of selecting the autofill fu
 
 <br></br>
 
-
 </Tab>
 
 <Tab label="User already has an IBMid">
@@ -317,7 +331,6 @@ If the user is not logged into LinkedIn at the time of selecting the autofill fu
 Users who already have an IBMid are redirected to the IBMid log in page as outlined [here](#ibmid-log-in-(urx-form)).
 
 </Tab>
-
 
 </Tabs>
 
@@ -478,7 +491,7 @@ Upon successful registration using the IBM Security Verify App, the user is pres
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Choose-method-Security-Verify-app](images/Multi-factor-authentication/Choose-method-Security-Verify-app.png)
+![Choose method Security Verify app](images/Multi-factor-authentication/Choose-method-Security-Verify-app.png)
 
   </Column>
 </Row>
@@ -488,7 +501,7 @@ Upon successful registration using the IBM Security Verify App, the user is pres
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-verify-1](images/Multi-factor-authentication/Security-verify-1.png)
+![Security verify connect your account](images/Multi-factor-authentication/Security-verify-1.png)
 
   </Column>
 </Row>
@@ -498,7 +511,7 @@ Upon successful registration using the IBM Security Verify App, the user is pres
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-verify-2](images/Multi-factor-authentication/Security-verify-2.png)
+![Security verify QR code](images/Multi-factor-authentication/Security-verify-2.png)
 
   </Column>
 </Row>
@@ -508,7 +521,7 @@ Upon successful registration using the IBM Security Verify App, the user is pres
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-verify-3](images/Multi-factor-authentication/Security-verify-3.png)
+![Security verify QR code enabled](images/Multi-factor-authentication/Security-verify-3.png)
 
   </Column>
 </Row>
@@ -518,7 +531,7 @@ Upon successful registration using the IBM Security Verify App, the user is pres
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-verify-4](images/Multi-factor-authentication/Security-verify-4.png)
+![Security verify pending](images/Multi-factor-authentication/Security-verify-4.png)
 
   </Column>
 </Row>
@@ -528,7 +541,7 @@ Upon successful registration using the IBM Security Verify App, the user is pres
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-verify-5](images/Multi-factor-authentication/Security-verify-5.png)
+![Security verify add additional method](images/Multi-factor-authentication/Security-verify-5.png)
 
   </Column>
 </Row>
@@ -538,7 +551,7 @@ Upon successful registration using the IBM Security Verify App, the user is pres
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-verify-success](images/Multi-factor-authentication/Security-verify-success.png)
+![Security verify success](images/Multi-factor-authentication/Security-verify-success.png)
 
   </Column>
 </Row>
@@ -569,7 +582,7 @@ Upon successful registration using a third-party authenticator app, the user is 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Choose-method-Authentication-app](images/Multi-factor-authentication/Choose-method-Authentication-app.png)
+![Choose method authentication app](images/Multi-factor-authentication/Choose-method-Authentication-app.png)
 
   </Column>
 </Row>
@@ -579,7 +592,7 @@ Upon successful registration using a third-party authenticator app, the user is 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Authentication-app-1](images/Multi-factor-authentication/Authentication-app-1.png)
+![Authentication app connect](images/Multi-factor-authentication/Authentication-app-1.png)
 
   </Column>
 </Row>
@@ -589,7 +602,7 @@ Upon successful registration using a third-party authenticator app, the user is 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Authentication-app-2](images/Multi-factor-authentication/Authentication-app-2.png)
+![Authentication app QR code](images/Multi-factor-authentication/Authentication-app-2.png)
 
   </Column>
 </Row>
@@ -599,7 +612,7 @@ Upon successful registration using a third-party authenticator app, the user is 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Authentication-app-3](images/Multi-factor-authentication/Authentication-app-3.png)
+![Authentication app enter passcode](images/Multi-factor-authentication/Authentication-app-3.png)
 
   </Column>
 </Row>
@@ -609,7 +622,7 @@ Upon successful registration using a third-party authenticator app, the user is 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Authentication-app-4](images/Multi-factor-authentication/Authentication-app-4.png)
+![Authentication app additional method](images/Multi-factor-authentication/Authentication-app-4.png)
 
   </Column>
 </Row>
@@ -619,7 +632,7 @@ Upon successful registration using a third-party authenticator app, the user is 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Authentication-app-success](images/Multi-factor-authentication/Authentication-app-success.png)
+![Authentication app success](images/Multi-factor-authentication/Authentication-app-success.png)
 
   </Column>
 </Row>
@@ -649,7 +662,7 @@ Upon successful registration and naming their built-in sensor enabled device, th
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Choose-method-Authentication-sensor](images/Multi-factor-authentication/Choose-method-Authentication-sensor.png)
+![Choose method Authentication sensor](images/Multi-factor-authentication/Choose-method-Authentication-sensor.png)
 
   </Column>
 </Row>
@@ -659,7 +672,7 @@ Upon successful registration and naming their built-in sensor enabled device, th
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Device-sensor-1](images/Multi-factor-authentication/Device-sensor-1.png)
+![Device sensor touch id](images/Multi-factor-authentication/Device-sensor-1.png)
 
   </Column>
 </Row>
@@ -669,7 +682,7 @@ Upon successful registration and naming their built-in sensor enabled device, th
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Device-sensor-2](images/Multi-factor-authentication/Device-sensor-2.png)
+![Device sensor connect device](images/Multi-factor-authentication/Device-sensor-2.png)
 
   </Column>
 </Row>
@@ -679,7 +692,7 @@ Upon successful registration and naming their built-in sensor enabled device, th
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Device-sensor-3](images/Multi-factor-authentication/Device-sensor-3.png)
+![Device sensor google chrome password](images/Multi-factor-authentication/Device-sensor-3.png)
 
   </Column>
 </Row>
@@ -689,7 +702,7 @@ Upon successful registration and naming their built-in sensor enabled device, th
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Device-sensor-4](images/Multi-factor-authentication/Device-sensor-4.png)
+![Device sensor name your device](images/Multi-factor-authentication/Device-sensor-4.png)
 
   </Column>
 </Row>
@@ -699,7 +712,7 @@ Upon successful registration and naming their built-in sensor enabled device, th
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Device-sensor-5](images/Multi-factor-authentication/Device-sensor-5.png)
+![Device sensor additional method](images/Multi-factor-authentication/Device-sensor-5.png)
 
   </Column>
 </Row>
@@ -709,7 +722,7 @@ Upon successful registration and naming their built-in sensor enabled device, th
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Device-sensor-success](images/Multi-factor-authentication/Device-sensor-success.png)
+![Device sensor success](images/Multi-factor-authentication/Device-sensor-success.png)
 
   </Column>
 </Row>
@@ -739,7 +752,7 @@ Upon successful registration and naming their physical security key device, the 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Choose-method-Security-key](images/Multi-factor-authentication/Choose-method-Security-key.png)
+![Choose method Security key](images/Multi-factor-authentication/Choose-method-Security-key.png)
 
   </Column>
 </Row>
@@ -749,7 +762,7 @@ Upon successful registration and naming their physical security key device, the 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-key-1](images/Multi-factor-authentication/Security-key-1.png)
+![Security key connect device](images/Multi-factor-authentication/Security-key-1.png)
 
   </Column>
 </Row>
@@ -759,7 +772,7 @@ Upon successful registration and naming their physical security key device, the 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-key-2](images/Multi-factor-authentication/Security-key-2.png)
+![Security key plug in](images/Multi-factor-authentication/Security-key-2.png)
 
   </Column>
 </Row>
@@ -769,7 +782,7 @@ Upon successful registration and naming their physical security key device, the 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-key-3](images/Multi-factor-authentication/Security-key-3.png)
+![Security key verify](images/Multi-factor-authentication/Security-key-3.png)
 
   </Column>
 </Row>
@@ -779,7 +792,7 @@ Upon successful registration and naming their physical security key device, the 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-key-4](images/Multi-factor-authentication/Security-key-4.png)
+![Security key use key](images/Multi-factor-authentication/Security-key-4.png)
 
   </Column>
 </Row>
@@ -789,7 +802,7 @@ Upon successful registration and naming their physical security key device, the 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-key-5](images/Multi-factor-authentication/Security-key-5.png)
+![Security key pin required](images/Multi-factor-authentication/Security-key-5.png)
 
   </Column>
 </Row>
@@ -799,7 +812,7 @@ Upon successful registration and naming their physical security key device, the 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-key-6](images/Multi-factor-authentication/Security-key-6.png)
+![Security key enter](images/Multi-factor-authentication/Security-key-6.png)
 
   </Column>
 </Row>
@@ -809,7 +822,7 @@ Upon successful registration and naming their physical security key device, the 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-key-7](images/Multi-factor-authentication/Security-key-7.png)
+![Security key name device](images/Multi-factor-authentication/Security-key-7.png)
 
   </Column>
 </Row>
@@ -819,7 +832,7 @@ Upon successful registration and naming their physical security key device, the 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-key-8](images/Multi-factor-authentication/Security-key-8.png)
+![Security key additional method](images/Multi-factor-authentication/Security-key-8.png)
 
   </Column>
 </Row>
@@ -829,7 +842,7 @@ Upon successful registration and naming their physical security key device, the 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Security-key-success](images/Multi-factor-authentication/Security-key-success.png)
+![Security key success](images/Multi-factor-authentication/Security-key-success.png)
 
   </Column>
 </Row>
@@ -852,7 +865,7 @@ After entering their email address and requesting a verification code, the user 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Choose-method-email](images/Multi-factor-authentication/Choose-method-Email.png)
+![Choose method email](images/Multi-factor-authentication/Choose-method-Email.png)
 
   </Column>
 </Row>
@@ -862,7 +875,7 @@ After entering their email address and requesting a verification code, the user 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Email-1](images/Multi-factor-authentication/Email-1.png)
+![Enter email](images/Multi-factor-authentication/Email-1.png)
 
   </Column>
 </Row>
@@ -872,7 +885,7 @@ After entering their email address and requesting a verification code, the user 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Email-2](images/Multi-factor-authentication/Email-2.png)
+![Email verification code](images/Multi-factor-authentication/Email-2.png)
 
   </Column>
 </Row>
@@ -882,7 +895,7 @@ After entering their email address and requesting a verification code, the user 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Email-3](images/Multi-factor-authentication/Email-3.png)
+![Email enter code](images/Multi-factor-authentication/Email-3.png)
 
   </Column>
 </Row>
@@ -892,7 +905,7 @@ After entering their email address and requesting a verification code, the user 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Email-4](images/Multi-factor-authentication/Email-4.png)
+![Email additional method](images/Multi-factor-authentication/Email-4.png)
 
   </Column>
 </Row>
@@ -902,7 +915,7 @@ After entering their email address and requesting a verification code, the user 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![Email-success](images/Multi-factor-authentication/Email-success.png)
+![Email success](images/Multi-factor-authentication/Email-success.png)
 
   </Column>
 </Row>
@@ -935,7 +948,7 @@ The starting point of the flow is when the user is using a Try experience and ho
 <Row>
   <Column colMd={8} colLg={10}>
 
-![In-product-upgrade-screen-1](images/In-Product-Upgrade/In-product-upgrade-screen-1.png)
+![In product upgrade days remaining](images/In-Product-Upgrade/In-product-upgrade-screen-1.png)
 
   </Column>
 </Row>
@@ -948,7 +961,7 @@ The starting point of the flow is when the user is using a Try experience and ho
 <Row>
   <Column colMd={8} colLg={10}>
 
-![In-product-upgrade-screen-2](images/In-Product-Upgrade/In-product-upgrade-screen-2.png)
+![In product upgrade view purchase options](images/In-Product-Upgrade/In-product-upgrade-screen-2.png)
 
   </Column>
 </Row>
@@ -967,7 +980,7 @@ The user can view their current plan, compare costs, and select the plan that su
 <Row>
   <Column colMd={8} colLg={10}>
 
-![In-product-upgrade-screen-4A](images/In-Product-Upgrade/In-product-upgrade-screen-4A.png)
+![In product upgrade select a plan](images/In-Product-Upgrade/In-product-upgrade-screen-4A.png)
 
   </Column>
 </Row>
@@ -982,10 +995,9 @@ The user can view their current plan, compare costs, and select the plan that su
 
 ### Choosing a payment method
 
-The user is prompted to enter their credit card and the billing information.
-
+The user is prompted to enter or select their credit card and the billing information. The process the user follows will vary depending on whether they have a saved payment method on file or need to add a new payment method. 
 <Tabs>
-<Tab label="Payment saved screen">
+<Tab label="Payment method saved">
 
 If the user has already added their credit card information (e.g. the card they entered during registration), the payment screen will display the saved credit card and the associated billing details. The user has the option to use the saved credit card or add a new one.
 
@@ -994,7 +1006,7 @@ If the user has already added their credit card information (e.g. the card they 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![In-product-upgrade-screen-6](images/In-Product-Upgrade/In-product-upgrade-screen-6.png)
+![In product upgrade payment saved](images/In-Product-Upgrade/In-product-upgrade-screen-6.png)
 
   </Column>
 </Row>
@@ -1006,7 +1018,7 @@ If the user has already added their credit card information (e.g. the card they 
 
 </Tab>
 
-<Tab label="New card">
+<Tab label="Add new payment method">
 
 The user can add a new credit card by clicking Add a new payment method.  
 
@@ -1015,7 +1027,7 @@ The user can add a new credit card by clicking Add a new payment method.
 <Row>
   <Column colMd={8} colLg={10}>
 
-![In-product-upgrade-screen-9](images/In-Product-Upgrade/In-product-upgrade-screen-9.png)
+![In product upgrade new payment method](images/In-Product-Upgrade/In-product-upgrade-screen-9.png)
 
   </Column>
 </Row>
@@ -1024,9 +1036,7 @@ The user can add a new credit card by clicking Add a new payment method.
 2. **Order summary:** A summary of billing line items is shown to the user to estimate costs associated with upgrade 
 3. **Upgrade button:** Remains disabled until a valid payment method is selected
 
-</Tab>
-
-<Tab label="New card billing information">
+<br></br>
 
 The user is asked to provide the associated billing information for their new credit card. The user can click the Add payment method button to save their new card details.
 
@@ -1035,7 +1045,7 @@ The user is asked to provide the associated billing information for their new cr
 <Row>
   <Column colMd={8} colLg={10}>
 
-![In-product-upgrade-screen-10](images/In-Product-Upgrade/In-product-upgrade-screen-10.png)
+![In product upgrade billing information](images/In-Product-Upgrade/In-product-upgrade-screen-10.png)
 
   </Column>
 </Row>
@@ -1056,7 +1066,7 @@ After the user has saved and/or selected their payment method, they can proceed 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![In-product-upgrade-success-screen](images/In-Product-Upgrade/In-product-upgrade-success-screen.png)
+![In product upgrade success](images/In-Product-Upgrade/In-product-upgrade-success-screen.png)
 
   </Column>
 </Row>
@@ -1067,7 +1077,25 @@ After the user has saved and/or selected their payment method, they can proceed 
 
 </InlineNotification>
 
-<br></br>
+## Try experience components
+
+### Trial countdown
+
+Sandbox Trials and Trials are both time-bound. This means users only have access to the Try experience for a limited number of days. Display this [Sandbox Trial and Trial countdown](https://pages.github.ibm.com/cdai-design/pal/cloud-paks/trial-countdown/usage/) in the global header of your Try experience to ensure users are aware of the time they have left before their offer ends. 
+
+### Navigation on MCSP and Cloud
+
+It’s critical to have an intuitive navigation within your Try experience that is consistent with other IBM products. The navigation component you should use depends on your product. 
+
+- If you’re designing a Try experience for an IBM Cloud product that has not joined MCSP use this [UI navigation](https://pages.github.ibm.com/cdai-design/cloud-pal/cloudpal-guidance/navigation-on-cloud/).
+
+- If you’re designing a Try experience for a product that has joined MCSP use this [UI navigation](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/use-patterns/ui-navigation/). 
+
+### Empty state
+
+According to [Carbon](https://carbondesignsystem.com/patterns/empty-states-pattern/), “empty states are moments in an product or service where there is no data to display to the user”.  Although they are most commonly found when a user first interacts with a product or page, they also can be shown when data is deleted or otherwise unavailable. 
+
+Empty states can be used in all three types of Try offers (Sandbox Trials, Trials, and Freemiums). They should include next steps to help the user populate the corresponding section. Use these steps as an opportunity to educate the user about why a populated section would provide value. Refer to the [empty state](https://pages.github.ibm.com/cdai-design/pal/patterns/empty-state/usage/#content) guidance to learn how to leverage this component in your Try experience. 
 
 ## Related
 
