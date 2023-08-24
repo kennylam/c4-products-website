@@ -69,9 +69,13 @@ Test drive is an assigned, pre-configured environment that allowed users to try 
 
 Access Test Drive from Azure Marketplace
 
-## Launch points
+## AWS registration Trial flow (URX form)
+This flow allows users to create an IBMid using the URX form when provisioning a product on Amazon Web Services (AWS) that use URX form (for example, non-IBM Cloud products). You can use the steps listed below to create an AWS Trial registration flow.
 
-User can sign up for the SaaS product trial through the different product marketing channels, such as IBM.com, AWS Marketplace, and Azure Marketplace
+### Launch points
+The user can sign up for the AWS SaaS product trial through IBM.com or the AWS marketplace.
+
+When a user clicks on the **Try for Free** button on the AWS product listing, they need to sign into their AWS Marketplace account first and create a free contract through AWS. At the end of the transaction, they will be provided a link to configure their account with IBM through this registration page. See the <a target="_blank" href="https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-saas-products.html#saas-free-trials-for-contracts">documentation on AWS Marketplace</a> for more information.
 
 <Row>
   <Column colMd={8} colLg={10}>
@@ -82,6 +86,7 @@ User can sign up for the SaaS product trial through the different product market
   </Column>
 </Row>
 
+
 <Row>
   <Column colMd={8} colLg={10}>
 
@@ -91,31 +96,44 @@ User can sign up for the SaaS product trial through the different product market
   </Column>
 </Row>
 
-When user clicks on the "Try for Free" button in AWS product listing, they need to sign into their AWS Marketplace account first and create a $0 contract through AWS. At the end of the transaction, they will be provided a link to configure their account with IBM. See the <a target="_blank" href="https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-saas-products.html#saas-free-trials-for-contracts">documentation on AWS Marketplace</a> for details
 
-## URX and IBMid
+### URX and IBMid
+Before users can access an IBM SaaS product or a product trial, they must first be authenticated with IBMid. A user can create a new IBMid or login to an IBMid using the standard Unified Registration Experience (URX) form for products not hosted on the IBM Cloud catalog. The URX form collects and validates the user’s account information, and records the user’s consent to opt in to email communication, data privacy policy, and acknowledgement of product terms and conditions. When a user is provisioning an IBM product through AWS, they will receive this specific AWS URX registration form.
 
-Before user can access an IBM SaaS product or a product trial, user must first be authenticated with IBMid. User can create a new IBMid using the standard URX (Unified Registration Experience) form.
+<InlineNotification kind="info">
 
-The URX form collects and validate the user's account information, and record the user's consensus in email communication, data privacy policy, and product terms and conditions. This form should not be modified by individual product teams. However, on the URX form page, there is a configurable panel that can be used to provide product specific information.
+**Note:** Product teams must use the required fields listed here, but may choose to add additional fields from a limited selection such as “Are you a student?” and “Company name” to the right side of the URX form page. In addition, on the left side of the URX form page, there is a configurable panel that can be used to provide product specific information.
 
-The URX form used for SaaS product trail sign up should use the following template:
+</InlineNotification>
+
+
+### IBMid registration process
+There are three unique scenarios for registering an IBMid based on whether the user already has an IBMid or needs to create one: 
+1. Users who already have an IBMid can login and register for the product-specific trial. 
+2. Users without an IBMid can use the LinkedIn auto-fill option to enter their account information and create a new IBMid. 
+3. Users without an IBMid can enter their account information and create a new IBMid.
+
+
+### URX form
+The URX form used for SaaS product trial sign up for products being provisioned on AWS should use the following template.
 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![time-bound trial](images/URX-anatomy.png)
+** URX form **
+![time-bound trial](images/IBMidAWS.png)
 
   </Column>
 </Row>
 
-1. **Sign up for IBMid form (not customizable)**
-2. **Product trial sign up panel (customizable):** Product team can customize the contents in this panel
-3. **Product icon:** Application icon should be used
-4. **Product name**
-5. **Sub-headline:** "Start your x-day trial"
+
+1. **Product name**
+2. **Sub-headline:** “Start your x-day trial”.
+3. **IBMid login:** Login option for users with an IBMid.
+4. **Sign up for IBMid form:** Limited customization is allowed. Teams may elect to add optional fields such as “Are you a student?” and “Company name”, but the fields shown are the minimum requirement.  
+5. **Product trial sign up panel (customizable):** Product team can customize the contents in this panel.
 6. **Hyperscaler cloud provider logo:** This logo should be displayed if the user launches the sign up flow from one of the hyperscaler marketplaces.
-7. **Product highlight:** Concise product highlight that helps reinforce user's trial signup decision
+
 
 
 ## IBMid log in (URX form)
