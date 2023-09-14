@@ -7,17 +7,20 @@ import { Link } from "gatsby";
 
 <PageDescription>
 
-People need to evaluate if a solution is the best option for them, gain expertise and get their questions answered. An engaging trial experience that provides an accurate demonstration of the product capabilities can increase the trial conversion, and boost brand equity.
+Potential customers need the capability to evaluate whether a product meets their business needs, gain experience using that product, and get any questions answered. An engaging trial experience that provides a clear demonstration of product capabilities increases try to buy conversions and boosts brand equity. 
 
 </PageDescription>
 
 <AnchorLinks>
-  <AnchorLink>Types of trial</AnchorLink>
+  <AnchorLink>Types of trials</AnchorLink>
+  <AnchorLink>AWS Trial registration flow (URX form)</AnchorLink>
   <AnchorLink>Launch points</AnchorLink>
   <AnchorLink>URX and IBMid</AnchorLink>
   <AnchorLink>IBMid log in (URX form)</AnchorLink>
+  <AnchorLink>IBMid logout (URX form)</AnchorLink>
   <AnchorLink>URX Sandbox Trial, Trial, and Freemium registration flow</AnchorLink>
   <AnchorLink>Signup and provision</AnchorLink>
+  <AnchorLink>URX left hand panel</AnchorLink>
   <AnchorLink>Multi-factor authentication enrollment</AnchorLink>
   <AnchorLink>Try experience upgrade</AnchorLink>
   <AnchorLink>Try experience components</AnchorLink>
@@ -25,7 +28,7 @@ People need to evaluate if a solution is the best option for them, gain expertis
   <AnchorLink>References</AnchorLink>
 </AnchorLinks>
 
-## Types of trial
+## Types of trials
 
 To help the potential customer to evaluate the product against their business needs and use cases, different types of trial can be considered to provide the best experience when interacting with IBM.
 
@@ -134,6 +137,11 @@ The URX form used for SaaS product trial sign up for products being provisioned 
 5. **Product trial sign up panel (customizable):** Product team can customize the contents in this panel.
 6. **Hyperscaler cloud provider logo:** This logo should be displayed if the user launches the sign up flow from one of the hyperscaler marketplaces.
 
+<InlineNotification kind="info">
+
+**Note:** For guidance on writing content to include in the left hand panel of URX forms, see [Left hand panel guidance](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/try/#urx-left-hand-panel).
+
+</InlineNotification>
 
 
 ## IBMid log in (URX form)
@@ -217,7 +225,7 @@ The logout pattern is visible to all users within a product provisioned through 
 <Row>
   <Column colMd={8} colLg={10}>
 
-![URX Logout](images/URX-Logout/logout-page.png)
+![URX Logout](images/URX-Logout/logout.png)
 
   </Column>
 </Row>
@@ -407,6 +415,13 @@ Users who already have an IBMid are redirected to the IBMid log in page as outli
 
 Upon successfully registering for their account or Try experience, the user is redirected into the product. The next time the user logs in, they will be redirected to the IBMid log in page as outlined [here](#ibmid-log-in-(urx-form)). 
 
+<InlineNotification kind="info">
+
+**Note:** For guidance on writing content to include in the left hand panel of URX forms, see [Left hand panel guidance](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/try/#urx-left-hand-panel).
+
+</InlineNotification>
+
+
 <InlineNotification kind="warning">
 
 **Note:** Pattern currently in development
@@ -511,6 +526,12 @@ An email will be sent to the user once the provisioning process is complete. Use
   ></MiniCard>
 </CardGroup>{" "}
 
+<InlineNotification kind="info">
+
+**Note:** For guidance on writing content to include in the left hand panel of URX forms, see [Left hand panel guidance](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/try/#urx-left-hand-panel).
+
+</InlineNotification>
+
 ## URX left hand panel
 This flow provides guidance to product teams on what should be added to the URX form for trials. Product teams can use the URX left hand panel as an effective landing page to motivate and remind users the value of enrolling for a trial. Product teams can customize the contents of this panel and add information specific to their products, such as benefits and key features. 
 
@@ -530,6 +551,7 @@ This flow provides guidance to product teams on what should be added to the URX 
 - The list items must explain the the benefits of using the trial.
 - The list items must remind users what they are going to get from signing up for the trial. 
 - The list items must help users to clearly understand the value of using the trial. 
+- The use of additional content beyond bullet points such as images, badges, or animated GIFs is not permitted in URX left hand panels, and cannot be added using the PerForm tool.
 
 ### Guidance for different types of trials
 At IBM we offer three different types of product trial offerings. There are three possible trial formats offered at IBM: Trial, Sandbox Trial, and Freemium. Your product team maybe offering one trial type or a combination of multiple trials. The right approach must ultimately depend on your product, your users, and your business priorities. Therefore, the type of information that you add to the trial landing page will also differ based on the type of trial your product team chooses. 
@@ -574,9 +596,9 @@ Freemium trial gives users access to part of the product or feature for an unlim
 
 ### Product benefits and left hand panel
 
-Here is an example of how the benefits of a product are used to populate the content for the left hand panel. You can see the closeness of benefits between the product marketing page and URX left hand panel for API Connect. Though not 1:1, the ones that make sense have been carried over. Product teams are encouraged to follow this process when creating the content for the left hand panel. 
+Here is an example of how the benefits of a product are used to populate the content for the left hand panel. You can see the closeness of benefits between the product marketing page and URX left hand panel for IBM API Connect. Though not 1:1, the ones that make sense have been carried over. Product teams are encouraged to follow this process when creating the content for the left hand panel. 
 
-** API Connect: benefits **
+** IBM API Connect: benefits **
 <Row>
 
   <Column colMd={8} colLg={10}>
@@ -586,7 +608,7 @@ Here is an example of how the benefits of a product are used to populate the con
   </Column>
 </Row>
 
-** API Connect: left hand panel information **
+** IBM API Connect: left hand panel information **
 <Row>
 
   <Column colMd={8} colLg={10}>
