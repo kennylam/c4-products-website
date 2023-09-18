@@ -24,6 +24,8 @@ Potential customers need the capability to evaluate whether a product meets thei
   <AnchorLink>Multi-factor authentication enrollment</AnchorLink>
   <AnchorLink>Try experience upgrade</AnchorLink>
   <AnchorLink>Try experience components</AnchorLink>
+  <AnchorLink>Change user email</AnchorLink>
+  <AnchorLink>Change user password</AnchorLink>
   <AnchorLink>Related</AnchorLink>
   <AnchorLink>References</AnchorLink>
 </AnchorLinks>
@@ -1346,6 +1348,118 @@ It’s critical to have an intuitive navigation within your Try experience that 
 According to [Carbon](https://carbondesignsystem.com/patterns/empty-states-pattern/), “empty states are moments in an product or service where there is no data to display to the user”.  Although they are most commonly found when a user first interacts with a product or page, they also can be shown when data is deleted or otherwise unavailable. 
 
 Empty states can be used in all three types of Try offers (Sandbox Trials, Trials, and Freemiums). They should include next steps to help the user populate the corresponding section. Use these steps as an opportunity to educate the user about why a populated section would provide value. Refer to the [empty state](https://pages.github.ibm.com/cdai-design/pal/patterns/empty-state/usage/#content) guidance to learn how to leverage this component in your Try experience. 
+
+
+## Change user email
+This email flow enables a user who is logged in to their ibm.com profile to securely change their IBM email address. The emails
+are sent to the user’s contact email address.
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![IBM user profile](images/account-user-profile.png)
+
+</Column>
+</Row>
+
+When the user submits an email address change request, the flow sends two automated emails to verify the identity of
+the requester.
+
+
+### Change verification email
+One email, with a verification code, is sent to the new IBM email address. This email directs the recipient to
+enter the verification code into their IBM profile change request at ibm.com. Their email address (IBMid or
+contact) is not changed until the verification code is entered correctly.
+
+<Row>
+<Column colMd={8} colLg={10}>
+
+Subject: Your IBM email change request
+![Email verification code](images/account-verify-email.png)
+
+</Column>
+</Row>
+
+
+### Change notice email
+A second email is sent to the user’s existing IBM email address to notify them of the profile change request. This
+email directs the user to contact IBM immediately if they did not request a change to their IBM email address.
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Subject: Your IBM email change request
+![Email notice of change request](images/account-email-change.png)
+
+</Column>
+</Row>
+
+
+### Profile updated email
+When triggered by a completed update to their IBM user profile, this email is sent to the user's IBM contact email address. The email
+alerts them to their updated profile.
+
+<Row>
+<Column colMd={8} colLg={10}>
+
+Subject: Your updated IBM profile
+![Email notice of updated profile](images/account-profile-updated.png)
+
+</Column>
+</Row>
+
+
+## Change user password
+This email flow enables a user whose IBM password has expired, or is expiring soon, to securely change or reset their password.
+The emails included in this flow are sent to the user’s contact email address.
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![IBM user profile](images/account-user-profile.png)
+
+</Column>
+</Row>
+
+When activated by a password expiration event, the flow sends the applicable email to prompt the user to either change or reset their
+IBM password.
+
+### Password expiring email
+When triggered by an expiration notice event, this email is sent to the user's IBM contact email address. The email
+alerts them to their approaching password expiration and prompts them to change their password before it expires.
+
+<Row>
+<Column colMd={8} colLg={10}>
+
+![Expiring password email](images/account-pw-expiring.png)
+
+</Column>
+</Row>
+
+### Password expired email
+When triggered by an expired password event, this email is sent to the user's IBM contact email address. The email
+alerts them to their expired password and prompts them to reset their password.
+
+<Row>
+<Column colMd={8} colLg={10}>
+
+![Expired password email](images/account-pw-expired.png)
+
+</Column>
+</Row>
+
+### Profile updated email
+When triggered by a completed update to their IBM user profile, this email is sent to the user's IBM contact email address. The email
+alerts them to their updated profile.
+
+<Row>
+<Column colMd={8} colLg={10}>
+
+![Profile updated email](images/account-profile-updated.png)
+
+</Column>
+</Row>
+
 
 ## Related
 
