@@ -17,7 +17,6 @@ The interstitial screen introduces users to a new experience and sets their expe
    <AnchorLink>Formatting</AnchorLink>
    <AnchorLink>Content</AnchorLink>
    <AnchorLink>Illustration</AnchorLink>
-   <AnchorLink>Behaviors</AnchorLink>
    <AnchorLink>Related</AnchorLink>
 </AnchorLinks>
 
@@ -39,7 +38,7 @@ Interstitial screens can be a full page or an overlay, and are shown on the firs
 
 - To welcome new users to an app and set their expectations around the value the app provides.
 - To introduce a newly purchased add-on or significant update. 
-- To allow the user to tailor their experience to their interests/preferences.
+- To allow the user to tailor their experience to their interests or preferences.
 
 ### When not to use
 
@@ -47,31 +46,19 @@ Interstitial screens can be a full page or an overlay, and are shown on the firs
 - Do not use to highlight a feature that has already been available in the app.
 
 
-<!-- ## Example
-
-<Row>
-<Column colMd={12} colLg={12}>
-
-<Video src="images/interstitial-02.mp4" poster="images/interstitial-02.png" autoPlay loop>
-    <track kind="captions" src="images/interstitial-02.mp4" />
-</Video>
-
-</Column>
-</Row> -->
-
 
 ## Variants
 
 | Variant                 | Purpose                                                                                                                           |
 | ---------               | --------------------------------------------------------------------------------------------------------------------------------- |
-| [Full page](#full-page) | Introduces users to new applications or welcomes users to new application add-ons. They can be single or multi-stepped.                                                                      |
+| [Full page](#full-page) | Introduces users to new applications or welcomes users to new application add-ons.                                                                      |
 | [Overlay](#overlay)     | Introduces users to new experiences inside an application. |
 
 
 ### Full page
 
 The full page interstitial should appear the first time a user has logged into an application, before they land on the product’s 
-homepage. It can have up to 3 steps to outline the key value of the product. When stepped, always allow the user to skip the interstitial flow entirely with a "Skip to homepage" button.
+homepage. It can have up to 5 steps to outline the key value of the product. When stepped, always allow the user to skip the interstitial flow entirely with a "Skip" button.
 
 <Row>
 <Column colMd={12} colLg={12}>
@@ -83,11 +70,9 @@ homepage. It can have up to 3 steps to outline the key value of the product. Whe
 
 ### Overlay
 
-The overlay version of the interstitial should behave much like a modal upon the first time accessing a page where a newly purchased 
-capability or significant update is presented. A brief animated abstract UI illustration to accompany the message should be used if 
-possible. Users can choose to continue to the page by clicking “Got it” or the close button. In usability testing, 
-interstitial overlays performed better when the illustration related to the UI (as opposed to abstract concepts) and the language was 
-direct, succinct, and about what the user needed to do (as opposed to more value-focused language, which was disregarded as an ad). 
+The overlay version of the interstitial should behave much like a modal upon the first time accessing a page where a newly purchased capability or significant update is presented. An illustration to accompany the message should be used if possible. Users can choose to continue to the page by clicking “Got it” or the close button. In usability testing, interstitial overlays performed better when the illustration related to the UI (as opposed to abstract concepts) and the language was direct, succinct, and about what the user needed to do (as opposed to more value-focused language, which was disregarded as an ad). 
+
+The overlay can also have up to 5 steps to outline the key value of the product. When stepped, always allow the user to skip the interstitial flow entirely with a “Skip” button.
 
 <Row>
 <Column colMd={12} colLg={12}>
@@ -110,20 +95,20 @@ direct, succinct, and about what the user needed to do (as opposed to more value
 </Column>
 </Row>
 
-1. **Title:** The title highlights the key value. 
-2. **Body content:** The body content should provide additional context to the title and should give a user a more comprehensive 
-idea of the value the application/experience is going to be providing to their overall workflow.
-3. **Media:** An animated illustration should be used in order to provide additional context to the content.
-4. **Primary button:** The primary button is used to navigate to the next step (if stepped) and/or to continue to the app/page.
-5. **Back button:** If the interstitial uses steps, the back button is needed to navigate to the previous step.
-6. **Skip button:** If the interstitial uses steps, the skip button is used to navigate directly to the homepage (if full page) or 
+1. **Progress indicator header (optional):** The progress indicator header should explain what the progress steps are aiming to deliver to the user. It should be clear and descriptive enough to get the main idea across.
+2. **Progress indicator (optional):** If the interstitial uses steps, use the progress indicator to show the user where they are in the flow.
+3. **Content header:** The header highlights the key value or main message. 
+4. **Body content:** The body content should provide additional context to the header.
+5. **Media:** An animated illustration can be used in order to provide additional context to the content.
+6. **Primary button:** The primary button is used to navigate to the next step (if stepped) and/or to continue to the app or page.
+7. **Back button:** If the interstitial uses steps, the back button is needed to navigate to the previous step.
+8. **Skip button:** If the interstitial uses steps, the skip button is used to navigate directly to the homepage (if full page) or 
 page (if overlay).
-7. **Progress indicator (optional):** If the interstitial uses steps, use the progress indicator to show the user where they are 
-in the flow.
+9. **Content area:**  The layout provided in the component can be used to display content. Alternatively, the content area can be treated as an open canvas with a layout that will best display the intent of the content. Use [Carbon’s 16 column grid](https://carbondesignsystem.com/guidelines/2x-grid/overview) as a guide to ensure consistency.
 
 ### Alignment
 
-The animated illustration should always sit at the right side of of the text. The footer (which contains the buttons) should expand 
+The illustration should always sit at the right side of of the text. The footer (which contains the buttons) should expand 
 the full width of the page or overlay.
 
 For interstitials with steps, the progress indicator should align with the text below it.
@@ -131,7 +116,7 @@ For interstitials with steps, the progress indicator should align with the text 
 <Row>
 <Column colMd={12} colLg={12}>
 
-![Interstitial alignment](images/interstitial-06.png)
+![Full page interstitial on a wide (default) grid](images/interstitial-06.png)
 
 </Column>
 </Row>
@@ -140,6 +125,9 @@ For interstitials with steps, the progress indicator should align with the text 
 ## Content
 
 ### Main elements
+
+#### Progress indicator heading
+The interstitial progress indicator heading should explain what the progress steps are aiming to deliver to the user. It should be clear and descriptive enough to get the main idea across.
 
 #### Heading
 The interstitial screen heading for the full page variant should be value-oriented and as brief as possible, while still being clear and descriptive enough 
@@ -152,7 +140,7 @@ itself. For the full page, it should aim to build the user’s anticipation and 
 overlay, it should be direct and succinct regarding what the user needs to know or do when they access the page.
 
 
-## Illustration
+## Illustrations
 
 Illustrations within interstitial screens visually enhance the content of the page and should help highlight the value (for full page) or re-enforce the 
 concept or action being communicated in the text (for overlay). They serve as the initial introduction to an experience a user is accessing for the first time. 
@@ -167,34 +155,14 @@ concept or action being communicated in the text (for overlay). They serve as th
 
 ### Illustration best practices
 
-- The ratio for the full page interstitial illustration is 4:3 (portrait) and sits to the right of the content.
-- Because the top right corner of the illustration will sit behind the close button in the overlay variant, be sure the color of the illustration in that corner is dark enough to meet the 3:1 contrast requirements for accessibility. 
 - Interstitial illustrations should complement the content of the displaying step.
-- Use the interstitial Adobe Illustrator template to start creating an illustration. Refer to [IBM Design Language Illustration Guidance](https://www.ibm.com/design/language/illustration/overview/).
+- Refer to [IBM Design Language Illustration Guidance](https://www.ibm.com/design/language/illustration/overview/).
 - Animations should be kept brief, as they are meant to complement and not distract from written content. Refer to 
 [IBM Design Language Animation Guidance](https://www.ibm.com/design/language/animation/overview/) if incorporating motion to these 
 illustrations. 
 - [Lottie](https://airbnb.design/lottie/) powers the animated SVGs, so it is recommended to use After Effects to create the vector 
 animation and export using the [Bodymovin](https://aescripts.com/bodymovin/) plugin.<br/>
 - [Lottiefiles.com](https://lottiefiles.com/) is a good resource to check the integrity of the animation post-export.
-
-### Illustration resources
-
-<Row className="resource-card">
-  <Column colMd={4} colLg={4} noGutterSm>
-    <CardGroup>
-        <MiniCard title="Interstitial illustration template" href="https://ibm.box.com/s/xqoffxbhdqanjdayfq2t7hplsedhu5aa" />
-    </CardGroup>
-  </Column>
-</Row>
-
-
-## Behaviors
-
-#### Page height
-The interstitial page extends the height of the screen and the overlay is set to a fixed height, therefore they do not 
-allow for content to scroll. Ensure all the information that is used for the design either fits on the page, or separate the 
-information into distinct value statements for the user to consume as steps. 
 
 
 ## Related
