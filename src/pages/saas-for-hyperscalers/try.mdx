@@ -24,8 +24,8 @@ Potential customers need the capability to evaluate whether a product meets thei
   <AnchorLink>Multi-factor authentication enrollment</AnchorLink>
   <AnchorLink>Try experience upgrade</AnchorLink>
   <AnchorLink>Try experience components</AnchorLink>
-  <AnchorLink>Change user email</AnchorLink>
-  <AnchorLink>Change user password</AnchorLink>
+  <AnchorLink>IBMid change email</AnchorLink>
+  <AnchorLink>IBMid change password</AnchorLink>
   <AnchorLink>Related</AnchorLink>
   <AnchorLink>References</AnchorLink>
 </AnchorLinks>
@@ -1367,10 +1367,9 @@ According to [Carbon](https://carbondesignsystem.com/patterns/empty-states-patte
 
 Empty states can be used in all three types of Try offers (Sandbox Trials, Trials, and Freemiums). They should include next steps to help the user populate the corresponding section. Use these steps as an opportunity to educate the user about why a populated section would provide value. Refer to the [empty state](https://pages.github.ibm.com/cdai-design/pal/patterns/empty-state/usage/#content) guidance to learn how to leverage this component in your Try experience. 
 
-
-## Change user email
-This email flow enables a user who is logged in to their ibm.com profile to securely change their IBM email address. The emails
-are sent to the user’s contact email address.
+## IBMid change email
+This email flow enables a user to securely change their IBMid email address or their IBM profile contact email address, 
+which can be the same email. The emails in this flow are sent to the user’s contact email address.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -1385,8 +1384,8 @@ the requester.
 
 
 ### Change verification email
-One email, with a verification code, is sent to the new IBM email address. This email directs the recipient to
-enter the verification code into their IBM profile change request at ibm.com. Their email address (IBMid or
+One email, with a verification code, is sent to the new email address. This email directs the recipient to
+enter the verification code into their IBMid profile change request at ibm.com. Their email address (IBMid or
 contact) is not changed until the verification code is entered correctly.
 
 <Row>
@@ -1427,9 +1426,9 @@ Subject: Your updated IBM profile
 </Row>
 
 
-## Change user password
-This email flow enables a user whose IBM password has expired, or is expiring soon, to securely change or reset their password.
-The emails included in this flow are sent to the user’s contact email address.
+## IBMid change password
+This email flow enables a user whose IBMid password has expired, or is expiring soon, to securely change or reset their password.
+The emails in this flow are sent to the user’s contact email address, which can be the same as their IBMid email.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -1440,10 +1439,10 @@ The emails included in this flow are sent to the user’s contact email address.
 </Row>
 
 When activated by a password expiration event, the flow sends the applicable email to prompt the user to either change or reset their
-IBM password.
+IBMid password.
 
 ### Password expiring email
-When triggered by an expiration notice event, this email is sent to the user's IBM contact email address. The email
+When triggered by an expiration notice event, this email is sent to the user's IBM profile contact email address. The email
 alerts them to their approaching password expiration and prompts them to change their password before it expires.
 
 <Row>
@@ -1467,7 +1466,7 @@ alerts them to their expired password and prompts them to reset their password.
 </Row>
 
 ### Profile updated email
-When triggered by a completed update to their IBM user profile, this email is sent to the user's IBM contact email address. The email
+When triggered by a completed update to their IBM profile, this email is sent to the user's IBM contact email address. The email
 alerts them to their updated profile.
 
 <Row>
