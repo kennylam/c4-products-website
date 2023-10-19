@@ -24,6 +24,10 @@ module.exports = {
           branch: "main"
         },
         iconPath: './src/images/carbon-for-ibm-product.png',
+        theme: {
+          homepage: 'g10',
+          interior: 'g10',
+        },
       }
     },
     {

@@ -5,10 +5,8 @@ import ExpressiveOverviewCard from "./ExpressiveOverviewCard";
 import { ExtendedVideo } from "./Video";
 import Glossary from "./Glossary";
 import MdxIcon from "./MdxIcon";
-import PatternAdoptionModal from "./Modal/PatternAdoptionModal";
 import Redirect from "./Redirect";
 import SubmittedToCarbon from "./SubmittedToCarbon";
-import TooltipChart from "./Visualization/TooltipChart";
 
 const components = {
   BannerQuote,
@@ -18,10 +16,8 @@ const components = {
   ExtendedVideo,
   Glossary,
   MdxIcon,
-  PatternAdoptionModal,
   Redirect,
-  SubmittedToCarbon,
-  TooltipChart
+  SubmittedToCarbon
 };
 
 export default components;

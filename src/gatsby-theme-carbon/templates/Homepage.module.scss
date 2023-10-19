@@ -1,51 +1,8 @@
-.banner-text {
-  margin-top: 3rem;
+.homepage-welcome {
+  @include carbon--type-style("expressive-heading-05");
 }
 
-.banner-text-heading {
-  h1 {
-    @include carbon--type-style('productive-heading-02');
-  }
-
-  h2 {
-    @include carbon--type-style('expressive-heading-04');
-    max-width: 40rem;
-  }
+.homepage-welcome,
+.homepage-welcome-description {
+  margin-left: -#{$spacing-05};
 }
-
-.banner-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 1rem;
-}
-
-.right-text {
-  padding-bottom: $spacing-07;
-  max-width: 32ch;
-}
-
-:global {
-  .homepage--header {
-    height:560px;
-  }
-}
-
-.homepage--header {
-  background: url('../../images/home-background.svg') no-repeat left top;
-  background-size: 1300px 350px;
-
-  @media (min-width: 66rem) {
-    background-position: 256px top;
-  }
-
-  img {
-    width: auto;
-    position: static;
-    top: 0;
-    right: 0;
-    margin-top: 0;
-  }
-}
-
-

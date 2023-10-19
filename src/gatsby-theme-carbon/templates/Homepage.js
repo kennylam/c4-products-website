@@ -1,43 +1,36 @@
 import React from "react";
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
+import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
 import Seo from "../../components/Seo";
 import pageContext from "../pageContext";
 import {
-  bannerText,
-  bannerTextHeading,
-  bannerContainer,
-  homepageHeader,
+  homepageWelcome,
+  homepageWelcomeDescription
 } from "./Homepage.module.scss";
-import TooltipChart from "../../components/Visualization/TooltipChart";
-import PatternAdoptionModal from "../../components/Modal/PatternAdoptionModal";
+import HomeBannerImg from "../../images/homepage/pal-banner.png";
+
+const FirstLeftText = () => <div className={homepageWelcome}>Welcome</div>;
+
+const FirstRightText = () => (
+  <p className={homepageWelcomeDescription}>
+    Carbon for IBM Products is single place to view guidance for all assets
+    across IBM Software.
+  </p>
+);
+
+const BannerText = () => <></>;
 
 const customProps = {
-  Banner: (
-    <>
-      <section className={homepageHeader}>
-        <div className="bx--grid">
-          <div className="bx--row">
-            <div className={"bx--col-lg-12 " + bannerText}>
-              <div className={bannerContainer}>
-                <div className={bannerTextHeading}>
-                  <h1>Carbon for IBM products</h1>
-                  <h2>
-                    A single place to view guidance for all components and
-                    patterns across Cloud Paks, Cloud Platform, SaaS, and
-                    on-premise products
-                  </h2>
-                </div>
-                <PatternAdoptionModal />
-              </div>
-              <TooltipChart />
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  ),
-  FirstCallout: null,
-  SecondCallout: null
+  Banner: <HomepageBanner renderText={BannerText} image={HomeBannerImg} />,
+  FirstCallout: (
+    <HomepageCallout
+      backgroundColor="transparent"
+      color="#161616"
+      style={{ width: "initial", maxWidth: "fit-content" }}
+      leftText={FirstLeftText}
+      rightText={FirstRightText}
+    />
+  )
 };
 
 // spreading the original props gives us props.children (mdx content)

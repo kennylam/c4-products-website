@@ -1,11 +1,8 @@
 @import "mixins";
-$carbon--theme: $carbon--theme--g10;
-@include carbon--theme();
 @import "./glossary.scss";
 
-main.container--homepage {
-  background: #000;
-}
+$carbon--theme: $carbon--theme--g10;
+@include carbon--theme();
 
 #homepage-cards {
   padding-top: calc(#{$spacing-05} * 5);
@@ -38,11 +35,14 @@ main.container--homepage {
   }
 }
 
-[class^="ExpressiveListContainer-module--text"] .bx--row[class*="CardGroup-module--cardGroup"] {
+[class^="ExpressiveListContainer-module--text"]
+  .bx--row[class*="CardGroup-module--cardGroup"] {
   margin-left: -#{$spacing-05};
 }
 
-[class^="ExpressiveListContainer-module--text"] .bx--row[class*="CardGroup-module--cardGroup"] > div {
+[class^="ExpressiveListContainer-module--text"]
+  .bx--row[class*="CardGroup-module--cardGroup"]
+  > div {
   max-width: 50%;
 }
 
@@ -68,8 +68,8 @@ html {
 
 // TEMPORARY FIX FOR A BUG WITH LINKS WITHIN BULLET POINTS
 //
-// Without this, lots of margin gets added above and below a link 
-// within a Markdown bullet point. 
+// Without this, lots of margin gets added above and below a link
+// within a Markdown bullet point.
 .noLinkPadding {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -78,8 +78,7 @@ html {
 // Fix for incorrect grid margins on homepage make content off-center
 // See https://github.ibm.com/CDAI-design/pal/issues/1110
 .container--homepage .#{$prefix}--grid {
-
-  @include carbon--breakpoint('lg') {
+  @include carbon--breakpoint("lg") {
     padding-left: rem(287px);
     padding-right: rem(32px);
     max-width: rem(1439px);
@@ -99,4 +98,19 @@ html {
   main.container--homepage {
     background: $background;
   }
+}
+
+// .whats-hot-container {
+//   padding-bottom: #{$spacing-07};
+// }
+
+// #whats-hot > h2{
+//   margin-top: inherit;
+// }
+
+.resource-description > div.bx--row > p{
+  @include carbon--type-style('expressive-heading-04');
+
+  margin-top: #{$spacing-11};
+  margin-bottom: #{$spacing-06};
 }
