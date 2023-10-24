@@ -24,6 +24,7 @@ Potential customers need the capability to evaluate whether a product meets thei
   <AnchorLink>Multi-factor authentication enrollment</AnchorLink>
   <AnchorLink>Try experience upgrade</AnchorLink>
   <AnchorLink>Try experience components</AnchorLink>
+  <AnchorLink>IBM Cloud Registration right panel</AnchorLink>
   <AnchorLink>IBMid change email</AnchorLink>
   <AnchorLink>IBMid change password</AnchorLink>
   <AnchorLink>Related</AnchorLink>
@@ -531,7 +532,7 @@ An email will be sent to the user once the provisioning process is complete. Use
     actionIcon="launch"
   ></MiniCard>
   <MiniCard
-    title="PerForm tool"
+    title="IBM PerForm tool"
     href="https://urx-perform.dal1a.cirrus.ibm.com/"
     actionIcon="launch"
   ></MiniCard>
@@ -539,7 +540,7 @@ An email will be sent to the user once the provisioning process is complete. Use
 
 <InlineNotification kind="warning">
 
-**Important:** You can use [PerForm](https://urx-perform.dal1a.cirrus.ibm.com) to build and manage URX Trial forms.
+**Important:** You can use [IBM PerForm](https://urx-perform.dal1a.cirrus.ibm.com) to build and manage URX Trial forms.
 
 </InlineNotification>
 
@@ -571,13 +572,18 @@ This flow provides guidance to product teams on what should be added to the URX 
 - The list items must explain the benefits of using the trial.
 - The list items must remind users what they are going to get from signing up for the trial. 
 - The list items must help users to clearly understand the value of using the trial. 
-- The use of additional content beyond bullet points such as images, badges, or animated GIFs is not permitted in URX left hand panels, and cannot be added using the [PerForm](https://urx-perform.dal1a.cirrus.ibm.com) tool.
+- The use of additional content beyond bullet points such as images, badges, or animated GIFs is not permitted in URX left hand panels, and cannot be added using the [IBM PerForm](https://urx-perform.dal1a.cirrus.ibm.com) tool.
 
 ### Guidance for different types of trials
 At IBM we offer three different types of product trial offerings. There are three possible trial formats offered at IBM: Trial, Sandbox Trial, and Freemium. Your product team may offer one type of trial, or a combination of multiple Try experiences. The right approach must ultimately depend on your product, your users, and your business priorities. Therefore, the type of information that you add to the trial landing page will also differ based on the type of trial your product team chooses. 
-#### 1. Trial
-Trial users can experience an entire product for a limited period of time for free. The usage of the entire product within a short time enables users to set their expectations and use the Trial immediately. This information can be used to draw attention to the users in the URX left hand panel. For example,
 
+
+<Tabs>
+<Tab label="Trial">
+
+Trial users can experience an entire product for a limited period of time for free. The usage of the entire product within a short time enables users to set their expectations and use the Trial immediately. This information can be used to draw attention to the users in the URX left hand panel. 
+
+#### Example 
 <h5>Infrastructure and resource correlation
 <Row>
   <Column colMd={8} colLg={10}>
@@ -588,35 +594,54 @@ IBM [Product name] consolidates and correlates key information to proactively al
 </Row>
 </h5>
 
-#### 2. Sandbox Trial
+<br></br>
+
+
+</Tab>
+
+<Tab label="Sandbox Trial">
+
 Sandbox Trial allows users to immediately access a working instance of a product for evaluation at no cost. Product teams can use this information effectively by listing the value proposition and key benefits of using the Sandbox Trial. For example,
 
+#### Example 
 <h5>Easily manage your applications
 <Row>
   <Column colMd={8} colLg={10}>
 
-Discover, map, monitor, and troubleshoot your applications with full stack visibility in 5 minutes. 
+Discover, map, monitor, and troubleshoot your applications with full stack visibility in 5 minutes.
 
   </Column>
 </Row>
 </h5>
 
-#### 3. Freemium
+<br></br>
+
+</Tab>
+
+<Tab label="Freemium">
+
 Freemium trial gives users access to part of the product or feature for an unlimited time in the hope that Freemium users will eventually graduate to a paid version of the software. For example,
 
+#### Example 
 <h5>Trial benefits
 <Row>
   <Column colMd={8} colLg={10}>
 
-  Get up to 100,000 API calls at no cost to evaluate the full product features.
+Get up to 100,000 API calls at no cost to evaluate the full product features.
 
   </Column>
 </Row>
 </h5>
 
+<br></br>
+
+</Tab>
+
+</Tabs>
+
 ### Product benefits and left hand panel
 
-Here is an example of how the benefits of a product are used to populate the content for the left hand panel. You can see the closeness of benefits between the product marketing page and URX left hand panel for IBM API Connect. Though not 1:1, the ones that make sense have been carried over. Product teams are encouraged to follow this process when creating the content for the left hand panel. 
+Here is an example of how the benefits of a product are used to populate the content for the left hand panel. You can see the closeness of benefits between the product marketing page and URX left hand panel for IBM API Connect. Though not 1:1, the items relevant to the trial have been carried over. Product teams are encouraged to follow this process when creating the content for the left hand panel. 
 
 ** IBM API Connect: benefits **
 <Row>
@@ -708,7 +733,6 @@ Drive new engagement models and channels by accelerating your API-led digital tr
   </Column>
 </Row>
 </h5>
-
 
 
 
@@ -1366,6 +1390,168 @@ It’s critical to have an intuitive navigation within your Try experience that 
 According to [Carbon](https://carbondesignsystem.com/patterns/empty-states-pattern/), “empty states are moments in an product or service where there is no data to display to the user”.  Although they are most commonly found when a user first interacts with a product or page, they also can be shown when data is deleted or otherwise unavailable. 
 
 Empty states can be used in all three types of Try offers (Sandbox Trials, Trials, and Freemiums). They should include next steps to help the user populate the corresponding section. Use these steps as an opportunity to educate the user about why a populated section would provide value. Refer to the [empty state](https://pages.github.ibm.com/cdai-design/pal/patterns/empty-state/usage/#content) guidance to learn how to leverage this component in your Try experience. 
+
+## IBM Cloud registration right panel
+This flow provides guidance to product teams on what should be added to the IBM Cloud registration right panel bullet points. Product teams can use the right panel as an effective landing page to motivate and remind users the value of enrolling for a Try offer. Product teams can customize the contents of this panel and add information specific to their products, such as benefits and key features. 
+
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![IBM Cloud Registration](images/ibmcloud-rightside/cloudr-rightside.png)
+
+  </Column>
+</Row>
+
+### Best practices for creating a successful IBM Cloud registration right panel
+- The content added to the right panel should echo the same benefits featured on the marketing page.
+- Product teams can have 3 to 5 bullet points in the right panel.
+- The list items must explain the benefits of using the Try offer.
+- The list items must remind users what they are going to get from signing up for the Try offer.
+- The list items must help users clearly understand the value of using the Try offer.
+- The use of additional content beyond bullet points such as images, badges, or animated GIFs is not permitted in IBM Cloud right panels. 
+
+### Product benefits and right panel
+Use the benefits and features outlined on the product marketing page as content to populate the IBM Cloud registration right panel. Though not 1:1, the items relevant to the trial must be carried over. Product teams are encouraged to follow this process when creating the content for the right panel.
+
+### Guidance for Try offers
+IBM offers three types of Try offers: Trials, Sandbox Trials, and Freemiums. All teams should offer at least one type, and can choose to offer multiple Try offers depending on your product strategy. The information you add to the landing page will depend on the Try offer(s) your team chooses.
+
+<Tabs>
+<Tab label="Trial">
+
+Trial users can experience an entire product for a limited period of time for free. The usage of the entire product within a short time enables users to set their expectations and use the Trial immediately. This information can be used to draw attention to the users in the URX left hand panel. 
+
+#### Example 
+<h5>Infrastructure and resource correlation
+<Row>
+  <Column colMd={8} colLg={10}>
+
+IBM [Product name] consolidates and correlates key information to proactively alert IT Ops teams about potential problems.
+
+  </Column>
+</Row>
+</h5>
+
+<br></br>
+
+
+</Tab>
+
+<Tab label="Sandbox Trial">
+
+Sandbox Trial allows users to immediately access a working instance of a product for evaluation at no cost. Product teams can use this information effectively by listing the value proposition and key benefits of using the Sandbox Trial. For example,
+
+#### Example 
+<h5>Easily manage your applications
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Discover, map, monitor, and troubleshoot your applications with full stack visibility in 5 minutes.
+
+  </Column>
+</Row>
+</h5>
+
+<br></br>
+
+</Tab>
+
+<Tab label="Freemium">
+
+Freemium trial gives users access to part of the product or feature for an unlimited time in the hope that Freemium users will eventually graduate to a paid version of the software. For example,
+
+#### Example 
+<h5>Trial benefits
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Get up to 100,000 API calls at no cost to evaluate the full product features.
+
+  </Column>
+</Row>
+</h5>
+
+<br></br>
+
+</Tab>
+
+</Tabs>
+
+### Additional examples
+
+#### Example 1
+<h5>Powerful real-time speech synthesis
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Convert written text to natural-sounding speech using our latest neural speech synthesizing techniques.
+
+  </Column>
+</Row>
+</h5>
+
+#### Example 2
+<h5>Build your journey to public cloud
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Build, deploy, and manage solutions in IBM's public cloud.
+
+  </Column>
+</Row>
+</h5>
+
+
+#### Example 3
+<h5>Instant optimization
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Non-disruptively optimize your cloud resources from our user-friendly interface within seconds.
+
+  </Column>
+</Row>
+</h5>
+
+#### Example 4
+<h5>Unleash application performance
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Gain complete visibility into your public cloud application and infrastructure stack.
+
+  </Column>
+</Row>
+</h5>
+
+
+#### Example 5
+<h5>Highly secure
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Securely expose your data and business applications.
+
+  </Column>
+</Row>
+</h5>
+
+
+#### Example 6
+<h5>Full lifecycle API management
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Drive new engagement models and channels by accelerating your API-led digital transformation.
+
+  </Column>
+</Row>
+</h5>
+
+
+
+
 
 ## IBMid change email
 This email flow enables a user to securely change their IBMid email address or their IBM profile contact email address, 
