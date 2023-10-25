@@ -14,7 +14,7 @@ Data spreadsheets are used to organize and display large amounts of structured d
     <AnchorLink>Formatting</AnchorLink>
     <AnchorLink>Content</AnchorLink>
     <AnchorLink>Behaviors</AnchorLink>
-    <AnchorLink>Modifers</AnchorLink>
+    <AnchorLink>Modifiers</AnchorLink>
     <AnchorLink>Best practices</AnchorLink>
     <AnchorLink>Related</AnchorLink>
     <AnchorLink>Feedback</AnchorLink>
@@ -37,11 +37,11 @@ Data spreadsheets are best used for viewing data that span many columns and pote
 <ul>
     <li>Use to display content with little-to-no intrinsic relationships.</li>
     <li>Use to organize and display excessive amounts of (usually) structured data such as content from a CSV or table from a database.</li>
-    <li>Use to preform complex mathematical operations or analysis with content.</li>
-    <li>Use to preform actions (manipulations) on the content displayed such as creating a new column, reorganizing columns, renaming columns, etc.</li>
+    <li>Use to perform complex mathematical operations or analysis with content.</li>
+    <li>Use to perform actions (manipulations) on the content displayed such as creating a new column, reorganizing columns, renaming columns, etc.</li>
     <li>Use to modify content in a free-form, less restricted experience—able to edit and modify content placement or specify locations within the grid to apply mathematical operations.</li>
-    <li>Use to customize presentation of content displayed such as cells' color, size, etc.</li>
-    <li>Use to display content that can have absence of value—`empty`, beyond `null`, `NA`, `––`. etc.</li>
+    <li>Use to customize the presentation of content displayed such as cells' color, size, etc.</li>
+    <li>Use to display content that can have an absence of value—`empty`, beyond `null`, `NA`, `––`. etc.</li>
 </ul>
 
 ### When not to use
@@ -50,8 +50,8 @@ Data spreadsheets are best used for viewing data that span many columns and pote
     <li>Do not use to display or manipulate statuses on running activities. Use a data table instead.</li>
     <li>Do not use when content is not from a CSV-like or table from a database.</li>
     <li>Do not use for simple lists or content that cannot be divisible by columns and/or rows.</li>
-    <li>Do not use to optionally replace data tables without consideration of the behaviors or functionality such as ability to reorder or modify content.</li>
-    <li>Do not use if row actions are required (i.e overlfow menu to delete or pause items).</li>
+    <li>Do not use to optionally replace data tables without consideration of the behaviors or functionality such as the ability to reorder or modify content.</li>
+    <li>Do not use if row actions are required (i.e. overflow menu to delete or pause items).</li>
 </ul>
 
 ## Formatting
@@ -66,9 +66,9 @@ Data spreadsheets are best used for viewing data that span many columns and pote
 </Column>
 </Row>
 
-1. **Cells:** A cell holds data and is formed by the intersection of a column and row, forming a rectangle along a grid pf other cells.
+1. **Cells:** A cell holds data and is formed by the intersection of a column and row, forming a rectangle along a grid of other cells.
 
-2. **Headers:** A special type of cell. They are usually the top or left most cell in a column or row that acts as an identifier of that column or row. These typically act as `sticky` in that they stay stuck to the top of the component when scrolling.
+2. **Headers:** A special type of cell. They are usually the top or leftmost cell in a column or row that acts as an identifier of that column or row. These typically act as `sticky` in that they stay stuck to the top of the component when scrolling.
 
 3. **Columns:** Vertical stacks of cells and a header.
 
@@ -84,7 +84,7 @@ The data spreadsheet is available in five different row sizes:
 - Small (32px)
 - Extra small (24px)
 
-Data spreadsheets typically use the same column and row headers as the hight of the cells. However, the headers' heights may also act independently of the rows' heights and cells' heights. 
+Data spreadsheets typically use the same column and row headers as the height of the cells. However, the headers' heights may also act independently of the rows' heights and cells' heights. 
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -96,14 +96,14 @@ Data spreadsheets typically use the same column and row headers as the hight of 
 
 ### General alignment
 
-Alignment of content can be viewed below. It bases the spacing off of Carbon's default scales and the 2px grid and typical 16px insets. More general alignment guidelines can be viewed at the styles page of this component and alignment of content in the cells and headers can be viewed in our data content pattern.
+Alignment of content can be viewed below. It bases the spacing on Carbon's default scales and the 2px grid and typical 16px insets. More general alignment guidelines can be viewed at the styles page of this component and alignment of content in the cells and headers can be viewed in our data content pattern.
 
 A general rule of thumb is that 16px padding exists on the left and right of each cell.
 
 
 ### Columns
 
-Attempt to keep the same alignment throughout the entire column. This makes it easier to scan vertically. Content is by default tyop aligned, but can be altered for specific cases.
+Attempt to keep the same alignment throughout the entire column. This makes it easier to scan vertically. Content is by default top aligned, but can be altered for specific cases.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -139,7 +139,7 @@ Cells may contain a variety of content including:
 - Symbols
 - Text and strings
 
-Do not attempt to include too much in a cell. Too much variety of content (i.e string + icon + symbol + button + accordian + emoji + divider) will cause discomfort to viewers when scanning down columns.
+Do not attempt to include too much in a cell. Too much variety of content (i.e. string + icon + symbol + button + accordion + emoji + divider) will cause discomfort to viewers when scanning down columns.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -153,7 +153,7 @@ Attempt to keep action-oriented icons opposite alignment of text to increase vis
 
 ### Headers
 
-Headers main content include text, but may also include buttons and icons.
+Headers main content include text, but may also includes buttons and icons.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -181,9 +181,9 @@ When hovering over a cell, the corresponding column and row header will darken t
 
 #### Selection & focus
 
-User can select single or multiple cells, single or multiple columns, single or multiple rows, or a combination of any of the three. Some tools may dictate how selection behaves. For example, tools that cannot currently edit individual cells restrict selection to whole columns only. For read-only usecases, selection can be used to copy content or reveal insights to selections through context panels.
+Users can select single or multiple cells, single or multiple columns, single or multiple rows, or a combination of any of the three. Some tools may dictate how selection behaves. For example, tools that cannot currently edit individual cells restrict selection to whole columns only. For read-only use cases, selection can be used to copy content or reveal insights to selections through context panels.
 
-Selection uses 2 types of focus borders thickness: a 1px and 2px.
+Selection uses 2 types of focus border thickness: 1px and 2px.
 
 When selecting a single cell, the 2px focus border appears and the corresponding column and row headers become selected.
 
@@ -195,7 +195,7 @@ When selecting a single cell, the 2px focus border appears and the corresponding
 </Column>
 </Row>
 
-When multiple cells are selected, the first one to be clicked-down by the cursor will use a 2px focus border but the remaining will retain a 1px focus border. This helps create heirarchy of which cell is being edited and which is only selected. The corresponding column and row headers will become selected.
+When multiple cells are selected, the first one to be clicked-down by the cursor will use a 2px focus border but the remaining will retain a 1px focus border. This helps create a hierarchy of which cell is being edited and which is only selected. The corresponding column and row headers will become selected.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -205,7 +205,7 @@ When multiple cells are selected, the first one to be clicked-down by the cursor
 </Column>
 </Row>
 
-When selecting a column or row, the first cell in the sequence becomes the active cell while the remaining are only selected. The header changes to a active state.
+When selecting a column or row, the first cell in the sequence becomes the active cell while the remaining are only selected. The header changes to an active state.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -223,7 +223,7 @@ When selecting a column or row, the first cell in the sequence becomes the activ
 </Column>
 </Row>
 
-When selecting multiple columns or rows, the last column or row's first cell in the sequence becomes the active cell. The headers change to a active state.
+When selecting multiple columns or rows, the last column or row's first cell in the sequence becomes the active cell. The headers change to an active state.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -291,11 +291,11 @@ Content in a column or row, or columns or rows themselves can be removed from th
 
 Cells being deleted would only remove their contents. Depending on the tool, the contents may be left empty or replaced with a default value.
 
-Rows being deleted would shift remaining rows up. No need to display a warning, but giving users the ability to undo or reset values to original status is then required. 
+Rows being deleted would shift the remaining rows up. No need to display a warning, but giving users the ability to undo or reset values to their original status is then required. 
 
-Columns being deleted would shift remaining columns left. No need to display a warning, but giving users the ability to undo or reset values to original status is then required.
+Columns being deleted would shift remaining columns to the left. No need to display a warning, but giving users the ability to undo or reset values to their original status is then required.
 
-Alternately, an optional warning modal may be presented if the action of deleting is non-reversable.
+Alternately, an optional warning modal may be presented if the action of deleting is non-reversible.
 
 You may be able to delete columns and rows at the same time.
 
@@ -304,7 +304,7 @@ You may be able to delete columns and rows at the same time.
 
 A user can select and move contents from cells, columns, or rows depending if the tool can allow for such behavior.
 
-To move a single column or row, select the column and drag it to the desired location. A blue line will appear in the location the column will be placed.
+To move a single column or row, select the column and drag it to the desired location. A blue line will appear in the location where the column will be placed.
 
 To move multiple columns or rows, select them via holding shift and clicking, down and dragging, or command clicking and selecting, then select and hold one column to move all the selected columns to the desired location.
 
@@ -320,7 +320,7 @@ You may not move columns and rows as the same time.
 
 ### Scrolling
 
-Vertical and horizontal scroll are always available in spreadsheet unless otherwise specified. The content dictates length of scrollbar and scroll-area. When there is no data, limit the number of columns and rows that users can see by scrolling.
+Vertical and horizontal scrolls are always available in the spreadsheet unless otherwise specified. The content the dictates the length of scrollbar and the scroll-area. When there is no data, limit the number of columns and rows that users can see by scrolling.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -348,7 +348,7 @@ Empty state for spreadsheets can fall under two contexts: traditional empty stat
 
 #### Traditional empty state
 
-This acts as what is expected, an image or call-to-action in the cells content area. Scenarios that include this traditional empty state are:
+This acts as what is expected, an image or call-to-action in the cell's content area. Scenarios that include this traditional empty state are:
 
 - No data to display
 - Error loading data
@@ -380,13 +380,13 @@ This is reserved for tools that allow users to start from empty spreadsheets. Sc
 </Row>
 
 
-## Modifers
+## Modifiers
 
-### Light & Dark theming
+### Light & dark theming
 
 Spreadsheets use the same UI tokens for Grey 10 and Grey 100 themes.
 
-For the color, we use the `Blue hue` in Carbon for Light theme and `Cyan hue` for Dark theme. You can see more of this is the styles section.
+For the color, we use the `Blue hue` in Carbon for the Light theme and the `Cyan hue` for the Dark theme. You can see more of this in the styles section.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -400,11 +400,11 @@ For the color, we use the `Blue hue` in Carbon for Light theme and `Cyan hue` fo
 
 Hovering on a column or row can reveal an overflow menu. Most products will not need a row overflow menu.
 
-A column overflow menu usually affects contents in that column. Occasionally when a user selects something such as "sorting" options from a column, it may rearrange the contents of the spreadsheet according to that column. Otherwise, all actions should affect the selected column only.
+A column overflow menu usually affects the contents in that column. Occasionally when a user selects something such as "sorting" options from a column, it may rearrange the contents of the spreadsheet according to that column. Otherwise, all actions should affect the selected column only.
 
 When multiple columns or rows are selected, the overflow menu selected on any of those selected will apply to all selected columns or rows.
 
-See more in the menus pattern.
+See more in the menu pattern.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -418,7 +418,7 @@ See more in the menus pattern.
 
 Users can trigger an optional context menu by right-clicking on a cell or header (column or row).
 
-Use the top section of a context menu for common actions, the middle section for context specific actions, and the bottom section for destructive actions.
+Use the top section of a context menu for common actions, the middle section for context-specific actions, and the bottom section for destructive actions.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -430,7 +430,7 @@ Use the top section of a context menu for common actions, the middle section for
 
 ### Context panels (optional)
 
-Double clicking a column header should trigger a context panel. Controls within typically include insights or properties to manipulate the selection.
+Double-clicking a column header should trigger a context panel. Controls within typically include insights or properties to manipulate the selection.
 
 See more guidance in the context panel sub-pattern on what content can appear in the context panel.
 
@@ -454,7 +454,7 @@ When a spreadsheet is initializing, use the skeleton "lazy" load on column and r
 </Column>
 </Row>
 
-When a user scrolls and there is no pagination, use lazy load to add more data to the memory of the browser. In this case, a user may see the skeleton loader inside the cells to differentiate between empty cells and loading cells. Amount of content loaded per fetching of data is up to the product. Once data is available, quickly fade out the lazy loader and fade in the content from top to bottom.
+When a user scrolls and there is no pagination, use lazy load to add more data to the memory of the browser. In this case, a user may see the skeleton loader inside the cells to differentiate between empty cells and loading cells. The amount of content loaded per fetching of data is up to the product. Once data is available, quickly fade out the lazy loader and fade in the content from top to bottom.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -482,10 +482,10 @@ If an error prevents data from being displayed for the entire data spreadsheet, 
 
 - Use the first row of a data source's table as the column headers. Typically, our tools do not display the letter number of the order.
 - Do not overload cells with varied content, making it hard to scan.
-- Use top-left as default alignmet placement.
-- Context menus and overflow menus should use a different color layer than the cell's per theme. For example, If cells are using a gray10, the overflow menu should be colored white.
+- Use top-left as the default alignment placement.
+- Context menus and overflow menus should use a different color layer than the cells per theme. For example, If cells are using a gray10, the overflow menu should be colored white.
 - Do not use buttons inside cells. Use the entire cell as the clickable area for an action.
-- If a type of action (button, dropdown, etc.) exist in the header, the minimum height of the header should be 32px.
+- If a type of action (button, dropdown, etc.) exists in the header, the minimum height of the header should be 32px.
 
 ### Other use cases
 
