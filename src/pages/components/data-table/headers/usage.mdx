@@ -7,7 +7,7 @@ tabs: ["Usage", "Code"]
 
 <PageDescription>
 
-The data table header provides a high-level context of the data and gives a brief overview about the data. Each data table must have a header. Headers should be placed right on top of the data table. Each table header should have a title at the minimum; additional information can be optional depending on the user's requirements.
+The data table header provides a high-level context of the data and gives a brief overview of the data. Each data table must have a header. Headers should be placed right on top of the data table. Each table header should have a title at the minimum; additional information can be optional depending on the user's requirements.
 
 </PageDescription>
 
@@ -17,7 +17,7 @@ We differentiate between two types of data table headers:
 
 1. Default data table headers
 
-- using subline in table header
+- using subline in the table header
 - using tabs as table header
 - using page header as table header
 - using accordions in table headers
@@ -33,11 +33,11 @@ We use Carbon's white theme headers rather than the Gray 10 theme.
 
 ### Default data table header
 
-Default data table header can be used for general data table use cases such as data set preview, data catalog, and any page with a full page data table. A data table must include a title. **If a page only has one table, the page header acts as the table title and no table header is required.**  Any metadata about the data can be added as a sub-line.
+Default data table header can be used for general data table use cases such as data set preview, data catalog, and any page with a full-page data table. A data table must include a title. **If a page only has one table, the page header acts as the table title, and no table header is required.**  Any metadata about the data can be added as a sub-line.
 
 ![Default data table header example](../images/default_header.png)
 
-The maximum title width should not display more than up to 65 characters. We recommend keeping the data table title in one line, and text that is longer than title width is truncated with an ellipsis and a tooltip showing the full string on hover.
+The maximum title width should not display more than 65 characters. We recommend keeping the data table title in one line, and text that is longer than the title width is truncated with an ellipsis and a tooltip showing the full string on hover.
 
 | Typography table titles   | Color      | Type          | Size           | Line-height     | Weight        | Letter-spacing |
 | ------------------------- | ---------- | ------------- | -------------- | --------------- | ------------- | -------------- |
@@ -51,9 +51,9 @@ The maximum title width should not display more than up to 65 characters. We rec
 
 ![Table header truncation example](../images/header_truncation.png)
 
-- Keep the data table title concise and maintain in a single line.
-- If the title is longer than 8 column width, text should be truncated with an ellipsis. On hover, a tooltip shows the full name.
-- Data table titles should utilize sentence style capitalization.
+- Keep the data table title concise and maintain it in a single line.
+- If the title is longer than 8 columns width, the text should be truncated with an ellipsis. On hover, a tooltip shows the full name.
+- Data table titles should utilize sentence-style capitalization.
 
 </Column>
 
@@ -69,9 +69,9 @@ The maximum title width should not display more than up to 65 characters. We rec
 
 </Row>
 
-### Sub-lines in table header
+### Sub-lines in the table header
 
-Sub-line can be used to capture information such as number of total columns, number of sample data, and last updated etc. Any long data summary description or additional content should live in other places in the UI (e.g. side panels).
+Sub-line can be used to capture information such as number of total columns, number of sample data, last updated, etc. Any long data summary description or additional content should live in other places in the UI (e.g. side panels).
 
 ![Table header sub-line example](../images/header_sub_line.png)
 
@@ -89,7 +89,7 @@ The recommended maximum for a sub-line width is max 60-80 characters. Longer lin
 
 ![Table header sub-line example](../images/header_subline.png)
 
-- Use [space][space]  | (vertical divider)  [space][space] to separate content within sub-line.
+- Use [space][space]  | (vertical divider)  [space][space] to separate content within the sub-line.
 
 </Column>
 
@@ -107,7 +107,7 @@ The recommended maximum for a sub-line width is max 60-80 characters. Longer lin
 
 ### Tabs in a table header
 
-Some tables require tabs so that the user directly can switch between different content of the table. Those tabs are placed directly on top of the toolbar. We use Carbon’s container tabs. In that case we recommend that tabs replace the default table header. Make sure that labels are clear and concise.
+Some tables require tabs so that the user directly can switch between different content of the table. Those tabs are placed directly on top of the toolbar. We use Carbon’s container tabs. In that case, we recommend that tabs replace the default table header. Make sure that labels are clear and concise.
 
 ![Example of using tabs in table headers](../images/tabs_table.png)
 
@@ -115,7 +115,7 @@ Use tabs on top of the table only when they are related to the content of the ta
 
 ### Page header as table header
 
-If a page only has one table, the page header acts as the table title and no header is required.
+If a page only has one table, the page header acts as the table title, and no header is required.
 
 ![Example of using tabs in table headers](../images/title_as_header.png) 
 ![Example of using tabs in table headers](../images/header_as_header.png)
@@ -146,7 +146,7 @@ When there are multiple tables on the page, always use ghost buttons for actions
 
 ![Bad usage of buttons with multiple tables](../images/multiple_tables_dont.png)
 
-Use multiple primary buttons or mix and match primary or secondary button on a page.
+Use multiple primary buttons or mix and match primary or secondary buttons on a page.
 
 </Column>
 
@@ -154,7 +154,7 @@ Use multiple primary buttons or mix and match primary or secondary button on a p
 
 ### Accordions in table headers 
 
-When a page has multiple tables and content it can get quickly overwhelmed. Therefore accordions can help to expand and collapse a table. In that case we use accordions in front of the table title. By default we recommend to expand all tables.
+When a page has multiple tables and content it can get quickly overwhelmed. Therefore accordions can help to expand and collapse a table. In that case, we use accordions in front of the table title. By default, we recommend to expand all tables.
 
 ![Example of accordusing accordions in table headers](../images/accordions.png)
 
@@ -162,7 +162,7 @@ When a page has multiple tables and content it can get quickly overwhelmed. Ther
 
 ![Example of accordusing accordions in table headers](../images/collapsed_accordions.png)
 
-For collapsed tables we use a 1px line (#E0E0E0) at the bottom to separate the different table titles.
+For collapsed tables, we use a 1px line (#E0E0E0) at the bottom to separate the different table titles.
 
 ![Using specs in accordions](../images/accordions_specs.png)
 
@@ -172,17 +172,17 @@ For collapsed tables we use a 1px line (#E0E0E0) at the bottom to separate the d
 
 ### Dense data table header 
 
-Dense data table header is reserved for lightweight tables. A table contains a header as well as action buttons, but needs to fit into a denser design or page with multiple elements. Dense table header can also be used to display a smaller data set, or show multiple tables on a page. We recommend using no more than 5 icons and one button for dense table header. If there is a special case where a need for more than 5 icons is necessary, then consider using an overflow menu for lesser used items.
+The dense data table header is reserved for lightweight tables. A table contains a header as well as action buttons but needs to fit into a denser design or page with multiple elements. Dense table header can also be used to display a smaller data set or show multiple tables on a page. We recommend using no more than 5 icons and one button for dense table header. If there is a special case where a need for more than 5 icons is necessary, then consider using an overflow menu for lesser-used items.
 
-Ghost button is the default button for dense table header, as dense header is intent for small tables, which usually isn't the primary action on the page.
+The Ghost button is the default button for dense table header, as dense header is intended for small tables, which usually isn't the primary action on the page.
 
 ✅ Do
 
-- Use dense data table headers only for lightweight tables, that don’t contain a lot of data and therefore don’t require a search. Also use it if the user wants to view small amount of data without or only a few actions (like one or two filters, only a single action button,...)
+- Use dense data table headers only for lightweight tables, that don’t contain a lot of data and therefore don’t require a search. Also use it if the user wants to view a small amount of data without or only a few actions (like one or two filters, only a single action button,...)
 
 🚫 Don’t
 
-- Use dense data table header with multi-select. Dense data table header pattern breaks once the user selects as least one row from the table, the batch action bar appears at the table and covers the table header.
+- Use dense data table header with multi-select. Dense data table header pattern breaks once the user selects at least one row from the table, the batch action bar appears at the table and covers the table header.
 
 **When a table requires multi-select, always use the default data table header.**
 
