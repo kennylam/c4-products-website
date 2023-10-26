@@ -11,7 +11,7 @@ export default HomepageTemplate;
   href="/saas-for-hyperscalers/overview"
 >
 
-![PLG](../images/homepage/cards/plg.png)
+![PLG](../images/homepage/cards/plg.svg)
 
 </ImageCard>
 
@@ -21,7 +21,7 @@ export default HomepageTemplate;
   href="/contributing/updating-this-site/overview/"
 >
 
-![Contribution](../images/homepage/cards/contribution.png)
+![Contribution](../images/homepage/cards/contribution.svg)
 
 </ImageCard>
 
@@ -32,10 +32,10 @@ export default HomepageTemplate;
 <ImageCard
   title="Carbon 11"
   subTitle="Design System"
-  href="https://carbondesignsystem.com"
+  href="https://carbondesignsystem.com/migrating/guide/overview/"
 >
 
-![Carbon 11](../images/homepage/cards/carbon-11.png)
+![Carbon 11](../images/homepage/cards/carbon-11.svg)
 
 </ImageCard>
 
@@ -45,7 +45,7 @@ export default HomepageTemplate;
   href="https://yourlearning.ibm.com/activity/PLAN-23664761452B"
 >
 
-![Your Learning](../images/homepage/cards/your-learning.png)
+![Your Learning](../images/homepage/cards/your-learning.svg)
 
 </ImageCard>
 
@@ -56,10 +56,10 @@ export default HomepageTemplate;
 <ImageCard
   title="What is Carbon for IBM Products?"
   subTitle="Overview"
-  href="/overview/video"
+  href="/overview/about"
 >
 
-![Carbon for IBM Products](../images/homepage/cards/carbon-for-ibm-products.png)
+![Carbon for IBM Products](../images/homepage/cards/carbon-for-ibm-products.svg)
 
 </ImageCard>
 
@@ -67,15 +67,15 @@ export default HomepageTemplate;
 
 </Row>
 
-<Row>
+<Row className="grid-callout">
 
-<Column colMd={4} colLg={4} noGutterSm>
+<Column colMd={4} colLg={4}>
 
 ## Resources
 
 </Column>
 
-<Column className="resource-description" colMd={6} colLg={6} noGutterSm>
+<Column colMd={4} colLg={8}>
 
 Find those resources you’re always digging around the PAL site for, right here once and for all.
 
@@ -96,26 +96,6 @@ Find those resources you’re always digging around the PAL site for, right here
 
 </ResourceCard>
 
-<ResourceCard
-  subTitle="Github"
-  title="Carbon for IBM Products design GitHub"
-  href="https://github.ibm.com/CDAI-design/pal"
->
-
-![Github icon](../images/homepage/github-icon.png)
-
-</ResourceCard>
-
-<ResourceCard
-  subTitle="Figma kit"
-  title="Carbon for IBM Products Figma kit"
-  href="/design-kits/figma"
->
-
-![Figma icon](../images/homepage/figma-icon.png)
-
-</ResourceCard>
-
 </Column>
 
 <Column colMd={4} colLg={4} noGutterSm>
@@ -129,12 +109,44 @@ Find those resources you’re always digging around the PAL site for, right here
 
 </ResourceCard>
 
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Github"
+  title="Carbon for IBM Products design GitHub"
+  href="https://github.ibm.com/CDAI-design/pal"
+>
+
+![Github icon](../images/homepage/github-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
 <ResourceCard
   subTitle="Events & Calendar"
   title="DSAG meeting Th 11:00AM EST"
   href="https://ec.yourlearning.ibm.com/w3/event/10377319">
 
 ![Your Learning icon](../images/homepage/your-learning-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Figma kit"
+  title="Carbon for IBM Products Figma kit"
+  href="/design-kits/figma"
+>
+
+![Figma icon](../images/homepage/figma-icon.png)
 
 </ResourceCard>
 
@@ -157,16 +169,6 @@ Find those resources you’re always digging around the PAL site for, right here
 
 </ResourceCard>
 
-<ResourceCard
-  subTitle="Github"
-  title="Carbon for IBM Products development GitHub"
-  href="https://github.com/carbon-design-system/ibm-products"
->
-
-![Github icon](../images/homepage/github-icon.png)
-
-</ResourceCard>
-
 </Column>
 
 <Column colMd={4} colLg={4} noGutterSm>
@@ -180,6 +182,24 @@ Find those resources you’re always digging around the PAL site for, right here
 ![Storybook icon](../images/homepage/storybook-icon.png)
 
 </ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Github"
+  title="Carbon for IBM Products development GitHub"
+  href="https://github.com/carbon-design-system/ibm-products"
+>
+
+![Github icon](../images/homepage/github-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
 
 <ResourceCard
   subTitle="Events & Calendar"

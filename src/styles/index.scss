@@ -108,9 +108,19 @@ html {
 //   margin-top: inherit;
 // }
 
-.resource-description > div.bx--row > p{
-  @include carbon--type-style('expressive-heading-04');
+.grid-callout {
+  margin-top: unset;
+  margin-bottom: -$spacing-06;
+  padding-top: $spacing-10;
+  padding-bottom: $spacing-10;
+  max-width: 1152px;
+}
 
-  margin-top: #{$spacing-11};
-  margin-bottom: #{$spacing-06};
+.grid-callout h2 {
+  padding: unset;
+  margin: 0 0 $spacing-03 0;
+}
+
+.grid-callout p {
+  @include carbon--type-style("expressive-paragraph-01");
 }
