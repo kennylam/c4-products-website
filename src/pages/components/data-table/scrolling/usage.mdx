@@ -46,7 +46,7 @@ This setting limits the table text wrap to two lines before scrolling horizontal
 ![Image](./images/image_textwrap2.gif)
 
 #### Truncation
-When truncation is enabled, text will truncate at one line instead of line wrapping. Once any column hits it's minimum width, the table will start to horizontal scroll. 
+When truncation is enabled, text will truncate at one line instead of line wrapping. Once any column hits its minimum width, the table will start to scroll horizontally. 
 
 Text should be truncated optically, not in the underlying code (technical truncation). This ensures that data is preserved and accessible to screen readers. On hover, truncation should display a Carbon tooltip (Carbon tooltips afford more control over delay and placement). 
 
@@ -140,13 +140,13 @@ Consider using truncation or text wrap settings to avoid freezing an extremely w
 
 
 #### Combination of frozen first and last columns
-The frozen identifier and action columns can be combined in use cases where both elements are essential for maintaining the user's context. However note that the identifier column should still unfreeze at the mobile viewport size.
+The frozen identifier and action columns can be combined in use cases where both elements are essential for maintaining the user's context. However, note that the identifier column should still unfreeze at the mobile viewport size.
 
 ![Image](./images/image_combofrozen.gif)
 
 ## Styling
 
-The CDAI table is coded to display a scrollbar on table hover to indicate the presence of additional scrollable content. Avoid adding extra elements such as floating action buttons, dropshadows, and scrollable gradients. Frozen columns should have a simple 1px border `$active-light-ui`.
+The CDAI table is coded to display a scrollbar on table hover to indicate the presence of additional scrollable content. Avoid adding extra elements such as floating action buttons, drop shadows, and scrollable gradients. Frozen columns should have a simple 1px border `$active-light-ui`.
 
 <Row>
 <Column colMd={4} colLg={4}>
@@ -193,19 +193,19 @@ Frozen identifier columns are unfrozen for viewports below 672px
 **Toolbar at mobile**
 ![Image](./images/image_mobile1.png)
 
-- Table tool icons go under combo button
-- Table button CTA or CTAs go in "important" section under line 
+- Table tool icons go under the combo button
+- Table button CTA or CTAs go in "important" section underline 
 
 
-**Filters and settings at mobile**
+**Filters and settings on mobile**
 ![Image](./images/image_mobile2.png)
 
-- Items like filter and settings takeover screen
+- Items like filter and settings take over screen
 
 
 ## Accessibility 
 
-Table row actions and toolbar items work the same in these responsive formats as they do at desktop view.
+Table row actions and toolbar items work the same in these responsive formats as they do in desktop view.
 
 
 
