@@ -13,13 +13,13 @@ Expandable rows consist of expansion rows and expanded areas. Expansion rows (pa
 
 ## Expandable rows
 
-This pattern explains how to lay out content within an expanded area and why content within the expanded area cannot be aligned to the grid and should not be aligned to table columns.
+This pattern explains how to lay out content within an expanded area and why content within the expanded area cannot be aligned to the grid and should not be aligned with table columns.
 
 ### Anatomy
 
 ![Expandable row anatomy](../images/expandable-row-anatomy.png)
 
-1. Exansion row
+1. Expansion row
 2. Expanded area
 
 ### Padding
@@ -47,7 +47,7 @@ When the content in the expanded area begins to feel cramped, consider using a d
 
 _If my content is feeling cramped, can I  increase the expanded area's height?_
 
-In order to prevent a vertical scroll bar in the expanded area, the area does not have a `max-height`. However, you should consider the following:
+To prevent a vertical scroll bar in the expanded area, the area does not have a `max-height`. However, you should consider the following:
 
 - The purpose of an expanded area is to facilitate exploring additional item details in the context of a larger data set
 - If the expandable row area is too tall your user may lose their place within the data table when they expand a row
@@ -60,9 +60,9 @@ Here is one example of how a side panel can be used to display additional row in
 
 ## Alignment
 
-If you are working in Sketch it is easy to create a design where items in the expanded area align to the grid or to the table columns. However, as soon as a developer attempts to implement this design they will quickly encounter problems.
+If you are working in Sketch it is easy to create a design where items in the expanded area align to the grid or the table columns. However, as soon as a developer attempts to implement this design they will quickly encounter problems.
 
-Instead of aligning content to table columns or the grid, you should lay out your content in a manner that establishes clear relationships between content items and utilize Carbon's [layout scale](https://www.carbondesignsystem.com/guidelines/spacing/overview/#layout-scale).
+Instead of aligning content to table columns or the grid, you should lay out your content in a manner that establishes clear relationships between content items and utilizes Carbon's [layout scale](https://www.carbondesignsystem.com/guidelines/spacing/overview/#layout-scale).
 
 <Accordion>
 <AccordionItem title="Why can't I align my content to the grid?">
@@ -120,7 +120,7 @@ In most cases, you should combine `flex-start` and intentional spacing between c
 
 `flex-box` also makes it possible to align one or more content items to the right side of the expanded area.
 
-You should only right align content if the main content items are already left aligned and if aligning content to the right improves the expanded area's usability.
+You should only right-align content if the main content items are already left-aligned and if aligning content to the right improves the expanded area's usability.
 
 To align an item to the right you need to set the item's `margin-left` to `auto`.
 
@@ -130,9 +130,9 @@ To align an item to the right you need to set the item's `margin-left` to `auto`
 
 If you are using a responsive data table, the items in the expanded area may need to wrap.
 
-You should only wrap the items in the expanded area if you are able to preserve important relationships between content items and ensure that the expanded area is still usable. If this is not possible, consider displaying the content in a different manner.
+You should only wrap the items in the expanded area if you can preserve important relationships between content items and ensure that the expanded area is still usable. If this is not possible, consider displaying the content differently.
 
-In the _do_ example all of the items in the expanded area wrap to one column. This prevents the _Provision Status_ section's placement from bisecting the _Details_ section in a way that makes it difficult to tell that the _Details_ section contains key value pairs.
+In the _do_ example, all of the items in the expanded area wrap into one column. This prevents the _Provision Status_ section's placement from bisecting the _Details_ section in a way that makes it difficult to tell that the _Details_ section contains key-value pairs.
 
 <DoDontRow>
 
