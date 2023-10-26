@@ -31,11 +31,11 @@ Action buttons and overflow menus are not interchangeable in terminology and are
 
 ## Best practices
 
-- Overflow menu are the default to use if there are more than 2 action a user take on a row.
-- When fitting to mobile screens, convert any number of action buttons in a row to always persistent overflow menus.
+- The overflow menu is the default to use if there are more than 2 actions a user takes on a row.
+- When fitting to mobile screens, convert any number of action buttons in a row to persistent overflow menus.
 - Overflow menus are by default persistent unless in condensed spaces, to which making them visible only on hover is acceptable but not necessary.
-- Show action buttons persistently only if the user is being encouraged to click them. Otherwise, action buttons should be visible on hover to discourage use and to de-clutter content that would otherwise become redundant.
-- Destructive actions are by default visible only on hover of the row. The exception is if we want to encourage the user to click on the action (i.e to remove items from a deleted files section).
+- Show action buttons persistently only if the user is being encouraged to click them. Otherwise, action buttons should be visible on hover to discourage use and de-clutter content that would otherwise become redundant.
+- Destructive actions are by default visible only on hover of the row. The exception is if we want to encourage the user to click on the action (i.e. to remove items from a deleted files section).
 
 <br />
 
@@ -44,7 +44,7 @@ Action buttons and overflow menus are not interchangeable in terminology and are
 ### When to use
 
 - When a table has rows that include more than 2 action buttons, use an overflow menu instead.
-- When a table has rows that include actions which are dependent on other properties which can vary the amount of actions (role access, permissions, available content, asset type, etc) use an overflow menu instead of changing action button icons per row.
+- When a table has rows that include actions which are dependent on other properties that can vary the number of actions (role access, permissions, available content, asset type, etc) use an overflow menu instead of changing action button icons per row.
 
 <DoDontRow>
 
@@ -83,7 +83,7 @@ Action buttons and overflow menus are not interchangeable in terminology and are
 
 ### When to use
 
-- When a table has rows that include 1 or 2 action button, use individual action buttons on hover.
+- When a table has rows that include 1 or 2 action buttons, use individual actions buttons on hover.
 
 <DoDontRow>
 
@@ -98,8 +98,8 @@ Action buttons and overflow menus are not interchangeable in terminology and are
 ### When not to use
 
 - When a table has rows that include more than 2 action buttons, use an overflow menu instead.
-When icons aren't able to fully represent the action behind the icon, use text buttons or overflow menu instead.
-- When a table has rows that include actions which are dependent on other properties (role access. permissions, available content, asset type, etc) use an overflow menu instead of changing action button icons per row.
+When icons aren't able to fully represent the action behind the icon, use text buttons or an overflow menu instead.
+- When a table has rows that include actions that are dependent on other properties (role access. permissions, available content, asset type, etc) use an overflow menu instead of changing action button icons per row.
 
 <DoDontRow>
 
@@ -117,7 +117,7 @@ When icons aren't able to fully represent the action behind the icon, use text b
 
 ### When to use
 
-- When a table has rows with actions that remove (destructively), delete, disconnect, or destroy the object being acted upon or if it may cripple the work in another system.
+- When a table has rows with actions that remove (destructively), delete, disconnect, or destroy the object being acted upon, or if it may cripple the work in another system.
 
 <DoDontRow>
 
@@ -137,7 +137,7 @@ When icons aren't able to fully represent the action behind the icon, use text b
 
 ### When not to use
 
-- For removal of objects that are not destroyed (i.e removing a user from a project does not delete the user from the system, as they can always be re-added again).
+- For removal of objects that are not destroyed (i.e. removing a user from a project does not delete the user from the system, as they can always be re-added again).
 
 
 <DoDontRow>
@@ -161,7 +161,7 @@ When icons aren't able to fully represent the action behind the icon, use text b
 ## Actions in batch edit mode
 
 - Actions will be disabled if a data table has batch edit activated.
-- User can only interact with table row actions if the batch edit is disabled/in normal viewing mode.
+- Users can only interact with table row actions if the batch edit is disabled/in normal viewing mode.
 
 <DoDontRow>
   <DoDont caption="Do disable action buttons on rows when batch action mode is enabled.">
@@ -182,7 +182,7 @@ When icons aren't able to fully represent the action behind the icon, use text b
 
 ### Keyboard & screen reader access
 
-- Ensure that even if an action button is only available on hover, that we include the ability to tab to it for users with screen readers and those actively using keyboards. As soon as a user tabs into a row, display all avalable actions as if the user is hovering the row.
+- Ensure that even if an action button is only available on hover, that we include the ability to tab to it for users with screen readers and those actively using keyboards. As soon as a user tabs into a row, display all available actions as if the user is hovering over the row.
 
 ### Responsive design and touch screens
 
