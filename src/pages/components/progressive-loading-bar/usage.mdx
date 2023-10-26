@@ -32,12 +32,12 @@ The progressive loading bar is used when data is being retrieved, or some other 
 
 ## Overview
 
-The progressive loading component is not to be confused with the [Progress indicator](https://www.carbondesignsystem.com/components/progress-indicator/usage) or any other step wizard pattern, but should be considered alongside the [Carbon loading pattern](https://www.carbondesignsystem.com/patterns/loading-pattern/).
-There are two types of loading bar: indeterminate and determinate.
+The progressive loading component is not to be confused with the [Progress indicator](https://www.carbondesignsystem.com/components/progress-indicator/usage) or any other step wizard pattern but should be considered alongside the [Carbon loading pattern](https://www.carbondesignsystem.com/patterns/loading-pattern/).
+There are two types of loading bars: indeterminate and determinate.
 
 ### Indeterminate
 
-Once triggered, the loading bar will begin by showing an indeterminate back and forth motion while data is being gathered during the first stages of the load. This bar then changes to a determinate indicator (finishing from left to right) when enough information is gathered to end the load animation. The final determinate stage of the load is used to visually indicate the completion of the task to the user. In this scenario, a percentage indicator would not be present.
+Once triggered, the loading bar will begin by showing an indeterminate back-and-forth motion while data is being gathered during the first stages of the load. This bar then changes to a determinate indicator (finishing from left to right) when enough information is gathered to end the load animation. The final determinate stage of the load is used to visually indicate the completion of the task to the user. In this scenario, a percentage indicator would not be present.
 
 <Row>
   <Column colLg={12}>
@@ -63,7 +63,7 @@ This is for situations when the loading progress can be tracked and translated i
 
 **Use a loading bar when**
 
-- A loading spinner or skeleton load aren’t suitable
+- A loading spinner or skeleton load isn’t suitable
 - Space or layout does not permit disruption in the form of a loading spinner
 - One or more elements on the page are being impacted and could change due to a load
 - Information can be gathered to determine the end time of the load
@@ -91,14 +91,14 @@ This is for situations when the loading progress can be tracked and translated i
    Color: `$interactive-01`
 2. **The track** The static part of the component. This is the ‘runway’ for the bar.
    Color: `$ui-03`
-3. **Percentage indicator (optional)** If you are able to provide this additional information and it would be beneficial for the user, then show the real-time percentage of the load as it completes.
+3. **Percentage indicator (optional)** If you are can provide this additional information and it would be beneficial for the user, then show the real-time percentage of the load as it completes.
    Text style: `$body-short-01`, `$text-02` (right aligned to the edge of the track, 16px below).
 
 ### Placement and width
 
-The loading bar would appear at the top of a container — or at least above the information that is being impacted — spanning the full width. The loading bars ideally won’t span the entire width of a page, unless the entire page was being updated and a spinner and/or skeleton loads weren't suitable. The bar should span the width of a side panel or card, or the editable zone of a tearsheet, with no margins around it.
+The loading bar would appear at the top of a container — or at least above the information that is being impacted — spanning the full width. The loading bars ideally won’t span the entire width of a page, unless the entire page is being updated and a spinner and/or skeleton loads aren’t suitable. The bar should span the width of a side panel or card, or the editable zone of a tearsheet, with no margins around it.
 
-In this example, the loading bar has appeared when the user has chosen a different currency, meaning that all of the pricing information displayed needs to be converted to accurately reflect the new selection. The loading bar is placed above the information affected by the load, and will disappear when the load has completed.
+In this example, the loading bar appears when the user has chosen a different currency, meaning that all of the pricing information displayed needs to be converted to accurately reflect the new selection. The loading bar is placed above the information affected by the load and will disappear when the load has been completed.
 
 <Row>
   <Column colMd={6} colLg={8}>
@@ -155,12 +155,12 @@ Animate the spin whilst the load is happening and the percentage is counting. Cr
 
 **Don’t**
 
-- Use progressive loading for every single step in a flow. This could make the experience feel longer than it actually is.
+- Use progressive loading for every single step in a flow. This could make the experience feel longer than it is.
 - Use a loading bar for full page loads before anything has loaded. This should be taken care of by a loading spinner or skeleton load(s).
 
 <Row>
   <Column colMd={4} colLg={6}>
-  <DoDontExample type="do" caption="Do make sure the track spans the entire width of where it is placed (for example, the top of a card).">
+  <DoDontExample type="do" caption="Make sure the track spans the entire width of where it is placed (for example, the top of a card).">
 
 ![Progressive loading bar](images/do-card.png)
 
