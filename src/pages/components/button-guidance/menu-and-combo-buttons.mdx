@@ -6,7 +6,7 @@ title: Menu and combo buttons
 
 <PageDescription>
 
-  Menu buttons and combo buttons share the same goal, to group multiple actions together meaningfully and to aid discoverability. 
+  Menu buttons and combo buttons share the same goal, to group multiple actions meaningfully and to aid discoverability. 
   
 </PageDescription>
 
@@ -43,10 +43,10 @@ The grouping of related actions can decrease the interaction time and cognitive 
 
 ## Menu button
 
-Menu buttons group actions that share the same level of importance. The icon used within the menu button should always be a chevron in order to visually convey to the user that there are options to select from. There are three main use cases where using a menu button is recommended.
+Menu buttons group actions that share the same level of importance. The icon used within the menu button should always be a chevron to visually convey to the user that there are options to select from. There are three main use cases where using a menu button is recommended.
 
 #### Grouping objects with the same common action
-Menu buttons work well when there are multiple different objects that are derived/impacted by the same action. Common examples are where users can Create or Add multiple different objects, where all of the objects would be equally-considered options.
+Menu buttons work well when multiple different objects are derived/impacted by the same action. Common examples are where users can Create or Add multiple different objects, where all of the objects would be equally considered options.
 
 <Row>
   <Column colLg={8}>
@@ -56,7 +56,7 @@ Menu buttons work well when there are multiple different objects that are derive
   </Column>
 </Row>
 
-_In this example, the user can add various different objects. These all share the action "add"._
+_In this example, the user can add various objects. These all share the action "add"._
 
 The shared action should not be repeated in the dropdown below. This adds unnecessary clutter and makes each option less distinct.
 
@@ -85,7 +85,7 @@ _When using a button menu for this use case, ensure that the objects in the menu
 
 
 #### Actions related to a common title
-Another common use of a menu button is grouping actions related to a common title. Examples of this are where there are multiple ways in which a user can carry out an action, which are presented as options in the menu button.
+Another common use of a menu button is grouping actions related to a common title. Examples of this are where there are multiple ways in which a user can carry out an action, which is presented as options in the menu button.
 
 <Row>
   <Column colLg={8}>
@@ -97,7 +97,7 @@ Another common use of a menu button is grouping actions related to a common titl
 
 _In this example, a user can add a rule in three different ways. These are presented as the three options in the menu._
 
-#### Distinct actions on the same object / page
+#### Distinct actions on the same object/page
 In a lot of cases, actions on a page may not share the same verb, or have an appropriate shared label for the menu button. When grouped actions are distinct, label the menu button 'Actions' to encompass all available options. 
 
 <Row>
@@ -108,9 +108,9 @@ In a lot of cases, actions on a page may not share the same verb, or have an app
   </Column>
 </Row>
 
-_In this example, all the actions effect the same model, but they are all distinct - there wouldn't be an appropriate verb to describe them all._
+_In this example, all the actions affect the same model, but they are all distinct - there wouldn't be an appropriate verb to describe them all._
 
-Actions buttons are ideal for page headers, where multiple, distinct, actions may impact the page content, and where real-estate is limited. By default, in the page header component, multiple buttons in the header will become an actions button at smaller screen sizes.
+Actions buttons are ideal for page headers, where multiple, distinct, actions may impact the page content, and where real estate is limited. By default, in the page header component, multiple buttons in the header will become action buttons at smaller screen sizes.
 
 <Row>
   <Column colLg={8}>
@@ -138,7 +138,7 @@ Menu buttons come in three different heights (default, field and small), and thr
   </Column>
 </Row>
 
-_The three heights the menu button supports. The height of the menu items reflect the size of the button being used._
+_The three heights the menu button supports. The height of the menu items reflects the size of the button being used._
 
 <Row>
   <Column colLg={8}>
@@ -162,9 +162,9 @@ _The three heights the menu button supports. The height of the menu items reflec
   </Column>
 </Row>
 
-_The three types the menu button supports: primary, tertiary and ghost._
+_The three types the menu button supports: are primary, tertiary and ghost._
 
-Since the Carbon guidelines state "Secondary buttons may only be used in conjunction with a primary action” the menu button is not available as a secondary button. If a primary action is determined to be needed, a combo button should be used rather than a secondary actions button alongside a primary action.
+Since the Carbon guidelines state "Secondary buttons may only be used in conjunction with a primary action” the menu button is not available as a secondary button. If a primary action is determined to be needed, a combo button should be used rather than a secondary action button alongside a primary action.
 
 <Row>
   <Column colLg={4}>
@@ -190,7 +190,7 @@ Since the Carbon guidelines state "Secondary buttons may only be used in conjunc
 _Do not use a menu button as a secondary action. Instead, a combo button should be used when one action is determined to be primary._
 
 ## Combo button
-A combo button is actually composed of two buttons: the left one is the default option (the most commonly used selection), and the right one (chevron icon) shows the rest of the available options.
+A combo button is composed of two buttons: the left one is the default option (the most commonly used selection), and the right one (chevron icon) shows the rest of the available options.
 
 <Row>
   <Column colLg={8}>
@@ -202,15 +202,15 @@ A combo button is actually composed of two buttons: the left one is the default 
 
 _In this example, the majority of the time, the user will be selecting to save record. However, they do have a few other options, but as these are likely to be chosen a lot less, so need less prominence in the UI._
 
-The combo button is expected to have less use than the menu button, as the additional actions are more hidden than they would be in menu button. However, this button does have particular use where screen real estate is limited and one of the actions has particular importance. 
+The combo button is expected to have less use than the menu button, as the additional actions are more hidden than they would be in the menu button. However, this button does have particular use where screen real estate is limited and one of the actions has particular importance. 
 
 ### Behavior
-The behavior of the combo button is very similar to the menu button. The only nuance is that clicking the left hand side of the button (the determined primary action), would cause that action to be immediately triggered. The same behavior applies for items in the dropdown list, clicking on these would immediately trigger that action. 
+The behavior of the combo button is very similar to the menu button. The only nuance is that clicking the left hand side of the button (the determined primary action) would cause that action to be immediately triggered. The same behavior applies to items in the dropdown list, clicking on these would immediately trigger that action. 
 
 ### Variations
-Combo buttons only are available as a primary button. If you need to house multiple actions without the use of the primary button, the menu button should be used. This is because a combo button should only be used when one of the actions is determined to be the primary choice.
+Combo buttons only are available as primary buttons. If you need to house multiple actions without the use of the primary button, the menu button should be used. This is because a combo button should only be used when one of the actions is determined to be the primary choice.
 
-Combo buttons also come in the three standard button heights, default, field and small.
+Combo buttons also come in three standard button heights, default, field and small.
 
 <Row>
   <Column colLg={8}>
@@ -233,7 +233,7 @@ For both menu and combo buttons, the button width should follow Carbon button gu
   </Column>
 </Row>
 
-However there are a few exceptions to this rule. For menu buttons with short title, this rule could lead to very short menus. For this reason, menu buttons have a fixed minimum width of 160px, to ensure menu items have enough space. Combo buttons are unlikely to need a fixed minimum width, as the addition of the chevron icon button adds additional length.
+However, there are a few exceptions to this rule. For menu buttons with short titles, this rule could lead to very short menus. For this reason, menu buttons have a fixed minimum width of 160px, to ensure menu items have enough space. Combo buttons are unlikely to need a fixed minimum width, as the addition of the chevron icon button adds additional length.
 
 
 <Row>
@@ -263,7 +263,7 @@ _In this example, the button menu has a short title "Add". If we follow the rule
 
 The guidance above outlines the recommended best practices for menu and combo buttons, where the menu button and the menu are the same width. By following Carbon's button content guidance for all actions, in most cases, the length of the menu should be sufficient for the items below.
 
-In cases where menu items do not fit in the menu with the rules above, and the content cannot be further condensed, the menu width can be extended to fit the content up to a maximum width of 256px (items longer than this will be truncated, with the full text available as a tooltip on hover). When this occurs, make sure the button is following the same rules for width as outlined above, and is not extended to match the width of the menu.
+In cases where menu items do not fit in the menu with the rules above and the content cannot be further condensed, the menu width can be extended to fit the content up to a maximum width of 256px (items longer than this will be truncated, with the full text available as a tooltip on hover). When this occurs, make sure the button is following the same rules for width as outlined above and is not extended to match the width of the menu.
 
 
 <Row>
@@ -319,12 +319,12 @@ Ghost buttons follow the same rules as for handling long menu items. This is bec
 _For ghost buttons, the Carbon guidance dictates a 36px padding after the text. Use the same minimum (160px) and maximum (256px) for the menu width._
 
 ### Ordering content
-To aid discoverability, menu items should be ordered meaningfully based on order of operations. In cases where all items are a shared level of hierarchy with no meaningful order, arrange the items alphabetically. This is particularly helpful when there are a large number of menu items to aid navigation.
+To aid discoverability, menu items should be ordered meaningfully based on the order of operations. In cases where all items are a shared level of hierarchy with no meaningful order, arrange the items alphabetically. This is particularly helpful when there are a large number of menu items to aid navigation.
 
 Grouping the items into meaningful sections is also advised when there are a large amount of menu items, see the divider lines section for more information.
 
 ## Modifiers
-Several modifiers can be applied to both the menu and combo button, if needed.
+Several modifiers can be applied to both the menu and combo buttons, if needed.
 
 #### Disabled states
 Disabled states can be used if an action is not able to be performed at a certain time, but will be possible to be performed by that user, at another point in time. Actions that are permissions based should be hidden if it is never possible for a user to perform that action.
@@ -352,7 +352,7 @@ When using divider lines, the rules are removed to make sections more prominent.
   </Column>
 </Row>
 
-_An example of where it's appropriate to use divider lines to group sections. The first section groups "add" actions, while the second groups actions related to the source object._
+_An example of where it's appropriate to use divider lines to group sections. The first section groups "add" actions, while the second groups actions are related to the source object._
 
 
 #### Danger state
