@@ -28,10 +28,10 @@ Filters can help a user find something they’re looking for, view available opt
 between many options. These guidelines are an extension of [Carbon's filter documentation](https://www.carbondesignsystem.com/patterns/filtering/).
 
 Filtering results in a table is a different type of action from searching. While both actions can help the user narrow results down, 
-searching is meant to help the user find a specific result, whereas filtering allows users to trim results according to its attributes.
+searching is meant to help the user find a specific result, whereas filtering allows users to trim results according to their attributes.
 
 
-Applied filters can affect both the data that is visible in the table and also data that might not be displayed in the columns 
+Applied filters can affect both the data that is visible in the table and data that might not be displayed in the columns 
 available in the table. Filter options can be displayed in many form components, including [dropdowns](https://www.carbondesignsystem.com/components/dropdown/usage),
  [text inputs](https://www.carbondesignsystem.com/components/text-input/usage), [checkboxes](https://www.carbondesignsystem.com/components/checkbox/usage), 
 [radio buttons](https://www.carbondesignsystem.com/components/radio-button/usage), and [date range pickers](https://pages.github.ibm.com/ai-applications/design/components/datetime/overview).
@@ -55,7 +55,7 @@ Two different filter variations are currently available for different data table
 | Type                            | Description                                                                                                                          | 
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | 
 | Filter flyout                   | The filter flyout is best used when filtering is not a common action for users, and more filters are available in addition to the columns displayed in the data table. The flyout can include a mix of simple and advanced filter options. The filter flyout is the most common filter pattern.                                    |
-| Filter panel                    | The filter panel is best used when users need to see the filters be applied to the data to help them make further decisions to narrow down the data. More filters, in addition to the filters that are visible in the data table, can be displayed in the filter panel so the users can further refine their filtering criteria.   |
+| Filter panel                    | The filter panel is best used when users need to see the filters applied to the data to help them make further decisions to narrow down the data. More filters, in addition to the filters that are visible in the data table, can be displayed in the filter panel so the users can further refine their filtering criteria.   |
 | External filters                | To come... |
 | Column filters                  | To come... |
 
@@ -81,7 +81,7 @@ The table filter variations use similar components that are displayed in a diffe
 </Column>
 </Row>
 
-1. **Filter button:** Icon button that is used to open the flyout and display all available filter options.
+1. **Filter button:** Icon button used to open the flyout and display all available filter options.
 2. **Filter header:** Defines the function of the filter flyout or panel.
 3. **Filters:** - Options that are provided for users to filter information in the data table. Multiple options can be selected.
 4. **Action buttons:** Buttons to trigger the action to apply the selected filters to the data table or cancel the action. 
@@ -114,17 +114,17 @@ Buttons should only be used for batch filtering, they can be omitted for live fi
 </Column>
 </Row>
 
-1. **Filter button:** Icon button that is used to open the flyout and display all available filter options.
+1. **Filter button:** Icon button used to open the flyout and display all available filter options.
 2. **Filter header:** Defines the function of the filter flyout or panel.
-3. **Accordion (optional):** Collapsible sections that allows up to 10 filter values to be displayed.
-4. **Search filters (optional):**Allows the user to search for filter values within the panel.
+3. **Accordion (optional):** Collapsible sections that allow up to 10 filter values to be displayed.
+4. **Search filters (optional): **Allows the user to search for filter values within the panel.
 5. **Categories (optional):** Category headings can be provided to organize related sections. Multiple filter categories can be applied to the same data set.
 6. **Filters:** Options that are provided for users to filter information in the data table. Multiple options can be selected.
 7. **Filter count (optional):** The number of selected filters for the particular filter section.
-8. **Exclude (optional / exploratory):** Displays only results that do not match filter selections.
+8. **Exclude (optional/exploratory):** Displays only results that do not match filter selections.
 9. **View all (optional):** Use when the number of filter values exceeds 10. List the first five values in alphanumeric order and then include a **View all (n)** ghost button, where _n_ is the total number of filter values. Launches a tearsheet that contains the complete alphabetized list of filter values.
 10. **Action buttons (if batch filtering):** Buttons to trigger the action to apply the selected filters to the data table or cancel the action. The button labels depend on whether the panel is set up for instant or batch filtering.
-11. **Tearsheet (optional):** If the number of options for a particular filter are too many to list in the panel, use the tearsheet* to 
+11. **Tearsheet (optional):** If the number of options for a particular filter is too high to list in the panel, use the tearsheet* to 
 show a scrollable list of filter values.
 
 *Follow the [Add & select pattern documentation](https://pages.github.ibm.com/cdai-design/pal/patterns/add-and-select/usage).
@@ -150,9 +150,9 @@ show a scrollable list of filter values.
 </Row>
 
 1. **Filter bar:** Dedicated space to display the filters that are applied to the table.
-2. **Filter tags:** Each filter applied to the table with the option to remove the filter. 
+2. **Filter tags:** Each filter is applied to the table with the option to remove the filter. 
 3. **Overflow count:** Number of additional filter tags that are applied to the table but are not currently visible in the collapsed state. The overflow is only applicable if all of the currently applied filter tags are not displayed in the collapsed state. The count displays a list of tags on hover.
-4. **List all button:** Expands the filter summary to show up to two lines of filters tags. This button only appears if applied filters exceed one line.
+4. **List all button:** Expands the filter summary to show up to two lines of filter tags. This button only appears if applied filters exceed one line.
 
 <DoDontRow>
 
@@ -164,7 +164,7 @@ show a scrollable list of filter values.
 
 <DoDont type="dont" caption="Don't group multiple filters together in one tag.">
 
-![Don't group multiple filters together in one tag.](images/Filters_23-DoNot-02.png)
+![Don't group multiple filters in one tag.](images/Filters_23-DoNot-02.png)
 
 </DoDont>
 
@@ -202,7 +202,7 @@ or [batch updates](https://www.carbondesignsystem.com/patterns/filtering/#multip
 </Row>
 
 #### Instant updates
-The instant update method returns results after each individual selection is made. This method is preferred because it allows users to 
+The instant update method returns results after each selection is made. This method is preferred because it allows users to 
 instantly see updated results. No action buttons are needed for instant updates.
 
 
@@ -353,7 +353,7 @@ one tag, allow the user to show all results that contain a tag value of Blue but
 #### Filter flyout
 
 The filter flyout can vary in size, depending on how many filter options are available. These recommended sizes are defined by the 
-Carbon 16-column grid, and align with other Carbon component sizes such as the modal. Choose the appropriate size based on how many 
+Carbon 16-column grid and align with other Carbon component sizes such as the modal. Choose the appropriate size based on how many 
 filter options you need, maintaining Carbon spacing within the flyout. Avoid using more than two columns of filters or exceeding 70% 
 of the table width at any breakpoint.
 
@@ -373,7 +373,7 @@ panel contents are longer than the data table, then the section will be as tall 
 
 If filters are batch applied, the buttons will be fixed to the bottom of the browser window unless the browser is scrolled down to the 
 end of the section containing the table and filter panel (at which point the buttons will sit at the bottom of the section). The panel 
-has a minimum height of 21rem (336px), and the buttons will stop sticking to the bottom of the browser at this point so as to not overlap 
+has a minimum height of 21rem (336px), and the buttons will stop sticking to the bottom of the browser at this point to not overlap 
 too much of the panel content.
 
 <Row>
@@ -386,8 +386,8 @@ too much of the panel content.
 
 
 #### Filter summary
-The filter summary has two height options. The 48 px height should be used with the medium, large, and extra large row heights. The 32px 
-height should be used with extra small and small row heights. 
+The filter summary has two height options. The 48 px height should be used with the medium, large, and extra-large row heights. The 32px 
+height should be used with extra-small and small row heights. 
 
 
 ### Padding
@@ -441,7 +441,7 @@ filter flyout.
 </Row>
 
 #### Filter panel
-If filtering is a common action and users need to see the filters be applied to the table as they are making their selection, the 
+If filtering is a common action and users need to see the filters applied to the table as they are making their selection, the 
 filter button is placed in a separate area on the left of the table. The filter button triggers the display of the filter panel. 
 
 <Row>
@@ -453,7 +453,7 @@ filter button is placed in a separate area on the left of the table. The filter 
 </Row>
 
 #### Filter summary
-The filter summary is placed between the toolbar and table body.
+The filter summary is placed between the toolbar and the table body.
 
 
 
@@ -461,8 +461,8 @@ The filter summary is placed between the toolbar and table body.
 ## Responsive
 
 #### Filter flyout 
-The filter flyout width can either be set for different breakpoints, with filters reflowing into a single column as needed. On 
-mobile viewports the filter is triggered from the combo button and takes over the screen using the mobile modal. If filters are 
+The filter flyout width can be set for different breakpoints, with filters reflowing into a single column as needed. On 
+mobile viewports, the filter is triggered from the combo button and takes over the screen using the mobile modal. If filters are 
 selected, the filter summary will display a filter count. 
 
 <Row>
@@ -476,7 +476,7 @@ selected, the filter summary will display a filter count. 
 
 #### Filter panel
 
-On mobile viewports the filter is triggered from the combo button and takes over the screen using the mobile modal. If filters are 
+On mobile viewports, the filter is triggered from the combo button and takes over the screen using the mobile modal. If filters are 
 selected, the filter summary will display a filter count.
 
 <Row>
@@ -495,7 +495,7 @@ For more information see [horizontal scrolling and responsive behavior](#).
 
 ## Accessibility
 
-- All filter components are keyboard accessible using tab and enter keys.
+- All filter components are keyboard-accessible using tab and enter keys.
 - Filter labels should be clear and concise.
 - Avoid very long names for filter options.
 
