@@ -5,7 +5,7 @@ tabs: ['Usage', 'Style', 'Code']
 
 <PageDescription>
 
-An options tile can contain information, controls or tables which, when collapsed, is summarized. It can be paired with a toggle to quickly enable or disable the option.
+An options tile can contain information, controls or tables which, when collapsed, are summarized. It can be paired with a toggle to quickly enable or disable the option.
 
 </PageDescription>
 
@@ -65,8 +65,8 @@ An options tile can also be paired with a toggle to enable or disable an entire 
 
 1. **Chevron (only applies to expandable tiles):** Indicates whether the tile is expanded or not
 2. **Heading:** The title of the options tile used to describe all included content
-3. **Summary (optional):** A short summary of the current state of the content
-4. **Toggle (optional):** Single toggle to enable or disable the entire feature / option
+3. **Summary (optional):** A summary of the current state of the content
+4. **Toggle (optional):** Single toggle to enable or disable the entire feature/option
 
 <Title> Expanded </Title>
 
@@ -97,11 +97,11 @@ An options tile can also be paired with a toggle to enable or disable an entire 
 - Show exact values of options up to a maximum of 3 options.
 - A summary text should summarize the content or can be used as an additional helper text.
 - The summary needs to be short and in sentence style.
-- Separate multiple value summaries with a vertical bar / pipe: `|`
+- Separate multiple value summaries with a vertical bar/pipe: `|`
 - Limit the summary to a single line.
 
 #### Toggle (optional)
-- Use options tiles with a toggle when the entire content can be changed between enabled and disable state.
+- Use options tiles with a toggle when the entire content can be changed between enabled and disabled state.
 - The tile can still be expanded when the toggle is turned off but all controls inside should be disabled.
 - When the tile is in disabled state, the summary is hidden (except for [validation states](#validation)).
 
@@ -126,17 +126,17 @@ The options tile header receives interactive states for hover and focus.
 ### Interactions
 
 #### Mouse
-By clicking anywhere on the header of an options tile, it expands when it was collapsed and collapses when it was expanded.
+By clicking anywhere on the header of an options tile, it expands when it is collapsed and collapses when it is expanded.
 When paired with a toggle, the toggle can be clicked to enable or disable the option. Clicking on the toggle in the header does not expand or collapse the tile.
 
 #### Keyboard
-The header element is in the tab order and recives focus. Pressing either <kbd>Space</kbd> or <kbd>Enter</kbd> will expand or collapse the options tile.
+The header element is in the tab order and receives focus. Pressing either <kbd>Space</kbd> or <kbd>Enter</kbd> will expand or collapse the options tile.
 All interactive controls inside the tile are then also in the browser's tab order and can therefore be accessed sequentially by pressing the <kbd>tab</kbd> key.
 
 When paired with a toggle, the toggle element receives focus before the header element.
 
 #### Screen readers
-- **VoiceOver:** Users can expand or collapse the tile by pressing <kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>Space</kbd>, <kbd>Enter</kbd> or <kbd>Space</kbd> while the header has screen reader fcous
+- **VoiceOver:** Users can expand or collapse the tile by pressing <kbd>Control</kbd>+<kbd>Option</kbd>+<kbd>Space</kbd>, <kbd>Enter</kbd> or <kbd>Space</kbd> while the header has screen reader focus
 - **JAWS:** Users can expand or collapse the tile by pressing <kbd>Enter</kbd> or <kbd>Space</kbd> when the header has screen reader focus
 - **NVDA:** Users can expand or collapse the tile by pressing <kbd>Enter</kbd> or <kbd>Space</kbd> when the header has screen reader focus
 
@@ -176,7 +176,7 @@ When a control inside the options tile is in a warning state, the summary line i
 </Row>
 
 #### Locked
-When all controls inside an options tile are disabled due to lack of permission, a lock icon is displayed next to the summary line. Additionally, when expanded, the reason for the locked state is explained to the user.
+When all controls inside an options tile are disabled due to a lack of permission, a lock icon is displayed next to the summary line. Additionally, when expanded, the reason for the locked state is explained to the user.
 
 <Row>
   <Column colLg={8}>
@@ -194,11 +194,11 @@ When all controls inside an options tile are disabled due to lack of permission,
 
 #### Saving options
 
-All options should be instantly saved / applied when changed by the user. Avoid placing a "Save" button or waiting until the tile is collapsed unless absolutely necessary. If the impact of an option is too high to save instantly, consider using a different UX pattern where the user is guided through the settings flow and explicitly confirms with a "Save" or "Apply" button.
+All options should be instantly saved/applied when changed by the user. Avoid placing a "Save" button or waiting until the tile is collapsed unless absolutely necessary. If the impact of an option is too high to save instantly, consider using a different UX pattern where the user is guided through the settings flow and explicitly confirms with a "Save" or "Apply" button.
 
 #### Grouping
 
-If multiple options tiles are related to each other, consider placing them directly adjacent / underneath each other to create a visual group and seperate multiple groups by additional spacing and ideally a heading describing the group.
+If multiple options tiles are related to each other, consider placing them directly adjacent / underneath each other to create a visual group and separate multiple groups by additional spacing and ideally a heading describing the group.
 
 <Row>
   <Column colLg={12}>
