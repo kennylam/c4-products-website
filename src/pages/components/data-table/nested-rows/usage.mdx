@@ -16,7 +16,7 @@ Nested rows allow disclosing content in data tables progressively by displaying 
 <AnchorLinks>
   <AnchorLink>Overview</AnchorLink>
   <AnchorLink>Anatomy</AnchorLink>
-  <AnchorLink>Spacing, alignment and size</AnchorLink>
+  <AnchorLink>Spacing, alignment, and size</AnchorLink>
   <AnchorLink>Nesting levels</AnchorLink>
   <AnchorLink>Behaviors</AnchorLink>
   <AnchorLink>Best practices</AnchorLink>
@@ -43,11 +43,11 @@ Nested rows display sublevel rows that follow the primary table's structure (col
 
 ### When to use
 
-Nested rows help to progressively disclose sublevels of information inside a data table and allowing the user to compare data within context.
+Nested rows help to progressively disclose sublevels of information inside a data table and allow the user to compare data within context.
 
 - Use nested rows when the data sublevels do not need to be always on view and collapsing rows do not affect the user's workflow.
 - Use nested rows when users need to compare various data within the table context.
-- Use nested rows when you need to organize rows in a child-to-parent relationships. Children rows must have the same type and number of columns.
+- Use nested rows when you need to organize rows in child-to-parent relationships. Children rows must have the same type and number of columns.
 
 ### When not to use
 
@@ -84,7 +84,7 @@ The chevron is the action icon to expand or collapse a row. It also indicates if
 
 ### Single nesting 
 
-Nested rows should be indented 48px aligning with the text of its parent row. The expansion indicator line should have a 24px margin to the left aligning to the chevron center.
+Nested rows should be indented 48px aligning with the text of its parent row. The expansion indicator line should have a 24px margin to the left aligning with the chevron center.
 Maintain the regular 16px padding of the Carbon data table cell.
 
 #### Default rows
@@ -115,7 +115,7 @@ Maintain the regular 16px padding of the Carbon data table cell.
 
 <Row>
 <Column colMd={8} colLg={8}>
-If using multiple nesting levels, each expandable child should indent 32px after the first expandble child, aligning with its direct parent text or checkbox (for selectable rows). Always align the expansion indicator line with its related chevron. Maintain Carbon's data table spacing between chevron, checkbox, and text within rows. 
+If using multiple nesting levels, each expandable child should indent 32px after the first expandable child, aligning with its direct parent text or checkbox (for selectable rows). Always align the expansion indicator line with its related chevron. Maintain Carbon's data table spacing between chevron, checkbox, and text within rows. 
 </Column>
 
 </Row>
@@ -208,9 +208,9 @@ Nested rows should match the size used in the data table. Keep consistency acros
 
 <Row>
 <Column colMd={8} colLg={8}>
-Although it is not the most common use case, multi-level nesting can be used when there is a need to categorize secondary data into deeper hierarchy levels. However, as nesting levels go deeper, the data table's complexity and navigation increase, and the first column becomes wider.
+Although it is not the most common use case, multi-level nesting can be used when there is a need to categorize secondary data into deeper hierarchy levels. However, as nesting levels go deeper, the data table's complexity and navigation increase and the first column becomes wider.
 
-Avoid using more than four sublevels of nesting. If your data requires more levels of nesting, it is a good indication to consider another pattern or have your data table directing the user to a side panel or a new page.
+Avoid using more than four sublevels of nesting. If your data requires more levels of nesting, it is a good indication to consider another pattern or have your data table direct the user to a side panel or a new page.
 
 <br></br>
 
@@ -378,7 +378,7 @@ Keeping secondary data in nested rows saves loading time by postponing some data
 
 </DoDont>
 
-<DoDont type="dont" caption="Do not use nested rows for data that differs from the main table structure and need a separate header.">
+<DoDont type="dont" caption="Do not use nested rows for data that differs from the main table structure and needs a separate header.">
 
 ![Don't use nested headers](../images/dont-1.png)
 
