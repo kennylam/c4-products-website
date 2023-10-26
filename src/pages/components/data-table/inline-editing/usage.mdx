@@ -29,7 +29,7 @@ Data table inline editing allows a user to edit the content of cells inline. Thi
 
 ## Overview
 
-Inline editing in a data table allows a user to edit the contents of cells inline. This may include editing support for all fields or only a subset. Editing is done inline and in-context to enable quick changes. Inline editing includes editing data types such as text, numbers, dates or selecting a value in a dropdown menu.
+Inline editing in a data table allows a user to edit the contents of cells inline. This may include editing support for all fields or only a subset. Editing is done inline and in-context to enable quick changes. Inline editing includes editing data types such as text, numbers, and dates or selecting a value in a dropdown menu.
 
 
 
@@ -83,7 +83,7 @@ Inline editing is disabled and hidden when batch edit mode is enabled
   </Column>
 </Row>
 
-## Auto save
+## Autosave
 
 When making inline changes in a cell, changes will be autosaved.
 
@@ -108,8 +108,8 @@ In auto-save a user should be able to undo/redo changes they have made to a cell
 
 ### When not use
 
-- When the data can't be edited inline and it requires a special interface such has having more than one input field. Use a [transactional modal](https://www.carbondesignsystem.com/components/modal/usage/#transactional-modal) or a [tearsheet](https://pages.github.ibm.com/cdai-design/pal/components/tearsheet/usage/) to edit the changes in, but still following the hover states for inline editing.
-- When editing the data in a cell has a wider impact. The [high impact edit pattern](https://www.carbondesignsystem.com/community/patterns/edit-pattern/#high-impact-edit) is typically used when editing has a wider impact. Inform users of the likely consequences of the edit to their system, and inform them that editing cannot be undone. Include a warning stage.
+- When the data can't be edited inline and it requires a special interface such as having more than one input field. Use a [transactional modal](https://www.carbondesignsystem.com/components/modal/usage/#transactional-modal) or a [tearsheet](https://pages.github.ibm.com/cdai-design/pal/components/tearsheet/usage/) to edit the changes in, but still follow the hover states for inline editing.
+- Editing the data in a cell has a wider impact. The [high impact edit pattern](https://www.carbondesignsystem.com/community/patterns/edit-pattern/#high-impact-edit) is typically used when editing has a wider impact. Inform users of the likely consequences of the edit to their system, and inform them that editing cannot be undone. Include a warning stage.
 
 Example of a transactional modal used to edit the data instead of inline.
 
@@ -128,7 +128,7 @@ Example of a transactional modal used to edit the data instead of inline.
 
 ## Complex cells
 
-A complex cell may have one or more more clickable links in one cell.
+A complex cell may have one or more clickable links in one cell.
 
 In the example below, the user has the ability to edit the asset_name, click on the asset_name to open the asset, and click on the location path of the asset, which will bring them to where that asset lives. It has an edit icon that appears closer to the content of a cell. To edit the name, the user will need to click on the icon to enable the inline editing.
 
@@ -159,7 +159,7 @@ In the example below, the user has the ability to edit the asset_name, click on 
 
 ## Data types
 
-There are 4 data types which can be edited directly inside the data table.
+4 data types that can be edited directly inside the data table.
 
 **Data types:**
 
@@ -243,9 +243,9 @@ The default type can be used to either inline edit, trigger a modal or a side pa
 
 ## Compact columns
 
-When a column has been resized to a compact size where the cells are truncated, if the user clicks on the cell to activate edit mode, the cell will expand the width of the longest value in that column with a max-width of 40rem (640px). Once the user has saved the changes they have made to the cell, it will revert back to the column size it was before editing.
+When a column has been resized to a compact size where the cells are truncated, if the user clicks on the cell to activate edit mode, the cell will expand the width of the longest value in that column with a max-width of 40rem (640px). Once the user has saved the changes they have made to the cell, it will revert to the column size it was before editing.
 
-When editing a compact column, the column will resize. Once the user has finished editing the data, the column width will revert back to it's original width.
+When editing a compact column, the column will resize. Once the user has finished editing the data, the column width will revert to its original width.
 
 <Row>
   <Column colMd={8} colLg={8}>
@@ -302,7 +302,7 @@ When inline editing in a cell, if the text exceeds the width of the cell it will
 
 ### Cell validation
 
-Input validation is communicated in the active cell and an error state. If an error is present, the user won't be able to confirm their change with Enter or Tab. The user will need to enter the valid input in order for the error to disappear.
+Input validation is communicated in the active cell and an error state. If an error is present, the user won't be able to confirm their change with Enter or Tab. The user will need to enter the valid input for the error to disappear.
 
 If the user loses focus without resolving the issue, the change is automatically discarded and the cell's content is reverted to its previous value.
 
@@ -380,7 +380,7 @@ If any error has occurred in the back end while a user was inline editing. An in
 
 #### Rows with selection (checkbox)
 
-The hover state of a row that is selected with editable cells have a different hover state style. The hover state style is a border on the row in `$ui-05`.
+The hover state of a row that is selected with editable cells has a different hover state style. The hover state style is a border on the row in `$ui-05`.
 
 <Row>
   <Column colMd={8} colLg={8}>
