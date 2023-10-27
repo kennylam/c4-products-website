@@ -5,18 +5,18 @@ tabs: ['Overview', 'One-time set-up', 'Making and delivering changes', 'Troubles
 
 <PageDescription>
 
-Some troubleshooting hints and tips when working in your local environment and delivering changes.
+Troubleshooting hints and tips when working in your local environment
 
 </PageDescription>
 
 <AnchorLinks small>
-  <AnchorLink>Understanding GitHub terms and workflow</AnchorLink>
-  <AnchorLink>Pulling down the latest changes from the master repository</AnchorLink>
-  <AnchorLink>Preventing certain files being tracked and delivered</AnchorLink>
-  <AnchorLink>Finding the relevant file</AnchorLink>
-  <AnchorLink>Clearing the cache</AnchorLink>
-  <AnchorLink>Moving your changes to a different branch</AnchorLink>
-  <AnchorLink>Updating your project dependencies</AnchorLink>
+  <AnchorLink>Understanding GitHub</AnchorLink>
+  <AnchorLink>Repository updates</AnchorLink>
+  <AnchorLink>Prevent tracking</AnchorLink>
+  <AnchorLink>Finding relevant files</AnchorLink>
+  <AnchorLink>Clearing cache</AnchorLink>
+  <AnchorLink>Moving changes to a different branch</AnchorLink>
+  <AnchorLink>Updating project dependencies</AnchorLink>
   <AnchorLink>Starting/stopping your server</AnchorLink>
 </AnchorLinks>
 
@@ -29,7 +29,7 @@ Some troubleshooting hints and tips when working in your local environment and d
 </InlineNotification>
 
 
-## Understanding GitHub terms and workflow
+## Understanding GitHub
 
 There are lots of resources on the web that explain git and GitHub, but here is a quick guide to some of the key terms and the workflow process. 
 
@@ -73,7 +73,7 @@ There are lots of resources on the web that explain git and GitHub, but here is 
 </Accordion>
 
 
-## Pulling down the latest changes from the master repository
+## Repository updates
 
 This can be accomplished two different ways.
 
@@ -92,18 +92,28 @@ Then, run the following command:
 - You may be required to enter a merge message. If so, press **Enter** on your keyboard until you reach the `#` line. 
   You can enter `:wq!` to exit this stage and all changes from master will now be in your repository.
 
+
 <Accordion>
   <AccordionItem title="If you run into merge conflicts and need help">
-    If you get really stuck, contact one of our friendly UX Engineering team for help:<br />
-    — <a href="https://ibm-casdesign.slack.com/archives/D01AW8VM7GA">Syd Rosa</a> (Central Standard Time)<br />
-    — <a href="https://ibm-casdesign.slack.com/archives/D01FTH9FV7V">Matt Huntsberry</a> (Central Standard Time)<br />
-    — <a href="https://ibm-casdesign.slack.com/archives/D014RCL4Q3Z">Conrad Schmidt</a> (Central European Standard Time)<br />
-    — <a href="https://ibm-casdesign.slack.com/archives/D3W4U63H7">Stephane Rodet</a> (Central European Standard Time)<br />
+  
+    <br />
+    If you get really stuck, contact one of our friendly UX Engineering team for help:
+    <br />
+    <br />
+    
+    <iframe
+      class="airtable-embed"
+      src="https://airtable.com/embed/appURFSG6dypHTXcd/shrFrYWX45MnvCI3V?backgroundColor=orange&viewControls=on"
+      frameborder="0"
+      onmousewheel=""
+      width="100%"
+      height="625"
+      style="background: transparent; border: 1px solid #ccc;"
+    ></iframe>
   </AccordionItem>
 </Accordion>
 
-
-## Preventing certain files being tracked and delivered
+## Prevent tracking
 
 When working in your local development environment, in VS Code, you might notice in the **Source Control** pane 
 that some configuration files (for example `package.json` and `package-lock.json`) are listed under the **Changes** 
@@ -123,7 +133,7 @@ Generally speaking, these files do not need to be included in commits you make.
   ```
 
 
-## Finding the relevant file
+## Finding relevant files
 
 Sometimes it can be hard to find the relevant file that you want to edit. Thankfully, there is a global 
 search facility in VS Code that can help you find what you need. 
@@ -135,7 +145,7 @@ Any files that contain a match will be listed underneath the search bar. You can
   ![Screenshot of VSCode showing a global search bar](../images/search.png)
 
 
-## Clearing the cache
+## Clearing cache
 
 When working in your local development environment, if your changes are not being displayed as you expect 
 in your web browser, it could be worth clearing the cache.
@@ -150,7 +160,7 @@ or introduced or modified images.
   npm run dev:clean
   ```
 
-## Moving your changes to a different branch
+## Moving changes to a different branch
 
 If you have started making changes but then realize that you are in the wrong branch (for example, if 
 you forgot to create a new branch and have made changes in the `master` branch), this handy command will 
@@ -168,7 +178,7 @@ Your changes will now be applied to your new branch.
 
 
 
-## Updating your project dependencies
+## Updating project dependencies
 
 You will have run the install command (`npm i`) when you first cloned the repository. 
 
