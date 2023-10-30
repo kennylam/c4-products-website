@@ -1,14 +1,14 @@
 ---
 title: Side panel
-tabs: ["Usage", "Style", "Code"]
+tabs: ['Usage', 'Style', 'Code']
 ---
+
 
 <PageDescription>
 
-
 Side panels keep users in-context of a page while performing tasks like navigating, editing, viewing details, or configuring something new.
-</PageDescription>
 
+</PageDescription>
 
 <AnchorLinks>
   <AnchorLink>Overview</AnchorLink>
@@ -38,10 +38,10 @@ Side panels help users perform actions like editing tables, creating objects, fi
 - There are two side panel types: _Slide-over and Slide-in._  A slide-in panel pushes the page content while a slide-over panel overlays the page content.
 
 
-- Depending on the use-case, you can use one of the five sizes of side panels available: Extra small, Small, Medium, Large & Max.
+- Depending on the use case, you can use one of the five sizes of side panels available: Extra small, Small, Medium, Large and Max.
 
 
-- Side panels fix to the left and right edges of the screen or page component content area. 
+- Side panels fixed to the left and right edges of the screen or page component content area. 
 
 </Column>
 </Row>
@@ -51,25 +51,25 @@ Side panels help users perform actions like editing tables, creating objects, fi
 <Row>
 <Column colMd={8} colLg={8}>
 
-Side panels are a fluid component and found in a few primary use-cases used for various reasons. The user needs to see the panel information in the context of the page for reference, the second being for configuration flows that affect the content on the page, and *simple create flows*. There are variants for these use-cases that require different widths and behaviors based on the content within them.
+Side panels are a fluid component and are found in a few primary use cases for various reasons. The user needs to see the panel information in the context of the page for reference, the second being for configuration flows that affect the content on the page, and *simple create flows*. There are variants for these use cases that require different widths and behaviors based on the content within them.
 
 #### Slide-in
-Use a slide-in panel when the user needs to reference all page-level along with panel information to complete a task. And if the user needs perform actions on the main page content while the panel is open. Use a slide-in panel for dynamic filtering and naviagtional experiences.
+Use a slide-in panel when the user needs to reference all page-level along with panel information to complete a task. And if the user needs to perform actions on the main page content while the panel is open. Use a slide-in panel for dynamic filtering and navigational experiences.
 
 #### Slide-over
-Use a slide-over panel when the user does not need to interact or reference the main page below the panel. Slide-over panels are a singular focus task-based experiences that are temporary additives to the user's workflow.
+Use a slide-over panel when the user does not need to interact or reference the main page below the panel. Slide-over panels are singular focus task-based experiences that are temporary additives to the user's workflow.
 
 </Column>
 <Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
 <p></p>
 
   <Aside>
-Think of slide-in panels as additive to the page's main user experience. The user needs the ability to interact with the panel alongside of the page content.  </Aside>
+Think of slide-in panels as an additive to the page's main user experience. The user needs the ability to interact with the panel alongside the page content.  </Aside>
 
 <br></br>
 
 <Aside>
-Think of slide-over panels as the primary user experience on the page when open. The user should have their focus on the panel and completing the workflow within it. </Aside>
+Think of slide-over panels as the primary user experience on the page when open. The user should have their focus on the panel and complete the workflow within it. </Aside>
 </Column>
 </Row>
 
@@ -80,13 +80,13 @@ We have different methods of revealing sets of information and task-based flows 
 <Row>
 <Column colMd={8} colLg={10}>
 
-- Do not use a side panel for simple one task edits; look into in-line editing options.
+- Do not use a side panel for simple one-task edits; look into in-line editing options.
 
 
 - Consider using a [tearsheet](https://pages.github.ibm.com/cdai-design/pal/components/tearsheet/usage) if the information being referenced is complex or if launching an extensive create flow.
 
 
-- Consider using a [modal](https://www.carbondesignsystem.com/components/modal/usage) if the information being reference is simple or if launching a simple create or edit flow.
+- Consider using a [modal](https://www.carbondesignsystem.com/components/modal/usage) if the information being referenced is simple or if launching a simple create or edit flow.
 
 
 - Consider using a new page or page state change if needing a complex edit or create flow.
@@ -117,7 +117,7 @@ The action toolbar is a set of global secondary action buttons the user can perf
 The body content area displays various informational and editable elements based on the use-case. The body content is the only scrollable area within the side panel.
 
 #### 4. Primary actions (optional)
-This area is for significant actions the user needs to take on within the side panel; they are useful in creating, editing, and confirmation use-cases. The primary actions will always remain visible to the user.
+This area is for significant actions the user needs to take within the side panel; they are useful in creating, editing, and confirming use cases. The primary actions will always remain visible to the user.
 
 </Column>
 
@@ -142,12 +142,12 @@ There are five side panel widths available for use. Panel content, interactions,
 </Column>
 </Row>
 
-_See style section for layout and sizing specifications._
+_See the style section for layout and sizing specifications._
 
 ### Placement
 
 #### Slide-in
-Slide-in panels are grid influencers. See how they affect page and componet grids below.
+Slide-in panels are grid influencers. See how they affect page and component grids below.
 
 <Tabs>
 <Tab label="Left">
@@ -247,15 +247,15 @@ Slide-over panels lay on top of the grid.
 **Title**
 
 
-- The title should be brief, using a verb plus noun combination that clearly describes the side panel’s task or purpose.
+- The title should be brief, using a verb plus noun combination that clearly describes the side panels task or purpose.
 
 
-- You can use an optional label above the title to set the context for the information in the panel. Panel's without titles should have the panel launch action attached to panel.
+- You can use an optional label above the title to set the context for the information in the panel. Panel's without titles should have the panel launch action attached to the panel.
 
 **Body copy**
 
 
-- A panel can include only content relevant to completing the current task or supplentary information to add more context to the content on page.
+- A panel can include only content relevant to completing the current task or supplementary information to add more context to the content on the page.
 
 
 **Footer**
@@ -278,16 +278,16 @@ For further content guidance, see [Carbon’s content guidelines](https://www.ca
 
 ### Trigger
 
-Panels are triggered as a result of a user’s action and are not system generated. Common components that can trigger a panel include card, table row, button, link, or icon. On a keyboard, selecting `Enter` or `Space` should launch the panel. The trigger should disable while the panel is open.
+Panels are triggered as a result of a user’s action and are not system-generated. Common components that can trigger a panel include a card, table row, button, link, or icon. On a keyboard, selecting `Enter` or `Space` should launch the panel. The trigger should be disabled while the panel is open.
 
 ### Focus
 
-Once the panel is open, set the initial focus to the first location that accepts user input. Focus should then remain trapped in the slide-over panel until it is closed. However, focus does not need to remian trapped in a slide-in panel.
+Once the panel is open, set the initial focus to the first location that accepts user input. Focus should then remain trapped in the slide-over panel until it is closed. However, focus does not need to remain trapped in a slide-in panel.
 
 ### Scrolling
-The panel component height is dependant on the screen height. If the panel content is longer than the screen height, then the body content section should scroll vertically with the title, action toolbar, and primary action sections remaining fixed in the view.
+The panel component height is dependent on the screen height. If the panel content is longer than the screen height, then the body content section should scroll vertically with the title, action toolbar, and primary action sections remaining fixed in the view.
 
-Upon scroll, the panel title will adjust to the condensed size, move to one line truncation, and a horizontal border appears underneath the action toolbar or title depending on section usage.
+Upon scroll, the panel title will adjust to the condensed size, move to one-line truncation, and a horizontal border will appear underneath the action toolbar or title depending on section usage.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -306,7 +306,7 @@ Upon scroll, the panel title will adjust to the condensed size, move to one line
 
 <Row>
 <Column colMd={8} colLg={8}>
-When your panel has multiple levels of information that the user can access, you will need to use this navigational component to allow your user to go back to the top level. Upon hover, over the back button, a tooltip should appear informing the user of where the button will take them.
+When your panel has multiple levels of information that the user can access, you will need to use this navigational component to allow your user to go back to the top level. Upon hovering, over the back button, a tooltip should appear informing the user of where the button will take them.
 
 <br></br>
 
@@ -351,7 +351,7 @@ Users can resize the side panel by dragging the resizable border across a set of
 When a user resizes the panel, the panel's size should persist if the user closes the application and enters it once more. 
 
 
-The panel default is set by the system, and should be no less than the width of an x-small side-panel. The maximum size can go up to 75% of the page layout. Ideally use only one resizable panel per screen. If multiple panels need to be expanded, make sure 25% of the content behind the panel is still in view. 
+The panel default is set by the system and should be no less than the width of an x-small side panel. The maximum size can go up to 75% of the page layout. Ideally, use only one resizable panel per screen. If multiple panels need to be expanded, make sure 25% of the content behind the panel is still in view. 
 
 
 <Row>
@@ -361,7 +361,7 @@ The panel default is set by the system, and should be no less than the width of 
 
 
 **Default**<br />
-By default, the resizable panel does not have a visible resizable border which allows the user to focus more on other more important components on the interface.
+By default, the resizable panel does not have a visible resizable border which allows the user to focus more on other more important components of the interface.
 
   </Column>
 
@@ -394,7 +394,7 @@ Dragging on the border of the panel or the icon resizes the panel. The size of t
 
 
 **Resize to default**<br />
-Double clicking the resizable border resizes the side panel to its default size.
+Double-clicking the resizable border resizes the side panel to its default size.
 
   </Column>
 </Row>
@@ -410,7 +410,7 @@ Double clicking the resizable border resizes the side panel to its default size.
 The resizable border should be the first focused item within the panel whenever possible. This border should be visible on focus. When it is in focus, the user can use the arrow keys to adjust the size of the panel. 
 
 
-For vertical panels, the user can use left and right arrow keys to resize the panel. For horizontal panels, the user can use the up and down arrow keys to resize the panel.
+For vertical panels, the user can use the left and right arrow keys to resize the panel. For horizontal panels, the user can use the up and down arrow keys to resize the panel.
 
 
 *Home (Optional):* Reduce the resizable panel to its minimum size.
@@ -419,7 +419,7 @@ For vertical panels, the user can use left and right arrow keys to resize the pa
 
 ## Modifiers
 
-### Light & Dark theming
+### Light and dark theming
 Side panels use the same UI tokens for Grey 10 and Grey 100 themes.
 
  <Row>
@@ -430,7 +430,7 @@ Side panels use the same UI tokens for Grey 10 and Grey 100 themes.
 </Column>
 </Row>
 
-_See style section for theme color token specifications._
+_See the style section for theme color token specifications._
 
 ### Overlay background usage (optional)
 <Row>
@@ -441,7 +441,7 @@ _See style section for theme color token specifications._
 </Column>
 <Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
   <Aside>
-Overlay backgrounds are more commonly found in mobile or smaller screen size expereinces when using panels due to reduced page real-estate.  </Aside>
+Overlay backgrounds are more commonly found in mobile or smaller screen size experiences when using panels due to reduced page real estate.  </Aside>
 </Column>
 </Row>
 <Row>
@@ -465,10 +465,10 @@ Overlay backgrounds are more commonly found in mobile or smaller screen size exp
 
 ### Do's
 
-- Wrap title text two lines before truncation. See how this shifts on scroll in behaviors section.
+- Wrap title text two lines before truncation. See how this shifts on scroll in the behaviors section.
 
 
-- Show full title in tooltip on hover if title truncated.
+- Show the full title in the tooltip on hover if the title is truncated.
 
 ### Don'ts
 
