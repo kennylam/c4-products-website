@@ -5,7 +5,7 @@ tabs: ["Usage", "Code"]
 
 <PageDescription>
 
-Notifications provides a way to communicate product information to users. They range from granular, inline responses to user actions to system-wide messages
+Notifications provide a way to communicate product information to users. They range from granular, inline responses to user actions to system-wide messages
 
 </PageDescription>
 <AnchorLinks>
@@ -28,12 +28,12 @@ In order to inform a user that they have new or unread notifications, an indicat
 
 ![Notification's position in the header](images/header1.png)
 
-1. **Bell indicator**: Indicator serves as an indication that there are unread or new messages in the queue.
+1. **Bell indicator**: The indicator serves as an indication that there are unread or new messages in the queue.
 
 | **Item**                          | **Description (spec)**                                                                                                                                                                                       |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| No messages in header (bell icon) | Will not show indicator, or red dot. User can still activate panel when there are no messages.                                                                                                               |
-| Messages in header (bell icon)    | Will show indicator, or red dot, and not the count of messages. This was determined to be sufficient and more legible than a number indicating the amount of notifications (which could be multiple types).  |
+| No messages in the header (bell icon) | Will not show an indicator or red dot. Users can still activate the panel when there are no messages.                                                                                                               |
+| Messages in header the (bell icon)    | Will show an indicator or red dot, and not the count of messages. This was determined to be sufficient and more legible than a number indicating the amount of notifications (which could be multiple types).  |
 
 ### Notification Panel
 
@@ -43,10 +43,10 @@ This is particularly useful as by default, toast notifications disappear after a
 
 ![Notification anatomy](images/panel1.png)
 
-1. **Bell indicator**: Indicator serves as an indication that there are unread or new messages in the queue.
-2. **Dismiss all**: Dismisses all visible notifications in the panel. They are still available to view in the history page
+1. **Bell indicator**: The indicator serves as an indication that there are unread or new messages in the queue.
+2. **Dismiss all**: Dismisses all visible notifications in the panel. They are still available to view on the history page
 3. **Settings icon**: Allows users to access the settings page directly from the panel
-4. **View all CTA**: Allows users to access the notifications history page, and also shows a count of how many total notifications exist for a users account.
+4. **View all CTA**: Allows users to access the notifications history page, and also shows a count of how many total notifications exist for a user's account.
 5. **Separator**: A segmented summary role up of notifications received by days
 6. **Notification body**: Description of notification message. Limited to 2 lines with the ability to expand and collapse to display more info if needed.
 7. **Notification title**: Title of the notification/alert/announcement.
@@ -77,13 +77,13 @@ This is particularly useful as by default, toast notifications disappear after a
 ![Notifications view all page example](images/history.png)
 
 1. **Page tabs**: Allows a user to switch between historical and settings context within the Notifications world
-2. **ilters**: A user can access and build a set of their own filters for targeting more specific finding.
+2. **filters**: A user can access and build a set of their own filters for targeting more specific findings.
 3. **Date designation**: All notifications grouped by day/date
 4. **Find**: Ability to find any notifications you have.
-5. **Delete group**: Deletes entire group or single notification within group. When selecting a notification or batch selection, the number designation appears along with the button becoming active.
+5. **Delete group**: Deletes the entire group or single notification within a group. When selecting a notification or batch selection, the number designation appears along with the button becoming active.
 6. **Notifications**: Selectable rows, sortable columns, and could be varying heights depending on the amount of information
 
-**_Infinite scroll_**: Or as close to we can get as possible to abide by accessibility standards.
+**_Infinite scroll_**: Or as close to what we can get as possible to abide by accessibility standards.
 
 ### Notifications view all page (selected states)
 
@@ -96,7 +96,7 @@ This is particularly useful as by default, toast notifications disappear after a
 
 ![Notifications filter example](images/history_filter.png)
 
-1. **Filter**: Based on type of notification
+1. **Filter**: Based on the type of notification
 
 ### Notifications view all page (filter bar)
 
@@ -116,15 +116,15 @@ This is particularly useful as by default, toast notifications disappear after a
 
 ![Notifications filtering example](images/filter.png)
 
-1. **Search**: Surfaces results based on most recent first, and then most relevant
+1. **Search**: Surfaces results based on the most recent first, and then the most relevant
 
 ### Notification open
 
 ![Notifications open](images/notification_open.png)
 
-1. **Back button and toolbar**: Allows user to go back to history list and is the space for a potential tool bar if needed.
+1. **Back button and toolbar**: Allows users to go back to the history list and is the space for a potential toolbar if needed.
 2. **Type/Title/Origin:** Shows what type of notification, what the title is, and where it's from in the lockup
-3. **Pagination**: Allows user to paginate between notifications in this view
+3. **Pagination**: Allows users to paginate between notifications in this view
 4. **Main CTA**: Placement of a main CTA for the notification
 
 ### Notifications settings page (my account, collapsed)
@@ -146,7 +146,7 @@ This is particularly useful as by default, toast notifications disappear after a
 4. **Time settings**: Once a user opts into setting a specific frequency, the user can set a specific time and timezone in which to receive notifications
 5. **Day settings**: Once a user opts into setting a specific frequency, the user can set a specific day range to receive notifications
 6. **Accordion containers**: Allows a user to expand on additional functionality for the notification
-7. **Toggle switch**: Allows the user to choose how they want to receive notifications based on the offerings they have permissions to
+7. **Toggle switch**: Allows the user to choose how they want to receive notifications based on the offerings they have permission to
 8. **Save button**: Once changes are made, the button becomes active, acknowledging a change in state and a user can save their progress.
 9. **Page tabs**: Allows a user to switch between historical and settings context within the Notifications world
 10. **Accordion containers**: Allows a user to expand on additional functionality for the notification
@@ -164,19 +164,19 @@ This is particularly useful as by default, toast notifications disappear after a
 
 ### When to use
 
-Include a short list describing situations where this pattern could be applied.For example, use this pattern when:
+Include a short list describing situations where this pattern could be applied. For example, use this pattern when:
 
 - Always use the bell indicator when there are new or unused notifications or messages
 - Always use the panel for accessing notifications or messages from the header bell icon indicator
-- Use the view all page to show a users historical list of all of the users notifications or messages
+- Use the view all page to show a user's historical list of all of the user notifications or messages
 - Use the user account settings page pattern when a user can set their own personal notification settings. They can access these from their user preferences
 - User the admin settings page pattern when a user can set their system notification settings. This page will be configurable based on the needs of the admin use case.
 - Only use modals for a disruptive moment where a critical decision needs to be made, and a user cannot move further without taking action.
 
 ### When not to use (optional)
 
-- Do not use user account settings page pattern for admin settings page use cases
-- Do not use admin account settings page pattern for user account settings page use cases
+- Do not use the user account settings page pattern for admin settings page use cases
+- Do not use the admin account settings page pattern for user account settings page use cases
 
 ## The solution
 
@@ -201,7 +201,7 @@ In the case of a critical immediate action, a system generated modal may be pres
 
 1. **Title block**: Sets the context of the announcement
 2. **Body block**: Description of announcement
-3. **Decision point CTA**: A call to action in order defer an immediate need for a certain amount of time with the understanding that the critical action needs to be taken eventually and the user will not be able to move further after a certain amount of deferments.
+3. **Decision point CTA**: A call to action in order to defer an immediate need for a certain amount of time with the understanding that the critical action needs to be taken eventually and the user will not be able to move further after a certain amount of deferments.
 4. **Immediate decision CTA**: A call to action in order to satisfy the immediate need that is critical to the use case.
 
 ## Indicators
