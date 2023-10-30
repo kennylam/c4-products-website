@@ -35,11 +35,11 @@ otherwise notice or understand.
 ## Overview
 
 Coachmarks are used to call out specific functionality or concepts within the UI that may not be intuitive but are important for 
-the user to gain understanding of the product’s main value and discover new use cases. They can be used for first-time use, as well 
+the user to gain an understanding of the product’s main value and discover new use cases. They can be used for first-time use, as well 
 as secondary onboarding and to highlight new functionality.
 
 ### When to use
-- To guide a users attention to the most important actions to take or concepts to understand in the UI. 
+- To guide a user's attention to the most important actions to take or concepts to understand in the UI. 
 - To explain a workflow or feature in context using bite-size content and visuals. 
 - To highlight a new feature in the UI.
 
@@ -163,7 +163,7 @@ the coachmark as a teaching moment and minimizes the chance it will be interpret
 
 ### Stacked
 Sometimes a capability or concept introduced in a fixed coachmark needs supporting information to help a user understand a concept 
-more fully. You may want to nudge the user to interact with a capability without bogging them down with more information, but know 
+more fully. You may want to nudge the user to interact with a capability without bogging them down with more information but know 
 some users will need further clarification before they will move forward. The stacked coachmark can be used in this case. 
 
 Like the fixed coachmark, the main layer of a stacked coachmark starts in a minimized state. It can include ghost buttons to trigger 
@@ -186,7 +186,7 @@ can be stacked on the main layer.
 
 Sometimes content in a guide banner or inline tip may warrant further detail or context, but it may not make sense to send 
 the user away to documentation. In those cases, you can include a ghost button to trigger the floating coachmark to provide 
-the additional detail (see example below). This variant can be dragged around the page since it isn’t specific to a UI 
+additional detail (see example below). This variant can be dragged around the page since it isn’t specific to a UI 
 element and could be blocking part of the page the user wants to see. This variant is also unique in that it can be opened 
 multiple times after dismissing since the trigger is a button. 
 
@@ -224,7 +224,7 @@ steps, and show the user’s place in the flow with pagination.
 6. **Back button (optional):** If the coachmark uses steps, the back button is needed to navigate to the previous step.
 7. **Primary action button:**  The primary button is used to navigate to the next step (if stepped) and/or to dismiss the coachmark. 
 These should read ”Done,“ when indicating the completion of a set of slides/steps; or “Got it,” when moving on from a single 
-statement, such as as introductory message, or a short line of explanatory text. 
+statement, such as an introductory message, or a short line of explanatory text. 
 8. **Close icon:** Allows the user to dismiss the coachmark.
 9. **Draggable icon (optional):**  Floating coachmarks have a draggable icon to indicate the coachmark can be moved around 
 the page.
@@ -246,11 +246,11 @@ would be. The beacon and caret tip should be center-aligned with each other to c
 
 Coachmark placement is determined by the variant. 
 
-**Tooltip coachmarks** should not cover the related parts of the UI that are essential to the user’s tasks. They should not bleed off page or sit behind other content. Because the tooltip (regardless of the variant) will not go away unless the user dismisses it, or refreshes or navigates to another page, the tooltip will remain connected to the element and beacon if the user scrolls the page.
+**Tooltip coachmarks** should not cover the related parts of the UI that are essential to the user’s tasks. They should not bleed off the page or sit behind other content. Because the tooltip (regardless of the variant) will not go away unless the user dismisses it, or refreshes or navigates to another page, the tooltip will remain connected to the element and beacon if the user scrolls the page.
 
 **Fixed coachmarks** will always sit flush with the bottom right corner of the browser window, and will not scroll away when the user scrolls the page. 
 
-**Floating coachmarks** will sit `8px` under the button that triggered it, unless the user drags the coachmark to another position. Closing the floating coachmark will reset its position.
+**Floating coachmarks** will sit `8px` under the button that triggered it unless the user drags the coachmark to another position. Closing the floating coachmark will reset its position.
 
 <DoDontRow>
 
@@ -291,7 +291,7 @@ and up to 5 max.), each step containing a unique heading, illustration (if appli
 When writing content for your novice to pro experiences, remember the following best practices:
 - To keep the content more future-proof, avoid referring to specific places in the UI according to their placement. For example, 
 instead of “Go to the Investigation tab,” just write “Go to the Investigation.”
-- Be consistent when labelling buttons: instead of using a variety of similar terms for similar actions, choose one and use it 
+- Be consistent when labeling buttons: instead of using a variety of similar terms for similar actions, choose one and use it 
 throughout. For example, rather than switching between “Finish,” “Complete,” and “End,” use “Done”.
 
 
@@ -322,7 +322,7 @@ the content?
 illustrations. 
 - [Lottie](https://airbnb.design/lottie/) powers the animated SVGs, so it is recommended to use After Effects to create the vector 
 animation and export using the [Bodymovin](https://aescripts.com/bodymovin/) plugin.<br/>
-- [Lottiefiles.com](https://lottiefiles.com/) is a good resource to check the integrity of the animation post-export.
+- [Lottiefiles.com](https://lottiefiles.com/) is a good resource for checking the integrity of the animation post-export.
 
 ### Illustration references
 
