@@ -6,7 +6,7 @@ stage: "3"
 
 <PageDescription>
 
-Drag and drop is a common interaction that is widely used for various situations. In Carbon ecosystem, we clarify the use cases, interactions and styles.
+Drag and drop is a common interaction that is widely used for various situations. In the Carbon ecosystem, we clarify the use cases, interactions and styles.
 
 </PageDescription>
 
@@ -33,7 +33,7 @@ Drag and drop is a common interaction that is widely used in various situations.
 
 ## Draggable objects
 
-There are many objects that can be draggable, but here are the three most common:
+Many objects can be draggable, but here are the three most common:
 
 - Cards
 - Table rows
@@ -62,13 +62,13 @@ While the object is being dragged, it contains a focus state to differentiate th
 | box-shadow | 0 2px 6px 0 rgba(0,0,0,.3) |
 
 <DoDontRow>
-<DoDont aspectRatio="1:1" caption="No transparency adjusted while dragging the object. ">
+<DoDont aspectRatio="1:1" caption="No transparency was adjusted while dragging the object. ">
 
 ![dragging-object-do](images/dragging-object-do.png)
 
 </DoDont>
 
-<DoDont type="dont" aspectRatio="1:1" caption="Do not adjust transparency of the object while dragging.">
+<DoDont type="dont" aspectRatio="1:1" caption="Do not adjust the transparency of the object while dragging.">
 
 ![dragging-object-don't](images/dragging-object-dont.png)
 
@@ -80,7 +80,7 @@ While the object is being dragged, it contains a focus state to differentiate th
 ### Mouse cursor
 
 To initiate drag and drop interaction, a signifier to inform users that the object is draggable is required. 
-Mouse cursor is the most important signifier. On the hover over the draggable object, the cursor changes to Cursor-grab-default state to indicate the object is draggable. On click and while dragging, the cursor changes to Cursor-grab-down state.
+The mouse cursor is the most important signifier. On the hover over the draggable object, the cursor changes to the Cursor-grab-default state to indicate the object is draggable. On click and while dragging, the cursor changes to a Cursor-grab-down state.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -92,7 +92,7 @@ Mouse cursor is the most important signifier. On the hover over the draggable ob
 
 ### Drag handle icon
 
-Drag handle icon is an **optional** signifier. When drag and drop interaction is expected in the context, no additional handle icon is needed. However, handle icon will help situation in the context it's not clear the object is draggable.
+The drag handle icon is an **optional** signifier. When drag and drop interaction is expected in the context, no additional handle icon is needed. However, the handle icon will help the situation in the context where it's not clear the object is draggable.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -104,11 +104,11 @@ Drag handle icon is an **optional** signifier. When drag and drop interaction is
 
 #### Handle icon displayed on hover
 
-When there are many draggable objects on the screen. If drag and drop is expected as common action. (e.g., dashboard cards.)
+When there are many draggable objects on the screen. If drag and drop is expected as a common action. (e.g., dashboard cards.)
 
 #### Persistent handle icon
 
-When it's not clear the objects are draggable, drag handle icon helps to inform the users the object is draggable. (e.g., movable tags on the separate column, reordering section in a form.)
+When it's not clear the objects are draggable, the drag handle icon helps to inform the users the object is draggable. (e.g., movable tags on the separate column, reordering section in a form.)
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -120,7 +120,7 @@ When it's not clear the objects are draggable, drag handle icon helps to inform 
 
 ## Dropzone
 
-While dragging the object, drop zone appears near the dragging object. The drop zone pushes nearby objects horizontally and/or vertically.
+While dragging the object, the drop zone appears near the dragging object. The drop zone pushes nearby objects horizontally and/or vertically.
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -132,7 +132,7 @@ While dragging the object, drop zone appears near the dragging object. The drop 
 
 ### Initial location of the object 
 
-When the object A moves to below the object B, the initial location A was before (pink highlighted).
+When object A moves below object B, the initial location A was before (pink highlighted).
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -142,7 +142,7 @@ When the object A moves to below the object B, the initial location A was before
 </Column>
 </Row>
 
-The original location becomes a drop zone. When the dragging object is moved to other point where the new drop zone appears, the original location drop zone disappears, and nearby objects takes up the space.
+The original location becomes a drop zone. When the dragging object is moved to another point where the new drop zone appears, the original location drop zone disappears, and nearby objects take up the space.
 
 <Row>
 <Column colMd={8} colLg={8}>
