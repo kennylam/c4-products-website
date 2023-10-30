@@ -19,9 +19,9 @@ Contextual user assistance that can be integrated into any IBM Product experienc
 </AnchorLinks>
 
 ## Overview
-IBM Assist Me is an easy to integrate conceirge support experience for users of IBM Products.
+IBM Assist Me is an easy to integrate concierge support experience for users of IBM Products.
 
-The experience surfaces contextual links and resources to specific questions, step-by-step instructions, on-call agents/SME's, interaction with AI powered chatbots, and tailored search responses— all without interrupting the user's workflow. 
+The experience surfaces contextual links and resources to specific questions, step-by-step instructions, on-call agents/SMEs, interaction with AI powered chatbots, and tailored search responses— all without interrupting the user's workflow. 
 
 Once launched from the global header, users are served product team-curated content that leverages IBM documentation and WalkMe functionality. [Click here](https://ibm-assist-me1.fyre.ibm.com/) to view a demo of the IBM Assist Me panel. 
 
@@ -59,7 +59,7 @@ IBM Assist Me consolidates IBM’s in-app widgets, such as WalkMe, into one modu
 ## Usage
 While the IBM Assist Me experience can easily be integrated into any product — teams that choose to adopt the experience must follow specific guidelines to ensure a consistent experience across IBM products.
 
-**Note:** Each of panel’s features, besides search, can be toggled off. Only turn on the support options that make apply to your product’s users.
+**Note:** Each of the panel’s features, besides search, can be toggled off. Only turn on the support options that apply to your product’s users.
 
 ### Primary and secondary launch points
 Product teams must embed the IBM Assist Me [common help icon](blob:https://carbondesignsystem.com/e71a0be6-6d05-4fc0-8535-0a7fe165acf7) in the product’s [UI Shell Header](https://carbondesignsystem.com/components/UI-shell-header/usage/) within the utilties section. This icon will serve as the primary launch point for the panel **and is required by all products that use the panel.**
@@ -68,7 +68,7 @@ In addition to the primary launch point, product teams may decide on a secondary
 
 Secondary launch points should not act as primary ways to open the panel. **They should act as a way to conduct a background article search on a custom input.**
 
-For instance, a learn more link could open the assistance panel and preload a specifc search result.
+For instance, a learn more link could open the assistance panel and preload a specific search result.
 
 <Row>
   <Column colLg={8}>
@@ -83,7 +83,7 @@ For instance, a learn more link could open the assistance panel and preload a sp
 ### Unified smart search
 When the assistance panel is opened, it will attempt to perform an appropriate contextual search for articles.
 
-Before deploying, teams should setup contextual search terms for the panel to display upon launching the panel. By default, the panel uses the term **“overview”**. So, if no contextual terms have been provided, the search results for that term will be displayed.
+Before deploying, teams should set up contextual search terms for the panel to display upon launching the panel. By default, the panel uses the term **“overview”**. So, if no contextual terms have been provided, the search results for that term will be displayed.
 
 For details on how a target product can supply contextual search terms, view the [IBM Assist Me wiki](https://github.ibm.com/PrivateCloud-analytics/ibm-assist-me/wiki/02.-How-to-embed-search-context).
 
@@ -128,7 +128,7 @@ Product teams should display **no more than 4 WalkMe tours** on any given page. 
 
 ### Additional support links
 
-IBM Assist Me can surface static support links in the within the “Additional support” link found in the footer of the panel. For static support links in the table below, supplying 3 to 5 links is recommended. Do not add more than 6 links.
+IBM Assist Me can surface static support links within the “Additional support” link found in the footer of the panel. For static support links in the table below, supplying 3 to 5 links is recommended. Do not add more than 6 links.
 
 <Row>
   <Column colLg={8}>
@@ -141,7 +141,7 @@ IBM Assist Me can surface static support links in the within the “Additional s
 
 ## Installation
 
-At minimum, the IBM Assist Me panel uses the [WalkMe search application](https://pages.github.ibm.com/cdai-design/pal/walkme-guide/main/overview#walkme-implementations) to find applicable documents for a particular context or user search. It is expected that the target application will have [WalkMe configured](https://pages.github.ibm.com/cdai-design/pal/walkme-guide/main/overview) and loaded into the particular view where the panel will be surfaced. The assistance panel may be surfaced on a view that does not have WalkMe loaded if this value is provided. In this case, the panel will load the WalkMe snippet in order to perform searches and (optionally) display tours.
+At a minimum, the IBM Assist Me panel uses the [WalkMe search application](https://pages.github.ibm.com/cdai-design/pal/walkme-guide/main/overview#walkme-implementations) to find applicable documents for a particular context or user search. It is expected that the target application will have [WalkMe configured](https://pages.github.ibm.com/cdai-design/pal/walkme-guide/main/overview) and loaded into the particular view where the panel will be surfaced. The assistance panel may surface on a view that does not have WalkMe loaded if this value is provided. In this case, the panel will load the WalkMe snippet in order to perform searches and (optionally) display tours.
 
 To integrate the IBM assistance panel into a target product, a product must:
 
@@ -159,10 +159,10 @@ Below are the planned feature enhancements to IBM Assist Me.
 **Article launch out**
 Currently, clicking on an article surfaces a launch-out link. The launch-out link will serve the article within a new tab in the user’s browser. 
 
-The assistance panel team plans to release an update that will serve documentation within the panel itself.
+The assistance panel team plans to release an update that will serve as documentation within the panel itself.
 
 **Panel resize**
-The assistance panel currently does not resize from it’s 320px width. 
+The assistance panel currently does not resize from its 320px width. 
 
 The assistance panel team plans to release an update that will allow the panel to resize up to 544px in width.
 
