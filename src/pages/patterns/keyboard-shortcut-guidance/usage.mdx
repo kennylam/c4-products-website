@@ -5,14 +5,14 @@ tabs: ['Usage', 'Style']
 
 <AnchorLinks>
   <AnchorLink>Overview</AnchorLink>
-  <AnchorLink>Behaviour</AnchorLink>
+  <AnchorLink>Behavior</AnchorLink>
   <AnchorLink>Accessibility</AnchorLink>
   <AnchorLink>Related</AnchorLink>
 </AnchorLinks>
 
 ## Overview
 
-The objective of this pattern is to give users context-based, quick access to available keyboard shortcuts that help them navigate and interact with the application. Besides encouraging power-users to accelerate their workflow this provides crucial information for users with diverse abilities that rely on keyboard navigation to interact with software. Though the information must also provided in the IBM knowledge center pages of a product, the users would need to switch back and forth between the actual product and the guidance, resulting in higher cognitive load.
+The objective of this pattern is to give users context-based, quick access to available keyboard shortcuts that help them navigate and interact with the application. Besides encouraging power-users to accelerate their workflow this provides crucial information for users with diverse abilities that rely on keyboard navigation to interact with software. Though the information must also provided in the IBM knowledge center pages of a product, the users would need to switch back and forth between the actual product and the guidance, resulting in a higher cognitive load.
 
 ### Anatomy
 
@@ -30,7 +30,7 @@ The pattern consists of two components: the keyboard shortcut indicator and the 
 
 1. **Indicator:** Indicating that the keyboard shortcut modal will be triggered
 
-Note that the icon inside the indicator changes depending on the user's operating system. The `MacCommand24` icon will be used when the user is accessing the application from macOS. On any other oprating system (Windows, Linux, unknown), the `Keyboard24` icon is used instead.
+Note that the icon inside the indicator changes depending on the user's operating system. The `MacCommand24` icon will be used when the user is accessing the application from macOS. On any other operating system (Windows, Linux, unknown), the `Keyboard24` icon is used instead.
 
 #### Keyboard shortcut modal
 
@@ -43,32 +43,32 @@ Note that the icon inside the indicator changes depending on the user's operatin
 </Row>
 
 1. **Modal title:** "Keyboard shortcuts"
-2. **Categories:** Tabs that allow the user to switch between the individual categories / contexts of the application
+2. **Categories:** Tabs that allow the user to switch between the individual categories/contexts of the application
 3. **Groups:** An accordion that structures all available shortcuts within a category into groups
-4. **Command:** An individual keyboard shortcut — consists of a label and a the key combination
-5. **Note:** Informs the user how to access this modal (in case they "accidentally" triggered it or opened from help menu)
+4. **Command:** An individual keyboard shortcut — consists of a label and the key combination
+5. **Note:** Informs the user how to access this modal (in case they "accidentally" triggered it from the help menu)
 
-## Behaviour
+## Behavior
 
 ### Modal structure
 
-The keyboard shortcut modal should have two categoris (represented by tabs): the current context and global application shortcuts.
+The keyboard shortcut modal should have two categories (represented by tabs): the current context and global application shortcuts.
 The current context is defined by which page the user is currently viewing.
 
 **Example:**
-The user is in a data editor and then moves on to a chart building flow. In the first part, the categories shown will be "Data editor" and "Global". In the second part the categories will be "Chart builder" and "Global".
+The user is in a data editor and then moves on to a chart building flow. In the first part, the categories shown will be "Data editor" and "Global". In the second part, the categories will be "Chart builder" and "Global".
 
 Note that the "Global" category is always placed as the second and the current context will always be the first tab (selected by default).
 
 Within a category, the individual shortcuts are structured into groups to make it easier for the user to find the one they're looking for. These groups are displayed in an accordion. The first group is always open by default while the other groups are initially collapsed when the modal opens.
 
-The height of the modal should be fixed to avoid visual artifcats / jumping when an accordion item is opened or closed.
+The height of the modal should be fixed to avoid visual artifacts / jumping when an accordion item is opened or closed.
 
 The individual shortcuts have a descriptive label and a key combination. The individual keys are combined with operators.
 
 ### Keys and operators
 
-Keys should use icons to reduce text whenever the icon is clearly identifiable for the user. If an icon might not be understood by everyone, it's best to put the name of the key next to it. This is a list of recommended pairings:
+Keys should use icons to reduce text whenever the icon is clearly identifiable to the user. If an icon might not be understood by everyone, it's best to put the name of the key next to it. This is a list of recommended pairings:
 
 |Key|macOS|Windows/Linux|
 |:--|:--|:--|
@@ -89,7 +89,7 @@ Keys should use icons to reduce text whenever the icon is clearly identifiable f
 The following operators are available:
 
 1. **And (`+`):** The keys must be pressed together
-2. **Or (`/`):** Multiple keys work for this command. This can also be used to simplify repetetive commands (such as "<kbd>⌘</kbd> + <kbd>↑</kbd> / <kbd>→</kbd> / <kbd>↓</kbd> / <kbd>←</kbd>" to indicate the cmd key can be used in conjunction with the arrow keys instead of displaying four individual commands)
+2. **Or (`/`):** Multiple keys work for this command. This can also be used to simplify repetitive commands (such as "<kbd>⌘</kbd> + <kbd>↑</kbd> / <kbd>→</kbd> / <kbd>↓</kbd> / <kbd>←</kbd>" to indicate the cmd key can be used in conjunction with the arrow keys instead of displaying four individual commands)
 3. **To (`…`):** Indicate that a certain range of numeric keys are used (for example "<kbd>⌘</kbd> + <kbd>1</kbd> … <kbd>8</kbd>" to switch between tabs 1-8)
 
 ### Indicator states
@@ -120,9 +120,9 @@ The keyboard shortcut indicator has four states:
 
 </GifPlayer>
 
-1. The indicator moves up to it's shown position within `200ms` and uses `carbon--motion(entrance, productive)` easing
+1. The indicator moves up to its shown position within `200ms` and uses `carbon--motion(entrance, productive)` easing
 2. The blue outline starts filling up immediately. It takes `1100ms` and uses `linear` / no easing since it represents time
-3. The indicator scales to `150%` of it's original size and fades out to 0% opacity. Both transitions take `200ms` and use `carbon--motion(exit, productive)` easing.
+3. The indicator scales to `150%` of its original size and fades out to 0% opacity. Both transitions take `200ms` and use `carbon--motion(exit, productive)` easing.
 
 #### Hidden → Running → Aborted
 <GifPlayer color="dark">
@@ -133,16 +133,16 @@ The keyboard shortcut indicator has four states:
 
 </GifPlayer>
 
-1. Indicator moves and fills up outline as in previously described animation
+1. The indicator moves and fills up the outline as in the previously described animation
 2. The outline stops filling and its color changes to `ui-04` immediately
-3. The indicator scales to `80%` of it's original size within `300ms` and uses `carbon--motion(standard, productive)` easing
+3. The indicator scales to `80%` of its original size within `300ms` and uses `carbon--motion(standard, productive)` easing
 4. After a `300ms` delay, the indicator moves back out to its hidden state with `200ms` duration and `carbon--motion(entrance, productive)` easing
 
 ### Trigger
 
 The indicator is triggered whenever the user presses the <kbd>⌘ cmd</kbd> key (macOS) or <kbd>ctrl</kbd> (Windows). However, there is a `500ms` delay between the keypress and the indicator starting to show and fill up so that we may catch an [interruption](#interruptions) before the indicator is shown and the user is not bothered by a constantly appearing and disappearing circle.
 
-**Since some users with motor impairements might have problems with calling an interruption in this time frame, a user must have the option to disable this form of triggering in the application settings.**
+**Since some users with motor impairments might have problems with calling an interruption in this time frame, a user must have the option to disable this form of triggering in the application settings.**
 
 As an alternative to the keyboard shortcut, the application's help menu should provide an entry point to the modal.
 
@@ -152,9 +152,9 @@ Before and while the indicator is shwoing and filling up the user can abort it w
 
 1. Another key (other than the trigger key) is pressed. Example: <kbd>⌘</kbd> + <kbd>S</kbd>
 2. Any key (including the trigger key) is released
-3. The user moves their mouse pointer futher than 50px from the position it was when they pressed the trigger key
+3. The user moves their mouse pointer further than 50px from the position it was when they pressed the trigger key
 4. The user pressed any mouse button (clicked)
-5. The window loses user's focus because they switched to another application / browser tab
+5. The window loses the user's focus because they switched to another application / browser tab
 
 If any of these interruptions happen before the indicator is shown, there will be no visual feedback to the user. The indicator simply won't show. If an interruption happened while the indicator was already visible, the "aborted" state is shown and the indicator disappears.
 
@@ -162,7 +162,7 @@ In both cases, the indicator receives a `750ms` cooldown before it can be trigge
 
 ## Accessibility
 
-The primary focus selctor on the keyboard shortcut modal is `li[role='tab'] a` to automatically focus the first tab when the modal opens.
+The primary focus selector on the keyboard shortcut modal is `li[role='tab'] a` to automatically focus the first tab when the modal opens.
 
 Each key and operator has an `aria-hidden="true"` attribute to remove them from a screen reader's list of elements. Instead, the entire combination has an `aria-label` that ensures the icons and operators are read correctly.
 
