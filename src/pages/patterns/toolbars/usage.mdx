@@ -22,9 +22,9 @@ A toolbar is a collection of action items that organizes a program's interaction
 
 ## Overview
 
-A toolbar serves as an always-available, easy-to-use interface for performing common functions. It contains a set of icons or buttons that are part of a products interface or an open window. 
+A toolbar serves as an always-available, easy-to-use interface for performing common functions. It contains a set of icons or buttons that are part of a product interface or an open window. 
 
-A toolbar is a command bar that organizes a program's functions into a series of tabs at the top of a window. It increases discoverability of features and functions, enables quicker learning of the program as a whole, and makes users feel more in control of their experience with the product. 
+A toolbar is a command bar that organizes a program's functions into a series of tabs at the top of a window. It increases the discoverability of features and functions, enables quicker learning of the program as a whole, and makes users feel more in control of their experience with the product. 
 
 A toolbar can be customized by adding or removing icon buttons based on specific user needs. This pattern illustrates the following options.
 
@@ -38,9 +38,9 @@ A **toolbar** that is attached to one edge of the program window. This option al
 
 ![Docked toolbar anatomy](images/docked_toolbar_anatomy.png)
 
-1. **Application actions** (optional): Commands that involve doing something to or with a file. Typical examples would include, but not limited to, create, open, save, save as, print, share and send.
+1. **Application actions** (optional): Commands that involve doing something to or with a file. Typical examples would include, but are not limited to, create, open, save, save as, print, share and send.
 2. **Canvas and navigation tools** (optional): Commands that affect the page layout, page backgrounds, spacing, and positioning.
-3. **Object type formatting** (optional): Commands related to formatting, applying styles to the selected object type.
+3. **Object type formatting** (optional): Commands related to formatting, and applying styles to the selected object type.
 4. **Transformation tools** (optional): Commands related to the transformation of the selected object type.
 5. **Text formatting** (optional): Commands that provide users with the ability to edit text.
 6. **Panels** (optional): Commands that trigger a side panel. These items can be designed with either the [Ghost buttons or Icon buttons](https://www.carbondesignsystem.com/components/button/usage) and should always be aligned to the right of your canvas. 
@@ -59,7 +59,7 @@ A toolbar that is floating on your canvas. Users can move the toolbar around to 
 
 ### Text toolbar
 
-A toolbar that is connected to a container. It is built with a set of buttons and menus that allows users to edit text, search keywords, attach files, and embed links.
+A toolbar that is connected to a container. It is built with a set of buttons and menus that allow users to edit text, search keywords, attach files, and embed links.
 
 ![Text toolbar anatomy](images/text_toolbar.png)
 
@@ -72,12 +72,12 @@ A toolbar that is connected to a container. It is built with a set of buttons an
 
 ### Container toolbar
 
-A toolbar that is connected to a container. It is built with a set of buttons and menus that allows users to edit the content inside that container.
+A toolbar that is connected to a container. It is built with a set of buttons and menus that allow users to edit the content inside that container.
 
 ![Container toolbar anatomy](images/container_toolbar.png)
 
 1. **Canvas and navigation tools** (optional): Commands that affect the page layout, page backgrounds, spacing, and positioning.
-2. **Object type formatting** (optional): Commands related to formatting, applying styles to the selected object type.
+2. **Object type formatting** (optional): Commands related to formatting, and applying styles to the selected object type.
 3. **Transformation tools** (optional): Commands related to the transformation of the selected object type.
 
 <br/>
@@ -91,7 +91,7 @@ A toolbar that is connected to a container. It is built with a set of buttons an
 - Use group dividers to help guide users. Doing so makes the groupings obvious and the commands easier to find.
 - Avoid placing destructive actions next to frequently used actions. Use either order or grouping to get separation. 
 - Use the overflow menu to indicate that not all commands can be displayed. The overflow menu should only be used when there isn't sufficient room to display all the actions.
-- Make sure that the most frequently used actions are directly accessible from the toolbar and not hidden in the over flow menu when you have room.  If necessary, reorder the actions, move less frequently used action, or even remove them completely from the toolbar. 
+- Make sure that the most frequently used actions are directly accessible from the toolbar and not hidden in the overflow menu when you have room.  If necessary, reorder the actions, move less frequently used actions, or even remove them completely from the toolbar. 
 
 <br/>
 
@@ -119,7 +119,7 @@ A toolbar that is connected to a container. It is built with a set of buttons an
 
 Using a toolbar should make a product feel simpler, more efficient, and easier to use never the opposite. They have the most value when used to present immediate, results-oriented commands. Results-oriented commands make things easier to understand and users much more efficient and productive. 
 
-Don't take for granted that using a toolbar automatically makes your product better. Make the commands discoverable. Choose a design that has a clear, obvious, unique mapping between your commands. Users should be able to determine quickly and confidently which grouping has the command they are looking for, and rarely choose the wrong group. 
+Don't take for granted that using a toolbar automatically makes your product better. Make the commands discoverable. Choose a design that has a clear, obvious, unique mapping between your commands. Users should be able to determine quickly and confidently which grouping has the command they are looking for and rarely choose the wrong group. 
 
 Make the commands self-explanatory. Users should understand the effect of a command from its label, icon, tooltip, and preview. They shouldn't have to experiment or read a Help topic to see how a command works. 
 
@@ -132,9 +132,9 @@ Prefer immediate commands. A command is immediate if it takes effect immediately
 ![Toolbar spacing example](images/spacing.png)
 
 - The recommended toolbar height is 40 pixels and utilizes the field size icon button. 
-- A 1 pixel dividers is used to separate different groupings inside your toolbar. 
-- Light theme : `#E0E0E0` 
-- Dark theme : `#393939`
+- A 1 pixel divider is used to separate different groupings inside your toolbar. 
+- Light theme: `#E0E0E0` 
+- Dark theme: `#393939`
 
 ### States
 
@@ -150,7 +150,7 @@ A _**chevron menu**_ is used for typeface and type size menus and adopts the [dr
 
 <br/>
 
-The _**caret**_ is used  to indicate that a menu will displays different options to choose from.  Prefer immediate commands. A command is immediate if it takes effect immediately (that is, without dialog boxes to gather additional input). If a command might require input, consider using a caret, with the immediate command in the button portion, and the commands that require input in the submenu.
+The _**caret**_ is used  to indicate that a menu will display different options to choose from.  Prefer immediate commands. A command is immediate if it takes effect immediately (that is, without dialog boxes to gather additional input). If a command might require input, consider using a caret, with the immediate command in the button portion, and the commands that require input in the submenu.
 
 ![Using carets in a toolbar](images/toolbar_caret.png)
 
@@ -173,7 +173,7 @@ Make sure the toolbar scales well from the largest window sizes to the smallest.
 
 ### Overflow
 
-Choose a suitable toolbar style based on the number of commands and their usage. The toolbar is not capped with a set number of action items however, you should avoid configurations that takes too much space away from users. The overflow menu is used to display a list of multiple controls when horizontal space for the toolbar becomes restricted or when it is adapting to breakpoints. 
+Choose a suitable toolbar style based on the number of commands and their usage. The toolbar is not capped with a set number of action items however, you should avoid configurations that take too much space away from users. The overflow menu is used to display a list of multiple controls when horizontal space for the toolbar becomes restricted or when it is adapting to breakpoints. 
 
 ![Example of overflow](images/overflow.png)
 
@@ -196,7 +196,7 @@ Buttons that complete an action upon click receive tooltips on hover and focus.�
 Tab and Shift + Tab move focus in and out of the toolbar.
 
 **When focus moves into a toolbar**:
-If focus is moving into the toolbar for the first time, focus is set on the first control that is not disabled.
+If focus is moving into the toolbar for the first time, the focus is set on the first control that is not disabled.
 If the toolbar has previously contained focus, focus is optionally set on the control that last had focus. Otherwise, it is set on the first control that is not disabled.
 
 **Horizontal toolbars**:
