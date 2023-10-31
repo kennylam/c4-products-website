@@ -11,7 +11,7 @@ Slack channel: [#ibmproducts-pal](https://ibm-casdesign.slack.com/archives/CQGR0
 <PageDescription>
 
 To edit is to change values or data. This pattern focuses on how to place
-the user in a flow when there's a need for editing an existing asset, and
+the user in a flow when there's a need for editing an existing asset and
 provides important considerations to keep in mind when creating edit flows.
 
 </PageDescription>
@@ -192,7 +192,7 @@ text input or text area field one at a time.
 - The change will affect another setting.
 - The field will be any form element other than text input or text area.
 - Consider using a bulk edit pattern if there are several values in a section that can be edited.
-- If the field(s) being edited are next to other values that look the same but have a different edit pattern, or won't show an icon on hover.
+- If the field(s) being edited are next to other values that look the same but have a different edit pattern or won't show an icon on hover.
 
 ## Modal edit
 
@@ -215,7 +215,7 @@ text input or text area field one at a time.
 
 - Use a modal for simple edits with one or two form fields to be filled out.
 - For example, for a read-only summary in a panel, clicking edit
-  opens edit modal (only for edits with 1-2 form fields).
+  opens the edit modal (only for edits with 1-2 form fields).
 
 ### When not to use
 
@@ -236,16 +236,16 @@ text input or text area field one at a time.
 </Column>
 </Row>
 
-1. **Title block**: The title block contains navigational elements such as closing, go back, and pop out, along with header text (always begins with "Edit [object name]") and description that describes the side panel’s purpose.
+1. **Title block**: The title block contains navigational elements such as closing, go back, and pop out, along with header text (always begins with "Edit [object name]") and a description that describes the side panel’s purpose.
 2. **Action toolbar (optional)**: The action toolbar is a set of global secondary action buttons the user can perform with the side panel’s content.
 3. **Body content**: The body content area displays various informational and editable elements based on the use-case. The body content is the only scrollable area within the side panel.
-4. **Primary actions**: For an edit side pannel, the primary and secondary buttons are "Save" and "Cancel".
+4. **Primary actions**: For an edit side panel, the primary and secondary buttons are "Save" and "Cancel".
 
 #### Panel size
 
 One reason for editing in side panels is that they allow the user to stay in context.
 Choose a side panel size that allows enough of the background to stay in context, while
-is also being mindful of a size that comfortably and appropriately fits the content that
+also being mindful of a size that comfortably and appropriately fits the content that
 needs to be edited. Refer to [Side Panel guidelines](https://pages.github.ibm.com/cdai-design/pal/components/side-panel/usage) for available sizes and grids.
 
 #### Slide-in
@@ -272,14 +272,14 @@ The user should have their focus on the panel and editing the workflow within it
 - When editing the content in a data table row (and inline edit for the table is not appropriate).
 - Consider a side panel to show additional information on the object being edited.
 - The user needs to stay in context with the surrounding content as they make their edits.
-- The original create flow was in a narrow tear sheet and you don't want to obstruct the context by re-opening the narrrow tear sheet for edits.
+- The original create flow was in a narrow tear sheet and you don't want to obstruct the context by re-opening the narrow tear sheet for edits.
 
 ### When not to use
 
 - Do not use a side panel for simple one-task edits - consider inline editing instead.
 - The information being referenced is complex or if launching an extensive create flow - use a tearsheet instead.
-- The information being reference is simple or if launching a simple create or edit flow.
-- If needing a complex edit or create flow.
+- The information being referenced is simple or if launching a simple create or edit flow.
+- If your need a complex edit or create flow.
 
 ## Tearsheet edit
 
@@ -295,7 +295,7 @@ The user should have their focus on the panel and editing the workflow within it
 </Column>
 </Row>
 
-1. **Header**: The header can include title, description, labels, and tabs. Always use "Edit" in the title.
+1. **Header**: The header can include a title, description, labels, and tabs. Always use "Edit" in the title.
 2. **Main content area**: This area includes the editable content.
 3. **Save/cancel buttons**: The primary and secondary buttons are "Save" and "Cancel".
 4. **Background overlay**: (same as modals)
@@ -313,7 +313,7 @@ The user should have their focus on the panel and editing the workflow within it
 - The user needs to interact with, compare, or have full view of the rest of the
   screen's content.
 - Input is required before a user can proceed - use a modal instead.
-- If there is a large amount of editable content or complex/multi -step
+- If there is a large amount of editable content or complex/multi-step
   interactions needed - use a large tear sheet or side panel instead.
 
 ### Wide tearsheet edit
@@ -355,9 +355,9 @@ Do not use when the edit actions are few/simple - consider using a modal instead
 
 ![Full page edit anatomy](images/edit-full-page-1.png)
 
-1. **Editable content.** Everything in the page is editable and shown in the editable state.
+1. **Editable content.** Everything on the page is editable and shown in the editable state.
 2. **Save/cancel buttons.** Cancel changes and save changes buttons are always shown as disabled until
-   a change is detected on the page. Note that "changes" is added to the button names in this case because
+   a change is detected on the page. Note that "changes" are added to the button names in this case because
    the title of the page does not have "Edit" in it. In a toggle use case where the content on the page was
    static until the user turned on an edit mode, the title of the page would change to "Edit [object]" and
    the buttons would be labeled "Cancel" and "Save".
@@ -365,7 +365,7 @@ Do not use when the edit actions are few/simple - consider using a modal instead
 | Use case                         | Behavior                                                                                                                |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Toggle a page to "edit mode"     | Save and cancel buttons show at the bottom when in "edit mode".                                                         |
-| Settings page is always editable | "Save changes" and "Cancel changes" buttons sit at bottom of browser window, and are disabled until change is detected. |
+| The settings page is always editable | "Save changes" and "Cancel changes" buttons sit at the bottom of the browser window, and are disabled until change is detected. |
 
 ### When to use
 
@@ -431,7 +431,7 @@ href="#text-editors">
 
 Editable cards allow a user to view, modify, and save the content contained
 within the card. These cards are generally used in instances where a user needs
-to make changes to a resource instances (ex. configuration details), account
+to make changes to a resource instance (ex. configuration details), account
 plan, etc. Editable cards allow a user to edit something within context.
 
 #### Cards - simple edits
@@ -476,10 +476,10 @@ there is a chance a user could lose track of the edits they made, for example in
 long forms.
 
 - The summary of changes should only be used for fullscreen and tearsheet edits if the user has to scroll or navigate different components to make the edits.
-- It should be used to provide an overview of what the user has changed and potentially explain what the consequences of those changes mights be.
-- It should also allow for the user to make quick edits like removing a specific change if they decide they don't want to make that change anymore. A good example of this is the add and select tearsheet pattern. In this pattern users are making selections from a list, the summary shows the selected items in one spot and the option to remove individual selections.
+- It should be used to provide an overview of what the user has changed and potentially explain what the consequences of those changes might be.
+- It should also allow the user to make quick edits like removing a specific change if they decide they don't want to make that change any more. A good example of this is the add and select tearsheet pattern. In this pattern users are making selections from a list, the summary shows the selected items in one spot and the option to remove individual selections.
 
-Use a right side panel to show the changes that the user is making.  The summary of changes should show the information in the way that suits the content. For example, show a list of fields changed or a list of the selections made. If possible, users should be able to remove the changes listed in the summary from the side panel before saving.
+Use a right side panel to show the changes that the user is making.  The summary of changes should show the information in a way that suits the content. For example, show a list of fields changed or a list of the selections made. If possible, users should be able to remove the changes listed in the summary from the side panel before saving.
 
 <Row>
 <Column colMd={12} colLg={12}>
@@ -496,11 +496,11 @@ areas or will make changes elsewhere. Inform the user if their changes or edits
 cannot be undone.
 
 Consider the level of severity of the edits to make sure the users are warned and
-aware of the consequence of the changes they made:
+aware of the consequences of the changes they made:
 
 #### Low severity edits 
 
-Changes that are only to a non-functional values and that
+Changes that are only to a non-functional value and that
 don't have impacts on other areas are considered low severity edits. For low
 severity edits, the "always editable" or "batch edit"  patterns can be used. Don't
 show a warning model for low severity edits.
@@ -509,10 +509,10 @@ show a warning model for low severity edits.
 
 Changes are considered high severity edits if they will cause any of the following:
 
-- Behaviours, assets, components, workflows will need to change.
+- Behaviors, assets, components, and workflows will need to change.
 - The customer experience will change.
-- The experience for other people in the organization will changes.
-- They will trigger needing to edit somewhere else.
+- The experience of other people in the organization will change.
+- They will trigger the need to edit somewhere else.
 
 High severity edits require a confirmation dialog. The button to confirm the changes should use the [danger button](https://www.carbondesignsystem.com/components/button/usage/).
 
@@ -526,11 +526,11 @@ High severity edits require a confirmation dialog. The button to confirm the cha
 
 ### Undo
 
-Consider how the edits fits in the undo stack:
+Consider how the edits fit in the undo stack:
 
 - If fields are always editable, users should be able to undo each step or element.
 - If there is an "edit mode", consider allowing the user to undo specific element
-  changes in addition to the an overall undo after the user saves changes that would revert all of the changes made.
+  changes in addition to the overall undo after the user saves changes that would revert all of the changes made.
 
 Undo is dependent on the use case, however, consider adding "undo" as an action
 in the confirmation notification or options to clear edits if it fits in editing mode.
@@ -541,9 +541,9 @@ in the confirmation notification or options to clear edits if it fits in editing
 
 An optional success notification can be used to confirm that the user’s changes
 have been saved. Consider confirmation notifications especially if users will be
-leaving the edit mode, or exiting an edit modal, tearsheet or view  would be losing
-the view of the changes they made. For inline edits or automatic saving a
-notification is not recommended to avoid excessive notifications noise, as long as
+leaving the edit mode, or exiting an edit modal, tearsheet or view would be losing
+the view of the changes they made. For inline edits or automatic saving, a
+notification is not recommended to avoid excessive notification noise, as long as
 there is obvious visual feedback that the changes have been applied.
 
 If saving the changes is an operation that will take time to process consider including
@@ -579,7 +579,7 @@ and reveal editable fields when users click an "edit" button.
 | Type               | Interaction                                                                 | When to use                                                                                                                    |
 | ------------------ | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | Active "edit mode" | Editable fields become available only after a user clicks an "edit" button. | Use when users' intent may be to review rather than change data or values. Use when editing will disrupt user or system tasks. |
-| Always editable    | Fields that can be changed always appear editable.                          | Use when users main goal is to change data rather than review data.                                                            |
+| Always editable    | Fields that can be changed always appear editable.                          | Use when users' main goal is to change data rather than review data.                                                            |
 
 <Row>
   <Column colMd={4} colLg={4}>
@@ -606,13 +606,13 @@ Review the guidance in the
 | Type                          | Interaction                                                                                                | When to use                                                                                                                                                                             |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Active save                   | User clicks a "save" button to confirm the edits they have made to data or values.                         | Use when edits will disrupt user or system tasks. Use when batch edits to multiple values are made.                                                                                     |
-| Auto save by interval         | System saves changes periodically without user action. Visual cues inform the user that changes are saved. | Use to prevent loss in case of error. Use when users are likely to remain in an "edit" flow for prolonged periods of time. Use when application of changes does not disrupt the system. |
+| Auto save by interval         | System saves changes periodically without user action. Visual cues inform the user that changes are saved. | Use to prevent loss in case of error. Use when users are likely to remain in an "edit" flow for prolonged periods. Use when the application of changes does not disrupt the system. |
 | Auto save on leaving a field  | System saves the changes to each field after the user makes an edit.                                       | Use when the intent is to edit one or very few fields.                                                                                                                                  |
 
 #### Severity
 
 Edits that have a wider impact on the system or user experience should use
-[warnings](#warnings) to inform the user of the consequence of their edits.
+[warnings](#warnings) to inform the user of the consequences of their edits.
 
 ### Best practices
 
@@ -623,11 +623,11 @@ Explicit IA lets us use succinct button terms such as "Save" or "Cancel".
 **Do: Consider using the same edit variation as is used to create the resource.**  
 Exceptions: Where the number of editable values is significantly smaller or larger than
 during creation, or the context of current settings is required, use a different
-behavior to when the resource is created.
+behavior than when the resource is created.
 
 **Do: Use a variation that is best for the number of editable (or likely to be
 edited) values.**  
-Some variations (modal, inline editing) are best used when few values are
+Some variations (modal, inline editing) are best used when a few values are
 editable. Consider how many values a user is likely to edit in each interaction.
 
 **Do: Provide the data in a read-only format if the user's intent is often to
@@ -636,7 +636,7 @@ Consider using an "edit" button to reveal the edit form. See
 [edit mode](#behaviors).
 
 **Do: Provide users feedback**  
-Alert users when saving changes fails. If possible, retain their work and allow
+Alert users when saving changes fail. If possible, retain their work and allow
 the user to try saving again.
 
 **Do: Provide any context needed for a user to make edits to a value.** 
@@ -644,8 +644,8 @@ Consider side panel or inline editing so that the user can continue to see the
 page context.
 
 **Do: Inform users of the consequence of their edits, whether to other editable
-values or to the system as a whole.**  
-Use steps, validation and progressive disclosure to help users avoid error. When
+values or the system as a whole.**  
+Use steps, validation and progressive disclosure to help users avoid errors. When
 editing a resource affects system availability, use warnings, messages and
 notifications if necessary to inform the user.
 
