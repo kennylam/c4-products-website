@@ -1,0 +1,58 @@
+---
+title: Profile menu
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+<PageDescription>
+
+The profile menu is a consistently available user interface element that contains an essential account, product and active session information. It is only available in the logged in state.
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink> Overview </AnchorLink>
+  <AnchorLink> Anatomy </AnchorLink>
+</AnchorLinks>
+
+
+## Overview 
+
+This pattern can be used by all products except those in IBM Cloud.  
+
+**If your product is using [MultiCloud SaaS Platform](https://w3.ibm.com/w3publisher/multicloud-saas-platform) (MCSP):**
+- You can leverage the User profile pattern to enable users to get to the IBM SaaS console from within the product. Users are then redirected from the SaaS console to the related marketplace where they can complete their upgrade. 
+- You can also adopt the Global header to easily enable this pattern. This will allow you to customize the features for your product, like adding in WalkMe tours, links to the product documentation, and links to the support site.
+
+**If your product is not using MCSP:**
+- You can still leverage the User profile pattern. It should direct users to the associated marketplace listing page when they select it from within the product. 
+- You can also adopt this pattern and customize the features. You will need to work with your development team to manually implement it.
+
+
+### Anatomy
+
+The profile menu provides information about the current instance, as well as navigation to the IBM SaaS Console. If the product is leveraging the User management feature provided by MCSP, the user may also access the User management via the profile menu.
+
+![profile](/images/userProfileMenu1.png)
+
+1. **User information:** Includes the user's name and email.
+2. **Instance information:** (Read only) Includes the instance name, region, and instance owner.
+3. **User management:** (Optional) Products can leverage the MCSP user management from here if there is no in product management.
+4. **IBM SaaS Console:** Here is where users can access and manage their subscriptions.
+5. **Logout button**
+
+<br />
+
+<CardGroup>
+  <MiniCard
+    title="Figma template"
+    href="https://www.figma.com/file/SlZ7TK2mTzNLIHZB2dGXRF/MCSP-Onboarding-Design-Guide?node-id=2195%3A409332&t=AvJflqOliLETiArL-1"
+    actionIcon="launch"
+  ></MiniCard>
+  <MiniCard
+    title="Storybook"
+    href="https://pages.github.ibm.com/automation-saas/automation-common-header/?path=/story/automation-header--with-user-management"
+    actionIcon="launch"
+  ></MiniCard>
+</CardGroup>{" "}

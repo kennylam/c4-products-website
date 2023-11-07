@@ -1,0 +1,257 @@
+---
+title: IBM Cloud registration
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+<PageDescription>
+
+IBM Cloud Try offer registration allows users to sign up for a Sandbox Trial, Trial, or Freemium account for IBM Cloud products.
+
+</PageDescription>
+
+<AnchorLinks>
+<AnchorLink>Overview</AnchorLink>
+<AnchorLink>Registration process</AnchorLink>
+<AnchorLink>Right panel overview</AnchorLink>
+<AnchorLink>Product benefits and right panel</AnchorLink>
+<AnchorLink>Security and account verification</AnchorLink>
+<AnchorLink>Additional examples</AnchorLink>
+</AnchorLinks>
+
+## Overview
+
+This flow allows product teams to create IBM Cloud registration flow for Try offers and allows end users to sign up for a Sandbox Trial, Trial, or Freemium account for products that are provisioned on IBM Cloud. It will require users to create an IBM Cloud account when they sign up, unless they already have one.
+
+### Navigating to the Try offer sign-up page
+Users may navigate to the IBM Cloud registration form for Try offers. There are multiple ways a user can navigate to a Try experience; the most common is from the marketing site, where users can click on a CTA on the homepage, navigation, or interior site pages (such as Pricing and Industries). 
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![IBM Cloud Try offer page](/images/ibm-cloud-registration/ibmcloud-reg/ibmcloud-cta.png)
+
+  </Column>
+</Row>
+
+## Registration process
+There are three scenarios for a user to begin registration, depending on whether they already have an IBM Cloud account or need to create one.
+1. Users without an IBM Cloud account can enter the account information and create a new IBM Cloud account.
+2. Users who already have an IBM Cloud account can log in and register for the product-specific Try offer.
+3. Users who have an IBMid - but not an IBM Cloud account - may log in with their existing IBMid credentials and add billing/payment information in order to create an IBM Cloud account using those same credentials. 
+
+### User needs to create an IBM Cloud account
+Users who do not have an existing IBM Cloud are prompted to continue through the registration process:
+- **Account information**: Users must provide their email address, and in order to maintain platform and account security, stringent password requirements are enforced. The user is presented with these requirements in real time upon clicking into the field, which are automatically checked off as they are met.
+- **Email verification**: A verification code is sent to the user’s email which must be entered in the email verification field to confirm the user’s identity and ownership of their account.
+- **Personal information**: Users must enter their first name, last name, address, and phone number in the personal information fields, or can use the **Autofill with LinkedIn** option to enter their account information and create a new IBM Cloud account.
+- **Account notice and choice acknowledgement**: The account notice and choice widget is used to obtain consent to contact the user by email and/or phone.
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![IBM Cloud annotated page](/images/ibm-cloud-registration/ibmcloud-reg/ibmcloud-annotated.png)
+
+  </Column>
+</Row>
+
+1. **Log in link**: Users who already have an IBM account can log in directly. 
+  (a) **IBM Cloud account**: Users with an IBM Cloud account can directly log in and instantiate their Try offer.
+  (b) **IBMid**: Users with an IBMid can sign in, but will need to fill out additional fields in order to create an IBM Cloud account from this existing information.
+2. **Account information**: Users provide their email address and create a password. Password requirements are displayed upon clicking into the field. 
+3. **Email verification**: Users are emailed a verification code which must be confirmed in this field. If users do not receive the verification code, they may request a new one here.
+4. **Personal information**: Users can enter their personal information or can use the **Autofill with LinkedIn** option to autofill their personal information. Users must provide company information, billing information, and credit card information. For more information on why credit card information is required, see [Security and account verification guidance](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/try/#ibm-cloud-registration-security-and-account-verification). 
+5. **Account notice**: The account notice is used to obtain consent to contact the user by email and/or phone.
+6. **Right panel**: Content and pictograms in the right panel are determined by the product teams and should explain the value proposition in two lines or less (excluding titles) and be limited to five bullet points per form. Designers must leverage the [IBM pictogram library](https://www.ibm.com/design/language/iconography/pictograms/library/). 
+For more information, refer to [IBM Cloud registration right panel guidance](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/try/#ibm-cloud-registration-right-panel). 
+
+### User already has an IBM account
+Users who already have an IBM account can log in directly by clicking the log in link.
+1. **IBM Cloud account**: Users with an IBM Cloud account can directly log in and instantiate their Try offer. 
+2. **IBMid**: Users with an IBMid can sign in but will need to fill out additional fields in order to create an IBM Cloud account from this existing information.
+
+Once the IBM account is created, users can log in to their Try offer. 
+
+## Right panel overview
+This flow provides guidance to product teams on what should be added to the IBM Cloud registration right panel bullet points. Product teams can use the right panel as an effective landing page to motivate and remind users the value of enrolling for a Try offer. Product teams can customize the contents of this panel and add information specific to their products, such as benefits and key features. 
+
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![IBM Cloud Registration](/images/ibm-cloud-registration/ibmcloud-rightside/cloudr-rightside.png)
+
+  </Column>
+</Row>
+
+### Right panel best practices
+- The content added to the right panel should echo the same benefits featured on the marketing page.
+- Product teams can have 3 to 5 bullet points in the right panel.
+- The list items must explain the benefits of using the Try offer.
+- The list items must remind users what they are going to get from signing up for the Try offer.
+- The list items must help users clearly understand the value of using the Try offer.
+- The use of additional content beyond bullet points such as images, badges, or animated GIFs is not permitted in IBM Cloud right panels. 
+
+## Product benefits and right panel
+Use the benefits and features outlined on the product marketing page as content to populate the IBM Cloud registration right panel. Though not 1:1, the items relevant to the trial must be carried over. Product teams are encouraged to follow this process when creating the content for the right panel.
+
+### Guidance for Try offers
+IBM offers three types of Try offers: Trials, Sandbox Trials, and Freemiums. All teams should offer at least one type, and can choose to offer multiple Try offers depending on your product strategy. The information you add to the landing page will depend on the Try offer(s) your team chooses.
+
+<Tabs>
+<Tab label="Trial">
+
+Trial users can experience an entire product for a limited period of time for free. The usage of the entire product within a short time enables users to set their expectations and use the Trial immediately. This information can be used to draw attention to the users in the URX left hand panel. 
+
+#### Example 
+<h5>Infrastructure and resource correlation
+<Row>
+  <Column colMd={8} colLg={10}>
+
+IBM [Product name] consolidates and correlates key information to proactively alert IT Ops teams about potential problems.
+
+  </Column>
+</Row>
+</h5>
+
+<br></br>
+
+
+</Tab>
+
+<Tab label="Sandbox Trial">
+
+Sandbox Trial allows users to immediately access a working instance of a product for evaluation at no cost. Product teams can use this information effectively by listing the value proposition and key benefits of using the Sandbox Trial. For example,
+
+#### Example 
+<h5>Easily manage your applications
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Discover, map, monitor, and troubleshoot your applications with full stack visibility in 5 minutes.
+
+  </Column>
+</Row>
+</h5>
+
+<br></br>
+
+</Tab>
+
+<Tab label="Freemium">
+
+Freemium trial gives users access to part of the product or feature for an unlimited time in the hope that Freemium users will eventually graduate to a paid version of the software. For example,
+
+#### Example 
+<h5>Trial benefits
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Get up to 100,000 API calls at no cost to evaluate the full product features.
+
+  </Column>
+</Row>
+</h5>
+
+<br></br>
+
+</Tab>
+
+</Tabs>
+
+### Additional examples
+
+#### Example 1
+<h5>Powerful real-time speech synthesis
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Convert written text to natural-sounding speech using our latest neural speech synthesizing techniques.
+
+  </Column>
+</Row>
+</h5>
+
+#### Example 2
+<h5>Build your journey to public cloud
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Build, deploy, and manage solutions in IBM's public cloud.
+
+  </Column>
+</Row>
+</h5>
+
+
+#### Example 3
+<h5>Instant optimization
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Non-disruptively optimize your cloud resources from our user-friendly interface within seconds.
+
+  </Column>
+</Row>
+</h5>
+
+#### Example 4
+<h5>Unleash application performance
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Gain complete visibility into your public cloud application and infrastructure stack.
+
+  </Column>
+</Row>
+</h5>
+
+
+#### Example 5
+<h5>Highly secure
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Securely expose your data and business applications.
+
+  </Column>
+</Row>
+</h5>
+
+
+#### Example 6
+<h5>Full lifecycle API management
+<Row>
+  <Column colMd={8} colLg={10}>
+
+Drive new engagement models and channels by accelerating your API-led digital transformation.
+
+  </Column>
+</Row>
+</h5>
+
+
+## Security and account verification 
+IBM requires users to provide their billing and credit card information when they create an IBM account to help verify their identity and keep the IBM platform secure. A user’s credit card will not be charged but a temporary $1 hold will be placed on their account. 
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![IBM Cloud secure and verify](/images/ibm-cloud-registration/ibmcloud-secureverify/cloud-paymethod.png)
+
+  </Column>
+</Row>
+
+Users are prompted to provide their account, billing, and credit card information to finish creating their IBM Cloud account:
+- **Account information**: As part of creating an account the users must provide their email address and personal information. 
+- **Billing information**: Users are asked to enter their first and last name, address, and phone number in the billing information fields. Users must also provide their company and tax information. 
+- **Credit card**: Users must enter their credit card number, expiration date, and security code. 
+
+<InlineNotification kind="info">
+
+**Note:** 
+- In some cases, the billing information could be different from the personal information, hence this information must be provided by the users. 
+- As part of verification, a $1 temporary hold will be placed on the user’s credit card. IBM Try offers are always free and the users will not be billed unless they exceed free tier limits or choose to upgrade their account.
+
+</InlineNotification>

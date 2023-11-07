@@ -1,0 +1,183 @@
+---
+title: Upgrade and purchase
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+<PageDescription>
+
+A product-led strategy seeks to encourage current and potential customers to upgrade their current plan and/or purchase a paid plan by providing an easy and intuitive experience.
+
+</PageDescription>
+
+<AnchorLinks>
+<AnchorLink>Overview</AnchorLink>
+<AnchorLink>IBM Marketplace</AnchorLink>
+<AnchorLink>Third-party marketplace</AnchorLink>
+<AnchorLink>IBM Cloud Catalog</AnchorLink>
+</AnchorLinks>
+
+## Overview
+
+There are three upgrade or purchase scenarios IBM users are able to perform:
+
+1. Upgrade a Try offer to a paid plan.
+2. Upgrade a paid plan to a higher tier.
+3. Purchasing a paid plan directly without having an existing Try offer account.
+
+The pattern you use to design an upgrade or purchase experience will depend on the type of product you work on, the marketplace where it can be bought, and the cloud provider where it will run (if this is relevant to your product). You can reference the [Try offers](/try-offers/overview) page to get more information about these factors.
+
+## IBM Marketplace
+
+Any product on the IBM Marketplace should use the CTAs in the Trial countdown and nurture emails to enable an easy upgrade experience. 
+
+#### Direct users to the correct location
+- If your product is **NOT** on the [MultiCloud SaaS Platform](https://w3.ibm.com/w3publisher/multicloud-saas-platform) (MCSP), be sure to direct the CTA links to the myIBM dashboard. 
+- If your product is on **MCSP**, be sure to direct your links to the purchase options on your product page.
+
+While there are no patterns for direct purchase, IBM does offer it through IBM sales CTAs or the IBM Marketplace self service checkout flow.
+
+
+<Row className="image-card-group">
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard
+sub-title="Trial countdown" 
+sub-titleColor="dark" 
+hoverColor="dark"
+href="/patterns/trial-countdown/usage">
+
+![Trial countdown](/images/overview/trial-countdown.png)
+
+</ImageCard>
+
+</Column>
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard disabled aspectRatio="1:1" subTitle="Nurture emails- coming soon">
+
+![Nurture emails- coming soon](/images/overview/emails-thumbnail.png)
+</ImageCard>
+
+</Column>
+
+</Row>
+
+If your product **is on MCSP**, another path to upgrade or purchase is from the IBM SaaS Console. The SaaS Console is typically accessed through the profile menu pattern. 
+
+<Row>
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard
+sub-title="Profile menu" 
+sub-titleColor="dark" 
+hoverColor="dark"
+href="/patterns/profile-menu/usage">
+
+![Profile menu](/images/overview/profile-menu.png)
+
+</ImageCard>
+
+</Column>
+
+</Row>
+
+
+## Third-party marketplace (like AWS, Azure, or Google)
+
+Third-party marketplaces allow a user to select a public or a private offer when they choose to  upgrade. Normally there are multiple subscription options available to the user in the marketplace listing. These are public offers, and are available to anyone who is interested in subscribing to the product. The associated terms and conditions are standard to everyone who chooses to subscribe. (You can see a prototype of a public offer upgrade flow [here](https://www.figma.com/proto/AdslrSd7PwrntFZehRcTjb/SaaS-for-Hyperscalers-Design-Templates?node-id=232%3A360856&scaling=min-zoom&page-id=163%3A351403&starting-point-node-id=232%3A360856&show-proto-sidebar=1).)
+
+Some customers may prefer to work directly with our Sales team to customize a plan that works best for their needs. They can choose the Contact Sales link to initiate the interaction and this would be considered a private offer. They will need to provide the contact information in the form and will be connected with a seller to agree on an offer that is customized to their specific needs. (You can see a private offer example [here](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/user-scenarios/private-offer#private-offer).)
+
+Products should use the AWS upgrade and purchase pattern and nurture emails to enable an easy upgrade experience. 
+
+#### Direct users to the correct location 
+The CTAs in the AWS upgrade and purchase pattern or nurture emails should direct users to your product’s listing page on the third-party marketplace.
+
+<Row className="image-card-group">
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard
+sub-title="AWS upgrade and purchase" 
+sub-titleColor="dark" 
+hoverColor="dark"
+href="/patterns/upgrade-purchase/aws-upgrade-purchase">
+
+![AWS upgrade/purchase](/images/overview/aws-upgrade.png)
+
+</ImageCard>
+
+</Column>
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard disabled aspectRatio="1:1" subTitle="Nurture emails- coming soon">
+
+![Nurture emails- coming soon](/images/overview/emails-thumbnail.png)
+
+</ImageCard>
+
+</Column>
+</Row>
+
+If your product **is on MCSP**, another path to upgrade or purchase is from the IBM SaaS Console. The SaaS Console is typically accessed through the profile menu pattern. 
+
+<Row>
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard
+sub-title="Profile menu" 
+sub-titleColor="dark" 
+hoverColor="dark"
+href="/patterns/profile-menu/usage">
+
+![Profile menu](/images/overview/profile-menu.png)
+
+</ImageCard>
+
+</Column>
+
+</Row>
+
+## IBM Cloud Catalog
+
+Any product on the IBM Cloud Catalog should use the Try offer upgrade pattern and nurture emails to enable an easy upgrade experience. 
+
+#### Direct users to the correct location 
+The CTAs in the Try offer upgrade pattern and nurture emails should direct users to your product’s service instance plan page in the IBM Cloud Console.
+
+While there are no patterns for direct purchase, IBM does offer it through IBM sales CTAs or the IBM Cloud Catalog self service purchase flow.
+
+<Row className="image-card-group">
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard
+sub-title="Try offer upgrade" 
+sub-titleColor="dark" 
+hoverColor="dark"
+href="/patterns/upgrade-purchase/try-offer-upgrade">
+
+![Try offer upgrade](/images/overview/in-product-upgrade.png)
+
+</ImageCard>
+
+</Column>
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard disabled aspectRatio="1:1" subTitle="Nurture emails-coming soon">
+
+![Nurture emails- coming soon](/images/overview/emails-thumbnail.png)
+
+</ImageCard>
+
+</Column>
+
+</Row>

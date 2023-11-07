@@ -1,0 +1,503 @@
+---
+title: Multi-factor authentication enrollment
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+<PageDescription>
+
+Multi-factor authentication enrollment is an additional layer of identification beyond a username and password which enhances security for users registering for an IBM Try offer or paid plan. This pattern is not relevant to products on IBM Cloud.
+</PageDescription>
+
+<AnchorLinks>
+<AnchorLink>Overview</AnchorLink>
+<AnchorLink>Enrollment screen</AnchorLink>
+<AnchorLink>Selecting the method</AnchorLink>
+
+</AnchorLinks>
+
+
+## Overview
+
+It is up to the discretion of a product team when to incorporate multi-factor authentication into the registration flow. If implemented, the user chooses from five verification options, and can choose to configure more than one. The multi-factor authentication enrollment screen will appear as the final step of the registration process.
+
+## Enrollment screen
+
+The user is prompted to select at least one of the following multi-factor authentication methods to begin enrollment as part of their first time accessing a product. 
+
+- IBM Security Verify app
+
+- Third-party verification apps
+
+- Built-in device sensor(s) (biometric)
+
+- Physical security key
+
+- Email verification.
+
+
+## Selecting the method
+
+The user can choose from five different authentication methods (IBM Security Verify app, Authenticator app, Built-in device sensor, Physical security key, or Email). The following steps will depend on the user's authentication method(s) of choice.
+
+<Tabs>
+
+<Tab label="IBM Security Verify app">
+
+Users who select authentication through the IBM Security Verify app are presented with the following screens and instructions to walk them through the registration process. 
+
+<br></br>
+
+Upon successful registration using the IBM Security Verify App, the user is presented with the successful enrollment screen. If the user changes their mind or is unable to enroll using this method, they may click Use another method to go back to the initial screen.
+
+<br></br>
+
+<InlineNotification kind="info">
+
+**Note:** This method requires the use of a mobile device that is installed with an IBM Security Verify application.
+
+</InlineNotification>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Choose method Security Verify app](/images/Multi-factor-authentication/Choose-method-Security-Verify-app.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security verify connect your account](images/Multi-factor-authentication/Security-verify-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security verify QR code](images/Multi-factor-authentication/Security-verify-2.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security verify QR code enabled](images/Multi-factor-authentication/Security-verify-3.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security verify pending](images/Multi-factor-authentication/Security-verify-4.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security verify add additional method](images/Multi-factor-authentication/Security-verify-5.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security verify success](images/Multi-factor-authentication/Security-verify-success.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+
+</Tab>
+
+<Tab label="Authenticator app">
+
+Users who select authentication through a third-party authenticator app are presented with the following screens and instructions to walk them through the registration process. 
+
+<br></br>
+
+Upon successful registration using a third-party authenticator app, the user is presented with the successful enrollment screen. If the user changes their mind or is unable to enroll using this method, they may click Use another method to go back to the initial screen.
+
+<br></br>
+
+<InlineNotification kind="info">
+
+**Note:** This method requires the use of a mobile device with a compatible authenticator application installed.
+
+</InlineNotification>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Choose method authentication app](images/Multi-factor-authentication/Choose-method-Authentication-app.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Authentication app connect](images/Multi-factor-authentication/Authentication-app-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Authentication app QR code](images/Multi-factor-authentication/Authentication-app-2.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Authentication app enter passcode](images/Multi-factor-authentication/Authentication-app-3.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Authentication app additional method](images/Multi-factor-authentication/Authentication-app-4.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Authentication app success](images/Multi-factor-authentication/Authentication-app-success.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+</Tab>
+
+<Tab label="Built-in device sensor">
+
+Users who select authentication through a built-in sensor are presented with the following screens and instructions to walk them through the registration process. 
+
+<br></br>
+
+Upon successful registration and naming their built-in sensor enabled device, the user is presented with the successful enrollment screen. If the user changes their mind or is unable to enroll using this method, they may click Use another method to go back to the initial screen.
+
+<br></br>
+
+<InlineNotification kind="info">
+
+**Note:** This method requires a compatible device with a built-in sensor, such as a Macbook with TouchID enabled.
+
+</InlineNotification>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Choose method Authentication sensor](images/Multi-factor-authentication/Choose-method-Authentication-sensor.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device sensor touch id](images/Multi-factor-authentication/Device-sensor-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device sensor connect device](images/Multi-factor-authentication/Device-sensor-2.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device sensor google chrome password](images/Multi-factor-authentication/Device-sensor-3.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device sensor name your device](images/Multi-factor-authentication/Device-sensor-4.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device sensor additional method](images/Multi-factor-authentication/Device-sensor-5.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Device sensor success](images/Multi-factor-authentication/Device-sensor-success.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+</Tab>
+
+<Tab label="Physical security key">
+
+Users who select authentication through a physical security key are presented with the following screens and instructions to walk them through the registration process. 
+
+<br></br>
+
+Upon successful registration and naming their physical security key device, the user is presented with the successful enrollment screen. If the user changes their mind or is unable to enroll using this method, they may click Use another method to go back to the initial screen.
+
+<br></br>
+
+<InlineNotification kind="info">
+
+**Note:** This method requires the use of a physical hardware security key (e.g. Yubikey).
+
+</InlineNotification>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Choose method Security key](images/Multi-factor-authentication/Choose-method-Security-key.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security key connect device](images/Multi-factor-authentication/Security-key-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security key plug in](images/Multi-factor-authentication/Security-key-2.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security key verify](images/Multi-factor-authentication/Security-key-3.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security key use key](images/Multi-factor-authentication/Security-key-4.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security key pin required](images/Multi-factor-authentication/Security-key-5.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security key enter](images/Multi-factor-authentication/Security-key-6.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security key name device](images/Multi-factor-authentication/Security-key-7.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security key additional method](images/Multi-factor-authentication/Security-key-8.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Security key success](images/Multi-factor-authentication/Security-key-success.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+
+</Tab>
+
+<Tab label="Email">
+
+Users who select authentication using an email address are presented with the following screens and instructions to walk them through the registration process. 
+
+<br></br>
+
+After entering their email address and requesting a verification code, the user is sent an automated email. Upon receiving and entering the verification code into the input field, the user is presented with the successful enrollment screen. If the user changes their mind or is unable to enroll using this method, they may click Use another method to go back to the initial screen.
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Choose method email](images/Multi-factor-authentication/Choose-method-Email.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Enter email](images/Multi-factor-authentication/Email-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Email verification code](images/Multi-factor-authentication/Email-2.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Email enter code](images/Multi-factor-authentication/Email-3.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Email additional method](images/Multi-factor-authentication/Email-4.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Email success](images/Multi-factor-authentication/Email-success.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+</Tab>
+
+</Tabs>
+
+
+

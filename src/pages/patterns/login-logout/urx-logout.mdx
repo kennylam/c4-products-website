@@ -1,0 +1,66 @@
+---
+title: URX logout
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+
+<PageDescription>
+
+The URX logout pattern allows a user to log out of their IBMid account.
+
+</PageDescription>
+
+<AnchorLinks>
+    <AnchorLink> Overview </AnchorLink>
+    <AnchorLink> Logging out </AnchorLink>
+    <AnchorLink> Successful logout </AnchorLink>
+    <AnchorLink> Login screen </AnchorLink>
+</AnchorLinks>
+
+## Overview
+
+The logout pattern is visible to all users within a product provisioned through a URX form. The starting point of the flow is when the user clicks **Logout** in the user profile. 
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Logout](images/urx-logout/logout.png)
+
+  </Column>
+</Row>
+
+### Logging out 
+After clicking **Log out**, the following message is displayed: “You are now logging out of [Product name]”, indicating that the user is logging out. A loading status icon also appears to show that the logging out is in progress. 
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Logging out](images/urx-logout/logging-out.png)
+
+  </Column>
+</Row>
+
+### Successful logout
+After the user has logged out, the following message is displayed: “You have successfully logged out of [Product name]”, indicating that the user has logged out successfully. 
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Logged out](images/urx-logout/success-logout.png)
+
+  </Column>
+</Row>
+
+### Login screen
+The user can click the **Log in** button to be redirected to the main login page if desired. Guidance for this pattern can be found on the [URX login](https://pages.github.ibm.com/cdai-design/pal/patterns/login-logout/urx-logout) page. 
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Login](images/urx-logout/login-pg.png)
+
+  </Column>
+</Row>
+

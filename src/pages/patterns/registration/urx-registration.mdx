@@ -1,0 +1,407 @@
+---
+title: URX registration
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+<PageDescription>
+
+URX registration allows users to sign up for a Sandbox Trial, Trial, or Freemium account for products that are not IBM Cloud products.
+
+</PageDescription>
+
+<AnchorLinks>
+<AnchorLink>Overview</AnchorLink>
+<AnchorLink>Registration process</AnchorLink>
+<AnchorLink>Content guidance</AnchorLink>
+</AnchorLinks>
+
+## Overview
+
+URX registration allows users to register for a Sandbox Trial, Trial, or Freemium account. It is built using IBM's Unified Registration Experience (URX) and registers users for any type of Try offer, including a Sandbox Trial, Trial, or Freemium.
+
+[URX](https://w3.ibm.com/w3publisher/urx) is the preferred platform for standardizing the creation of compliant and trackable registration forms for use on IBM.com. It integrates applications used to set up and gate trials, software and assets, and ensures data integrity across downstream systems such as Marketo and IBM Sales Cloud (ISC). It also allows marketers to use Segment and Amplitude to track the customer registration experience.
+
+** The Cloud Trial URX form is used by multiple registration pathways: **
+
+1. Products which are instantiated through IBM Marketplace and are **NOT** on [MultiCloud SaaS Platform](https://w3.ibm.com/w3publisher/multicloud-saas-platform) (MCSP).
+
+2. IBM products which are instantiated through IBM Marketplace and **are on** [MCSP](https://w3.ibm.com/w3publisher/multicloud-saas-platform).
+
+3. IBM products which are **instantiated through AWS Marketplace** and are on [MCSP](https://w3.ibm.com/w3publisher/multicloud-saas-platform).
+
+This page outlines the first two pathways. Follow the guidance in the corresponding tab depending on whether your product is on MCSP.
+
+<InlineNotification kind="info">
+
+**Note:** Users cannot access the URX registration form via the IBM Cloud Catalog. If your product Try offer is listed in the Cloud Catalog, be sure to follow the IBM Cloud registration flow.
+
+</InlineNotification>
+
+## Registration process
+
+<Tabs>
+
+<Tab label="Products not on MCSP">
+
+#### Cloud Trial URX form
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX-Sandbox-Trial-Freemium-Screen-1](/images/urx-reg-images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-1.png)
+
+  </Column>
+</Row>
+
+1. **Product name**
+2. **Sub-headline:** “Start your x-day trial”.
+3. **IBMid login:** Login option for users with an IBMid.
+4. **Sign up for IBMid form:** Limited customization is allowed. Teams may elect to add optional fields such as “Are you a student?” and “Company name”, but the fields shown are the minimum requirement.  
+5. **Product trial sign up panel (customizable):** Product team can customize the contents in this panel.
+
+### Registration
+
+<br></br>
+
+Users need an IBMid to register for an IBM Try offer. Users who already have an IBMid can log in and register for the product-specific Try experience right away. Users who do not have an IBMid will need to enter their account information and create a new one. 
+
+Users who do not have an existing IBMid are prompted to continue through the registration process, including the following steps:
+<br></br>
+
+- **Password creation:** In order to maintain platform and account security, stringent password requirements are enforced. The user is presented with these requirements in real time upon clicking into the field, which are automatically checked off as they are met.
+
+- **Email validation:** A verification code is sent to the user’s email which must be entered in the email verification field to confirm the user's identity and ownership of their account.
+
+- **Notice and choice acknowledgement:** The notice and choice widget is used to obtain consent to contact the user by email and/or phone. 
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Sandbox Trial Freemium create IBMid](/images/urx-reg-images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Sandbox Trial Freemium 3](/images/urx-reg-images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-3.png)
+
+  </Column>
+</Row>
+
+1. **Log in link:** Users who already have an IBMid can log in directly
+2. **Autofill with LinkedIn:** Users have the ability to autofill their first name, last name, and email address using their LinkedIn account information
+3. **Pictograms and benefits:** Content and pictograms are determined by the product teams and should explain the value proposition in two lines or less (excluding titles) and be limited to four bullet points per form. Designers must leverage the [IBM pictogram library](https://www.ibm.com/design/language/iconography/pictograms/library/).
+4. ** Password field:** Password requirements are displayed upon clicking into the field
+5. **Create account button:** Remains disabled until all fields have been filled 
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Sandbox Trial Freemium 5](/images/urx-reg-images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-5.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Sandbox Trial Freemium verify](/images/urx-reg-images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-7.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+1. **Log in link:** Users who already have an IBMid can log in directly
+2. **Verification code:** Users are emailed a verification code which must be confirmed in this field
+3. **Resend code button:** If users do not receive the verification code, they may request a new one here
+4. ** Notice and choice widget:** Users review the terms and conditions and set their contact consent selections
+5. **Create account button:** Remains disabled until all fields and checkboxes have been filled
+
+<br></br>
+
+### Sign up and provision
+Upon completing their account setup, the product will auto-provision while presenting the images below.
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Your subscription is being set up image](/images/urx-reg-images/Non-MCSP-URX/1-Non-MCSP-your-subscription-is-being-set-up.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![You will be redirected to the target page shortly image](/images/urx-reg-images/Non-MCSP-URX/2-Non-MCSP-you-will-be-redirected-to-the-target-page-shortly.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![MyIBM Products page](/images/urx-reg-images/Non-MCSP-URX/3-Non-MCSP-myIBM-Products-page.png)
+
+  </Column>
+</Row>
+
+
+### Successful registration
+
+Upon successfully registering for their account or Try experience and autoprovisioning the product, the user is redirected into the product. The next time the user logs in, they will be redirected to the IBMid log in page as outlined [here](https://pages.github.ibm.com/cdai-design/pal/login-logout/ibmid-login).
+
+</Tab>
+
+<Tab label="Products on MCSP">
+
+#### Cloud Trial URX form
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![time-bound trial](/images/urx-reg-images/IBMidAWS.png)
+
+  </Column>
+</Row>
+
+1. **Product name**
+2. **Sub-headline:** “Start your x-day trial”.
+3. **IBMid login:** Login option for users with an IBMid.
+4. **Sign up for IBMid form:** Limited customization is allowed. Teams may elect to add optional fields such as “Are you a student?” and “Company name”, but the fields shown are the minimum requirement.  
+5. **Product trial sign up panel (customizable):** Product team can customize the contents in this panel.
+6. Hyperscaler cloud provider logo: This logo should be displayed if the user launches the sign up flow from one of the hyperscaler marketplaces.
+
+If your product has joined MCSP and is on IBM Marketplace, it will follow the same URX registration flow (ADD HYPERLINK). The primary visual difference is the left hand panel on the URX form needs to have an icon which highlights that the product is hosted through AWS. 
+
+
+### Registration
+<br></br>
+
+Users need an IBMid to register for an IBM Try offer. Users who already have an IBMid can log in and register for the product-specific Try experience right away. Users who do not have an IBMid will need to enter their account information and create a new one. 
+
+Users who do not have an existing IBMid are prompted to continue through the registration process, including the following steps:
+
+<br></br>
+
+- **Password creation:** In order to maintain platform and account security, stringent password requirements are enforced. The user is presented with these requirements in real time upon clicking into the field, which are automatically checked off as they are met.
+
+- **Email validation:** A verification code is sent to the user’s email which must be entered in the email verification field to confirm the user's identity and ownership of their account.
+
+- **Notice and choice acknowledgement:** The notice and choice widget is used to obtain consent to contact the user by email and/or phone. 
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Sandbox Trial Freemium create IBMid](/images/urx-reg-images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-1.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Sandbox Trial Freemium add password](/images/urx-reg-images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-3.png)
+
+  </Column>
+</Row>
+
+1. **Log in link:** Users who already have an IBMid can log in directly
+2. **Autofill with LinkedIn:** Users have the ability to autofill their first name, last name, and email address using their LinkedIn account information
+3. **Pictograms and benefits:** Content and pictograms are determined by the product teams and should explain the value proposition in two lines or less (excluding titles) and be limited to four bullet points per form. Designers must leverage the [IBM pictogram library](https://www.ibm.com/design/language/iconography/pictograms/library/).
+4. ** Password field:** Password requirements are displayed upon clicking into the field
+5. **Create account button:** Remains disabled until all fields have been filled 
+
+<br></br>
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Sandbox Trial Freemium add password](/images/urx-reg-images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-5.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![URX Sandbox Trial Freemium verify](/images/urx-reg-images/URX-Sandbox-Trial-Freemium-Registration/URX-Sandbox-Trial-Freemium-Screen-7.png)
+
+  </Column>
+</Row>
+
+<br></br>
+
+1. **Log in link:** Users who already have an IBMid can log in directly
+2. **Verification code:** Users are emailed a verification code which must be confirmed in this field
+3. **Resend code button:** If users do not receive the verification code, they may request a new one here
+4. ** Notice and choice widget:** Users review the terms and conditions and set their contact consent selections
+5. **Create account button:** Remains disabled until all fields and checkboxes have been filled
+
+<br></br>
+
+### Sign up and provision
+Upon completing their account setup, the product will auto-provision while presenting the above images.
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Thank you for signing up image](/images/urx-reg-images/MCSP-URX/1-Thank-you-for-signing-up.jpg)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Set up your trial instance name image](/images/urx-reg-images/MCSP-URX/2-Set-up-your-trial-instance-name.jpg)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Set up your trial instance name filled](/images/urx-reg-images/MCSP-URX/3-Set-up-your-trial-instance-name-filled.jpg)
+
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![We're getting your trial ready for you image](/Users/justinebanbury/pal/src/pages/patterns/registration/images/urx-reg-images/MCSP-URX/4-We're-getting-your-trial-ready-for-you.jpg)
+  </Column>
+</Row>
+
+<br></br>
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![MyIBM Products page](/images/urx-reg-images/MCSP-URX/5-Your-trial-is-ready.jpg)
+
+  </Column>
+</Row>
+
+### Successful registration
+
+Upon successfully registering for their account or Try experience and autoprovisioning the product, the user is redirected into the product. The next time the user logs in, they will be redirected to the IBMid log in page as outlined [here](https://pages.github.ibm.com/cdai-design/pal/login-logout/ibmid-login).
+
+</Tab>
+
+</Tabs>
+
+## Content guidance
+It’s important to use the space within the URX form efficiently, regardless of which registration pathway you’re using. Be strategic with the content you include in the left hand panel. Use this space to convey the value of your product and explain the characteristics of the type of Try experience being offered. This helps a potential user understand any limitations or benefits of registering for that type of offer. 
+
+<Row>
+
+  <Column colMd={8} colLg={10}>
+
+![URX Left hand panel image](/images/urx-reg-images/URX-Left-Hand-Panel/urx-form-left-panel.png)
+
+  </Column>
+</Row>
+
+### Left hand panel best practices
+- The content added to the URX left hand panel should echo the same benefits featured on the marketing page.
+- Product teams can have 3 to 5 bullet points in the URX left hand panel. 
+- The list items must explain the benefits of using the trial.
+- The list items must remind users what they are going to get from signing up for the trial. 
+- The list items must help users to clearly understand the value of using the trial. 
+- The use of additional content beyond bullet points such as images, badges, or animated GIFs is not permitted in URX left hand panels, and cannot be added using the IBM [PerForm](https://urx-perform.dal1a.cirrus.ibm.com) tool.
+
+### Guidance for various Try offers:
+
+<Accordion>
+  <AccordionItem title="If registering for a Sandbox Trial">
+  Explain the limited functionality and usage of sample data. Users should immediately be able to see value of the product after logging into the Sandbox Trial. 
+  <br></br>
+
+  #### Example: Easily manage your applications
+  Discover, map, monitor, and troubleshoot your applications with full stack visibility in 5 minutes.
+  </AccordionItem>
+
+  <AccordionItem title="If registering for a Trial">
+  Explain the ability for the user to upload their own data. Users should quickly understand how the product can meet their unique needs after entering the Trial. 
+  <br></br>
+
+  #### Example: Infrastructure and resource correlation
+  IBM [Product name] consolidates and correlates key information to proactively alert IT Ops teams about potential problems.
+  </AccordionItem>
+
+  <AccordionItem title="If registering for a Freemium">
+  Explain the lack of any time restriction and available product functionality offered. Users should see the benefit to upgrade to a paid version of the product after using the Freemium version. 
+  <br></br>
+
+  #### Example: Trial benefits
+  Get up to 100,000 API calls at no cost to evaluate the full product features.
+  </AccordionItem>
+
+  <AccordionItem title="Additional examples">
+  Reference additional examples from IBM products:
+  <br></br>
+
+  #### Example: Powerful real-time speech synthesis
+  Convert written text to natural-sounding speech using our latest neural speech synthesizing techniques.
+
+  #### Example 2. Build your journey to public cloud
+  Build, deploy, and manage solutions in IBM’s public cloud.
+
+  #### Example 3. Instant optimization
+  Non-disruptively optimize your cloud resources from our user-friendly interface within seconds.
+
+  #### Example 4. Unleash application performance
+  Gain complete visibility into your public cloud application and infrastructure stack.
+
+  #### Example 5. Highly secure
+  Securely expose your data and business applications.
+
+  #### Example 6. Full lifecycle API management
+  Drive new engagement models and channels by accelerating your API-led digital transformation.
+  </AccordionItem>
+
+</Accordion>
+
+<CardGroup>
+  <MiniCard
+    title="Figma template"
+    href= "https://www.figma.com/file/3TkgjJdmbbByJbH9PeKm4o/Template---URX-Sandbox-Trail%2C-Trial%2C-and-Freemium-registration-flow?type=design&node-id=1-116500&mode=design&t=leXHu5G2fefWPb6a-0"
+    actionIcon="launch">
+  </MiniCard>
+</CardGroup>{" "}

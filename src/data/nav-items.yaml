@@ -60,6 +60,33 @@
       path: /components/button-menu/usage
     - title: 'Modified tabs'
       path: /components/modified-tabs/usage
+    - title: 'Onboarding'
+      path: /components/onboarding/overview
+      subpage:
+        - title: 'Assistance panel'
+          path: /components/onboarding/assistance-panel/usage
+        - title: 'Checklist'
+          path: /components/onboarding/checklist/usage
+        - title: 'Coachmark'
+          path: /components/onboarding/coachmark/usage
+        - title: 'Guided banner'
+          path: /components/onboarding/guided-banner/usage
+        - title: 'Inline tip'
+          path: /components/onboarding/inline-tip/usage
+        - title: 'Interstitial'
+          path: /components/onboarding/interstitial/usage
+        - title: 'Launcher'
+          path: /components/onboarding/launcher/usage
+        - title: 'Nonlinear reading'
+          path: /components/onboarding/nonlinear-reading/usage
+        - title: 'Shoutout'
+          path: /components/onboarding/shoutout/usage
+        - title: 'Smart walk-thru'
+          path: /components/onboarding/smart-walk-thru/usage
+        - title: 'SmartTip'
+          path: /components/onboarding/smarttip/usage
+        - title: 'Walkme guide'
+          path: /components/onboarding/walkme-guide/overview
     - title: 'Options tile'
       path: /components/options-tile/usage
     - title: 'Page header'
@@ -140,6 +167,15 @@
       path: /patterns/drag-and-drop/usage
     - title: 'Edit and update'
       path: /patterns/edit/usage
+    - title: 'Emails'
+      path: /patterns/emails/overview
+      subpage:
+        - title: 'IBMid emails'
+          path: /patterns/emails/ibmid-emails
+        - title: 'MCSP emails'
+          path: /patterns/emails/mcsp-emails
+        - title: 'SSM emails'
+          path: /patterns/emails/ssm-emails
     - title: 'Empty state'
       path: /patterns/empty-state/usage
     - title: Export
@@ -152,10 +188,35 @@
       path: /patterns/http-errors/usage
     - title: 'Import and upload'
       path: /patterns/importing/usage
+    - title: 'Login & logout'
+      path: /patterns/login-logout/overview
+      subpage:
+        - title: 'URX login'
+          path: /patterns/login-logout/urx-login
+        - title: 'URX logout'
+          path: /patterns/login-logout/urx-logout
     - title: Notifications
       path: /patterns/notifications/usage
+    - title: 'Onboarding'
+      path: /patterns/onboarding/overview
+      subpage:
+        - title: 'Guided paths'
+          path: /patterns/onboarding/guided-paths/usage
+        - title: 'Orientation'
+          path: /patterns/onboarding/orientation/usage
     - title: 'Profile header menu'
       path: /patterns/profile-header-menu/usage
+    - title: 'Registration'
+      path: /patterns/registration/overview
+      subpage:
+        - title: 'AWS registration'
+          path: /patterns/registration/aws-registration
+        - title: 'IBM Cloud registration'
+          path: /patterns/registration/ibm-cloud-registration
+        - title: 'Multi-factor authentication enrollment'
+          path: /patterns/registration/multi-factor-authentication-enrollment
+        - title: 'URX registration'
+          path: /patterns/registration/urx-registration
     - title: Remove
       path: /patterns/removing/usage
     - title: Saving
@@ -164,6 +225,22 @@
       path: /patterns/status-icons/usage
     - title: Toolbars
       path: /patterns/toolbars/usage
+    - title: 'Trial countdown'
+      path: /patterns/trial-countdown/usage
+    - title: 'Try and Buy routes to market'
+      path: /patterns/try-and-buy-routes-to-market/overview
+      subpage:
+        - title: 'AWS Marketplace listing page'
+          path: /patterns/try-and-buy-routes-to-market/aws-marketplace-listing-page
+    - title: 'UI navigation'
+      path: /patterns/ui-navigation/usage
+    - title: 'Upgrade & purchase'
+      path: /patterns/upgrade-purchase/overview
+      subpage:
+        - title: 'AWS upgrade and purchase'
+          path: /patterns/upgrade-purchase/aws-upgrade-purchase
+        - title: 'Try offer upgrade'
+          path: /patterns/upgrade-purchase/try-offer-upgrade
     - title: 'User profile images'
       path: /patterns/user-profile-images/usage
     - title: 'Web terminal'
@@ -204,28 +281,10 @@
   pages:
     - title: Overview
       path: /novice-to-pro/overview
-    - title: Experience playbook
-      path: /novice-to-pro/experience-playbook
-    - title: Experience integration
-      path: /novice-to-pro/experience-integration
-    - title: Components
-      path: /novice-to-pro/components/overview
 - title: 'WalkMe guide'
   pages:
     - title: Overview
-      path: /walkme-guide/main/overview
-    - title: 'WalkMe patterns'
-      path: /walkme-guide/walkme-patterns/overview
-    - title: Menu
-      path: /walkme-guide/menu/usage
-    - title: Carousel
-      path: /walkme-guide/carousel/usage
-    - title: 'Journey selector'
-      path: /walkme-guide/journey-selector/usage
-    - title: Popups
-      path: /walkme-guide/popups/usage
-    - title: Steps
-      path: /walkme-guide/steps/usage
+      path: /walkme-guide/overview
 - title: 'Cloud Pak guidance'
   pages:
     - title: Login
@@ -238,26 +297,14 @@
       path: /cloud-paks/cross-pak-switcher/usage
     - title: 'Integrated interactions'
       path: /cloud-paks/integrated-framework/overview
+- title: 'Try offers'
+  pages:
+    - title: Overview
+      path: /try-offers/overview
 - title: 'PLG and MultiCloud SaaS'
   pages:
     - title: Overview
       path: /saas-for-hyperscalers/overview
-    - title: User scenarios
-      path: /saas-for-hyperscalers/user-scenarios
-    - title: Discover
-      path: /saas-for-hyperscalers/discover
-    - title: Learn
-      path: /saas-for-hyperscalers/learn
-    - title: Try
-      path: /saas-for-hyperscalers/try
-    - title: Buy
-      path: /saas-for-hyperscalers/buy
-    - title: Use
-      path: /saas-for-hyperscalers/use
-    - title: Support
-      path: /saas-for-hyperscalers/support
-    - title: Patterns and components
-      path: /saas-for-hyperscalers/common-patterns-components
 - title: 'AI Design'
   pages:
     - title: Overview
