@@ -47,8 +47,8 @@ There are lots of resources on the web that explain Git and GitHub, but here is 
   - The act of making a copy of a (remote) repo on your (local) laptop.<br />
 <strong>branch</strong> (noun)<br />
   - A branch is a parallel version of a repository.<br />
-  - It is contained within the repository, but does not affect the primary ('master') branch, allowing you to work freely without disrupting the master version.<br />
-  - When you've made the changes you want to make, you can merge your branch back into the master branch to publish your changes.<br />
+  - It is contained within the repository, but does not affect the primary ('main') branch, allowing you to work freely without disrupting the main version.<br />
+  - When you've made the changes you want to make, you can merge your branch back into the main branch to publish your changes.<br />
 <strong>upstream</strong> / <strong>downstream</strong> (noun)<br />
   - When talking about a branch or a fork, the primary branch on the original repository is often referred to as the "upstream", since that is the main place that other changes will come in from.<br />
   - The branch/fork you are working on is then called the "downstream".<br />
@@ -68,7 +68,7 @@ There are lots of resources on the web that explain Git and GitHub, but here is 
   <AccordionItem title="Understanding the GitHub workflow">
     See this page on the GitHub site for an interactive diagram covering a typical GitHub flow:<br />
     — <a href="https://guides.github.com/introduction/flow/">Understanding the GitHub flow</a><br />
-    This page covers the process from creating a branch to committing changes to opening a pull request to changes being merged into the master branch.
+    This page covers the process from creating a branch to committing changes to opening a pull request to changes being merged into the main branch.
   </AccordionItem>
 </Accordion>
 
@@ -77,7 +77,7 @@ There are lots of resources on the web that explain Git and GitHub, but here is 
 
 This can be accomplished in two different ways.
 
-- If you are already _in_ the master/main branch, run the following commands:
+- If you are already _in_ the main branch, run the following commands:
   ```
   git fetch
   ```
@@ -87,10 +87,10 @@ This can be accomplished in two different ways.
 - If you are in your feature branch, the first stage and commit all changes you currently have. 
 Then, run the following command:
   ```
-  git merge master
+  git merge main
   ```
 - You may be required to enter a merge message. If so, press **Enter** on your keyboard until you reach the `#` line. 
-  You can enter `:wq!` to exit this stage and all changes from master will now be in your repository.
+  You can enter `:wq!` to exit this stage and all changes from main will now be in your repository.
 
 
 <Accordion>
@@ -163,7 +163,7 @@ or introduced or modified images.
 ## Moving changes to a different branch
 
 If you have started making changes but then realize that you are in the wrong branch (for example, if 
-you forgot to create a new branch and have made changes in the `master` branch), this handy command will 
+you forgot to create a new branch and have made changes in the `main` branch), this handy command will 
 help.
 1. Run the following command (which will remove your changes from the current branch but store them in memory):
   ```
@@ -186,7 +186,7 @@ In general, you don't need to do this again. You can simply use the regular `npm
 build and start your development server. 
 
 However, if you hit unexpected build problems it can sometimes help to update the project dependencies. 
-1. First, pull the latest changes from the master repository.
+1. First, pull the latest changes from the main repository.
 2. In the Terminal run this install command:
   ```
   npm i

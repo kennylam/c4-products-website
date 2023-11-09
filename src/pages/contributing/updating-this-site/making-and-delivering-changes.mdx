@@ -17,12 +17,13 @@ Using your local development environment to make and test changes. Then how to d
 
 <InlineNotification kind="info">
 
-Note: this page assumes that you have completed the <a href="./one-time-set-up">one-time set-up</a> process.
+Note: this page assumes that you have completed the <a href="/contributing/updating-this-site/one-time-set-up">one-time set-up</a> process.
 
 </InlineNotification>
 
 <AnchorLinks small>
   <AnchorLink>Video walkthrough</AnchorLink>
+  <AnchorLink>Git pull</AnchorLink>
   <AnchorLink>Create a new branch</AnchorLink>
   <AnchorLink>Make your changes</AnchorLink>
   <AnchorLink>Commit your changes</AnchorLink>
@@ -33,6 +34,16 @@ Note: this page assumes that you have completed the <a href="./one-time-set-up">
 
 Follow this video to walk you through each of the steps found on this page (or follow the manual steps below):
 <iframe width="480" height="270" src="https://video.ibm.com/embed/recorded/132066420" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+
+## Git pull
+
+Pulling refers to when you are fetching in changes and merging them. For instance, if someone has edited the
+remote file you're both working on, you'll want to pull in those changes to your local copy so that it's up
+to date which helps inhibits merge conflicts. To do this, run the command:
+
+  ```
+  git pull
+  ```
 
 ## Create a new branch
 
@@ -149,8 +160,7 @@ See also: [Move your changes to a different branch](./troubleshooting#move-your-
 
   ![Screenshot showing where to click to stage a file](../images/12b.png)
 
-  b. Commit the changes by adding a commit message to the text box and clicking the
-checkmark / tick icon positioned above the text input field.<br />
+  b. Commit the changes by adding a commit message:
 
   <InlineNotification kind="info">
 
@@ -174,9 +184,39 @@ checkmark / tick icon positioned above the text input field.<br />
 
   </InlineNotification>
 
-  ![Screenshot showing a commit message with correct prefix](../images/13.png)
+  <InlineNotification kind="warning">
 
-  c. Push your changes by clicking on the cloud or up arrow icon in the bottom-left of the VS Code window.
+  **IMPORTANT**: For the rest of the [Commit your changes](./making-and-delivering-changes#commit-your-changes)
+  section you can either use *VS Code* or *Terminal CLI*. Some users have reported authentication
+  in *VS Code* has not been working as expected since IBM has required YubiKey for authentication. YubiKey requires
+  the user to type their YubiKey PIN in terminal, if you have setup YubiKey we recommend that you follow
+  the Terminal CLI section below!
+
+  </InlineNotification>
+
+  **Using VS Code**
+  
+  Add a commit message to the text box and click the checkmark / tick icon positioned above the text input field.
+  
+  ![Screenshot showing a commit message with correct prefix](../images/13.png)
+  
+  **Using Terminal CLI**
+  
+  Type out your commit message in terminal following this syntax:
+  
+  `git commit -m "your commit message"`
+  
+  See example below
+  
+  ```
+    git commit -m "feat(pattern): add export pattern"
+  ```
+
+  c. Push your changes
+  
+  **Using VS Code**
+
+  Push your changes by clicking on the cloud or up arrow icon in the bottom-left of the VS Code window.
 (Which icon you see depends on whether or not you have already pushed changes to a branch).
 If clicking on the cloud you will be asked to select where to send the changes. Select 'origin'.
 
@@ -190,6 +230,19 @@ If clicking on the cloud you will be asked to select where to send the changes. 
   up and a down arrow instead:
 
   ![IScreenshot showing the up - down arrow icon](../images/16.png)
+
+  **Using Terminal CLI**
+  
+  Use `git push` to push your changes
+
+  Note: Similar to in VS Code, if you've pushed changes to this branch previously, all you need to do is run
+  `git push`, but if it's your first time pushing to the branch, git might ask you to set the upstream to your branch.
+  
+  Follow the below example:
+  
+  ```
+    git push --set-upstream origin your-branch-name 
+  ```
 
 ## Submit a pull request
 
