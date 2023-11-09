@@ -15,176 +15,179 @@ A list of our Carbon for IBM Products components and patterns, along with their 
 
 <InlineNotification>
 
-For additional questions regarding an asset's status, please reach out to its associated contributors. If a contributor is not listed, reach out in the [#ibmproducts-pal](https://ibm-cloudplatform.slack.com/archives/CQGR0HC05) or the [#cloudpal](https://ibm-cloudplatform.slack.com/archives/CGFD1CV4J) slack channel.
+For additional questions regarding an asset's status, please reach out to its associated contributors. If a contributor is not
+listed, reach out in the [#ibmproducts-pal](https://ibm-cloudplatform.slack.com/archives/CQGR0HC05) or the
+[#cloudpal](https://ibm-cloudplatform.slack.com/archives/CGFD1CV4J) slack channel.
+
+<br/>
+
+To add a new component or pattern or edit a current asset use the forms below:
 
 </InlineNotification>
 
 
+<CardGroup>
+
+<MiniCard
+  title="Add new asset"
+  href="https://airtable.com/appURFSG6dypHTXcd/shrkNYBTgEefUy379">
+
+![Airtable icon](../../images/homepage/airtable-icon.png)
+
+</MiniCard>
+
+<MiniCard
+  title="Edit existing asset"
+  href="https://airtable.com/appURFSG6dypHTXcd/shrxq5mWeuRbxTj9g">
+
+![Airtable icon](../../images/homepage/airtable-icon.png)
+
+</MiniCard>
+</CardGroup>
+
 <Accordion>
 <AccordionItem title="About this data table">
 
-#### Asset
+#### Status
 
-* The Asset column provides a link to the asset specification, guidelines, or in-progress GitHub issue (tagged with `GHE issue`).
-* All components and patterns displayed on this asset index are available to be used by everyone. Note: Some assets may come from different code respositories. Before using an asset, review the list of <a href="https://pages.github.ibm.com/cdai-design/pal/overview/carbon-specifications#carbon-for-ibm-products-core-assets" target="_blank">core assets for IBM Products<Launch16 fill="#0F62FE" style="vertical-align:middle; margin: 0 2px 2px 0"/></a> and <a href="https://pages.github.ibm.com/cdai-design/cloud-pal/cloudpal-guidance/about/adopting-cloud-pal#core-cloud-pal-component-usage-and-ui-requirements" target="_blank">core assets for IBM Cloud<Launch16 fill="#0F62FE" style="vertical-align:middle; margin: 0 2px 2px 0"/></a>.
-* Core assets that the majority of IBM Products are expected to adopt are indicated with a <Tag type="green">IBM Products Core Asset</Tag> tag.
-* Core assets that the majority of Cloud PAL products are expected to adopt are indicated with a <Tag type="cyan">Cloud PAL Core Asset</Tag> tag.
+* Status is used by maintainers to set consumption expectations of stability and the likelihood of future changes.
+The `status` key canhave the following values:
 
-#### Contributors
+<br/>
 
-* The points of contact for information about the asset.
-
-#### Design status
-
-* `In progress`: a workgroup is currently working on the design specification.
-* `Done`: the asset has been designed, evaluated, and approved by the DSAG / DSIT.
-* When an asset has been approved and published on this site or on the [Carbon community assets](https://www.carbondesignsystem.com/community/overview/) page),
-  code implementation can begin.
-* Our design assets that are available within the [Carbon community assets](https://www.carbondesignsystem.com/community/overview/) area are tagged with `Carbon`.
+| Status | Description |
+| ----------- | ----------- |
+| `Not started` | Asset is in backlog, no active work has been started |
+| `Draft` | A workgroup is currently working on the design specification |
+| `Experimental` | These assets are ready to use but may lack parts of the documentation, or extra functionality is in development |
+| `Stable` | The asset has been designed, evaluated, and approved by the DSAG / DSIT |
+| `Deprecated` | These assets have been discontinued and no longer have active contribution |
 
 
 #### Respository
-Assets on Carbon for IBM Products can be found on two seperate repositories.
-* `CDAI-design/pal` The [Carbon for IBM Products library](https://github.com/carbon-design-system/ibm-cloud-cognitive)
-* `ibmcloud/pal` [The Cloud PAL library](https://github.ibm.com/ibmcloud/pal)
+* Assets on Carbon for IBM Products can be found on two seperate repositories
+
+<br/>
+
+| Name | Link |
+| ----------- | ----------- |
+| `CDAI-design/pal` | [Carbon for IBM Products library](https://github.com/carbon-design-system/ibm-products) |
+| `ibmcloud/pal` | [Cloud PAL library](https://github.ibm.com/ibmcloud/pal) |
 
 
-#### Tags
-* `GA`: This asset is available with full functionality and documentation.
-* `NA`: Code implementation work not yet possible as the design is still in progress.
-* `Needs dev resource`: The design is done and we're now waiting for a development resource to get this asset implementd in code. If you think you can help, see our <Link to="/contributing/coding-components-patterns/overview">Coding components & patterns</Link> page.
-* `GHE Issue`: denotes that the issue's progress exists inside an issue on the Github repo.
-* `Experimental`: These assets are ready to use but may lack parts of the documentation, or extra functionality is in development.
-* `Available in Canary`: the component is coded and available but still going through final release review testing.
+#### Asset link
+
+* Quicklink to the asset documentation
+
+<br/>
+
+**Note**: If the asset is currently in design/development, the link will redirect to the Github Issue
+
+
+#### Contributors
+
+* The points of contact for information about the asset
+
 
 #### Further guidance
-* For more information regarding the table, please reach out to [Carrie Lloyd](https://w3.ibm.com/bluepages/profile.html?uid=2D1739897).
-* To edit this table, create a new branch in the [PAL repository](https://github.ibm.com/CDAI-design/pal), edit the [asset-index.mdx](https://github.ibm.com/CDAI-design/pal/blob/main/src/pages/overview/asset-index.mdx) file, commit your changes, and open a pull request.
+* To make any updates to the asset index tables below, complete this [Airtable form](https://airtable.com/appURFSG6dypHTXcd/shrRgKY2yMmcNZZdR)
 
 </AccordionItem>
 </Accordion>
 
-
 <AnchorLinks>
-<AnchorLink>Components</AnchorLink>
-<AnchorLink>Patterns</AnchorLink>
-<AnchorLink>Cloud Connected Experiences</AnchorLink>
+    <AnchorLink>Components</AnchorLink>
+    <AnchorLink>Connected Experiences</AnchorLink>
+    <AnchorLink>Guidance</AnchorLink>
+    <AnchorLink>Layouts</AnchorLink>
+    <AnchorLink>Patterns</AnchorLink>
+    <AnchorLink>Utilities</AnchorLink>
 </AnchorLinks>
 
+## Components
 
+Customize your view below with the **Filter** and **Sort** links from our embedded Airtables.
 
-### Components
+<iframe
+  class="airtable-embed"
+  src="https://airtable.com/embed/appURFSG6dypHTXcd/shrNC3Oc5fxzDmkBQ?backgroundColor=orange&layout=card&viewControls=on"
+  frameborder="0"
+  onmousewheel=""
+  width="100%"
+  height="1000"
+  style="background: transparent; border: 1px solid #ccc;"
+></iframe>
 
-| Name                                                                                                                                                                           | Contributors                                             | Design Status    | Repository            | Tags                                                       |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|------------------|-----------------------|------------------------------------------------------------|
-| [Cards](https://pages.github.ibm.com/cdai-design/pal/components/card/overview/)                                                                                                | Johanna Koval                                            | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Cascading selector](https://pages.github.ibm.com/cdai-design/cloud-pal/components/cascading-selector/usage/)                                                                  |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Catalog tile](https://pages.github.ibm.com/cdai-design/cloud-pal/components/catalog-tile/usage/)                                                                              |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Cloud l2 (world level nav)](https://pages.github.ibm.com/cdai-design/cloud-pal/components/world-level-nav/usage/)                                                             |                                                          | Done             | `ibmcloud/pal`        | `GA` <Tag type="cyan">Cloud PAL Core Asset</Tag>           |
-| [Cloud l3 (resource level nav)](https://pages.github.ibm.com/cdai-design/cloud-pal/components/resource-level-nav/usage/)                                                       |                                                          | Done             | `ibmcloud/pal`        | `GA` <Tag type="cyan">Cloud PAL Core Asset</Tag>           |
-| [Cloud resource status indicators](https://pages.github.ibm.com/cdai-design/cloud-pal/components/resource-status-indicator/usage)                                              |                                                          | In progress      | `ibmcloud/pal`        | `Experimental` <Tag type="cyan">Cloud PAL Core Asset</Tag> |
-| [Cloud resource tag](https://pages.github.ibm.com/cdai-design/cloud-pal/components/tagging-component/usage)                                                                    |                                                          | Done             | `ibmcloud/pal`        | `GA` <Tag type="cyan">Cloud PAL Core Asset</Tag>           |
-| [Color picker](https://github.ibm.com/CDAI-design/pal/issues/368)                                                                                                              | Derien M Brown                                           | In progress      | `CDAI-design/pal`     | `GHE Issue`                                                |
-| [Create (full page)](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-patterns-create-flows-createfullpage--create-full-page)                                                                                      | Andrew Smith                            | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>  |
-| [Create (modal)](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-patterns-create-flows-createmodal--default)                                      | Andrew Smith                                             | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Create (side panel)](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-patterns-create-flows-createsidepanel--default)                             |                                                          | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Create (tearsheet)](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-patterns-create-flows-createtearsheet--multi-step-tearsheet)                 |                                             | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Data spreadsheet](https://pages.github.ibm.com/cdai-design/pal/components/data-spreadsheet/usage)                                                                       | Mitchell Bernstein                                       | Done             | `CDAI-design/pal`     | <Tag type="green">IBM Products Core Asset</Tag> [Available in Canary](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-components-dataspreadsheet-dataspreadsheet-canary--data-spreadsheet)|
-| [Data table on Cloud](https://pages.github.ibm.com/cdai-design/cloud-pal/components/data-table/usage)                                                                          |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Details card](https://pages.github.ibm.com/cdai-design/cloud-pal/components/details-card/usage/)                                                                              |                                                          | Done             | `ibmcloud/pal`        | `GA` <Tag type="cyan">Cloud PAL Core Asset</Tag>           |
-| [Empty state](https://pages.github.ibm.com/cdai-design/pal/patterns/empty-state/usage/)                                                                                        | Morgana D’Almeida                                        | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Empty state on Cloud](https://pages.github.ibm.com/cdai-design/cloud-pal/components/empty-states/usage)                                                                       |                                                          | Done             | `ibmcloud/pal`        | `GA` <Tag type="cyan">Cloud PAL Core Asset</Tag>           |
-| [Media gallery](https://pages.github.ibm.com/cdai-design/cloud-pal/components/media-gallery/usage)                                                                             |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Menu and combo buttons](https://pages.github.ibm.com/syd/pal-1/wip/button-menu/usage)                                                                                              | Laura Marshall                                           | In progress      | `CDAI-design/pal`     | `NA`                                                       
-| [Mini order summary](https://pages.github.ibm.com/cdai-design/cloud-pal/components/mini-order-summary-side-panel/usage)                                                        |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Modified tabs](https://pages.github.ibm.com/syd/pal-1/components/modified-tabs/usage)                                                                                               |                                             | Done             | `CDAI-design/pal`     | [Available in Canary](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-components-modified-tabs-modifiedtabs-canary--default)|
-| [Options tile](https://pages.github.ibm.com/cdai-design/pal/components/options-tile/usage)                                                                                     | Jan Hassel, Christian Fritsche, Tomer Maimoni            | Done             | `CDAI-design/pal`        | `GA`                                                       |
-| [Order summary v1](https://pages.github.ibm.com/cdai-design/cloud-pal/components/order-summary-v1/usage/)                                                                      |                                                          | Done             | `ibmcloud/pal`        | `Deprecated`                                               |
-| [Order summary v2](https://pages.github.ibm.com/cdai-design/cloud-pal/components/order-summary/usage)                                                                          |                                                          | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| [Page header](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-components-page-header-pageheader--with-title)                                      | Cameron Calder                                           | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Page header on Cloud](https://pages.github.ibm.com/cdai-design/cloud-pal/components/page-header-on-cloud/usage)                                                               |                                                          | Done             | `ibmcloud/pal`        | `GA` <Tag type="cyan">Cloud PAL Core Asset</Tag>           |
-| [Progressive loading bar](https://www.carbondesignsystem.com/components/progress-bar/usage/)    |                                                          | Done             | `@carbon/react`     | `GA`                                                       |
-| [Side panel](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-components-side-panel-sidepanel--slide-over)                                         | Mitchell Bernstein, Cameron Calder                       | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Side panel on Cloud](https://pages.github.ibm.com/cdai-design/cloud-pal/components/side-panel-on-cloud/usage)                                                                 |                                                          | Done             | `ibmcloud/pal`        | `GA` <Tag type="cyan">Cloud PAL Core Asset</Tag>           |
-| [Submit promo](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/submit-promo/usage)                                                                                |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Tag set](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-components-tag-set-tagset--many-tags)                                                   | Courtney Banning                                         | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| [Tearsheet](https://carbon-for-ibm-products.netlify.app/?path=/story/ibm-products-components-tearsheet-tearsheet--tearsheet)                                            | Mitchell Bernstein                                       | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| **Data Table Extensions:**                                                                       |                                                          |                  |                       |                                                            |
-| - [Clickable row items](https://pages.github.ibm.com/cdai-design/pal/components/data-table/clickable-row-items)                                                                | Marion Brülls, Mitchell Bernstein                        | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| - [Column alignment](https://pages.github.ibm.com/cdai-design/pal/components/data-table/column-alignment)                                                                      |                                                          | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| - [Column customization](https://pages.github.ibm.com/cdai-design/pal/components/data-table/column-customization)                                                              | Marion Brülls, Mitchell Bernstein                        | In progress      | `CDAI-design/pal`     | `GHE Issue`                                                |
-| - [Expandable rows](https://pages.github.ibm.com/cdai-design/pal/components/data-table/expandable-rows)                                                                        | Johanna Koval, Nina Shahriaree                           | In progress      | `CDAI-design/pal`     | `GHE Issue`                                                |
-| - [Header](https://pages.github.ibm.com/cdai-design/pal/components/data-table/headers)                                                                                         | Marion Brülls                                            | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| - [Inline editing](https://pages.github.ibm.com/cdai-design/pal/components/data-table/inline-editing/usage)                                                                    | Jan Hassel, Marion Brülls, Virginia Nicholson, Mitchell Bernstein    | Done | `CDAI-design/pal`     | `GA`                                                       |
-| - [Nested rows](https://pages.github.ibm.com/cdai-design/pal/components/data-table/nested-rows)                                                                                | Johanna Koval                                            | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| - [Resizeable columns](https://pages.github.ibm.com/cdai-design/pal/components/data-table/resizable-columns)                                                                   |                                                          | Done             | `CDAI-design/pal`     | `GA`                                                        |
-| - [Row action buttons](https://pages.github.ibm.com/cdai-design/pal/components/data-table/row-action-buttons)                                                                  | Marion Brülls, Virginia Nicholson, Mitchell Bernstein    | In progress      | `CDAI-design/pal`     | `GHE Issue`                                                |
+## Connected Experiences
 
+Customize your view below with the **Filter** and **Sort** links from our embedded Airtables.
 
+<iframe
+  class="airtable-embed"
+  src="https://airtable.com/embed/appURFSG6dypHTXcd/shrcafnoUDMPWxDAC?backgroundColor=orange&layout=card&viewControls=on"
+  frameborder="0"
+  onmousewheel=""
+  width="100%"
+  height="1000"
+  style="background: transparent; border: 1px solid #ccc;"
+></iframe>
 
-
-### Patterns
-
-
-| Name                                                                                                                                                                           | Contributors                                             | Design Status    | Repository            | Tags                                                       |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|------------------|-----------------------|------------------------------------------------------------|
-| [About modal](https://pages.github.ibm.com/syd/pal-1/patterns/about-modal/usage/)                                                                                              | Teresa Tan                                               | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Add and select](https://github.ibm.com/CDAI-design/pal/issues/465)                                                                                                              | Michael Friess, Oliver Kauselmann                        | In progress      | `CDAI-design/pal`     | `GHE Issue`                                                |
-| [Advanced filtering](https://pages.github.ibm.com/syd/pal-1/patterns/advanced-filtering/usage)                                                                                 | Tom Solomon                                              | Done             | `CDAI-design/pal`     | `Needs dev resource`                                       |
-| [Breadcrumbs](https://pages.github.ibm.com/cdai-design/cloud-pal/patterns/breadcrumbs/usage/)                                                                                  |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Create flows](https://pages.github.ibm.com/cdai-design/pal/patterns/creation-flows/usage/)                                                                                    | Andrew Smith                              | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| [Dashboard widgets](https://pages.github.ibm.com/cdai-design/cloud-pal/components/dashboard-widgets/usage)                                                                     |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Drag and drop](https://pages.github.ibm.com/cdai-design/pal/patterns/drag-and-drop/usage)                                                                                           | Minji Kim, Carrie Lloyd, Johanna Koval, Andrew Smith     | Done             | `CDAI-design/pal`     | `Needs dev resource`                                       |
-| [Edit and update](https://pages.github.ibm.com/cdai-design/pal/patterns/edit/usage)                                                                                                  | Vikki Patterson                                          | In progress      | `CDAI-design/pal`     | `NA`                                                       |
-| [Email templates](https://pages.github.ibm.com/cdai-design/cloud-pal/patterns/email-templates/usage/)                                                                          |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Export](https://pages.github.ibm.com/cdai-design/pal/patterns/exporting/usage/)                                                                                               | Vikki Patterson                                          | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| [Generate an API key](https://pages.github.ibm.com/cdai-design/pal/patterns/generating-api-key/usage)                                                                          | Vikki Patterson                                          | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| [HTTP errors](https://pages.github.ibm.com/cdai-design/pal/patterns/http-errors/usage)                                                                                         |                                                          | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Import and upload](https://pages.github.ibm.com/cdai-design/pal/patterns/importing/usage)                                                                                     | Vikki Patterson                                          | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| [Keyboard navigation](https://github.ibm.com/CDAI-design/pal/issues/382)                                                                                                       | Jan Hassel, Sam Ting                                     | In progress      | `CDAI-design/pal`     | `GHE Issue`                                                |
-| [Keyboard shortcut guidance](https://pages.github.ibm.com/cdai-design/pal/patterns/keyboard-shortcut-guidance/usage)                                                           | Jan Hassel, Jin Huifei                                   | Done             | `CDAI-design/pal`     | `Needs dev resource`                                       |
-| [Launch out template](https://pages.github.ibm.com/cdai-design/cloud-pal/patterns/launch-out-template/usage/)                                                                  |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Notifications](https://pages.github.ibm.com/cdai-design/pal/patterns/notifications/usage)                                                                                           | Josh Vaughn                                              | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Notifications on Cloud](https://pages.github.ibm.com/cdai-design/cloud-pal/patterns/notifications-on-cloud/usage/)                                                            |                                                          | Done             | `ibmcloud/pal`        | `GA` <Tag type="cyan">Cloud PAL Core Asset</Tag>           |
-| [Parameters](https://pages.github.ibm.com/cdai-design/cloud-pal/patterns/parameters/usage/)                                                                                    |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Profile header menu](https://pages.github.ibm.com/cdai-design/pal/patterns/profile-header-menu/usage)                                                                              |                                                          | ?                | `CDAI-design/pal`     | (?)                                                        |
-| [Projects](https://github.ibm.com/CDAI-design/pal/issues/390)                                                                                                                  | Mitchell Bernstein                                       | In progress      | `CDAI-design/pal`     | `GHE Issue`                                                |
-| [Provisioning](https://pages.github.ibm.com/cdai-design/cloud-pal/patterns/provisioning/usage/)                                                                                |                                                          | Done             | `ibmcloud/pal`        | `GA` <Tag type="cyan">Cloud PAL Core Asset</Tag>           |
-| [Remove](https://pages.github.ibm.com/cdai-design/pal/patterns/removing/usage/)                                                                                                | Vikki Patterson                                          | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Resource detail page](https://pages.github.ibm.com/cdai-design/cloud-pal/patterns/resource-detail-page-template/usage/)                                                       |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Resource getting started page](https://pages.github.ibm.com/cdai-design/cloud-pal/patterns/getting-started-tab/usage)                                                         |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-| [Saving](https://pages.github.ibm.com/cdai-design/pal/patterns/saving/usage/)                                                                                                  | Vikki Patterson                                          | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| [Settings page template](https://pages.github.ibm.com/cdai-design/cloud-pal/patterns/settings-page-template/usage/)                                                            |                                                          | In progress      | `ibmcloud/pal`        | `Experimental`                                             |
-| [Status icons](https://pages.github.ibm.com/cdai-design/pal/patterns/status-icons/usage)                                                                                       | David Levinson                                           | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Toolbars](https://pages.github.ibm.com/cdai-design/pal/patterns/toolbars/usage)                                                                                               | Myriam Batteli                                           | In progress      | `CDAI-design/pal`     | `NA`                                                       |
-| [Theme switcher](https://github.ibm.com/CDAI-design/pal/issues/290)                                                                                                            | Morgana D'Almeida                                        | In progress      | `CDAI-design/pal`     | `GHE Issue`                                                |
-| [User profile images](https://pages.github.ibm.com/cdai-design/pal/patterns/user-profile-images/usage)                                                                         | Marion Brülls                                            | Done             | `CDAI-design/pal`     | `GA` <Tag type="green">IBM Products Core Asset</Tag>       |
-| [Web terminal](https://pages.github.ibm.com/cdai-design/pal/patterns/web-terminal/usage)                                                                                       | Courtney Banning                                         | Done             | `CDAI-design/pal`     | `GA`                                                       |
-| [World overview pages](https://pages.github.ibm.com/cdai-design/cloud-pal/patterns/world-overview-pages/usage/)                                                                |                                                          | Done             | `ibmcloud/pal`        | `GA`                                                       |
-
-
-
-## Cloud Connected Experiences
+## Guidance
 
 The Cloud PAL concept of Connected components allows teams to easily embed parts of another product’s experience in their own user interfaces.
 It allows users to access functionality from across the platform and developers to implement experiences from other products with just a few lines of code.
 Check out the full [Connected Experiences](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/overview/) page for more information.
 
-| Name                                                                                                                                                                           | Contributors                                                       | Design Status    | Repository            | Tags           |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------|-----------------------|----------------|
-| [Add billing contact service](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/add-billing-contact-service/code)                                                   |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Add credit card service](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/add-credit-card-service/code)                                                           |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Cluster create](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/cluster-create/code)                                                                             |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Create resource group](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/create-resource-group/code)                                                               |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Edit credit card service](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/create-resource-group/code)                                                            |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [In-context assign access](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/iamassign-access/usage)                                                                |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [In-context assign authorization](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/iamassign-authorization/usage)                                                  |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [In-context delete access](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/iamdelete-access/usage)                                                                |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [In-context edit access](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/iamedit-access/usage)                                                                    |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Key protect integration](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/key-protect-integration/usage)                                                          |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Manual payment service](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/manual-payment-service/code)                                                             |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Observe button](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/observe-button/usage)                                                                            |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Observe overflow menu item](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/observe-overflow-menu-item/usage)                                                    |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Observe supertenancy modal](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/observe-supertenancy-modal/usage)                                                    |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Replace credit card service](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/replace-credit-card-service/code)                                                   |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
-| [Service usage breakdown](https://pages.github.ibm.com/cdai-design/cloud-pal/connected/service-usage-breakdown/code)                                                           |                                                                    | Done             | `ibmcloud/pal`        | `GA`           |
+Customize your view below with the **Filter** and **Sort** links from our embedded Airtables.
+
+<iframe
+  class="airtable-embed"
+  src="https://airtable.com/embed/appURFSG6dypHTXcd/shr0tRXujRvoi0pmZ?backgroundColor=orange&layout=card&viewControls=on"
+  frameborder="0"
+  onmousewheel=""
+  width="100%"
+  height="1000"
+  style="background: transparent; border: 1px solid #ccc;"
+></iframe>
+
+## Layouts
+
+Customize your view below with the **Filter** and **Sort** links from our embedded Airtables.
+
+<iframe
+  class="airtable-embed"
+  src="https://airtable.com/embed/appURFSG6dypHTXcd/shrcRiJbq2P6nspW8?backgroundColor=orange&layout=card&viewControls=on"
+  frameborder="0"
+  onmousewheel=""
+  width="100%"
+  height="1000"
+  style="background: transparent; border: 1px solid #ccc;"
+></iframe>
+
+## Patterns
+
+Customize your view below with the **Filter** and **Sort** links from our embedded Airtables.
+
+<iframe
+  class="airtable-embed"
+  src="https://airtable.com/embed/appURFSG6dypHTXcd/shriax04mrMFxtcbf?backgroundColor=orange&layout=card&viewControls=on"
+  frameborder="0"
+  onmousewheel=""
+  width="100%"
+  height="1000"
+  style="background: transparent; border: 1px solid #ccc;"
+></iframe>
+
+## Utilities
+
+Customize your view below with the **Filter** and **Sort** links from our embedded Airtables.
+
+<iframe
+  class="airtable-embed"
+  src="https://airtable.com/embed/appURFSG6dypHTXcd/shrfljMaOmYNwn7wz?backgroundColor=orange&layout=card&viewControls=on"
+  frameborder="0"
+  onmousewheel=""
+  width="100%"
+  height="1000"
+  style="background: transparent; border: 1px solid #ccc;"
+></iframe>
