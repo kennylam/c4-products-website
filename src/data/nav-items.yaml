@@ -186,6 +186,8 @@
       path: /patterns/global-header/usage
     - title: 'HTTP errors'
       path: /patterns/http-errors/usage
+    - title: 'Full-page errors'
+      path: /patterns/full-page-errors/usage
     - title: 'Import and upload'
       path: /patterns/importing/usage
     - title: 'Login & logout'
