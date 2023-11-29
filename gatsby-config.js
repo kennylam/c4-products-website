@@ -23,7 +23,7 @@ module.exports = {
           baseUrl: "https://github.ibm.com/cdai-design/pal",
           branch: "main"
         },
-        iconPath: './src/images/carbon-for-ibm-product.png',
+        iconPath: './src/images/app-icon/dark-theme/CarbonforIBMProducts.svg',
         theme: {
           homepage: 'g10',
           interior: 'g10',
