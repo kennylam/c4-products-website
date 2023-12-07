@@ -124,3 +124,8 @@ html {
 .grid-callout p {
   @include carbon--type-style("expressive-paragraph-01");
 }
+
+
+.third-party-logo div.bx--image-card__img {
+  padding: $spacing-12;
+}
