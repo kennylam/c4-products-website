@@ -4,6 +4,7 @@ import ExpressiveOverview from "./ExpressiveOverview";
 import ExpressiveOverviewCard from "./ExpressiveOverviewCard";
 import { ExtendedVideo } from "./Video";
 import Glossary from "./Glossary";
+import InfoCard from "./InfoCard";
 import MdxIcon from "./MdxIcon";
 import Redirect from "./Redirect";
 import SubmittedToCarbon from "./SubmittedToCarbon";
@@ -15,6 +16,7 @@ const components = {
   ExpressiveOverviewCard,
   ExtendedVideo,
   Glossary,
+  InfoCard,
   MdxIcon,
   Redirect,
   SubmittedToCarbon

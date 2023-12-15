@@ -7,6 +7,7 @@ import EnumerationCards from "../../../components/EnumerationCards";
 import ExpressiveOverview from "../../../components/ExpressiveOverview";
 import ExpressiveOverviewCard from "../../../components/ExpressiveOverviewCard";
 import Glossary from "../../../components/Glossary";
+import InfoCard from "../../../components/InfoCard";
 import MdxIcon from "../../../components/MdxIcon";
 import StepCard from "../../../components/StepCard";
 import SubmittedToCarbon from "../../../components/SubmittedToCarbon";
@@ -20,6 +21,7 @@ const components = {
   ExpressiveOverview,
   ExpressiveOverviewCard,
   Glossary,
+  InfoCard,
   MdxIcon,
   StepCard,
   SubmittedToCarbon
