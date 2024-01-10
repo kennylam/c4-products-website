@@ -103,8 +103,6 @@
   pages:
     - title: 'Add and select'
       path: /patterns/add-and-select/usage
-    - title: 'Advanced filtering'
-      path: /patterns/advanced-filtering/usage
     - title: 'About modal'
       path: /patterns/about-modal/usage
     - title: Canvas
@@ -291,8 +289,6 @@
   pages:
     - title: Login
       path: /cloud-paks/login/usage
-    - title: Homepage
-      path: /cloud-paks/home-page/usage
     - title: Navigation
       path: /cloud-paks/navigation/usage
     - title: 'Cross Pak switcher'
