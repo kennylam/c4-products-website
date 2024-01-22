@@ -1,5 +1,6 @@
 @import "mixins";
 @import "./glossary.scss";
+@import 'homepage';
 
 $carbon--theme: $carbon--theme--g10;
 @include carbon--theme();
@@ -121,14 +122,6 @@ li a {
   }
 }
 
-// .whats-hot-container {
-//   padding-bottom: #{$spacing-07};
-// }
-
-// #whats-hot > h2{
-//   margin-top: inherit;
-// }
-
 .grid-callout {
   margin-top: unset;
   margin-bottom: -$spacing-06;
@@ -149,4 +142,8 @@ li a {
 
 .third-party-logo div.bx--image-card__img {
   padding: $spacing-12;
+}
+
+.container--homepage .bx--grid {
+  padding-top: 3rem;
 }

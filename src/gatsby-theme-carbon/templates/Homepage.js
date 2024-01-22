@@ -1,35 +1,33 @@
 import React from "react";
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
-import { HomepageBanner, HomepageCallout } from "gatsby-theme-carbon";
+import { Column } from "gatsby-theme-carbon";
 import Seo from "../../components/Seo";
 import pageContext from "../pageContext";
-import {
-  homepageWelcome,
-  homepageWelcomeDescription
-} from "./Homepage.module.scss";
-import HomeBannerImg from "../../images/homepage/pal-banner.png";
+import { leadspaceText } from "./Homepage.module.scss";
+import { ArrowDown32 } from "@carbon/icons-react";
 
-const FirstLeftText = () => <div className={homepageWelcome}>Welcome</div>;
-
-const FirstRightText = () => (
-  <p className={homepageWelcomeDescription}>
-    Carbon for IBM Products is single place to view guidance for all assets
-    across IBM Software.
+const LeadSpaceText = () => (
+  <p className={leadspaceText}>
+    The primary resource to find guidance for the assets used across IBM
+    Software experiences.
+    <ArrowDown32 />
   </p>
 );
 
-const BannerText = () => <></>;
-
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText} image={HomeBannerImg} />,
-  FirstCallout: (
-    <HomepageCallout
-      backgroundColor="transparent"
-      color="#161616"
-      style={{ width: "initial", maxWidth: "fit-content" }}
-      leftText={FirstLeftText}
-      rightText={FirstRightText}
-    />
+  Banner: (
+    <>
+      <span className="homepage--dots" />
+      <section>
+        <div className="bx--grid">
+          <div className="bx--row">
+            <Column colLg={11} colMd={8}>
+              {LeadSpaceText()}
+            </Column>
+          </div>
+        </div>
+      </section>
+    </>
   )
 };
 

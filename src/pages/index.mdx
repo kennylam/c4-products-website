@@ -1,27 +1,31 @@
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 export default HomepageTemplate;
 
+## Getting started
+
 <Row className="image-card-group">
 
 <Column colMd={4} colLg={4} noGutterSm>
 
 <ImageCard
-  title="What is Carbon for IBM Products?"
-  subTitle="Overview"
+  title="Overview"
+  titleColor="dark"
+  hoverColor="dark"
   href="/overview/about"
 >
 
-![Carbon for IBM Products](../images/homepage/cards/carbon-for-ibm-products.svg)
+![Carbon for IBM Products](../images/homepage/cards/carbon-for-ibm-products.jpg)
 
 </ImageCard>
 
 <ImageCard
   title="Carbon 11"
-  subTitle="Design System"
+  titleColor="dark"
+  hoverColor="dark"
   href="https://carbondesignsystem.com/migrating/guide/overview/"
 >
 
-![Carbon 11](../images/homepage/cards/carbon-11.svg)
+![Carbon 11](../images/homepage/cards/carbon-11.jpg)
 
 </ImageCard>
 
@@ -30,22 +34,24 @@ export default HomepageTemplate;
 <Column colMd={4} colLg={4} noGutterSm>
 
 <ImageCard
-  title="Product-Led Growth"
-  subTitle="Initiatives"
+  title="Product Led Growth"
+  titleColor="dark"
+  hoverColor="dark"
   href="/saas-for-hyperscalers/overview"
 >
 
-![PLG](../images/homepage/cards/plg.svg)
+![PLG](../images/homepage/cards/plg.jpg)
 
 </ImageCard>
 
 <ImageCard
-  title="How can I contribute?"
-  subTitle="Contribution"
+  title="Contribution"
+  titleColor="dark"
+  hoverColor="dark"
   href="/contributing/updating-this-site/overview/"
 >
 
-![Contribution](../images/homepage/cards/contribution.svg)
+![Contribution](../images/homepage/cards/contribution.jpg)
 
 </ImageCard>
 
@@ -55,21 +61,23 @@ export default HomepageTemplate;
 
 <ImageCard
   title="YourLearning course"
-  subTitle="Get Started"
+  titleColor="dark"
+  hoverColor="dark"
   href="https://yourlearning.ibm.com/activity/PLAN-23664761452B"
 >
 
-![Your Learning](../images/homepage/cards/your-learning.svg)
+![Your Learning](../images/homepage/cards/your-learning.jpg)
 
 </ImageCard>
 
 <ImageCard
-  title="Carbon Design System Contributor"
-  subTitle="Credly"
+  title="Contributing Badge"
+  titleColor="dark"
+  hoverColor="dark"
   href="https://www.credly.com/org/ibm/badge/carbon-design-system-contributor.1"
 >
 
-![Contributor Badge](../images/homepage/cards/contributor-badge.svg)
+![Contributing Badge](../images/homepage/cards/contributor.jpg)
 
 </ImageCard>
 
@@ -77,21 +85,7 @@ export default HomepageTemplate;
 
 </Row>
 
-<Row className="grid-callout">
-
-<Column colMd={4} colLg={4}>
-
-## Resources
-
-</Column>
-
-<Column colMd={4} colLg={8}>
-
-Find those resources you’re always digging around the PAL site for, right here once and for all.
-
-</Column>
-
-</Row>
+## Need to know
 
 <Row className="resource-card-group">
 
@@ -124,35 +118,9 @@ Find those resources you’re always digging around the PAL site for, right here
 <Column colMd={4} colLg={4} noGutterSm>
 
 <ResourceCard
-  subTitle="Github"
-  title="Carbon for IBM Products design GitHub"
-  href="https://github.ibm.com/CDAI-design/pal"
->
-
-![Github icon](../images/homepage/github-icon.png)
-
-</ResourceCard>
-
-</Column>
-
-<Column colMd={4} colLg={4} noGutterSm>
-
-<ResourceCard
-  subTitle="Events & Calendar"
-  title="DSAG meeting Th 11:00AM EST"
-  href="https://ec.yourlearning.ibm.com/w3/event/10377319">
-
-![Your Learning icon](../images/homepage/your-learning-icon.png)
-
-</ResourceCard>
-
-</Column>
-
-<Column colMd={4} colLg={4} noGutterSm>
-
-<ResourceCard
   subTitle="Figma kit"
-  title="Carbon for IBM Products Figma kit"
+  title="Carbon for IBM Products"
+  actionIcon="none"
   href="/design-kits/figma"
 >
 
@@ -165,8 +133,36 @@ Find those resources you’re always digging around the PAL site for, right here
 <Column colMd={4} colLg={4} noGutterSm>
 
 <ResourceCard
+  subTitle="Github"
+  title="Carbon for IBM Products"
+  href="https://github.ibm.com/CDAI-design/pal"
+>
+
+![Github icon](../images/homepage/github-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Subscribe"
+  title="DSAG: Th 11:00 am EST"
+  actionIcon="calendar"
+  href="https://ec.yourlearning.ibm.com/w3/event/10377319">
+
+![Your Learning icon](../images/homepage/your-learning-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
   subTitle="Airtable"
-  title="Pattern & components request form"
+  title="Pattern & Components Request Form"
   href="https://airtable.com/appURFSG6dypHTXcd/shrayne6McJFr3wOM"
 >
 
@@ -178,7 +174,7 @@ Find those resources you’re always digging around the PAL site for, right here
 
 </Row>
 
-### Development resources
+## Dev resources
 
 <Row className="resource-card-group">
 
@@ -199,7 +195,7 @@ Find those resources you’re always digging around the PAL site for, right here
 
 <ResourceCard
   subTitle="Storybook"
-  title="Carbon for IBM Products Storybook"
+  title="Carbon for IBM Products"
   href="https://carbon-for-ibm-products.netlify.app"
 >
 
@@ -213,7 +209,7 @@ Find those resources you’re always digging around the PAL site for, right here
 
 <ResourceCard
   subTitle="Github"
-  title="Carbon for IBM Products development GitHub"
+  title="IBM Products"
   href="https://github.com/carbon-design-system/ibm-products"
 >
 
@@ -226,8 +222,9 @@ Find those resources you’re always digging around the PAL site for, right here
 <Column colMd={4} colLg={4} noGutterSm>
 
 <ResourceCard
-  subTitle="Events & Calendar"
-  title="Development office hours Wed 11:30AM EST"
+  subTitle="Office Hours"
+  title="With the Dev team"
+  actionIcon="calendar"
   href="https://ec.yourlearning.ibm.com/w3/meeting/10373279">
 
 ![Your Learning icon](../images/homepage/your-learning-icon.png)
