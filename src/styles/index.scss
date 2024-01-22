@@ -75,6 +75,27 @@ html {
   margin-bottom: 0 !important;
 }
 
+// FIX FOR BUG WHEREBY BULLET POINT LISTS WITHIN INLINE NOTIFICATIONS 
+// INCORRECTLY ONLY SPAN 2/3 OF THE WIDTH
+//
+// Used on the /content/date-and-time page
+.fixBulletListBug > div > div > div > div > div > p {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+.fixBulletListBug > div > div > div > div > ul, 
+.fixBulletListBug > div > div > div > div > ol {
+  width: 100% !important;
+}
+
+// FIX FOR BUG WHEREBY TEXT WITH LINKS WITHIN A LIST GETS HUGE BOTTOM 
+// MARGIN AT CERTAIN LINE WRAPS
+//
+// Used on the /content/date-and-time page
+li a {
+  margin-bottom: inherit !important;
+}
+
 // Fix for incorrect grid margins on homepage make content off-center
 // See https://github.ibm.com/CDAI-design/pal/issues/1110
 .container--homepage .#{$prefix}--grid {
