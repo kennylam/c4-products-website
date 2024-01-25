@@ -4,6 +4,7 @@ import {
   AspectRatio,
   ClickableTile,
 } from 'carbon-components-react';
+import { navigate } from "gatsby";
 
 import * as styles from './StepCard.module.scss';
 
@@ -14,7 +15,7 @@ function StepCard({
   children,
 }) {
   return (
-  <ClickableTile href={href}>
+  <ClickableTile onClick={() => navigate(href)}>
       <AspectRatio ratio="1x1">
         <div className={styles.card}>
           <div className={styles.header}>
