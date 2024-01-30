@@ -80,7 +80,7 @@ open, etc.
 
 <InlineNotification>
 
-It's not generally necessary or practical to display elapsed time in seconds. Therefore, if less than 
+It’s not generally necessary or practical to display elapsed time in seconds. Therefore, if less than 
 1 minute has elapsed, display the text `Just now` instead of a number and time unit.
 
 </InlineNotification>
@@ -148,7 +148,7 @@ are likely to need additional levels of detail in that context.
 | Base format<br/>(12-hour time format; hours and minutes only) | (H)H:MM &lt;AM/PM&gt;    | 9:30 AM<br/>11:59 PM                |
 | 24-hour time format                      | HH:MM                  | 09:30<br/>23:59                  |
 | With seconds                             | _If using the 12-hour time format:_<br/>(H)H:MM:SS &lt;AM/PM&gt;<br/><br/>_If using the 24-hour format:_<br/>HH:MM:SS | 9:30:45 AM<br/>11:59:23 PM<br/><br/>09:30:45<br/>11:59:23 |
-| With 2-4 letter time zone abbreviations  | (H)H:MM &lt;AM/PM&gt; &lt;time zone abbreviation&gt;   | 9:30 AM PST<br/>11:59 PM IST        |
+| With 2–4 letter time zone abbreviations  | (H)H:MM &lt;AM/PM&gt; &lt;time zone abbreviation&gt;   | 9:30 AM PST<br/>11:59 PM IST        |
 
 Note that the permitted variations shown here can be combined. For example: 
 - The base format with seconds and a time zone abbreviation (_9:30:45 AM PST_)
@@ -159,7 +159,7 @@ Note that the permitted variations shown here can be combined. For example:
 
 ### Additional time guidance
 **General**
-- Wherever possible, keep things simple. That is, don't provide a greater level of detail than is needed 
+- Wherever possible, keep things simple. That is, don’t provide a greater level of detail than is needed 
 simply because you can. For example, only include seconds if users are likely to need that level of precision 
 in the given context.
 - Use colons to separate hours and minutes (and, if relevant, seconds). Don’t add spaces between the colons 
@@ -169,16 +169,16 @@ and the numbers. A couple of correctly written examples:
 - To express a time range, use _to_ (not _through_) or use an en dash (–). Do not use a hyphen&nbsp;(-).
 - If relevant, show the time zone, using the appropriate internationally recognized [time zone abbreviation](https://en.wikipedia.org/wiki/List_of_time_zone_abbreviations) (such as _PST_ for _Pacific Standard Time_).
 - Use the base 12-hour time format or the 24-hour time format as appropriate, but do not mix the two types within the same context.
-- If users are likely to want to compare time durations (that is, how long something took) then within a data table the 24-hour time format is useful becasue the leading zero for hours 1-9 means that all hours and minutes (and seconds if relevant) line up vertically. See the [Numbers in data tables](/content/numbers#numbers-in-data-tables) guidance for more details.
+- If users are likely to want to compare time durations (that is, how long something took) then within a data table the 24-hour time format is useful becasue the leading zero for hours 1–9 means that all hours and minutes (and seconds if relevant) line up vertically. See the [Numbers in data tables](/content/numbers#numbers-in-data-tables) guidance for more details.
 
 **If using the base 12-hour time format**
-- Do not add a leading zero before hours 1-9 (_5:30 AM; 5:30 PM_).
+- Do not add a leading zero before hours 1–9 (_5:30 AM; 5:30 PM_).
 - The 12-hour time format always includes AM or PM.
 - Use uppercase letters and no periods for the abbreviations AM and PM, and insert a space before these abbreviations (_10:30 AM; 10:30 PM_).
 - If showing a time range, include AM or PM in both parts of the time range (_The job ran from 7:30:03 PM to 7:32:12 PM_).
 
 **If using the 24-hour time format**
-- Hours are always represented with two digits, so do include a zero before hours 1-9. (_05:30; 17:30_).
+- Hours are always represented with two digits, so do include a zero before hours 1–9. (_05:30; 17:30_).
 - The 24-hour time format runs from 00:00 to 23:59, with 00:00 being midnight and 12:00 being noon.
 
 
@@ -270,7 +270,7 @@ All of the permitted variations listed in the [absolute time format](#absolute-t
 also apply here. That is, if there is a valid reason to do so, you may choose to:
 - use the 24-hour time format
 - include seconds
-- include 2-4 letter time zone abbreviations
+- include 2–4 letter time zone abbreviations
 
 As ever, ensure you apply one style consistently across a given context.
 
