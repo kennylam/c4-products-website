@@ -9,7 +9,7 @@ tabs: ["Usage", "Code"]
 
 <PageDescription>
 
-Users need a way to customize their data table display, so that they can see the columns that provide the most value to them in the order that they want. A customized setting can improve users’ workflow, especially if they are using the data table often and need to check or monitor specific columns of interest. 
+Users need a way to customize their data table display so that they can see the columns that provide the most value to them in the order that they want. A customized setting can improve users’ workflow, especially if they are using the data table often and need to check or monitor specific columns of interest. 
 
 </PageDescription>
 
@@ -28,7 +28,7 @@ Users need a way to customize their data table display, so that they can see the
 
 ## Overview
 
-Allowing the user to manage the table view, helps to enhance users’ workflow and increase efficiency. Unneccessary columns can be hidden and users can put focus on columns that provide the most value to them. The user should have the flexibility of selecting one or multiple columns to show or hide or rearrange the column order. 
+Allowing the user to manage the table view, helps to enhance users’ workflow and increase efficiency. Unnecessary columns can be hidden and users can put focus on columns that provide the most value to them. The user should have the flexibility of selecting one or multiple columns to show, hide or rearrange the column order. 
 
 
 ### When to use
@@ -54,9 +54,9 @@ To manage columns, use the narrow tearsheet component. 
 
 ![Anatomy](../images/column-customization/image_Anatomy.png)
 
-1. Header: Includes a title, description and optional a label. The title should be brief and clearly describe the user’s task or purpose. Use a number count in brackets to indicate how many columns are currently shown in the table display.
+1. Header: Includes a title, description and optional label. The title should be brief and clearly describe the user’s task or purpose. Use a number count in brackets to indicate how many columns are currently shown in the table display.
 2. Search: To find columns in the list.
-3. Title: User is able to select all columns at once by selecting the checkbox.
+3. Title: The user can select all columns at once by selecting the checkbox.
 4. Drag & drop icon: To reorder the columns in the list.
 5. Active column: Users can select the checkbox to show columns in the table display.
 6. Hidden column: Users can deselect the checkbox to hide columns in the table display.
@@ -86,14 +86,14 @@ The column icon in the data table header is the entry point for managing columns
 
 ### Show and hide columns
 
-A user needs a way to hide one or multiple columns in their table view. The default table view displays all columns in the data table. The user clicks on “manage columns” and a tearsheet pops up so that the user stays in context, and focus on the task without an overload of information. The pattern uses checkboxes since multi-select is an option, and the user can hide or unhide multiple columns in one setting. If no changes are made, the primary action button is disabled. When the user selects a column, the save button is active.
+A user needs a way to hide one or multiple columns in their table view. The default table view displays all columns in the data table. The user clicks on “manage columns” and a tearsheet pops up so that the user stays in context, and focuses on the task without an overload of information. The pattern uses checkboxes since multi-select is an option, and the user can hide or unhide multiple columns in one setting. If no changes are made, the primary action button is disabled. When the user selects a column, the save button is active.
 
 
-By clicking the checkbox in the title, the user can select all columns at once. When all items are deselected, the primary action button “Save” turns disabled. Deselecting can be a helpful shortcut, if users want to select only 3 of 100 columns. 
+By clicking the checkbox in the title, the user can select all columns at once. When all items are deselected, the primary action button “Save” turns disabled. Deselecting can be a helpful shortcut if users want to select only 3 of 100 columns. 
 
 ![Show or hide](../images/column-customization/image_show_or_hide.png)
 
-If no changes were made, the primary action button is disabled until the user has modified something in the tearsheet.  After the user made a change, the “Save”-button turns from disabled into active:
+If no changes were made, the primary action button is disabled until the user has modified something in the tearsheet.  After the user makes a change, the “Save”-button turns from disabled to active:
 
 ![Active call to action](../images/column-customization/image_active_cta.png)
 
@@ -101,14 +101,14 @@ When a user saves the data table column modifications, the table will appear in 
 
 ![Notification](../images/column-customization/image_Notification.png)
 
-If a user makes changes, columns should stay in place while the user edits. After the user closes the tearsheet, the dialogue updates so that the selected columns are at top. 
+If a user makes changes, columns should stay in place while the user edits. After the user closes the tearsheet, the dialogue updates so that the selected columns are at the top. 
 
 ![Reopen](../images/column-customization/image_reopen.png)
 
 
 ### Search
 
-For large amount of columns in data tables a search bar is required, so that the user can easily find specific columns and the user is able to enter a search term. In general it is recommended to add a search bar when a table has more than 12 columns, or items are not visible in the viewport anymore.
+For large amount of columns in data tables a search bar is required, so that the user can easily find specific columns and the user can to enter a search term. In general, it is recommended to add a search bar when a table has more than 12 columns, or items are not visible in the viewport anymore.
 
 ![Column search](../images/column-customization/image_search_columns.png)
 
@@ -125,12 +125,12 @@ Users also need a way to reorder columns in the table display. The default table
 
 ![Reorder](../images/column-customization/image_Reorder.png)
 
-The user gets a visual indication of the dragging starting point and for the target.
+The user gets a visual indication of the dragging starting point and the target.
 
 ![Reorder drag](../images/column-customization/image_Reorder-drag.png)
 
 
-When the item is placed in the new desired state, the save button turns active because a change has been made. The user can save the reorder and also receives a confirmation message afterwards.
+When the item is placed in the new desired state, the save button turns active because a change has been made. The user can save the reorder and also receive a confirmation message afterward.
 
 ![Reorder done](../images/column-customization/image_Reorder-done.png)
 
@@ -139,23 +139,23 @@ When the item is placed in the new desired state, the save button turns active b
 
 ### Edit column values
 
-In some use cases we need to allow users to edit column values in the tearsheet while doing other modifications such as reorder. The user gets icons for editing indicated on hovering the row. Follow the guidance for [https://pages.github.ibm.com/cdai-design/pal/components/data-table/inline-editing](url).
+In some use cases, we need to allow users to edit column values in the tearsheet while doing other modifications such as reorder. The user gets icons for editing indicated by hovering over the row. Follow the guidance for [https://pages.github.ibm.com/cdai-design/pal/components/data-table/inline-editing](url).
 
-When the user needs an ability to view (or edit) further column info such as the data type, a second column can be introduced to list the info next to the column name. 
+When the user needs the ability to view (or edit) further column info such as the data type, a second column can be introduced to list the info next to the column name. 
 
 ![Edit values](../images/column-customization/image_edit-values.png)
 
 
 ### Fixed column
 
-Some tables require the option to freeze the left most column to the side of a horizontally scrolling data table. This allows information in the fixed column to remain visible even when scrolling through the data set. This can be particularly useful if you wish to show a large number of columns. Those freezing columns have to be indicated for the user in the tearsheet during managing. We use the disabled state as well as the “lock”-icon to show the user that actions or modifications can’t be done for a fixed column.
+Some tables require the option to freeze the leftmost column to the side of a horizontally scrolling data table. This allows information in the fixed column to remain visible even when scrolling through the data set. This can be particularly useful if you wish to show a large number of columns. Those freezing columns have to be indicated for the user in the tearsheet during managing. We use the disabled state as well as the “lock”-icon to show the user that actions or modifications can’t be done for a fixed column.
 
 ![Freeze column](../images/column-customization/image_freeze-column.png)
 
 
 ### Scrolling
 
-For many applications the user needs a way to load more elements in the list as there can be thousands of items and loading them all initially and in some cases this can slow down the loading of the tearsheet. Users should not need to select a 'load more' button to view more items while in a selection mode. Therefore, their intent to look for more items in the list (scrolling) is used to trigger an automatic loading of more items when they pass 2/3 of the available scroll area. The header and search bar is fix on scroll and the list content scrolls behind. Loading is indicated by a skeleton representing three list entries. Usually column loading shouldn’t take long – only rare cases need skeletons here.
+For many applications, the user needs a way to load more elements in the list as there can be thousands of items and loading them all initially and in some cases can slow down the loading of the tearsheet. Users should not need to select a 'load more' button to view more items while in a selection mode. Therefore, their intent to look for more items in the list (scrolling) is used to trigger an automatic loading of more items when they pass 2/3 of the available scroll area. The header and search bar are fixed on scroll and the list content scrolls behind. Loading is indicated by a skeleton representing three list entries. Usually, column loading shouldn’t take long – only rare cases need skeletons here.
 
 ![Scrolling](../images/column-customization/image_scrolling.png)
 
@@ -163,7 +163,7 @@ For many applications the user needs a way to load more elements in the list as 
 
 ## Style
 
-Follow the guidance described for tearsheets. The styling and interactions of the list follows the Carbon data table rows.
+Follow the guidance described for tearsheets. The styling and interactions of the list follow the Carbon data table rows.
 
 ![Tokens](../images/column-customization/image_tokens.png)
 
