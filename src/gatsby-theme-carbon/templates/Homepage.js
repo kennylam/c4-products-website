@@ -8,8 +8,8 @@ import { ArrowDown32 } from "@carbon/icons-react";
 
 const LeadSpaceText = () => (
   <p className={leadspaceText}>
-    The primary resource to find guidance for the assets used across IBM
-    Software experiences.
+    Find the essential assets and guidance to create consistent experiences and
+    accelerate delivery across IBM products.
     <ArrowDown32 />
   </p>
 );
