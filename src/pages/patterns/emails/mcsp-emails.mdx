@@ -1,210 +1,267 @@
 ---
-title: MCSP emails
+
+title: MCSP Try emails
+
 ---
 
-import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
-import { Link } from "gatsby";
+import { Tabs as CTabs, Tab as CTab } from "carbon-components-react";
 
 ← [Back to Email patterns overview](/patterns/emails/overview)
 
 <PageDescription>
 
-Emails provide a way to asynchronously communicate with users outside of the product.
+The IBM MCSP email service sends transactional emails to subscribers of IBM Try offers.
 
 </PageDescription>
 
 <AnchorLinks>
-  <AnchorLink>Overview</AnchorLink>
-  <AnchorLink>Anatomy</AnchorLink>
-  <AnchorLink>When to use</AnchorLink>
-  <AnchorLink>Content</AnchorLink>
-  <AnchorLink>Email creation</AnchorLink>
+
+<AnchorLink>Overview</AnchorLink>
+  
+<AnchorLink> Try email components</AnchorLink>
+  
+<AnchorLink> Thank you for subscribing</AnchorLink>
+
+<AnchorLink> Welcome to your Try experience</AnchorLink>
+
+<AnchorLink> Your Try experience is expiring</AnchorLink>
+
+<AnchorLink> Your Try experience has expired</AnchorLink>
+
+<AnchorLink> Your Try instance has been deleted</AnchorLink>
+
+<AnchorLink> Thank you for upgrading</AnchorLink>
+
+<AnchorLink> Your Try offer has been extended</AnchorLink>
+  
+<AnchorLink> Transactional email footer</AnchorLink>
+
+<AnchorLink> Implementation notes</AnchorLink>
+
 </AnchorLinks>
 
 ## Overview
 
-Product teams can use emails to communicate with users about their Try offer or paid subscriptions. Emails should be sent only when necessary. Use the following patterns if your product is on the [MultiCloud SaaS Platform](https://w3.ibm.com/w3publisher/multicloud-saas-platform) (MCSP).
+The IBM [MCSP](https://w3.ibm.com/w3publisher/multicloud-saas-platform) email service sends the following automated emails to subscribers of IBM Try offers. These transactional emails enable your users to access and upgrade their limited-time Try experiences. Each transactional email provides a specific notice to subscribers, and are  intended to complement, not replace, in-product UI messaging.  
 
-## Anatomy
+### Try email components 
 
-<Row>
-<Column colMd={4} colLg={8}>
-
-![Email template](images/mcsp-emails/emailAnatomy.png)
-
-</Column>
-</Row>
-
-1. **Subject line:** A description of the topic of the email that’s displayed in the user’s inbox before they open it
-2. **Sender:** The email address and display name of the user that’s sending the email
-3. **Header:** <br />
-   a. **Product name** <br />
-   b. **Title:** Title does not need to match the subject line verbatim but it should reflect the main content of the email <br />
-   c. **Product icon** <br />
-   d. **Banner graphic** <br />
-4. **Body** <br />
-   a. **Salutation:** The way you greet the user, typically the first line or two in the email <br />
-   b. **Body content:** The main content in the email that conveys the message that you want the user to receive <br />
-   c. **Call to action:** The action that you want the user to take as a result of reading the email <br />
-   d. **Signature:** The way you close the email content <br />
-5. **Footer** <br />
-   a. **IBM Support Center link** <br />
-   b. **Copyright disclaimer** <br />
-   c. **IBM 8-bar logo**
-
-## When to use
-
-The MultiCloud SaaS platform has an email notification system which can send emails on behalf of the products.
-
-The above email template design is used in order to make sure that communications are consistent across all SaaS products. Email templates are sent throughout try and buy SaaS Hyperscaler flows. Here are the templates used by the platform.
-
-<Accordion>
-  <AccordionItem title="Trial email - Trial has begun">This email is sent as soon as the user has subscribed to the Trial from one of the 2 entry points of the Trial Pivot flows (ibm.com or AWS product listing trial link). This email is sent as soon as the user lands in the platform's instance provisioning screen from the IBM ID login flow from URX.
-Since URX would have registered the Trial subscription in SSM but provisioning has not yet occurred, we need to send out this email in order to provide the user a way to get at least a link to the management console if the flow or connection fails once on the provisioning configuration view.
-<Row>
-
-</Row> </AccordionItem>
-  <AccordionItem title="Trial email - Welcome to your trial">This email is sent when the instance of a Trial subscription has been provisioned.
+MCSP transactional Try emails components are shown in the following Welcome email example: 
 
 <Row>
 
-</Row> </AccordionItem>
-  <AccordionItem title="Trial email - Your trial ends in n-days">This email is sent n-days prior to expiry. We suggest sending 10 days prior to trial expiring.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Trial email - Your trial has expired">This email is sent when the trial has expired (typically 30 days since trial start date).
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Trial email - Your trial data is deleted">This email is sent when the data of Expired trial has been deleted by the platform (sent 30 days after trial has expired).
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Trial email - Thank you for upgrading">This email is sent when the instance of a paid subscription has been upgraded from a trial instance.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Subscription email - Thank you for purchasing">This email is sent as soon as the user has subscribed to the Paid instance during the IBM account set up flow that follows the AWS subscription flow.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Subscription email - Welcome to your instance">This email is sent when the instance of a paid subscription has been deployed.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Subscription email - You've deleted an instance">We recommend sending an email related to product instance that has been deleted by the user. This will come in handy for the customer in order to have an audit of the action.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Subscription email - Your subscription will expire soon">This email is sent n-days prior to subscription expiry.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Subscription email - Your subscription has expired">This email is sent when the subscription has expired.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Subscription email - You've updated your subscription">This email is sent when the user has modified/updated the contract on AWS for a paid subscription.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Profile email - Verify your IBM email change request">This email is sent to the new email address when a change to the user's IBMid or contact email address is requested on ibm.com.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Profile email - Your IBM email change">This email is sent to the existing email address when a change to the user's IBMid or contact email address is requested on ibm.com.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Profile password - Your IBM password is expiring">This email is sent when the user's IBM password is expiring within the specified number of days.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="Profile password - Your IBM password has expired">This email is sent when the user's IBM password has expired.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-  <AccordionItem title="User profile - Your IBM profile has been updated">This email is sent when the user's IBM profile has been updated.
-
-<Row>
-
-</Row>
-  </AccordionItem>
-</Accordion>
-
-## Content
-
-Leverage the Carbon Design System for content guidance on things like capitalization, tone, voice, and terminology. In addition to the content guidance in Carbon, use the following checklist as another aid:
-
-#### Do's 
-
-- Use a conversational voice and tone that is personal, relatable, clear, helpful, and engaging.
-- Use plain language that users can understand the first time that they read it.
-- Use approved names in official spelling when referring to products.
-- Use active voice to focus on who is doing the action and to be clearer and more direct.
-- Use passive voice when you need to avoid using first person or blaming the user.
-- Use second person (“you”) to engage the user.
-- Use simple present tense (“is”), not future tense (“will”).
-- Use simple past tense (“was” rather than “has been”).
-
-#### Don'ts
-
-- Be afraid to use contractions once in a while. Decide whether they fit the context.
-- Use abbreviations that users might not understand without spelling them out first.
-- Use relational positioning wording, such as “below” or “above.” Avoid other sensory words, such as “top” or “right,” due to accessibility.
-- Place the account number in the email
-
-## Email creation
-
-[SendGrid](https://sendgrid.com/) is the email delivery platform used. Our use of SendGrid follows a federated model. Automation SaaS Platform has a parent SendGrid account which gives sub accounts to products under ASP who want to use SendGrid for email notifications (These sub accounts function as their own SendGrid accounts).
-
-SendGrid is a user friendly tool allowing for designs to be created with their design editor, however HTML can also be used. With SendGrid's web API, you are able to send out an email using a template you have created in your SendGrid account by specifying the templateID.
-
-SendGrid also supports handlebars, which is SendGrid's variable replacement within the templates. When using SendGrid's web API, you are able to send an extra object that will replace the labels specified in the handlebars within the email templates with fields you have defined. This allows emails to be customized dynamically.
-
-<Row>
 <Column colMd={8} colLg={8}>
 
-![SendGrid](images/mcsp-emails/sendGrid.png)
+Subject: Start your IBM [product_name] free trial 
+
+![MCSP transactional Try email components](images/mcsp-emails/mcsp-email-components.png) 
+
+MCSP transactional Try email components
 
 </Column>
+
 </Row>
 
-<br />
+The following components are highlighted in the transactional Try email example (image above): 
 
-<CardGroup>
-  <MiniCard
-    title="Figma template"
-    href="https://www.figma.com/file/SlZ7TK2mTzNLIHZB2dGXRF/MCSP-Onboarding-Design-Guide?node-id=2032-429768&t=UwSHXaeG1gmo19f5-0"
-    actionIcon="launch"
-  ></MiniCard>
-</CardGroup>{" "}
+1. **Subscription ID**. This component contains the Try user's subscription ID for the product trial. Multiple instances of a single product trial may exist under one subscription ID. One user may have multiple IBM Try subscriptions (IDs). 
+2. **Subscription expiration**. This component contains the date when this product trial expires. Thirty-day trials are a common duration. The "month day, year" format (September 28, 2024, e.g.) is recommended due to geographical differences in strictly numerical date formats.
+3. **"Seller account** This component contains the customer's account number as held by the product seller. "Seller" in this case is the software retailer which provided the user's subscription - either IBM or a third-party software seller such as AWS. 
+4. **Instance ID**. This component contains the ID for this instance of the product trial. Depending on the product, a single trial (or purchase) subscription may include multiple instances of the product.
+5. **CTA buttons**. This component contains call-to-action (CTA) buttons which prompt user action. CTAs are the primary (blue) action the user should do, and optionally, a secondary (white) action. If there is no user action required, as with the "Thank you for subscribing" email, no CTAs are used.
+6. **Transactional email footer**. This component provides access to the required legal information and notice for the transactional class of business emails, including the IBM Privacy statement.
+
+
+###  Thank you for subscribing
+
+This first MCSP email in the Try experience email flow is sent when the user subscribes to your Try offer. The email thanks them for subscribing and asks them to look for a Welcome email to use for accessing their provisioned trial instance (Trial, Sandbox Trial, or Freemium). No action is required by the user at this point, so there are no call-to-action (CTA) buttons. If necessary, a text link to the SaaS Console enables the user to check on the status of their instance provisioning. 
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+Subject: Your IBM [product_name] trial subscription 
+
+![MCSP Try offer subscription email](/images/mcsp-emails/mcsp-subscribed-email.png) 
+
+Thank you for subscribing trial email
+
+</Column>
+
+</Row>
+
+###  Welcome to your trial
+
+The next MCSP email in the Try experience email flow is sent when the user's Try instance is provisioned and ready to use. The email welcomes them to their trial (Trial, Sandbox Trial, or Freemium), and lists their subscription ID, subscription expiration date, customer account ID, and trial instance ID. The call-to-action (CTA) buttons enable the user to start using their Try instance (primary action) or to manage their subscription or trial instance through the SaaS Console (secondary action).
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+Subject: Start your IBM [product_name] free trial
+
+![MCSP Try offer welcome email](/images/mcsp-emails/mcsp-welcome-email.png) 
+
+Welcome to your trial email
+
+</Column>
+
+</Row>
+
+
+### Your trial is expiring 
+
+The next email in the MCSP flow notifies the user that their Try experience will expire soon. If the user has already upgraded their Try offer (such as by purchasing a subscription), they do not receive this email. The email provides the expiration date and prompts the user to upgrade to continue using their Try instance. The CTA button enables the user to upgrade (primary action) their Try subscription. 
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+Subject: Your IBM [product_name} trial is expiring soon
+
+![MCSP Try offer expiring email](images/mcsp-emails/mcsp-expiring-email.png) 
+
+Your trial is expiring email
+
+</Column>
+
+</Row>
+
+### Your trial has expired
+
+The next email in the MCSP flow provides notice to the user that their Try experience has expired. If the user has already upgraded their Try subscription (such as by purchasing), they do not receive this email. The email informs them that continued use of their Try environment depends on upgrading their subscription. The CTA button enables the user to upgrade (primary action) by purchasing a subscription or contacting IBM sales (secondary action). 
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+Subject: Your IBM [product_name] trial has expired
+
+![MCSP Try offer expired email](images/mcsp-emails/mcsp-expired-email.png) 
+
+Your trial has expired email
+
+</Column>
+
+</Row>
+
+### Your trial has been deleted
+
+The next email in the MCSP flow provides notice to the user that IBM has deleted this Try instance. If the user has already upgraded their Try subscription (by purchasing a subscription within the grace period), then this original Try instance may or may not be deleted (the user may have opted for a new instance after purchasing, for example). A common grace period following trial expiration is 30 days, enabling both your product team and the user to continue with the Try instance with minimal intervention. The CTA buttons enable the user to purchase (primary action) a new subscription or to contact IBM sales (secondary action) for additional purchase options. 
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+Subject: Your expired IBM [product_name] trial has been deleted
+
+![MCSP Try instance deleted email](images/mcsp-emails/mcsp-deleted-email.png) 
+
+Trial deleted email
+
+</Column>
+
+</Row>
+
+### Thank you for upgrading
+
+The next email in the MCSP flow thanks the user who has upgraded their Try offer, typically by purchasing a subscription. The CTA buttons enable the user to get started (primary action) with the upgraded product instance or to manage their subscription or instance through the SaaS Console (secondary action).
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+Subject: Your IBM [product_name] subscription upgrade
+
+![MCSP Try offer upgraded email](images/mcsp-emails/mcsp-upgraded-email.png) 
+
+Trial upgraded email
+
+</Column>
+
+</Row>
+
+
+### Your trial has been extended
+
+The final email in the MCSP flow notifies the user when their request for a Try period extension has been granted. The email includes the subscription information and the updated expiration date. The CTA buttons enable the user to access their Try instance (primary action) or to manage their subscription or instance through the SaaS Console (secondary action).
+
+<Row>
+
+<Column colMd={8} colLg={8}>
+
+Subject: Your IBM [product_name} trial extension
+
+![MCSP Try offer extended email](images/mcsp-emails/mcsp-extended-email.png) 
+
+Trial extended email
+
+</Column>
+
+</Row>
+
+
+### Transactional email footer
+
+The required transactional email footer, included in all Try transactional emails, covers IBM legal requirements and provides links to related legal information:   
+
+© Copyright IBM Corporation [current_year].
+
+------------------------------------------
+
+This email was sent to [email-address]. Do not reply or forward.
+
+Privacy (links to https://www.ibm.com/privacy) |
+
+Terms  (links to - for purchases - https://www.ibm.com/support/customer/csol/terms/  or for trials - https://www.ibm.com/support/customer/csol/terms/?id=Z126-6567) |
+
+Trademarks  (links to - https://www.ibm.com/legal/copyright-trademark)
+
+IBM US - 590 Madison Avenue - New York, NY 10022 - United States
+
+
+### Implementation notes
+
+Your product team should consider the following additional guidelines when implementing the MCSP trial transactional email flow: 
+
+- The email "Subject" line is important email-specific text which appears in the recipient's email in-box and should be implemented as described. 
+- When a user purchases the IBM MCSP product, MCSP Try emails should no longer be sent. Transactional emails for their purchase are then sent instead of Try emails. If the user upgrades to another Try offer for the product, the MCSP Try offer email flow should restart for the new subscription ID.
+- Some IBM product Try experiences may expire based on variables other than the number of days, such as a limit on data size, number of API calls, or monetary credits. In these cases, product teams should adapt the time-limited Try design, and as needed, submit a design request to the PLG team. 
+- If the IBM user cancels their Try offer (either before expiration or within the post-expiration grace period), MCSP Try emails should no longer be sent. Instead, the product UI should provide messaging to confirm cancellation, collect information about the reason for cancellation, and present alternative Try offers or other options. 
+- For transactional emails, IBM does not provide an Unsubscribe or Opt out method - IBM users have opted in to receiving transactional emails through their voluntary relationship with IBM, and cannot opt out of transaction-specific emails. (Marketing emails, by contrast, require an Unsubscribe or Opt out method under US “Can Spam” law and are subject to significant penalties for violations.)
+
+<InfoCard
+cardName="Pattern version history"
+cardDescription='Versions, changelog and contributors'>
+
+<CTabs>
+
+<CTab label="Version">
+
+<Details>
+1.0  
+</Details>
+
+</CTab>
+
+<CTab label="Changelog">
+
+<Details>
+
+2024-02-12: Version 1.0 release
+
+</Details>
+
+</CTab>
+
+<CTab label="Contributors">
+
+PLG Design - <a href="https://w3.ibm.com/#/people/1J7360897">Kiran Ravindra</a> <br/>
+
+PLG Content - <a href="https://w3.ibm.com/#/people/929078897">Josh Horton</a> <br/>
+
+</CTab>
+
+</CTabs>
+
+</InfoCard>
