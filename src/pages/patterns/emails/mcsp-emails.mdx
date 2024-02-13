@@ -16,37 +16,40 @@ The IBM MCSP email service sends transactional emails to subscribers of IBM Try 
 
 <AnchorLinks>
 
-<AnchorLink>Overview</AnchorLink>
+<AnchorLink> Overview</AnchorLink>
   
 <AnchorLink> Try email components</AnchorLink>
   
+<AnchorLink> Transactional email footer</AnchorLink>
+  
+<AnchorLink> MCSP trial emails</AnchorLink>
+  
 <AnchorLink> Thank you for subscribing</AnchorLink>
 
-<AnchorLink> Welcome to your Try experience</AnchorLink>
+<AnchorLink> Welcome to your trial</AnchorLink>
 
-<AnchorLink> Your Try experience is expiring</AnchorLink>
+<AnchorLink> Your trial is expiring</AnchorLink>
 
-<AnchorLink> Your Try experience has expired</AnchorLink>
+<AnchorLink> Your trial has expired</AnchorLink>
 
-<AnchorLink> Your Try instance has been deleted</AnchorLink>
+<AnchorLink> Your trial has been deleted</AnchorLink>
 
 <AnchorLink> Thank you for upgrading</AnchorLink>
 
-<AnchorLink> Your Try offer has been extended</AnchorLink>
+<AnchorLink> Your trial has been extended</AnchorLink>
   
-<AnchorLink> Transactional email footer</AnchorLink>
-
 <AnchorLink> Implementation notes</AnchorLink>
 
 </AnchorLinks>
 
+
 ## Overview
 
-The IBM [MCSP](https://w3.ibm.com/w3publisher/multicloud-saas-platform) email service sends the following automated emails to subscribers of IBM Try offers. These transactional emails enable your users to access and upgrade their limited-time Try experiences. Each transactional email provides a specific notice to subscribers, and are  intended to complement, not replace, in-product UI messaging.  
+The IBM [MCSP](https://w3.ibm.com/w3publisher/multicloud-saas-platform) email service sends the following automated emails to subscribers of IBM Try offers. These transactional emails enable your users to access and upgrade their limited-time Try experiences. Each transactional email provides a specific notice to subscribers, and are intended to complement, not replace, in-product UI messaging.  
 
 ### Try email components 
 
-MCSP transactional Try emails components are shown in the following Welcome email example: 
+MCSP transactional Try email components are shown in the following Welcome email example: 
 
 <Row>
 
@@ -66,15 +69,40 @@ The following components are highlighted in the transactional Try email example 
 
 1. **Subscription ID**. This component contains the Try user's subscription ID for the product trial. Multiple instances of a single product trial may exist under one subscription ID. One user may have multiple IBM Try subscriptions (IDs). 
 2. **Subscription expiration**. This component contains the date when this product trial expires. Thirty-day trials are a common duration. The "month day, year" format (September 28, 2024, e.g.) is recommended due to geographical differences in strictly numerical date formats.
-3. **"Seller account** This component contains the customer's account number as held by the product seller. "Seller" in this case is the software retailer which provided the user's subscription - either IBM or a third-party software seller such as AWS. 
+3. ***Seller* account** This component contains the customer's account number with the product seller. *"Seller"* is a variable for the software retailer which provided the user's subscription - either **IBM** or a third-party software seller such as **AWS**. 
 4. **Instance ID**. This component contains the ID for this instance of the product trial. Depending on the product, a single trial (or purchase) subscription may include multiple instances of the product.
-5. **CTA buttons**. This component contains call-to-action (CTA) buttons which prompt user action. CTAs are the primary (blue) action the user should do, and optionally, a secondary (white) action. If there is no user action required, as with the "Thank you for subscribing" email, no CTAs are used.
+5. **CTA buttons**. This component contains call-to-action (CTA) buttons which prompt user action. CTAs are the primary (blue) action the user should take, and optionally, a secondary (white) action. If there is no user action required, as with the "Thank you for subscribing" email, no CTAs should be used.
 6. **Transactional email footer**. This component provides access to the required legal information and notice for the transactional class of business emails, including the IBM Privacy statement.
+
+### Transactional email footer
+
+The required transactional email footer, included in all Try transactional emails, covers IBM legal requirements and provides links to related legal information:  
+
+
+© Copyright IBM Corporation [current_year].
+
+------------------------------------------
+
+This email was sent to [email-address]. Do not reply or forward.
+
+Privacy (links to https://www.ibm.com/privacy) |
+
+Terms  (links to - for purchases - https://www.ibm.com/support/customer/csol/terms/  or for trials - https://www.ibm.com/support/customer/csol/terms/?id=Z126-6567) |
+
+Trademarks  (links to - https://www.ibm.com/legal/copyright-trademark)
+
+IBM US - 590 Madison Avenue - New York, NY 10022 - United States
+
+
+
+## MCSP trial emails
+
+The following emails are sent to subscribers as part of the MCSP product trial flow. As described, some emails are conditional and not sent to every subscriber.
 
 
 ###  Thank you for subscribing
 
-This first MCSP email in the Try experience email flow is sent when the user subscribes to your Try offer. The email thanks them for subscribing and asks them to look for a Welcome email to use for accessing their provisioned trial instance (Trial, Sandbox Trial, or Freemium). No action is required by the user at this point, so there are no call-to-action (CTA) buttons. If necessary, a text link to the SaaS Console enables the user to check on the status of their instance provisioning. 
+This first MCSP email in the Try experience email flow is sent when the user subscribes to your Try offer. The email thanks them for subscribing and asks them to look for a Welcome email to use for accessing their provisioned trial instance (Trial, Sandbox Trial, or Freemium). No action is required by the user at this point, so there are no call-to-action (CTA) buttons. A text link to the SaaS Console enables the user to check on the status of their instance provisioning. 
 
 <Row>
 
@@ -184,7 +212,7 @@ Trial upgraded email
 
 ### Your trial has been extended
 
-The final email in the MCSP flow notifies the user when their request for a Try period extension has been granted. The email includes the subscription information and the updated expiration date. The CTA buttons enable the user to access their Try instance (primary action) or to manage their subscription or instance through the SaaS Console (secondary action).
+The final email in the MCSP flow notifies the user when their request for a Try period extension has been granted. The email includes the subscription information and the updated expiration date. The CTA buttons enable the user to access their Try instance (primary action) or to manage their subscription through the SaaS Console (secondary action).
 
 <Row>
 
@@ -201,34 +229,16 @@ Trial extended email
 </Row>
 
 
-### Transactional email footer
 
-The required transactional email footer, included in all Try transactional emails, covers IBM legal requirements and provides links to related legal information:   
+## Implementation notes
 
-© Copyright IBM Corporation [current_year].
+Your product team should consider the following guidelines when implementing MCSP trial transactional emails: 
 
-------------------------------------------
-
-This email was sent to [email-address]. Do not reply or forward.
-
-Privacy (links to https://www.ibm.com/privacy) |
-
-Terms  (links to - for purchases - https://www.ibm.com/support/customer/csol/terms/  or for trials - https://www.ibm.com/support/customer/csol/terms/?id=Z126-6567) |
-
-Trademarks  (links to - https://www.ibm.com/legal/copyright-trademark)
-
-IBM US - 590 Madison Avenue - New York, NY 10022 - United States
-
-
-### Implementation notes
-
-Your product team should consider the following additional guidelines when implementing the MCSP trial transactional email flow: 
-
-- The email "Subject" line is important email-specific text which appears in the recipient's email in-box and should be implemented as described. 
-- When a user purchases the IBM MCSP product, MCSP Try emails should no longer be sent. Transactional emails for their purchase are then sent instead of Try emails. If the user upgrades to another Try offer for the product, the MCSP Try offer email flow should restart for the new subscription ID.
-- Some IBM product Try experiences may expire based on variables other than the number of days, such as a limit on data size, number of API calls, or monetary credits. In these cases, product teams should adapt the time-limited Try design, and as needed, submit a design request to the PLG team. 
-- If the IBM user cancels their Try offer (either before expiration or within the post-expiration grace period), MCSP Try emails should no longer be sent. Instead, the product UI should provide messaging to confirm cancellation, collect information about the reason for cancellation, and present alternative Try offers or other options. 
-- For transactional emails, IBM does not provide an Unsubscribe or Opt out method - IBM users have opted in to receiving transactional emails through their voluntary relationship with IBM, and cannot opt out of transaction-specific emails. (Marketing emails, by contrast, require an Unsubscribe or Opt out method under US “Can Spam” law and are subject to significant penalties for violations.)
+- The email "Subject:" line is important text which appears in the recipient's email in-box and should be implemented as described. 
+- Once a trial user purchases your IBM MCSP product, the trial emails should be discontinued. In their place, transactional emails for their purchase should be started. If the user upgrades to another Try offer for your product, the MCSP trial email flow should restart with updated subscription and instance information.
+- Some MCSP product trials may expire based on variables other than the number of days, such as limits on data size, number of API calls, and monetary credits. In these cases, product teams should adapt the time-limited Try design, and as needed, submit a design request to the PLG team. 
+- If your IBM user cancels their Try offer (either before expiration or within the post-expiration grace period), only the "Your trial has been deleted" email should be sent. The product UI should provide messaging to confirm cancellation, collect information about the reason for cancellation, and present alternative Try offers or other options. 
+- For transactional emails, IBM does not provide an Unsubscribe or Opt out method - IBM users have opted in to receiving transactional emails through their voluntary relationship with IBM, and cannot opt out of emails specific to this transaction. Marketing emails, by contrast, require an Unsubscribe or Opt out method under US “Can Spam” law and are subject to significant penalties for violations.
 
 <InfoCard
 cardName="Pattern version history"
