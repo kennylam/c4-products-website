@@ -2,13 +2,38 @@
 title: Menu and combo buttons
 ---
 
-<- [Back to button guidance overview](https://pages.github.ibm.com/cdai-design/pal/components/button-guidance/overview)
+import { Breadcrumb, BreadcrumbItem, Tag } from "carbon-components-react";
+
+
+<Breadcrumb className="page__breadcrumb" noTrailingSlash>
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/components/button-guidance/overview">
+    Button guidance
+  </BreadcrumbItem>
+  <BreadcrumbItem isCurrentPage>
+    Menu and combo buttons
+  </BreadcrumbItem>
+</Breadcrumb>
+
+<div className="tag-group">
+  <Tag type="blue">Carbon 10 (v1)</Tag>
+</div>
 
 <PageDescription>
 
   Menu buttons and combo buttons share the same goal, to group multiple actions meaningfully and to aid discoverability. 
   
 </PageDescription>
+
+<InlineNotification kind="warning">
+
+**Deprecated in v2:** This component has been enhanced and contributed to the Carbon Design System. 
+For Carbon 11 and onward, please migrate to the
+[Menu button](https://carbondesignsystem.com/components/menu-buttons/usage) from Carbon.
+<br/>
+The guidance on button usage, placement, and alignment will remain; however, the components
+will be removed from the next major version of IBM Products.
+
+</InlineNotification>
 
 <AnchorLinks>
   <AnchorLink>Overview</AnchorLink>

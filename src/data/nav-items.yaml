@@ -56,10 +56,6 @@
           path: /components/data-table/resizable-columns
     - title: 'Grid behaviors'
       path: /components/grid-behaviors
-    - title: 'Menu and combo buttons'
-      path: /components/button-menu/usage
-    - title: 'Modified tabs'
-      path: /components/modified-tabs/usage
     - title: 'Onboarding'
       path: /components/onboarding/overview
       subpage:
@@ -182,8 +178,6 @@
       path: /patterns/generating-api-key/usage
     - title: 'Global header'
       path: /patterns/global-header/usage
-    - title: 'HTTP errors'
-      path: /patterns/http-errors/usage
     - title: 'Full-page errors'
       path: /patterns/full-page-errors/usage
     - title: 'Import and upload'
