@@ -47,7 +47,7 @@ The IBM SSM email service sends transactional emails to subscribers of IBM Try o
 
 ## Overview
 
-The IBM [Subscription & Subscriber Management](https://w3.ibm.com/w3publisher/subscriber-subscription-management/ssm-emails) (SSM) email service sends the following automated emails to subscribers of IBM Try offers. These transactional emails enable your users to access and upgrade their limited-time Try experiences. Each transactional email provides a specific notice to subscribers, and are intended to complement, not replace, in-product UI messaging.  
+The IBM [Subscriber & Subscription Management](https://w3.ibm.com/w3publisher/subscriber-subscription-management/ssm-emails) (SSM) email service sends the following automated emails to subscribers of IBM Try offers. These transactional emails enable your users to access and upgrade their limited-time Try experiences. Each transactional email provides a specific notice to subscribers, and are intended to complement, not replace, in-product UI messaging.  
 
 ### Try email components 
 
@@ -57,7 +57,7 @@ SSM transactional Try email components are shown in the following email example:
 
 <Column colMd={8} colLg={8}>
 
-Subject: Your IBM [product_name] trial subscription
+Subject: Your [IBM Subscription_name] free trial
 
 ![SSM transactional Try email components](images/ssm-emails/ssm-email-components.png) 
 
@@ -75,8 +75,8 @@ The following components are highlighted in the transactional Try email example 
 4. **Subscription name**. This component contains the product offering name for the trial subscription, and should match the subscription name used in the introductory sentence.
 5. **Subscription expiration**. This component contains the product trial expiration date. The alphanumerical "Month day, year" format (September 28, 2024, for example) is recommended due to geographical variations in numerical-only (##/##/####) date formats.
 6. **"Seller" account**. This component contains the customer's account identifier with the seller, such as their **"IBM" account** name or number. 
-7. **Custom text**. This component contains optional custom text which a product team may choose to include in the email. For example, "Refer to the product documentation for usage details." - where "product documentation" is a clickable link. 
-8. **Transactional email footer**. This component provides access to the required legal information and notice for the transactional class of business emails, including the IBM Privacy statement.
+7. **Custom text**. This component contains optional custom text, which should be brief. For example, "Refer to the product documentation for usage details." - where "product documentation" is a clickable link. 
+8. **Transactional email footer**. This component provides access to required legal information and notice for the transactional class of business emails, including the IBM Privacy statement.
 
 
 ## SSM trial emails
@@ -105,7 +105,7 @@ Thank you for subscribing trial email
 
 ###  Welcome to your trial
 
-The next SSM email in the Try experience email flow is sent when the user's trial is provisioned and ready to use. The email welcomes them to their trial (Trial, Sandbox Trial, or Freemium), and lists their subscription ID, subscription expiration date, and customer account ID. The call-to-action (CTA) buttons enable the user to start using their trial (primary action) or to manage their subscription or trial at My IBM (secondary action).
+The next SSM email in the Try experience email flow is sent when the user's trial is provisioned and ready to use. The email welcomes them to their trial (Trial, Sandbox Trial, or Freemium), and lists their subscription ID, name, and expiration date, and their account ID with the seller. The call-to-action (CTA) buttons enable the user to start using their trial (primary action) or to manage their subscription or trial at My IBM (secondary action).
 
 <Row>
 
@@ -143,9 +143,9 @@ Your trial is expiring email
 
 ### Your trial has expired
 
-The next email in the SSM flow provides notice to the user that their trial has expired. If the user has already upgraded their Try subscription (such as by purchasing), they do not receive this email. The email informs them that continued use of their trial depends on upgrading their subscription. The CTA button enables the user to upgrade (primary action) by purchasing a subscription or contacting IBM sales (secondary action).
+The next email in the SSM flow provides notice to the user that their trial has expired. If the user has already upgraded their Try subscription (such as by purchasing), they do not receive this email. The email informs them that continued use of their trial depends on upgrading their subscription. The CTA buttons enable the user to upgrade (primary action) by purchasing a subscription or by contacting IBM sales (secondary action).
 
-Note: The recommended target for the "IBM sales" CTA link is [https://www.ibm.com/products?contactmodule](https://www.ibm.com/products?contactmodule). 
+Note: The recommended target for the "Contact sales" CTA link is [https://www.ibm.com/products?contactmodule](https://www.ibm.com/products?contactmodule). 
 
 <Row>
 
@@ -163,7 +163,7 @@ Your trial has expired email
 
 ### Your trial has been deleted
 
-The next email in the SSM flow provides notice to the user that IBM has deleted their trial. If the user has already upgraded their subscription (by purchasing a subscription within the grace period), then this original trial may or may not be deleted (the user may have opted for a new environment after purchasing, for example). A common grace period following trial expiration is 30 days, enabling both your product team and the user to continue using the product with minimal intervention. The CTA buttons enable the user to purchase (primary action) a new subscription or to contact IBM sales (secondary action) for additional purchase options.
+The next email in the SSM flow provides notice to the user that IBM has deleted their trial. If the user has already upgraded their subscription (by purchasing a subscription within the grace period), then this original trial may or may not be deleted (the user may have opted to continue with their trial environment after purchasing, for example). A common grace period following trial expiration is 30 days, enabling both your product team and the user to continue using the product with minimal intervention. The CTA buttons enable the user to purchase (primary action) a new subscription or to contact IBM sales (secondary action) for additional purchase options.
 
 <Row>
 
@@ -179,10 +179,12 @@ Trial deleted email
 
 </Row>
 
+Note: The recommended target for the "Contact sales" CTA link is [https://www.ibm.com/products?contactmodule](https://www.ibm.com/products?contactmodule). 
+
 
 ### Thank you for upgrading
 
-The next email in the SSM flow thanks the user who has upgraded their Try offer, typically by purchasing a subscription. The CTA buttons enable the user to get started (primary action) with the upgraded product or to manage their subscription at My IBM. 
+The next email in the SSM flow thanks the user who has upgraded their Try offer, typically by purchasing a subscription. The CTA buttons enable the user to get started (primary action) with their upgraded product subscription or to manage their subscription (secondary action) at My IBM. 
 
 <Row>
 
@@ -238,6 +240,9 @@ Trademarks  (links to - https://www.ibm.com/legal/copyright-trademark)
 
 IBM US - 590 Madison Avenue - New York, NY 10022 - United States
 
+-----------------------------------------
+
+Note: An HTML snippet of the (transactional email footer](transactional-email-footer#code-snippet) is provided.
 
 
 ## Implementation notes
