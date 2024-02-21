@@ -2,6 +2,7 @@
 title: Trial countdown
 ---
 
+import { Tabs as CTabs, Tab as CTab } from "carbon-components-react";
 import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 import { Link } from "gatsby";
 
@@ -16,6 +17,7 @@ The trial countdown helps users track how many days they have left on their Clou
   <AnchorLink>States</AnchorLink>
   <AnchorLink>Toggletip</AnchorLink>
   <AnchorLink>Resources</AnchorLink>
+  <AnchorLink> Self-report pattern adoption </AnchorLink>
 
   </AnchorLinks>
 
@@ -148,3 +150,40 @@ The toggleltip will switch to dark/light depending on what theme the product is 
 
   </Column>
 </Row>
+
+<InfoCard
+cardName="Pattern version history"
+cardDescription='Versions, changelog and contributors'>
+
+<CTabs>
+
+<CTab label="Version">
+
+<Details>
+1.0
+</Details>
+
+</CTab>
+
+<CTab label="Changelog">
+
+<Details>
+
+2023: Version 1.0 release
+
+</Details>
+
+</CTab>
+
+<CTab label="Contributors">
+
+MCSP team
+
+</CTab>
+
+</CTabs>
+
+</InfoCard>
+
+## Self-report pattern adoption
+<iframe class="airtable-embed" src="https://airtable.com/embed/appvxykrpLizynCkz/pagUG7urAx6i6KPc9/form" frameborder="0" onmousewheel="" width="100%" height="600" style="background: transparent; border: 1px solid #ccc;"></iframe>

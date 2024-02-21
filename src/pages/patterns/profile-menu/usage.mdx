@@ -2,6 +2,7 @@
 title: Profile menu
 ---
 
+import { Tabs as CTabs, Tab as CTab } from "carbon-components-react";
 import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 import { Link } from "gatsby";
 
@@ -14,6 +15,7 @@ The profile menu is a consistently available user interface element that contain
 <AnchorLinks>
   <AnchorLink> Overview </AnchorLink>
   <AnchorLink> Anatomy </AnchorLink>
+  <AnchorLink> Self-report pattern adoption </AnchorLink>
 </AnchorLinks>
 
 
@@ -56,3 +58,42 @@ The profile menu provides information about the current instance, as well as nav
     actionIcon="launch"
   ></MiniCard>
 </CardGroup>{" "}
+
+<InfoCard
+cardName="Pattern version history"
+cardDescription='Versions, changelog and contributors'>
+
+<CTabs>
+
+<CTab label="Version">
+
+<Details>
+1.0
+</Details>
+
+</CTab>
+
+<CTab label="Changelog">
+
+<Details>
+
+2023-02-22: Version 1.0 release
+
+</Details>
+
+</CTab>
+
+<CTab label="Contributors">
+
+<a href="https://w3.ibm.com/#/people/3J3194897">Chriscel Santiago</a> <br/>
+
+<a href="https://w3.ibm.com/#/people/1J5123897">Gentry Baird</a> <br/>
+
+</CTab>
+
+</CTabs>
+
+</InfoCard>
+
+## Self-report pattern adoption
+<iframe class="airtable-embed" src="https://airtable.com/embed/appvxykrpLizynCkz/pagdMk0lecSX0cwFP/form" frameborder="0" onmousewheel="" width="100%" height="600" style="background: transparent; border: 1px solid #ccc;"></iframe>

@@ -5,6 +5,9 @@ title: MCSP Try emails
 ---
 
 import { Tabs as CTabs, Tab as CTab } from "carbon-components-react";
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
 
 ← [Back to Email patterns overview](/patterns/emails/overview)
 
@@ -40,6 +43,8 @@ The IBM MCSP email service sends transactional emails to subscribers of IBM Try 
   
 <AnchorLink> Implementation notes</AnchorLink>
 
+<AnchorLink> Self-report pattern adoption </AnchorLink>
+
 </AnchorLinks>
 
 
@@ -66,6 +71,16 @@ MCSP transactional Try email components
 </Row>
 
 The following components are highlighted in the transactional Try email example (image above): 
+
+<CardGroup>
+  <MiniCard
+    title="Figma template"
+    href="https://www.figma.com/file/SlZ7TK2mTzNLIHZB2dGXRF/MCSP-Onboarding-Design-Guide?node-id=2032-429768&t=UwSHXaeG1gmo19f5-0"
+    actionIcon="launch"
+  ></MiniCard>
+</CardGroup>
+
+<br />
 
 1. **Subscription ID**. This component contains the Try user's subscription ID for the product trial. Multiple instances of a single product trial may exist under one subscription ID. One user may have multiple IBM Try subscriptions (IDs). 
 2. **Subscription expiration**. This component contains the date when this product trial expires. Thirty-day trials are a common duration. The "month day, year" format (September 28, 2024, e.g.) is recommended due to geographical differences in strictly numerical date formats.
@@ -275,3 +290,7 @@ PLG Content - <a href="https://w3.ibm.com/#/people/929078897">Josh Horton</a> <b
 </CTabs>
 
 </InfoCard>
+
+
+## Self-report pattern adoption
+<iframe class="airtable-embed" src="https://airtable.com/embed/appvxykrpLizynCkz/paggkq3DMWh0GTM07/form" frameborder="0" onmousewheel="" width="100%" height="600" style="background: transparent; border: 1px solid #ccc;"></iframe>
