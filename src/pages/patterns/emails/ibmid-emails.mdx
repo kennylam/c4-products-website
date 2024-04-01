@@ -10,29 +10,28 @@ import { Link } from "gatsby";
 
 <PageDescription>
 
-IBMid transactional emails are sent when a user registers for an IBMid or updates their existing IBMid profile.
+IBMid transactional emails are sent when a user registers for an IBMid or updates their existing IBMid Profile.
 
 </PageDescription>
 
 <AnchorLinks>
     <AnchorLink> Overview </AnchorLink>
-    <AnchorLink> IBMid change email </AnchorLink>
-    <AnchorLink> IBMid change password </AnchorLink>
+    <AnchorLink> Change IBMid</AnchorLink>
+    <AnchorLink> Change or reset IBMid password</AnchorLink>
+    <AnchorLink> Change IBMid Profile contact email address</AnchorLink>
+    <AnchorLink> Change IBMid Profile business contact information</AnchorLink>
+    <AnchorLink> IBMid multifactor authentication</AnchorLink>
     <AnchorLink> Self-report pattern adoption </AnchorLink>
 </AnchorLinks>
 
 ## Overview
-Product teams cannot change or alter the IBMid emails that are sent to customers. However, product teams should be aware of the end-to-end IBMid email user experience. 
+Product teams cannot change or alter the IBMid emails that are sent to customers. However, product teams should be aware of the end-to-end IBMid email user experience which provides access to their products. 
 
-<InlineNotification kind="info">
-
-**Note:** Additional IBMid transactional email patterns continue in development.
-
-</InlineNotification>
+**Attention:** The email address which receives a given IBMid email may vary by circumstance, as noted below. For example, a user's IBMid Profile **Contact** email address may differ from the email address defined as the user's IBMid. 
 
 
-## IBMid change email
-This email flow enables a user to change their IBMid email address. The emails in this flow are sent to the user’s current and new IBMid email addresses, as described.
+## Change IBMid
+This email flow enables a user to change the email address used for their IBMid. The emails in this flow are sent to the user’s IBMid Profile **Contact** email address, which may be different than the user's IBMid (email address).
 
 
 <Row>
@@ -43,56 +42,41 @@ This email flow enables a user to change their IBMid email address. The emails i
 </Column>
 </Row>
 
-When the user submits an IBMid email address change request, the flow sends two automated emails to verify the identity of
-the requester.
+When the user submits an IBMid change request in their IBMid Profile, the flow sends the following automated emails to their contact email address to 
+verify the user's identity.
 
 
-### Change verification email
-One email, with a verification code, is sent to the new IBMid email address. This email directs the recipient to
-enter the verification code into their IBMid profile change request at their ibm.com user Profile page. Their IBMid email address 
-is not changed until the verification code is entered correctly.
+### IBMid change verification
+This email with a 5-digit prefix and a 6-digit verification code is sent to the user's IBMid Contact email address. This email directs the recipient to
+enter the 6-digit verification code into their IBMid Profile change request form. The email address used as their IBMid is not changed 
+until the verification code is entered correctly.
 
 <Row>
 <Column colMd={8} colLg={8}>
 
-Subject: Your IBMid email change request
-![Email verification code](images/ibmid-emails/account-verify-email.png)
+Subject: Your IBMid change request
+![Change IBMid verification code](images/ibmid-emails/ibmid-change-request.png)
 
 </Column>
 </Row>
 
 
-### Change notice email
-A second email is sent to the user’s existing IBMid email address to notify them of the change request. This
-email directs the user to contact IBM immediately if they did not request a change to their IBMid email address.
+### IBMid changed notice
+When the verification code is entered successfully, this email is sent to the user's IBMid Contact email address to 
+provide notice of their changed IBMid.
 
 <Row>
 <Column colMd={8} colLg={8}>
 
-Subject: Your IBMid email change request
-![Email notice of change request](images/ibmid-emails/account-email-change.png)
+Subject: Your verified IBMid change
+![IBMid changed notice](images/ibmid-emails/verified-ibmid-change.png)
 
 </Column>
 </Row>
 
 
-### IBMid updated email
-When triggered by a completed update to their IBMid email address, this email is sent to the user's Contact information email address. The email
-alerts them to their updated IBMid.
-
-<Row>
-<Column colMd={8} colLg={8}>
-
-Subject: Your updated IBMid
-![Email notice of updated IBMid](images/ibmid-emails/account-ibmid-updated.png)
-
-</Column>
-</Row>
-
-
-## IBMid change or reset password
-This email flow enables a user whose IBMid password is expiring soon, or has expired, to securely change or reset their password.
-The emails in this flow are sent to the user’s Contact information email address. 
+## Change or reset IBMid password
+This email flow enables a user to change or reset their IBMid password. The emails in this flow are sent to the user’s IBMid Profile **Contact** email address, which may be different than the user's IBMid (email address).
 
 <Row>
 <Column colMd={8} colLg={8}>
@@ -103,43 +87,159 @@ The emails in this flow are sent to the user’s Contact information email addre
 </Row>
 
 When triggered by a password expiration event, the flow sends the applicable email (expiring soon or has expired) to prompt the user to either change or reset their
-IBMid password.
+IBMid password. 
 
-### Password expiring email
-When triggered by an expiration notice event, this email is sent to the user's Contact information email address. The email
+
+### IBMid password expiring
+When triggered by an expiration warning event, this email is sent to the user's IBMid Profile Contact email address. The email
 alerts them to their approaching password expiration and prompts them to change their password before it expires.
+
 
 <Row>
 <Column colMd={8} colLg={8}>
 
-![Expiring password email](images/ibmid-emails/account-pw-expiring.png)
+![IBMid password expiring](images/ibmid-emails/ibmid-pw-expiring.png)
 
 </Column>
 </Row>
 
-### Password expired email
-When triggered by an expired password event, this email is sent to the user's Contact information email address. The email
+
+### IBMid password expired
+When triggered by an expired password event, this email is sent to the user's IBMid Profile Contact email address. The email
 alerts them to their expired password and prompts them to reset their password.
 
 <Row>
 <Column colMd={8} colLg={8}>
 
-![Expired password email](images/ibmid-emails/account-pw-expired.png)
+Subject: Reset your IBMid password
+![IBMid password expired](images/ibmid-emails/ibmid-password-expired.png)
 
 </Column>
 </Row>
 
-### Password updated email
-When triggered by a completed change to their IBMid password, this email is sent to the user's Contact information email address. The email
+
+### IBMid password changed
+When triggered by a completed change to their IBMid password, this email is sent to the user's IBMid Profile contact email address. The email
 alerts them to their updated password.
 
 <Row>
 <Column colMd={8} colLg={8}>
 
-![Profile updated email](images/ibmid-emails/account-pw-updated.png)
+Subject: Your IBMid password change
+![IBMid password changed](images/ibmid-emails/ibmid-password-changed.png)
 
 </Column>
 </Row>
+
+
+## Change IBMid Profile contact email address
+This email flow enables a user to change their IBMid Profile Contact email address. The emails in this flow are sent to the user’s IBMid Profile **Contact** email address which may be different than the user's IBMid (email address).
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![IBMid user profile](images/ibmid-emails/account-user-profile.png)
+
+</Column>
+</Row>
+
+When the user submits a Contact email address change request in their IBMid Profile, the flow sends two automated emails, one each to their Contact email addresses (old and new), to verify the user's identity. 
+
+
+### IBMid Profile contact email change verification
+This email with a 5-digit prefix and a 6-digit verification code is sent to the user's existing IBMid Contact email address. This email directs the recipient to
+enter the 6-digit verification code into the IBMid Profile change request form. Their Contact email address is not changed until the verification code is entered correctly.
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Subject: Your IBMid Profile Contact email change request
+![Change IBMid Profile Contact email address verification code](images/ibmid-emails/ibmid-contact-email-change-request.png)
+
+</Column>
+</Row>
+
+
+### IBMid Profile Contact email changed notice
+When the verification code is entered successfully, this email is sent to the user's new IBMid Profile Contact email address to 
+provide notice of their changed Contact email address.
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Subject: Your IBMid Profile Contact email has changed
+![IBMid Profile contact email address changed notice](images/ibmid-emails/verified-contact-email-change.png)
+
+</Column>
+</Row>
+
+
+## Change IBMid Profile business contact information
+This email flow notifies the user of a change to their business contact information in their IBMid Profile, such as their name, address, or phone number. The email is sent to the user’s IBMid Profile **Contact** email address, which may be different than the user's IBMid (email address).
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Subject: Your IBMid Profile business contact change
+![IBMid business contact information change](images/ibmid-emails/ibmid-business-contact-change.png)
+
+</Column>
+</Row>
+
+
+## IBMid multifactor authentication
+This email flow confirms the user's enrollment or change to their IBMid multifactor authentication (MFA) methods. The emails in this flow are sent to the user’s IBMid Profile **Contact** email address, which may be different than the user's IBMid (email address).
+
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![IBMid multifactor authentication](images/ibmid-emails/ibmid-multifactor-authentication.png)
+
+</Column>
+</Row>
+
+When the user enrolls in or changes their IBMid multifactor authentication methods, the flow sends two automated emails to provide notice of their MFA enrollment or change. 
+
+
+### IBMid multifactor email enrollment verification
+One email with a 5-digit prefix and a 6-digit verification code is sent to the user's requested email address for their IBMid multifactor authentication (MFA) email method. This email directs the recipient to enter the 6-digit verification code into their IBMid MFA settings. The IBMid MFA email method and email address are not enrolled until the verification code is entered correctly.
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Subject: Your IBMid multifactor email enrollment
+![IBMid multifactor email enrollment](images/ibmid-emails/ibmid-multifactor-email-enrollment.png)
+
+</Column>
+</Row>
+
+
+### IBMid multifactor email enrollment verified
+When the user enters the IBMid multifactor authentication (MFA) email method verification code successfully, this email is sent to the user's MFA email address to confirm their enrollment. 
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Subject: Your verified IBMid multifactor email address
+![IBMid MFA email address verified](images/ibmid-emails/ibmid-multifactor-email-verified.png)
+
+</Column>
+</Row>
+
+
+### IBMid multifactor login attempt email
+When the user attempts to log in to ibm.com, or to any IBM product interface requiring their IBMid, this email with a 5-digit prefix and a 6-digit verification code is sent to the user's MFA email address. This email directs the recipient to enter the 6-digit verification code into their IBM login interface. The user is not logged in to IBM until the verification code is entered correctly.
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Subject: Your ibm.com MFA verification code
+![Your ibm.com MFA verification code](images/ibmid-emails/ibm-multifactor-verification-code.png)
+
+</Column>
+</Row>
+
 
 <InfoCard
 cardName="Pattern version history"
@@ -150,7 +250,7 @@ cardDescription='Versions, changelog and contributors'>
 <CTab label="Version">
 
 <Details>
-1.0  
+1.1  
 </Details>
 
 </CTab>
@@ -159,7 +259,7 @@ cardDescription='Versions, changelog and contributors'>
 
 <Details>
 
-2023-09-22: Version 1.0 release
+2024-03-27: Version 1.1 release
 
 </Details>
 
@@ -167,12 +267,9 @@ cardDescription='Versions, changelog and contributors'>
 
 <CTab label="Contributors">
 
-<SME>
+PLG Design - <a href="https://w3.ibm.com/#/people/1J7360897">Kiran Ravindra</a> <br/>
 
-  <a href="https://w3.ibm.com/#/people/2J8178897">Rachel Jacobs</a> <br/>
-  <a href="https://w3.ibm.com/#/people/0D9543649">Judith Benjamin</a> <br/>
-
-</SME>
+PLG Content - <a href="https://w3.ibm.com/#/people/929078897">Josh Horton</a> <br/>
 
 </CTab>
 
