@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Objects Library Light Theme SVGs",
+    "image": "/src/components/SVGLibraries/shared/data/icons/zip.svg",
+    "alt": "Zip icon",
+    "source": "/static/4bd1fab6df8ecd5b231a5d0c38320773/ObjectsLibrary_LightThemeSVGs.zip"
+  },
+  {
+    "alt": "Adobe Illustrator",
+    "title": "Objects Master Light Themes",
+    "image": "/src/components/SVGLibraries/shared/data/icons/illustrator_icon.svg",
+    "source": "/static/8ace46d896500fe9c4963e5865c3b70a/ObjectsMaster_LightThemes.ai"
+  }
+]

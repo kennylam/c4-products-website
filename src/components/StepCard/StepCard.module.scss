@@ -1,0 +1,31 @@
+.card {
+  counter-increment: step-card;
+  padding: $spacing-05;
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+  row-gap: $spacing-09;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header::before {
+  content: counter(step-card);
+  @include carbon--type-style('productive-heading-07');
+  color: $interactive-01;
+}
+
+.pictogram {
+  width: 3rem;
+  height: 3rem;
+}
+
+:global(.bx--row) {
+  counter-reset: step-card;
+}
+
+.content > p {
+  @include carbon--type-style('body-short-01');
+}

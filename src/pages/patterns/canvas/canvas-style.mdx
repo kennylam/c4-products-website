@@ -1,0 +1,68 @@
+---
+title: Canvas style
+description: Canvases are an environment that allow interactive nodes to connect to one another. They are often drag-and-drop interfaces but are not limited to only that definition.
+---
+
+<- [Back to canvas overview](https://pages.github.ibm.com/cdai-design/pal/patterns/canvas/usage)
+
+<PageDescription>
+
+Canvases are node editors that allow the user to create flows of their choosing. Depending on the purpose of the consumer application, these flows may be **prescriptive** or **non-prescriptive**.
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink>Overview</AnchorLink>
+  <AnchorLink>Style</AnchorLink>
+</AnchorLinks>
+
+## Overview
+
+### Prescriptive flows
+
+The layout and structure of a prescriptive flow on the canvas is guided, rather than free-form. The relative position of the elements (the nodes and connections between them) determines their behavior, as they are context aware. However, the user is not able to define the elements' location. That is instead determined by the prescriptive canvas flow.
+
+
+<Row>
+  <Column colMd={8} colLg={12}>
+
+![Prescriptive canvas](/images/prescriptiveCanvas.png)
+
+  </Column>
+</Row>
+
+### Non-prescriptive flows
+
+Non-prescriptive flows are not required to follow any particularly linear path visually and may have several entry and exit points throughout the flow; allowing the user to create deeply complex interactions when building their flows. The layout and structure of the flow on the canvas is free-form rather than prescribed and the user may place elements wherever they desire.
+
+<Row>
+  <Column colMd={8} colLg={12}>
+
+![Non-prescriptive canvas](/images/non-prescriptiveCanvas.png)
+
+  </Column>
+</Row>
+
+
+## Style
+
+Carbon color, spacing, and typography tokens should be used as the predominant means of creating a hierarchy on the canvas, as the canvas itself will use the standard `$ui-background` token. Any typography should use `$text-01` as its color token to allow for higher contrast for legibility.
+
+For greater specificity in node styling, please refer to the [Nodes overview](nodes/nodes-overview) page.
+
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Canvas style](/images/canvasStyle.png)
+
+  </Column>
+</Row>
+
+ |   Canvas element      |      Carbon token     |  
+| ------------- | ----------- | 
+| Canvas background color     | `$ui-background` | 
+| Node background color<br />_(ignore when using color cards or color shape nodes)_    | `$ui-01` | 
+| Node left-border or under-border color <br /> _(ignore when using status border variant, color cards, or color shape nodes)_    | `$ui-05` | 
+| Primary node text |   `$productive-heading-01` / `$text-01`  |   
+| Secondary node text |   `$body-short-01` / `$text-01`  |  
+| Node icon<br />_(if grayscale)_ |   `$ui-05`  |   

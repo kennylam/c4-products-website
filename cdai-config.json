@@ -1,0 +1,19 @@
+{
+  "repo": "cdai-design/pal",
+  "cdai": true,
+  "includeComponents": ["LeftNav"],
+
+  "header": {
+    "prefix": "Carbon for",
+    "title": "IBM Products",
+    "href": "https://pages.github.ibm.com/cdai-design/pal",
+    "noNavigation": true
+  },
+
+  "search": {
+    "pages": [
+      { "url": "https://pages.github.ibm.com/cdai-design/pal" },
+      { "url": "https://pages.github.ibm.com/cdai-design/cloud-pal" }
+    ]
+  }
+}

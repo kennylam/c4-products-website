@@ -1,0 +1,234 @@
+---
+title: Cursor settings
+description: Canvases are an environment that allow interactive nodes to connect to one another. They are often drag-and-drop interfaces but are not limited to only that definition.
+---
+
+<- [Back to canvas overview](https://pages.github.ibm.com/cdai-design/pal/patterns/canvas/usage)
+
+<PageDescription>
+
+Cursor settings give the user cues that remove doubt and enhance the canvas experience. Creating a system that is consistent with other familiar tools is a must.
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink>Overview</AnchorLink>
+  <AnchorLink>Default cursor state</AnchorLink>
+  <AnchorLink>Panning the canvas</AnchorLink>
+  <AnchorLink>Moving items on canvas</AnchorLink>
+  <AnchorLink>Interacting with buttons</AnchorLink>
+  <AnchorLink>Drag-selecting over the canvas</AnchorLink>
+  <AnchorLink>Selecting text</AnchorLink>
+</AnchorLinks>
+
+## Overview
+
+The examples below are built from precedents that exist not only in IBM products but also in canvas and drag-and-drop interactions that span across several types of experiences.
+
+These cursor states mimic the following precedents: MacOS, diagrams.net, Informatica, Keynote, Lucidcharts, Microstation, Sketch, Talend, and many others.
+
+## Default cursor state
+
+Consistency is key when it comes to cursor states. The `default` state is the standard cursor style. In canvases, the cursor should remain in that style unless otherwise noted.
+
+<Row>
+  <Column colMd={4} colLg={4}>
+
+![Default cursor](/images/defaultCursor.png)
+
+<Caption>
+    Default cursor
+</Caption>
+
+  </Column>
+</Row>
+
+## Panning the canvas
+
+Using hotkeys (e.g. - spacebar) will allow the user to change the cursor state and access frequently-used secondary actions. 
+
+In the example of panning around the canvas, the user will hold down the `spacebar` to engage the panning interaction. Clicking the mouse while in the grab state will change the cursor to the grabbing state, allowing the user to pan the canvas.
+
+<Row>
+  <Column colMd={4} colLg={4}>
+
+![Grab cursor](/images/grabCursor.png)
+
+<Caption>
+    Grab cursor
+</Caption>
+
+  </Column>
+
+<Column colMd={4} colLg={4}>
+
+![Grabbing cursor](/images/grabbingCursor.png)
+
+<Caption>
+    Grabbing cursor
+</Caption>
+
+  </Column>
+</Row>
+
+
+## Moving items on canvas
+
+Similar to moving items in MacOS' Finder or Sketch, the state for moving items on the canvas will be the `default` cursor state. However, if the use case justifies it, an exception is allowed in the form of the `move` cursor state.
+
+
+<Row>
+  <Column colMd={4} colLg={4}>
+
+![Grab cursor](/images/defaultCursor.png)
+
+<Caption>
+    Default cursor
+</Caption>
+
+  </Column>
+
+<Column colMd={4} colLg={4}>
+
+![Move cursor](/images/moveCursor.png)
+
+<Caption>
+    Move cursor
+</Caption>
+
+  </Column>
+</Row>
+
+
+
+## Interacting with buttons
+
+Interactions with buttons will follow the standard precedent of the cursor changing to the `pointer` state when hovering over the button.
+
+<Row>
+  <Column colMd={4} colLg={4}>
+
+![Pointer cursor](/images/pointerCursor.png)
+
+<Caption>
+
+Pointer cursor
+
+</Caption>
+
+  </Column>
+</Row>
+
+
+### Cursor change on buttons
+
+Static nodes are typically the default. Meaning: the only interactive portions of the nodes will be buttons that are made accessible when focusing on hovering on a node.
+
+
+See the example below...
+
+<Row>
+  <Column colMd={3} colLg={4}>
+
+![Enabled node](/images/buttonCursorInteraction01.png)
+
+<Caption>
+
+**Default cursor**
+
+Enabled node
+
+</Caption>
+
+</Column>
+
+
+<Column colMd={4} colLg={4}>
+
+![Hovered on a node only](/images/buttonCursorInteraction02.png)
+
+<Caption>
+
+**Default cursor**
+
+Hovered on node only
+
+Node buttons become visible
+
+
+
+</Caption>
+
+  </Column>
+
+<Column colMd={4} colLg={4}>
+
+![Hovered on node buttons](/images/buttonCursorInteraction03.png)
+
+<Caption>
+
+**Pointer cursor**
+
+Hovered on node buttons
+
+Node remains in hover state
+
+</Caption>
+
+  </Column>
+  
+</Row>
+
+<InlineNotification>
+
+**Variant:** 
+If the node is the primary interactive item on the canvas (instead of only node buttons), the cursor will change to a pointer when engaging with the node. 
+
+<br />
+For instance, a user single-clicks a node and a configuration side panel appears. This is common in prescriptive canvas products like App Connect and API Connect.
+
+
+</InlineNotification>
+
+
+## Drag-selecting over canvas
+
+Drag-selecting allows the user to select multiple canvas objects. Drag-selecting is accessed by clicking an empty area of the canvas and dragging to create a `region selector`, the box that identifies the selection's extent.
+
+
+<Row>
+  <Column colMd={8} colLg={8}>
+
+![Drag-selecting 4 nodes.](/images/drag-selectCursor.png)
+
+<Caption>
+  Drag-selecting 4 nodes.
+</Caption>
+
+  </Column>
+</Row>
+
+When dragging to select, the region selector should use the following settings...
+
+
+ |   Region selector property     |      Carbon token, additional CSS spec     |  
+| ------------- | ----------- | 
+| Background color     | `$ui-03`, opacity: 0.5 | 
+| Border (1px)  | `$ui-05` | 
+
+
+## Text selections
+
+The cursor will become a `text` cursor when hovering over selectable text.
+
+<Row>
+  <Column colMd={4} colLg={4}>
+
+![text cursor](/images/textCursor.png)
+
+<Caption>
+    Text cursor
+</Caption>
+
+  </Column>
+</Row>

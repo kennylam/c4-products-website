@@ -1,0 +1,165 @@
+---
+title: Develop
+tabs: ['Intent', 'Scope', 'Iterate', 'Develop']
+---
+
+<PageDescription>
+
+Now that the design is finalized and approved, it’s time to bring this asset to life and deliver it into your user’s hands!
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink to="#step-1">Step 1: Account for modularity</AnchorLink>
+  <AnchorLink to="#step-2">Step 2: Playback to design</AnchorLink>
+  <AnchorLink to="#step-3">Step 3: Evaluate your asset in production</AnchorLink>
+  <AnchorLink>Additional resources</AnchorLink>
+</AnchorLinks>
+
+<br />
+
+<div id="step-1" />
+
+<ExpressiveListContainer title="Step 1" text={
+<>
+
+#### Account for modularity
+
+To ensure your team’s asset can later be shared with other products and organizations, it is important to develop it in an isolated way.
+<br />
+If you’re new to this approach, get familiar with the contribution guidelines and coding style guides of the Carbon Design System as well as Carbon for IBM Products. The stricter you follow these standards, the easier it will be to integrate your work in the greater component and pattern library and the easier it will be for you to consume and tweak assets shared by others.
+<br /><br />
+<CardGroup>
+  <MiniCard title="Carbon contribution guidelines" actionIcon="launch" href="https://github.com/carbon-design-system/carbon/blob/main/.github/CONTRIBUTING.md" />
+  <MiniCard title="Carbon developer handbook" actionIcon="launch" href="https://github.com/carbon-design-system/carbon/blob/main/docs/developer-handbook.md" />
+  <MiniCard title="Carbon for IBM Products" actionIcon="launch" href="https://github.com/carbon-design-system/ibm-cloud-cognitive" />
+</CardGroup>
+<br /><br />
+
+Please note: since the Carbon for IBM Products code repository is hosted on public GitHub, make sure to follow the guidelines for contributing to open source and link your public GitHub account with your enterprise GitHub account.
+<br />
+
+For more information, check out the [Open Source @ IBM](https://w3.ibm.com/developer/open-source/) website.
+
+</>
+} />
+
+<div id="step-2" />
+
+<ExpressiveListContainer title="Step 2" text={
+<>
+
+#### Playback to design
+
+Once the implementation is stable and meets all acceptance criteria, it’s time for Design to review the component to make sure it matches the intended user experience and visual design.
+<br />
+This is also the stage at which your team should verify the component supports the expected keyboard navigation, is screen reader compatible and doesn't violate any other accessibility standards or the HTML specification.
+<br /><br />
+<CardGroup>
+  <MiniCard title="IBM Equal Access Accessibility Checker" actionIcon="launch" href="https://github.com/IBMa/equal-access" />
+</CardGroup>
+
+</>
+} />
+
+<div id="step-3" />
+
+<ExpressiveListContainer title="Step 3" text={
+<>
+
+#### Evaluate your asset in production
+
+Before submitting the asset to the pattern and asset library, try implementing it in your product and using it in the intended context. This way you can catch any last-minute issues. For more guidance on the topics below, follow the links in step 1.
+<br />
+
+##### Practices
+
+<EnumerationCards kind="checklist">
+  <li>
+    Does your component accept a ref (if not, should it)?
+  </li>
+  <li>
+    Does your component accept any additional attributes and where are they emitted?
+  </li>
+  <li>
+    Are all styles imported correctly and are there any unexpected overrides by external selectors with higher specificity?
+  </li>
+</EnumerationCards>
+
+##### Generalization
+
+<EnumerationCards kind="checklist">
+  <li>
+    Is your component truly isolated (doesn’t have any new or product-specific dependencies)?
+  </li>
+  <li>
+    Are you using slots for customizable content?
+  </li>
+  <li>
+    Are your styles suitably prefixed with a variable (not hardcoded)?
+  </li>
+</EnumerationCards>
+
+##### Carbon
+
+<EnumerationCards kind="checklist">
+  <li>
+    Is your component using Carbon color and spacing tokens instead of hardcoded values?
+  </li>
+  <li>
+    Is your component using Carbon’s mixins for fonts, motion, breakpoint and helpers (such as focus styles)?
+  </li>
+  <li>
+    Is your API Consistent with what one would expect from a Carbon asset?
+  </li>
+</EnumerationCards>
+
+##### Accessibility
+
+<EnumerationCards kind="checklist">
+  <li>
+    Is your component built with the proper, semantic HTML tags?
+  </li>
+  <li>
+    Are you using the correct ARIA tags, where needed?
+  </li>
+  <li>
+    Are interactive elements in the tab order (and are all tab indices either -1 or 0)?
+  </li>
+  <li>
+    Did you verify your component with the IBM Equal Access Accessibility Checker?
+  </li>
+  <li>
+    Can your asset be used with keyboard only?
+  </li>
+  <li>
+    Is your component announced correctly by screen readers?
+  </li>
+</EnumerationCards>
+
+##### Documentation
+
+<EnumerationCards kind="checklist">
+  <li>
+    Did you define all prop types?
+  </li>
+  <li>
+    Is there at least one “Playground” (fully customizable) story for the PAL’s storybook?
+  </li>
+</EnumerationCards>
+
+</>
+} />
+
+<div id="additional-resources" />
+
+<ExpressiveListContainer title="Additional resources" text={
+<>
+
+<CardGroup>
+  <MiniCard title="Carbon grid course" actionIcon="launch" href="https://yourlearning.ibm.com/activity/URL-571553F89DE9" />
+  <MiniCard title="WAI-ARIA Authoring Practices" actionIcon="launch" href="https://www.w3.org/TR/wai-aria-practices" />
+</CardGroup>
+
+</>
+} />

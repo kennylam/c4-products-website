@@ -1,0 +1,19 @@
+.image.image {
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  p {
+    @include carbon--type-style('expressive-heading-03');
+  }
+}
+
+.text-reference {
+  @include carbon--type-style('body-short-01');
+}

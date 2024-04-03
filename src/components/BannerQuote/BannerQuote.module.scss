@@ -1,0 +1,60 @@
+.banner-quote-wrapper {
+  position: relative;
+}
+
+.banner-quote-wrapper .bannerQuoteContainer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 30px 66px;
+}
+
+.bannerQuoteContainer .banner-quote-left {
+  display: flex;
+  align-items: center;
+  flex: 3 3;
+  margin: 0;
+  min-width: 300px;
+
+  @include carbon--breakpoint-down('md') {
+    margin-top: 40px;
+    min-width: 100%;
+  }
+}
+
+.bannerQuoteContainer .banner-quote-right {
+  display: flex;
+  align-items: center;
+  flex: 2 2;
+  margin: 0;
+
+  > span[class=gatsby-resp-image-wrapper], img ,
+  > div[class=bx--row] {
+    display: block;
+    flex: 1 1;
+    max-height: 350px;
+
+    @include carbon--breakpoint-down('md') {
+      max-height: 250px;
+      min-width: 1px;
+    }
+  }
+}
+
+.banner-quote-quote {
+  padding: 0 40px 0 40px;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 38px;
+}
+
+.banner-quote-attribution {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 60px;
+
+  &:before {
+    content: "— "
+  }
+}

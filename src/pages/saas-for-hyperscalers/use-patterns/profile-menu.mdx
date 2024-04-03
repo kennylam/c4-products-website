@@ -1,0 +1,57 @@
+---
+title: Profile menu
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+<Breadcrumb>
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/">
+    Home
+  </BreadcrumbItem>
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/overview">
+    PLG and MultiCloud SaaS
+  </BreadcrumbItem>
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/use">
+    Use
+  </BreadcrumbItem>
+  <BreadcrumbItem
+    isCurrentPage
+    href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/use-patterns/profile-menu"
+  >
+    Profile menu
+  </BreadcrumbItem>
+</Breadcrumb>
+
+<PageDescription>
+
+The **Profile menu** is a persistent UI element that provides user, product and active session information. It is only available in the logged in state.
+
+</PageDescription>
+
+### Anatomy
+
+The Profile menu describes the user, product instance, and MCSP and SaaS Console management resources:
+
+![profile](images/userProfileMenu.png)
+
+1. **User information:** User's name and email address.
+2. **Instance information:** (Read only) Product instance name, region, and owner.
+3. **User management:** (Optional) Access to MCSP user management if not available in-product.
+4. **IBM SaaS Console:** UI for managing SaaS subscriptions.
+5. **Logout button**: Log out of UI.
+
+<br />
+
+<CardGroup>
+  <MiniCard
+    title="Figma template"
+    href="https://www.figma.com/file/SlZ7TK2mTzNLIHZB2dGXRF/MCSP-Onboarding-Design-Guide?node-id=2195%3A409332&t=AvJflqOliLETiArL-1"
+    actionIcon="launch"
+  ></MiniCard>
+  <MiniCard
+    title="Storybook"
+    href="https://pages.github.ibm.com/automation-saas/automation-common-header/?path=/story/automation-header--with-user-management"
+    actionIcon="launch"
+  ></MiniCard>
+</CardGroup>{" "}

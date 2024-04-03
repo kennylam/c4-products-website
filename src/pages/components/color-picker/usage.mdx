@@ -1,0 +1,157 @@
+---
+title: Color picker
+tabs: ['Usage', 'Style']
+---
+
+<PageDescription>
+
+A color picker allows users to select a color from a predefined list or custom color palette, and create custom colors.
+
+</PageDescription>
+
+<AnchorLinks>
+    <AnchorLink>Overview</AnchorLink>
+    <AnchorLink>Formatting</AnchorLink>
+    <AnchorLink>Behavior</AnchorLink>
+    <AnchorLink>Related</AnchorLink>
+</AnchorLinks>
+
+## Overview
+Color pickers help users immediately style visual elements such as categorization tags, data visualizations, and white labeling without abandoning the user interface. Products can choose the level of customization that they need based on their individual use cases.
+
+<Row>
+  <Column colLg={8}>
+
+![Color picker overview](/images/colorpicker-overview.png)
+
+  </Column>
+</Row>
+
+
+### Variants
+| Type                 | Description                                                                                                                                                                                                                                                                    |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Simple color picker  | A simple color picker provides a single set of predefined colors that the user can choose from. The simple color picker is available in a drop-down and can be paired with a color label or a stand-alone color swatch.                                                        |
+| Custom color picker  | A custom color picker allows users to modify their own color values by using hue, saturation, brightness, and opacity controls. The custom color picker also includes text inputs for users to manually enter various color formats, including RGB and HEX.                    |
+| Color palette picker | A color palette picker provides multiple sets of predefined color palettes the user can choose from. The color palette sets can be accessed through a [select](https://www.carbondesignsystem.com/components/select/usage/) input, and the selected palette is then displayed. |
+
+### When to use
+- Use a color picker when the user needs to align color styling with other business color categorizations.
+- Use a color picker when the user needs to see the color change in the context of the user interface.
+- Use the custom and theme selectors only when you have a clear use case for ultimate color customization.
+
+### When not to use
+- Do not use a color picker when clear color choices can be made for users, such as alert colors.
+
+## Formatting
+
+### Anatomy
+
+<Row>
+  <Column colLg={8}>
+
+![Color picker anatomy](/images/colorpicker-anatomy.png)
+
+  </Column>
+</Row>
+
+
+1. **Color palette drop-down (optional):** Toggles between different predefined color palettes.
+2. **Color palette:** A set of colors that a user can select from.
+3. **Add color (optional):** Allows the user to add another color to the palette.
+4. **Custom color picker (optional):** A custom color generator that includes hue, saturation, brightness, and opacity controls. Includes color value inputs to allow for manual entry.
+
+### Sizing
+The color picker popover has a fixed width of 256px, which allows eight color swatches to span across each row. The height of the popover varies depending on how many rows of colors are displayed and if the custom color picker panel is expanded.
+
+<Row>
+  <Column colLg={8}>
+
+![Color picker sizing](/images/colorpicker-sizing.png)
+
+  </Column>
+</Row>
+
+### Placement
+The color picker can be used in various use cases, including toolbars, side panels, tables, and dialogs. Depending on the available space, the color picker can pop out in various directions, triggered by an icon button or color tile.
+
+<Row>
+  <Column colLg={8}>
+
+![Color picker toolbar example](/images/colorpicker-toolbar.png)
+<Caption>Example of a color picker in a toolbar</Caption>
+
+  </Column>
+</Row>
+
+<Row>
+  <Column colLg={8}>
+
+![Color picker sidepanel example](/images/colorpicker-sidepanel.png)
+<Caption>Example of a color picker in a side panel</Caption>
+
+  </Column>
+</Row>
+
+<Row>
+  <Column colLg={8}>
+
+![Color picker data table example](/images/colorpicker-table.png)
+<Caption>Example of a color picker in a data table</Caption>
+
+  </Column>
+</Row>
+
+## Behavior
+
+### States
+
+#### Color focus
+After the color picker is open, set the initial focus to the first location that accepts user input. Focus must then remain trapped in the popover until it is closed. If a color is already selected from the color picker, start the focus state on the selected color.
+
+<Row>
+  <Column colLg={8}>
+
+![Color picker focus example](/images/colorpicker-focus.png)
+
+  </Column>
+</Row>
+
+#### Color name
+When the cursor hovers over the color swatch, display the name of the color, if applicable, or HEX value.
+
+<Row>
+  <Column colLg={8}>
+
+![Color picker color name example](/images/colorpicker-name.png)
+
+  </Column>
+</Row>
+
+#### Custom color picker
+When the color picker is triggered, the custom color palette section is collapsed by default. This collapsed state reduces the cognitive load for users and means that the custom color palette is only displayed when the color palettes available do not fit the user's needs.
+
+If a user is adding a color swatch to the palette, automatically expand the custom color picker panel so the user can make a color selection.
+
+<Row>
+  <Column colLg={8}>
+
+![Color picker expanded example](/images/colorpicker-expand.png)
+
+  </Column>
+</Row>
+
+### Interactions
+
+#### Triggers
+The color picker is triggered as a result of a user’s action and is not system-generated. Only a button can trigger the flyout. On a keyboard, selecting Enter or Space launches the popover. The trigger must be disabled while the flyout is open.
+
+#### Close
+The color picker can be closed in one of the following ways:
+
+- Clicking anywhere outside of the color selector flyout.
+- Pressing Esc.
+
+## Related
+- [Carbon's select component](https://www.carbondesignsystem.com/components/select/usage/)
+- [Carbon's data visualization color palettes](https://www.carbondesignsystem.com/data-visualization/color-palettes/)

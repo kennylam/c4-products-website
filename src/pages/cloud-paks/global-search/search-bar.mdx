@@ -1,0 +1,207 @@
+---
+title: Search bar
+tabs: ['Overview', 'Search bar', 'Search results', 'Accessibility']
+stage: '3'
+---
+
+<PageDescription>
+
+The search bar lives in the global header at all times.
+
+</PageDescription>
+
+<AnchorLinks>
+    <AnchorLink>Anatomy</AnchorLink>
+    <AnchorLink>Behavior</AnchorLink>
+    <AnchorLink>States</AnchorLink>
+    <AnchorLink>Interaction</AnchorLink>
+</AnchorLinks>
+
+
+## Anatomy
+
+When the global search bar is clicked on, a dropdown appears.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![ Dropdown (on click)](/images/Dropdown-OnClick.png)
+
+</Column>
+</Row>
+
+
+
+1. **Type scoping filter:** A list of object types the user has recently viewed
+2. **Recent searches:**  A list of recent search keywords and recently visited search results. They are displayed in order of recency. The data is stored in the user's local browser server.
+
+<br/>
+<br/>
+
+Recent search keywords are generated when the user hits 'enter' after typing in [keyword].
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![ Dropdown (recent keywords)](/images/Dropdown-RecentKeywords.png)
+
+</Column>
+</Row>
+
+
+
+1. **Recent search with no scoping filter:** Navigates to the search result page that shows the search results for [keyword]
+2. **Recent search with scoping filter:** Navigates to the search result page that shows search results for [keyword], filtered by the selected Type
+
+<br/>
+<br/>
+
+Recent search results are generated when the user clicks on a result from the search results or from the suggestions in the dropdown. 
+When the result is clicked on, the user is navigated to the object/asset page in a particular service (not the global search result page).
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![ Dropdown (recent results)](/images/Dropdown-RecentResults.png)
+
+</Column>
+</Row>
+
+
+1. **Name of recently viewed result**
+2. **Object type**
+3. **Breadcrumb**
+
+<br/>
+<br/>
+
+
+## Behavior
+The search bar renders differently in response to the browser screen size to maximize the space and magnify the search experience. 
+The search bar has a width of 720px and lives in the center of the items on the left and right side of the header. 
+As the screen gets smaller and is no longer able to contain a 720px search bar, the search bar will be the length of the leftover space 
+between the items on the left and right of the header. 
+When the screen size is 768px or smaller, the search bar turns into an icon, which will be located on the right side of the header. 
+When a user clicks on the search icon, the search bar will appear across the header, leaving 48px on each side revealing first and last icon on the header.
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Search locations](images/searchLocations.png)
+
+</Column>
+</Row>
+
+<br/>
+
+
+## States 
+
+The search bar has four states: default/hover, hover, clicked in, focus/typing, and finished typing.
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Search bar states](images/searchBarStates.png)
+
+</Column>
+</Row>
+
+
+## Interaction
+
+
+When there is overflow, the content must be truncated.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![ Dropdown (truncation)](/images/Dropdown-Truncation.png)
+
+</Column>
+</Row>
+
+
+
+1. **Recent search keyword truncation:** Truncate the recent search keyword to how much space is available.
+2. **Recent search result truncation:** Truncate the recent search result to 40 characters. Truncate the breadcrumbs to how much space is left. 
+
+<br/>
+<br/>
+
+When there is no data stored in the user's local browser, display the empty state. This may occur if the user is a first-time user or if the user has cleared their browser storage.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![ Dropdown (no data in browser)](/images/Dropdown-NoBrowserData.png)
+
+</Column>
+</Row>
+
+
+<br/>
+<br/>
+
+When the user begins to type into the global search bar, new suggestions with matching keywords appear. 
+The list is composed of the exact keyword and suggested search results.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![ Dropdown (suggestions)](/images/Dropdown-Suggestions.png) 
+
+</Column>
+</Row>
+
+
+1. **Close icon:** Clicking on this icon will clear the search bar. It will not collapse the dropdown.
+2. **Exact keyword:** The exact keyword will be displayed at the top of the list. When clicked, navigate to the page that shows results for [keyword].
+2. **Suggested search results:** Display the top 7 results of the keyword typed into the search bar. 
+The global search API will be used to populate this list. The matched keyword is bolded.
+
+<br/>
+<br/>
+
+If there are no matches for the typed keyword, the dropdown will show the keyword typed in the search bar but will not show any recents or suggestions. 
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![ Dropdown (no matches)](/images/Dropdown-NoMatches.png)
+
+</Column>
+</Row>
+
+
+<br/>
+<br/>
+
+When a Type scoping filter is selected, the dropdown will display object Types that have a match with the keyword in the search bar. 
+The user can select one Type at a time. 
+
+In this example, the user began typing "re" so "Report" is shown because it contains the typed in letters "re."
+When selected, the selection appears in the search bar and the other scoping filter options disappear from the dropdown.
+Recent searches are also filtered by the selected Type. If the user selects a Type scoping filter and begins to type a [keyword] into the search bar, 
+the suggested search results only of the selected Type are displayed.
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+<Video src="/videos/Guideline doc_3.mp4" poster="/images/Guidelinesdoc3.png">
+  <track
+    kind="captions"
+    default
+    src="/videos/vtt/hero-video.vtt"
+    srcLang="en"
+  />
+</Video> 
+</Column>
+</Row>
+
+
+<InlineNotification>
+The interim state will have fixed scoping filters tied to services. 
+Watson studio: Notebooks and Models
+WKC: Data assets, Business Terms and Categories
+</InlineNotification>

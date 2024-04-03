@@ -1,0 +1,43 @@
+language: node_js
+
+addons:
+  apt:
+    packages:
+      # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
+      - libgconf-2-4
+
+cache:
+  directories:
+    - .cache
+    - public
+    - node_modules
+
+notifications:
+  slack:
+    rooms:
+      - ibm-casdesign:P44xeoRDixDw38uE025Qoekz
+    on_pull_requests: false
+    if: branch = main
+    on_success: change
+    on_failure: always
+    template:
+      - "`%{repository_name}` *%{result}* build <%{build_url}|#%{build_number}>"
+      - "Commit #<%{compare_url}|%{commit}> %{commit_message}"
+      - "Author: *%{author}*"
+      - "Execution time: *%{duration}*"
+      - "Message: %{message}"
+  email: false
+
+if: branch !~ ^dev- # https://docs.travis-ci.com/user/conditions-v1#examples
+
+before_install: bash core/before_install.sh
+# 'npm ci' will not work, because in the package-lock.json ssh:// is used and in the changed package.json it uses https://
+install: npm i
+script: npm run build
+
+deploy:
+  provider: script
+  script: bash core/deploy.sh
+  skip_cleanup: true
+  on:
+    branch: main

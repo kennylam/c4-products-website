@@ -1,0 +1,82 @@
+---
+title: E2E user journey - AWS
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+<Breadcrumb>
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/">
+    Home
+  </BreadcrumbItem>
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/overview">
+    PLG and MultiCloud SaaS
+  </BreadcrumbItem>
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/user-scenarios">
+    User scenarios
+  </BreadcrumbItem>
+  <BreadcrumbItem
+    isCurrentPage
+    href="https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/user-scenarios/transact-upgrade-aws"
+  >
+    AWS
+  </BreadcrumbItem>
+</Breadcrumb>
+
+<PageDescription>
+
+This scenario starts in the AWS marketplace, where a user can discover, learn, and try an IBM's SaaS offering, and ends in the AWS marketplace to complete the transaction of subscribing to an IBM’s SaaS product.
+
+</PageDescription>
+
+## Try and buy with public offer on AWS
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS marketplace, AWS server, and IBM cloud user scenario](/images/E2EFlow-aws.png)
+
+  </Column>
+</Row>
+
+The product details page on the AWS Marketplace includes a ** Try for free ** button. When the user clicks the button, they need to log in to their AWS account and complete the trial subscription process on AWS. At the end of the process, a button is provided to the user to register for an IBMid. Once an IBMid is created, a trial instance can be set up and provisioned. The user can upgrade their trial to a paid plan of the IBM service through the AWS Marketplace when they are ready to buy.
+
+Once the transaction is complete, a button is provided to the user to setup the account (IBM account). The user will be directed to the same IBM landing page to create or sign in with an IBMid. The system will ** recognize the presence of the trial instance belonging to the AWS upgraded subscription ** and upgrade the instance automatically. Users can then continue to use the service with the same instance. Customers will manage their subscription and billing in the AWS portal and their product usage and instances in the IBM SaaS Console.
+
+Alternately, the user may have signed up for a SaaS trial through IBM.com instead of from the AWS Marketplace. When the user purchases the SaaS subscription on AWS Marketplace, the system will recognize the presence of the trial instance and upgrade the instance automatically if the user signs in with the same IBMid as the one used for setting up the trial.
+See [E2E User journey - IBM](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/user-scenarios/transact-upgrade-ibm) for details
+
+<CardGroup>
+  <MiniCard
+    title="Click through prototype"
+    href="https://www.figma.com/proto/SlZ7TK2mTzNLIHZB2dGXRF/MCSP-Onboarding-Design-Guide?page-id=163%3A351403&node-id=232-360185&viewport=666%2C536%2C0.5&scaling=scale-down&starting-point-node-id=232%3A360185&show-proto-sidebar=1"
+    actionIcon="launch"
+  ></MiniCard>
+  <MiniCard
+    title="Figma design template"
+    href="https://www.figma.com/file/SlZ7TK2mTzNLIHZB2dGXRF/MCSP-Discover%2C-Learn%2C-Try%2C-Buy-flows?node-id=1898%3A423455&t=0b6q9436Ua6pJgGw-1"
+    actionIcon="launch"
+  ></MiniCard>
+</CardGroup>
+
+## Related
+
+- [Discover](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/discover)
+- [Learn](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/learn)
+- [Try](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/try)
+- [Buy](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/buy)
+
+## References
+
+- <a
+    target="_blank"
+    href="https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-saas-products.html"
+  >
+    AWS Marketplace: SaaS Products
+  </a>
+- <a
+    target="_blank"
+    href="https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-private-offers-subscribing-saas-private-offer.html"
+  >
+    AWS Marketplace: Subscribing to a SaaS private offer
+  </a>

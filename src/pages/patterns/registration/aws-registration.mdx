@@ -1,0 +1,331 @@
+---
+title: AWS Marketplace registration
+---
+
+import { Tabs as CTabs, Tab as CTab } from "carbon-components-react";
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+<PageDescription>
+The Amazon Web Services (AWS) Marketplace registration allows users to sign in to the AWS Marketplace and register within IBM systems through MultiCloud SaaS Platform (MCSP) using the Cloud Trial Unified Registration Experience (URX) form.
+</PageDescription>
+
+<AnchorLinks>
+    <AnchorLink> User discovers the Try offer on AWS marketplace and creates an AWS Trial contract </AnchorLink>
+    <AnchorLink> Users registers to the IBM systems via Cloud Trial URX form and IBMid  </AnchorLink>
+    <AnchorLink> Provisioning the Try offer to access the product  </AnchorLink>
+    <AnchorLink> Self-report pattern adoption </AnchorLink>
+</AnchorLinks>
+
+## Overview
+AWS Marketplace allows IBM product Try offers to be hosted on AWS Cloud. You can use the steps listed below to create an AWS Marketplace registration flow. 
+
+## User discovers the Try offer on AWS Marketplace and creates an AWS contract 
+To subscribe to a new product on AWS, the user must create a contract through the product listing page (a free contract in the case of a Try offer). To access an IBM SaaS product, the user must first subscribe to the product through AWS Marketplace. 
+
+When a user clicks on the Try for Free button on the AWS product listing page, they need to sign into their AWS Marketplace account first, or create a contract through AWS. At the end of the transaction, they will be provided a link to configure their account with IBM through this registration page. See the [documentation on AWS marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-saas-products.html#saas-free-trials-for-contracts) for more information. 
+
+**AWS Marketplace **
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS Marketplace](/images/urx-reg-images/aws-marketplace/aws-1.png)
+
+  </Column>
+</Row>
+
+### AWS registration process
+There are two unique scenarios for AWS registration, depending on whether the user already has an AWS account or needs to create one:
+1. Users without an AWS Marketplace account can create one and register for an IBM product-specific Try offer on AWS Cloud. 
+2. Users who already have an AWS Marketplace account can login and register for a  product-specific Try offer. 
+
+<Tabs>
+<Tab label="User needs to create an AWS account">
+
+#### User needs to create an AWS account
+Users who do not have an existing AWS account are prompted to continue through the registration process:
+- **Email address**: Users must provide their email address and create an account name. 
+- **Email verification**: A verification code is sent to the user’s email which must be entered in the email verification field to confirm the user’s identity and ownership of their account.
+- **Password creation**: AWS requires stringent password requirements to maintain platform and account security.
+- **Contact information**: Users must first confirm if they are creating a business or a personal account and provide other details such as their name, company name, address, and phone number in the information fields. Users must also provide their billing and credit card information.
+For more information on creating the AWS account, see [AWS marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-saas-products.html). 
+
+
+**Sign up for AWS**
+
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Sign up for AWS](/images/urx-reg-images/aws-marketplace/aws-2.png)
+
+  </Column>
+</Row>
+
+**AWS verification**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS verification](/images/urx-reg-images/aws-marketplace/aws-3.png)
+
+  </Column>
+</Row>
+
+**AWS email verification**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS email verification](/images/urx-reg-images/aws-marketplace/aws-4.png)
+
+  </Column>
+</Row>
+
+**AWS verification code**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS verification code](/images/urx-reg-images/aws-marketplace/aws-5.png)
+
+  </Column>
+</Row>
+
+**AWS verification: success message**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS verification: success message ](/images/urx-reg-images/aws-marketplace/aws-6.png)
+
+  </Column>
+</Row>
+
+**AWS billing information**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS billing information](/images/urx-reg-images/aws-marketplace/aws-7.png)
+
+  </Column>
+</Row>
+
+**AWS credit card information **
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS credit card information](/images/urx-reg-images/aws-marketplace/aws-8.png)
+
+  </Column>
+</Row>
+
+Users then must configure a software contract, which is outlined [here](https://pages.github.ibm.com/cdai-design/pal/patterns/registration/aws-registration/#user-configures-a-software-contract).
+</Tab>
+
+<Tab label="User already has an AWS account">
+
+#### User already has an AWS account
+Users who already have an AWS account are redirected to the AWS Marketplace **Sign in** page, where they choose the IBM Try offer to configure a software contract. Upon successful subscription, users are directed to IBM to complete their registration on the IBM platform, including creating an IBMid. Users who already have an IBMid can sign in to an existing account.
+
+**AWS sign in**
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS sign in](/images/urx-reg-images/aws-marketplace/aws-9.png)
+
+  </Column>
+</Row>
+
+For more information on AWS sign in, refer to [AWS identities](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html).
+</Tab>
+</Tabs>
+
+### User configures a software contract 
+Users choose the contract that suits their needs. In case of a free Trial, a $0 trial contract is selected. Once the contract is accepted, they are directed to IBM product page to complete their registration by creating an IBMid or logging in. 
+
+**AWS software contract**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS software contract](/images/urx-reg-images/aws-marketplace/aws-10.png)
+
+  </Column>
+</Row>
+
+
+**AWS accept contract**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS accept contract](/images/urx-reg-images/aws-marketplace/aws-11.png)
+
+  </Column>
+</Row>
+
+
+**AWS: successful subscription**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![AWS successful subscription](/images/urx-reg-images/aws-marketplace/aws-12.png)
+
+  </Column>
+</Row>
+
+### Successful subscription
+Upon successfully subscribing to the AWS Marketplace, users must also register with IBM to complete the process. 
+
+
+## User registers to IBM systems via Cloud Trial URX form and IBMid
+After registering with the AWS Marketplace, users must also register with IBM to finish subscribing. They will need to create an IBMid or log in to IBM using a Cloud Trial URX form. MCSP leverages the Cloud Trial URX form to create the necessary “link” between the user’s AWS Marketplace account and their IBM Trial product instance. 
+
+The primary purpose of the Cloud Trial URX form is not only to create an IMBid but also assign the IBMid to their Try offer instance. This form is also used to validate the user’s account information, and record their consent to opt in to email communication, data privacy policy, and acknowledgement of IBM product terms and conditions. 
+
+### IBMid registration 
+Users need an IBMid to register for an IBM Try offer within the IBM systems. Users who already have an IBMid can log in and register for the product-specific Try offer right away. Users who do not have an IBMid will need to enter their account information and create a new one.
+
+Users who do not have an existing IBMid are prompted to continue through the registration process, including the following steps.
+
+
+### URX Trial form registration steps
+
+#### User needs to create an IBMid
+Users who do not have an existing IBMid are prompted to continue through the registration process:
+- **Email address**: Users must provide their email address.
+- **Password creation**: In order to maintain platform and account security, stringent password requirements are enforced. The user is presented with these requirements in real time upon clicking into the field, which are automatically checked off as they are met.
+- **Email validation**: A verification code is sent to the user’s email which must be entered in the email verification field to confirm the user’s identity and ownership of their account.
+- **Notice and choice acknowledgement**: The notice and choice widget is used to obtain consent to contact the user by email and/or phone.: Users must provide their email address.
+
+
+<InlineNotification kind="info">
+
+  **Note:** For information on creating the Cloud Trial URX form, see [IBM PerForm tool Cloud Trial URX form](https://pages.github.ibm.com/cdai-design/pal/patterns/registration/urx-registration/#ibm-perform-tool-cloud-trial-urx-form-template). And for guidance on writing content, see [IBM PerForm tool content guidance for Cloud Trial URX form](https://pages.github.ibm.com/cdai-design/pal/patterns/registration/urx-registration/#ibm-perform-tool-content-guidance-for-cloud-trial-urx-form).
+
+</InlineNotification>
+
+** IBMid registration page**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![IBMid registration process](/images/urx-reg-images/aws-marketplace/aws-urx.png)
+
+  </Column>
+</Row>
+
+1. **Log in link**: Users who already have an IBMid can log in directly.
+2. **Autofill with LinkedIn**: Users have the ability to autofill their first name, last name, and email address using their LinkedIn account information.
+3. **Pictograms and benefits**: Content and pictograms are determined by the product teams and should explain the value proposition in two lines or less (excluding titles) and be limited to four bullet points per form. Designers must leverage the [IBM pictogram library](https://www.ibm.com/design/language/iconography/pictograms/library/).
+4. **Password field**: Password requirements are displayed upon clicking into the field.
+5. **Create account button**: Remains disabled until all fields have been filled.
+
+#### User creates account using LinkedIn autofill
+Users who do not have an existing IBMid can choose to use the LinkedIn autofill feature on the page. This feature will automatically fill the user’s first name, last name, and email address for the user based on the information in their LinkedIn profile.
+
+If the user is not logged into LinkedIn at the time of selecting the autofill functionality, they will be prompted to log in so that IBM can access their profile information. After their information from LinkedIn is populated, the user must then follow all of the same steps laid out in the previous tab.
+
+#### User already has an IBMid
+Users who already have an IBMid are redirected to the IBMid log in page.
+
+
+### Successful registration
+Upon successfully registering for their account or Try experience, the user is redirected into the product. The next time the user logs in, they will be redirected to the IBMid log in page as outlined [here](https://pages.github.ibm.com/cdai-design/pal/patterns/login-logout/urx-login). 
+
+## Provisioning the Try offer to access the product 
+
+#### Set up your Trial 
+Upon completing the IBMid account setup, the product is auto-provisioned by MCSP as illustrated in the images below. For some products, the user may first need to select the **Region** and enter the **Instance name**. 
+
+**Trial instance**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Trial instance](/images/urx-reg-images/aws-marketplace/aws-13.png)
+
+  </Column>
+</Row>
+
+
+**Trial instance name**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Trial instance name](/images/urx-reg-images/aws-marketplace/aws-14.png)
+
+  </Column>
+</Row>
+
+**Getting your Trial ready**
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Getting your trial ready](/images/urx-reg-images/aws-marketplace/aws-15.png)
+
+  </Column>
+</Row>
+
+While the trial instance is being provisioned, the user will see the messaging screen that informs the user about the progress.   
+
+
+
+**Trial instance is ready **
+
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Trial instance is ready](/images/urx-reg-images/aws-marketplace/aws-16.png)
+
+  </Column>
+</Row>
+
+### Successful provisioning
+Once the provisioning process is completed, the user will be redirected to the “Your trial is ready” screen with the direct access to the trial instance. An email is sent to the user once the provisioning process is complete. Users can access the trial instance using the link provided in the email. See “Welcome to your trial” in [email template guideline](https://pages.github.ibm.com/cdai-design/pal/patterns/emails/mcsp-emails/) for details. 
+
+<br />
+<InfoCard
+cardName="Pattern version history"
+cardDescription='Versions, changelog and contributors'>
+
+<CTabs>
+
+<CTab label="Version">
+
+<Details>
+1.0
+</Details>
+
+</CTab>
+
+<CTab label="Changelog">
+
+<Details>
+
+2023-12-15: Version 1.0 release
+
+</Details>
+
+</CTab>
+
+<CTab label="Contributors">
+
+MCSP
+
+</CTab>
+
+</CTabs>
+
+</InfoCard>
+
+## Self-report pattern adoption
+<iframe class="airtable-embed" src="https://airtable.com/embed/appvxykrpLizynCkz/paggPOH4IkVlciHs4/form" frameborder="0" onmousewheel="" width="100%" height="600" style="background: transparent; border: 1px solid #ccc;"></iframe>
+

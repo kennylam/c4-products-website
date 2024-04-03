@@ -1,0 +1,167 @@
+---
+title: Try and Buy registration
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+<PageDescription>
+
+A foundation of a product-led strategy is to allow users to try our products so they can experience the value themselves. Our products need to provide an easy registration experience to achieve this.
+
+</PageDescription>
+
+<AnchorLinks>
+    <AnchorLink> Overview </AnchorLink>
+    <AnchorLink> Registration patterns </AnchorLink>
+    <AnchorLink> IBM Marketplace </AnchorLink>
+    <AnchorLink> Third-party marketplaces </AnchorLink>
+    <AnchorLink> IBM Cloud Catalog </AnchorLink>
+    <AnchorLink> Multi-factor authentication </AnchorLink>
+    <AnchorLink> Self-report pattern adoption </AnchorLink>
+</AnchorLinks>
+
+
+## Overview
+
+There are a variety of registration patterns to use depending on the type of product you work on, the marketplace where it can be bought, and the cloud infrastructure where it will run (if this is relevant to your product). Review the [Try offers](https://pages.github.ibm.com/cdai-design/pal/saas-for-hyperscalers/overview) page to get more information about these factors, then identify the registration flows that are relevant to your product using the guidance below.
+
+<MiniCard title="Try offers" href="/try-offers/overview">
+</MiniCard>
+
+## Registration patterns
+
+Users must be authenticated with an IBMid before having access to an IBM Try offer. A user can create a new IBMid or log in to an IBMid using the standard Unified Registration Experience (URX) form.
+
+<InlineNotification kind="info">
+
+  **Note:** This is not relevant to products hosted on the IBM Cloud Catalog, which utilize the IBM Cloud registration form instead.
+
+</InlineNotification>
+
+Review the IBMid and URX form information to understand how the process works. Then identify the marketplace(s) your product is offered and utilize the associated registration patterns.
+
+### IBMid registration process
+
+There are three unique scenarios to register an IBMid based on whether the user already has an IBMid or needs to create one:
+
+1. Users who already have an IBMid can log in and register for the Try offer.
+2. Users without an IBMid can use the LinkedIn auto-fill option to enter their account information and create a new IBMid.
+3. Users without an IBMid can enter their account information and create a new IBMid.
+
+### URX form
+
+The IBM URX form collects and validates the user’s account information and records the user’s consent to opt in to email communication, data privacy policy, and acknowledgement of product terms and conditions. 
+
+<InlineNotification kind="info">
+
+**Note:** When a user is provisioning an IBM product through a third-party marketplace, they will receive a specific third-party URX registration form, facilitated through MCSP.
+
+</InlineNotification>
+
+## IBM Marketplace
+
+All IBM products are listed here. To try a product listed in the IBM Marketplace, a user will only need an IBMid. 
+
+Products can be on the IBM Marketplace by adopting the [MultiCloud SaaS Platform](https://w3.ibm.com/w3publisher/multicloud-saas-platform)(MCSP) or autonomously. 
+
+<Row className="image-card-group">
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard 
+sub-title="URX registration" 
+sub-titleColor="dark" 
+hoverColor="dark"
+href="/patterns/registration/urx-registration">
+
+![URX registration](/images/registration-overview/urx-form.png)
+</ImageCard>
+
+</Column>
+
+</Row>
+
+
+## Third-party marketplaces
+
+IBM Software (on-prem) and SaaS products can be listed in third-party marketplaces. The user must have an account with the third party (like AWS) and then create an IBMid with IBM. 
+
+It is required that any IBM product on a third-party marketplace joins the [MultiCloud SaaS Platform](https://w3.ibm.com/w3publisher/multicloud-saas-platform) (MCSP). MCSP provides full guidance for IBM products to integrate into the AWS Marketplace. (Note that additional work is underway to expand the support to other hyperscalers, like Microsoft Azure.)
+
+
+<Row className="image-card-group">
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard 
+sub-title="AWS Try registration" 
+sub-titleColor="dark" 
+hoverColor="dark"
+href="/patterns/registration/aws-registration">
+
+![IBM Cloud registration](/images/registration-overview/aws-registration.png)
+
+</ImageCard>
+
+</Column>
+
+</Row>
+
+
+## IBM Cloud Catalog
+
+This is a marketplace for all IBM Cloud products, both Software (on-prem) and SaaS. To try a product listed in the IBM Cloud Catalog, a user will need an IBM Cloud account, a process which includes the creation of an IBMid.
+
+<Row className="image-card-group">
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard 
+sub-title="IBM Cloud registration" 
+sub-titleColor="dark" 
+hoverColor="dark"
+href="/patterns/registration/ibm-cloud-registration">
+
+![IBM Cloud registration](/images/registration-overview/ibm-cloud-registration.png)
+
+</ImageCard>
+
+</Column>
+
+</Row>
+
+
+## Multi-factor authentication
+
+In order to protect the security of our users, IBM requires them to provide a second form of authentication to register for a Try offer. The multi-factor authentication pattern should be included in your product’s registration experience regardless of the marketplace where it is listed. 
+
+<Row className="image-card-group">
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard 
+sub-title="Multi-factor authentication" 
+sub-titleColor="dark" 
+hoverColor="dark"
+href="/patterns/registration/multi-factor-authentication-enrollment">
+
+![Multi-factor authentication](/images/registration-overview/multi-factor-auth.png)
+</ImageCard>
+
+</Column>
+
+<Column colMd={3} colLg={3} noGutterSm>
+
+<ImageCard disabled aspectRatio="1:1" subTitle="IBM Cloud multi-factor authentication">
+
+![IBM Cloud multi-factor authentication](/images/registration-overview/multi-factor-auth.png)
+
+</ImageCard>
+
+</Column>
+
+</Row>
+
+## Self-report pattern adoption
+<iframe class="airtable-embed" src="https://airtable.com/embed/appvxykrpLizynCkz/pagvWqLWDKCKSDl1I/form" frameborder="0" onmousewheel="" width="100%" height="735" style="background: transparent; border: 1px solid #ccc;"></iframe>

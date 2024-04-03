@@ -1,0 +1,18 @@
+#glossaryBody{
+  td {
+    vertical-align: text-top;
+  }
+}
+
+.glossary-row {
+  td {
+    padding-top: $spacing-05;
+    padding-bottom: $spacing-05;
+  }
+}
+
+.tag-container {
+  background-color: $ui-01;
+  padding-top: $spacing-04;
+  padding-bottom: $spacing-04;
+}

@@ -1,0 +1,57 @@
+---
+title: Slide-in panel
+---
+
+The slide-in panel opens as the result of a user action. This component is an empty framework of
+which the content should be determined as required by products.
+
+![Contextual image](images/1.png)
+
+<InlineNotification>
+
+  This requires the main page content to be responsive so that the panel may slide in. For a non-responsive alternative, it is
+  recommended to use the "Slide Over Panel".
+
+</InlineNotification>
+
+## Things to consider
+- Using this component requires the main page to be responsive
+- How much content will be contained inside the panel?
+- Is dark or light theme more appropriate?
+
+#### Options
+
+<AnchorLinks>
+  <AnchorLink>Sizing</AnchorLink>
+  <AnchorLink>Themes</AnchorLink>
+</AnchorLinks>
+
+## Sizing
+
+There are three sizes (480px, 320px, and 256px), products should decide which size is appropriate depending on the content within the
+side panel.
+Bare in mind the content of the main page will be pushed to accommodate the panel, this should be considered when selecting
+which size of panel should be used.
+
+<Row>
+  <Column colLg={8}>
+
+![Example](images/2.png)
+
+  </Column>
+</Row>
+
+## Themes
+
+The component will be available in the light and dark themes.
+The recommendation is for panels triggered by the main page content to use the light theme. Panels triggered from the global navigation should use the dark theme. 
+
+### Dark Theme (Triggered by the global navigation)
+
+<Row>
+  <Column colLg={8}>
+
+![Example](images/3.png)
+
+  </Column>
+</Row>

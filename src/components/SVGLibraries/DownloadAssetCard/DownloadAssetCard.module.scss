@@ -1,0 +1,24 @@
+.asset-card-icon--small {
+  width: $layout-03;
+}
+
+.asset-card-icon--large {
+  width: $layout-05;
+}
+
+.asset-card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.asset-card-button {
+  width: 100%;
+  flex-direction: column;
+  text-align: left;
+
+  &:global(.bx--tile) {
+    display: flex;
+  }
+}

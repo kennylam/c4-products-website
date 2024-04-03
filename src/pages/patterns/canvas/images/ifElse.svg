@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ifElse</title>
+    <g id="ifElse" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Actions-/-Navigation-/-zoom--in-/-16" transform="translate(86.000000, 86.000000)" fill="#525252">
+            <path d="M64,80 L72,80 L72,112 L64,112 L64,80 Z M92,16 C76.5431549,16.0171946 64.0171946,28.5431549 64,44 L64,56 L72,56 L72,44 C72,32.954305 80.954305,24 92,24 C103.045695,24 112,32.954305 112,44 C112,55.045695 103.045695,64 92,64 L23.3124,64 L41.6564,45.6564 L36,40 L8,68 L36,96 L41.6564,90.3436 L23.3124,72 L92,72 C107.463973,72 120,59.4639728 120,44 C120,28.5360272 107.463973,16 92,16 Z" id="Fill"></path>
+        </g>
+    </g>
+</svg>

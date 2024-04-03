@@ -1,0 +1,153 @@
+@import "mixins";
+@import "./glossary.scss";
+@import 'homepage';
+
+$carbon--theme: $carbon--theme--g10;
+@include carbon--theme();
+
+#homepage-cards {
+  padding-top: calc(#{$spacing-05} * 5);
+
+  .bx--aspect-ratio {
+    width: 100%;
+  }
+
+  .bx--aspect-ratio--object {
+    position: inherit;
+  }
+
+  .bx--col-lg-4 {
+    display: flex;
+  }
+
+  .bx--resource-card {
+    display: flex;
+    width: 100%;
+  }
+
+  @media (min-width: 66rem) and (max-width: 82rem) {
+    .bx--resource-card__subtitle {
+      font-size: 0.75rem;
+    }
+
+    .bx--resource-card__title {
+      font-size: 1rem;
+    }
+  }
+}
+
+[class^="ExpressiveListContainer-module--text"]
+  .bx--row[class*="CardGroup-module--cardGroup"] {
+  margin-left: -#{$spacing-05};
+}
+
+[class^="ExpressiveListContainer-module--text"]
+  .bx--row[class*="CardGroup-module--cardGroup"]
+  > div {
+  max-width: 50%;
+}
+
+// For page-level breadcrumbs and tags
+.page__breadcrumb + .tag-group {
+  margin-top: $spacing-03;
+}
+
+// Aligns page-level version tags to breadcrumbs
+.tag-group .bx--tag:first-child {
+  margin-left: 0;
+}
+
+// FIX FOR ANCHOR LINK BUG //
+// See https://github.com/carbon-design-system/gatsby-theme-carbon/issues/1070
+//
+// To ensure that scrolling to anchor headers is not hidden behind
+// the site header banner.
+html {
+  --header-row-spacing: 6em;
+  scroll-padding-top: var(--header-row-spacing);
+}
+
+// TEMPORARY FIX FOR A BUG WITH LINKS WITHIN BULLET POINTS
+//
+// Without this, lots of margin gets added above and below a link
+// within a Markdown bullet point.
+.noLinkPadding {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+// FIX FOR BUG WHEREBY BULLET POINT LISTS WITHIN INLINE NOTIFICATIONS 
+// INCORRECTLY ONLY SPAN 2/3 OF THE WIDTH
+//
+// Used on the /content/date-and-time page
+.fixBulletListBug > div > div > div > div > div > p {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+.fixBulletListBug > div > div > div > div > ul, 
+.fixBulletListBug > div > div > div > div > ol {
+  width: 100% !important;
+}
+
+// FIX FOR BUG WHEREBY TEXT WITH LINKS WITHIN A LIST GETS HUGE BOTTOM 
+// MARGIN AT CERTAIN LINE WRAPS
+//
+// Used on the /content/date-and-time page
+li a {
+  margin-bottom: inherit !important;
+}
+
+// Fix for incorrect grid margins on homepage make content off-center
+// See https://github.ibm.com/CDAI-design/pal/issues/1110
+.container--homepage .#{$prefix}--grid {
+  @include carbon--breakpoint("lg") {
+    padding-left: rem(287px);
+    padding-right: rem(32px);
+    max-width: rem(1439px);
+    margin: 0 auto;
+  }
+
+  @media (min-width: 105rem) {
+    padding-left: 424px;
+    max-width: rem(1544px);
+    padding-right: 0;
+    margin: 0;
+  }
+}
+
+// Fix for 404 page backgroud
+.container-404 {
+  main.container--homepage {
+    background: $background;
+  }
+}
+
+.grid-callout {
+  margin-top: unset;
+  margin-bottom: -$spacing-06;
+  padding-top: $spacing-10;
+  padding-bottom: $spacing-10;
+  max-width: 1152px;
+}
+
+.grid-callout h2 {
+  padding: unset;
+  margin: 0 0 $spacing-03 0;
+}
+
+.grid-callout p {
+  @include carbon--type-style("expressive-paragraph-01");
+}
+
+
+.third-party-logo div.bx--image-card__img {
+  padding: $spacing-12;
+}
+
+.container--homepage .bx--grid {
+  padding-top: 3rem;
+}
+
+.bx--header a {
+  font-weight: 600;
+}

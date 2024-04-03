@@ -1,0 +1,77 @@
+---
+title: Carousel
+tabs: ['Usage', 'Content', 'Implementation']
+---
+
+<PageDescription>
+
+  Carousels provide you with multiple slides to give your users additional information about your product at first use.
+
+</PageDescription>
+
+<br />
+
+## Best practices
+- There should be 2-5 slides per Carousel.
+- Text should be clear, concise, and speak directly to the user. 
+- Utilize slides to explain prominent features or tasks and it's value.
+- Provide corresponding imagery on each slide to enhance the experience.   
+- Avoid saying anything that might sound like sales or marketing.
+- Work with your project teams to determine content and autoplay rules.
+
+_Refer to our [content guide](../../content/overview/overview) for best content implementation_
+
+<br />
+
+## Template breakdown
+
+The image below shows the typical structure of the Carousel component. In a Carousel, titles, images, and body texts can change per screen according to the information you want to relay to your users.
+
+
+<Row>
+  <Column colLg={8}>
+
+![usage](/images/carousel_annotated.png)
+
+  </Column>
+</Row>
+
+<br />
+
+
+#### 1. Illustration
+Illustrations can include GIFS or images (png, jpeg, etc) that accurately depict the information you're calling out or the value of the product. Each slide can have its own illustration. 
+
+
+#### 2. Title (55 characters):
+Titles can call out a feature, concisely summarize the value of a tour, or just welcome your user to the product.
+
+
+#### 3. Body texts (310 characters): 
+This content should be clear and concise (2-3 sentences). It should say exactly what the user will accomplish within the tour or the value of a specific feature. 
+
+
+#### 4. Pagination: 
+
+
+Users can maneuver between the screens using these arrows. The left arrow disappears on the first slide and the right arrow disappears on the last slide. 
+
+
+The total number of dots represents the number of total slides while the solid dot indicates the current slide your user is on. 
+
+
+#### 5. Buttons:
+
+
+A Carousel can exist with one button label or two. 
+
+
+If you choose to go with two buttons, the first slide should give the user the options to continue on or exit out of the Carousel. The next few slides should give the user the ability to continue on or go backwards. If the Carousel launches a tour, the final slide should allow the user to start the tour or explore the UI on their own. **Side note:** A Carousel may not always start a flow but instead may link to external documentation.
+
+Popular button label for single button: 
+- **Primary button:** Next/Done
+
+
+Popular button labels for two buttons: 
+- **Primary button:** Next/Done
+- **Tertiary button:** Start tour/Back/Learn more

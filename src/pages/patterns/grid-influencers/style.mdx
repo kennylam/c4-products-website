@@ -1,0 +1,201 @@
+---
+title: Grid influencers
+tabs: ['Usage', 'Style', 'Sketch guidance']
+---
+
+<PageDescription>
+
+Style guidance is particularly useful for development. Grid measurements and columns are already set up for design in Figma.
+
+</PageDescription>
+
+<AnchorLinks>
+<AnchorLink>Slide-in panel grid</AnchorLink>
+<AnchorLink>Wide tearsheet grid</AnchorLink>
+</AnchorLinks>
+
+## Slide-in panel grid
+
+### Left influencer breakpoints
+
+<Accordion>
+  <AccordionItem title="Extra small">
+
+  | sm-320px _Margin: 0px_                 | md-672px _Margin: 16px_    |   lg-1056px _Margin: 16px_  |  xlg-1312px _Margin: 16px_  | max-1584px _Margin: 24px_   |
+  | ------------------                     | -----------                | -----                       | -------------               | -----------                 |
+  | _n/a Will turn into slide-over_        |   # of Col: 8              |    # of Col: 8              |    # of Col: 16             | # of Col: 16                |
+  | —                                      |   Width: 384px / 24rem     |    Width: 768px / 48rem     |    Width: 1024px / 64rem    | Width: 1280px / 80rem       |
+  | —                                      |   Offset: 272px / 17rem    |    Offset: 272px / 17rem    |    Offset: 272px / 17rem    | Offset: 280px / 17.5rem     |
+  | —                                      |   Gutter: 32px / 2rem      |    Gutter: 32px / 2rem      |    Gutter: 32px / 2rem      | Gutter: 32px / 2rem         |
+  | —                                      |   Column: 16px / 1rem      |    Column: 64px / 4rem      |    Column: 32px / 2rem      | Column: 48px / 3rem         |
+
+</AccordionItem>
+  <AccordionItem title="Small">
+
+  | sm-320px _Margin: 0px_                 | md-672px _Margin: 16px_   | lg-1056px _Margin: 16px_    |  xlg-1312px _Margin: 16px_   | max-1584px _Margin: 24px_    |
+  | -------------                          | -----------               | -----                       | -------------                | -----------                  |
+  | _n/a Will turn into slide-over_        |   # of Col: 4             |   # of Col: 8               |    # of Col: 8               |   # of Col: 16               |
+  | —                                      |   Width: 320px / 20rem    |   Width: 704px / 44rem      |    Width: 960px / 60rem      |   Width: 1216px  / 76rem     |
+  | —                                      |   Offset: 336px / 21rem   |   Offset: 336px / 21rem     |    Offset: 336px / 21rem     |   Offset: 344px / 21.5 rem   |
+  | —                                      |   Gutter: 32px / 2rem     |   Gutter: 32px / 2rem       |    Gutter: 32px / 2rem       |   Gutter: 32px / 2rem        |
+  | —                                      |   Column: 48px / 3rem     |   Column: 56px / 3.5rem     |    Column: 88px / 5.5rem     |   Column: 44px / 2.75rem     |
+
+
+  </AccordionItem>
+  <AccordionItem title="Medium">
+
+  | sm-320px _Margin: 0px_                 | md-672px _Margin: 16px_              | lg-1056px _Margin: 16px_       | xlg-1312px _Margin: 16px_    | max-1584px _Margin: 24px_    |
+  | -------------                          | -----------                          | -----                          | -------------                | -----------                  |
+  | _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |   # of Col: 8                  |    # of Col: 8               |   # of Col: 16               |
+  | —                                      |   —                                  |   Width: 544px / 34rem         |    Width: 800px / 50rem      |   Width: 1056px / 66rem      |
+  | —                                      |   —                                  |   Offset: 496px / 31rem        |    Offset: 496px / 31rem     |   Offset: 504px / 31.5       |
+  | —                                      |   —                                  |   Gutter: 32px / 2rem          |    Gutter: 32px / 2rem       |   Gutter: 32px / 2rem        |
+  | —                                      |   —                                  |   Column: 36px / 2.25rem       |    Column: 68px / 4.25rem    |   Column: 34px / 2.125rem    |
+
+  </AccordionItem>
+  <AccordionItem title="Large">
+
+  | sm-320px _Margin: 0px_                 | md-672px _Margin: 16px_              | lg-1056px _Margin: 16px_           | xlg-1312px _Margin: 16px_    | max-1584px _Margin: 24px_    |
+  | -------------                          | -----------                          | -----                              | -------------                | -----------                  |
+  | _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |  _n/a Will turn into slide-over_   |    # of Col: 8               |    # of Col: 8               |
+  | —                                      | —                                    |   -                                |    Width: 640px / 40rem      |    Width: 896px / 56rem      |
+  | —                                      | —                                    |   -                                |    Offset: 656px / 41rem     |    Offset: 664px / 41rem     |
+  | —                                      | —                                    |   -                                |    Gutter: 32px / 2rem       |    Gutter: 32px / 2rem       |
+  | —                                      | —                                    |   -                                |    Column: 48px / 3rem       |    Column: 80px / 5rem       |
+
+  </AccordionItem>
+  <AccordionItem title="Max">
+
+  Not available as all panels using the Max panel size would slide-over panels. To learn more about slide-over panels visit the [Side panel component guidelines](https://pages.github.ibm.com/cdai-design/pal/components/side-panel/usage).
+
+  </AccordionItem>
+</Accordion>
+
+### Right influencer breakpoints
+<Accordion>
+  <AccordionItem title="Extra small">
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   # of Col: 8                        |      # of Col: 8                 |    # of Col: 16                     |           # of Col: 16                |
+|                  -                      |   Width: 384px / 24rem               |    Width: 768px / 48rem          |            Width: 1024px / 64rem    |           Width: 1280px / 80rem       |
+|                 -                       |   Offset: 16px / 1rem                |      Offset: 16px / 1rem         |            Offset: 16px / 1rem      |           Offset: 24px / 1.5rem       |
+|                -                        |   Gutter: 32px / 2rem                |      Gutter: 32px / 2rem         |            Gutter: 32px / 2rem      |           Gutter: 32px / 2rem         |
+|               -                         |   Column: 16px / 1rem                |      Column: 64px / 4rem         |            Column: 32px / 2rem      |           Column: 48px / 3rem         |
+
+</AccordionItem>
+  <AccordionItem title="Small">
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   # of Col: 4                        |      # of Col: 8                 |    # of Col: 8                     |           # of Col: 16                |
+|               -                         |   Width: 320px / 20 rem             |    Width: 704px / 44rem         |            Width: 960px / 60 rem   |           Width: 1216px / 76rem       |
+|              -                          |   Offset: 16px / 1rem               |      Offset: 16px / 1rem        |            Offset: 16px / 1rem      |           Offset: 24px / 1.5rem       |
+|             -                           |   Gutter: 32px / 2rem              |      Gutter: 32px / 2rem         |            Gutter: 32px / 2rem     |           Gutter: 32px / 2rem         |
+|            -                            |   olumn: 16px / 1rem            |      Column: 56px / 3.5 rem        |            Column: 88px / 5.5rem     |           olumn: 44px / 2.75rem         |
+
+  </AccordionItem>
+  <AccordionItem title="Medium">
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      # of Col: 8                 |    # of Col: 8                     |           # of Col: 16                |
+|                  -                      |                       -               |  Width: 544px / 34rem        |            Width: 800px / 50rem    |           Width: 1056px / 66rem      |
+|                 -                       |                      -                 |      Offset: 16px / 1rem       |            Offset: 16px / 1rem    |           Offset: 24px / 1.5rem    |
+|                -                        |                     -                 |      Gutter: 32px / 2rem       |           Gutter: 32px / 2rem    |           Gutter: 32px / 2rem     |
+|               -                         |                    -                 |      Column: 36px / 2.25rem       |            Column: 68px / 4.25rem      |          Column: 34px / 2.125rem       |
+
+  </AccordionItem>
+  <AccordionItem title="Large">
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |     _n/a Will turn into slide-over_             |    # of Col: 8                     |           # of Col: 8                |
+|                   -                     |               -                       |   -       |            Width: 640px / 40rem    |           Width: 896px / 56rem       |
+|                  -                      |              -                         |    -     |            Offset: 16px / 1rem   |           Offset: 24px / 1.5rem     |
+|                 -                       |             -                         |     -     |            Gutter: 32px / 2rem    |          utter: 32px / 2rem       |
+|                -                        |            -                         |      -       |            Column: 48px / 3rem     |          Column: 80px / 5rem       |
+
+
+  </AccordionItem>
+  <AccordionItem title="Max">
+
+  Not available as all panels using the Max panel size would slide-over panels. To learn more about slide-over panels visit the [Side panel component guidelines](https://pages.github.ibm.com/cdai-design/pal/components/side-panel/usage).
+
+  </AccordionItem>
+</Accordion>
+
+### Influencer breakpoints when using both left and right
+
+<Accordion>
+  <AccordionItem title="Extra small on left; extra small on right">
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      _n/a- opening additional panel closes first panel_                 |    # of Col: 8                     |           # of Col: 8                |
+|                   -                     |                 -                     |   -         |            Width: 768px / 48rem    |           Width: 1024px / 64rem       |
+|                  -                      |                -                       |     -      |            Offset: 272px / 17rem    |           Offset: 280px / 17.5rem     |
+|                 -                       |               -                       |     -      |            Gutter: 32px / 2rem     |          Gutter: 32px / 2rem      |
+|                -                        |              -                       |      -     |            Column: 64px / 4rem    |          Column: 96px / 6rem       |
+
+  </AccordionItem>
+  <AccordionItem title="Extra small on left; small on right">
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      _n/a- opening additional panel closes first panel_                |    # of Col: 8                     |           # of Col: 8                |
+|          -                              |               -                       |  -         |            Width: 704px / 44rem    |           Width: 960px / 60rem       |
+|         -                               |                -                       |    -      |            Offset: 272px / 17rem    |           Offset: 280px /17.5rem     |
+|        -                                |                 -                     |     -     |            Gutter: 32px / 2rem     |          Gutter: 32px / 2rem      |
+|       -                                 |                  -                   |      -   |            Column: 56px / 3.5rem   |          Column: 88px / 5.5rem       |
+
+  </AccordionItem>
+  <AccordionItem title="Extra small on left; medium on right">
+
+| sm-320px _Margin: 0px_                 |    md-672px _Margin: 16px_           |   lg-1056px _Margin: 16px_       |  xlg-1312px _Margin: 16px_         |    max-1584px _Margin: 24px_    |
+| -------------                          | -----------                          | -----                            | -------------                       | -----------                           |
+| _n/a Will turn into slide-over_        |   _n/a Will turn into slide-over_    |      _n/a Will turn into slide-over_                 |    _n/a- opening additional panel closes first panel_                     |           # of Col: 8                |
+|        -                                |     -                                 |    -       |            -    |           Width: 800px / 50rem       |
+|       -                                 |      -                                 |  -         |            -    |           Offset: 280px / 17.5rem     |
+|      -                                  |       -                               |  -         |            -     |          Gutter: 32px / 2rem      |
+|     -                                   |        -                             |  -       |            -   |          Column: 68px / 4.25rem       |
+
+  </AccordionItem>
+
+</Accordion>
+
+Any other combination of slide-in side panel sizes will result in the first side panel being closed when the second is opened. Refer to the **Screen + Influencer** component in Figma to see the full list of accepted combinations.
+
+## Wide tearsheet grid
+A tearsheet is a mostly full-screen type of dialog that keeps users in-context and focused by bringing actionable content front and center while revealing parts of the UI behind it. The large tearsheet has a separate grid from the page-level grid because it only covers a portion of the page.
+
+### Basic grid breakpoints
+
+  | sm-320px _Margin: 0px_                                | md-672px _Margin: 16px_                            | lg-1056px _Margin: 40px_       | xlg-1312px _Margin: 40px_    | max-1584px _Margin: 40px_    |
+  | -------------                                         | -----------                                        | -----                          | -------------                | -----------                  |
+  | _n/a Will turn into full page, see basic grid_        | _n/a Will turn into full page, see basic grid_     |   # of Col: 8                  |    # of Col: 16              |    # of Col: 16              |
+  | —                                                     | —                                                  |   Width: 896px / 56rem         |    Width: 1120px / 70rem     |    Width: 1280px / 80rem     |
+  | —                                                     | —                                                  |   Offset: 96px / 6rem          |    Offset: 96px / 6rem       |    Offset: 168px / 10.5rem   |
+  | —                                                     | —                                                  |   Gutter: 32px / 2rem          |    Gutter: 32px / 2rem       |    Gutter: 32px / 2rem       |
+  | —                                                     | —                                                  |   Column: 80px / 5rem          |    Column: 40px / 2.5rem     |    Column: 48px / 3rem       |
+
+
+### Left influencer breakpoints
+
+  | sm-320px _Margin: 0px_                                                | md-672px _Margin: 16px_                                               | lg-1056px _Margin: 40px_     | xlg-1312px _Margin: 40px_    | max-1584px _Margin: 40px_    |
+  | -------------                                                         | -----------                                                           | -----                        | -------------                | -----------                  |
+  | _n/a Will turn into full page, see extra small left influencer grid_  | _n/a Will turn into full page, see extra small left influencer grid_  |   # of Col: 8                |    # of Col: 8               |    # of Col: 16              |
+  | —                                                                     | —                                                                     |   Width: 608px / 38rem       |    Width: 864px / 54rem      |    Width: 992px / 62rem      |
+  | —                                                                     | —                                                                     |   Offset: 352px / 22rem      |    Offset: 352px / 22rem     |    Offset: 424px / 26.5rem   |
+  | —                                                                     | —                                                                     |   Gutter: 32px / 2rem        |    Gutter: 32px / 2rem       |    Gutter: 32px / 2rem       |
+  | —                                                                     | —                                                                     |   Column: 48px / 3rem        |    Column: 80px / 5rem       |    Column: 32px / 2rem       |
+
+  ### Right influencer breakpoints
+
+  | sm-320px _Margin: 0px_                                                | md-672px _Margin: 16px_                                               | lg-1056px _Margin: 40px_     | xlg-1312px _Margin: 40px_    | max-1584px _Margin: 40px_    |
+  | -------------                                                         | -----------                                                           | -----                        | -------------                | -----------                  |
+  | _n/a Will turn into full page, see small right influencer grid_       | _n/a Will turn into full page, see small right influencer grid_       |   # of Col: 8                |    # of Col: 8               |    # of Col: 16              |
+  | —                                                                     | —                                                                     |   Width: 608px / 38rem       |    Width: 864px / 54rem      |    Width: 992px / 62rem      |
+  | —                                                                     | —                                                                     |   Offset: 96px / 6rem        |    Offset: 96px / 6rem       |    Offset: 168px / 10.5rem   |
+  | —                                                                     | —                                                                     |   Gutter: 32px / 2rem        |    Gutter: 32px / 2rem       |    Gutter: 32px / 2rem       |
+  | —                                                                     | —                                                                     |   Column: 48px / 3rem        |    Column: 80px / 5rem       |    Column: 32px / 2rem       |

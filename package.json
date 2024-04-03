@@ -1,0 +1,44 @@
+{
+  "name": "cdai-design-pal",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "=14",
+    "npm": "=6"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby build --log-pages --prefix-paths --verbose",
+    "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=development gatsby develop",
+    "dev:clean": "gatsby clean && npm run dev",
+    "serve": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby serve"
+  },
+  "dependencies": {
+    "@mdx-js/runtime": "^1.6.5",
+    "@uiw/react-md-editor": "^1.14.3",
+    "ace-builds": "^1.12.2",
+    "buffer": "^6.0.3",
+    "cdai-microsite-common-module": "git+ssh://git@github.ibm.com:cloud-integration-design/cdai-microsite-common.git#npm-next",
+    "classnames": "^2.3.2",
+    "framer-motion": "^2.5.1",
+    "front-matter": "^3.2.1",
+    "gatsby": "^3.0.0",
+    "gatsby-cli": "^3.0.0",
+    "gatsby-plugin-sharp": "^3.0.0",
+    "gatsby-remark-images": "^4.0.0",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-theme-carbon": "^2.3.2",
+    "gatsby-transformer-json": "^3.0.0",
+    "lodash": "^4.17.13",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "react": "^16.13.1",
+    "react-csv": "^2.2.2",
+    "react-dom": "^16.13.1",
+    "react-lottie": "^1.2.3",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "gh-pages": "^2.2.0"
+  }
+}

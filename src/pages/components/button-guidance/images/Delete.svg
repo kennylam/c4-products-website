@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Delete</title>
+    <g id="Delete" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fill" fill="#000000">
+            <path d="M12,12 L14,12 L14,24 L12,24 L12,12 Z M18,12 L20,12 L20,24 L18,24 L18,12 Z M4,6 L4,8 L6,8 L6,28 C6,29.1045695 6.8954305,30 8,30 L24,30 C25.1045695,30 26,29.1045695 26,28 L26,8 L28,8 L28,6 L4,6 Z M8,28 L8,8 L24,8 L24,28 L8,28 Z M12,2 L20,2 L20,4 L12,4 L12,2 Z"></path>
+        </g>
+    </g>
+</svg>

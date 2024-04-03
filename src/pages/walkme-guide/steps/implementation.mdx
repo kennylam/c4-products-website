@@ -1,0 +1,257 @@
+---
+title: Steps
+tabs: ['Usage', 'Content', 'Implementation']
+---
+
+<PageDescription>
+
+Like Popups, Steps are implemented by first creating a Smart Walk-Thru. Below you'll find step-by-step instructions on how to implement this component successfully. 
+
+</PageDescription>
+
+<AnchorLinks>
+
+  <AnchorLink>Create Steps</AnchorLink>
+  <AnchorLink>Change design</AnchorLink>
+  <AnchorLink>Change trigger</AnchorLink>
+  <AnchorLink>Adjust Step position</AnchorLink>
+  <AnchorLink>Add illustration / GIF</AnchorLink>
+  <AnchorLink>Add alternate X</AnchorLink>
+  <AnchorLink>Add a Spotlight</AnchorLink>
+  <AnchorLink>Add a Highlighter</AnchorLink>
+
+</AnchorLinks>
+
+## Create Steps
+
+Note: If you already have a Smart Walk-Thru created for your tour, you can skip the first two steps. 
+
+- Select the **orange plus buttton** to create a new item.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-1](/images/Steps_implementation-1.png)
+
+  </Column>
+</Row>
+
+- Then select **Smart Walk-Thru.**
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-2](/images/Steps_implementation-2.png)
+
+  </Column>
+</Row>
+
+- Next, name your Smart Walk-Thru and press **OK.**
+- Once in the Smart Walk-Thru, hover over the orange plus button and select **Step.**
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-3](/images/Steps_implementation-3.png)
+
+  </Column>
+</Row>
+
+- On your product UI, select the element you would like to connect Step to.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-4](/images/Steps_implementation-4.png)
+
+  </Column>
+</Row>
+
+- Then fill in the information including header and body text. You can always change this information later on.
+- If you would like to link another Step to the UI, click **Next Step** otherwise click **Done.**
+- Back in the WalkMe Editor, click into Step to make edits.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-5](/images/Steps_implementation-5.png)
+
+  </Column>
+</Row>
+
+
+## Change design
+
+You can remove the header or add in a GIF by changing Step templates.
+
+Note: When you change templates it overrides custom text so make sure you have your text saved in another location before proceeding.
+
+- Click **Change Design**.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-6](/images/Steps_implementation-6.png)
+
+  </Column>
+</Row>
+
+- Select template from the WalkMe Gallery.
+- Click **Continue** to override text and apply template.
+
+
+## Change trigger
+
+You can also choose to change the way the following Step or Popup is triggered. This will determine whether your Step has a Next button or not.
+
+- Next to "Step triggers" hover over the icons to reveal more information about options.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-7](/images/Steps_implementation-7.png)
+
+  </Column>
+</Row>
+
+- Then, select that option that suits your use case.
+
+For more questions about Triggers, [contact us](/walkme-guide/overview/contacts).
+
+
+## Adjust Step position
+
+You can adjust the Step position using the editor or directly in the product UI. To edit on page, follow the steps below.
+
+- Click **Edit on Page** (remember, you must be on the correct page in your browser that the Step is linked to. If you would like the step to be linked to a different element or if the Edit on Page button is not active, click **Re-select Element**).
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-8](/images/Steps_implementation-8.png)
+
+  </Column>
+</Row>
+
+- In the WalkMe editor, click the **Position From Element** dropdown.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-9](/images/Steps_implementation-9.png)
+
+  </Column>
+</Row>
+
+- Click the arrows to change which side of the element the Step is pointing to.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-10](/images/Steps_implementation-11.png)
+
+  </Column>
+</Row>
+
+- Change the px's in **Top** and **Left** to adjust the position.
+- To move px's to the right or the bottom, simply type in a "negative number".
+- To return to editor, click **Done**.
+
+## Add illustration / GIF
+
+To add an illustration or GIF, you must first select the Step templates labeled with "IMAGETOP".
+
+- Next, click on the area labeled 400x200.
+- Then click on the **image button**.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-11](/images/Steps_implementation-12.png)
+
+  </Column>
+</Row>
+
+From here, you can either choose to add an image by clicking "choose an image or drag it here" which will open up your desktops "finder (mac) / file explorer (windows) or you can link an illustration / GIF  from whichever Cloud Location it is stored by copying and pasting the link URL into the "or add an image URL" section.
+
+
+## Add alternate X
+
+Depending on the color pallete of your illustration / GIF, the default X button may not have enough contrast against the image to meet accessibility stadards. The following solution may be used to add an opacity behind the X icon.
+
+- First click Edit HTMl/CSS.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-12](/images/Steps_implementation-14.png)
+
+  </Column>
+</Row>
+
+- Then paste the following CSS at the bottom of the CSS console.
+
+```
+
+.walkme-custom-balloon-close-button {
+  width: 47px !important;
+  height: 47px !important;
+  top: 1px !important;
+  right: 1px !important;
+  background-color: rgba(0,0,0,0.7) !important;
+  background-position: 19px 18px !important;
+}
+
+```
+
+## Add a Spotlight
+
+- To add in a Spotlight click **Appearance**.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-13](/images/Steps_implementation-15.png)
+
+  </Column>
+</Row>
+
+- Then select **Spotlight Balloon**.
+- Toggle on the option by clicking the red toggle button.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-14](/images/Steps_implementation-16.png)
+
+  </Column>
+</Row>
+
+- Next Change the opacity to ".7" and the color to ""#161616".
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-15](/images/Steps_implementation-17.png)
+
+  </Column>
+</Row>
+
+
+## Add a highlighter
+
+- To add in a highlighter click **Appearance**.
+- Then select **Highlighter**.
+- Toggle on the option by clicking the red toggle button.
+- Next Change the thickness to "2px" and the color to "#A6C8FF".
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-16](/images/Steps_implementation-18.png)
+
+  </Column>
+</Row>
+
+
+For more questions, [contact us](/walkme-guide/overview/contacts).

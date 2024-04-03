@@ -1,0 +1,26 @@
+.infocard {
+  margin-bottom: $spacing-07;
+  min-height: 100%;
+}
+
+.infocard__main {
+  margin-bottom: $spacing-05;
+}
+
+.infocard__description {
+  @include carbon--type-style("body-short-02");
+  margin-bottom: $spacing-06;
+}
+
+//overrides
+.bx--tile {
+  min-height: 100%;
+}
+
+.bx--tab-content {
+  margin: $spacing-03;
+}
+
+.bx--tabs {
+  min-width: 20rem !important;
+}

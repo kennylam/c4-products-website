@@ -1,0 +1,177 @@
+[
+  {
+    "id": "01",
+    "title": "No data",
+    "details": "Common in first use experiences. Make sure to explain what will be in the empty space when it is populated and provide guidance for the user regarding next steps.",
+    "images": {
+      "bright": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-bright-box.svg",
+      "dark": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-dark-box.svg"
+    },
+    "alt": "Illustration of a closed box.",
+    "sources": {
+      "bright": "/static/e0a731b81cee6f75618bd15190762174/empty-state-bright-box.svg",
+      "dark": "/static/8f9ef08d455e621d30c97eb0b80e095a/empty-state-dark-box.svg"
+    },
+    "tableData": [
+      {
+        "id": "01",
+        "section": "Heading",
+        "text": "You don’t currently have any <variable>"
+      },
+      {
+        "id": "02",
+        "section": "Sub-text",
+        "text": "Optional extra sentence to describe the resource and how to create one"
+      },
+      {
+        "id": "03",
+        "section": "CTA Buttons",
+        "text": "If relevant, add a relevant CTA button"
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "title": "No results found",
+    "details": "Used when the user’s search parameters return no results.",
+    "images": {
+      "bright": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-bright-magnifying-glass.svg",
+      "dark": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-dark-magnifying-glass.svg"
+    },
+    "alt": "Illustration of a magnifying glass.",
+    "sources": {
+      "bright": "/static/8dacc9e2902750650f079504768c0fae/empty-state-bright-magnifying-glass.svg",
+      "dark": "/static/233e48c0fc00066f863be20d24629be2/empty-state-dark-magnifying-glass.svg"
+    },
+    "tableData": [
+      {
+        "id": "01",
+        "section": "Heading",
+        "text": "Hmm, your search didn’t return any results"
+      },
+      {
+        "id": "02",
+        "section": "Sub-text",
+        "text": "No need for any further text as this is a common user experience. Users know to return to the search box, etc."
+      },
+      { "id": "03", "section": "CTA Buttons", "text": "No CTA button required" }
+    ]
+  },
+  {
+    "id": "03",
+    "title": "System error (API error, generic error, etc)",
+    "details": "Used when the system can’t display the information due to an error. Explain steps the user can take to find out more detail and/or to resolve the problem. For example, view an activity log.",
+    "images": {
+      "bright": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-bright-error.svg",
+      "dark": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-dark-error.svg"
+    },
+    "alt": "Illustration of an exclamation point.",
+    "sources": {
+      "bright": "/static/782a0afeef9ab4fb9e792f2bca0928f5/empty-state-bright-error.svg",
+      "dark": "/static/b0323fbae5afd0c3f9748b97e02da8b0/empty-state-dark-error.svg"
+    },
+    "tableData": [
+      {
+        "id": "01",
+        "section": "Heading",
+        "text": "Uh oh. Something’s not quite right."
+      },
+      {
+        "id": "02",
+        "section": "Sub-text",
+        "text": "Optional: Where applicable, add further details regarding the error and how the user can fix it"
+      },
+      {
+        "id": "03",
+        "section": "CTA Buttons",
+        "text": "Try again?  (This will resend the request / refresh the view)"
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "title": "Deploying",
+    "details": "Note: Use the generic loading state whenever possible. We’ve included this particular scenario to cover first time usage when the deployment of a new service is happening in the background."
+  },
+  {
+    "id": "05",
+    "title": "Not authorized",
+    "details": "For when the user does not have permission to view the data. Suggest steps or process to request access.",
+    "images": {
+      "bright": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-bright-lock.svg",
+      "dark": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-dark-lock.svg"
+    },
+    "alt": "Illustration of a padlock.",
+    "sources": {
+      "bright": "/static/e18feb2982fa65a6f40a6f48d7d8b8bb/empty-state-bright-lock.svg",
+      "dark": "/static/0bbb167b787e067d4376def0119b3598/empty-state-dark-lock.svg"
+    },
+    "tableData": [
+      {
+        "id": "01",
+        "section": "Heading",
+        "text": "You don't have have permission to view this"
+      },
+      {
+        "id": "02",
+        "section": "Sub-text",
+        "text": "Contact the admin in charge of your account to request access"
+      },
+      { "id": "03", "section": "CTA Buttons", "text": "Not required." }
+    ]
+  },
+  {
+    "id": "06",
+    "title": "No notifications",
+    "details": "For when the user has no notifications.",
+    "images": {
+      "bright": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-bright-notification.svg",
+      "dark": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-dark-notification.svg"
+    },
+    "alt": "Illustration of a text notification.",
+    "sources": {
+      "bright": "/static/27a61da2e1f92e670cf2543b096c912e/empty-state-bright-notification.svg",
+      "dark": "/static/c4860cdcb568ecf0547080271e663bd6/empty-state-dark-notification.svg"
+    },
+    "tableData": [
+      {
+        "id": "01",
+        "section": "Heading",
+        "text": "You don't have any notifications"
+      },
+      {
+        "id": "02",
+        "section": "Sub-text",
+        "text": "Optional: You can view your notifications settings [here]"
+      },
+      { "id": "03", "section": "CTA Buttons", "text": "Not required." }
+    ]
+  },
+  {
+    "id": "07",
+    "title": "No label/tags",
+    "details": "For when the user has not created tags yet and is managing them.",
+    "images": {
+      "bright": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-bright-tag.svg",
+      "dark": "/src/components/SVGLibraries/shared/data/pages/empty-state/master-files/empty-state/assets/empty-state-dark-tag.svg"
+    },
+    "alt": "Illustration of a tag.",
+    "sources": {
+      "bright": "/static/d6bd6a1b10e0d0c375eb18e4608aed8d/empty-state-bright-tag.svg",
+      "dark": "/static/f9fd12d51a497cfdda06e9f1a271f2fa/empty-state-dark-tag.svg"
+    },
+    "tableData": [
+      {
+        "id": "01",
+        "section": "Heading",
+        "text": "You don't have any tags yet"
+      },
+      {
+        "id": "02",
+        "section": "Sub-text",
+        "text": "Optional: Tags make it easy for you to find things"
+      },
+      { "id": "03", "section": "CTA Buttons", "text": "Create +" }
+    ]
+  }
+]

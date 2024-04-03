@@ -1,0 +1,1529 @@
+{
+  "terms": [
+    {
+      "id": "1",
+      "title": "add",
+      "definition": "Takes an existing object and uses it in a new context (for example, adds an item to the cart, adds a user to a group, or adds a document to a folder).",
+      "compare": ["create", "insert", "new", "upload"],
+      "usage": "Where appropriate, combine add with the object (for example, \"add user\" or \"add role\").",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+    {
+      "id": "2",
+      "title": "apply",
+      "definition": "Saves incremental changes without closing the dialog (and note that these saved changes can affect subsequent system behavior). Or takes an existing resource and associates it with another resource (for example, applies an existing policy to an API).",
+      "compare": ["autosave", "save"],
+      "usage": "Use instead of \"Save changes\".",
+      "example": "Illustration of a closed box.",
+      "notification": {
+        "text": "",
+        "link": "https://github.com/carbon-design-system/carbon-website/issues/1276"
+      },
+      "last_updated": "01/01/21",
+      "used_by": ["(Global)"],
+      "source": ["Carbon > Carbon for IBM Products"]
+    },
+    {
+      "id": "3",
+      "title": "approve",
+      "definition": "Indicates the user agrees. In a business process, typically initiates the next step.",
+      "compare": ["reject"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+    {
+      "id": "4",
+      "title": "artificial intelligence (AI)",
+      "definition": "A system capable of simulating human intelligence and thought processes. Note that AI is a broad field of science that covers many sub-disciplines, including machine learning, visual recognition, and natural language processing.",
+      "compare": ["augmented intelligence"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+    {
+      "id": "5",
+      "title": "assistant",
+      "definition": "An AI-driven agent with domain knowledge that assists a human user with a task. Assistants may take the form of a chatbot or some other interface.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+    {
+      "id": "6",
+      "title": "augmented intelligence",
+      "definition": "A similar term to artificial intelligence but with more of a focus on AI's assistive role, emphasizing the fact that cognitive technology is designed to enhance human intelligence rather than replace it. ",
+      "compare": ["artificial intelligence (AI)"],
+      "usage": "The acronym AI is widely understood to refer to artificial intelligence, so do not use this same acronym to refer to \"augmented intelligence\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+    {
+      "id": "7",
+      "title": "back",
+      "definition": "Returns the user to the previous step in a sequence of steps, such as in a wizard.",
+      "compare": ["next", "finish"],
+      "usage": "Use instead of \"previous\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+    {
+      "id": "8",
+      "title": "browse",
+      "definition": "Assists the user in selecting a file (for example, on a button or link next to an entry field). Typically opens a secondary window where the user can locate and select the desired directory and file.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+    {
+      "id": "9",
+      "title": "cancel",
+      "definition": "Stops the current action and closes the dialog.",
+      "compare": ["reset"],
+      "usage": "Warn the user of any possible negative consequences of stopping an action from progressing, such as data corruption.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "10",
+      "title": "clear",
+      "definition": "This action clears all the fields or selections. Also deletes the contents of a document, such as a log. Typically the default selection or value is re-established for controls that always have a selection or value, such as radio buttons.",
+      "compare": ["delete", "remove"],
+      "usage": "Where appropriate, combine clear with the object (for example, \"clear fields\" or \"clear all\").",
+      "example": "",
+      "notification": {
+        "text": "",
+        "link": "https://github.com/carbon-design-system/carbon-website/issues/1277"
+      },
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "11",
+      "title": "close",
+      "definition": "Closes the current page or window (for example, closing a secondary window containing online help).  ",
+      "compare": ["cancel", "done"],
+      "usage": "Do not use close alongside OK or cancel actions.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "12",
+      "title": "confidence score",
+      "definition": "In AI contexts, the predicted probability of an answer being correct. This is often a numerical expression of certainty shown as a percentage.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+
+    {
+      "id": "13",
+      "title": "copy",
+      "definition": "Creates new instances of the selected objects in a specific destination. ",
+      "compare": ["new"],
+      "usage": "Combine copy with the object being copied (for example, \"copy folder\") or the destination (for example, \"copy to clipboard\") if there are multiple possibilities.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "14",
+      "title": "create",
+      "definition": "In general usage: Makes a new object from scratch (for example, creates a calendar event or creates a new document). ",
+      "compare": ["add", "copy", "create (IBM Cloud entry)", "insert", "new"],
+      "usage": "In scenarios where the user needs to supply some details or settings as part of the create process, use \"new\" to initiate the action and \"create\" to apply the user-supplied details or settings to the new object.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "15",
+      "title": "customize",
+      "definition": "Allow a user to make desired changes.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "16",
+      "title": "delete",
+      "definition": "Destroys an existing object so that it no longer exists (for example, deletes a file from a directory or deletes a value from a table cell).  ",
+      "compare": ["clear", "remove"],
+      "usage": "Where appropriate, combine delete with the object (for example, \"delete column\" or \"delete row\").",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "17",
+      "title": "docs",
+      "definition": "A commonly used abbreviation for documentation. Typically used as a link that opens a separate window containing the product documentation.",
+      "compare": ["learn more"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/21",
+      "used_by": ["(Global)"],
+      "source": ["Carbon > Carbon for IBM Products"]
+    },
+
+    {
+      "id": "18",
+      "title": "done",
+      "definition": "Indicates that the user has finished working in an environment (for example, editing templates) and wants to return to where he or she came from. ",
+      "compare": ["close", "finish"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "19",
+      "title": "download",
+      "definition": "Transfers a file from a remote system to a local system.",
+      "compare": ["upload"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "20",
+      "title": "drop",
+      "definition": "Use only when referring to dropping a database table.",
+      "compare": ["clear", "delete", "remove"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "21",
+      "title": "edit",
+      "definition": "Allows data or values to be changed.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "22",
+      "title": "empty trash",
+      "definition": "Permanently deletes all files or objects that have been placed into a trash container.",
+      "compare": ["move to trash"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "23",
+      "title": "entity",
+      "definition": "In AI contexts, a representation of a real-world object (such as a person, location, or bank account), used by a machine learning model. For example, in the chatbot utterance: \"I’d like to order some tacos and beer\", the entities would be tacos (food) and beer (drink). Typically, entities are nouns.",
+      "compare": ["intent"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+
+    {
+      "id": "24",
+      "title": "export",
+      "definition": "Saves data in a different format external to the system. Typically opens a secondary window for the user to specify the file type and destination (for example, storing table data as a set of comma-separated values).",
+      "compare": ["import"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "25",
+      "title": "filter",
+      "definition": "Shortens a list to objects that match the filter criteria. ",
+      "compare": ["find", "search"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "26",
+      "title": "find",
+      "definition": "Moves the cursor to the next element matching the specified criteria (for example, the next occurrence of a specific word within a page). ",
+      "compare": ["filter", "search"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "27",
+      "title": "finish",
+      "definition": "Indicates completion of a series of steps, such as in a wizard.",
+      "compare": ["done"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "28",
+      "title": "get help",
+      "definition": "Opens a search field from which the user can search for help information.",
+      "compare": ["docs", "learn more"],
+      "usage": "Use only as link text on the Support widget from the IBM Cloud console menu bar.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["IBM Cloud"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "29",
+      "title": "hide",
+      "definition": "Removes an element that was previously shown (for example, enables the user to hide details or descriptions).",
+      "compare": ["show"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "30",
+      "title": "import",
+      "definition": "Transforms data or objects from an external source. Typically opens a secondary window for the user to locate the external source.  ",
+      "compare": ["export"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "31",
+      "title": "insert",
+      "definition": "Adds an element at a particular position in an ordered view. For example, adding a picture to the body of a document or inserting a record into a table.  ",
+      "compare": ["add", "new"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "32",
+      "title": "insight",
+      "definition": "In AI contexts, an observation that a machine learning model makes about patterns or unique outliers in a set of data. This can be used, for example, to provide current snapshots and predictions of customer behaviors and attitudes.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+
+    {
+      "id": "33",
+      "title": "intent",
+      "definition": "Broadly, the goals, wants, needs, and values of users and businesses. Intent provides your solution’s purpose. In AI contexts, when a chatbot interprets a conversation, it identifies the action or purpose behind a user’s utterance (usually expressed by the verbs). These are identified as the intents. For example, in the utterance: “Where is the bathroom”, the intent is to find a location.",
+      "compare": ["entity"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+
+    {
+      "id": "34",
+      "title": "launch",
+      "definition": "–",
+      "compare": ["start"],
+      "usage": "Do not use launch. Instead, use \"start\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "35",
+      "title": "learn more",
+      "definition": "Opens additional, highly contextual information. Insert at the end of inline text or hover text where more information follows but does not fit in the current context.  ",
+      "compare": ["docs"],
+      "usage": "If space permits, combine learn more with meaningful text that describes the content you're pointing to. For example, if your user needs some best practices to manage apps in multiple regions, you could use \"Learn more about regions\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "36",
+      "title": "log in",
+      "definition": "Enters a site or application. This choice typically opens a form for entry of credentials. Also used on the submission button after users enter their credentials. ",
+      "compare": ["log out"],
+      "usage": "Use instead of \"sign in\". This is to make it visually distinct from Sign up. These options are often side by side and the different words allow for quick recognition",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "37",
+      "title": "log out",
+      "definition": "Exits an application or site.  ",
+      "compare": ["log in"],
+      "usage": "Use instead of \"sign out\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "38",
+      "title": "machine learning",
+      "definition": "A subset of artificial intelligence in the field of computer science that often uses statistical techniques to give computers the ability to \"learn\" (that is, to progressively improve performance on a specific task) with data, without being explicitly programmed.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+
+    {
+      "id": "39",
+      "title": "model / ML model",
+      "definition": "In machine learning contexts, a method for performing a function or making a decision by running data through a series of mathematical steps (that is, algorithms). The model represents the steps an intelligent machine will take to arrive at a decision.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+
+    {
+      "id": "40",
+      "title": "move",
+      "definition": "Transfers an object from one container (for example, folder, activity, or page) to another.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "41",
+      "title": "move to trash",
+      "definition": "A soft delete. Moves a file or object to an area from where it can later be permanently deleted or recovered.  ",
+      "compare": ["delete", "empty trash"],
+      "usage": "Use instead of \"delete\" if it is possible for the user to recover the objects. ",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "42",
+      "title": "new",
+      "definition": "Starts the creation of a new object. New either creates the object immediately or opens a dialog or set of fields where the user can enter properties.  ",
+      "compare": ["add", "copy", "create", "insert", "save as"],
+      "usage": "Combine new with the object to create (for example, \"new user\" or \"new column\"). ",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "43",
+      "title": "next",
+      "definition": "Advances the user to the next step in a sequence of steps, such as in a wizard.  ",
+      "compare": ["back", "finish"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "44",
+      "title": "OK",
+      "definition": "Confirms an action or completes the current task.  ",
+      "compare": ["–"],
+      "usage": "Best practice is to use a label corresponding to the specific action (for example, \"Save\" or \"Close\" or \"Delete\"). Use OK only when such a label is not available. Write as shown: two letters, both uppercase.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "45",
+      "title": "play",
+      "definition": "Starts audio, video, or an animation.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "46",
+      "title": "post",
+      "definition": "Adds a new comment to an online community or adds status to a log or record. ",
+      "compare": ["–"],
+      "usage": "If you are editing an existing comment, use \"save\" instead.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "47",
+      "title": "preview",
+      "definition": "Shows how an object or content will appear with formatting applied before the content is published or distributed. Alternatively, provides an incomplete display of an existing object without leaving the current context.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "48",
+      "title": "print",
+      "definition": "Sends a copy of the currently selected object or the object in view to the printer.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "49",
+      "title": "redo",
+      "definition": "Redoes an undo action.",
+      "compare": ["undo"],
+      "usage": "Likely used only as a tooltip on an icon button.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "50",
+      "title": "refresh",
+      "definition": "Reloads the view of an object when the displayed view has become out of sync with the source. ",
+      "compare": ["–"],
+      "usage": "Likely used only as a tooltip on an icon button.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "51",
+      "title": "register",
+      "definition": "–",
+      "compare": ["sign up"],
+      "usage": "Do not user \"register\". Instead, use \"sign up\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "52",
+      "title": "reject",
+      "definition": "Indicates the user does not approve. In a business process, typically blocks the process from proceeding to the next step.",
+      "compare": ["approve"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "53",
+      "title": "remove",
+      "definition": "Removes an object from the current context – but note that the object still exists (for example, removes a user from a group or removes an item from the cart).",
+      "compare": ["clear", "delete"],
+      "usage": "Where appropriate, combine remove with the object that will be removed (for example, \"remove user\" or \"remove role\").",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "54",
+      "title": "reply",
+      "definition": "Indicates or completes a response to an email or a comment.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "55",
+      "title": "reset",
+      "definition": "Reverts values back to their last saved state. The last saved state includes the values stored the last time the user clicked \"apply\". Does not close the dialog or window.  ",
+      "compare": ["cancel", "restore", "restore defaults", "undo"],
+      "usage": "–",
+      "example": "",
+      "notification": {
+        "text": "",
+        "link": "https://github.com/carbon-design-system/carbon-website/issues/1277"
+      },
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "56",
+      "title": "restore",
+      "definition": "Brings a file back after deletion, corruption, or similar event.",
+      "compare": ["reset"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "57",
+      "title": "restore all",
+      "definition": "Completes a restore operation on all files or objects in a given system or container.",
+      "compare": ["restore"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "58",
+      "title": "restore defaults",
+      "definition": "Sets form values to the default settings.",
+      "compare": ["reset", "undo"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "59",
+      "title": "run",
+      "definition": "Initiates a procedure. ",
+      "compare": ["–"],
+      "usage": "Use run instead of \"execute\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "60",
+      "title": "save",
+      "definition": "Saves pending changes made to a file, document, or UI component. In the case of a file or document, save does not close the window or panel.",
+      "compare": ["apply", "autosave", "save as"],
+      "usage": "Use instead of \"Save changes\".",
+      "example": "",
+      "notification": {
+        "text": "",
+        "link": "https://github.com/carbon-design-system/carbon-website/issues/1276"
+      },
+      "last_updated": "01/01/21",
+      "used_by": ["(Global)"],
+      "source": ["Carbon > Carbon for IBM Products"]
+    },
+
+    {
+      "id": "61",
+      "title": "save as",
+      "definition": "Creates a new object based on the state of the object currently being viewed. The user names the new object and typically identifies its location.",
+      "compare": ["autosave", "save"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "62",
+      "title": "search",
+      "definition": "Returns all objects (for example, files, names, or documents) within a defined set (for example, in a folder, directory, database, or the internet) that match some specified criteria.",
+      "compare": ["filter", "find"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "63",
+      "title": "select",
+      "definition": "Selects data from a table.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "64",
+      "title": "select all",
+      "definition": "Adds all objects in the view to the selection set or checks all checkboxes.",
+      "compare": ["clear"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "65",
+      "title": "send",
+      "definition": "Transfers an email or other information to the recipient or destination.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "66",
+      "title": "show",
+      "definition": "Reveals an object that was previously hidden (for example, shows descriptions or shows further details).",
+      "compare": ["hide"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "67",
+      "title": "sign up",
+      "definition": "Creates a user account or registers a user in a system.",
+      "compare": ["–"],
+      "usage": "Use instead of \"register\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "68",
+      "title": "sort",
+      "definition": "Sorts a list or table column.",
+      "compare": ["–"],
+      "usage": "Likely used only as a tooltip on an icon button. Can be used without \"ascending\" or \"descending\" only if the order can be provided to a screen reader in the code for accessibility.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "69",
+      "title": "start",
+      "definition": "Deploy an app or service to its development or production environment so that it can be used.",
+      "compare": ["–"],
+      "usage": "Use instead of \"launch\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "70",
+      "title": "submit an idea",
+      "definition": "Opens a separate window containing the IBM Cloud Ideas portal. ",
+      "compare": ["–"],
+      "usage": "Use only as link text on the Support widget from the console menu bar.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["IBM Cloud"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "71",
+      "title": "top / back to top",
+      "definition": "Returns the active focus to the top of the current page.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/21",
+      "used_by": ["(Global)"],
+      "source": ["Carbon > Carbon for IBM Products"]
+    },
+
+    {
+      "id": "72",
+      "title": "training",
+      "definition": "In AI contexts, the process of building a model through learning from a data set. Humans teach machine learning models to identify entities and intents in data by showing them examples and correcting the computer's responses until they identify things with an acceptable degree of accuracy.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+
+    {
+      "id": "73",
+      "title": "undo",
+      "definition": "Reverts to the state before the most recent changes made by the user. Repeated use successively reverts to prior states in reverse chronological order. Applies to changes in data and not to changes made to the view.",
+      "compare": ["redo", "reset", "restore"],
+      "usage": "Not all actions, such as \"save\"), can necessarily be undone.",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "74",
+      "title": "update",
+      "definition": "Label for a button in a dialog or form for editing an object. The settings in the dialog are applied to the object when it is updated. ",
+      "compare": ["edit"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "75",
+      "title": "upload",
+      "definition": "Transfers a file from a local system to a remote system.",
+      "compare": ["download"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "76",
+      "title": "view details",
+      "definition": "Presents additional information or properties for the object.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/01/19",
+      "used_by": ["(Global)"],
+      "source": ["Carbon"]
+    },
+
+    {
+      "id": "77",
+      "title": "Watson Machine Learning",
+      "definition": "An IBM Cloud service that is available through IBM Watson Studio, which uses trusted data to put machine learning and deep learning models into production. It leverages an automated, collaborative workflow to grow intelligent business applications easily and with more confidence.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "01/11/19",
+      "used_by": ["AI Apps"],
+      "source": ["Carbon for IBM Products"]
+    },
+
+    {
+      "id": "78",
+      "title": "autosave",
+      "definition": "Saves UI modifications (or an open document) automatically at periodic intervals to reduce the risk of data loss.",
+      "compare": ["apply", "save", "save as"],
+      "usage": "Suitable for situations where the task in hand is complex or time consuming to complete. There should be a visible indication to the user that autosave is happening.",
+      "example": "",
+      "notification": {},
+      "last_updated": "04/23/21",
+      "used_by": ["(Global)"],
+      "source": ["Carbon > Carbon for IBM Products"]
+    },
+
+    {
+      "id": "79",
+      "title": "on-premises / on-prem",
+      "definition": "Pertaining to software that is installed and run on the local computers of a user or organization.",
+      "compare": ["–"],
+      "usage": "Use \"on-premises\" or the abbreviation \"on-prem\". Do not use \"on-premise\" (without the s). The word \"premise\" relates to a proposition or argument, whereas the word \"premises\" relates to a building or site.",
+      "example": "",
+      "notification": {},
+      "last_updated": "05/07/21",
+      "used_by": ["(Global)"],
+      "source": ["Carbon for IBM Products"]
+    },
+
+    {
+      "id": "80",
+      "title": "accelerator",
+      "definition": "A set of assets that enable customers to understand core concepts and implement solutions.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "81",
+      "title": "add on",
+      "definition": "–",
+      "compare": ["service"],
+      "usage": "Do not use to mean \"an additional product or capability to your core product or capability\", use \"service\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "82",
+      "title": "application",
+      "definition": "One or more computer programs or software components that provide a function in direct support of a specific business process or processes.",
+      "compare": ["–"],
+      "usage": "Term is understood in context. Do not create additional specific definitions if you can help it.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "83",
+      "title": "capability",
+      "definition": "The core functions of a service. For example, the XYZ service provides \"monitoring\" capability.",
+      "compare": ["service"],
+      "usage": "Do not use synonymously with \"service.\" A \"capability\" is the function of the \"service.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "84",
+      "title": "cartridge",
+      "definition": "–",
+      "compare": ["service"],
+      "usage": "Do not use to mean \"an additional product or capability to your core product or capability\", use \"service\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "85",
+      "title": "component",
+      "definition": "–",
+      "compare": ["service"],
+      "usage": "Do not use to mean \"an additional product or capability to your core product or capability\", use \"service\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "86",
+      "title": "connector",
+      "definition": "The means by which a data source is connected to a product or service. For example, in CP4D, a template specifies the metadata required to connect, or, in CP4S, the code that facilitates the connection by way of a template between product and data source.",
+      "compare": ["integration", "service"],
+      "usage": "Do not use interchangeably with \"integration\". An integration exists outside of a product or service, a connector becomes one with the product or service.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "87",
+      "title": "custom resource",
+      "definition": "An instance of a custom resource definition.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "88",
+      "title": "custom resource definition",
+      "definition": "A customizable YAML file that defines a logically related group of objects in a cluster. Custom resource definitions enable a custom resource to be used like any native Kubernetes object in the cluster.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "89",
+      "title": "integration",
+      "definition": "ny independent application that provides additional capabilities to an IBM service or base product.",
+      "compare": ["connector", "service"],
+      "usage": "Do not use interchangeably with \"connector\". An integration exists outside of a product or service, a connector becomes one with the product or service.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "90",
+      "title": "migration",
+      "definition": "The process of moving applications, infrastructure, or data from one platform or system to another.",
+      "compare": ["modernization", "transformation"],
+      "usage": "Migration refers specifically to the act of moving content from a platform or system to another. Do not use to mean modernization or transformation.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "91",
+      "title": "modernization",
+      "definition": "The process of updating and improving the architecture of a system, application, or infrastructure by building on previously unused capabilities. Capabilities can be from unused features of a current platform or system, or from the migration to a new platform or system.",
+      "compare": ["migration", "transformation"],
+      "usage": "Modernization is the act of updating applications/platforms/infrastructure. Do not use to mean a migration or transformation.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "92",
+      "title": "module",
+      "definition": "–",
+      "compare": ["service"],
+      "usage": "Do not use to mean \"an additional product or capability to your core product or capability\", use \"service\".",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "93",
+      "title": "OpenID Connect (OIDC)",
+      "definition": "An identity protocol and open standard that is built on top of the OAuth 2.0 protocol. It enables client applications to rely on authentication that is performed by an OpenID Connect provider to verify the identity of a user.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "94",
+      "title": "operand",
+      "definition": "The service component used by an operator to execute actions.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "95",
+      "title": "operator",
+      "definition": "A system design that simulates user behavior by linking a controller to custom resources, simulating the act of observing differences in states then acting on them.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "96",
+      "title": "private key",
+      "definition": "The secret half of a cryptographic key pair that is used with a public key algorithm. The private key is known only to its owner. Private keys are typically used to digitally sign data and to decrypt data that has been encrypted with the corresponding public key.",
+      "compare": ["public key"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "97",
+      "title": "public key",
+      "definition": "The non-secret half of a cryptographic key pair that is used with a public key algorithm. The public key is made available to everyone. Public keys are typically used to verify digital signatures and to encrypt data that can be decrypted only with the corresponding private key.",
+      "compare": ["private key"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "98",
+      "title": "required component",
+      "definition": "In IBM Cloud Pak solutions, a non-client-facing component that supports one or more services.",
+      "compare": ["service"],
+      "usage": "See also \"service.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "99",
+      "title": "resource",
+      "definition": "A physical or logical component that can be provisioned or reserved for an application or service instance. Examples of resources can include storage, processors, memory, clusters, and VMs.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "100",
+      "title": "service",
+      "definition": "In IBM Cloud Pak solutions, a set of capabilities that provide functionality to a product.",
+      "compare": ["add on", "capability", "cartridge", "component", "connector", "integration", "module", "required component"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "101",
+      "title": "transformation",
+      "definition": "The process of replacing a platform or system to introduce additional capability or capacity. Migration and modernization can be facets of a transformation.",
+      "compare": ["migration", "modernization"],
+      "usage": "Moving to the IBM Cloud Paks. Standalone non-Kubernetes product to a IBM Cloud Pak or containerized software.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "102",
+      "title": "upgrade",
+      "definition": "To install a new version or release of a product to replace an earlier version or release of the same product.",
+      "compare": ["–"],
+      "usage": "Within a product, going from one version to another.",
+      "example": "",
+      "notification": {},
+      "last_updated": "06/22/21",
+      "used_by": ["Cloud Paks"],
+      "source": ["CCPCG"]
+    },
+
+    {
+      "id": "103",
+      "title": "billable account",
+      "definition": "Use to generically refer to Pay-As-You-Go and Subscription accounts.",
+      "compare": ["–"],
+      "usage": "Example: \"When you’re ready to grow, you can upgrade your Lite account to a billable account: Pay-As-You-Go or Subscription.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "104",
+      "title": "classic infrastructure",
+      "definition": "Use to refer to an infrastructure as a service (IaaS) solution that doesn’t include Virtual Private Cloud (VPC) offerings.",
+      "compare": ["–"],
+      "usage": "Example: \"Classic infrastructure and VPC infrastructure are cost neutral, so you can focus on which environment best meets your needs.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "105",
+      "title": "cloud",
+      "definition": "Use to describe remote computing setups that can be used without owning the entire machine. Write as shown (lower case) except for when it’s part of the platform name.",
+      "compare": ["–"],
+      "usage": "Example: \"The IBM Cloud platform is composed of multiple components that work together to provide a consistent and dependable cloud experience.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "106",
+      "title": "compute",
+      "definition": "Use to refer to infrastructure resources that serve as the basis for building apps in the cloud.",
+      "compare": ["–"],
+      "usage": "Example: \"You can demonstrate your skills with the compute, network, and storage capabilities of IBM Cloud.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "107",
+      "title": "cost estimator",
+      "definition": "Use to refer to the tool that is used to calculate the price of an offering before it’s purchased and an instance is created. Use sentence-style capitalization except for when you’re referring to the icon name.",
+      "compare": ["–"],
+      "usage": "Example: \"At any point, you can click the Cost estimator icon in the console menu to get a summary of your estimated costs.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "108",
+      "title": "create",
+      "definition": "IBM Cloud context: Use to refer to the process of creating (provisioning) an instance of an offering.",
+      "compare": ["create (general usage entry)"],
+      "usage": "Use as the label for a button, stand-alone or in a dialog or form, that creates a new object. Don’t include the offering name in the label.",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "109",
+      "title": "dashboard",
+      "definition": "Use to describe the default page that users land on when they log in to the IBM Cloud console. Contains numerous widgets for viewing a high-level summary of usage, users, support cases, resources, and more.",
+      "compare": ["–"],
+      "usage": "Example: \"You can customize your dashboard to ensure that what’s displayed is relevant to you.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "110",
+      "title": "devices",
+      "definition": "Use to refer to instances of Bare Metal Server and Virtual Server.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "111",
+      "title": "feature code",
+      "definition": "Use to refer to an IBM-provided code that is used to unlock new features, such as increased memory, and expand the capabilities of a Lite account.",
+      "compare": ["–"],
+      "usage": "Example: \"Feature codes are typically provided for certain events, such as educational sessions or conference workshops.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "112",
+      "title": "IBM Cloud catalog",
+      "definition": "Use to refer to the menu of available offerings. When referencing in the docs, include “IBM Cloud” in the first instance in each topic. Use “catalog” for subsequent instances within each topic. Use lower case for all instances of “catalog.”",
+      "compare": ["IBM Cloud console"],
+      "usage": "Example: \"Use resource groups to organize the resources that you create from the IBM Cloud catalog.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "113",
+      "title": "IBM Cloud console",
+      "definition": "Use to refer to the core UI for managing accounts, billing and usage, and access. When referencing in the docs, include “IBM Cloud” in the first instance in each topic. Use “console” for subsequent instances within each topic. Use lower case for all instances of “console.”",
+      "compare": ["IBM Cloud catalog"],
+      "usage": "Example: \"You can search for your resources from anywhere in the IBM Cloud console. From the console menu bar, type the name of a resource in the search field.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "114",
+      "title": "offering details page",
+      "definition": "Use to refer to the page that contains metadata, text, and media that describes an offering and configuration fields or pages, depending on the complexity of the offering’s configuration. Formerly known as the catalog details page.",
+      "compare": ["–"],
+      "usage": "Example: \"You can find details about the pricing plan on the offering details page.\"",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "115",
+      "title": "promo code",
+      "definition": "Use to refer to how discounts are applied to an order at checkout.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "116",
+      "title": "provision",
+      "definition": "Do not use. See \"create\".",
+      "compare": ["create"],
+      "usage": "–",
+      "example": "",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    },
+
+    {
+      "id": "117",
+      "title": "repo",
+      "definition": "Short for repository. Use to refer to the place where source code is created and updated.",
+      "compare": ["–"],
+      "usage": "–",
+      "example": "Example: \"Click View repo to access the starter kit code.\"",
+      "notification": {},
+      "last_updated": "11/15/21",
+      "used_by": ["IBM Cloud"],
+      "source": ["IBM Cloud"]
+    }
+
+  ]
+}
