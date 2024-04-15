@@ -14,9 +14,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{secrets.MERGE_ACTION}}
       - name: Use Node.js 18.x
         uses: actions/setup-node@v4
         with:
           node-version: "18.x"
+      - name: Install dependencies
+        run: yarn
+      - name: Build project
+        run: yarn build
+      - name: Deploy build artifacts to gh-pages
+        run: |
+          git config --global user.name ${{ secrets.BOT_NAME }}
+          git config --global user.email ${{ secrets.BOT_EMAIL}}
+
+          git remote add ghe-pal https://${{ secrets.BOT_NAME }}:${{ secrets.GHE_CARBON_PERSONAL_ACCCESS_TOKEN }}@github.ibm.com/CDAI-design/pal.git
+          git fetch ghe-pal public-deploy-workflow-test
+          git checkout -b public-deploy-workflow-test ghe-pal/public-deploy-workflow-test
+          git update-ref -d refs/remotes/ghe-pal/public-deploy-workflow-test
+          git pull ghe-pal public-deploy-workflow-test
+
+          echo 'test push from public/internal repo' > test.txt
+          git add .
+          git commit -m 'chore(test): test deploy from GH public/internal repo'
+          git push ghe-pal public-deploy-workflow-test
