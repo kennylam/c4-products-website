@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "license": "Apache-2.0",
   "engines": {
-    "node": "=14",
-    "npm": "=6"
+    "node": ">=18"
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby build --log-pages --prefix-paths --verbose",
@@ -17,7 +16,6 @@
     "@uiw/react-md-editor": "^1.14.3",
     "ace-builds": "^1.12.2",
     "buffer": "^6.0.3",
-    "cdai-microsite-common-module": "git+ssh://git@github.ibm.com:cloud-integration-design/cdai-microsite-common.git#npm-next",
     "classnames": "^2.3.2",
     "framer-motion": "^2.5.1",
     "front-matter": "^3.2.1",
