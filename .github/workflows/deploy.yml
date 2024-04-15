@@ -24,10 +24,10 @@ jobs:
         run: yarn build
       - name: Deploy build artifacts to gh-pages
         run: |
-          git config --global user.name ${{ secrets.BOT_NAME }}
+          git config --global user.name ${{ secrets.GHE_CARBON_USER }}
           git config --global user.email ${{ secrets.BOT_EMAIL}}
 
-          git remote add ghe-pal https://${{ secrets.BOT_NAME }}:${{ secrets.GHE_CARBON_PERSONAL_ACCCESS_TOKEN }}@github.ibm.com/CDAI-design/pal.git
+          git remote add ghe-pal https://${{ secrets.GHE_CARBON_USER }}:${{ secrets.GHE_CARBON_PERSONAL_ACCCESS_TOKEN }}@github.ibm.com/CDAI-design/pal.git
           git fetch ghe-pal public-deploy-workflow-test
           git checkout -b public-deploy-workflow-test ghe-pal/public-deploy-workflow-test
           git update-ref -d refs/remotes/ghe-pal/public-deploy-workflow-test
