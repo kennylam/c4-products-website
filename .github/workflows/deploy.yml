@@ -3,7 +3,7 @@ name: Deploy website to GHE Github Pages
 on:
   push:
     branches:
-      - feat/deploy-ghe-gh-pages-workflow
+      - main
 
 concurrency:
   group: deploy-${{ github.ref }}
