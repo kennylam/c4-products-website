@@ -37,8 +37,15 @@
     "sass": "^1.55.0"
   },
   "devDependencies": {
+    "@philpl/buble": "^0.19.7",
     "cross-env": "^7.0.2",
     "gh-pages": "^2.2.0"
   },
+  "browserslist": [
+    "last 1 edge version",
+    "last 1 firefox version",
+    "last 1 safari version",
+    "last 1 chrome version"
+  ],
   "packageManager": "yarn@4.1.1"
 }
