@@ -2899,6 +2899,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@philpl/buble@npm:^0.19.7":
+  version: 0.19.7
+  resolution: "@philpl/buble@npm:0.19.7"
+  dependencies:
+    acorn: "npm:^6.1.1"
+    acorn-class-fields: "npm:^0.2.1"
+    acorn-dynamic-import: "npm:^4.0.0"
+    acorn-jsx: "npm:^5.0.1"
+    chalk: "npm:^2.4.2"
+    magic-string: "npm:^0.25.2"
+    minimist: "npm:^1.2.0"
+    os-homedir: "npm:^1.0.1"
+    regexpu-core: "npm:^4.5.4"
+  bin:
+    buble: ./bin/buble
+  checksum: 10c0/3347a4f5ae1bde6b9cd40e1e9d6f1b7e8defa1d7d1d148f0a0a87f1f4489d7c6826bd0c2334add1233bbf378eb6397d9d3b9269baeb66341df7773751483a8ef
+  languageName: node
+  linkType: hard
+
 "@pkgjs/parseargs@npm:^0.11.0":
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
@@ -4065,6 +4084,15 @@ __metadata:
   version: 1.33.0
   resolution: "ace-builds@npm:1.33.0"
   checksum: 10c0/99322bc157f427d0db9a797647846d998296bf5119e72dfdb0fa13c9ff54c58ace1a706f84b22ea20408c8be00dfa0f160b8a22ead56de9498675299a277a19f
+  languageName: node
+  linkType: hard
+
+"acorn-class-fields@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "acorn-class-fields@npm:0.2.1"
+  peerDependencies:
+    acorn: ^6.0.0
+  checksum: 10c0/45f27a849178974e5b0fd727bbb63b5aa5498a58d9417b0bb3ad52979c66c94ec43b4de2c5a34f269b204bdad0cf47d55879a98f2171a8cc6bd3dde9c2a6f118
   languageName: node
   linkType: hard
 
@@ -5698,6 +5726,7 @@ __metadata:
   resolution: "cdai-design-pal@workspace:."
   dependencies:
     "@mdx-js/runtime": "npm:^1.6.5"
+    "@philpl/buble": "npm:^0.19.7"
     "@uiw/react-md-editor": "npm:^1.14.3"
     ace-builds: "npm:^1.12.2"
     buffer: "npm:^6.0.3"
@@ -13179,7 +13208,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.25.3":
+"magic-string@npm:^0.25.2, magic-string@npm:^0.25.3":
   version: 0.25.9
   resolution: "magic-string@npm:0.25.9"
   dependencies:
@@ -14986,6 +15015,13 @@ __metadata:
   version: 0.3.0
   resolution: "os-browserify@npm:0.3.0"
   checksum: 10c0/6ff32cb1efe2bc6930ad0fd4c50e30c38010aee909eba8d65be60af55efd6cbb48f0287e3649b4e3f3a63dce5a667b23c187c4293a75e557f0d5489d735bcf52
+  languageName: node
+  linkType: hard
+
+"os-homedir@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "os-homedir@npm:1.0.2"
+  checksum: 10c0/6be4aa67317ee247b8d46142e243fb4ef1d2d65d3067f54bfc5079257a2f4d4d76b2da78cba7af3cb3f56dbb2e4202e0c47f26171d11ca1ed4008d842c90363f
   languageName: node
   linkType: hard
 

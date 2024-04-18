@@ -14,14 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js 18.x
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
+          node-version: "14.x"
       - name: Install dependencies
-        run: yarn
+        run: npm i
       - name: Build project
-        run: yarn build:clean
+        run: npm run build:clean
       - name: Deploy build artifacts to gh-pages
         run: |
           git config --global user.name ${{ secrets.BOT_NAME }}
@@ -33,7 +33,7 @@ jobs:
           git update-ref -d refs/remotes/ghe-pal/public-deploy-workflow-test
           git pull ghe-pal public-deploy-workflow-test
 
-          echo 'test push from public/internal repo pt 2' > test.txt
+          echo 'test push from public/internal repo pt 3' > test.txt
           git add .
           git commit -m 'chore(test): test deploy from GH public/internal repo'
           git push ghe-pal public-deploy-workflow-test

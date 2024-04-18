@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "Apache-2.0",
   "engines": {
-    "node": ">=18"
+    "node": "=14"
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 gatsby build --log-pages --prefix-paths --verbose",
@@ -46,6 +46,5 @@
     "last 1 firefox version",
     "last 1 safari version",
     "last 1 chrome version"
-  ],
-  "packageManager": "yarn@4.1.1"
+  ]
 }
