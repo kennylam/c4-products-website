@@ -7,6 +7,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby build --log-pages --prefix-paths --verbose",
+    "build:clean": "gatsby clean && npm run build",
     "dev": "cross-env NODE_OPTIONS=--max_old_space_size=4096 NODE_ENV=development gatsby develop",
     "dev:clean": "gatsby clean && npm run dev",
     "serve": "cross-env NODE_OPTIONS=--max_old_space_size=4096 gatsby serve"
