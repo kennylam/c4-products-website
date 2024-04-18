@@ -37,7 +37,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-public-gatsby
       - name: Build project
-        run: yarn build
+        run: yarn build:clean
       - name: Deploy build artifacts to gh-pages
         run: |
           git config --global user.name ${{ secrets.BOT_NAME }}
