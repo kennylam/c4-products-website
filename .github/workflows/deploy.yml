@@ -1,0 +1,24 @@
+name: Deploy website to GHE Github Pages
+
+on:
+  push:
+    branches:
+      - chore/fresh-gatsby
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18.x"
+      - name: Install dependencies
+        run: npm i
+      - name: Build project
+        run: npm run build:clean
