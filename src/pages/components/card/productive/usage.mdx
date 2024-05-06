@@ -1,0 +1,494 @@
+---
+title: Productive card
+tabs: ["Usage", "Style", "Code"]
+---
+
+import { Breadcrumb, BreadcrumbItem, Tag } from "carbon-components-react";
+
+
+<Breadcrumb className="page__breadcrumb">
+  <BreadcrumbItem href="https://pages.github.ibm.com/cdai-design/pal/components/card/overview">
+    Card overview
+  </BreadcrumbItem>
+</Breadcrumb>
+
+<div className="tag-group">
+  <Tag type="purple">Carbon 11 (v2)</Tag><Tag type="blue">Carbon 10 (v1)</Tag>
+</div>
+
+<Row>
+<Column colMd={5} colLg={8}>
+
+<PageDescription>
+
+Productive cards provide the user with detailed information often related to their everyday workflow within an application.
+</PageDescription>
+
+</Column>
+
+<Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
+  <Aside>
+
+  **Last updated**<br/>
+  May 2023 (v2 updates)
+
+  </Aside>
+</Column>
+</Row>
+
+<AnchorLinks>
+  <AnchorLink>Overview</AnchorLink>
+  <AnchorLink>Formatting</AnchorLink>
+  <AnchorLink>Content</AnchorLink>
+  <AnchorLink>Modifiers</AnchorLink>
+  <AnchorLink>Best practices</AnchorLink>
+  <AnchorLink>Related</AnchorLink>
+</AnchorLinks>
+
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![intro image](../images/overview-productive.png)
+
+</Column>
+</Row>
+
+## Overview
+
+Productive cards include more content than expressive cards, offering an overview of often dynamic information that the user can manipulate or expand in various ways.
+
+
+### When to use
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+Productive cards are largely interactive grouping of information and are often used in homepages, dashboards, or reporting interfaces.
+
+</Column>
+
+</Row>
+
+<Row>
+<Column colMd={8} colLg={10}>
+
+- Use a productive card when the data within needs to be manipulated or filtered.
+- Use a productive card when the container can resize or reorder.
+- Use productive cards to present digestible summaries of dynamic information.
+
+
+</Column>
+</Row>
+
+### When not to use
+
+<Row>
+<Column colMd={8} colLg={10}>
+
+- Do not use productive cards to group multi-step tasks. Use the card to guide the user to a new page, panel, modal, or tearsheet to complete a complex task.
+- Consider using a [tile](https://www.carbondesignsystem.com/components/tile/usage) if the content cannot be summarized or related to more than one section or topic. 
+- Do not use productive cards for large calls to action. Use an [expressive card](https://pages.github.ibm.com/cdai-design/pal/components/card/expressive/usage) instead.  
+
+
+</Column>
+</Row>
+
+## Formatting
+### Anatomy
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![Productive anatomy](../images/productive-anatomy.png)
+
+</Column>
+</Row>
+<Row>
+<Column colMd={8} colLg={8}>
+
+#### 1. Action title block
+Contains the header text and label or description of the card's purpose. The block's right side is the primary toolbar for actions that manipulate the card content. 
+
+#### 2. Body content
+The body content area displays various elements based on the use-case. Productive card content is dynamic and often can be editable.
+
+#### 3. Supplemental action bar (optional)
+The secondary action bar provides the user with direct access to a new page that expands the productive card’s information. 
+
+</Column>
+
+<Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
+<br></br>
+<Aside>
+When the card uses a label only instead of a title, the card uses a complex bottom action bar. See action bar section for more guidance.   
+</Aside>
+
+</Column>
+</Row>
+
+### Sizing
+Both the expressive and the productive card have four widths available for use based on the Carbon 16 column grid.
+- Use small as the standard size for most of the expressive cards and productive cards.
+- Use medium for more essential callouts. Large size works well for productive cards with bigger charts.
+- Use large and full width for productive cards when there are multiple levels of information hierarchy and complex charts.
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![panel-widths](../images/card-with.png)
+
+</Column>
+</Row>
+
+### Action bars
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+#### Primary action bar (standard)
+
+Use the primary action bar for actions that manipulate the card content, such as filtering, creating, or editing. These actions should always be at the right side of the title block as icon or ghost buttons. 
+</Column>
+
+<Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
+<br></br>
+<Aside>
+The primary action bar is part of the title block. This is the standard placement of manipulative actions.
+</Aside>
+</Column>
+
+</Row>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![primary action bar](../images/primary-bar.png)
+
+</Column>
+</Row>
+<br></br>
+<br></br>
+<br></br>
+Number of actions allowed per size
+
+<Tabs>
+<Tab label="4 columns">
+
+Use overflow if there are more than **two actions** in productive cards of 4 columns.
+<br></br>
+
+<Column colLg='8' noGutterMdLeft>
+
+![4 columns actions](../images/4col-actions.png)
+
+</Column>
+</Tab>
+
+<Tab label="8 columns">
+
+Use overflow if there are more than **three actions** in productive cards of 8 columns.
+<br></br>
+
+<Column colLg='8' noGutterMdLeft>
+
+![8 columns actions](../images/8col-actions.png)
+
+</Column>
+
+</Tab>
+<Tab label="12 and 16 columns">
+
+Use overflow if more than **four actions** in productive cards of 12 and 16 columns.
+<br></br>
+
+<Column colLg='12' noGutterMdLeft> 
+
+![12 columns actions](../images/12col-actions.png)
+
+</Column>
+</Tab>
+</Tabs>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+#### Supplemental bar (standard)
+
+Use a supplemental action bar to take the user to a new page, modal, or tearsheet, or open a side panel with additional information related to the content of the card. 
+
+</Column>
+
+<Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
+<br></br>
+<Aside>
+Limit this bar to a single ghost button or clickable status icons.
+</Aside>
+</Column>
+</Row>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![panel-widths](../images/suplemental-bar.png)
+
+</Column>
+</Row>
+
+<br></br>
+<br></br>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+#### Complex bottom action bar
+Use a complex bottom bar for both primary and supplemental action **only** when: 
+- The card doesn’t have a title and only uses a label in the title block.
+- The title is longer than two lines and because of its relevance, it can't be truncated.
+- There are multiple action states.
+
+Do not use complex bottom action bars for chart actions, nor in combination with the standard primary action bar. If used, keep consistency across the page layout.
+
+Place all manipulative actions to the right and supplemental actions to the left of the bar. 
+
+</Column>
+
+<Column colMd={2} colLg={3} offsetMd={1} offsetLg={1}>
+<br></br>
+<Aside>
+Use the complex bottom bar just as an alternative for when the title block cannot be used to place action buttons. This bar is not the standard use. 
+</Aside>
+</Column>
+</Row>
+
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+![panel-widths](../images/complex-bar.png)
+
+</Column>
+</Row>
+
+<br></br>
+<br></br>
+<br></br>
+
+<Title>Number of actions allowed per size</Title>
+
+<Tabs>
+<Tab label="4 columns">
+
+Use overflow if there are more than **three** manipulative actions at the right of 4 columns complex bottom bars
+<br></br>
+
+<Column colLg='8' noGutterMdLeft>
+
+![4 columns bottom actions](../images/4col-bottom-actions.png)
+
+</Column>
+</Tab>
+
+<Tab label="8 to 16 columns">
+
+Use overflow if there are more than **four** manipulative actions in productive cards of 8 columns or more.
+<br></br>
+
+<Column colLg='8' noGutterMdLeft>
+
+![8 columns actions](../images/8col-bottom-actions.png)
+
+</Column>
+
+</Tab>
+
+</Tabs>
+
+### Action zones
+<Accordion>
+<AccordionItem title="Single">
+The entire card can be clickable when it serves as a navigational point to another page and does not use manipulative or supplemental actions.
+<br></br>
+<br></br>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+<GifPlayer color='dark'>
+
+![Single action zone](../images/single-zone.gif)
+
+![Single action zone](../images/single-zone.png)
+
+</GifPlayer>
+</Column>
+</Row>
+</AccordionItem>
+
+<AccordionItem title="Two zones">
+<Row>
+<Column colMd={8} colLg={8}>
+If the title block does not include actions and there is a clickable body content and a supplemental bar, the title block should be part of the clickable body content zone. 
+<br></br>
+<br></br>
+</Column>
+</Row>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+<GifPlayer color='dark'>
+
+![Two zones](../images/action-zone2.gif)
+
+![Two zones](../images/action-zone2.png)
+
+</GifPlayer>
+</Column>
+</Row>
+
+</AccordionItem>
+
+<AccordionItem title="Three zones">
+<Row>
+<Column colMd={8} colLg={8}>
+Productive cards can include three action zones: primary and supplemental action bars and a clickable body content. Separate the body’s actionable zone from the action bars. 
+<br></br>
+<br></br>
+</Column>
+</Row>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+<GifPlayer color='dark'>
+
+![Three zones](../images/action-zone3.gif)
+
+![Three zones](../images/action-zone3.png)
+
+</GifPlayer>
+</Column>
+</Row>
+</AccordionItem>
+
+<AccordionItem title="Stackable body content">
+<Row>
+<Column colMd={8} colLg={8}>
+Use multiple body content sections when the card serves as a list of content that shares the same type of information, format and each item takes the user to a different page.
+Each body content can be clickable independently. A divider must separate the sections, and the interactive states should be the same as a clickable card.
+<br></br>
+<br></br>
+
+</Column>
+
+</Row>
+
+<Row>
+<Column colMd={8} colLg={8}>
+
+<GifPlayer color='dark'>
+
+![InternalCTA](../images/multi-zone.gif)
+
+![InternalCTA](../images/multi-zone.png)
+
+</GifPlayer>
+</Column>
+</Row>
+</AccordionItem>
+
+</Accordion>
+
+
+## Content
+### Main elements
+
+<Title>Title (optional)</Title>
+
+- The title should clearly describe the purpose of the card. 
+- The title should be brief and truncated after two lines.
+- You can use an optional label above the title to set the context for the panel’s information or a description below to expand the title’s content. 
+- Use a label if the card does not have a title.
+
+
+<Title>Body copy</Title>
+
+- The content type can vary depending on the card’s purpose; it often compiles a set of detailed information relevant to the user’s workflow.  
+ - Content can include text, tables, charts, lists, or status icons that can be manipulated by the user.
+- The content usually has multiple information hierarchy levels, so the composition should respond to the use case.
+
+
+<Title>Charts</Title>
+
+- Charts are often used within the body content block, especially on dashboard or reporting interfaces. Follow the Carbon guidance on charts.
+
+
+<Title>Primary and ghost buttons</Title>
+
+
+- Primary actions can include editing, creating, filtering, removing or deleting, configuration, etc.
+- Supplemental action takes the user to a new page and communicates what the user will see.
+- Keep actions brief and relevant to the use case. If the number of primary actions surpasses the number allowed per card’s size, use an overflow menu.
+- Use descriptive words for the actions. Avoid vague words.  
+- Supplemental actions should be minimal and on a lower hierarchy than manipulative actions. 
+- Card using primary and supplemental actions should follow the Carbon guidelines for [button usage](https://www.carbondesignsystem.com/components/button/usage) and action labels.
+
+
+### Further guidance
+For further content guidance, see [Carbon’s content guidelines](https://www.carbondesignsystem.com/guidelines/content/overview/) and our own [content guide](https://pages.github.ibm.com/cdai-design/pal/content/main/overview).
+
+
+
+
+## Modifiers
+
+### Light & dark theming
+Productive cards use the same UI tokens for Gray 10 and Gray 100 themes.
+
+ <Row>
+ <Column colMd={8} colLg={8}>
+
+![Theme Example](../images/productive-theme.png)
+
+</Column>
+</Row>
+
+<Caption>See the Style tab for theme color token specifications.</Caption>
+
+## Best practices
+
+### Do’s
+
+- Use standard action bars as the default unless the card meets the cases to use a complex bottom bar.
+- Use a limited number of internal links.
+- Use a 16px or 2px gutter between cards in page layouts.
+- Truncate the title at two lines. 
+
+
+### Don’ts
+
+- Do not mix standard action bars with complex bottom bars in the same layout.
+- Do not use more than four internal links inside a card. 
+- Do not use clickable cards when there is an internal link. 
+- Do not use primary buttons in productive cards. 
+
+
+
+## Related
+
+- [Tile](https://carbondesignsystem.com/components/tile/usage/)
+- [Buttons](https://www.carbondesignsystem.com/components/button/usage)
+- [Link](https://www.carbondesignsystem.com/components/link/usage)
+- [Edit](https://www.carbondesignsystem.com/community/patterns/edit-pattern/)
+- [Create flow](https://www.carbondesignsystem.com/community/patterns/create-flows/)
+
+## Feedback
+
+Help us improve this pattern by providing feedback, asking questions, and leaving any other comments on <a href="https://github.ibm.com/CDAI-design/pal/issues/new/choose">GitHub</a>.
+For questions about code, reach out in <a href="https://ibm-casdesign.slack.com/archives/C013ZTX0N6B">#ibmproducts-pal-dev</a> or open an issue on the `@carbon/ibm-products` <a href="https://github.com/carbon-design-system/ibm-cloud-cognitive/issues/new/choose">GitHub</a>.
+
+## Contributors
+
+- Kacie Eberhart
+- Johanna Koval

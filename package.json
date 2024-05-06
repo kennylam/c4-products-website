@@ -12,8 +12,9 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "framer-motion": "^2.5.1",
     "gatsby": "^3.3.1",
-    "gatsby-theme-carbon": "^3.4.19",
+    "gatsby-theme-carbon": "^2.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

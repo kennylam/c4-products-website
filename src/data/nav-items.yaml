@@ -1,84 +1,306 @@
-- title: Getting started
+- title: Overview
   pages:
-    - path: /getting-started
-- title: Demo
+    - title: About
+      path: /overview/about/
+    - title: Contacts
+      path: /overview/contacts
+    - title: "IBM Product specifications"
+      path: /overview/carbon-specifications
+    - title: "Asset index"
+      path: /overview/asset-index
+    - title: "Carbon for IBM Products"
+      path: /overview/video
+- title: Contributing
   pages:
-    - path: /demo
-- title: Gallery
-  pages:
-    - path: /gallery
-- title: Contributions
-  pages:
-    - path: /contributions
-- title: Guides
-  pages:
-    - title: Authoring MDX
-      path: /guides/MDX
-    - title: Configuration
-      path: /guides/configuration
-    - title: Gatsby Sketch kit
-      path: /guides/sketch-kit
-    - title: Hosting
-      path: /guides/hosting
-    - title: Navigation
-      path: /guides/navigation/sidebar
-    - title: npm scripts
-      path: /guides/npm-scripts
-    - title: Shadowing
-      path: /guides/shadowing
-    - title: Styling
-      path: /guides/styling
-    - title: v2.0 Migration
-      path: /guides/v2-migration
+    - title: "Overview"
+      path: /contributing/overview
+    - title: "Contribution framework"
+      path: /contributing/contribution-framework/intent
+    - title: "Implementation"
+      path: /contributing/coding-components-patterns/overview
+    - title: "Publishing documentation"
+      path: /contributing/updating-this-site/overview
 - title: Components
   pages:
-    - title: Accordion
-      path: /components/Accordion
-    - title: AnchorLinks
-      path: /components/AnchorLinks
-    - title: ArtDirection
-      path: /components/ArtDirection
-    - title: ArticleCard
-      path: /components/ArticleCard
-    - title: Aside
-      path: /components/Aside
-    - title: Caption
-      path: /components/Caption
-    - title: Code blocks
-      path: /components/code-blocks
-    - title: DoDontExample
-      path: /components/DoDontExample
-    - title: DoDontRow
-      path: /components/DoDontRow
-    - title: FeatureCard
-      path: /components/FeatureCard
-    - title: FeedbackDialog
-      path: /components/FeedbackDialog
-    - title: GifPlayer
-      path: /components/GifPlayer
-    - title: Grid
-      path: /components/Grid
-    - title: ImageCard
-      path: /components/ImageCard
-    - title: ImageGallery
-      path: /components/ImageGallery
-    - title: InlineNotification
-      path: /components/InlineNotification
-    - title: Markdown
-      path: /components/markdown
-    - title: MediumPosts
-      path: /components/MediumPosts
-    - title: MiniCard
-      path: /components/MiniCard
-    - title: PageDescription
-      path: /components/PageDescription
-    - title: ResourceCard
-      path: /components/ResourceCard
-    - title: SquareCard
-      path: /components/SquareCard
-    - title: Tabs
-      path: /components/Tabs
-    - title: Title
-      path: /components/Title
-    - title: Video
-      path: /components/Video
+    - title: Cards
+      path: /components/card/overview
+      subpage:
+        - title: "Expressive cards"
+          path: /components/card/expressive/usage
+        - title: "Productive cards"
+          path: /components/card/productive/usage
+    - title: "Data spreadsheet"
+      path: /components/data-spreadsheet/usage
+    - title: "Color picker"
+      path: /components/color-picker/usage
+    - title: "Data table extensions"
+      path: /components/data-table/overview
+      subpage:
+        - title: "Data table column customization"
+          path: /components/data-table/column-customization
+        - title: "Data table column alignment"
+          path: /components/data-table/column-alignment
+        - title: "Data table clickable row items"
+          path: /components/data-table/clickable-row-items
+        - title: "Data table row action buttons"
+          path: /components/data-table/row-action-buttons
+        - title: "Data table headers"
+          path: /components/data-table/headers
+        - title: "Data table expandable rows"
+          path: /components/data-table/expandable-rows
+        - title: "Data table inline editing"
+          path: /components/data-table/inline-editing
+        - title: "Data table nested rows"
+          path: /components/data-table/nested-rows
+        - title: "Data table resizable columns"
+          path: /components/data-table/resizable-columns
+    - title: "Grid behaviors"
+      path: /components/grid-behaviors
+    - title: "Onboarding"
+      path: /components/onboarding/overview
+      subpage:
+        - title: "Assistance panel"
+          path: /components/onboarding/assistance-panel/usage
+        - title: "Checklist"
+          path: /components/onboarding/checklist/usage
+        - title: "Coachmark"
+          path: /components/onboarding/coachmark/usage
+        - title: "Guided banner"
+          path: /components/onboarding/guided-banner/usage
+        - title: "Inline tip"
+          path: /components/onboarding/inline-tip/usage
+        - title: "Interstitial"
+          path: /components/onboarding/interstitial/usage
+        - title: "Launcher"
+          path: /components/onboarding/launcher/usage
+        - title: "Nonlinear reading"
+          path: /components/onboarding/nonlinear-reading/usage
+        - title: "Shoutout"
+          path: /components/onboarding/shoutout/usage
+        - title: "Smart walk-thru"
+          path: /components/onboarding/smart-walk-thru/usage
+        - title: "SmartTip"
+          path: /components/onboarding/smarttip/usage
+        - title: "Walkme guide"
+          path: /components/onboarding/walkme-guide/overview
+    - title: "Options tile"
+      path: /components/options-tile/usage
+    - title: "Page header"
+      path: /components/page-header/usage
+    - title: "Progressive loading bar"
+      path: /components/progressive-loading-bar/usage
+    - title: "Side panel"
+      path: /components/side-panel/usage
+    - title: "Tag set"
+      path: /components/tag-set
+    - title: Tearsheet
+      path: /components/tearsheet/usage
+- title: Patterns
+  pages:
+    - title: "Add and select"
+      path: /patterns/add-and-select/usage
+    - title: "About modal"
+      path: /patterns/about-modal/usage
+    - title: Canvas
+      path: /patterns/canvas/usage
+      subpage:
+        - title: "Canvas style"
+          path: /patterns/canvas/canvas-style
+        - title: Nodes
+          path: /patterns/canvas/nodes/nodes-overview
+        - title: "Card nodes"
+          path: /patterns/canvas/nodes/card-nodes
+        - title: "Shape nodes"
+          path: /patterns/canvas/nodes/shape-nodes
+        - title: "Bullet nodes"
+          path: /patterns/canvas/nodes/bullet-nodes
+        - title: Links
+          path: /patterns/canvas/links
+        - title: "Node configuration"
+          path: /patterns/canvas/node-configuration
+    - title: "Create flows"
+      path: /patterns/creation-flows/usage
+    - title: "Dashboards"
+      path: /patterns/dashboards/usage
+      subpage:
+        - title: "Dashboard intent"
+          path: /patterns/dashboards/dashboard-intent
+        - title: "Dashboard hierarchy"
+          path: /patterns/dashboards/dashboard-hierarchy/overview
+        - title: "Dashboard list page"
+          path: /patterns/dashboards/dashboard-hierarchy/dashboard-list-page
+        - title: "Views"
+          path: /patterns/dashboards/dashboard-hierarchy/views
+        - title: "Sections"
+          path: /patterns/dashboards/dashboard-hierarchy/sections
+        - title: "Dashboard layouts"
+          path: /patterns/dashboards/layouts
+        - title: "Dashboard functions"
+          path: /patterns/dashboards/dashboard-functions/overview
+        - title: "Additive and destrictve functions"
+          path: /patterns/dashboards/dashboard-functions/additive-and-destructive-functions
+        - title: "Edit"
+          path: /patterns/dashboards/dashboard-functions/edit
+        - title: "Filter"
+          path: /patterns/dashboards/dashboard-functions/filter
+        - title: "Refresh"
+          path: /patterns/dashboards/dashboard-functions/refresh
+        - title: "Bulk actions"
+          path: /patterns/dashboards/dashboard-functions/bulk-actions
+        - title: "Card functions"
+          path: /patterns/dashboards/card-functions/overview
+        - title: "Additive and destructive functions"
+          path: /patterns/dashboards/card-functions/additive-and-destructive-functions
+        - title: "Edit"
+          path: /patterns/dashboards/card-functions/edit
+        - title: "Miscellaneous functions"
+          path: /patterns/dashboards/card-functions/misc-functions
+        - title: "Dashboard card types"
+          path: /patterns/dashboards/card-types
+    - title: "Drag and drop"
+      path: /patterns/drag-and-drop/usage
+    - title: "Edit and update"
+      path: /patterns/edit/usage
+    - title: "Emails"
+      path: /patterns/emails/overview
+      subpage:
+        - title: "IBMid emails"
+          path: /patterns/emails/ibmid-emails
+        - title: "MCSP emails"
+          path: /patterns/emails/mcsp-emails
+        - title: "SSM emails"
+          path: /patterns/emails/ssm-emails
+    - title: "Empty state"
+      path: /patterns/empty-state/usage
+    - title: Export
+      path: /patterns/exporting/usage
+    - title: "Generating an API key"
+      path: /patterns/generating-api-key/usage
+    - title: "Global header"
+      path: /patterns/global-header/usage
+    - title: "Full-page errors"
+      path: /patterns/full-page-errors/usage
+    - title: "Import and upload"
+      path: /patterns/importing/usage
+    - title: "Login & logout"
+      path: /patterns/login-logout/overview
+      subpage:
+        - title: "URX login"
+          path: /patterns/login-logout/urx-login
+        - title: "URX logout"
+          path: /patterns/login-logout/urx-logout
+    - title: Notifications
+      path: /patterns/notifications/usage
+    - title: "Onboarding"
+      path: /patterns/onboarding/overview
+      subpage:
+        - title: "Guided paths"
+          path: /patterns/onboarding/guided-paths/usage
+        - title: "Orientation"
+          path: /patterns/onboarding/orientation/usage
+    - title: "Profile header menu"
+      path: /patterns/profile-header-menu/usage
+    - title: "Registration"
+      path: /patterns/registration/overview
+      subpage:
+        - title: "AWS registration"
+          path: /patterns/registration/aws-registration
+        - title: "IBM Cloud registration"
+          path: /patterns/registration/ibm-cloud-registration
+        - title: "Multi-factor authentication enrollment"
+          path: /patterns/registration/multi-factor-authentication-enrollment
+        - title: "URX registration"
+          path: /patterns/registration/urx-registration
+    - title: Remove
+      path: /patterns/removing/usage
+    - title: Saving
+      path: /patterns/saving/usage
+    - title: "Status icons"
+      path: /patterns/status-icons/usage
+    - title: Toolbars
+      path: /patterns/toolbars/usage
+    - title: "Trial countdown"
+      path: /patterns/trial-countdown/usage
+    - title: "Try and Buy routes to market"
+      path: /patterns/try-and-buy-routes-to-market/overview
+      subpage:
+        - title: "AWS Marketplace listing page"
+          path: /patterns/try-and-buy-routes-to-market/aws-marketplace-listing-page
+    - title: "UI navigation"
+      path: /patterns/ui-navigation/usage
+    - title: "Upgrade & purchase"
+      path: /patterns/upgrade-purchase/overview
+      subpage:
+        - title: "AWS upgrade and purchase"
+          path: /patterns/upgrade-purchase/aws-upgrade-purchase
+        - title: "Try offer upgrade"
+          path: /patterns/upgrade-purchase/try-offer-upgrade
+    - title: "User profile images"
+      path: /patterns/user-profile-images/usage
+    - title: "Web terminal"
+      path: /patterns/web-terminal/usage
+- title: "IBM Product layouts"
+  pages:
+    - path: /layouts/library
+- title: Illustrations
+  pages:
+    - path: /illustrations/library
+- title: "Content guide"
+  pages:
+    - title: Overview
+      path: /content/main/overview
+    - title: "Our personality"
+      path: /content/our-personality
+    - title: "Content principles"
+      path: /content/content-principles
+    - title: "Language and grammar"
+      path: /content/language-and-grammar
+    - title: Capitalization
+      path: /content/capitalization
+    - title: Punctuation
+      path: /content/punctuation
+    - title: Numbers
+      path: /content/numbers
+    - title: "Information architecture"
+      path: /content/ia
+    - title: "Navigation labels"
+      path: /content/navigation-labels
+    - title: "Button labels"
+      path: /content/button-labels
+    - title: "Content heuristics"
+      path: /content/content-heuristics
+    - title: Terminology
+      path: /content/terminology/approved-terms
+- title: Novice to pro guidance
+  pages:
+    - title: Overview
+      path: /novice-to-pro/overview
+- title: "WalkMe guide"
+  pages:
+    - title: Overview
+      path: /walkme-guide/overview
+- title: "Cloud Pak guidance"
+  pages:
+    - title: Login
+      path: /cloud-paks/login/usage
+    - title: Navigation
+      path: /cloud-paks/navigation/usage
+    - title: "Cross Pak switcher"
+      path: /cloud-paks/cross-pak-switcher/usage
+    - title: "Integrated interactions"
+      path: /cloud-paks/integrated-framework/overview
+- title: "Try offers"
+  pages:
+    - title: Overview
+      path: /try-offers/overview
+- title: "PLG and MultiCloud SaaS"
+  pages:
+    - title: Overview
+      path: /saas-for-hyperscalers/overview
+- title: "AI Design"
+  pages:
+    - title: Overview
+      path: /ai-design/overview
+    - title: "AI explainability"
+      path: /ai-design/ai-explainability
+  hasDivider: true
