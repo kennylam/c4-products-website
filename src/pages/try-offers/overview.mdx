@@ -1,0 +1,199 @@
+---
+title: Try offers
+---
+
+import { Breadcrumb, BreadcrumbItem } from "carbon-components-react";
+import { Link } from "gatsby";
+
+<PageDescription>
+
+A Try offer is a limited, no-cost product experience which enables users to match their business needs to your product. The three types of IBM Try offers are Sandbox Trial, Trial, and Freemium. This page helps you understand and implement best practices for your Try offer. 
+</PageDescription>
+
+<AnchorLinks>
+<AnchorLink> Overview </AnchorLink>
+<AnchorLink> Seamless registration promotes adoption </AnchorLink>
+<AnchorLink> Demonstrate value quickly </AnchorLink>
+<AnchorLink> Create an exceptional user experience </AnchorLink>
+<AnchorLink> Provide clear purchase and upgrade paths </AnchorLink>
+<AnchorLink> Self-report pattern adoption </AnchorLink>
+</AnchorLinks>
+
+
+## Overview
+
+A key objective in a product-led experience is to enable potential customers to easily try a working instance of your product. Try offers engage your target audience to demonstrate product capabilities, through Aha! moments, to convert your Try users into purchasing customers. 
+
+#### Successful Try offers
+
+A successful Try offer: 
+
+1. Minimizes friction to enable users to easily try your IBM product.
+2. Demonstrates product value by guiding Try users to their Aha! moments.
+3. Offers an exceptional user experience that converts Try users to product buyers. 
+
+The three Try offers provide you with a choice for how best to optimize the user experience for your product: Sandbox Trial, Trial, or Freemium. Each type of Try offer has specific benefits and limitations. PLG recommends implementing one Try offer with a direct path to purchase, but multiple Try experiences may be used when necessary to  convert users to paid subscriptions. 
+
+<div className="expressive-content-list-group">
+  <ExpressiveList 
+    title="Sandbox Trial"
+    background="true">
+    A Sandbox Trial is a guided experience, with a low barrier to entry, which leads users through key product capabilities to show value (Aha! moments). Sandbox Trials do not support user-provided data and may have restricted functionality or features. They are also time-bound and designed to promote a purchase or an upgrade to a Trial experience. 
+  </ExpressiveList>
+
+  <ExpressiveList 
+    title="Trial"
+    background="true">
+    A Trial is an immersive experience that allows users to access an instance of a product for evaluation. A Trial can be a guided tour of Aha! moments or an explore-on-your-own experience. Trials allow users to upload their own data and may have restricted functionality or features. They are also time-bound (30 days for example), and should encourage the user to purchase in-product or contact sales if needed. 
+  </ExpressiveList>
+    
+  <ExpressiveList 
+    title="Freemium"
+    background="true">
+    A Freemium is a customer acquisition model that provides indefinite access to a product, with restricted functionality and features, at no charge. Freemiums can support user-provided data and are not time-bound, meaning users can try a limited product experience for an unlimited amount of time. Freemiums are designed to demonstrate enough value, even with restricted functionality and features, that users will purchase or upgrade to another Try offer.  
+  </ExpressiveList>
+</div>
+
+The following diagram illustrates the key differences between the three types of Try offers. More than one may be suitable for your product. Start with the option that is the best fit, and then collect data to assess whether a different Try offer should be used.
+
+<Row>
+  <Column colMd={6} colLg={8}>
+
+![try-offer-graphic](images/try-offer-graphic.png)
+
+  </Column>
+</Row>
+
+## Seamless registration promotes adoption
+
+A seamless registration process provides your users with momentum to try and buy your product. Gating Try offers with varying registration requirements is a careful balance between minimizing signup friction and gathering user data for analytics and nurturing.
+
+### Registration form
+
+Your Try offer registration form should enable users to:
+
+1. Quickly note the duration and benefits of your Try offer.
+2. Easily complete the registration process.
+3. Provide the minimum amount of information to register.
+4. Immediately access the Try offer upon completion.
+
+Which patterns to choose for your registration experience depends on various factors, including the marketplace where your product is offered and the platform where your Try offer is provisioned. Patterns for a unified registration experience are available.
+
+### Marketplaces
+
+Marketplaces are online storefronts for your product, and include [IBM Cloud Catalog](https://cloud.ibm.com/catalog), [IBM Marketplace](https://mediacenter.ibm.com/channel/IBM+Marketplace/73629932), and [AWS Marketplace](https://aws.amazon.com/marketplace). (Third-party marketplaces in addition to Amazon Web Services (AWS) may become available.)
+
+IBM Cloud products are listed on both [IBM Cloud Catalog](https://cloud.ibm.com/catalog) and [IBM Marketplace](https://mediacenter.ibm.com/channel/IBM+Marketplace/73629932). IBM MultiCloud Scalable Platform (MCSP) products are listed on both third-party marketplaces and IBM marketplaces. The flow for registering and accessing your Try offer varies based on the marketplace the user starts from. Be sure to review the registration, usage, and upgrade patterns for your product marketplace(s). 
+
+
+<Tabs>
+
+<Tab label="Products on MCSP">
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Products on MCSP](images/Products-on-MCSP.png)
+
+  </Column>
+</Row>
+
+  
+#### Try offer journeys depend on the marketplace 
+The following diagrams show the backend processes and design patterns used for a Try offer. Use this diagram to understand the key differences in the user journey, which depend on their starting point (marketplace) and membership in MultiCloud SaaS Platform (MCSP).
+
+</Tab>
+
+
+<Tab label="Products NOT on MCSP">
+<Row>
+  <Column colMd={8} colLg={10}>
+
+![Products on MCSP](images/Products-not-on-MCSP.png)
+
+  </Column>
+</Row>
+
+#### Try offer journeys depend on marketplace 
+The following diagrams show the backend processes and design patterns used for a Try offer. Use this diagram to understand the key differences in the user journey, which depend on their starting point (marketplace) and membership in MultiCloud SaaS Platform (MCSP).
+
+</Tab>
+</Tabs>
+
+### IBM Marketplace
+
+[IBM Marketplace](https://mediacenter.ibm.com/channel/IBM+Marketplace/73629932) is the online storefront for all IBM products, including Software and SaaS. All IBM products, including IBM Cloud products, are listed here, and registration and billing are handled through IBM. Users can try and buy directly through IBM Marketplace, and manage their products and subscriptions through [myibm.com](https://myibm.ibm.com/dashboard/). 
+
+With the exception of IBM Cloud products, products listed on IBM Marketplace require only an IBMid to register for a Try offer. Products can be listed on IBM Marketplace **autonomously** or by adopting [MultiCloud SaaS Platform](https://w3.ibm.com/w3publisher/multicloud-saas-platform) (MCSP). MCSP enables Try offers and purchases of IBM SaaS products on third-party marketplaces such as AWS. 
+
+<InlineNotification kind="info">
+  Note: MCSP products are enabled for listing on AWS, and expansion to additional third-party marketplaces, such as Microsoft Azure and Google, is planned.
+</InlineNotification>
+
+Refer to the Registration patterns page for details on designing your product experience for third-party marketplaces. 
+
+<MiniCard title="Registration patterns" actionIcon="arrowRight" href="/patterns/registration/overview">
+  </MiniCard>
+
+### IBM Cloud Catalog
+
+[IBM Cloud Catalog](https://cloud.ibm.com/catalog) is the marketplace for all IBM Cloud products. All IBM Cloud products are listed here, and registration and billing are handled by IBM Cloud. Users can try and buy directly through IBM Cloud Catalog, and products listed in this marketplace are managed through the IBM Cloud platform. 
+
+To use a Try offer for a product in IBM Cloud Catalog, the user will need an IBM Cloud account. This process includes the creation of an IBMid (or log in) and providing a credit card for identity verification only. IBM Cloud has a service framework that dictates how products are onboarded from the IBM Cloud Catalog. Refer to the IBM Cloud service framework for the steps a user must follow to register for your IBM Cloud Try offer or to purchase your product. Visit the Registration patterns page for IBM Cloud Catalog design patterns.
+
+<CardGroup>
+  <MiniCard title="IBM Cloud service framework" href="https://w3.ibm.com/w3publisher/cloudarchitecture/service-framework">
+  </MiniCard>
+  <MiniCard title="Registration patterns" actionIcon="arrowRight" href="/patterns/registration/overview">
+  </MiniCard>
+</CardGroup>
+
+### Third-party marketplaces
+
+Some IBM customers have existing technology stacks built on third-party SaaS platforms (such as AWS, Azure, and Google) and have incentives to purchase products from these third-party marketplaces. Through MCSP, IBM offers some products on AWS, including IBM Software (on-prem) and SaaS products. Customers using third-party marketplaces to  register for IBM Try offers and purchase IBM products must have an account with the third party, which also manages billing. An IBMid is also required.
+
+IBM [MultiCloud SaaS Platform](https://w3.ibm.com/w3publisher/multicloud-saas-platform) makes IBM products available through third-party marketplaces. MCSP provides guidance for IBM product teams to offer their products on third-party marketplaces through a common registration and provisioning experience. 
+
+<InlineNotification kind="info">
+  Note: MCSP products are enabled for listing on AWS, and expansion to additional third-party marketplaces, such as Microsoft Azure and Google, is planned.
+</InlineNotification>
+
+Review the guidance in the MCSP service framework, and the Registration patterns page, to get started on third-party marketplaces.
+
+<CardGroup>
+  <MiniCard title="MCSP service framework" href="https://pages.github.ibm.com/ibm-saas-platform/MultiCloud-SaaS-Framework/">
+  </MiniCard>
+  <MiniCard title="Registration patterns" actionIcon="arrowRight" href="/patterns/registration/overview">
+  </MiniCard>
+</CardGroup>
+
+## Demonstrate value quickly
+
+Once a user has registered for a Try offer, it’s critical to show them how the product meets their business needs. Crafting an exceptional onboarding experience is an essential step, as it enables users to find their value in the product in a personalized, interactive way. Creating effective onboarding is your team’s opportunity to guide users to their Aha! moments to demonstrate value.
+
+Aha! moments are points in time when a user recognizes how the product can meet their business needs. They are emotional and inspiring moments that have the power to convert a Try offer user into a puchasing customer.
+
+Designing an effective onboarding experience takes some planning and strategic thinking. The Onboarding patterns page provides guidance for your team to align around these topics. Use this guidance to dive deeper into these concepts and find the right patterns to leverage for your product’s experience.
+
+<MiniCard title="Onboarding patterns" actionIcon="arrowRight" href="/patterns/onboarding/overview">
+  </MiniCard>
+
+## Create an exceptional user experience
+
+Everything the Try offer user has experienced to this point has been designed to convert them into a purchasing customer. The final objective is to motivate the user to purchase.
+
+It’s important to maintain communication with the Try offer user as one way to encourage them to purchase. Emails are one way to asynchronously communicate outside of the product. Send transactional emails to keep your users informed about the status of their Try offer, and send nurture emails to guide them towards purchasing the product. 
+
+Email patterns ensure that communication is consistent across all IBM products. Review the Email patterns page to find the right patterns to use for your product marketplaces.  
+
+<MiniCard title="Email patterns" actionIcon="arrowRight" href="/patterns/emails/overview">
+  </MiniCard>
+
+## Provide clear purchase and upgrade paths
+
+A critical step is to provide users with clear purchase and upgrade paths. Review the Upgrade and purchase patterns page to find the right patterns to use for your product and marketplaces. 
+
+<MiniCard title="Upgrade and purchase patterns" actionIcon="arrowRight" href="/patterns/upgrade-purchase/overview">
+  </MiniCard>
+
+## Self-report pattern adoption
+<iframe class="airtable-embed" src="https://airtable.com/embed/appvxykrpLizynCkz/pagzLYfbD8cXW0WZT/form" frameborder="0" onmousewheel="" width="100%" height="2050" style="background: transparent; border: 1px solid #ccc;"></iframe>

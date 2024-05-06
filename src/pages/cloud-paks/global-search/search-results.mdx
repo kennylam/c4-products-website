@@ -1,0 +1,320 @@
+---
+title: Search results
+tabs: ['Overview', 'Search bar', 'Search results', 'Accessibility']
+stage: '3'
+---
+
+<PageDescription>
+
+The search results page displays results based on the keyword that is typed into the global search bar.
+
+</PageDescription>
+
+<AnchorLinks>
+    <AnchorLink>Anatomy</AnchorLink>
+    <AnchorLink>Layout Grid</AnchorLink>
+    <AnchorLink>Page header</AnchorLink>
+    <AnchorLink>Result tiles</AnchorLink>
+    <AnchorLink>Empty and error states</AnchorLink>
+    <AnchorLink>Filters</AnchorLink>
+</AnchorLinks>
+
+
+## Anatomy
+### Default state
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![ Search Results Anatomy](/images/SearchResults-Anatomy.png)
+
+</Column>
+</Row>
+
+
+1. **Global search bar:** Always present in the global header 
+2. **Page header:** Contains the search result title and 'return to' breadcrumb
+3. **Filter panel:** Vertical filter panel consists of 'Type' filter and subfilters. 
+4. **Showing # of results:** maximum of 25 results will be shown per page 
+5. **Sort by:** Dropdown allows you to sort your results
+6. **Result tiles:** The results reflect the keyword that was searched for in the global header. 
+7. **Pagination:** Allows the user to quickly jump to different pages in the search results.
+
+<br/>
+
+### Type filter applied
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![ Search Results (with filters) Anatomy](/images/AnatomySearchResults-Filters.png)
+
+</Column>
+
+</Row>
+
+8. **Filter tags:** Appear at the top of the result tiles as filters are applied  
+
+
+## Layout grid
+Global search uses the Carbon [2x Grid](https://www.carbondesignsystem.com/guidelines/2x-grid/overview/), narrow mode as the base layout grid. The filter panel sits on 4 columns and the result tiles sit on 12 columns. 
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![ Layout Grid ](/images/LayoutGrid.png)
+
+</Column>
+</Row>
+
+
+## Page header
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Page header](/images/SearchResults-PageHeader.png)
+
+</Column>
+</Row>
+
+
+
+1. **Return To breadcrumb:** A link to the page the search was launched from
+
+<InlineNotification>
+Currently we are using the breadcrumb component. However, our ideal solution contains the
+<a href="https://pages.github.ibm.com/cdai-design/pal/cloud-paks/integrated-framework/components#returnto-banner"> Return To banner</a>, which we will adopt when the code is ready. 
+</InlineNotification>
+
+2. **Search results title:** Informs the user of the searched keyword
+
+
+## Result tiles
+
+The result tile will display key attributes dynamically based on what is available for that asset.
+
+#### Default attributes
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Result tile (default)](/images/ResultTiles02.png)
+
+</Column>
+</Row>
+
+
+1. **Object type**
+2. **Result name:** Click on result name to navigate to the object
+3. **Breadcrumb:** Navigates the user to the breadcrumb's location when clicked on
+
+<br/>
+<br/>
+
+#### Optional attributes
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Result tile (with additional attributes)](/images/Results-Optional.png)
+
+</Column>
+</Row>
+
+
+
+4. **Description:** A description will only appear if it has been defined for a given object
+5. **Additional attributes:** Dependent upon the result's Type. Different results may have different additional attributes 
+'Owner' or 'Modified by' and 'Created on' or 'Modified on' are common across all Types
+6. **Tags:** Tags are assigned when an object or asset is created. They appears as their own line underneath the additional attributes
+
+### Highlighting
+
+Matched keyword should be bolded in Carbon `text-01` everywhere it appears in the result tile.
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Result tile (highlighting)](/images/ResultTiles-Highlighting.png)
+
+</Column>
+</Row>
+
+
+### Maximum width
+- The maximum width of the description is 80% of the result tile.
+- The first column of additional attributes has a max width of 30% the length of the result tile. 
+- The second column of additional attributes has a max width of 48% the length of the result tile.
+- There should be a 16px spacer to separate the two columns.
+- Content is truncated if it exceeds its max width.
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Result tile (content width)](/images/ResultTiles-ContentWidth.png)
+
+</Column>
+</Row>
+
+
+
+## Empty and error states
+
+### Empty state
+Display the empty state if user conducts a search that yields no results. This occurs when:
+
+
+1. The user types in a keyword that does not have a match
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Empty state (no match)](/images/EmptyState01.jpg)
+
+</Column>
+</Row>
+
+
+
+<br/>
+<br/>
+
+2. The user applies too many filters and there are no results that fit the filter criteria
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Empty state (too many filters)](/images/EmptyState02.jpg)
+
+</Column>
+</Row>
+
+
+
+
+### Error state
+If the user conducts a search that results in an error (i.e. 404 error) display the error state.
+
+<Row>
+<Column colMd={4} colLg={12}>
+
+![Error state](/images/ErrorState.jpg)
+
+</Column>
+
+</Row>
+
+
+## Filters
+
+### Filter levels
+There are two filter levels.
+- **Level 1 Default filters:** Appear by default
+- **Level 2 Subfilters:** Appear when a Type is selected. The set of subfilters may be different depending on the selected Type.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Filter levels](/images/SearchResults-FilterLevels.png)
+
+</Column>
+</Row>
+
+### Types of filters
+
+The filter panel contains 3 different types of subfilters:
+- [Single select](https://www.carbondesignsystem.com/patterns/filtering/#single-selection)
+- [Multiselect](https://www.carbondesignsystem.com/patterns/filtering/#multiselect)
+- [Date filter](https://www.carbondesignsystem.com/components/date-picker/usage/)
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Filter types](/images/FilterTypes.png)
+
+</Column>
+</Row>
+
+
+
+<br/>
+<br/>
+
+For each subfilter, the top 6 options will be displayed by default. If the number of subfilter options exceeds 6, a [combobox](https://www.carbondesignsystem.com/components/dropdown/usage/#combo-box) will be present.
+If the searched for item is in the displayed list, the order of the list will be maintained.
+If the searched for item is not in the displayed list, it will be appended to the top of the list. 
+
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Combobox interaction](/images/ComboboxInteraction.png)
+
+</Column>
+</Row>
+
+
+
+
+### Cancel and Apply
+
+<InlineNotification>
+For the interim design, the filter panel will have 'Cancel' and 'Apply' buttons which will enable the changes that are made within the filter panel. 
+In our ideal design, we will not have the 'Cancel' and 'Apply' buttons and instead, the results will update as filters are applied.
+</InlineNotification>
+
+By default, the 'Cancel' and 'Apply' buttons are disabled. When subfilter options are selected, the 'Cancel' and 'Apply' buttons become active. 
+When changes are applied, the 'Cancel' and 'Apply' buttons become inactive once again until further changes are made.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Apply and Cancel](/images/Filters-ApplyCancel.png)
+
+</Column>
+</Row>
+
+
+- **Cancel:** Reverts back to the previous selections.
+- **Apply:** Applies any changes made in the filter panel to the search results.
+
+### Filter tags
+
+As filters are applied, they appear as tags above the result tiles. They will appear in the order in which they are added.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Filter tags](/images/FilterTags.png)
+
+</Column>
+</Row>
+
+
+
+- Multiselect options appear as their own tags
+- The format is < Filter name > : < Option >
+- To clear the filters using the filter tags. the user can select "Clear all"
+- If the user wants to clear a single filter, they may do so in the filter panel
+
+<InlineNotification>
+When we are able to remove the 'Cancel' and 'Apply' buttons, we will update the filter tags from the default tag component to the filterable tag component.
+</InlineNotification>
+
+<br/>
+<br/>
+
+#### Filter tags overflow
+Filter tags may extend up to the spacers/edge of the result tiles (indicated by the spacer).
+If there is overflow, the next filter should be pushed to the next line.
+
+<Row>
+<Column colMd={4} colLg={8}>
+
+![Filter tags overflow](/images/FilterTagOverflow.png)
+
+</Column>
+</Row>
+
+

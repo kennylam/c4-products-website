@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1152px" height="648px" viewBox="0 0 1152 648" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Banner</title>
+    <defs>
+        <linearGradient x1="50%" y1="65.8203125%" x2="100%" y2="34.1796875%" id="linearGradient-1">
+            <stop stop-color="#005D5D" offset="0%"></stop>
+            <stop stop-color="#0F62FE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Banner" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="1152" height="648"></rect>
+        <polygon id="Polygon" fill="#A8F3F3" points="897 -44 1174.12813 116 1174.12813 436 897 596 619.871871 436 619.871871 116"></polygon>
+        <g id="Group" transform="translate(601.000000, 505.000000)">
+            <circle id="Oval" fill="#D0B0FF" cx="32" cy="32" r="32"></circle>
+            <circle id="Oval-Copy" fill="#4F2196" cx="180" cy="120" r="32"></circle>
+        </g>
+        <g id="Group-Copy" opacity="0.243570964" transform="translate(679.000000, 553.000000)">
+            <circle id="Oval" fill="#D0B0FF" cx="32" cy="32" r="32"></circle>
+            <circle id="Oval-Copy" fill="#4F2196" cx="180" cy="120" r="32"></circle>
+        </g>
+        <rect id="Rectangle" fill="#20D5D2" transform="translate(390.000000, 256.000000) scale(-1, 1) rotate(30.000000) translate(-390.000000, -256.000000) " x="244" y="229" width="292" height="54"></rect>
+        <rect id="Rectangle-Copy-2" fill="#20D5D2" opacity="0.214592343" transform="translate(455.000000, 256.000000) scale(-1, 1) rotate(30.000000) translate(-455.000000, -256.000000) " x="309" y="229" width="292" height="54"></rect>
+        <rect id="Rectangle-Copy" fill="#006D6B" transform="translate(111.000000, 256.000000) scale(-1, 1) rotate(30.000000) translate(-111.000000, -256.000000) " x="-35" y="229" width="292" height="54"></rect>
+        <rect id="Rectangle-Copy-3" fill="#006D6B" opacity="0.214592343" transform="translate(176.000000, 256.000000) scale(-1, 1) rotate(30.000000) translate(-176.000000, -256.000000) " x="30" y="229" width="292" height="54"></rect>
+    </g>
+</svg>

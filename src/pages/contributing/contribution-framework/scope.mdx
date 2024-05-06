@@ -1,0 +1,149 @@
+---
+title: Scope
+tabs: ['Intent', 'Scope', 'Iterate', 'Develop']
+---
+
+<PageDescription>
+
+Okay, so your team has identified a clear user need that you intend to meet with a new asset. But before diving into the design phase, pause and look into any similar existing assets, as one or more of these could serve as a useful base for your new contribution. 
+During this phase, you'll also need to clearly define the context for your new asset.
+
+</PageDescription>
+
+<CardGroup>
+  <MiniCard title="Custom asset scoping worksheet" actionIcon="launch" href="https://ibm.box.com/s/fkhbtb4vqc7ge7zqo62olli73soti3qr" />
+</CardGroup>
+
+<AnchorLinks>
+  <AnchorLink to="#step-1">Step 1: Is your asset novel?</AnchorLink>
+  <AnchorLink to="#step-2">Step 2: Define the context of your asset</AnchorLink>
+  <AnchorLink to="#step-3">Step 3: Submit your asset for review</AnchorLink>
+</AnchorLinks>
+
+<br />
+
+<div id="step-1" />
+
+<ExpressiveListContainer title="Step 1" text={
+<>
+
+#### Is your asset novel
+
+Assets are constantly being built and published, and some might be similar to what you’re designing or might provide a useful base for you to extend.
+
+You need to be aware of what other assets already exist to be able to make an informed decision about whether a new asset is really needed. Familiarizing yourself with existing assets will also help you design and code your new asset in a way that will be consistent with existing resources. 
+
+<EnumerationCards>
+  <li>
+    Start by looking at the assets available in our <a href="../../overview/asset-index">Carbon for IBM Products site</a>. Note in particular any assets that are similar or related to the problem space you are designing for.
+  </li>
+  <li>
+    Schedule a meeting with the <a href="https://pages.github.ibm.com/cdai-design/pal/overview/contacts">Design System Adoption Guild (DSAG) team</a>. You'll be able to share your intent and find out about any similar use cases or in-progress assets that are not yet published on the Carbon for IBM Products site. Feel free to contact your DSAG representative at any time to discuss your ideas or work.
+  </li>
+  <li>
+    Ask in Slack channels, and find out if anyone is working on a similar concept.
+  </li>
+</EnumerationCards>
+
+
+#### Capture answers to the following questions
+
+<EnumerationCards>
+  <li>
+    Could your use case be solved by extending one of the existing assets?
+  </li>
+  <li>
+    If there is an existing asset that you might be able to extend to meet your use case, have you familiarized yourself with the asset documentation?
+  </li>
+  <li>
+    If you are enhancing an existing asset, what are the accessibility patterns that apply to it?
+  </li>
+</EnumerationCards>
+
+</>
+} />
+
+<div id="step-2" />
+
+<ExpressiveListContainer title="Step 2" text={
+<>
+
+#### Define the context of your asset
+
+In this step, we will define where and how the asset appears in the product’s UI, if it has multiple appearances, depending on different scenarios, and how accessibility might affect its design.
+
+#### For designers
+
+<EnumerationCards color="cyan10">
+  <li>
+    Where will the asset appear within your product’s UI (Side panel, header nav, main stage, etc.)?
+  </li>
+  <li>
+    Is the asset nested within an existing pattern (i.e. Create pattern, form, etc.)?
+  </li>
+  <li>
+    What does the design of your asset look like, if it changes based on different scenarios?
+  </li>
+  <li>
+    What accessibility patterns need to be considered for your new asset?
+  </li>
+  <li>
+    Experiment by placing your asset in different contexts or different product UI, to ensure that it works in multiple environments.
+  </li>
+</EnumerationCards>
+
+<CardGroup>
+  <MiniCard title="IBM Equal Access Toolkit for design" actionIcon="launch" href="https://www.ibm.com/able/toolkit/design" />
+</CardGroup>
+
+#### For developers
+
+While Design is in the ideation stage, it is crucial to be connected and verify the ideas early enough to save time down the road. By using resources like the IBM Equal Access Toolkit you can verify that a solution is both technically feasible and can be implemented in an accessible way.
+
+It can be helpful to develop small, interactive prototypes for the assets that are used to evaluate the markup, screen reader compatibility and browser APIs.
+
+<EnumerationCards color="green10">
+  <li>
+    Sync with design on the overall concept
+  </li>
+  <li>
+    Provide feedback on the design team’s initial designs
+  </li>
+  <li>
+    Proof of implementation of the initial design.
+  </li>
+  <li>
+    If applicable, develop an interactive prototype.
+  </li>
+</EnumerationCards>
+
+<CardGroup>
+  <MiniCard title="IBM Accessibility Requirements" actionIcon="launch" href="https://www.ibm.com/able/requirements/requirements" />
+  <MiniCard title="Developers Accessibility Toolkit" actionIcon="launch" href="https://www.ibm.com/able/toolkit/develop" />
+</CardGroup>
+
+</>
+} />
+
+<div id="step-3" />
+
+<ExpressiveListContainer title="Step 3" text={
+<>
+
+#### Submit your asset for review
+
+Meet with the Design System Adoption Guild (DSAG) to share your work and to receive feedback from this broad set of experienced design professionals. 
+
+<EnumerationCards>
+  <li>
+    <strong>Create an issue on GitHub</strong>
+    Head over to the <a href="https://github.ibm.com/CDAI-design/pal/issues/new/choose">IBM Products Github repo</a> and create a new issue, using the “new asset template”. This provides everyone with a way of tracking all aspects of the work and feedback in one place.
+  </li>
+  <li>
+    <strong>DSAG</strong>
+    Reach out to <a href="https://pages.github.ibm.com/cdai-design/pal/overview/contacts">your DSAG representative</a> to schedule a spot on an upcoming  meeting
+  </li>
+</EnumerationCards>
+
+</>
+} />

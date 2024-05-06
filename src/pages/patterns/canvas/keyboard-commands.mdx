@@ -1,0 +1,199 @@
+---
+title: Keyboard commands
+---
+
+
+<- [Back to canvas overview](https://pages.github.ibm.com/cdai-design/pal/patterns/canvas/usage)
+
+
+
+<PageDescription>
+
+Accessibility requirements include the needs of non-mouse users and on the canvas, there are several common interactions that require guidance. Below are common keyboard commands that can either replace or supplement mouse interactions.
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink>Operation keyboard commands</AnchorLink>
+  <AnchorLink>Overview</AnchorLink>
+  <AnchorLink>Navigation keyboard commands</AnchorLink>
+  <AnchorLink>Building a flow (Non-prescriptive)</AnchorLink>
+</AnchorLinks>
+
+
+## Overview
+
+Define differences between prescriptive and non-prescriptive here.
+
+
+<InlineNotification>
+
+**Note:** All `Ctrl` keys listed in this guidance should be translated to `Cmd` on MacOS keyboards.
+
+</InlineNotification>
+
+Content on navigating regions will go here. 
+
+
+<Row>
+  <Column colMd={4} colLg={6}>
+
+![Bullet node in hover state](images/fpo.png)
+
+</Column>
+</Row>  
+
+## Operations keyboard commands
+
+| Key command       |      Function    | 
+| ------------- | ----------- | 
+| Press `Enter`/`Spacebar` twice   | Open the context menu when a node is in focus | 
+| `Ctrl` + `E`    | Open the node properties when a node is in focus | 
+| `Ctrl` + `J`    | Enter node connection mode when a node is in focus | 
+| `Ctrl` + `K`    | Disconnect a node| 
+| `Ctrl` + `Arrow`      | Move a node in a direction | 
+| `Ctrl` + `Shift` + `Arrow`       | Move a node in a direction 10x| 
+| `Ctrl` + `Enter`     | Run a flow branch from where the focus is placed | 
+| `Ctrl` + `Shift` + `Enter`     | Run the entire flow | 
+| `Ctrl` + `A`    | Select all nodes (when focus is on the canvas)  | 
+| `Ctrl` + `Z`    | Undo  | 
+| `Ctrl` + `Shift` + `Z`    | Redo  | 
+| `Shift` + `Arrow`    | Select multiple nodes  | 
+| `Ctrl` + `Shift` + `C`    | Toggle cache on/off  | 
+| `Ctrl` + `Shift` + `Up Arrow`    | Select all nodes upstream of the selected node | 
+| `Ctrl` + `Shift` + `Down Arrow`     | Select all nodes downstream of the selected node | 
+
+
+
+
+## Navigation keyboard commands
+
+This section defines how regions of the UI may be navigated to and through.
+
+<InlineNotification>
+
+**Windows users** Depending on your keyboard configuration) you might need to press `Fn` in addition to the `F1`–`F12` keys to activate the shortcut (for example, for `Ctrl` + `F6`, you may need to press `Ctrl` + `Fn` + `F6`). 
+
+</InlineNotification>
+
+<InlineNotification>
+
+**MacOS users** If you don't have access to function keys, use `Alt` + `Number` to replace the shortcuts listed below (for example, instead of `Cmd` + `F6`, you may need to press `Cmd` + `Alt` + `6`). 
+
+</InlineNotification>
+
+
+| Key command       |      Function    | 
+| ------------- | ----------- | 
+| `Ctrl` + `F6`     | Toggle focus (header, node palette, toolbar, canvas, etc.) | 
+| `Ctrl` + `F1`     | Move focus to the header | 
+| `Ctrl` + `F2`     | Move focus to the node palette | 
+| `Ctrl` + `F3`     | Move focus to the toolbar | 
+| `Ctrl` + `F4`     | Move focus to the canvas | 
+| `Ctrl` + `F5`     | Move focus to the node properties if it's opened | 
+| `Ctrl` + `F7`     | Open and move focus to the Messages panel| 
+| `Ctrl` + `F8`     | Open and move focus to the Outputs panel.  | 
+| `Ctrl` + `I`     | Open the settings panel  | 
+| `Ctrl` + `Alt` + `Arrow`     | Move the canvas in a direction  | 
+
+
+
+
+
+
+
+
+
+## Building a flow (Non-prescriptive)
+
+Basic functions for creating a non-prescriptive flow will use the following key commands.
+
+### Add a node to the canvas
+
+1. Navigate to the node palette by pressing `Ctrl` + `F2`.
+2. Use the `arrow` keys to move the focus to the node you want, then press the `Enter` or `Spacebar` to add the node to the canvas.
+
+<Row>
+  <Column colMd={4} colLg={3}>
+
+![Bullet node in hover state](images/fpo.png)
+
+</Column>
+</Row>  
+
+
+### Move a node around the canvas
+
+Press `Ctrl` + `arrow` key when a node is in focus to move the node to a new location.
+
+Press `Ctrl` + `shift` + `arrow` key to move the node 10x.
+
+<Row>
+  <Column colMd={4} colLg={3}>
+
+![Bullet node in hover state](images/fpo.png)
+
+</Column>
+</Row>  
+
+
+### View and perform an action on a node
+
+1. Go to the canvas by pressing `Ctrl` + `F4`.
+2. Use the `arrow` keys to move the focus to the desired node.
+3. Press `Enter` or `Spacebar` twice to view the node's context menu.
+4. Use the `arrow` keys to move the focus to the desired context menu action, then press `Enter` or `Spacebar` to perform the action.
+
+<Row>
+  <Column colMd={4} colLg={3}>
+
+![Bullet node in hover state](images/fpo.png)
+
+</Column>
+</Row>  
+
+
+### Edit a node
+
+1. With a node in focus, press `Ctrl` + `E` to open the node's properties.
+2. Once the focus is on the node properties, use the `tab` or `arrow` keys to move down the list of properties
+3. When finished changing properties, press `Ctrl` + `S` to save your changes or press `Ctrl` + `.` to cancel your changes. 
+
+<Row>
+  <Column colMd={4} colLg={3}>
+
+![Bullet node in hover state](images/fpo.png)
+
+</Column>
+</Row>  
+
+
+### Connect nodes
+
+1. With a node in focus, press `Ctrl` + `J`.
+2. Use the arrow keys to select another node to connect to, then press `Enter` or `Spacebar` to confirm the selection or press `Esc` to cancel the connection.
+
+
+<Row>
+  <Column colMd={4} colLg={3}>
+
+![Bullet node in hover state](images/fpo.png)
+
+</Column>
+</Row>  
+
+
+### Delete a node
+
+With the desired node in focus, press the `Delete` key to delete it.
+
+
+<Row>
+  <Column colMd={4} colLg={3}>
+
+![Bullet node in hover state](images/fpo.png)
+
+</Column>
+</Row>  
+
+

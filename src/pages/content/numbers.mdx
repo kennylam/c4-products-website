@@ -1,0 +1,132 @@
+---
+title: Numbers
+---
+
+import { Link } from "gatsby";
+
+<BannerQuote
+  quote="I will be forever disappointed that the collective noun for squids is not squad."
+  backgroundHighlight="#491D8B"
+>
+
+![Image](./images/illustrations/numbers.svg)
+
+</BannerQuote>
+
+<AnchorLinks>
+
+<AnchorLink>Use numerals</AnchorLink>
+<AnchorLink>Currency formats</AnchorLink>
+<AnchorLink>Numbers in data tables</AnchorLink>
+<AnchorLink>Related guidance</AnchorLink>
+
+</AnchorLinks>
+
+
+## Use numerals
+
+For all UI content, save screen space and use numerals in place of words for numbers.
+
+<DoDontRow>
+  <DoDont text="You can add up to 8 connectors" aspectRatio="2:1" />
+  <DoDont text="You can add up to eight connectors" type="dont" aspectRatio="2:1" />
+</DoDontRow>
+
+When writing large numbers, use commas for thousand separators (for example, 2,000 and 19,500 and 500,000).
+
+
+
+## Currency formats
+
+Currency format guidance:
+
+- Use a currency symbol, followed by the amount (for example, _$1,000_).
+- Then leave a space and display the appropriate internationally recognized [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217#Active_codes) (such as "USD" for US dollars: _$1,000 USD_).
+- Don’t abbreviate a number to a letter, such as writing the letter K for _thousand_, or the letter 
+M for _million_.
+
+<DoDontRow>
+  <DoDont text="$100 USD; $100 AUD; £100 GBP; €100 EUR" aspectRatio="2:1" />
+</DoDontRow>
+
+<DoDontRow>
+  <DoDont text="The contract is worth $4 million USD" aspectRatio="2:1" />
+  <DoDont text="The contract is worth USD 4M" type="dont" aspectRatio="2:1" />
+</DoDontRow>
+
+<DoDontRow>
+  <DoDont text="The contract is worth $4,000,000 USD" aspectRatio="2:1" />
+  <DoDont text="The marketing campaign cost USD 18K" type="dont" aspectRatio="2:1" />
+</DoDontRow>
+
+
+
+## Numbers in data tables
+
+By default, the Carbon [data table](https://www.carbondesignsystem.com/components/data-table/usage) component 
+left-aligns all data. For most data, this is appropriate.
+
+**An example Carbon data table:**
+![Default Carbon data table](/images/default_carbon_table.png)
+
+However, when there are numeric values in the data table that represent totals that users might likely 
+want to compare, it’s easier for them to do so when the numbers are right-aligned so that the units, 
+tens, hundreds, and so on line up.
+
+In such cases, the data values should be formatted as numbers (integers) and right-aligned. Remember to 
+also use thousand separators for numbers above 999.
+
+**Correct example:**  
+_(Here the cost data has been right-aligned, making it easier to compare values.)_
+<Row>
+<Column colMd={8} colLg={8}>
+
+<DoDontExample
+type="do"
+captionTitle=""
+caption=""
+>
+
+![A data table where the cost column has been right-aligned](images/table_data_right-aligned.png)
+
+</DoDontExample>
+
+</Column>
+</Row>
+
+
+**Incorrect example:**  
+_(Here the cost data hasn’t been right-aligned, meaning that it’s harder to compare values.)_
+<Row>
+<Column colMd={8} colLg={8}>
+
+<DoDontExample
+type="dont"
+captionTitle=""
+caption=""
+>
+
+![A data table where the cost column hasn’t been right-aligned](images/table_data_left-aligned.png)
+
+</DoDontExample>
+
+</Column>
+</Row>
+
+
+Examples of numbers used in data tables that should be right-aligned:
+* cost
+* time duration
+* number of people
+* number of resources
+* anything else where the numberals represent totals
+
+
+Examples of numbers used in data tables that should use the default (left-aligned) formatting: 
+* dates (even when written as numerals)
+* numerals which are not comparative (for example, identification numbers such as employee IDs or machine serial numbers)
+
+
+## Related guidance
+
+See also the [Date and time formats](date-and-time) page.

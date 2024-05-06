@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1120px" height="630px" viewBox="0 0 1120 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>layoutOverview</title>
+    <g id="layoutOverview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="1120" height="630"></rect>
+        <g transform="translate(77.241379, 77.241379)" id="Columns-Copy-3">
+            <g transform="translate(0.000000, -0.000000)" id="animation">
+                <g id="columns" transform="translate(0.603449, 23.534483)" stroke="#97C1FF" stroke-width="1.20689655">
+                    <polygon id="Rectangle-17-Copy-487" points="-5.32907052e-15 362.068965 60.3448276 362.068965 60.3448276 452.586207 -5.32907052e-15 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-488" points="60.3448276 362.068965 120.689655 362.068965 120.689655 452.586207 60.3448276 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-489" points="120.689655 362.068965 181.034482 362.068965 181.034482 452.586207 120.689655 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-490" points="181.034482 362.068965 241.37931 362.068965 241.37931 452.586207 181.034482 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-491" points="241.37931 362.068965 301.724138 362.068965 301.724138 452.586207 241.37931 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-492" points="301.724138 362.068965 362.068965 362.068965 362.068965 452.586207 301.724138 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-493" points="362.068965 362.068965 422.413793 362.068965 422.413793 452.586207 362.068965 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-494" points="422.413793 362.068965 482.75862 362.068965 482.75862 452.586207 422.413793 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-495" points="482.75862 362.068965 543.103448 362.068965 543.103448 452.586207 482.75862 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-496" points="543.103448 362.068965 603.448276 362.068965 603.448276 452.586207 543.103448 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-497" points="603.448276 362.068965 663.793103 362.068965 663.793103 452.586207 603.448276 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-498" points="663.793103 362.068965 724.137931 362.068965 724.137931 452.586207 663.793103 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-499" points="724.137931 362.068965 784.482758 362.068965 784.482758 452.586207 724.137931 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-500" points="784.482758 362.068965 844.827586 362.068965 844.827586 452.586207 784.482758 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-501" points="844.827586 362.068965 905.172414 362.068965 905.172414 452.586207 844.827586 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-502" points="905.172414 362.068965 965.517241 362.068965 965.517241 452.586207 905.172414 452.586207"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="-5.32907052e-15 271.551724 120.689655 271.551724 120.689655 362.068965 -5.32907052e-15 362.068965"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="120.689655 271.551724 241.37931 271.551724 241.37931 362.068965 120.689655 362.068965"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="241.37931 271.551724 362.068965 271.551724 362.068965 362.068965 241.37931 362.068965"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="362.068965 271.551724 482.75862 271.551724 482.75862 362.068965 362.068965 362.068965"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="482.75862 271.551724 603.448276 271.551724 603.448276 362.068965 482.75862 362.068965"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="603.448276 271.551724 724.137931 271.551724 724.137931 362.068965 603.448276 362.068965"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="724.137931 271.551724 844.827586 271.551724 844.827586 362.068965 724.137931 362.068965"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="844.827586 271.551724 965.517241 271.551724 965.517241 362.068965 844.827586 362.068965"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="724.137931 181.034482 965.517241 181.034482 965.517241 271.551724 724.137931 271.551724"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="482.75862 181.034482 724.137931 181.034482 724.137931 271.551724 482.75862 271.551724"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="241.37931 181.034482 482.75862 181.034482 482.75862 271.551724 241.37931 271.551724"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="-5.32907052e-15 181.034482 241.37931 181.034482 241.37931 271.551724 -5.32907052e-15 271.551724"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="-5.32907052e-15 90.5172414 482.75862 90.5172414 482.75862 181.034482 -5.32907052e-15 181.034482"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="482.75862 90.5172414 965.517241 90.5172414 965.517241 181.034482 482.75862 181.034482"></polygon>
+                    <polygon id="Rectangle-17-Copy-487" points="-5.32907052e-15 -5.32907052e-15 965.517241 -5.32907052e-15 965.517241 90.5172414 -5.32907052e-15 90.5172414"></polygon>
+                </g>
+                <g id="browser">
+                    <rect id="Rectangle-17-Copy-487" stroke="#BEBEBE" stroke-width="1.20689655" x="0.603448276" y="23.5344828" width="965.517241" height="452.586207"></rect>
+                    <path d="M3.05454545,0 L963.669592,0 C965.356571,0 966.724138,1.36756658 966.724138,3.05454545 L966.724138,24.0798778 L0,24.0798778 L0,3.05454545 C0,1.36756658 1.36756658,0 3.05454545,0 Z" id="Rectangle-2-Copy-25" fill="#565656" fill-rule="nonzero"></path>
+                    <ellipse id="Oval-5-Copy-18" fill="#FFFFFF" fill-rule="nonzero" cx="15.6896552" cy="12.0597992" rx="3.62068966" ry="3.61152335"></ellipse>
+                    <ellipse id="Oval-5-Copy-19" fill="#FFFFFF" fill-rule="nonzero" cx="30.1724138" cy="12.0597992" rx="3.62068966" ry="3.61152335"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

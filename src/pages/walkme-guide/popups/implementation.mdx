@@ -1,0 +1,175 @@
+---
+title: Popups
+tabs: ['Usage', 'Content', 'Implementation']
+---
+
+<PageDescription>
+
+Like Steps, Popups are implemented by first creating a Smart Walk-Thru. Below you'll find step-by-step instructions on how to implement this component successfully. 
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink>Create Popups</AnchorLink>
+  <AnchorLink>Edit text</AnchorLink>
+  <AnchorLink>Change buttons</AnchorLink>
+  <AnchorLink>Add illustrations/GIFs</AnchorLink>
+  <AnchorLink>Embed video</AnchorLink>
+  <AnchorLink>Add Spotlight</AnchorLink>
+</AnchorLinks>
+
+### Create Popups
+
+Note: If you already have a Smart Walk-Thru created for your tour, you can skip the first two steps. 
+
+<br />
+
+- Select the orange plus button to create a new item.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-1](/images/Popups_implementation-1.png)
+
+  </Column>
+</Row>
+
+- Then select **Smart Walk-Thru.**
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-2](/images/Popups_implementation-2.png)
+
+  </Column>
+</Row>
+
+- Next, name your Smart Walk-Thru and press **OK.**
+
+- Once in Smart Walk-Thru, hover over the orange plus button and select **Popup.**
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-3](/images/Popups_implementation-3.png)
+
+  </Column>
+</Row>
+
+- Click **Change Design** to select preferred Popup Template.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-4](/images/Popups_implementation-4.png)
+
+  </Column>
+</Row>
+
+Note: When you change templates it overrides custom text so make sure you have your text saved in another location before proceeding.
+
+- Select your desired Template from the WalkMe gallery.
+
+Note: if you would like to customize button text, make sure you select a template that is labeled with "CUSTOMBUTTONS".
+
+- Click **Continue** to override text and apply template.
+
+### Edit text
+
+- Click within the text area of your Popup.
+
+- Then select the **BB code [/]** button.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-5](/images/Popups_implementation-5.png)
+
+  </Column>
+</Row>
+
+- Next, replace the lorem ipsum text with your customized content.
+
+- Then click **apply.**
+
+### Change buttons
+
+If you would like to have customized button text, you will need to select one of the templates that is labeled "CUSTOM BUTTONS". Once you have your preferred template chosen follow the steps below.
+
+- Click within the text area of your Popup.
+- Then select the **BB code [/]** button.
+- Scroll down in code and find div titled [div class="wm-buttons-wrapper"].
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-6](/images/Popups_implementation-6.png)
+
+  </Column>
+</Row>
+
+- To change primary button text, replace the text titled "let's go".
+- To change the secondary button text, replace the text titled "maybe later".
+
+### Add illustrations/GIFs
+
+- To add an illustration first click on the **image button.**
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-7](/images/Popups_implementation-7.png)
+
+  </Column>
+</Row>
+
+From here, you can either choose to add an image by clicking "choose an image or drag it here" which will open up your desktops "finder (mac) / file explorer (windows) or you can link an illustration / GIF  from whichever Cloud Location it is stored by copying and pasting the link URL into the "or add an image URL" section.
+
+
+### Embed video
+
+- Click **Change Design** to select Popup Video Template.
+
+- Next, click within the body area of your Popup.
+
+- Then click on the **video button.**
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-8](/images/Popups_implementation-10.png)
+
+  </Column>
+</Row>
+
+- In the "Add video" text box, replace the existing URL with the URL to your video.
+
+### Add Spotlight
+
+Spotlight should automatically be enabled but if not, follow the steps below.
+
+- First scroll down to the bottom of the WalkMe editor window.
+- Then toggle the **Enable Spotlight button** to the on position.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-9](/images/Popups_implementation-8.png)
+
+  </Column>
+</Row>
+
+
+
+- Make sure spotlight color is Gray 100 (#161616) with .7 opacity.
+
+<Row>
+  <Column colLg={8}>
+
+![implementation-10](/images/Popups_implementation-9.png)
+
+  </Column>
+</Row>
+
+
+For more questions about Popups, [contact us](/walkme-guide/overview/contacts).
