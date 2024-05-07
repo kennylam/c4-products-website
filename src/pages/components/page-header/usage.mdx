@@ -1,0 +1,191 @@
+---
+title: Page header
+tabs: ['Usage', 'Style', 'Code']
+---
+
+
+<PageDescription>
+
+The page header serves as a companion to the global header, providing a beacon to orient users in the UI. This guidance outlines the qualities that make a page header familiar and usable.
+
+</PageDescription>
+
+<AnchorLinks>
+  <AnchorLink>Overview</AnchorLink>
+  <AnchorLink>Types</AnchorLink>
+  <AnchorLink>Behavior</AnchorLink>
+  <AnchorLink>Best practices</AnchorLink>
+  <AnchorLink>Related</AnchorLink>
+</AnchorLinks>
+
+
+## Overview
+
+The page header is a consistent workhorse that sets the stage for each page within the offering. It informs the user of exactly where they are as well as provides in-page navigation and actions. The consistency of the page header layout acts as a familiar means to navigate the current page and way-find away from it. It can also be used to surface metadata or functionality that applies to the entire experience below the page header.
+
+### Anatomy of the page header
+
+The page header is comprised of 6 zones, allowing for the flexibility to include (or exclude) areas depending on the context and needs of the page.
+
+![anatomy](images/anatomy.png)
+
+1. **Breadcrumbs:** This zone is for the breadcrumb component to be displayed. Breadcrumbs should typically be displayed if there are navigable pages that precede the current page.
+2. **Page title:** This zone is for a page title to be displayed. Optionally an icon can be included to the left of the title text.
+3. **Subtitle/description (optional):** This zone is for the inclusion of a subtitle or description to provide additional context to identify the current page.
+4. **Available space (optional):** This zone is for placing high-level content above page tabs.
+5. **Tabs (optional):** This zone is for placing navigation within a page. e.g. tabs, content switcher etc.
+6. **Actions (optional):** This zone is for placing critical page actions. While this zone is primarily for buttons, the specific type of component is left to the product team's discretion to meet user experience needs. Some examples of appropriate components within the action zone would be buttons, dropdowns, and overflow menus.
+
+## Types
+
+
+### Page header with background
+This is the primary expression of the page header. The background provides structure and aids in establishing a hierarchy for page headers with more items. The page header with a background should be used if tabs, subtitles, or more global items are required.
+
+![page header with background](images/page-header-with-background.png)
+
+#### With tabs
+Tabs are positioned underneath the page title and sit flush at the base of the page header background.
+
+![with tabs](images/with-tabs.png)
+
+#### With tags
+Tags are positioned underneath the page title and sit above the base of the page header background.
+
+![with-tags](images/with-tags.png)
+
+#### With tabs & tags
+If both tabs & tags need to be present, tabs should remain left-aligned with the page and tags repositioned to the right side of the screen.
+
+![with tabs tags](images/with-tabs-tags.png)
+
+#### With subtitle
+Subtitles, if necessary, are placed directly below the page title. Page headers with subtitles use the background to create a hierarchy and to separate it from the type placed within the page.
+
+![with subtitle](images/with-sub-title.png)
+
+#### With summary details
+Page content with a global page hierarchy can be placed above tabs within the page header. This is an example. The actual page content should be determined by the offering team.
+
+![with summary details](images/with-summary.png)
+
+#### With the breadcrumb + actions toolbar
+If the page header contains action icons, the default state includes a toolbar designated for the breadcrumbs and action icons.
+
+![with breadcrumb bar](images/with-breadcrumb-bar.png)
+
+#### With the actions toolbar only
+Some pages may require maximum utilization of the browser window to create a full canvas experience. For experiences that meet this specification, the page header can default to the collapsed state. 
+
+![with breadcrumb bar](images/with-breadcrumb-bar.png)
+
+
+### Page header without background
+The background-less page header should be used sparingly and with consideration to page header consistency across the rest of your product. In cases where it’s relevant to use, it should be used for simple expressions leveraging only the breadcrumb, title, actions, and/or status.
+
+![page header without background](images/page-header-without-background.png)
+
+
+
+## Behavior
+
+### Page title length
+
+#### Character count
+To maintain page titles that are efficient to read and avoid crowding within the page header, the title length should be no more than 60% of the browser view width and remain on a single line instead of wrapping to multiple lines. Title truncation occurs if the title exceeds 60% of the browser view width. If the titles become truncated, ensure browser tooltips over the page title are used on hover to display the full string.
+
+
+![character count](images/character-count.png)
+
+![truncation](images/truncation.png)
+
+![truncation breadcrumb](images/truncation-breadcrumb.png)
+
+#### Subtitles
+If titles are frequently longer than 60% of the browser view width, consider using a generic title and include a subtitle for dynamic, descriptive use.
+
+<Caption>If a unique URL page ID or an informative breadcrumb string is required, consider using a more descriptive page title and truncate as needed.</Caption>
+
+![subtitles](images/sub-title.png)
+
+### Editable page title
+On occasion, renaming the current page title is required. This optional interaction sources the Carbon for IBM Products inline edit pattern. Additional guidance can be found in the [Edit and update section](https://pages.github.ibm.com/cdai-design/pal/patterns/edit/).
+
+![edit title 1](images/editable-title-1.png)
+
+![edit title 2](images/editable-title-2.png)
+
+![edit title 3](images/editable-title-3.png)
+
+![edit title 4](images/editable-title-4.png)
+
+![edit title 5](images/editable-title-5.png)
+
+![edit title 6](images/editable-title-6.png)
+
+#### Collapse page title editing
+Editing the page title in the collapsed state follows the same pattern as the expanded state.
+
+![breadcrumb bar edit title 1](images/editable-title-bar-1.png)
+
+![breadcrumb bar edit title 2](images/editable-title-bar-2.png)
+
+
+### Scrolling
+
+#### Default
+The page title scrolls with the rest of the page content. Once the page title scrolls out of view, the current page title appends to the end of the breadcrumbs.
+
+<Video src="images/page-header-transition-1.mov" autoPlay loop>
+  <track kind="captions" src="images/page-header-transition-1.mov" />
+</Video>
+
+#### With button(s)
+The button transition accompanies the default scrolling behavior. If a button or set of buttons is included in the page header, they should scroll with the page until they meet the base of the global header. The button(s) then stays in that position for the remainder of the page scroll. Scrolling back to the top of the page puts the transition in reverse.
+
+<Video src="images/page-header-transition-2.mov" autoPlay loop>
+  <track kind="captions" src="images/page-header-transition-2.mov" />
+</Video>
+
+#### With action toolbar + button(s)
+If the page header includes a toolbar, the buttons scroll with the page next to the page title. As the buttons scroll out of view, they should fade into view in the toolbar next to the actions.
+
+<Video src="images/page-header-transition-3.mov" autoPlay loop>
+  <track kind="captions" src="images/page-header-transition-3.mov" />
+</Video>
+
+#### With tabs
+There are two available behaviors for scrolling with tabs.
+
+1. The primary scrolling behavior is to position the tabs directly underneath the breadcrumb toolbar upon collapse. This keeps the breadcrumbs and page title always visible for wayfinding and to navigate elsewhere on the product.
+
+<Video src="images/page-header-transition-4.mov" autoPlay loop>
+  <track kind="captions" src="images/page-header-transition-4.mov" />
+</Video>
+
+2. The second option pushes the breadcrumb out of view, replacing it with tabs on scroll. This should only be used for stage space-saving needs. The initial page title transition remains the same. After this initial transition, the tabs push the breadcrumbs out of view as the page is scrolled further. As soon as the page is scrolled towards the top, the breadcrumb row is again stacked above the tabs. 
+
+<Video src="images/page-header-transition-5.mov" autoPlay loop>
+  <track kind="captions" src="images/page-header-transition-5.mov" />
+</Video>
+
+## Best practices
+### Do's
+- Follow the [breadcrumb component](https://www.carbondesignsystem.com/components/breadcrumb/usage) for proper usage of breadcrumbs
+- Where possible, move metadata out of the header and either onto the page or a “details” button
+- Include sentence-case for page titles. Reference the [voice & tone guidance](https://www.carbondesignsystem.com/guidelines/content/guidance/#use-sentence-case-capitalization)
+
+### Dont's
+- Metadata or actions that don’t apply to the entire experience should not be placed in the header
+- Filters should not be placed in the page header component but rather underneath
+
+
+## Related
+#### Components
+- [Breadcrumb](https://www.carbondesignsystem.com/components/breadcrumb/usage)
+- [Button](https://www.carbondesignsystem.com/components/button/usage)
+- [ReturnTo banner](/cloud-paks/integrated-framework/components#returnto-banner)
+- [Status indicators](https://www.carbondesignsystem.com/patterns/status-indicator-pattern/)
+- [Tabs](https://www.carbondesignsystem.com/components/tabs/usage)
+- [Tag](https://www.carbondesignsystem.com/components/tag/usage)
+- [Toolbar](/patterns/toolbars/usage)
