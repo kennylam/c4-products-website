@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Refresh</title>
+    <g id="Refresh" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fill" fill="#000000">
+            <path d="M26,18 C26,23.5228475 21.5228475,28 16,28 C10.4771525,28 6,23.5228475 6,18 C6,12.4771525 10.4771525,8 16,8 L22.1821,8 L18.5977,11.5854 L20,13 L26,7 L20,1 L18.5977,2.414 L22.1851,6 L16,6 C9.372583,6 4,11.372583 4,18 C4,24.627417 9.372583,30 16,30 C22.627417,30 28,24.627417 28,18 L26,18 Z"></path>
+        </g>
+    </g>
+</svg>

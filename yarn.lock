@@ -7931,7 +7931,8 @@ __metadata:
   dependencies:
     framer-motion: "npm:^2.5.1"
     gatsby: "npm:^3.3.1"
-    gatsby-theme-carbon: "npm:^2.1.1"
+    gatsby-source-filesystem: "npm:3.15.0"
+    gatsby-theme-carbon: "npm:^2.3.2"
     react: "npm:^17.0.2"
     react-dom: "npm:^17.0.2"
   languageName: unknown
@@ -9236,7 +9237,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:^3.7.1":
+"gatsby-source-filesystem@npm:3.15.0, gatsby-source-filesystem@npm:^3.7.1":
   version: 3.15.0
   resolution: "gatsby-source-filesystem@npm:3.15.0"
   dependencies:
@@ -9291,7 +9292,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-theme-carbon@npm:^2.1.1":
+"gatsby-theme-carbon@npm:^2.3.2":
   version: 2.3.2
   resolution: "gatsby-theme-carbon@npm:2.3.2"
   dependencies:

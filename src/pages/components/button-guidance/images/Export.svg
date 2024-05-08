@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Export</title>
+    <g id="Export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fill" fill="#000000">
+            <path d="M26,24 L26,28 L6,28 L6,24 L4,24 L4,28 L4.0076,27.9951 C4.00568739,28.5252522 4.21458685,29.0344229 4.58828939,29.41047 C4.96199194,29.7865171 5.4698462,29.9985969 6,30 L26,30 C27.1045695,30 28,29.1045695 28,28 L28,28 L28,24 L26,24 Z M6,12 L7.411,13.405 L15,5.825 L15,24 L17,24 L17,5.825 L24.591,13.405 L26,12 L16,2 L6,12 L6,12 Z"></path>
+        </g>
+    </g>
+</svg>

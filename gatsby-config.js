@@ -21,11 +21,15 @@ module.exports = {
     {
       resolve: "gatsby-theme-carbon",
       options: {
-        mediumAccount: "carbondesign",
         repository: {
           baseUrl:
-            "https://github.com/carbon-design-system/gatsby-theme-carbon",
-          subDirectory: "/packages/example",
+            "https://github.com/carbon-design-system/carbon-for-products-website",
+          branch: "main",
+        },
+        iconPath: "./src/images/app-icon/light-theme/CarbonforIBMProducts.svg",
+        theme: {
+          homepage: "g10",
+          interior: "g10",
         },
       },
     },

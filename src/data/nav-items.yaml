@@ -4,188 +4,185 @@
       path: /overview/about/
     - title: Contacts
       path: /overview/contacts
-    - title: "IBM Product specifications"
+    - title: IBM Product specifications
       path: /overview/carbon-specifications
   hasDivider: true
 - title: Asset index
   pages:
-    path: /overview/asset-index
+    - path: /overview/asset-index
 - title: Components
   pages:
-    - title: "Cards"
+    - title: Cards
       path: /components/card/overview
-    - title: "Color picker"
+    - title: Color picker
       path: /components/color-picker/usage
-    - title: "Data spreadsheet"
+    - title: Data spreadsheet
       path: /components/data-spreadsheet/usage
-    - title: "Data table extensions"
+    - title: Data table extensions
       path: /components/data-table/overview
-    - title: "Empty state"
-      path: /components/empty-state/usage
-    - title: "Onboarding"
+    - title: Empty state
+      path: /patterns/empty-state/usage
+    - title: Onboarding
       path: /components/onboarding/overview
-    - title: "Options tile"
+    - title: Options tile
       path: /components/options-tile/usage
-    - title: "Page header"
+    - title: Page header
       path: /components/page-header/usage
-    - title: "Progressive loading bar (depr.)"
+    - title: Progressive loading bar (depr.)
       path: /components/progressive-loading-bar/usage
-    - title: "Side panel"
+    - title: Side panel
       path: /components/side-panel/usage
-    - title: "Tag overflow"
+    - title: Tag overflow
       path: /components/tag-overflow/usage
-    - title: "Tearsheet"
+    - title: Tearsheet
       path: /components/tearsheet/usage
 - title: Patterns
   pages:
-    - title: "About modal"
+    - title: About modal
       path: /patterns/about-modal/usage
-    - title: "Add and select"
+    - title: Add and select
       path: /patterns/add-and-select/usage
-    - title: "Button guidance"
+    - title: Button guidance
       path: /components/button-guidance/overview
-    - title: "Cascade"
+    - title: Cascade
       path: /patterns/cascade
-    - title: "Canvas"
+    - title: Canvas
       path: /patterns/canvas/usage
-    - title: "Create flows"
-      path: /patterns/create-flows/usage
-    - title: "Dashboards"
+    - title: Create flows
+      path: /patterns/creation-flows/usage
+    - title: Dashboards
       path: /patterns/dashboards/usage
-    - title: "Drag and drop"
+    - title: Drag and drop
       path: /patterns/drag-and-drop/usage
-    - title: "Edit and update"
-      path: /patterns/edit-and-update/usage
-    - title: "Emails"
+    - title: Edit and update
+      path: /patterns/edit/usage
+    - title: Emails
       path: /patterns/emails/overview
-    - title: "Export"
+    - title: Export
       path: /patterns/exporting/usage
-    - title: "Full-page errors"
+    - title: Full-page errors
       path: /patterns/full-page-errors/usage
-    - title: "Generate an API key"
+    - title: Generate an API key
       path: /patterns/generating-api-key/usage
-    - title: "Grid influencers"
+    - title: Grid influencers
       path: /patterns/grid-influencers/usage
-    - title: "Import and upload"
-      path: /patterns/import-and-upload/usage
-    - title: "Keyboard Shortcut Guidance"
+    - title: Import and upload
+      path: /patterns/importing/usage
+    - title: Keyboard Shortcut Guidance
       path: /patterns/keyboard-shortcut-guidance/usage
-    - title: "Login & logout"
+    - title: Login & logout
       path: /patterns/login-logout/overview
-    - title: "Notifications"
+    - title: Notifications
       path: /patterns/notifications/usage
-    - title: "Onboarding"
+    - title: Onboarding
       path: /patterns/onboarding/overview
-    - title: "Profile and settings"
+    - title: Profile and settings
       path: /patterns/profile-and-settings/usage
-    - title: "Profile menu"
+    - title: Profile menu
       path: /patterns/profile-header-menu/usage
-    - title: "Registration"
-      path: /patterns/registration/usage
-    - title: "Remove"
+    - title: Registration
+      path: /patterns/registration/overview
+    - title: Remove
       path: /patterns/removing/usage
-    - title: "Saving"
+    - title: Saving
       path: /patterns/saving/usage
-    - title: "Status icons"
+    - title: Status icons
       path: /patterns/status-icons/usage
-    - title: "Trial countdown"
+    - title: Trial countdown
       path: /patterns/trial-countdown/usage
-    - title: "Try and Buy routes to market"
+    - title: Try and Buy routes to market
       path: /patterns/try-and-buy-routes-to-market/overview
-    - title: "Toolbars"
+    - title: Toolbars
       path: /patterns/toolbars/usage
-    - title: "UI navigation"
+    - title: UI navigation
       path: /patterns/ui-navigation/usage
-    - title: "Upgrade & purchase"
+    - title: Upgrade & purchase
       path: /patterns/upgrade-purchase/overview
-    - title: "User profile images"
+    - title: User profile images
       path: /patterns/user-profile-images/usage
-    - title: "Web terminal"
+    - title: Web terminal
       path: /patterns/web-terminal/usage
-- title: "Layouts"
-  pages:
-    - title: "Grid layout"
-      path: /layouts/grid-layout/usage
-    - title: "IBM Product layouts"
-      path: /layouts/library
   hasDivider: true
-- title: "AI Design guidance"
+- title: IBM Product layouts
   pages:
-    - title: "Overview"
+    - path: /layouts/library
+  hasDivider: true
+- title: AI Design guidance
+  pages:
+    - title: Overview
       path: /ai-design/overview
-    - title: "AI explainability"
+    - title: AI explainability
       path: /ai-design/ai-explainability
-- title: "Try offers"
+- title: Try offers
   pages:
     - path: /try-offers/overview
   hasDivider: true
-- title: "PLG and MultiCloud SaaS"
+- title: PLG and MultiCloud SaaS
   pages:
     - path: /saas-for-hyperscalers/overview
   hasDivider: true
-- title: "Novice to pro guidance"
+- title: Novice to pro guidance
   pages:
     - path: /novice-to-pro/overview
-- title: "Assist Me"
+- title: Assist Me
   pages:
     - path: /assistance-panel/overview
-- title: "WalkMe"
-  pages: /walkme-guide/overview
-    - path:
+- title: WalkMe
+  pages:
+    - path: /walkme-guide/overview
   hasDivider: true
-- title: "Product gallery"
+- title: Product gallery
   pages:
     - path: /product-gallery/gallery
   hasDivider: true
-- title: "Content guidance"
+- title: Content guidance
   pages:
     - title: Overview
       path: /content/main/overview
-    - title: "Button labels"
+    - title: Button labels
       path: /content/button-labels
     - title: Capitalization
       path: /content/capitalization
-    - title: "Content heuristics"
+    - title: Content heuristics
       path: /content/content-heuristics
-    - title: "Content principles"
+    - title: Content principles
       path: /content/content-principles
-    - title: "Date and time formats"
+    - title: Date and time formats
       path: /content/date-and-time
-    - title: "Information architecture"
+    - title: Information architecture
       path: /content/ia
-    - title: "Language and grammar"
+    - title: Language and grammar
       path: /content/language-and-grammar
-    - title: "Navigation labels"
+    - title: Navigation labels
       path: /content/navigation-labels
     - title: Numbers
       path: /content/numbers
-    - title: "Our personality"
+    - title: Our personality
       path: /content/our-personality
     - title: Punctuation
       path: /content/punctuation
     - title: Terminology
       path: /content/terminology/approved-terms
-- title: "Keyboard guidance"
+- title: Keyboard guidance
   pages:
     - path: /keyboard-guidance
-- title: "Illustration"
+- title: Illustration
   pages:
     - path: /illustrations/library
-- title: "Third-party logos"
+- title: Third-party logos
   pages:
     - path: /third-party-logos/usage
   hasDivider: true
-- title: "Design kits"
+- title: Design kits
   pages:
     - path: /design-kits/figma
 - title: Contributing
   pages:
-    - title: "Overview"
+    - title: Overview
       path: /contributing/overview
-    - title: "Contribution framework"
+    - title: Contribution framework
       path: /contributing/contribution-framework/intent
-    - title: "Implementation"
+    - title: Implementation
       path: /contributing/coding-components-patterns/overview
-    - title: "Publishing documentation"
+    - title: Publishing documentation
       path: /contributing/updating-this-site/overview
-  hasDivider: true
