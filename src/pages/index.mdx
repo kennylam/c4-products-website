@@ -1,31 +1,236 @@
-import HomepageTemplate from '../components/Homepage.js';
+import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 export default HomepageTemplate;
 
-## MDX content starts here
+## Getting started
 
-<PageDescription>
+<Row className="image-card-group">
 
-The homepage content here lives in the `src/pages/index.mdx` directory at the
-root of your project. Just like the other mdx pages, you can use all of our
-theme components here without importing them. Review the
-[MDX example source](https://github.com/carbon-design-system/gatsby-theme-carbon/blob/main/packages/example/src/pages/index.mdx).
+<Column colMd={4} colLg={4} noGutterSm>
 
-</PageDescription>
+<ImageCard
+  title="Overview"
+  titleColor="dark"
+  hoverColor="dark"
+  href="/overview/about"
+>
 
-<FeatureCard
-    color="dark"
-    href="/getting-started"
-    title="Getting started"
-    actionIcon="arrowRight"
-    className="homepage-feature"
-    >
+![Carbon for IBM Products](../images/homepage/cards/carbon-for-ibm-products.jpg)
 
-<ArtDirection>
+</ImageCard>
 
-![blue vertical stripes](../images/blue-stripes-mobile.jpg)
-![blue vertical stripes](../images/blue-stripes-tablet.jpg)
-![blue vertical stripes](../images/blue-stripes.jpg)
+<ImageCard
+  title="Carbon 11"
+  titleColor="dark"
+  hoverColor="dark"
+  href="https://carbondesignsystem.com/migrating/guide/overview/"
+>
 
-</ArtDirection>
+![Carbon 11](../images/homepage/cards/carbon-11.jpg)
 
-</FeatureCard>
+</ImageCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ImageCard
+  title="Product-Led Growth"
+  titleColor="dark"
+  hoverColor="dark"
+  href="/saas-for-hyperscalers/overview"
+>
+
+![Product-Led Growth](../images/homepage/cards/plg.jpg)
+
+</ImageCard>
+
+<ImageCard
+  title="Contribution"
+  titleColor="dark"
+  hoverColor="dark"
+  href="/contributing/overview/"
+>
+
+![Contribution](../images/homepage/cards/contribution.jpg)
+
+</ImageCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ImageCard
+  title="YourLearning course"
+  titleColor="dark"
+  hoverColor="dark"
+  href="https://yourlearning.ibm.com/activity/PLAN-23664761452B"
+>
+
+![Your Learning](../images/homepage/cards/your-learning.jpg)
+
+</ImageCard>
+
+<ImageCard
+  title="Contributing Badge"
+  titleColor="dark"
+  hoverColor="dark"
+  href="https://www.credly.com/org/ibm/badge/carbon-design-system-contributor.1"
+>
+
+![Contributing Badge](../images/homepage/cards/contributor.jpg)
+
+</ImageCard>
+
+</Column>
+
+</Row>
+
+## Need to know
+
+<Row className="resource-card-group">
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Slack"
+  title="ds_adoption_guild"
+  href="https://ibm-casdesign.slack.com/archives/CHJSPKW9Y/">
+
+![Slack icon](../images/homepage/slack-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Slack"
+  title="ibmproducts-pal"
+  href="https://ibm-casdesign.slack.com/archives/CQGR0HC05/">
+
+![Slack icon](../images/homepage/slack-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Figma kit"
+  title="Carbon for IBM Products"
+  actionIcon="none"
+  href="/design-kits/figma"
+>
+
+![Figma icon](../images/homepage/figma-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Github"
+  title="Carbon for IBM Products"
+  href="https://github.ibm.com/CDAI-design/pal"
+>
+
+![Github icon](../images/homepage/github-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Subscribe"
+  title="DSAG: Th 11:00 am EST"
+  actionIcon="calendar"
+  href="https://ec.yourlearning.ibm.com/w3/event/10377319">
+
+![Your Learning icon](../images/homepage/your-learning-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Airtable"
+  title="Pattern & Components Request Form"
+  href="https://airtable.com/appURFSG6dypHTXcd/shrayne6McJFr3wOM"
+>
+
+![Airtable icon](../images/homepage/airtable-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+</Row>
+
+## Dev resources
+
+<Row className="resource-card-group">
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Slack"
+  title="ibmproducts-pal-dev"
+  href="https://ibm-casdesign.slack.com/archives/C013ZTX0N6B/">
+
+![Slack icon](../images/homepage/slack-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Storybook"
+  title="Carbon for IBM Products"
+  href="https://carbon-for-ibm-products.netlify.app"
+>
+
+![Storybook icon](../images/homepage/storybook-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Github"
+  title="IBM Products"
+  href="https://github.com/carbon-design-system/ibm-products"
+>
+
+![Github icon](../images/homepage/github-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+<Column colMd={4} colLg={4} noGutterSm>
+
+<ResourceCard
+  subTitle="Office Hours"
+  title="With the Dev team"
+  actionIcon="calendar"
+  href="https://ec.yourlearning.ibm.com/w3/meeting/10373279">
+
+![Your Learning icon](../images/homepage/your-learning-icon.png)
+
+</ResourceCard>
+
+</Column>
+
+</Row>
