@@ -1,31 +1,20 @@
-# Gatsby Theme Carbon Starter
+[![Build Status](https://travis.ibm.com/CDAI-design/pal.svg?token=GNdrd9N7tDoHxsqaxdg9&branch=main)](https://travis.ibm.com/CDAI-design/pal)
 
-## What is this?
+<h1 align="center">
+  Carbon for IBM Products
+</h1>
 
-> Gatsby [themes](https://www.gatsbyjs.org/docs/themes/) encapsulate all of the
-> configuration and implementation details of Gatsby websites. This is a
-> starter-kit (boilerplate) with a dependancy on the `gatsby-theme-carbon`
-> package. The primary goal of `gatsby-theme-carbon` is to get content authors
-> speaking the IBM Design Language with Carbon as soon as possible. It includes
-> some sample components/content demos in the `src/pages` directory.
+We are a single site for PAL guidance, components, patterns, and resources across IBM Products
 
-## How do I use it?
+For instructions on contributing to this site, please visit our [contribution guidance](https://pages.github.ibm.com/cdai-design/pal/contributing/updating-this-site/overview)
 
-Check out our quick
-[getting started](https://gatsby-theme-carbon.now.sh/getting-started) guide and
-video!
+This site is comprised of 3 different code repositories:
 
-`gatsby-theme-carbon` at it’s core relies on [mdx](https://mdxjs.com/) for page
-creation. Check out the `src/pages` directory for some examples for using mdx.
+- [Carbon for IBM Products](https://github.ibm.com/CDAI-design/pal/)
+- [Cloud PAL](https://github.ibm.com/CDAI-design/cloud-pal)
+- [Shared Left Navigation](https://github.ibm.com/cloud-integration-design/cdai-microsite-common)
 
-A key feature of Gatsby themes is component shadowing. By simply placing a
-component into the `src/gatsby-theme-carbon/components` location, you can
-override components used by the theme. You can read more about component
-shadowing
-[here](https://www.gatsbyjs.org/docs/themes/api-reference#component-shadowing).
+To ensure that your issue or enhancement is addressed in a timely manner, try creating an issue in the repo that is associated with the page you'd like to change.
+Go the page you want to make the enhancement or create an issue for and look at the URL prefix. Does it include `CDAI-design/cloud-pal`? If so, this issue would be best delivered in the [Cloud PAL](https://github.ibm.com/CDAI-design/cloud-pal) repo. If it includes `CDAI-design/pal/`, you can continue creating the issue here.
 
-You’re also free to make your own components and use them in your MDX pages.
-
-## What’s Next?
-
-[Check out the docs!](https://gatsby-theme-carbon.now.sh)
+Creating a new page/guidance altogether? Once the content is approved and merged, create an issue for a new link in the side navigation in the [Shared Left Navigation](https://github.ibm.com/cloud-integration-design/cdai-microsite-common) repo.

@@ -1,39 +1,49 @@
-import React from 'react';
-import Footer from 'gatsby-theme-carbon/src/components/Footer';
+import React from "react";
+import Footer from "gatsby-theme-carbon/src/components/Footer";
+import packageJson from "gatsby-theme-carbon/package.json";
+
+const currentYear = new Date().getFullYear();
+const versions = {
+  "vanilla-components": packageJson.dependencies["carbon-components"],
+  "react-components": packageJson.dependencies["carbon-components-react"],
+};
 
 const Content = ({ buildTime }) => (
   <>
     <p>
-      The <code>Content</code> component receives a <code>buildTime</code> prop
-      that to display your site's build time: {buildTime}
-    </p>
-    <p>
-      By importing the <strong>Footer</strong> component from
-      gatsby-theme-carbon, we can supply our own props.
-    </p>
-    <p>
-      The default export from a shadowed component will replace that component
-      in the theme.
-    </p>
-    <p>
-      <a href="https://www.gatsbyjs.org/docs/themes/api-reference/#component-shadowing">
-        More about component shadowing
+      Have questions? Talk to us
+      <br />
+      on{" "}
+      <a href="https://ibm-casdesign.slack.com/archives/CQGR0HC05">
+        #ibmproducts-pal
       </a>
+      <br />
+      or open an issue in{" "}
+      <a href="https://github.ibm.com/CDAI-design/pal/issues">GitHub</a>
+    </p>
+    <p>
+      Vanilla Components version {versions["vanilla-components"]}
+      <br />
+      React Components version {versions["react-components"]}
+      <br />
+      Last updated {buildTime}
+      <br />
+      Copyright © {currentYear} IBM
     </p>
   </>
 );
 
 const links = {
   firstCol: [
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
+    { href: "#", linkText: "Contribute" },
+    { href: "https://www.ibm.com/privacy", linkText: "Privacy" },
+    { href: "https://www.ibm.com/legal", linkText: "Terms of use" },
+    { href: "https://www.ibm.com/", linkText: "IBM.com" },
   ],
   secondCol: [
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
-    { href: 'https://ibm.com/design', linkText: 'Shadowed link' },
+    { href: "https://dribbble.com/_carbondesign/about", linkText: "Dribble" },
+    { href: "https://medium.com/carbondesign", linkText: "Medium" },
+    { href: "https://twitter.com/_carbondesign", linkText: "Twitter" },
   ],
 };
 
