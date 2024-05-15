@@ -1,27 +1,29 @@
-const path = require("path");
-
 module.exports = {
-  pathPrefix: "/",
   siteMetadata: {
-    title: "Carbon for IBM Products",
-    description: "Product design library for IBM Cloud, Data and Security",
-    keywords: "cloud,data,AI,design,pattern,asset,library,pal,security",
+    title: "Gatsby Theme Carbon",
+    description: "A Gatsby theme for the carbon design system",
+    keywords: "gatsby,theme,carbon",
   },
+  pathPrefix: `/gtc`,
   plugins: [
     {
-      resolve: "gatsby-remark-images",
+      resolve: "gatsby-plugin-manifest",
       options: {
-        maxWidth: 1152,
+        name: "Carbon Design Gatsby Theme",
+        icon: "src/images/favicon.svg",
+        short_name: "Gatsby Theme Carbon",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#161616",
+        display: "browser",
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-json`,
     {
       resolve: "gatsby-theme-carbon",
       options: {
         repository: {
           baseUrl:
-            "https://github.com/carbon-design-system/carbon-for-product-website",
+            "https://github.com/carbon-design-system/carbon-for-products-website",
           branch: "main",
         },
         iconPath: "./src/images/app-icon/light-theme/CarbonforIBMProducts.svg",
@@ -29,25 +31,6 @@ module.exports = {
           homepage: "g10",
           interior: "g10",
         },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "Cloud, Data and AI Design",
-        short_name: "Cloud, Data and AI Design",
-        start_url: "/",
-        background_color: "#ffffff",
-        theme_color: "#0062ff",
-        display: "browser",
-        icons: [],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/components/SVGLibraries/shared/data`,
       },
     },
   ],

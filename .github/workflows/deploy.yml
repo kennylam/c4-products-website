@@ -3,7 +3,7 @@ name: Deploy website to GHE Github Pages
 on:
   push:
     branches:
-      - main
+      - chore/fresh-gatsby
 
 concurrency:
   group: deploy-${{ github.ref }}
@@ -21,19 +21,4 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Build project
-        run: yarn build
-      - name: Deploy build artifacts to gh-pages
-        run: |
-          git config --global user.name ${{ secrets.GHE_CARBON_USER }}
-          git config --global user.email ${{ secrets.BOT_EMAIL}}
-
-          git remote add ghe-pal https://${{ secrets.GHE_CARBON_USER }}:${{ secrets.GHE_CARBON_PERSONAL_ACCCESS_TOKEN }}@github.ibm.com/CDAI-design/pal.git
-          git fetch ghe-pal public-deploy-workflow-test
-          git checkout -b public-deploy-workflow-test ghe-pal/public-deploy-workflow-test
-          git update-ref -d refs/remotes/ghe-pal/public-deploy-workflow-test
-          git pull ghe-pal public-deploy-workflow-test
-
-          echo 'test push from public/internal repo' > test.txt
-          git add .
-          git commit -m 'chore(test): test deploy from GH public/internal repo'
-          git push ghe-pal public-deploy-workflow-test
+        run: yarn build:clean

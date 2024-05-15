@@ -62,33 +62,8 @@ public
 .DS_Store
 
 # Yarn
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
 yarn-error.log
+.pnp/
+.pnp.js
 # Yarn Integrity file
 .yarn-integrity
-
-# Ignore cypress like videos
-/cypress/videos/
-/cypress/screenshots/
-
-# Ignore prettier config
-.prettierrc
-
-# `cdai-microsite-common` components.
-src/gatsby-theme-carbon/components/GlobalSearch
-
-src/gatsby-theme-carbon/components/LeftNav
-src/gatsby-theme-carbon/util/NavItems.js
-
-src/gatsby-theme-carbon/components/Header.js
-src/gatsby-theme-carbon/components/Switcher.js
-
-.npmrc
-
-settings.json

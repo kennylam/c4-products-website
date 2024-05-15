@@ -1,7 +1,10 @@
 import React from "react";
+import Header from "gatsby-theme-carbon/src/components/Header";
 
-import CommonHeader from "../Header";
+const CustomHeader = (props) => (
+  <Header {...props}>
+    <span>Carbon for IBM Products</span>
+  </Header>
+);
 
-export default function Header(props) {
-  return <CommonHeader {...props} />;
-}
+export default CustomHeader;

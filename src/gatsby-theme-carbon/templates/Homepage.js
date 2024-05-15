@@ -1,8 +1,6 @@
 import React from "react";
 import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
 import { Column } from "gatsby-theme-carbon";
-import Seo from "../../components/Seo";
-import pageContext from "../pageContext";
 import { leadspaceText } from "./Homepage.module.scss";
 import { ArrowDown32 } from "@carbon/icons-react";
 
@@ -28,15 +26,12 @@ const customProps = {
         </div>
       </section>
     </>
-  )
+  ),
 };
 
-// spreading the original props gives us props.children (mdx content)
 function ShadowedHomepage(props) {
-  Object.assign(pageContext, props.pageContext);
   return (
     <>
-      <Seo pageContext={props.pageContext} />
       <HomepageTemplate {...props} {...customProps} />
     </>
   );
