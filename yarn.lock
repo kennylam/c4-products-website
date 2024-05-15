@@ -5126,6 +5126,7 @@ __metadata:
     gatsby: "npm:^3.3.1"
     gatsby-source-filesystem: "npm:3.15.0"
     gatsby-theme-carbon: "npm:^2.3.2"
+    gatsby-transformer-json: "npm:^3.0.0"
     react: "npm:^17.0.2"
     react-dom: "npm:^17.0.2"
   languageName: unknown
@@ -9349,6 +9350,18 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
   checksum: 10/a9bfc853dac881685848b76fafd93f7f22b813b2a63a183e6563133a7b46ce1932c7c4d7f0216fdf529bf30340fe42394a254c9a808aee534cc075e5f7e9b192
+  languageName: node
+  linkType: hard
+
+"gatsby-transformer-json@npm:^3.0.0":
+  version: 3.15.0
+  resolution: "gatsby-transformer-json@npm:3.15.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.15.4"
+    bluebird: "npm:^3.7.2"
+  peerDependencies:
+    gatsby: ^3.0.0-next.0
+  checksum: 10/2b6e88d2e5729ed70b55e98b6952598b12b57f99ffee3246a22bd96030013c01c280f0964b17123ca18ceb18528753c3a080d46e76679db1a348fc1ee082eb50
   languageName: node
   linkType: hard
 

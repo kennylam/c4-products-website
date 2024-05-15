@@ -1,23 +1,21 @@
+const path = require("path");
+
 module.exports = {
+  pathPrefix: "/cdai-design/pal",
   siteMetadata: {
-    title: "Gatsby Theme Carbon",
-    description: "A Gatsby theme for the carbon design system",
-    keywords: "gatsby,theme,carbon",
+    title: "Carbon for IBM Products",
+    description: "Product design library for IBM Cloud, Data and Security",
+    keywords: "cloud,data,AI,design,pattern,asset,library,pal,security",
   },
-  pathPrefix: `/gtc`,
   plugins: [
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: "gatsby-remark-images",
       options: {
-        name: "Carbon Design Gatsby Theme",
-        icon: "src/images/favicon.svg",
-        short_name: "Gatsby Theme Carbon",
-        start_url: "/",
-        background_color: "#ffffff",
-        theme_color: "#161616",
-        display: "browser",
+        maxWidth: 1152,
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-json`,
     {
       resolve: "gatsby-theme-carbon",
       options: {
@@ -31,6 +29,25 @@ module.exports = {
           homepage: "g10",
           interior: "g10",
         },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Cloud, Data and AI Design",
+        short_name: "Cloud, Data and AI Design",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#0062ff",
+        display: "browser",
+        icons: [],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/components/SVGLibraries/shared/data`,
       },
     },
   ],
