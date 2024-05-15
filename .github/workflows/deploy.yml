@@ -3,7 +3,7 @@ name: Deploy website to GHE Github Pages
 on:
   push:
     branches:
-      - chore/fresh-gatsby
+      - chore/fresh-gatsby-setup
 
 concurrency:
   group: deploy-${{ github.ref }}
